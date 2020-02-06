@@ -6,6 +6,9 @@ import crafttweaker.oredict.IOreDictEntry;
 <ore:ingotBrick>.addAll(<ore:brick>); //This adds ingot brick to all bricks
 //Aquamarine
 <ore:gemAquamarine>.addAll(<ore:gemBeryl>);
+//Biotite
+<ore:gemEnderBiotite>.addAll(<ore:quartzDark>);
+<ore:quartzDark>.mirror(<ore:gemEnderBiotite>);
 //Sand 
 <ore:tfcSand>.addItems([<tfc:sand/granite>,<tfc:sand/diorite>,<tfc:sand/gabbro>,<tfc:sand/shale>,
 						   <tfc:sand/claystone>,<tfc:sand/rocksalt>,<tfc:sand/limestone>,<tfc:sand/conglomerate>,

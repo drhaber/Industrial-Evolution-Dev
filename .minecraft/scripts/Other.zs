@@ -9,3 +9,7 @@ recipes.removeShapeless(<minecraft:wheat>, [<quark:thatch>], false);
 mods.jei.JEI.addDescription(<quark:thatch>,"Magic has made this thatch solid");
 mods.jei.JEI.addDescription(<quark:thatch_stairs>,"Magic has made this thatch solid");
 mods.jei.JEI.addDescription(<quark:thatch_slab>,"Magic has made this thatch solid");
+
+//Lithium
+furnace.addRecipe(<nuclearcraft:dust:6>*4, <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "brine", Amount: 1000}}));
+mods.immersiveengineering.BlastFurnace.addRecipe(<nuclearcraft:dust:6>*4, <forge:bucketfilled>.withTag({FluidName: "brine", Amount: 1000}), 2000,<minecraft:bucket>);
