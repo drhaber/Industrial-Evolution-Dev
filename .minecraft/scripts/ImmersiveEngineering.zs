@@ -1,0 +1,2 @@
+mods.immersiveengineering.Crusher.removeRecipe(<tfc:metal/dust/wrought_iron>);
+mods.immersiveengineering.AlloySmelter.addRecipe(<tfc:metal/ingot/wrought_iron>, <minecraft:iron_ingot>, <ore:dustFlux>, 2000);

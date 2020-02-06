@@ -1,0 +1,118 @@
+
+---- Votes and Modules ----
+default: |NEUTRAL|
+onedamage: |default|MASK|
+one: |default|MASK|
+SHOW -shown(2)
+NEUTRAL -shown(0)
+oneid: |default|MASK|
+MASK -hidden(1)
+--------   Rules   --------
+hide: |MASK|MASK|default|MASK|MASK|default|default|default|default|
+keep-one: |one|one|default|one|one|default|default|default|default|
+keep-oned: |onedamage|onedamage|default|onedamage|onedamage|default|default|default|default|
+keep: |default|default|MASK|default|default|MASK|MASK|MASK|MASK|
+keep-onei: |oneid|oneid|default|oneid|oneid|default|default|default|default|
+show: |SHOW|SHOW|default|SHOW|SHOW|default|default|default|default|
+----------------------------------------------------
+6312 items registered
+9 filters loaded
+94 items matched in 44 ms
+----------------------------------------------------
+
+- appliedenergistics2 :
+	+ charged_staff:                            	keep:[]/[, {}]
+	+ color_applicator:                         	keep:[]/[, {}]
+	+ crystal_seed:                             	keep-one:[0, 600, 1200]
+	+ entropy_manipulator:                      	keep:[]/[, {}]
+	+ facade:                                   	keep-one:[]
+	+ matter_cannon:                            	keep:[]/[, {}]
+	+ paint_ball:                               	keep:[0]
+	+ portable_cell:                            	keep:[]/[, {}]
+	+ wireless_terminal:                        	keep:[]/[, {}]
+- Botania :
+	+ altar:                                    	keep:[0]
+	+ ancientwill:                              	hide:[]
+	+ biomestonea:                              	keep:[0]
+	+ biomestonea0slab:                         	keep:[0]
+	+ biomestonea0stairs:                       	keep:[0]
+	+ biomestonea0wall:                         	keep:[0]
+	+ biomestonea10slab:                        	keep:[0]
+	+ biomestonea10stairs:                      	keep:[0]
+	+ biomestonea11slab:                        	keep:[0]
+	+ biomestonea11stairs:                      	keep:[0]
+	+ biomestonea12slab:                        	keep:[0]
+	+ biomestonea12stairs:                      	keep:[0]
+	+ biomestonea13slab:                        	keep:[0]
+	+ biomestonea13stairs:                      	keep:[0]
+	+ biomestonea14slab:                        	keep:[0]
+	+ biomestonea14stairs:                      	keep:[0]
+	+ biomestonea15slab:                        	keep:[0]
+	+ biomestonea15stairs:                      	keep:[0]
+	+ biomestonea1slab:                         	keep:[0]
+	+ biomestonea1stairs:                       	keep:[0]
+	+ biomestonea2slab:                         	keep:[0]
+	+ biomestonea2stairs:                       	keep:[0]
+	+ biomestonea3slab:                         	keep:[0]
+	+ biomestonea3stairs:                       	keep:[0]
+	+ biomestonea4slab:                         	keep:[0]
+	+ biomestonea4stairs:                       	keep:[0]
+	+ biomestonea5slab:                         	keep:[0]
+	+ biomestonea5stairs:                       	keep:[0]
+	+ biomestonea6slab:                         	keep:[0]
+	+ biomestonea6stairs:                       	keep:[0]
+	+ biomestonea7slab:                         	keep:[0]
+	+ biomestonea7stairs:                       	keep:[0]
+	+ biomestonea8slab:                         	keep:[0]
+	+ biomestonea8stairs:                       	keep:[0]
+	+ biomestonea9slab:                         	keep:[0]
+	+ biomestonea9stairs:                       	keep:[0]
+	+ biomestoneb:                              	keep:[0]
+	+ biomestoneb0slab:                         	keep:[0]
+	+ biomestoneb0stairs:                       	keep:[0]
+	+ biomestoneb1slab:                         	keep:[0]
+	+ biomestoneb1stairs:                       	keep:[0]
+	+ biomestoneb2slab:                         	keep:[0]
+	+ biomestoneb2stairs:                       	keep:[0]
+	+ biomestoneb3slab:                         	keep:[0]
+	+ biomestoneb3stairs:                       	keep:[0]
+	+ biomestoneb4slab:                         	keep:[0]
+	+ biomestoneb4stairs:                       	keep:[0]
+	+ biomestoneb5slab:                         	keep:[0]
+	+ biomestoneb5stairs:                       	keep:[0]
+	+ biomestoneb6slab:                         	keep:[0]
+	+ biomestoneb6stairs:                       	keep:[0]
+	+ biomestoneb7slab:                         	keep:[0]
+	+ biomestoneb7stairs:                       	keep:[0]
+	+ bloodpendant:                             	keep:[0]/[, {}]
+	+ brewflask:                                	hide:[]
+	+ brewvial:                                 	hide:[]
+	+ craftpattern:                             	hide:[]
+	+ custombrick:                              	keep:[0, 1, 2, 3, 4]
+	+ doubleflower1:                            	hide:[]
+	+ doubleflower2:                            	hide:[]
+	+ dye:                                      	keep:[0]
+	+ flighttiara:                              	keep:[0]
+	+ floatingspecialflower:                    	keep-one:[0]
+	+ grassseeds:                               	keep:[0]
+	+ incensestick:                             	keep:[0]/[, {}]
+	+ laputashard:                              	keep:[0]
+	+ lens:                                     	keep:[0]
+	+ miniisland:                               	keep:[0]
+	+ mushroom:                                 	hide:[]
+	+ pavement:                                 	keep:[0]
+	+ petal:                                    	keep:[0]
+	+ petalblock:                               	keep:[0]
+	+ quartz:                                   	keep:[0]
+	+ quartztypeblaze:                          	hide:[]
+	+ quartztypedark:                           	hide:[]
+	+ quartztypeelf:                            	hide:[]
+	+ quartztypelavender:                       	hide:[]
+	+ quartztypemana:                           	hide:[]
+	+ quartztypered:                            	hide:[]
+	+ quartztypesunny:                          	hide:[]
+	+ rune:                                     	keep:[0]
+	+ shinyflower:                              	keep:[0]
+	+ specialflower:                            	keep-one:[0]
+	+ terrapick:                                	keep-one:[0]
+	+ twigwand:                                 	keep-one:[0]
