@@ -15,3 +15,5 @@ natives/
 .minecraft/config/splash.properties
 .minecraft/config/InvTweaks.cfg
 instance.cfg
+.minecraft/config/jei/worldSettings.cfg
+.minecraft/config/LegibleNei/LegibleNei.log
