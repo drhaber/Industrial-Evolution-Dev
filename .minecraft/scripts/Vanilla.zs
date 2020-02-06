@@ -1,0 +1,1 @@
+furnace.setFuel(<tfc:ore/bituminous_coal>, 1600);
