@@ -1,0 +1,1 @@
+mods.astralsorcery.StarlightInfusion.addInfusion(<tfc:gem/beryl:2>, <astralsorcery:itemcraftingcomponent:4>, false, 0.7, 200);
