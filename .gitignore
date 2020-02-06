@@ -11,3 +11,7 @@
 natives/
 .minecraft/usercache.json
 .minecraft/logs/
+.minecraft/crafttweaker.log
+.minecraft/config/splash.properties
+.minecraft/config/InvTweaks.cfg
+instance.cfg
