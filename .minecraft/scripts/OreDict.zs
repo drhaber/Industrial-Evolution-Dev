@@ -9,6 +9,9 @@ import crafttweaker.oredict.IOreDictEntry;
 //Biotite
 <ore:gemEnderBiotite>.addAll(<ore:quartzDark>);
 <ore:quartzDark>.mirror(<ore:gemEnderBiotite>);
+//Coal
+<ore:gemCoal>.addAll(<ore:coal>);
+<ore:coal>.mirror(<ore:gemCoal>);
 //Sand 
 <ore:tfcSand>.addItems([<tfc:sand/granite>,<tfc:sand/diorite>,<tfc:sand/gabbro>,<tfc:sand/shale>,
 						   <tfc:sand/claystone>,<tfc:sand/rocksalt>,<tfc:sand/limestone>,<tfc:sand/conglomerate>,
