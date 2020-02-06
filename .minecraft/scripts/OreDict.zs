@@ -1,8 +1,4 @@
 import crafttweaker.oredict.IOreDictEntry;
-val sandy = <ore:sand>;
-sandy.remove(<minecraft:sand>);
-sandy.remove(<minecraft:sand:1>);
-
 //Aluminium
 <ore:ingotAluminum>.addAll(<ore:ingotAluminium>);
 <ore:ingotAluminium>.mirror(<ore:ingotAluminum>);
@@ -11,4 +7,8 @@ sandy.remove(<minecraft:sand:1>);
 //Aquamarine
 <ore:gemAquamarine>.addAll(<ore:gemBeryl>);
 //Sand 
-#<ore:tfcSand>.addAll(<ore:sand>);
+<ore:tfcSand>.addItems([<tfc:sand/granite>,<tfc:sand/diorite>,<tfc:sand/gabbro>,<tfc:sand/shale>,
+						   <tfc:sand/claystone>,<tfc:sand/rocksalt>,<tfc:sand/limestone>,<tfc:sand/conglomerate>,
+						   <tfc:sand/dolomite>,<tfc:sand/phyllite>,<tfc:sand/slate>,<tfc:sand/quartzite>,
+						   <tfc:sand/dacite>,<tfc:sand/andesite>,<tfc:sand/basalt>,<tfc:sand/rhyolite>,<tfc:sand/chalk>,
+						   <tfc:sand/chert>,<tfc:sand/schist>,<tfc:sand/gneiss>,<tfc:sand/marble>]);

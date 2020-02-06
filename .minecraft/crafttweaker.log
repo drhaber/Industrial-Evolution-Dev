@@ -31,6 +31,27 @@
 [INITIALIZATION][CLIENT][INFO] Mirroring ingotAluminum to ingotAluminium
 [INITIALIZATION][CLIENT][INFO] Copying contents of ore dictionary entry brick to ingotBrick
 [INITIALIZATION][CLIENT][INFO] Copying contents of ore dictionary entry gemBeryl to gemAquamarine
+[INITIALIZATION][CLIENT][INFO] Adding Granite Sand to ore dictionary entry tfcSand
+[INITIALIZATION][CLIENT][INFO] Adding Diorite Sand to ore dictionary entry tfcSand
+[INITIALIZATION][CLIENT][INFO] Adding Gabbro Sand to ore dictionary entry tfcSand
+[INITIALIZATION][CLIENT][INFO] Adding Shale Sand to ore dictionary entry tfcSand
+[INITIALIZATION][CLIENT][INFO] Adding Claystone Sand to ore dictionary entry tfcSand
+[INITIALIZATION][CLIENT][INFO] Adding Rocksalt Sand to ore dictionary entry tfcSand
+[INITIALIZATION][CLIENT][INFO] Adding Limestone Sand to ore dictionary entry tfcSand
+[INITIALIZATION][CLIENT][INFO] Adding Conglomerate Sand to ore dictionary entry tfcSand
+[INITIALIZATION][CLIENT][INFO] Adding Dolomite Sand to ore dictionary entry tfcSand
+[INITIALIZATION][CLIENT][INFO] Adding Phyllite Sand to ore dictionary entry tfcSand
+[INITIALIZATION][CLIENT][INFO] Adding Slate Sand to ore dictionary entry tfcSand
+[INITIALIZATION][CLIENT][INFO] Adding Quartzite Sand to ore dictionary entry tfcSand
+[INITIALIZATION][CLIENT][INFO] Adding Dacite Sand to ore dictionary entry tfcSand
+[INITIALIZATION][CLIENT][INFO] Adding Andesite Sand to ore dictionary entry tfcSand
+[INITIALIZATION][CLIENT][INFO] Adding Basalt Sand to ore dictionary entry tfcSand
+[INITIALIZATION][CLIENT][INFO] Adding Rhyolite Sand to ore dictionary entry tfcSand
+[INITIALIZATION][CLIENT][INFO] Adding Chalk Sand to ore dictionary entry tfcSand
+[INITIALIZATION][CLIENT][INFO] Adding Chert Sand to ore dictionary entry tfcSand
+[INITIALIZATION][CLIENT][INFO] Adding Schist Sand to ore dictionary entry tfcSand
+[INITIALIZATION][CLIENT][INFO] Adding Gneiss Sand to ore dictionary entry tfcSand
+[INITIALIZATION][CLIENT][INFO] Adding Marble Sand to ore dictionary entry tfcSand
 [INITIALIZATION][CLIENT][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: Other.zs}
 [INITIALIZATION][CLIENT][INFO] Translating tile.quark:thatch.name to Solid Thatch
 [INITIALIZATION][CLIENT][INFO] Translating tile.quark:thatch_stairs.name to Solid Thatch Stairs
@@ -38,7 +59,7 @@
 [INITIALIZATION][CLIENT][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: TFC.zs}
 [INITIALIZATION][CLIENT][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: Tic.zs}
 [INITIALIZATION][CLIENT][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: Vanilla.zs}
-[INITIALIZATION][CLIENT][INFO] Completed script loading in: 341ms
+[INITIALIZATION][CLIENT][INFO] Completed script loading in: 362ms
 [INITIALIZATION][CLIENT][INFO] Translating tile.quark:thatch.name to Solid Thatch
 [INITIALIZATION][CLIENT][INFO] Translating tile.quark:thatch_stairs.name to Solid Thatch Stairs
 [INITIALIZATION][CLIENT][INFO] Translating tile.quark:thatch_slab.name to Solid Thatch Slab
