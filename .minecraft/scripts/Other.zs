@@ -15,3 +15,6 @@ mods.immersiveengineering.BlastFurnace.addRecipe(<nuclearcraft:dust:6>*4, <forge
 
 //Creosote
 furnace.remove(<railcraft:fluid_bottle_creosote>);
+
+//Project Red
+furnace.addRecipe(<projectred-core:resource_item>*2, <ore:stone>);
