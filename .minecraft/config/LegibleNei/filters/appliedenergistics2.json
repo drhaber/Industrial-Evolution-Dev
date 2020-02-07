@@ -3,7 +3,7 @@ appliedenergistics2:[
 	{keep-one:[[crystal_seed],[0,600,1200]]};
 	{keep:[[entropy_manipulator,wireless_terminal,
 		charged_staff,matter_cannon,portable_cell,color_applicator],[],['{}','']]};
-	{keep-one:[[Facade],[]]};
+	{keep-one:[[facade],[]]};
 	{keep:[[paint_ball],[0]]};
 ]
 }
