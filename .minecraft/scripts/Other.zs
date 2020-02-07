@@ -15,6 +15,9 @@ mods.immersiveengineering.BlastFurnace.addRecipe(<nuclearcraft:dust:6>*4, <forge
 
 //Creosote
 furnace.remove(<railcraft:fluid_bottle_creosote>);
+//Water Bucket
+recipes.addShapeless(<minecraft:water_bucket>,[<forge:bucketfilled>.withTag({FluidName: "fresh_water", Amount: 1000})]);
+recipes.addShapeless(<forge:bucketfilled>.withTag({FluidName: "fresh_water", Amount: 1000}),[<minecraft:water_bucket>]);
 
 //Project Red
 furnace.addRecipe(<projectred-core:resource_item>*2, <ore:stone>);

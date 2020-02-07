@@ -3356,30 +3356,6 @@ appliedenergistics2:facade:0, Cable Facade - Sky Stone Small Brick
 appliedenergistics2:facade:0, Cable Facade - Naquadah Ore
 appliedenergistics2:facade:0, Cable Facade - Naquadah Block
 appliedenergistics2:facade:0, Cable Facade - Dark Marble
-appliedenergistics2:facade:0, Cable Facade - Swamp Oak Leaves
-appliedenergistics2:facade:0, Cable Facade - White Cave Crystal
-appliedenergistics2:facade:0, Cable Facade - Ender Biotite Ore
-appliedenergistics2:facade:0, Cable Facade - Block of Biotite
-appliedenergistics2:facade:0, Cable Facade - Chiseled Biotite Block
-appliedenergistics2:facade:0, Cable Facade - Pillar Biotite Block
-appliedenergistics2:facade:0, Cable Facade - Basalt
-appliedenergistics2:facade:0, Cable Facade - Marble
-appliedenergistics2:facade:0, Cable Facade - Limestone
-appliedenergistics2:facade:0, Cable Facade - Jasper
-appliedenergistics2:facade:0, Cable Facade - Slate
-appliedenergistics2:facade:0, Cable Facade - Brimstone
-appliedenergistics2:facade:0, Cable Facade - Brimstone Bricks
-appliedenergistics2:facade:0, Cable Facade - Elder Prismarine
-appliedenergistics2:facade:0, Cable Facade - Elder Sea Lantern
-appliedenergistics2:facade:0, Cable Facade - Glowcelium
-appliedenergistics2:facade:0, Cable Facade - Glowshroom
-appliedenergistics2:facade:0, Cable Facade - Sugar Block
-appliedenergistics2:facade:0, Cable Facade - Red Slime Block
-appliedenergistics2:facade:0, Cable Facade - Gravisand
-appliedenergistics2:facade:0, Cable Facade - Spruce Bookshelf
-appliedenergistics2:facade:0, Cable Facade - Lit Redstone Lamp
-appliedenergistics2:facade:0, Cable Facade - Blaze Lantern
-appliedenergistics2:facade:0, Cable Facade - Block of Charcoal
 appliedenergistics2:facade:0, Cable Facade - Polished Sandstone
 appliedenergistics2:facade:0, Cable Facade - Polished Stone
 appliedenergistics2:facade:0, Cable Facade - White Stained Planks
@@ -3408,6 +3384,30 @@ appliedenergistics2:facade:0, Cable Facade - Soul Sandstone
 appliedenergistics2:facade:0, Cable Facade - Turf Block
 appliedenergistics2:facade:0, Cable Facade - Netherwrought Stone
 appliedenergistics2:facade:0, Cable Facade - White Quilted Wool
+appliedenergistics2:facade:0, Cable Facade - Sugar Block
+appliedenergistics2:facade:0, Cable Facade - Red Slime Block
+appliedenergistics2:facade:0, Cable Facade - Gravisand
+appliedenergistics2:facade:0, Cable Facade - Swamp Oak Leaves
+appliedenergistics2:facade:0, Cable Facade - White Cave Crystal
+appliedenergistics2:facade:0, Cable Facade - Ender Biotite Ore
+appliedenergistics2:facade:0, Cable Facade - Block of Biotite
+appliedenergistics2:facade:0, Cable Facade - Chiseled Biotite Block
+appliedenergistics2:facade:0, Cable Facade - Pillar Biotite Block
+appliedenergistics2:facade:0, Cable Facade - Basalt
+appliedenergistics2:facade:0, Cable Facade - Marble
+appliedenergistics2:facade:0, Cable Facade - Limestone
+appliedenergistics2:facade:0, Cable Facade - Jasper
+appliedenergistics2:facade:0, Cable Facade - Slate
+appliedenergistics2:facade:0, Cable Facade - Brimstone
+appliedenergistics2:facade:0, Cable Facade - Brimstone Bricks
+appliedenergistics2:facade:0, Cable Facade - Elder Prismarine
+appliedenergistics2:facade:0, Cable Facade - Elder Sea Lantern
+appliedenergistics2:facade:0, Cable Facade - Glowcelium
+appliedenergistics2:facade:0, Cable Facade - Glowshroom
+appliedenergistics2:facade:0, Cable Facade - Spruce Bookshelf
+appliedenergistics2:facade:0, Cable Facade - Lit Redstone Lamp
+appliedenergistics2:facade:0, Cable Facade - Blaze Lantern
+appliedenergistics2:facade:0, Cable Facade - Block of Charcoal
 appliedenergistics2:facade:0, Cable Facade - Block of Smokey Quartz
 appliedenergistics2:facade:0, Cable Facade - Chiseled Smokey Quartz Block
 appliedenergistics2:facade:0, Cable Facade - Pillar Smokey Quartz Block
@@ -5213,279 +5213,6 @@ tombstone:crafting_ingredient:0, Strange Scroll
 tombstone:crafting_ingredient:1, Strange Tablet
 tombstone:crafting_ingredient:2, Impregnated Diamond,
 tombstone:crafting_ingredient:3, Grave's Dust
-quark:roots, tile.roots.name
-quark:root, item.root.name
-quark:roots_blue_flower, tile.roots_blue_flower.name
-quark:roots_black_flower, tile.roots_black_flower.name
-quark:roots_white_flower, tile.roots_white_flower.name
-quark:root_flower:0, Blue Sprout
-quark:root_flower:1, Black Sprout
-quark:root_flower:2, White Sprout
-quark:root_dye:0, Blue Dye
-quark:root_dye:1, Black Dye
-quark:root_dye:2, White Dye
-quark:diamond_heart, item.diamond_heart.name
-quark:archaeologist_hat, item.archaeologist_hat.name
-quark:variant_leaves:0, Swamp Oak Leaves
-quark:variant_leaves:1, Blossoming Leaves
-quark:variant_sapling:0, Swamp Oak Sapling
-quark:variant_sapling:1, Blossoming Sapling
-quark:crystal:0, White Cave Crystal
-quark:crystal:1, Red Cave Crystal
-quark:crystal:2, Orange Cave Crystal
-quark:crystal:3, Yellow Cave Crystal
-quark:crystal:4, Green Cave Crystal
-quark:crystal:5, Blue Cave Crystal
-quark:crystal:6, Indigo Cave Crystal
-quark:crystal:7, Violet Cave Crystal
-quark:crystal:8, Black Cave Crystal
-quark:crystal_pane:0, White Cave Crystal Sheet
-quark:crystal_pane:1, Red Cave Crystal Sheet
-quark:crystal_pane:2, Orange Cave Crystal Sheet
-quark:crystal_pane:3, Yellow Cave Crystal Sheet
-quark:crystal_pane:4, Green Cave Crystal Sheet
-quark:crystal_pane:5, Blue Cave Crystal Sheet
-quark:crystal_pane:6, Indigo Cave Crystal Sheet
-quark:crystal_pane:7, Violet Cave Crystal Sheet
-quark:crystal_pane:8, Black Cave Crystal Sheet
-quark:stone_speleothem, tile.stone_speleothem.name
-quark:granite_speleothem, tile.granite_speleothem.name
-quark:diorite_speleothem, tile.diorite_speleothem.name
-quark:andesite_speleothem, tile.andesite_speleothem.name
-quark:netherrack_speleothem, tile.netherrack_speleothem.name
-quark:basalt_speleothem, tile.basalt_speleothem.name
-quark:marble_speleothem, tile.marble_speleothem.name
-quark:limestone_speleothem, tile.limestone_speleothem.name
-quark:jasper_speleothem, tile.jasper_speleothem.name
-quark:slate_speleothem, tile.slate_speleothem.name
-quark:biotite_ore, tile.biotite_ore.name
-quark:biotite_block:0, Block of Biotite
-quark:biotite_block:1, Chiseled Biotite Block
-quark:biotite_block:2, Pillar Biotite Block
-quark:biotite, item.biotite.name
-quark:biotite_slab:0, Biotite Slab
-quark:biotite_stairs, tile.biotite_stairs.name
-quark:biotite_wall, tile.biotite_wall.name
-quark:monster_box, tile.monster_box.name
-quark:basalt:0, Basalt
-quark:basalt:1, Polished Basalt
-quark:stone_basalt_slab:0, Basalt Slab
-quark:stone_basalt_stairs, tile.stone_basalt_stairs.name
-quark:basalt_wall, tile.basalt_wall.name
-quark:frog_leg, item.frog_leg.name
-quark:cooked_frog_leg, item.cooked_frog_leg.name
-quark:golden_frog_leg, item.golden_frog_leg.name
-quark:pirate_hat, item.pirate_hat.name
-quark:crab_leg, item.crab_leg.name
-quark:cooked_crab_leg, item.cooked_crab_leg.name
-quark:crab_shell, item.crab_shell.name
-quark:marble:0, Marble
-quark:marble:1, Polished Marble
-quark:stone_marble_slab:0, Marble Slab
-quark:stone_marble_stairs, tile.stone_marble_stairs.name
-quark:marble_wall, tile.marble_wall.name
-quark:limestone:0, Limestone
-quark:limestone:1, Polished Limestone
-quark:stone_limestone_slab:0, Limestone Slab
-quark:stone_limestone_stairs, tile.stone_limestone_stairs.name
-quark:limestone_wall, tile.limestone_wall.name
-quark:jasper:0, Jasper
-quark:jasper:1, Polished Jasper
-quark:stone_jasper_slab:0, Jasper Slab
-quark:stone_jasper_stairs, tile.stone_jasper_stairs.name
-quark:jasper_wall, tile.jasper_wall.name
-quark:slate:0, Slate
-quark:slate:1, Polished Slate
-quark:stone_slate_slab:0, Slate Slab
-quark:stone_slate_stairs, tile.stone_slate_stairs.name
-quark:slate_wall, tile.slate_wall.name
-quark:biome_cobblestone:0, Brimstone
-quark:biome_cobblestone:1, Permafrost
-quark:biome_cobblestone:2, Cobbedstone
-quark:biome_brick:0, Brimstone Bricks
-quark:biome_brick:1, Permafrost Bricks
-quark:elder_prismarine:0, Elder Prismarine
-quark:elder_prismarine:1, Elder Prismarine Bricks
-quark:elder_prismarine:2, Dark Elder Prismarine
-quark:elder_sea_lantern, tile.elder_sea_lantern.name
-quark:fire_stone_slab:0, Brimstone Slab
-quark:fire_stone_stairs, tile.fire_stone_stairs.name
-quark:fire_stone_brick_slab:0, Brimstone Bricks Slab
-quark:fire_stone_brick_stairs, tile.fire_stone_brick_stairs.name
-quark:icy_stone_slab:0, Permafrost Slab
-quark:icy_stone_stairs, tile.icy_stone_stairs.name
-quark:icy_stone_brick_slab:0, Permafrost Bricks Slab
-quark:icy_stone_brick_stairs, tile.icy_stone_brick_stairs.name
-quark:cobbed_stone_slab:0, Cobbedstone Slab
-quark:cobbed_stone_stairs, tile.cobbed_stone_stairs.name
-quark:elder_prismarine_slab:0, Elder Prismarine Slab
-quark:elder_prismarine_stairs, tile.elder_prismarine_stairs.name
-quark:elder_prismarine_bricks_slab:0, Elder Prismarine Brick Slab
-quark:elder_prismarine_bricks_stairs, tile.elder_prismarine_bricks_stairs.name
-quark:elder_prismarine_dark_slab:0, Dark Elder Prismarine Slab
-quark:elder_prismarine_dark_stairs, tile.elder_prismarine_dark_stairs.name
-quark:fire_stone_wall, tile.fire_stone_wall.name
-quark:icy_stone_wall, tile.icy_stone_wall.name
-quark:cobbed_stone_wall, tile.cobbed_stone_wall.name
-quark:fire_stone_brick_wall, tile.fire_stone_brick_wall.name
-quark:icy_stone_brick_wall, tile.icy_stone_brick_wall.name
-quark:elder_prismarine_wall, tile.elder_prismarine_wall.name
-quark:elder_prismarine_bricks_wall, tile.elder_prismarine_bricks_wall.name
-quark:elder_prismarine_dark_wall, tile.elder_prismarine_dark_wall.name
-quark:glowcelium, tile.glowcelium.name
-quark:glowshroom, tile.glowshroom.name
-quark:glowshroom_block, tile.glowshroom_block.name
-quark:soul_bead, item.soul_bead.name
-quark:smoker, tile.smoker.name
-quark:pickarang, item.pickarang.name
-quark:arrow_ender, item.arrow_ender.name
-quark:arrow_explosive, item.arrow_explosive.name
-quark:arrow_torch, item.arrow_torch.name
-quark:slime_bucket:0, Slime in a Bucket
-quark:rune:0, White Rune
-quark:rune:1, Orange Rune
-quark:rune:2, Magenta Rune
-quark:rune:3, Light Blue Rune
-quark:rune:4, Yellow Rune
-quark:rune:5, Lime Rune
-quark:rune:6, Pink Rune
-quark:rune:7, Gray Rune
-quark:rune:8, Light Gray Rune
-quark:rune:9, Cyan Rune
-quark:rune:10, Purple Rune
-quark:rune:11, Blue Rune
-quark:rune:12, Brown Rune
-quark:rune:13, Green Rune
-quark:rune:14, Red Rune
-quark:rune:15, Black Rune
-quark:rune:16, Rainbow Rune
-quark:black_ash, tile.black_ash.name
-quark:ancient_tome, item.ancient_tome.name
-quark:horse_whistle, item.horse_whistle.name
-quark:soul_powder, item.soul_powder.name
-quark:parrot_egg:0, Red Parrot Egg
-quark:parrot_egg:1, Blue Parrot Egg
-quark:parrot_egg:2, Green Parrot Egg
-quark:parrot_egg:3, Cyan Parrot Egg
-quark:parrot_egg:4, Gray Parrot Egg
-quark:enderdragon_scale, item.enderdragon_scale.name
-quark:witch_hat, item.witch_hat.name
-quark:chute, tile.chute.name
-quark:sugar_block, tile.sugar_block.name
-quark:redstone_randomizer, tile.redstone_randomizer.name
-quark:iron_button, tile.iron_button.name
-quark:gold_button, tile.gold_button.name
-quark:iron_rod, tile.iron_rod.name
-quark:color_slime:0, Red Slime Block
-quark:color_slime:1, Blue Slime Block
-quark:color_slime:2, Cyan Slime Block
-quark:color_slime:3, Magenta Slime Block
-quark:color_slime:4, Yellow Slime Block
-quark:gravisand, tile.gravisand.name
-quark:redstone_inductor, tile.redstone_inductor.name
-quark:obsidian_pressure_plate, tile.obsidian_pressure_plate.name
-quark:rain_detector, tile.rain_detector.name
-quark:chain, item.chain.name
-quark:spruce_trapdoor, tile.spruce_trapdoor.name
-quark:birch_trapdoor, tile.birch_trapdoor.name
-quark:jungle_trapdoor, tile.jungle_trapdoor.name
-quark:acacia_trapdoor, tile.acacia_trapdoor.name
-quark:dark_oak_trapdoor, tile.dark_oak_trapdoor.name
-quark:paper_wall, tile.paper_wall.name
-quark:paper_wall_big, tile.paper_wall_big.name
-quark:paper_wall_sakura, tile.paper_wall_sakura.name
-quark:iron_ladder, tile.iron_ladder.name
-quark:paper_lantern:0, Paper Lamp
-quark:paper_lantern:1, Decorated Paper Lamp
-quark:colored_flowerpot_white, tile.colored_flowerpot_white.name
-quark:colored_flowerpot_orange, tile.colored_flowerpot_orange.name
-quark:colored_flowerpot_magenta, tile.colored_flowerpot_magenta.name
-quark:colored_flowerpot_light_blue, tile.colored_flowerpot_light_blue.name
-quark:colored_flowerpot_yellow, tile.colored_flowerpot_yellow.name
-quark:colored_flowerpot_lime, tile.colored_flowerpot_lime.name
-quark:colored_flowerpot_pink, tile.colored_flowerpot_pink.name
-quark:colored_flowerpot_gray, tile.colored_flowerpot_gray.name
-quark:colored_flowerpot_silver, tile.colored_flowerpot_silver.name
-quark:colored_flowerpot_cyan, tile.colored_flowerpot_cyan.name
-quark:colored_flowerpot_purple, tile.colored_flowerpot_purple.name
-quark:colored_flowerpot_blue, tile.colored_flowerpot_blue.name
-quark:colored_flowerpot_brown, tile.colored_flowerpot_brown.name
-quark:colored_flowerpot_green, tile.colored_flowerpot_green.name
-quark:colored_flowerpot_red, tile.colored_flowerpot_red.name
-quark:colored_flowerpot_black, tile.colored_flowerpot_black.name
-quark:custom_bookshelf:0, Spruce Bookshelf
-quark:custom_bookshelf:1, Birch Bookshelf
-quark:custom_bookshelf:2, Jungle Bookshelf
-quark:custom_bookshelf:3, Acacia Bookshelf
-quark:custom_bookshelf:4, Dark Oak Bookshelf
-quark:colored_item_frame:0, White Item Frame
-quark:colored_item_frame:1, Orange Item Frame
-quark:colored_item_frame:2, Magenta Item Frame
-quark:colored_item_frame:3, Light Blue Item Frame
-quark:colored_item_frame:4, Yellow Item Frame
-quark:colored_item_frame:5, Lime Item Frame
-quark:colored_item_frame:6, Pink Item Frame
-quark:colored_item_frame:7, Gray Item Frame
-quark:colored_item_frame:8, Light Gray Item Frame
-quark:colored_item_frame:9, Cyan Item Frame
-quark:colored_item_frame:10, Purple Item Frame
-quark:colored_item_frame:11, Blue Item Frame
-quark:colored_item_frame:12, Brown Item Frame
-quark:colored_item_frame:13, Green Item Frame
-quark:colored_item_frame:14, Red Item Frame
-quark:colored_item_frame:15, Black Item Frame
-quark:lit_lamp, tile.lit_lamp.name
-quark:custom_chest:0, Spruce Chest
-quark:custom_chest:1, Birch Chest
-quark:custom_chest:2, Jungle Chest
-quark:custom_chest:3, Acacia Chest
-quark:custom_chest:4, Dark Oak Chest
-quark:custom_chest_trap:0, Spruce Trapped Chest
-quark:custom_chest_trap:1, Birch Trapped Chest
-quark:custom_chest_trap:2, Jungle Trapped Chest
-quark:custom_chest_trap:3, Acacia Trapped Chest
-quark:custom_chest_trap:4, Dark Oak Trapped Chest
-quark:candle:0, White Candle
-quark:candle:1, Orange Candle
-quark:candle:2, Magenta Candle
-quark:candle:3, Light Blue Candle
-quark:candle:4, Yellow Candle
-quark:candle:5, Lime Candle
-quark:candle:6, Pink Candle
-quark:candle:7, Gray Candle
-quark:candle:8, Light Gray Candle
-quark:candle:9, Cyan Candle
-quark:candle:10, Purple Candle
-quark:candle:11, Blue Candle
-quark:candle:12, Brown Candle
-quark:candle:13, Green Candle
-quark:candle:14, Red Candle
-quark:candle:15, Black Candle
-quark:tallow, item.tallow.name
-quark:rope, tile.rope.name
-quark:blaze_lantern, tile.blaze_lantern.name
-quark:nether_brick_fence_gate, tile.nether_brick_fence_gate.name
-quark:leaf_carpet:0, Oak Leaf Carpet
-quark:leaf_carpet:1, Spruce Leaf Carpet
-quark:leaf_carpet:2, Birch Leaf Carpet
-quark:leaf_carpet:3, Jungle Leaf Carpet
-quark:leaf_carpet:4, Acacia Leaf Carpet
-quark:leaf_carpet:5, Dark Oak Leaf Carpet
-quark:leaf_carpet:6, Swamp Oak Leaf Carpet
-quark:leaf_carpet:7, Blossoming Leaf Carpet
-quark:spruce_pressure_plate, tile.spruce_pressure_plate.name
-quark:birch_pressure_plate, tile.birch_pressure_plate.name
-quark:jungle_pressure_plate, tile.jungle_pressure_plate.name
-quark:acacia_pressure_plate, tile.acacia_pressure_plate.name
-quark:dark_oak_pressure_plate, tile.dark_oak_pressure_plate.name
-quark:spruce_button, tile.spruce_button.name
-quark:birch_button, tile.birch_button.name
-quark:jungle_button, tile.jungle_button.name
-quark:acacia_button, tile.acacia_button.name
-quark:dark_oak_button, tile.dark_oak_button.name
-quark:grate, tile.grate.name
-quark:charcoal_block, tile.charcoal_block.name
-quark:glass_item_frame, item.glass_item_frame.name
 quark:sandstone_new:0, Polished Sandstone
 quark:sandstone_new:1, Sandstone Bricks
 quark:sandstone_new:2, Polished Red Sandstone
@@ -5806,6 +5533,279 @@ quark:quilted_wool:12, Brown Quilted Wool
 quark:quilted_wool:13, Green Quilted Wool
 quark:quilted_wool:14, Red Quilted Wool
 quark:quilted_wool:15, Black Quilted Wool
+quark:witch_hat, item.witch_hat.name
+quark:chute, tile.chute.name
+quark:sugar_block, tile.sugar_block.name
+quark:redstone_randomizer, tile.redstone_randomizer.name
+quark:iron_button, tile.iron_button.name
+quark:gold_button, tile.gold_button.name
+quark:iron_rod, tile.iron_rod.name
+quark:color_slime:0, Red Slime Block
+quark:color_slime:1, Blue Slime Block
+quark:color_slime:2, Cyan Slime Block
+quark:color_slime:3, Magenta Slime Block
+quark:color_slime:4, Yellow Slime Block
+quark:gravisand, tile.gravisand.name
+quark:redstone_inductor, tile.redstone_inductor.name
+quark:obsidian_pressure_plate, tile.obsidian_pressure_plate.name
+quark:rain_detector, tile.rain_detector.name
+quark:chain, item.chain.name
+quark:pickarang, item.pickarang.name
+quark:arrow_ender, item.arrow_ender.name
+quark:arrow_explosive, item.arrow_explosive.name
+quark:arrow_torch, item.arrow_torch.name
+quark:slime_bucket:0, Slime in a Bucket
+quark:rune:0, White Rune
+quark:rune:1, Orange Rune
+quark:rune:2, Magenta Rune
+quark:rune:3, Light Blue Rune
+quark:rune:4, Yellow Rune
+quark:rune:5, Lime Rune
+quark:rune:6, Pink Rune
+quark:rune:7, Gray Rune
+quark:rune:8, Light Gray Rune
+quark:rune:9, Cyan Rune
+quark:rune:10, Purple Rune
+quark:rune:11, Blue Rune
+quark:rune:12, Brown Rune
+quark:rune:13, Green Rune
+quark:rune:14, Red Rune
+quark:rune:15, Black Rune
+quark:rune:16, Rainbow Rune
+quark:black_ash, tile.black_ash.name
+quark:ancient_tome, item.ancient_tome.name
+quark:horse_whistle, item.horse_whistle.name
+quark:soul_powder, item.soul_powder.name
+quark:parrot_egg:0, Red Parrot Egg
+quark:parrot_egg:1, Blue Parrot Egg
+quark:parrot_egg:2, Green Parrot Egg
+quark:parrot_egg:3, Cyan Parrot Egg
+quark:parrot_egg:4, Gray Parrot Egg
+quark:enderdragon_scale, item.enderdragon_scale.name
+quark:roots, tile.roots.name
+quark:root, item.root.name
+quark:roots_blue_flower, tile.roots_blue_flower.name
+quark:roots_black_flower, tile.roots_black_flower.name
+quark:roots_white_flower, tile.roots_white_flower.name
+quark:root_flower:0, Blue Sprout
+quark:root_flower:1, Black Sprout
+quark:root_flower:2, White Sprout
+quark:root_dye:0, Blue Dye
+quark:root_dye:1, Black Dye
+quark:root_dye:2, White Dye
+quark:diamond_heart, item.diamond_heart.name
+quark:archaeologist_hat, item.archaeologist_hat.name
+quark:variant_leaves:0, Swamp Oak Leaves
+quark:variant_leaves:1, Blossoming Leaves
+quark:variant_sapling:0, Swamp Oak Sapling
+quark:variant_sapling:1, Blossoming Sapling
+quark:crystal:0, White Cave Crystal
+quark:crystal:1, Red Cave Crystal
+quark:crystal:2, Orange Cave Crystal
+quark:crystal:3, Yellow Cave Crystal
+quark:crystal:4, Green Cave Crystal
+quark:crystal:5, Blue Cave Crystal
+quark:crystal:6, Indigo Cave Crystal
+quark:crystal:7, Violet Cave Crystal
+quark:crystal:8, Black Cave Crystal
+quark:crystal_pane:0, White Cave Crystal Sheet
+quark:crystal_pane:1, Red Cave Crystal Sheet
+quark:crystal_pane:2, Orange Cave Crystal Sheet
+quark:crystal_pane:3, Yellow Cave Crystal Sheet
+quark:crystal_pane:4, Green Cave Crystal Sheet
+quark:crystal_pane:5, Blue Cave Crystal Sheet
+quark:crystal_pane:6, Indigo Cave Crystal Sheet
+quark:crystal_pane:7, Violet Cave Crystal Sheet
+quark:crystal_pane:8, Black Cave Crystal Sheet
+quark:stone_speleothem, tile.stone_speleothem.name
+quark:granite_speleothem, tile.granite_speleothem.name
+quark:diorite_speleothem, tile.diorite_speleothem.name
+quark:andesite_speleothem, tile.andesite_speleothem.name
+quark:netherrack_speleothem, tile.netherrack_speleothem.name
+quark:basalt_speleothem, tile.basalt_speleothem.name
+quark:marble_speleothem, tile.marble_speleothem.name
+quark:limestone_speleothem, tile.limestone_speleothem.name
+quark:jasper_speleothem, tile.jasper_speleothem.name
+quark:slate_speleothem, tile.slate_speleothem.name
+quark:biotite_ore, tile.biotite_ore.name
+quark:biotite_block:0, Block of Biotite
+quark:biotite_block:1, Chiseled Biotite Block
+quark:biotite_block:2, Pillar Biotite Block
+quark:biotite, item.biotite.name
+quark:biotite_slab:0, Biotite Slab
+quark:biotite_stairs, tile.biotite_stairs.name
+quark:biotite_wall, tile.biotite_wall.name
+quark:monster_box, tile.monster_box.name
+quark:basalt:0, Basalt
+quark:basalt:1, Polished Basalt
+quark:stone_basalt_slab:0, Basalt Slab
+quark:stone_basalt_stairs, tile.stone_basalt_stairs.name
+quark:basalt_wall, tile.basalt_wall.name
+quark:frog_leg, item.frog_leg.name
+quark:cooked_frog_leg, item.cooked_frog_leg.name
+quark:golden_frog_leg, item.golden_frog_leg.name
+quark:pirate_hat, item.pirate_hat.name
+quark:crab_leg, item.crab_leg.name
+quark:cooked_crab_leg, item.cooked_crab_leg.name
+quark:crab_shell, item.crab_shell.name
+quark:marble:0, Marble
+quark:marble:1, Polished Marble
+quark:stone_marble_slab:0, Marble Slab
+quark:stone_marble_stairs, tile.stone_marble_stairs.name
+quark:marble_wall, tile.marble_wall.name
+quark:limestone:0, Limestone
+quark:limestone:1, Polished Limestone
+quark:stone_limestone_slab:0, Limestone Slab
+quark:stone_limestone_stairs, tile.stone_limestone_stairs.name
+quark:limestone_wall, tile.limestone_wall.name
+quark:jasper:0, Jasper
+quark:jasper:1, Polished Jasper
+quark:stone_jasper_slab:0, Jasper Slab
+quark:stone_jasper_stairs, tile.stone_jasper_stairs.name
+quark:jasper_wall, tile.jasper_wall.name
+quark:slate:0, Slate
+quark:slate:1, Polished Slate
+quark:stone_slate_slab:0, Slate Slab
+quark:stone_slate_stairs, tile.stone_slate_stairs.name
+quark:slate_wall, tile.slate_wall.name
+quark:biome_cobblestone:0, Brimstone
+quark:biome_cobblestone:1, Permafrost
+quark:biome_cobblestone:2, Cobbedstone
+quark:biome_brick:0, Brimstone Bricks
+quark:biome_brick:1, Permafrost Bricks
+quark:elder_prismarine:0, Elder Prismarine
+quark:elder_prismarine:1, Elder Prismarine Bricks
+quark:elder_prismarine:2, Dark Elder Prismarine
+quark:elder_sea_lantern, tile.elder_sea_lantern.name
+quark:fire_stone_slab:0, Brimstone Slab
+quark:fire_stone_stairs, tile.fire_stone_stairs.name
+quark:fire_stone_brick_slab:0, Brimstone Bricks Slab
+quark:fire_stone_brick_stairs, tile.fire_stone_brick_stairs.name
+quark:icy_stone_slab:0, Permafrost Slab
+quark:icy_stone_stairs, tile.icy_stone_stairs.name
+quark:icy_stone_brick_slab:0, Permafrost Bricks Slab
+quark:icy_stone_brick_stairs, tile.icy_stone_brick_stairs.name
+quark:cobbed_stone_slab:0, Cobbedstone Slab
+quark:cobbed_stone_stairs, tile.cobbed_stone_stairs.name
+quark:elder_prismarine_slab:0, Elder Prismarine Slab
+quark:elder_prismarine_stairs, tile.elder_prismarine_stairs.name
+quark:elder_prismarine_bricks_slab:0, Elder Prismarine Brick Slab
+quark:elder_prismarine_bricks_stairs, tile.elder_prismarine_bricks_stairs.name
+quark:elder_prismarine_dark_slab:0, Dark Elder Prismarine Slab
+quark:elder_prismarine_dark_stairs, tile.elder_prismarine_dark_stairs.name
+quark:fire_stone_wall, tile.fire_stone_wall.name
+quark:icy_stone_wall, tile.icy_stone_wall.name
+quark:cobbed_stone_wall, tile.cobbed_stone_wall.name
+quark:fire_stone_brick_wall, tile.fire_stone_brick_wall.name
+quark:icy_stone_brick_wall, tile.icy_stone_brick_wall.name
+quark:elder_prismarine_wall, tile.elder_prismarine_wall.name
+quark:elder_prismarine_bricks_wall, tile.elder_prismarine_bricks_wall.name
+quark:elder_prismarine_dark_wall, tile.elder_prismarine_dark_wall.name
+quark:glowcelium, tile.glowcelium.name
+quark:glowshroom, tile.glowshroom.name
+quark:glowshroom_block, tile.glowshroom_block.name
+quark:soul_bead, item.soul_bead.name
+quark:smoker, tile.smoker.name
+quark:spruce_trapdoor, tile.spruce_trapdoor.name
+quark:birch_trapdoor, tile.birch_trapdoor.name
+quark:jungle_trapdoor, tile.jungle_trapdoor.name
+quark:acacia_trapdoor, tile.acacia_trapdoor.name
+quark:dark_oak_trapdoor, tile.dark_oak_trapdoor.name
+quark:paper_wall, tile.paper_wall.name
+quark:paper_wall_big, tile.paper_wall_big.name
+quark:paper_wall_sakura, tile.paper_wall_sakura.name
+quark:iron_ladder, tile.iron_ladder.name
+quark:paper_lantern:0, Paper Lamp
+quark:paper_lantern:1, Decorated Paper Lamp
+quark:colored_flowerpot_white, tile.colored_flowerpot_white.name
+quark:colored_flowerpot_orange, tile.colored_flowerpot_orange.name
+quark:colored_flowerpot_magenta, tile.colored_flowerpot_magenta.name
+quark:colored_flowerpot_light_blue, tile.colored_flowerpot_light_blue.name
+quark:colored_flowerpot_yellow, tile.colored_flowerpot_yellow.name
+quark:colored_flowerpot_lime, tile.colored_flowerpot_lime.name
+quark:colored_flowerpot_pink, tile.colored_flowerpot_pink.name
+quark:colored_flowerpot_gray, tile.colored_flowerpot_gray.name
+quark:colored_flowerpot_silver, tile.colored_flowerpot_silver.name
+quark:colored_flowerpot_cyan, tile.colored_flowerpot_cyan.name
+quark:colored_flowerpot_purple, tile.colored_flowerpot_purple.name
+quark:colored_flowerpot_blue, tile.colored_flowerpot_blue.name
+quark:colored_flowerpot_brown, tile.colored_flowerpot_brown.name
+quark:colored_flowerpot_green, tile.colored_flowerpot_green.name
+quark:colored_flowerpot_red, tile.colored_flowerpot_red.name
+quark:colored_flowerpot_black, tile.colored_flowerpot_black.name
+quark:custom_bookshelf:0, Spruce Bookshelf
+quark:custom_bookshelf:1, Birch Bookshelf
+quark:custom_bookshelf:2, Jungle Bookshelf
+quark:custom_bookshelf:3, Acacia Bookshelf
+quark:custom_bookshelf:4, Dark Oak Bookshelf
+quark:colored_item_frame:0, White Item Frame
+quark:colored_item_frame:1, Orange Item Frame
+quark:colored_item_frame:2, Magenta Item Frame
+quark:colored_item_frame:3, Light Blue Item Frame
+quark:colored_item_frame:4, Yellow Item Frame
+quark:colored_item_frame:5, Lime Item Frame
+quark:colored_item_frame:6, Pink Item Frame
+quark:colored_item_frame:7, Gray Item Frame
+quark:colored_item_frame:8, Light Gray Item Frame
+quark:colored_item_frame:9, Cyan Item Frame
+quark:colored_item_frame:10, Purple Item Frame
+quark:colored_item_frame:11, Blue Item Frame
+quark:colored_item_frame:12, Brown Item Frame
+quark:colored_item_frame:13, Green Item Frame
+quark:colored_item_frame:14, Red Item Frame
+quark:colored_item_frame:15, Black Item Frame
+quark:lit_lamp, tile.lit_lamp.name
+quark:custom_chest:0, Spruce Chest
+quark:custom_chest:1, Birch Chest
+quark:custom_chest:2, Jungle Chest
+quark:custom_chest:3, Acacia Chest
+quark:custom_chest:4, Dark Oak Chest
+quark:custom_chest_trap:0, Spruce Trapped Chest
+quark:custom_chest_trap:1, Birch Trapped Chest
+quark:custom_chest_trap:2, Jungle Trapped Chest
+quark:custom_chest_trap:3, Acacia Trapped Chest
+quark:custom_chest_trap:4, Dark Oak Trapped Chest
+quark:candle:0, White Candle
+quark:candle:1, Orange Candle
+quark:candle:2, Magenta Candle
+quark:candle:3, Light Blue Candle
+quark:candle:4, Yellow Candle
+quark:candle:5, Lime Candle
+quark:candle:6, Pink Candle
+quark:candle:7, Gray Candle
+quark:candle:8, Light Gray Candle
+quark:candle:9, Cyan Candle
+quark:candle:10, Purple Candle
+quark:candle:11, Blue Candle
+quark:candle:12, Brown Candle
+quark:candle:13, Green Candle
+quark:candle:14, Red Candle
+quark:candle:15, Black Candle
+quark:tallow, item.tallow.name
+quark:rope, tile.rope.name
+quark:blaze_lantern, tile.blaze_lantern.name
+quark:nether_brick_fence_gate, tile.nether_brick_fence_gate.name
+quark:leaf_carpet:0, Oak Leaf Carpet
+quark:leaf_carpet:1, Spruce Leaf Carpet
+quark:leaf_carpet:2, Birch Leaf Carpet
+quark:leaf_carpet:3, Jungle Leaf Carpet
+quark:leaf_carpet:4, Acacia Leaf Carpet
+quark:leaf_carpet:5, Dark Oak Leaf Carpet
+quark:leaf_carpet:6, Swamp Oak Leaf Carpet
+quark:leaf_carpet:7, Blossoming Leaf Carpet
+quark:spruce_pressure_plate, tile.spruce_pressure_plate.name
+quark:birch_pressure_plate, tile.birch_pressure_plate.name
+quark:jungle_pressure_plate, tile.jungle_pressure_plate.name
+quark:acacia_pressure_plate, tile.acacia_pressure_plate.name
+quark:dark_oak_pressure_plate, tile.dark_oak_pressure_plate.name
+quark:spruce_button, tile.spruce_button.name
+quark:birch_button, tile.birch_button.name
+quark:jungle_button, tile.jungle_button.name
+quark:acacia_button, tile.acacia_button.name
+quark:dark_oak_button, tile.dark_oak_button.name
+quark:grate, tile.grate.name
+quark:charcoal_block, tile.charcoal_block.name
+quark:glass_item_frame, item.glass_item_frame.name
 quark:glass_shards:0, Glass Shard
 quark:glass_shards:1, White Glass Shard
 quark:glass_shards:2, Orange Glass Shard
@@ -5823,6 +5823,328 @@ quark:glass_shards:13, Brown Glass Shard
 quark:glass_shards:14, Green Glass Shard
 quark:glass_shards:15, Red Glass Shard
 quark:glass_shards:16, Black Glass Shard
+bibliocraft:bookcase:0, Oak Bookcase
+bibliocraft:bookcase:1, Spruce Bookcase
+bibliocraft:bookcase:2, Birch Bookcase
+bibliocraft:bookcase:3, Jungle Bookcase
+bibliocraft:bookcase:4, Acacia Bookcase
+bibliocraft:bookcase:5, Dark Oak Bookcase
+bibliocraft:bookcase:6, Framed Bookcase
+bibliocraft:bookcasecreative:0, Oak Creative Bookcase
+bibliocraft:bookcasecreative:1, Spruce Creative Bookcase
+bibliocraft:bookcasecreative:2, Birch Creative Bookcase
+bibliocraft:bookcasecreative:3, Jungle Creative Bookcase
+bibliocraft:bookcasecreative:4, Acacia Creative Bookcase
+bibliocraft:bookcasecreative:5, Dark Oak Creative Bookcase
+bibliocraft:bookcasecreative:6, Framed Creative Bookcase
+bibliocraft:shelf:0, Oak Shelf
+bibliocraft:shelf:1, Spruce Shelf
+bibliocraft:shelf:2, Birch Shelf
+bibliocraft:shelf:3, Jungle Shelf
+bibliocraft:shelf:4, Acacia Shelf
+bibliocraft:shelf:5, Dark Oak Shelf
+bibliocraft:shelf:6, Framed Shelf
+bibliocraft:markerpole, tile.BiblioCraft:MarkerPole.name
+bibliocraft:clipboard, tile.BiblioCraft:Clipboard.name
+bibliocraft:lanterngold:0, Fancy Lantern
+bibliocraft:lanterngold:1, Fancy Lantern
+bibliocraft:lanterngold:2, Fancy Lantern
+bibliocraft:lanterngold:3, Fancy Lantern
+bibliocraft:lanterngold:4, Fancy Lantern
+bibliocraft:lanterngold:5, Fancy Lantern
+bibliocraft:lanterngold:6, Fancy Lantern
+bibliocraft:lanterngold:7, Fancy Lantern
+bibliocraft:lanterngold:8, Fancy Lantern
+bibliocraft:lanterngold:9, Fancy Lantern
+bibliocraft:lanterngold:10, Fancy Lantern
+bibliocraft:lanterngold:11, Fancy Lantern
+bibliocraft:lanterngold:12, Fancy Lantern
+bibliocraft:lanterngold:13, Fancy Lantern
+bibliocraft:lanterngold:14, Fancy Lantern
+bibliocraft:lanterngold:15, Fancy Lantern
+bibliocraft:lanterniron:0, Fancy Lantern
+bibliocraft:lanterniron:1, Fancy Lantern
+bibliocraft:lanterniron:2, Fancy Lantern
+bibliocraft:lanterniron:3, Fancy Lantern
+bibliocraft:lanterniron:4, Fancy Lantern
+bibliocraft:lanterniron:5, Fancy Lantern
+bibliocraft:lanterniron:6, Fancy Lantern
+bibliocraft:lanterniron:7, Fancy Lantern
+bibliocraft:lanterniron:8, Fancy Lantern
+bibliocraft:lanterniron:9, Fancy Lantern
+bibliocraft:lanterniron:10, Fancy Lantern
+bibliocraft:lanterniron:11, Fancy Lantern
+bibliocraft:lanterniron:12, Fancy Lantern
+bibliocraft:lanterniron:13, Fancy Lantern
+bibliocraft:lanterniron:14, Fancy Lantern
+bibliocraft:lanterniron:15, Fancy Lantern
+bibliocraft:lampgold:0, Fancy Lamp
+bibliocraft:lampgold:1, Fancy Lamp
+bibliocraft:lampgold:2, Fancy Lamp
+bibliocraft:lampgold:3, Fancy Lamp
+bibliocraft:lampgold:4, Fancy Lamp
+bibliocraft:lampgold:5, Fancy Lamp
+bibliocraft:lampgold:6, Fancy Lamp
+bibliocraft:lampgold:7, Fancy Lamp
+bibliocraft:lampgold:8, Fancy Lamp
+bibliocraft:lampgold:9, Fancy Lamp
+bibliocraft:lampgold:10, Fancy Lamp
+bibliocraft:lampgold:11, Fancy Lamp
+bibliocraft:lampgold:12, Fancy Lamp
+bibliocraft:lampgold:13, Fancy Lamp
+bibliocraft:lampgold:14, Fancy Lamp
+bibliocraft:lampgold:15, Fancy Lamp
+bibliocraft:lampiron:0, Fancy Lamp
+bibliocraft:lampiron:1, Fancy Lamp
+bibliocraft:lampiron:2, Fancy Lamp
+bibliocraft:lampiron:3, Fancy Lamp
+bibliocraft:lampiron:4, Fancy Lamp
+bibliocraft:lampiron:5, Fancy Lamp
+bibliocraft:lampiron:6, Fancy Lamp
+bibliocraft:lampiron:7, Fancy Lamp
+bibliocraft:lampiron:8, Fancy Lamp
+bibliocraft:lampiron:9, Fancy Lamp
+bibliocraft:lampiron:10, Fancy Lamp
+bibliocraft:lampiron:11, Fancy Lamp
+bibliocraft:lampiron:12, Fancy Lamp
+bibliocraft:lampiron:13, Fancy Lamp
+bibliocraft:lampiron:14, Fancy Lamp
+bibliocraft:lampiron:15, Fancy Lamp
+bibliocraft:furniturepaneler:0, Oak Furniture Paneler
+bibliocraft:furniturepaneler:1, Spruce Furniture Paneler
+bibliocraft:furniturepaneler:2, Birch Furniture Paneler
+bibliocraft:furniturepaneler:3, Jungle Furniture Paneler
+bibliocraft:furniturepaneler:4, Acacia Furniture Paneler
+bibliocraft:furniturepaneler:5, Dark Oak Furniture Paneler
+bibliocraft:furniturepaneler:6, Framed Furniture Paneler
+bibliocraft:framedchest:0, Oak Framed Chest
+bibliocraft:framedchest:1, Spruce Framed Chest
+bibliocraft:framedchest:2, Birch Framed Chest
+bibliocraft:framedchest:3, Jungle Framed Chest
+bibliocraft:framedchest:4, Acacia Framed Chest
+bibliocraft:framedchest:5, Dark Oak Framed Chest
+bibliocraft:framedchest:6, Framed Framed Chest
+bibliocraft:fancysign:0, Oak Fancy Sign
+bibliocraft:fancysign:1, Spruce Fancy Sign
+bibliocraft:fancysign:2, Birch Fancy Sign
+bibliocraft:fancysign:3, Jungle Fancy Sign
+bibliocraft:fancysign:4, Acacia Fancy Sign
+bibliocraft:fancysign:5, Dark Oak Fancy Sign
+bibliocraft:fancysign:6, Framed Fancy Sign
+bibliocraft:fancyworkbench:0, Oak Fancy Workbench
+bibliocraft:fancyworkbench:1, Spruce Fancy Workbench
+bibliocraft:fancyworkbench:2, Birch Fancy Workbench
+bibliocraft:fancyworkbench:3, Jungle Fancy Workbench
+bibliocraft:fancyworkbench:4, Acacia Fancy Workbench
+bibliocraft:fancyworkbench:5, Dark Oak Workbench
+bibliocraft:fancyworkbench:6, Framed Fancy Workbench
+bibliocraft:potionshelf:0, Oak Potion Shelf
+bibliocraft:potionshelf:1, Spruce Potion Shelf
+bibliocraft:potionshelf:2, Birch Potion Shelf
+bibliocraft:potionshelf:3, Jungle Potion Shelf
+bibliocraft:potionshelf:4, Acacia Potion Shelf
+bibliocraft:potionshelf:5, Dark Oak Potion Shelf
+bibliocraft:potionshelf:6, Framed Potion Shelf
+bibliocraft:toolrack:0, Oak Tool Rack
+bibliocraft:toolrack:1, Spruce Tool Rack
+bibliocraft:toolrack:2, Birch Tool Rack
+bibliocraft:toolrack:3, Jungle Tool Rack
+bibliocraft:toolrack:4, Acacia Tool Rack
+bibliocraft:toolrack:5, Dark Oak Tool Rack
+bibliocraft:toolrack:6, Framed Tool Rack
+bibliocraft:label:0, Oak Wood Label
+bibliocraft:label:1, Spruce Wood Label
+bibliocraft:label:2, Birch Wood Label
+bibliocraft:label:3, Jungle Wood Label
+bibliocraft:label:4, Acacia Label
+bibliocraft:label:5, Dark Oak Label
+bibliocraft:label:6, Framed Label
+bibliocraft:desk:0, Oak Desk
+bibliocraft:desk:1, Spruce Desk
+bibliocraft:desk:2, Birch Desk
+bibliocraft:desk:3, Jungle Desk
+bibliocraft:desk:4, Acacia Desk
+bibliocraft:desk:5, Dark Oak Desk
+bibliocraft:desk:6, Framed Desk
+bibliocraft:table:0, Oak Table
+bibliocraft:table:1, Spruce Table
+bibliocraft:table:2, Birch Table
+bibliocraft:table:3, Jungle Table
+bibliocraft:table:4, Acacia Table
+bibliocraft:table:5, Dark Oak Table
+bibliocraft:table:6, Framed Table
+bibliocraft:seat:0, Oak Seat
+bibliocraft:seat:1, Spruce Seat
+bibliocraft:seat:2, Birch Seat
+bibliocraft:seat:3, Jungle Seat
+bibliocraft:seat:4, Acacia Seat
+bibliocraft:seat:5, Dark Oak Seat
+bibliocraft:seat:6, Framed Seat
+bibliocraft:clock:0, Oak Clock
+bibliocraft:clock:1, Spruce Clock
+bibliocraft:clock:2, Birch Clock
+bibliocraft:clock:3, Jungle Clock
+bibliocraft:clock:4, Acacia Clock
+bibliocraft:clock:5, Dark Oak Clock
+bibliocraft:clock:6, Framed Clock
+bibliocraft:case:0, Oak Case
+bibliocraft:case:1, Spruce Case
+bibliocraft:case:2, Birch Case
+bibliocraft:case:3, Jungle Case
+bibliocraft:case:4, Acacia Case
+bibliocraft:case:5, Dark Oak Case
+bibliocraft:case:6, Framed Case
+bibliocraft:mapframe:0, Oak Map Frame
+bibliocraft:mapframe:1, Spruce Map Frame
+bibliocraft:mapframe:2, Birch Map Frame
+bibliocraft:mapframe:3, Jungle Map Frame
+bibliocraft:mapframe:4, Acacia Map Frame
+bibliocraft:mapframe:5, Dark Oak Map Frame
+bibliocraft:mapframe:6, Framed Map Frame
+bibliocraft:paintingframeflat:0, Oak Painting Frame
+bibliocraft:paintingframeflat:1, Spruce Painting Frame
+bibliocraft:paintingframeflat:2, Birch Painting Frame
+bibliocraft:paintingframeflat:3, Jungle Painting Frame
+bibliocraft:paintingframeflat:4, Acacia Painting Frame
+bibliocraft:paintingframeflat:5, Dark Oak Painting Frame
+bibliocraft:paintingframeflat:6, Framed Painting Frame
+bibliocraft:paintingframesimple:0, Oak Painting Frame
+bibliocraft:paintingframesimple:1, Spruce Painting Frame
+bibliocraft:paintingframesimple:2, Birch Painting Frame
+bibliocraft:paintingframesimple:3, Jungle Painting Frame
+bibliocraft:paintingframesimple:4, Acacia Painting Frame
+bibliocraft:paintingframesimple:5, Dark Oak Painting Frame
+bibliocraft:paintingframesimple:6, Framed Painting Frame
+bibliocraft:paintingframemiddle:0, Oak Painting Frame
+bibliocraft:paintingframemiddle:1, Spruce Painting Frame
+bibliocraft:paintingframemiddle:2, Birch Painting Frame
+bibliocraft:paintingframemiddle:3, Jungle Painting Frame
+bibliocraft:paintingframemiddle:4, Acacia Painting Frame
+bibliocraft:paintingframemiddle:5, Dark Oak Painting Frame
+bibliocraft:paintingframemiddle:6, Framed Painting Frame
+bibliocraft:paintingframefancy:0, Oak Painting Frame
+bibliocraft:paintingframefancy:1, Spruce Painting Frame
+bibliocraft:paintingframefancy:2, Birch Painting Frame
+bibliocraft:paintingframefancy:3, Jungle Painting Frame
+bibliocraft:paintingframefancy:4, Acacia Painting Frame
+bibliocraft:paintingframefancy:5, Dark Oak Painting Frame
+bibliocraft:paintingframefancy:6, Framed Painting Frame
+bibliocraft:paintingframeborderless:0, Oak Painting Frame
+bibliocraft:paintingframeborderless:1, Spruce Painting Frame
+bibliocraft:paintingframeborderless:2, Birch Painting Frame
+bibliocraft:paintingframeborderless:3, Jungle Painting Frame
+bibliocraft:paintingframeborderless:4, Acacia Painting Frame
+bibliocraft:paintingframeborderless:5, Dark Oak Painting Frame
+bibliocraft:paintingframeborderless:6, Framed Painting Frame
+bibliocraft:paintingpress, Painting Press
+bibliocraft:typewriter:0, White Typewriter
+bibliocraft:typewriter:1, Light Gray Typewriter
+bibliocraft:typewriter:2, Gray Typewriter
+bibliocraft:typewriter:3, Black Typewriter
+bibliocraft:typewriter:4, Red Typewriter
+bibliocraft:typewriter:5, Orange Typewriter
+bibliocraft:typewriter:6, Yellow Typewriter
+bibliocraft:typewriter:7, Lime Typewriter
+bibliocraft:typewriter:8, Green Typewriter
+bibliocraft:typewriter:9, Cyan Typewriter
+bibliocraft:typewriter:10, Light Blue Typewriter
+bibliocraft:typewriter:11, Blue Typewriter
+bibliocraft:typewriter:12, Purple Typewriter
+bibliocraft:typewriter:13, Magenta Typewriter
+bibliocraft:typewriter:14, Pink Typewriter
+bibliocraft:typewriter:15, Brown Typewriter
+bibliocraft:swordpedestal:0, Sword Pedestal
+bibliocraft:swordpedestal:1, Sword Pedestal
+bibliocraft:swordpedestal:2, Sword Pedestal
+bibliocraft:swordpedestal:3, Sword Pedestal
+bibliocraft:swordpedestal:4, Sword Pedestal
+bibliocraft:swordpedestal:5, Sword Pedestal
+bibliocraft:swordpedestal:6, Sword Pedestal
+bibliocraft:swordpedestal:7, Sword Pedestal
+bibliocraft:swordpedestal:8, Sword Pedestal
+bibliocraft:swordpedestal:9, Sword Pedestal
+bibliocraft:swordpedestal:10, Sword Pedestal
+bibliocraft:swordpedestal:11, Sword Pedestal
+bibliocraft:swordpedestal:12, Sword Pedestal
+bibliocraft:swordpedestal:13, Sword Pedestal
+bibliocraft:swordpedestal:14, Sword Pedestal
+bibliocraft:swordpedestal:15, Sword Pedestal
+bibliocraft:armorstand:0, Oak Armor Stand
+bibliocraft:armorstand:1, Spruce Armor Stand
+bibliocraft:armorstand:2, Birch Armor Stand
+bibliocraft:armorstand:3, Jungle Armor Stand
+bibliocraft:armorstand:4, Acacia Armor Stand
+bibliocraft:armorstand:5, Dark Oak Armor Stand
+bibliocraft:armorstand:6, Framed Armor Stand
+bibliocraft:bell, Desk Bell
+bibliocraft:typesettingtable, Typesetting Table
+bibliocraft:printingpress, Printing Press
+bibliocraft:cookiejar, Cookie Jar
+bibliocraft:dinnerplate, Dinner Plate
+bibliocraft:discrack, Disc Rack
+bibliocraft:compass, Compass
+bibliocraft:maptool, Drafting Compass
+bibliocraft:seatback1:0, Oak Seat Back
+bibliocraft:seatback1:1, Spruce Seat Back
+bibliocraft:seatback1:2, Birch Seat Back
+bibliocraft:seatback1:3, Jungle Seat Back
+bibliocraft:seatback1:4, Acacia Seat Back
+bibliocraft:seatback1:5, Dark Oak Seat Back
+bibliocraft:seatback1:6, Framed Seat Back
+bibliocraft:seatback2:0, Oak Seat Back
+bibliocraft:seatback2:1, Spruce Seat Back
+bibliocraft:seatback2:2, Birch Seat Back
+bibliocraft:seatback2:3, Jungle Seat Back
+bibliocraft:seatback2:4, Acacia Seat Back
+bibliocraft:seatback2:5, Dark Oak Seat Back
+bibliocraft:seatback2:6, Framed Seat Back
+bibliocraft:seatback3:0, Oak Seat Back
+bibliocraft:seatback3:1, Spruce Seat Back
+bibliocraft:seatback3:2, Birch Seat Back
+bibliocraft:seatback3:3, Jungle Seat Back
+bibliocraft:seatback3:4, Acacia Seat Back
+bibliocraft:seatback3:5, Dark Oak Seat Back
+bibliocraft:seatback3:6, Framed Seat Back
+bibliocraft:seatback4:0, Oak Seat Back
+bibliocraft:seatback4:1, Spruce Seat Back
+bibliocraft:seatback4:2, Birch Seat Back
+bibliocraft:seatback4:3, Jungle Seat Back
+bibliocraft:seatback4:4, Acacia Seat Back
+bibliocraft:seatback4:5, Dark Oak Seat Back
+bibliocraft:seatback4:6, Framed Seat Back
+bibliocraft:seatback5:0, Oak Seat Back
+bibliocraft:seatback5:1, Spruce Seat Back
+bibliocraft:seatback5:2, Birch Seat Back
+bibliocraft:seatback5:3, Jungle Seat Back
+bibliocraft:seatback5:4, Acacia Seat Back
+bibliocraft:seatback5:5, Dark Oak Seat Back
+bibliocraft:seatback5:6, Framed Seat Back
+bibliocraft:stockroomcatalog, Stockroom Catalog
+bibliocraft:plumbline, Plumb line
+bibliocraft:framingsaw, Framing Saw
+bibliocraft:framingboard, Framing Board
+bibliocraft:framingsheet, Framing Sheet
+bibliocraft:testeritem, ItemStack Name Tester
+bibliocraft:atlasbook:0, Atlas
+bibliocraft:atlasplate, Atlas Plate
+bibliocraft:deathcompass, Eternal Compass
+bibliocraft:paintingcanvas, Painting Canvas
+bibliocraft:bigbook, Big Writing Book
+bibliocraft:recipebook, Empty Recipe Book
+bibliocraft:slottedbook, Slotted Book
+bibliocraft:handdrill, Hand Drill
+bibliocraft:tapemeasure, Tape Measure
+bibliocraft:tape, Tape Measure Reel
+bibliocraft:bibliochase, Print Press Chase
+bibliocraft:printplate, Print Press Plate
+bibliocraft:enchantedplate, Enchanted Plate
+bibliocraft:biblioredbook, Redstone: Volume I
+bibliocraft:biblioglasses:0, Reading Glasses
+bibliocraft:biblioglasses:1, Tinted Glasses
+bibliocraft:biblioglasses:2, Monocle
+bibliocraft:bibliodrill, Screw Gun
+bibliocraft:bibliocreativelock, Lock and Key
+bibliocraft:biblioclipboard, Clipboard
 botania:lexicon, item.lexicon.name
 botania:petal:0, Mystical White Petal
 botania:petal:1, Mystical Orange Petal
@@ -6873,10 +7195,10 @@ tfc:wooden_bucket:0, Lubricant§r Bucket§r
 tfc:metal/bucket/blue_steel:0, Blue Steel Bucket
 tfc:metal/bucket/blue_steel:0, Lava§r Bucket§r
 tfc:metal/bucket/red_steel:0, Red Steel Bucket
-tfc:metal/bucket/red_steel:0, Salt Water§r Bucket§r
-tfc:metal/bucket/red_steel:0, Hot water§r Bucket§r
-tfc:metal/bucket/red_steel:0, Water§r Bucket§r
 tfc:metal/bucket/red_steel:0, Fresh Water§r Bucket§r
+tfc:metal/bucket/red_steel:0, Salt Water§r Bucket§r
+tfc:metal/bucket/red_steel:0, Water§r Bucket§r
+tfc:metal/bucket/red_steel:0, Hot water§r Bucket§r
 tfc:rock/granite, Granite Rock
 tfc:rock/diorite, Diorite Rock
 tfc:rock/gabbro, Gabbro Rock
@@ -10887,5 +11209,4 @@ astralsorcery:blockcelestialcollectorcrystal:0, Floating Crystal
 astralsorcery:blockcelestialcollectorcrystal:0, Floating Crystal
 astralsorcery:blockcelestialcollectorcrystal:0, Floating Crystal
 base:wrench, Wrench
-contenttweaker:bright_red_glass, item.contenttweaker.bright_red_glass.name
 patchouli:guide_book, Guide Book
