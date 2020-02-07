@@ -8,3 +8,8 @@ recipes.addShaped(<minecraft:coal_block>,[
 	[CO,CO,CO],
 	[CO,CO,CO],
 	[CO,CO,CO]]);
+	
+//Anvil
+recipes.remove(<railcraft:anvil>);
+recipes.addShapeless(<minecraft:anvil>,[<tfc:metal/anvil/wrought_iron>]);
+recipes.addShapeless(<railcraft:anvil>,[<tfc:metal/anvil/black_steel>]);	
