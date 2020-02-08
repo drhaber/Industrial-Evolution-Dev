@@ -9,6 +9,15 @@ import crafttweaker.oredict.IOreDictEntry;
 //Biotite
 <ore:gemEnderBiotite>.addAll(<ore:quartzDark>);
 <ore:quartzDark>.mirror(<ore:gemEnderBiotite>);
+//Silicon
+<ore:itemSilicon>.add(<projectred-core:resource_item:301>);
+mods.jei.JEI.removeAndHide(<appliedenergistics2:material:5>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:gem:6>);
+furnace.remove(<projectred-core:resource_item:300>);
+mods.appliedenergistics2.Inscriber.removeRecipe(<appliedenergistics2:material:20>); 
+mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput(<nuclearcraft:alloy:13>*2);
+mods.appliedenergistics2.Inscriber.addRecipe(<appliedenergistics2:material:20>,<ore:itemSilicon>, true, <appliedenergistics2:material:19>);
+mods.nuclearcraft.alloy_furnace.addRecipe(<ore:itemSilicon>, <ore:dustGraphite>, <nuclearcraft:alloy:13>*2);
 //Coal
 <ore:gemCoal>.addAll(<ore:coal>);
 <ore:coal>.mirror(<ore:gemCoal>);

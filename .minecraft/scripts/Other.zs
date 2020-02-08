@@ -21,3 +21,7 @@ recipes.addShapeless(<forge:bucketfilled>.withTag({FluidName: "fresh_water", Amo
 
 //Project Red
 furnace.addRecipe(<projectred-core:resource_item>*2, <ore:stone>);
+mods.jei.JEI.removeAndHide(<projectred-transmission:wire:34>, false);
+mods.jei.JEI.removeAndHide(<projectred-transmission:framed_wire:34>, false);
+recipes.addShapeless(<projectred-core:resource_item:301> * 8, [<ore:saw>.reuse().transformDamage(7), <projectred-core:resource_item:300>]);
+

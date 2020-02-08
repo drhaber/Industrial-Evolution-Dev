@@ -1,8 +1,0 @@
-{
-ProjRed|Core:[
-	{hide:[[projectred.core.part],[11-18,35-51,55-59]]};
-],
-ProjRed|Transmission:[
-	{hide:[projectred.transmission.,[wire,framewire],[34]]};
-]
-}
