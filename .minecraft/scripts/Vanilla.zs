@@ -8,7 +8,12 @@ recipes.addShaped(<minecraft:coal_block>,[
 	[CO,CO,CO],
 	[CO,CO,CO],
 	[CO,CO,CO]]);
-	
+
+//End Portal
+recipes.addShaped(<minecraft:end_portal_frame>,[
+	[<nuclearcraft:alloy:2>,<opencomputers:material:13>,<nuclearcraft:alloy:2>],
+	[<minecraft:end_stone>,<aunis:crystal_ender>,<minecraft:end_stone>],
+	[<minecraft:end_stone>,<minecraft:end_stone>,<minecraft:end_stone>]]);	
 //Anvil
 recipes.remove(<railcraft:anvil>);
 recipes.addShapeless(<minecraft:anvil>,[<tfc:metal/anvil/wrought_iron>]);

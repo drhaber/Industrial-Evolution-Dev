@@ -9,6 +9,8 @@ import crafttweaker.oredict.IOreDictEntry;
 //Biotite
 <ore:gemEnderBiotite>.addAll(<ore:quartzDark>);
 <ore:quartzDark>.mirror(<ore:gemEnderBiotite>);
+//End Stone
+<ore:endstone>.add(<opencomputers:endstone>);
 //Silicon
 <ore:itemSilicon>.add(<projectred-core:resource_item:301>);
 mods.jei.JEI.removeAndHide(<appliedenergistics2:material:5>);

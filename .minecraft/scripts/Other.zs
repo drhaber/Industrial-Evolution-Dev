@@ -24,4 +24,15 @@ furnace.addRecipe(<projectred-core:resource_item>*2, <ore:stone>);
 mods.jei.JEI.removeAndHide(<projectred-transmission:wire:34>, false);
 mods.jei.JEI.removeAndHide(<projectred-transmission:framed_wire:34>, false);
 recipes.addShapeless(<projectred-core:resource_item:301> * 8, [<ore:saw>.reuse().transformDamage(7), <projectred-core:resource_item:300>]);
-
+furnace.remove(<projectred-core:resource_item:104>);
+furnace.remove(<projectred-core:resource_item:342>);
+mods.jei.JEI.removeAndHide(<projectred-core:resource_item:312>, false);
+mods.jei.JEI.removeAndHide(<projectred-core:multimeter>, false);
+mods.jei.JEI.removeAndHide(<projectred-core:screwdriver>, false);
+mods.jei.JEI.hide(<projectred-core:resource_item:105>);
+mods.jei.JEI.hide(<projectred-core:resource_item:104>);
+mods.jei.JEI.hide(<projectred-core:resource_item:342>);
+mods.jei.JEI.hide(<projectred-core:resource_item:101>);
+mods.jei.JEI.hide(<projectred-core:resource_item:102>);
+mods.jei.JEI.hide(<projectred-core:resource_item:100>);
+mods.jei.JEI.hide(<projectred-core:resource_item:600>);
