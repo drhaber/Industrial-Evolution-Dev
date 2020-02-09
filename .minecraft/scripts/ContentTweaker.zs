@@ -5,6 +5,10 @@ import mods.contenttweaker.Color;
 import mods.contenttweaker.Item;
 import crafttweaker.game.IGame;
 
+//Glow String
+var glowstring = VanillaFactory.createItem("glowstring");
+glowstring.register();
+game.setLocalization("item.contenttweaker.glowstring.name", "Glow String");
 //liquidCatalyst
 var liquidCatalyst = VanillaFactory.createFluid("liquidCatalyst", Color.fromHex("C4C1BC"));
 liquidCatalyst.viscosity = 3000;

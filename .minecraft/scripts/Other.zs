@@ -1,7 +1,14 @@
 //Quark
 recipes.remove(<quark:thatch>);
-recipes.removeShapeless(<minecraft:wheat>, [<quark:thatch>], false);
-
+	//Candles
+	recipes.removeShaped(<quark:candle>*2,[
+		[<ore:string>],
+		[<quark:tallow>],
+		[<quark:tallow>]]);
+	recipes.addShaped(<quark:candle>*2,[
+		[<contenttweaker:glowstring>],
+		[<quark:tallow>],
+		[<quark:tallow>]]);
 <quark:thatch>.displayName = "Solid Thatch";
 <quark:thatch_stairs>.displayName = "Solid Thatch Stairs";
 <quark:thatch_slab>.displayName = "Solid Thatch Slab";
@@ -19,6 +26,10 @@ furnace.remove(<railcraft:fluid_bottle_creosote>);
 recipes.addShapeless(<minecraft:water_bucket>,[<forge:bucketfilled>.withTag({FluidName: "fresh_water", Amount: 1000})]);
 recipes.addShapeless(<forge:bucketfilled>.withTag({FluidName: "fresh_water", Amount: 1000}),[<minecraft:water_bucket>]);
 
+//
+recipes.addShaped(<contenttweaker:glowstring>,[
+	[<botania:manaresource:16>,<ore:dustGlowstone>],
+	[<ore:dustGlowstone>,<ore:dustGlowstone>]]);
 //Project Red
 furnace.addRecipe(<projectred-core:resource_item>*2, <ore:stone>);
 mods.jei.JEI.removeAndHide(<projectred-transmission:wire:34>, false);
@@ -36,3 +47,20 @@ mods.jei.JEI.hide(<projectred-core:resource_item:101>);
 mods.jei.JEI.hide(<projectred-core:resource_item:102>);
 mods.jei.JEI.hide(<projectred-core:resource_item:100>);
 mods.jei.JEI.hide(<projectred-core:resource_item:600>);
+//BiblioCraft
+	recipes.removeShaped(<bibliocraft:lanterngold>,[
+		[<minecraft:glass_pane>,<minecraft:glowstone_dust>,<minecraft:glass_pane>],
+		[<minecraft:gold_ingot>,<minecraft:torch>,<minecraft:gold_ingot>],
+		[<minecraft:glass_pane>,<minecraft:glowstone_dust>,<minecraft:glass_pane>]]);
+	recipes.addShaped(<bibliocraft:lanterngold>,[
+		[<minecraft:glass_pane>,<minecraft:glowstone_dust>,<minecraft:glass_pane>],
+		[<ore:ingotGold>,<quark:candle>,<ore:ingotGold>],
+		[<minecraft:glass_pane>,<minecraft:glowstone_dust>,<minecraft:glass_pane>]]);
+	recipes.removeShaped(<bibliocraft:lanterniron>,[
+		[<minecraft:glass_pane>,<minecraft:glowstone_dust>,<minecraft:glass_pane>],
+		[<minecraft:iron_ingot>,<minecraft:torch>,<minecraft:iron_ingot>],
+		[<minecraft:glass_pane>,<minecraft:glowstone_dust>,<minecraft:glass_pane>]]);
+	recipes.addShaped(<bibliocraft:lanterniron>,[
+		[<minecraft:glass_pane>,<minecraft:glowstone_dust>,<minecraft:glass_pane>],
+		[<ore:ingotIron>,<quark:candle>,<ore:ingotIron>],
+		[<minecraft:glass_pane>,<minecraft:glowstone_dust>,<minecraft:glass_pane>]]);		

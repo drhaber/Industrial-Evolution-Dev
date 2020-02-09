@@ -8,7 +8,8 @@ recipes.addShaped(<minecraft:coal_block>,[
 	[CO,CO,CO],
 	[CO,CO,CO],
 	[CO,CO,CO]]);
-
+//Torch Recipes
+recipes.remove(<minecraft:torch>);
 //End Portal
 recipes.addShaped(<minecraft:end_portal_frame>,[
 	[<nuclearcraft:alloy:2>,<opencomputers:material:13>,<nuclearcraft:alloy:2>],

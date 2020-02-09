@@ -1,12 +1,15 @@
 import crafttweaker.item.IItemStack;
-
+//ENFL
 recipes.remove(<tconstruct:throwball:1>);
 recipes.addShaped(<tconstruct:throwball:1>,[
 	[<minecraft:tnt>,<minecraft:tnt>,<minecraft:tnt>],
 	[<minecraft:tnt>,<minecraft:fire_charge>,<minecraft:tnt>],
 	[<minecraft:tnt>,<minecraft:tnt>,<minecraft:tnt>]]);
-
-
+//Stone Torch
+recipes.remove(<tconstruct:stone_torch>);
+recipes.addShaped(<tconstruct:stone_torch>*2,[
+	[null,<minecraft:glowstone_dust>],
+	[null,<ore:rodStone>]]);
 
 
 /*
