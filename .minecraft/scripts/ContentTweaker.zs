@@ -9,6 +9,7 @@ import crafttweaker.game.IGame;
 var glowstring = VanillaFactory.createItem("glowstring");
 glowstring.register();
 game.setLocalization("item.contenttweaker.glowstring.name", "Glow String");
+
 //liquidCatalyst
 var liquidCatalyst = VanillaFactory.createFluid("liquidCatalyst", Color.fromHex("C4C1BC"));
 liquidCatalyst.viscosity = 3000;

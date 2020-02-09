@@ -47,6 +47,9 @@ mods.jei.JEI.hide(<projectred-core:resource_item:101>);
 mods.jei.JEI.hide(<projectred-core:resource_item:102>);
 mods.jei.JEI.hide(<projectred-core:resource_item:100>);
 mods.jei.JEI.hide(<projectred-core:resource_item:600>);
+//Culinary Construct
+mods.jei.JEI.hide(<culinaryconstruct:sandwich>);
+mods.jei.JEI.addDescription(<culinaryconstruct:sandwich_station>,"Using Bread and up to any five food items, this unique crafting station can dynamically create sandwiches.");
 //BiblioCraft
 	recipes.removeShaped(<bibliocraft:lanterngold>,[
 		[<minecraft:glass_pane>,<minecraft:glowstone_dust>,<minecraft:glass_pane>],
