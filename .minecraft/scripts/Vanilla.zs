@@ -19,3 +19,5 @@ recipes.addShaped(<minecraft:end_portal_frame>,[
 recipes.remove(<railcraft:anvil>);
 recipes.addShapeless(<minecraft:anvil>,[<tfc:metal/anvil/wrought_iron>]);
 recipes.addShapeless(<railcraft:anvil>,[<tfc:metal/anvil/black_steel>]);	
+//Charcoal 
+furnace.remove(<minecraft:coal:1>);
