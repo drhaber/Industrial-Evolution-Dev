@@ -15,7 +15,11 @@ recipes.remove(<quark:thatch>);
 mods.jei.JEI.addDescription(<quark:thatch>,"Magic has made this thatch solid");
 mods.jei.JEI.addDescription(<quark:thatch_stairs>,"Magic has made this thatch solid");
 mods.jei.JEI.addDescription(<quark:thatch_slab>,"Magic has made this thatch solid");
-
+	//Rope
+	recipes.addShaped(<quark:rope>*2,[
+		[<tfc:crop/product/jute_fiber>,<tfc:crop/product/jute_fiber>,<tfc:crop/product/jute_fiber>],
+		[<tfc:crop/product/jute_fiber>,null,<tfc:crop/product/jute_fiber>],
+		[<tfc:crop/product/jute_fiber>,<tfc:crop/product/jute_fiber>,<tfc:crop/product/jute_fiber>]]);
 //Lithium
 furnace.addRecipe(<nuclearcraft:dust:6>*4, <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "brine", Amount: 1000}}));
 mods.immersiveengineering.BlastFurnace.addRecipe(<nuclearcraft:dust:6>*4, <forge:bucketfilled>.withTag({FluidName: "brine", Amount: 1000}), 2000,<minecraft:bucket>);
@@ -50,6 +54,9 @@ mods.jei.JEI.hide(<projectred-core:resource_item:600>);
 //Culinary Construct
 mods.jei.JEI.hide(<culinaryconstruct:sandwich>);
 mods.jei.JEI.addDescription(<culinaryconstruct:sandwich_station>,"Using Bread and up to any five food items, this unique crafting station can dynamically create sandwiches.");
+//Architecture Craft
+recipes.remove(<architecturecraft:largepulley>);
+recipes.addShapeless(<architecturecraft:largepulley>,[<astikorcarts:wheel>,<quark:rope>]);
 //BiblioCraft
 	recipes.removeShaped(<bibliocraft:lanterngold>,[
 		[<minecraft:glass_pane>,<minecraft:glowstone_dust>,<minecraft:glass_pane>],
