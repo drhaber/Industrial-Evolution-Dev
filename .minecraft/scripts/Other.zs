@@ -20,6 +20,13 @@ mods.jei.JEI.addDescription(<quark:thatch_slab>,"Magic has made this thatch soli
 		[<tfc:crop/product/jute_fiber>,<tfc:crop/product/jute_fiber>,<tfc:crop/product/jute_fiber>],
 		[<tfc:crop/product/jute_fiber>,null,<tfc:crop/product/jute_fiber>],
 		[<tfc:crop/product/jute_fiber>,<tfc:crop/product/jute_fiber>,<tfc:crop/product/jute_fiber>]]);
+	//Iron Rod
+	<quark:iron_rod>.displayName = "Steel Mining Rod";
+	recipes.remove(<quark:iron_rod>);
+	recipes.addShaped(<quark:iron_rod>,[
+	[null,<immersiveengineering:drillhead>,null],
+	[<tfc:metal/shovel_head/steel>,<tfc:metal/pick_head/steel>,<tfc:metal/axe_head/steel>],
+	[null,<minecraft:end_rod>,null]]);
 //Lithium
 furnace.addRecipe(<nuclearcraft:dust:6>*4, <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "brine", Amount: 1000}}));
 mods.immersiveengineering.BlastFurnace.addRecipe(<nuclearcraft:dust:6>*4, <forge:bucketfilled>.withTag({FluidName: "brine", Amount: 1000}), 2000,<minecraft:bucket>);
@@ -54,9 +61,15 @@ mods.jei.JEI.hide(<projectred-core:resource_item:600>);
 //Culinary Construct
 mods.jei.JEI.hide(<culinaryconstruct:sandwich>);
 mods.jei.JEI.addDescription(<culinaryconstruct:sandwich_station>,"Using Bread and up to any five food items, this unique crafting station can dynamically create sandwiches.");
+//OSISA
+mods.jei.JEI.addDescription(<appliedenergistics2:sky_stone_chest>,"The seemingly Magic like nature of this alien stone enables storage properties many would consider to be... Unnatural.");
+mods.jei.JEI.addDescription(<appliedenergistics2:smooth_sky_stone_chest>,"The seemingly Magic like nature of this alien stone enables storage properties many would consider to be... Unnatural.");
 //Architecture Craft
 recipes.remove(<architecturecraft:largepulley>);
 recipes.addShapeless(<architecturecraft:largepulley>,[<astikorcarts:wheel>,<quark:rope>]);
+//Stone Rods
+mods.jei.JEI.removeAndHide(<microblockcbe:stone_rod>);
+mods.jei.JEI.removeAndHide(<inspirations:materials:8>);
 //BiblioCraft
 	recipes.removeShaped(<bibliocraft:lanterngold>,[
 		[<minecraft:glass_pane>,<minecraft:glowstone_dust>,<minecraft:glass_pane>],
