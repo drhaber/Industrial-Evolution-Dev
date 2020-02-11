@@ -11,6 +11,8 @@ import crafttweaker.oredict.IOreDictEntry;
 <ore:quartzDark>.mirror(<ore:gemEnderBiotite>);
 //End Stone
 <ore:endstone>.add(<opencomputers:endstone>);
+//Iron Rod
+<ore:stickIron>.add(<tfctech:metal/wrought_iron_rod>);
 //Silicon
 <ore:itemSilicon>.add(<projectred-core:resource_item:301>);
 mods.jei.JEI.removeAndHide(<appliedenergistics2:material:5>);
