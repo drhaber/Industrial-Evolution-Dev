@@ -2154,11 +2154,6 @@ pressure:canister:0, Canister - Liquid Concrete
 pressure:canister:0, Canister - Potion
 pressure:canister:0, Canister - Molten Uranium
 pressure:canister:0, Canister - Molten Constantan
-pressure:canister:0, Canister - Mushroom Stew
-pressure:canister:0, Canister - Potato Soup
-pressure:canister:0, Canister - Beetroot Soup
-pressure:canister:0, Canister - Rabbit Stew
-pressure:canister:0, Canister - Milk
 pressure:canister:0, Canister - Molten Silicon
 pressure:canister:0, Canister - Power Blend
 pressure:canister:0, Canister - Teleportation Blend
@@ -2176,6 +2171,11 @@ pressure:canister:0, Canister - Lubricant
 pressure:canister:0, Canister - Gasoline
 pressure:canister:0, Canister - Napalm
 pressure:canister:0, Canister - Distilled Water
+pressure:canister:0, Canister - Mushroom Stew
+pressure:canister:0, Canister - Potato Soup
+pressure:canister:0, Canister - Beetroot Soup
+pressure:canister:0, Canister - Rabbit Stew
+pressure:canister:0, Canister - Milk
 pressure:canister:0, Canister - Oxygen
 pressure:canister:0, Canister - Hydrogen
 pressure:canister:0, Canister - Deuterium
@@ -3571,441 +3571,6 @@ alternatingflux:connector:0, AF Wire Relay
 alternatingflux:connector:1, AF Transformer
 alternatingflux:wirecoil:0, AF Wire Coil
 alternatingflux:material:0, Constantan Wire
-inspirations:materials:0, Blank Lock
-inspirations:materials:1, Blank Key
-inspirations:materials:8, Stone Rod
-inspirations:edibles:0, Heartbeet
-inspirations:books:0, White Book
-inspirations:books:1, Orange Book
-inspirations:books:2, Magenta Book
-inspirations:books:3, Light Blue Book
-inspirations:books:4, Yellow Book
-inspirations:books:5, Lime Book
-inspirations:books:6, Pink Book
-inspirations:books:7, Gray Book
-inspirations:books:8, Light Gray Book
-inspirations:books:9, Cyan Book
-inspirations:books:10, Purple Book
-inspirations:books:11, Blue Book
-inspirations:books:12, Brown Book
-inspirations:books:13, Green Book
-inspirations:books:14, Red Book
-inspirations:books:15, Black Book
-inspirations:books:16, Trapped Book
-inspirations:bookshelf:0, Bookshelf
-inspirations:bookshelf:0, Bookshelf
-inspirations:bookshelf:0, Bookshelf
-inspirations:bookshelf:0, Bookshelf
-inspirations:bookshelf:0, Bookshelf
-inspirations:bookshelf:0, Bookshelf
-inspirations:bookshelf:0, Bookshelf
-inspirations:bookshelf:0, Bookshelf
-inspirations:bookshelf:0, Bookshelf
-inspirations:bookshelf:0, Bookshelf
-inspirations:bookshelf:0, Bookshelf
-inspirations:bookshelf:0, Bookshelf
-inspirations:bookshelf:0, Bookshelf
-inspirations:bookshelf:0, Bookshelf
-inspirations:bookshelf:0, Bookshelf
-inspirations:bookshelf:0, Bookshelf
-inspirations:bookshelf:0, Bookshelf
-inspirations:bookshelf:0, Bookshelf
-inspirations:bookshelf:0, Bookshelf
-inspirations:bookshelf:0, Bookshelf
-inspirations:bookshelf:0, Bookshelf
-inspirations:bookshelf:0, Bookshelf
-inspirations:bookshelf:0, Bookshelf
-inspirations:bookshelf:0, Bookshelf
-inspirations:bookshelf:0, Bookshelf
-inspirations:bookshelf:0, Bookshelf
-inspirations:bookshelf:1, Rainbow Bookshelf
-inspirations:bookshelf:1, Rainbow Bookshelf
-inspirations:bookshelf:1, Rainbow Bookshelf
-inspirations:bookshelf:1, Rainbow Bookshelf
-inspirations:bookshelf:1, Rainbow Bookshelf
-inspirations:bookshelf:1, Rainbow Bookshelf
-inspirations:bookshelf:1, Rainbow Bookshelf
-inspirations:bookshelf:1, Rainbow Bookshelf
-inspirations:bookshelf:1, Rainbow Bookshelf
-inspirations:bookshelf:1, Rainbow Bookshelf
-inspirations:bookshelf:1, Rainbow Bookshelf
-inspirations:bookshelf:1, Rainbow Bookshelf
-inspirations:bookshelf:1, Rainbow Bookshelf
-inspirations:bookshelf:1, Rainbow Bookshelf
-inspirations:bookshelf:1, Rainbow Bookshelf
-inspirations:bookshelf:1, Rainbow Bookshelf
-inspirations:bookshelf:1, Rainbow Bookshelf
-inspirations:bookshelf:1, Rainbow Bookshelf
-inspirations:bookshelf:1, Rainbow Bookshelf
-inspirations:bookshelf:1, Rainbow Bookshelf
-inspirations:bookshelf:1, Rainbow Bookshelf
-inspirations:bookshelf:1, Rainbow Bookshelf
-inspirations:bookshelf:1, Rainbow Bookshelf
-inspirations:bookshelf:1, Rainbow Bookshelf
-inspirations:bookshelf:1, Rainbow Bookshelf
-inspirations:bookshelf:1, Rainbow Bookshelf
-inspirations:bookshelf:2, Tomes Bookshelf
-inspirations:bookshelf:2, Tomes Bookshelf
-inspirations:bookshelf:2, Tomes Bookshelf
-inspirations:bookshelf:2, Tomes Bookshelf
-inspirations:bookshelf:2, Tomes Bookshelf
-inspirations:bookshelf:2, Tomes Bookshelf
-inspirations:bookshelf:2, Tomes Bookshelf
-inspirations:bookshelf:2, Tomes Bookshelf
-inspirations:bookshelf:2, Tomes Bookshelf
-inspirations:bookshelf:2, Tomes Bookshelf
-inspirations:bookshelf:2, Tomes Bookshelf
-inspirations:bookshelf:2, Tomes Bookshelf
-inspirations:bookshelf:2, Tomes Bookshelf
-inspirations:bookshelf:2, Tomes Bookshelf
-inspirations:bookshelf:2, Tomes Bookshelf
-inspirations:bookshelf:2, Tomes Bookshelf
-inspirations:bookshelf:2, Tomes Bookshelf
-inspirations:bookshelf:2, Tomes Bookshelf
-inspirations:bookshelf:2, Tomes Bookshelf
-inspirations:bookshelf:2, Tomes Bookshelf
-inspirations:bookshelf:2, Tomes Bookshelf
-inspirations:bookshelf:2, Tomes Bookshelf
-inspirations:bookshelf:2, Tomes Bookshelf
-inspirations:bookshelf:2, Tomes Bookshelf
-inspirations:bookshelf:2, Tomes Bookshelf
-inspirations:bookshelf:2, Tomes Bookshelf
-inspirations:bookshelf:3, Ancient Bookshelf
-inspirations:bookshelf:3, Ancient Bookshelf
-inspirations:bookshelf:3, Ancient Bookshelf
-inspirations:bookshelf:3, Ancient Bookshelf
-inspirations:bookshelf:3, Ancient Bookshelf
-inspirations:bookshelf:3, Ancient Bookshelf
-inspirations:bookshelf:3, Ancient Bookshelf
-inspirations:bookshelf:3, Ancient Bookshelf
-inspirations:bookshelf:3, Ancient Bookshelf
-inspirations:bookshelf:3, Ancient Bookshelf
-inspirations:bookshelf:3, Ancient Bookshelf
-inspirations:bookshelf:3, Ancient Bookshelf
-inspirations:bookshelf:3, Ancient Bookshelf
-inspirations:bookshelf:3, Ancient Bookshelf
-inspirations:bookshelf:3, Ancient Bookshelf
-inspirations:bookshelf:3, Ancient Bookshelf
-inspirations:bookshelf:3, Ancient Bookshelf
-inspirations:bookshelf:3, Ancient Bookshelf
-inspirations:bookshelf:3, Ancient Bookshelf
-inspirations:bookshelf:3, Ancient Bookshelf
-inspirations:bookshelf:3, Ancient Bookshelf
-inspirations:bookshelf:3, Ancient Bookshelf
-inspirations:bookshelf:3, Ancient Bookshelf
-inspirations:bookshelf:3, Ancient Bookshelf
-inspirations:bookshelf:3, Ancient Bookshelf
-inspirations:bookshelf:3, Ancient Bookshelf
-inspirations:rope:0, Rope
-inspirations:rope:1, Chain
-inspirations:rope:2, Vine Rope
-inspirations:mulch:0, Mulch
-inspirations:mulch:1, Brown Mulch
-inspirations:mulch:2, Yellow Mulch
-inspirations:mulch:3, Amber Mulch
-inspirations:mulch:4, Ruby Mulch
-inspirations:mulch:5, Red Mulch
-inspirations:mulch:6, Black Mulch
-inspirations:mulch:7, Blue Mulch
-inspirations:path:0, Cobble Path
-inspirations:path:1, Round Path
-inspirations:path:2, Path Tiles
-inspirations:path:3, Bricks Path
-inspirations:flower:0, Rose
-inspirations:flower:1, Syringa
-inspirations:flower:2, Paeonia
-inspirations:flower:3, Cyan Flower
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:0, White Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:1, Red Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:2, Green Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:3, Blue Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:4, Rainbow Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:enlightened_bush:5, Christmas Enlightened Bush
-inspirations:glass_door, Glass Door
-inspirations:glass_trapdoor:0, Glass Trapdoor
-inspirations:torch_lever:0, Torch Lever
-inspirations:bricks_button:0, Bricks Button
-inspirations:bricks_button:1, Nether Brick Button
-inspirations:redstone_barrel:0, Redstone Barrel
-inspirations:redstone_torch_lever:0, Redstone Torch Lever
-inspirations:carpeted_trapdoor_white:0, White Carpeted Trapdoor
-inspirations:carpeted_trapdoor_orange:0, Orange Carpeted Trapdoor
-inspirations:carpeted_trapdoor_magenta:0, Magenta Carpeted Trapdoor
-inspirations:carpeted_trapdoor_light_blue:0, Light Blue Carpeted Trapdoor
-inspirations:carpeted_trapdoor_yellow:0, Yellow Carpeted Trapdoor
-inspirations:carpeted_trapdoor_lime:0, Lime Carpeted Trapdoor
-inspirations:carpeted_trapdoor_pink:0, Pink Carpeted Trapdoor
-inspirations:carpeted_trapdoor_gray:0, Gray Carpeted Trapdoor
-inspirations:carpeted_trapdoor_silver:0, Light Gray Carpeted Trapdoor
-inspirations:carpeted_trapdoor_cyan:0, Cyan Carpeted Trapdoor
-inspirations:carpeted_trapdoor_purple:0, Purple Carpeted Trapdoor
-inspirations:carpeted_trapdoor_blue:0, Blue Carpeted Trapdoor
-inspirations:carpeted_trapdoor_brown:0, Brown Carpeted Trapdoor
-inspirations:carpeted_trapdoor_green:0, Green Carpeted Trapdoor
-inspirations:carpeted_trapdoor_red:0, Red Carpeted Trapdoor
-inspirations:carpeted_trapdoor_black:0, Black Carpeted Trapdoor
-inspirations:collector:0, Collector
-inspirations:pipe:0, Pipe
-inspirations:arrow, item.inspirations.arrow.name
-inspirations:redstone_charger, Redstone Charger
-inspirations:wooden_crook, Wooden Crook
-inspirations:stone_crook, Stone Crook
-inspirations:bone_crook, Bone Crook
-inspirations:blaze_crook, Blaze Rod Crook
-inspirations:wither_crook, Withered Bone Crook
-inspirations:north_compass, North Compass
-inspirations:barometer, Barometer
-inspirations:photometer, Photometer
-inspirations:waypoint_compass:0, Beacon Compass
-inspirations:dyed_bottle:15, White Dyed Water Bottle
-inspirations:dyed_bottle:14, Orange Dyed Water Bottle
-inspirations:dyed_bottle:13, Magenta Dyed Water Bottle
-inspirations:dyed_bottle:12, Light Blue Dyed Water Bottle
-inspirations:dyed_bottle:11, Yellow Dyed Water Bottle
-inspirations:dyed_bottle:10, Lime Dyed Water Bottle
-inspirations:dyed_bottle:9, Pink Dyed Water Bottle
-inspirations:dyed_bottle:8, Gray Dyed Water Bottle
-inspirations:dyed_bottle:7, Light Gray Dyed Water Bottle
-inspirations:dyed_bottle:6, Cyan Dyed Water Bottle
-inspirations:dyed_bottle:5, Purple Dyed Water Bottle
-inspirations:dyed_bottle:4, Blue Dyed Water Bottle
-inspirations:dyed_bottle:3, Brown Dyed Water Bottle
-inspirations:dyed_bottle:2, Green Dyed Water Bottle
-inspirations:dyed_bottle:1, Red Dyed Water Bottle
-inspirations:dyed_bottle:0, Black Dyed Water Bottle
-inspirations:potato_soup, Potato Soup
-inspirations:cactus_seeds, Cactus Seeds
-inspirations:sugar_cane_seeds, Sugar Cane Seeds
-inspirations:carrot_seeds, Carrot Seeds
-inspirations:potato_seeds, Potato Seeds
 appliedenergistics2:matrix_frame, Matrix Frame
 appliedenergistics2:quartz_block, Certus Quartz Block
 appliedenergistics2:quartz_pillar, Certus Quartz Pillar
@@ -4619,16 +4184,6 @@ appliedenergistics2:facade:0, Cable Facade - Light Engineering Block
 appliedenergistics2:facade:0, Cable Facade - Heavy Engineering Block
 appliedenergistics2:facade:0, Cable Facade - Generator Block
 appliedenergistics2:facade:0, Cable Facade - Radiator Block
-appliedenergistics2:facade:0, Cable Facade - Mulch
-appliedenergistics2:facade:0, Cable Facade - Brown Mulch
-appliedenergistics2:facade:0, Cable Facade - Yellow Mulch
-appliedenergistics2:facade:0, Cable Facade - Amber Mulch
-appliedenergistics2:facade:0, Cable Facade - Ruby Mulch
-appliedenergistics2:facade:0, Cable Facade - Red Mulch
-appliedenergistics2:facade:0, Cable Facade - Black Mulch
-appliedenergistics2:facade:0, Cable Facade - Blue Mulch
-appliedenergistics2:facade:0, Cable Facade - Bricks Button
-appliedenergistics2:facade:0, Cable Facade - Nether Brick Button
 appliedenergistics2:facade:0, Cable Facade - Certus Quartz Block
 appliedenergistics2:facade:0, Cable Facade - Certus Quartz Pillar
 appliedenergistics2:facade:0, Cable Facade - Chiseled Certus Quartz Block
@@ -4641,26 +4196,6 @@ appliedenergistics2:facade:0, Cable Facade - Sky Stone Brick
 appliedenergistics2:facade:0, Cable Facade - Sky Stone Small Brick
 appliedenergistics2:facade:0, Cable Facade - Naquadah Ore
 appliedenergistics2:facade:0, Cable Facade - Naquadah Block
-appliedenergistics2:facade:0, Cable Facade - Sugar Block
-appliedenergistics2:facade:0, Cable Facade - Red Slime Block
-appliedenergistics2:facade:0, Cable Facade - Gravisand
-appliedenergistics2:facade:0, Cable Facade - Swamp Oak Leaves
-appliedenergistics2:facade:0, Cable Facade - White Cave Crystal
-appliedenergistics2:facade:0, Cable Facade - Ender Biotite Ore
-appliedenergistics2:facade:0, Cable Facade - Block of Biotite
-appliedenergistics2:facade:0, Cable Facade - Chiseled Biotite Block
-appliedenergistics2:facade:0, Cable Facade - Pillar Biotite Block
-appliedenergistics2:facade:0, Cable Facade - Basalt
-appliedenergistics2:facade:0, Cable Facade - Marble
-appliedenergistics2:facade:0, Cable Facade - Limestone
-appliedenergistics2:facade:0, Cable Facade - Jasper
-appliedenergistics2:facade:0, Cable Facade - Slate
-appliedenergistics2:facade:0, Cable Facade - Brimstone
-appliedenergistics2:facade:0, Cable Facade - Brimstone Bricks
-appliedenergistics2:facade:0, Cable Facade - Elder Prismarine
-appliedenergistics2:facade:0, Cable Facade - Elder Sea Lantern
-appliedenergistics2:facade:0, Cable Facade - Glowcelium
-appliedenergistics2:facade:0, Cable Facade - Glowshroom
 appliedenergistics2:facade:0, Cable Facade - Polished Sandstone
 appliedenergistics2:facade:0, Cable Facade - Polished Stone
 appliedenergistics2:facade:0, Cable Facade - White Stained Planks
@@ -4689,10 +4224,89 @@ appliedenergistics2:facade:0, Cable Facade - Soul Sandstone
 appliedenergistics2:facade:0, Cable Facade - Turf Block
 appliedenergistics2:facade:0, Cable Facade - Netherwrought Stone
 appliedenergistics2:facade:0, Cable Facade - White Quilted Wool
+appliedenergistics2:facade:0, Cable Facade - Swamp Oak Leaves
+appliedenergistics2:facade:0, Cable Facade - White Cave Crystal
+appliedenergistics2:facade:0, Cable Facade - Ender Biotite Ore
+appliedenergistics2:facade:0, Cable Facade - Block of Biotite
+appliedenergistics2:facade:0, Cable Facade - Chiseled Biotite Block
+appliedenergistics2:facade:0, Cable Facade - Pillar Biotite Block
+appliedenergistics2:facade:0, Cable Facade - Basalt
+appliedenergistics2:facade:0, Cable Facade - Marble
+appliedenergistics2:facade:0, Cable Facade - Limestone
+appliedenergistics2:facade:0, Cable Facade - Jasper
+appliedenergistics2:facade:0, Cable Facade - Slate
+appliedenergistics2:facade:0, Cable Facade - Brimstone
+appliedenergistics2:facade:0, Cable Facade - Brimstone Bricks
+appliedenergistics2:facade:0, Cable Facade - Elder Prismarine
+appliedenergistics2:facade:0, Cable Facade - Elder Sea Lantern
+appliedenergistics2:facade:0, Cable Facade - Glowcelium
+appliedenergistics2:facade:0, Cable Facade - Glowshroom
 appliedenergistics2:facade:0, Cable Facade - Spruce Bookshelf
 appliedenergistics2:facade:0, Cable Facade - Lit Redstone Lamp
 appliedenergistics2:facade:0, Cable Facade - Blaze Lantern
 appliedenergistics2:facade:0, Cable Facade - Block of Charcoal
+appliedenergistics2:facade:0, Cable Facade - Sugar Block
+appliedenergistics2:facade:0, Cable Facade - Red Slime Block
+appliedenergistics2:facade:0, Cable Facade - Gravisand
+appliedenergistics2:facade:0, Cable Facade - Block of Smokey Quartz
+appliedenergistics2:facade:0, Cable Facade - Chiseled Smokey Quartz Block
+appliedenergistics2:facade:0, Cable Facade - Pillar Smokey Quartz Block
+appliedenergistics2:facade:0, Cable Facade - Block of Mana Quartz
+appliedenergistics2:facade:0, Cable Facade - Chiseled Mana Quartz Block
+appliedenergistics2:facade:0, Cable Facade - Pillar Mana Quartz Block
+appliedenergistics2:facade:0, Cable Facade - Block of Blaze Quartz
+appliedenergistics2:facade:0, Cable Facade - Chiseled Blaze Quartz Block
+appliedenergistics2:facade:0, Cable Facade - Pillar Blaze Quartz Block
+appliedenergistics2:facade:0, Cable Facade - Block of Lavender Quartz
+appliedenergistics2:facade:0, Cable Facade - Chiseled Lavender Quartz Block
+appliedenergistics2:facade:0, Cable Facade - Pillar Lavender Quartz Block
+appliedenergistics2:facade:0, Cable Facade - Block of Redquartz
+appliedenergistics2:facade:0, Cable Facade - Chiseled Redquartz Block
+appliedenergistics2:facade:0, Cable Facade - Pillar Redquartz Block
+appliedenergistics2:facade:0, Cable Facade - Block of Elven Quartz
+appliedenergistics2:facade:0, Cable Facade - Chiseled Elven Quartz Block
+appliedenergistics2:facade:0, Cable Facade - Pillar Elven Quartz Block
+appliedenergistics2:facade:0, Cable Facade - Block of Sunny Quartz
+appliedenergistics2:facade:0, Cable Facade - Chiseled Sunny Quartz Block
+appliedenergistics2:facade:0, Cable Facade - Pillar Sunny Quartz Block
+appliedenergistics2:facade:0, Cable Facade - Metamorphic Forest Stone
+appliedenergistics2:facade:0, Cable Facade - Metamorphic Plains Stone
+appliedenergistics2:facade:0, Cable Facade - Metamorphic Mountain Stone
+appliedenergistics2:facade:0, Cable Facade - Metamorphic Fungal Stone
+appliedenergistics2:facade:0, Cable Facade - Metamorphic Swamp Stone
+appliedenergistics2:facade:0, Cable Facade - Metamorphic Desert Stone
+appliedenergistics2:facade:0, Cable Facade - Metamorphic Taiga Stone
+appliedenergistics2:facade:0, Cable Facade - Metamorphic Mesa Stone
+appliedenergistics2:facade:0, Cable Facade - Metamorphic Forest Cobblestone
+appliedenergistics2:facade:0, Cable Facade - Metamorphic Plains Cobblestone
+appliedenergistics2:facade:0, Cable Facade - Metamorphic Mountain Cobblestone
+appliedenergistics2:facade:0, Cable Facade - Metamorphic Fungal Cobblestone
+appliedenergistics2:facade:0, Cable Facade - Metamorphic Swamp Cobblestone
+appliedenergistics2:facade:0, Cable Facade - Metamorphic Desert Cobblestone
+appliedenergistics2:facade:0, Cable Facade - Metamorphic Taiga Cobblestone
+appliedenergistics2:facade:0, Cable Facade - Metamorphic Mesa Cobblestone
+appliedenergistics2:facade:0, Cable Facade - Metamorphic Forest Stone Bricks
+appliedenergistics2:facade:0, Cable Facade - Metamorphic Plains Stone Bricks
+appliedenergistics2:facade:0, Cable Facade - Metamorphic Mountain Stone Bricks
+appliedenergistics2:facade:0, Cable Facade - Metamorphic Fungal Stone Bricks
+appliedenergistics2:facade:0, Cable Facade - Metamorphic Swamp Stone Bricks
+appliedenergistics2:facade:0, Cable Facade - Metamorphic Desert Stone Bricks
+appliedenergistics2:facade:0, Cable Facade - Metamorphic Taiga Stone Bricks
+appliedenergistics2:facade:0, Cable Facade - Metamorphic Mesa Stone Bricks
+appliedenergistics2:facade:0, Cable Facade - Chiseled Metamorphic Forest Stone Brick
+appliedenergistics2:facade:0, Cable Facade - Chiseled Metamorphic Plains Stone Brick
+appliedenergistics2:facade:0, Cable Facade - Chiseled Metamorphic Mountain Stone Brick
+appliedenergistics2:facade:0, Cable Facade - Chiseled Metamorphic Fungal Stone Brick
+appliedenergistics2:facade:0, Cable Facade - Chiseled Metamorphic Swamp Stone Brick
+appliedenergistics2:facade:0, Cable Facade - Chiseled Metamorphic Desert Stone Brick
+appliedenergistics2:facade:0, Cable Facade - Chiseled Metamorphic Taiga Stone Brick
+appliedenergistics2:facade:0, Cable Facade - Chiseled Metamorphic Mesa Stone Brick
+appliedenergistics2:facade:0, Cable Facade - White Portuguese Pavement
+appliedenergistics2:facade:0, Cable Facade - Black Portuguese Pavement
+appliedenergistics2:facade:0, Cable Facade - Blue Portuguese Pavement
+appliedenergistics2:facade:0, Cable Facade - Red Portuguese Pavement
+appliedenergistics2:facade:0, Cable Facade - Yellow Portuguese Pavement
+appliedenergistics2:facade:0, Cable Facade - Green Portuguese Pavement
 appliedenergistics2:facade:0, Cable Facade - Livingrock
 appliedenergistics2:facade:0, Cable Facade - Livingrock Brick
 appliedenergistics2:facade:0, Cable Facade - Mossy Livingrock Brick
@@ -4763,71 +4377,22 @@ appliedenergistics2:facade:0, Cable Facade - Vivid Grass
 appliedenergistics2:facade:0, Cable Facade - Scorched Grass
 appliedenergistics2:facade:0, Cable Facade - Infused Grass
 appliedenergistics2:facade:0, Cable Facade - Mutated Grass
-appliedenergistics2:facade:0, Cable Facade - Block of Smokey Quartz
-appliedenergistics2:facade:0, Cable Facade - Chiseled Smokey Quartz Block
-appliedenergistics2:facade:0, Cable Facade - Pillar Smokey Quartz Block
-appliedenergistics2:facade:0, Cable Facade - Block of Mana Quartz
-appliedenergistics2:facade:0, Cable Facade - Chiseled Mana Quartz Block
-appliedenergistics2:facade:0, Cable Facade - Pillar Mana Quartz Block
-appliedenergistics2:facade:0, Cable Facade - Block of Blaze Quartz
-appliedenergistics2:facade:0, Cable Facade - Chiseled Blaze Quartz Block
-appliedenergistics2:facade:0, Cable Facade - Pillar Blaze Quartz Block
-appliedenergistics2:facade:0, Cable Facade - Block of Lavender Quartz
-appliedenergistics2:facade:0, Cable Facade - Chiseled Lavender Quartz Block
-appliedenergistics2:facade:0, Cable Facade - Pillar Lavender Quartz Block
-appliedenergistics2:facade:0, Cable Facade - Block of Redquartz
-appliedenergistics2:facade:0, Cable Facade - Chiseled Redquartz Block
-appliedenergistics2:facade:0, Cable Facade - Pillar Redquartz Block
-appliedenergistics2:facade:0, Cable Facade - Block of Elven Quartz
-appliedenergistics2:facade:0, Cable Facade - Chiseled Elven Quartz Block
-appliedenergistics2:facade:0, Cable Facade - Pillar Elven Quartz Block
-appliedenergistics2:facade:0, Cable Facade - Block of Sunny Quartz
-appliedenergistics2:facade:0, Cable Facade - Chiseled Sunny Quartz Block
-appliedenergistics2:facade:0, Cable Facade - Pillar Sunny Quartz Block
-appliedenergistics2:facade:0, Cable Facade - Metamorphic Forest Stone
-appliedenergistics2:facade:0, Cable Facade - Metamorphic Plains Stone
-appliedenergistics2:facade:0, Cable Facade - Metamorphic Mountain Stone
-appliedenergistics2:facade:0, Cable Facade - Metamorphic Fungal Stone
-appliedenergistics2:facade:0, Cable Facade - Metamorphic Swamp Stone
-appliedenergistics2:facade:0, Cable Facade - Metamorphic Desert Stone
-appliedenergistics2:facade:0, Cable Facade - Metamorphic Taiga Stone
-appliedenergistics2:facade:0, Cable Facade - Metamorphic Mesa Stone
-appliedenergistics2:facade:0, Cable Facade - Metamorphic Forest Cobblestone
-appliedenergistics2:facade:0, Cable Facade - Metamorphic Plains Cobblestone
-appliedenergistics2:facade:0, Cable Facade - Metamorphic Mountain Cobblestone
-appliedenergistics2:facade:0, Cable Facade - Metamorphic Fungal Cobblestone
-appliedenergistics2:facade:0, Cable Facade - Metamorphic Swamp Cobblestone
-appliedenergistics2:facade:0, Cable Facade - Metamorphic Desert Cobblestone
-appliedenergistics2:facade:0, Cable Facade - Metamorphic Taiga Cobblestone
-appliedenergistics2:facade:0, Cable Facade - Metamorphic Mesa Cobblestone
-appliedenergistics2:facade:0, Cable Facade - Metamorphic Forest Stone Bricks
-appliedenergistics2:facade:0, Cable Facade - Metamorphic Plains Stone Bricks
-appliedenergistics2:facade:0, Cable Facade - Metamorphic Mountain Stone Bricks
-appliedenergistics2:facade:0, Cable Facade - Metamorphic Fungal Stone Bricks
-appliedenergistics2:facade:0, Cable Facade - Metamorphic Swamp Stone Bricks
-appliedenergistics2:facade:0, Cable Facade - Metamorphic Desert Stone Bricks
-appliedenergistics2:facade:0, Cable Facade - Metamorphic Taiga Stone Bricks
-appliedenergistics2:facade:0, Cable Facade - Metamorphic Mesa Stone Bricks
-appliedenergistics2:facade:0, Cable Facade - Chiseled Metamorphic Forest Stone Brick
-appliedenergistics2:facade:0, Cable Facade - Chiseled Metamorphic Plains Stone Brick
-appliedenergistics2:facade:0, Cable Facade - Chiseled Metamorphic Mountain Stone Brick
-appliedenergistics2:facade:0, Cable Facade - Chiseled Metamorphic Fungal Stone Brick
-appliedenergistics2:facade:0, Cable Facade - Chiseled Metamorphic Swamp Stone Brick
-appliedenergistics2:facade:0, Cable Facade - Chiseled Metamorphic Desert Stone Brick
-appliedenergistics2:facade:0, Cable Facade - Chiseled Metamorphic Taiga Stone Brick
-appliedenergistics2:facade:0, Cable Facade - Chiseled Metamorphic Mesa Stone Brick
-appliedenergistics2:facade:0, Cable Facade - White Portuguese Pavement
-appliedenergistics2:facade:0, Cable Facade - Black Portuguese Pavement
-appliedenergistics2:facade:0, Cable Facade - Blue Portuguese Pavement
-appliedenergistics2:facade:0, Cable Facade - Red Portuguese Pavement
-appliedenergistics2:facade:0, Cable Facade - Yellow Portuguese Pavement
-appliedenergistics2:facade:0, Cable Facade - Green Portuguese Pavement
 appliedenergistics2:facade:0, Cable Facade - Fluix Coil Block
 appliedenergistics2:facade:0, Cable Facade - Dense Fluix Coil Block
 appliedenergistics2:facade:0, Cable Facade - Quartz Fiber Coil Block
 appliedenergistics2:facade:0, Cable Facade - Refined Fiber Coil Block
 appliedenergistics2:facade:0, Cable Facade - Asphalt Concrete
 appliedenergistics2:facade:0, Cable Facade - Reinforced Coke Brick
+appliedenergistics2:facade:0, Cable Facade - Mulch
+appliedenergistics2:facade:0, Cable Facade - Brown Mulch
+appliedenergistics2:facade:0, Cable Facade - Yellow Mulch
+appliedenergistics2:facade:0, Cable Facade - Amber Mulch
+appliedenergistics2:facade:0, Cable Facade - Ruby Mulch
+appliedenergistics2:facade:0, Cable Facade - Red Mulch
+appliedenergistics2:facade:0, Cable Facade - Black Mulch
+appliedenergistics2:facade:0, Cable Facade - Blue Mulch
+appliedenergistics2:facade:0, Cable Facade - Bricks Button
+appliedenergistics2:facade:0, Cable Facade - Nether Brick Button
 appliedenergistics2:facade:0, Cable Facade - Colored Block Clean
 appliedenergistics2:facade:0, Cable Facade - Colored Block Floor
 appliedenergistics2:facade:0, Cable Facade - Colored Block Grainy Big
@@ -6156,7 +5721,6 @@ appliedenergistics2:facade:0, Cable Facade - Willow Leaves
 appliedenergistics2:facade:0, Cable Facade - Hevea Planks
 appliedenergistics2:facade:0, Cable Facade - Hevea Log
 appliedenergistics2:facade:0, Cable Facade - Hevea Leaves
-appliedenergistics2:facade:0, Cable Facade - Hellshelf
 appliedenergistics2:facade:0, Cable Facade - Rock Crystal Ore
 appliedenergistics2:facade:0, Cable Facade - Starmetal Ore
 appliedenergistics2:facade:0, Cable Facade - Aquamarine Shale
@@ -6442,163 +6006,6 @@ aunis:transportrings_controller_block, Transport rings controller
 aunis:invisible_block, You can't see me block
 aunis:stargate_milkyway_member_block:6, Stargate Ring (Milky Way)
 aunis:stargate_milkyway_member_block:14, Stargate Chevron (Milky Way)
-quark:chute, tile.chute.name
-quark:sugar_block, tile.sugar_block.name
-quark:redstone_randomizer, tile.redstone_randomizer.name
-quark:iron_button, tile.iron_button.name
-quark:gold_button, tile.gold_button.name
-quark:iron_rod, tile.iron_rod.name
-quark:color_slime:0, Red Slime Block
-quark:color_slime:1, Blue Slime Block
-quark:color_slime:2, Cyan Slime Block
-quark:color_slime:3, Magenta Slime Block
-quark:color_slime:4, Yellow Slime Block
-quark:gravisand, tile.gravisand.name
-quark:redstone_inductor, tile.redstone_inductor.name
-quark:obsidian_pressure_plate, tile.obsidian_pressure_plate.name
-quark:rain_detector, tile.rain_detector.name
-quark:chain, item.chain.name
-quark:glass_shards:0, Glass Shard
-quark:glass_shards:1, White Glass Shard
-quark:glass_shards:2, Orange Glass Shard
-quark:glass_shards:3, Magenta Glass Shard
-quark:glass_shards:4, Light Blue Glass Shard
-quark:glass_shards:5, Yellow Glass Shard
-quark:glass_shards:6, Lime Glass Shard
-quark:glass_shards:7, Pink Glass Shard
-quark:glass_shards:8, Gray Glass Shard
-quark:glass_shards:9, Light Gray Glass Shard
-quark:glass_shards:10, Cyan Glass Shard
-quark:glass_shards:11, Purple Glass Shard
-quark:glass_shards:12, Blue Glass Shard
-quark:glass_shards:13, Brown Glass Shard
-quark:glass_shards:14, Green Glass Shard
-quark:glass_shards:15, Red Glass Shard
-quark:glass_shards:16, Black Glass Shard
-quark:roots, tile.roots.name
-quark:root, item.root.name
-quark:roots_blue_flower, tile.roots_blue_flower.name
-quark:roots_black_flower, tile.roots_black_flower.name
-quark:roots_white_flower, tile.roots_white_flower.name
-quark:root_flower:0, Blue Sprout
-quark:root_flower:1, Black Sprout
-quark:root_flower:2, White Sprout
-quark:root_dye:0, Blue Dye
-quark:root_dye:1, Black Dye
-quark:root_dye:2, White Dye
-quark:diamond_heart, item.diamond_heart.name
-quark:archaeologist_hat, item.archaeologist_hat.name
-quark:variant_leaves:0, Swamp Oak Leaves
-quark:variant_leaves:1, Blossoming Leaves
-quark:variant_sapling:0, Swamp Oak Sapling
-quark:variant_sapling:1, Blossoming Sapling
-quark:crystal:0, White Cave Crystal
-quark:crystal:1, Red Cave Crystal
-quark:crystal:2, Orange Cave Crystal
-quark:crystal:3, Yellow Cave Crystal
-quark:crystal:4, Green Cave Crystal
-quark:crystal:5, Blue Cave Crystal
-quark:crystal:6, Indigo Cave Crystal
-quark:crystal:7, Violet Cave Crystal
-quark:crystal:8, Black Cave Crystal
-quark:crystal_pane:0, White Cave Crystal Sheet
-quark:crystal_pane:1, Red Cave Crystal Sheet
-quark:crystal_pane:2, Orange Cave Crystal Sheet
-quark:crystal_pane:3, Yellow Cave Crystal Sheet
-quark:crystal_pane:4, Green Cave Crystal Sheet
-quark:crystal_pane:5, Blue Cave Crystal Sheet
-quark:crystal_pane:6, Indigo Cave Crystal Sheet
-quark:crystal_pane:7, Violet Cave Crystal Sheet
-quark:crystal_pane:8, Black Cave Crystal Sheet
-quark:stone_speleothem, tile.stone_speleothem.name
-quark:granite_speleothem, tile.granite_speleothem.name
-quark:diorite_speleothem, tile.diorite_speleothem.name
-quark:andesite_speleothem, tile.andesite_speleothem.name
-quark:netherrack_speleothem, tile.netherrack_speleothem.name
-quark:basalt_speleothem, tile.basalt_speleothem.name
-quark:marble_speleothem, tile.marble_speleothem.name
-quark:limestone_speleothem, tile.limestone_speleothem.name
-quark:jasper_speleothem, tile.jasper_speleothem.name
-quark:slate_speleothem, tile.slate_speleothem.name
-quark:biotite_ore, tile.biotite_ore.name
-quark:biotite_block:0, Block of Biotite
-quark:biotite_block:1, Chiseled Biotite Block
-quark:biotite_block:2, Pillar Biotite Block
-quark:biotite, item.biotite.name
-quark:biotite_slab:0, Biotite Slab
-quark:biotite_stairs, tile.biotite_stairs.name
-quark:biotite_wall, tile.biotite_wall.name
-quark:monster_box, tile.monster_box.name
-quark:basalt:0, Basalt
-quark:basalt:1, Polished Basalt
-quark:stone_basalt_slab:0, Basalt Slab
-quark:stone_basalt_stairs, tile.stone_basalt_stairs.name
-quark:basalt_wall, tile.basalt_wall.name
-quark:frog_leg, item.frog_leg.name
-quark:cooked_frog_leg, item.cooked_frog_leg.name
-quark:golden_frog_leg, item.golden_frog_leg.name
-quark:pirate_hat, item.pirate_hat.name
-quark:crab_leg, item.crab_leg.name
-quark:cooked_crab_leg, item.cooked_crab_leg.name
-quark:crab_shell, item.crab_shell.name
-quark:marble:0, Marble
-quark:marble:1, Polished Marble
-quark:stone_marble_slab:0, Marble Slab
-quark:stone_marble_stairs, tile.stone_marble_stairs.name
-quark:marble_wall, tile.marble_wall.name
-quark:limestone:0, Limestone
-quark:limestone:1, Polished Limestone
-quark:stone_limestone_slab:0, Limestone Slab
-quark:stone_limestone_stairs, tile.stone_limestone_stairs.name
-quark:limestone_wall, tile.limestone_wall.name
-quark:jasper:0, Jasper
-quark:jasper:1, Polished Jasper
-quark:stone_jasper_slab:0, Jasper Slab
-quark:stone_jasper_stairs, tile.stone_jasper_stairs.name
-quark:jasper_wall, tile.jasper_wall.name
-quark:slate:0, Slate
-quark:slate:1, Polished Slate
-quark:stone_slate_slab:0, Slate Slab
-quark:stone_slate_stairs, tile.stone_slate_stairs.name
-quark:slate_wall, tile.slate_wall.name
-quark:biome_cobblestone:0, Brimstone
-quark:biome_cobblestone:1, Permafrost
-quark:biome_cobblestone:2, Cobbedstone
-quark:biome_brick:0, Brimstone Bricks
-quark:biome_brick:1, Permafrost Bricks
-quark:elder_prismarine:0, Elder Prismarine
-quark:elder_prismarine:1, Elder Prismarine Bricks
-quark:elder_prismarine:2, Dark Elder Prismarine
-quark:elder_sea_lantern, tile.elder_sea_lantern.name
-quark:fire_stone_slab:0, Brimstone Slab
-quark:fire_stone_stairs, tile.fire_stone_stairs.name
-quark:fire_stone_brick_slab:0, Brimstone Bricks Slab
-quark:fire_stone_brick_stairs, tile.fire_stone_brick_stairs.name
-quark:icy_stone_slab:0, Permafrost Slab
-quark:icy_stone_stairs, tile.icy_stone_stairs.name
-quark:icy_stone_brick_slab:0, Permafrost Bricks Slab
-quark:icy_stone_brick_stairs, tile.icy_stone_brick_stairs.name
-quark:cobbed_stone_slab:0, Cobbedstone Slab
-quark:cobbed_stone_stairs, tile.cobbed_stone_stairs.name
-quark:elder_prismarine_slab:0, Elder Prismarine Slab
-quark:elder_prismarine_stairs, tile.elder_prismarine_stairs.name
-quark:elder_prismarine_bricks_slab:0, Elder Prismarine Brick Slab
-quark:elder_prismarine_bricks_stairs, tile.elder_prismarine_bricks_stairs.name
-quark:elder_prismarine_dark_slab:0, Dark Elder Prismarine Slab
-quark:elder_prismarine_dark_stairs, tile.elder_prismarine_dark_stairs.name
-quark:fire_stone_wall, tile.fire_stone_wall.name
-quark:icy_stone_wall, tile.icy_stone_wall.name
-quark:cobbed_stone_wall, tile.cobbed_stone_wall.name
-quark:fire_stone_brick_wall, tile.fire_stone_brick_wall.name
-quark:icy_stone_brick_wall, tile.icy_stone_brick_wall.name
-quark:elder_prismarine_wall, tile.elder_prismarine_wall.name
-quark:elder_prismarine_bricks_wall, tile.elder_prismarine_bricks_wall.name
-quark:elder_prismarine_dark_wall, tile.elder_prismarine_dark_wall.name
-quark:glowcelium, tile.glowcelium.name
-quark:glowshroom, tile.glowshroom.name
-quark:glowshroom_block, tile.glowshroom_block.name
-quark:soul_bead, item.soul_bead.name
-quark:smoker, tile.smoker.name
 quark:sandstone_new:0, Polished Sandstone
 quark:sandstone_new:1, Sandstone Bricks
 quark:sandstone_new:2, Polished Red Sandstone
@@ -6919,6 +6326,7 @@ quark:quilted_wool:12, Brown Quilted Wool
 quark:quilted_wool:13, Green Quilted Wool
 quark:quilted_wool:14, Red Quilted Wool
 quark:quilted_wool:15, Black Quilted Wool
+quark:witch_hat, item.witch_hat.name
 quark:pickarang, item.pickarang.name
 quark:arrow_ender, item.arrow_ender.name
 quark:arrow_explosive, item.arrow_explosive.name
@@ -6951,7 +6359,130 @@ quark:parrot_egg:2, Green Parrot Egg
 quark:parrot_egg:3, Cyan Parrot Egg
 quark:parrot_egg:4, Gray Parrot Egg
 quark:enderdragon_scale, item.enderdragon_scale.name
-quark:witch_hat, item.witch_hat.name
+quark:roots, tile.roots.name
+quark:root, item.root.name
+quark:roots_blue_flower, tile.roots_blue_flower.name
+quark:roots_black_flower, tile.roots_black_flower.name
+quark:roots_white_flower, tile.roots_white_flower.name
+quark:root_flower:0, Blue Sprout
+quark:root_flower:1, Black Sprout
+quark:root_flower:2, White Sprout
+quark:root_dye:0, Blue Dye
+quark:root_dye:1, Black Dye
+quark:root_dye:2, White Dye
+quark:diamond_heart, item.diamond_heart.name
+quark:archaeologist_hat, item.archaeologist_hat.name
+quark:variant_leaves:0, Swamp Oak Leaves
+quark:variant_leaves:1, Blossoming Leaves
+quark:variant_sapling:0, Swamp Oak Sapling
+quark:variant_sapling:1, Blossoming Sapling
+quark:crystal:0, White Cave Crystal
+quark:crystal:1, Red Cave Crystal
+quark:crystal:2, Orange Cave Crystal
+quark:crystal:3, Yellow Cave Crystal
+quark:crystal:4, Green Cave Crystal
+quark:crystal:5, Blue Cave Crystal
+quark:crystal:6, Indigo Cave Crystal
+quark:crystal:7, Violet Cave Crystal
+quark:crystal:8, Black Cave Crystal
+quark:crystal_pane:0, White Cave Crystal Sheet
+quark:crystal_pane:1, Red Cave Crystal Sheet
+quark:crystal_pane:2, Orange Cave Crystal Sheet
+quark:crystal_pane:3, Yellow Cave Crystal Sheet
+quark:crystal_pane:4, Green Cave Crystal Sheet
+quark:crystal_pane:5, Blue Cave Crystal Sheet
+quark:crystal_pane:6, Indigo Cave Crystal Sheet
+quark:crystal_pane:7, Violet Cave Crystal Sheet
+quark:crystal_pane:8, Black Cave Crystal Sheet
+quark:stone_speleothem, tile.stone_speleothem.name
+quark:granite_speleothem, tile.granite_speleothem.name
+quark:diorite_speleothem, tile.diorite_speleothem.name
+quark:andesite_speleothem, tile.andesite_speleothem.name
+quark:netherrack_speleothem, tile.netherrack_speleothem.name
+quark:basalt_speleothem, tile.basalt_speleothem.name
+quark:marble_speleothem, tile.marble_speleothem.name
+quark:limestone_speleothem, tile.limestone_speleothem.name
+quark:jasper_speleothem, tile.jasper_speleothem.name
+quark:slate_speleothem, tile.slate_speleothem.name
+quark:biotite_ore, tile.biotite_ore.name
+quark:biotite_block:0, Block of Biotite
+quark:biotite_block:1, Chiseled Biotite Block
+quark:biotite_block:2, Pillar Biotite Block
+quark:biotite, item.biotite.name
+quark:biotite_slab:0, Biotite Slab
+quark:biotite_stairs, tile.biotite_stairs.name
+quark:biotite_wall, tile.biotite_wall.name
+quark:monster_box, tile.monster_box.name
+quark:basalt:0, Basalt
+quark:basalt:1, Polished Basalt
+quark:stone_basalt_slab:0, Basalt Slab
+quark:stone_basalt_stairs, tile.stone_basalt_stairs.name
+quark:basalt_wall, tile.basalt_wall.name
+quark:frog_leg, item.frog_leg.name
+quark:cooked_frog_leg, item.cooked_frog_leg.name
+quark:golden_frog_leg, item.golden_frog_leg.name
+quark:pirate_hat, item.pirate_hat.name
+quark:crab_leg, item.crab_leg.name
+quark:cooked_crab_leg, item.cooked_crab_leg.name
+quark:crab_shell, item.crab_shell.name
+quark:marble:0, Marble
+quark:marble:1, Polished Marble
+quark:stone_marble_slab:0, Marble Slab
+quark:stone_marble_stairs, tile.stone_marble_stairs.name
+quark:marble_wall, tile.marble_wall.name
+quark:limestone:0, Limestone
+quark:limestone:1, Polished Limestone
+quark:stone_limestone_slab:0, Limestone Slab
+quark:stone_limestone_stairs, tile.stone_limestone_stairs.name
+quark:limestone_wall, tile.limestone_wall.name
+quark:jasper:0, Jasper
+quark:jasper:1, Polished Jasper
+quark:stone_jasper_slab:0, Jasper Slab
+quark:stone_jasper_stairs, tile.stone_jasper_stairs.name
+quark:jasper_wall, tile.jasper_wall.name
+quark:slate:0, Slate
+quark:slate:1, Polished Slate
+quark:stone_slate_slab:0, Slate Slab
+quark:stone_slate_stairs, tile.stone_slate_stairs.name
+quark:slate_wall, tile.slate_wall.name
+quark:biome_cobblestone:0, Brimstone
+quark:biome_cobblestone:1, Permafrost
+quark:biome_cobblestone:2, Cobbedstone
+quark:biome_brick:0, Brimstone Bricks
+quark:biome_brick:1, Permafrost Bricks
+quark:elder_prismarine:0, Elder Prismarine
+quark:elder_prismarine:1, Elder Prismarine Bricks
+quark:elder_prismarine:2, Dark Elder Prismarine
+quark:elder_sea_lantern, tile.elder_sea_lantern.name
+quark:fire_stone_slab:0, Brimstone Slab
+quark:fire_stone_stairs, tile.fire_stone_stairs.name
+quark:fire_stone_brick_slab:0, Brimstone Bricks Slab
+quark:fire_stone_brick_stairs, tile.fire_stone_brick_stairs.name
+quark:icy_stone_slab:0, Permafrost Slab
+quark:icy_stone_stairs, tile.icy_stone_stairs.name
+quark:icy_stone_brick_slab:0, Permafrost Bricks Slab
+quark:icy_stone_brick_stairs, tile.icy_stone_brick_stairs.name
+quark:cobbed_stone_slab:0, Cobbedstone Slab
+quark:cobbed_stone_stairs, tile.cobbed_stone_stairs.name
+quark:elder_prismarine_slab:0, Elder Prismarine Slab
+quark:elder_prismarine_stairs, tile.elder_prismarine_stairs.name
+quark:elder_prismarine_bricks_slab:0, Elder Prismarine Brick Slab
+quark:elder_prismarine_bricks_stairs, tile.elder_prismarine_bricks_stairs.name
+quark:elder_prismarine_dark_slab:0, Dark Elder Prismarine Slab
+quark:elder_prismarine_dark_stairs, tile.elder_prismarine_dark_stairs.name
+quark:fire_stone_wall, tile.fire_stone_wall.name
+quark:icy_stone_wall, tile.icy_stone_wall.name
+quark:cobbed_stone_wall, tile.cobbed_stone_wall.name
+quark:fire_stone_brick_wall, tile.fire_stone_brick_wall.name
+quark:icy_stone_brick_wall, tile.icy_stone_brick_wall.name
+quark:elder_prismarine_wall, tile.elder_prismarine_wall.name
+quark:elder_prismarine_bricks_wall, tile.elder_prismarine_bricks_wall.name
+quark:elder_prismarine_dark_wall, tile.elder_prismarine_dark_wall.name
+quark:glowcelium, tile.glowcelium.name
+quark:glowshroom, tile.glowshroom.name
+quark:glowshroom_block, tile.glowshroom_block.name
+quark:soul_bead, item.soul_bead.name
+quark:smoker, tile.smoker.name
 quark:spruce_trapdoor, tile.spruce_trapdoor.name
 quark:birch_trapdoor, tile.birch_trapdoor.name
 quark:jungle_trapdoor, tile.jungle_trapdoor.name
@@ -7052,6 +6583,39 @@ quark:dark_oak_button, tile.dark_oak_button.name
 quark:grate, tile.grate.name
 quark:charcoal_block, tile.charcoal_block.name
 quark:glass_item_frame, item.glass_item_frame.name
+quark:chute, tile.chute.name
+quark:sugar_block, tile.sugar_block.name
+quark:redstone_randomizer, tile.redstone_randomizer.name
+quark:iron_button, tile.iron_button.name
+quark:gold_button, tile.gold_button.name
+quark:iron_rod, tile.iron_rod.name
+quark:color_slime:0, Red Slime Block
+quark:color_slime:1, Blue Slime Block
+quark:color_slime:2, Cyan Slime Block
+quark:color_slime:3, Magenta Slime Block
+quark:color_slime:4, Yellow Slime Block
+quark:gravisand, tile.gravisand.name
+quark:redstone_inductor, tile.redstone_inductor.name
+quark:obsidian_pressure_plate, tile.obsidian_pressure_plate.name
+quark:rain_detector, tile.rain_detector.name
+quark:chain, item.chain.name
+quark:glass_shards:0, Glass Shard
+quark:glass_shards:1, White Glass Shard
+quark:glass_shards:2, Orange Glass Shard
+quark:glass_shards:3, Magenta Glass Shard
+quark:glass_shards:4, Light Blue Glass Shard
+quark:glass_shards:5, Yellow Glass Shard
+quark:glass_shards:6, Lime Glass Shard
+quark:glass_shards:7, Pink Glass Shard
+quark:glass_shards:8, Gray Glass Shard
+quark:glass_shards:9, Light Gray Glass Shard
+quark:glass_shards:10, Cyan Glass Shard
+quark:glass_shards:11, Purple Glass Shard
+quark:glass_shards:12, Blue Glass Shard
+quark:glass_shards:13, Brown Glass Shard
+quark:glass_shards:14, Green Glass Shard
+quark:glass_shards:15, Red Glass Shard
+quark:glass_shards:16, Black Glass Shard
 bibliocraft:bookcase:0, Oak Bookcase
 bibliocraft:bookcase:1, Spruce Bookcase
 bibliocraft:bookcase:2, Birch Bookcase
@@ -7374,6 +6938,494 @@ bibliocraft:biblioglasses:2, Monocle
 bibliocraft:bibliodrill, Screw Gun
 bibliocraft:bibliocreativelock, Lock and Key
 bibliocraft:biblioclipboard, Clipboard
+botania:livingwood0stairs, tile.livingwood0Stairs.name
+botania:livingwood0slab:0, Livingwood Slab
+botania:livingwood0wall, tile.livingwood0Wall.name
+botania:livingwood1stairs, tile.livingwood1Stairs.name
+botania:livingwood1slab:0, Livingwood Plank Slab
+botania:livingrock0stairs, tile.livingrock0Stairs.name
+botania:livingrock0slab:0, Livingrock Slab
+botania:livingrock0wall, tile.livingrock0Wall.name
+botania:livingrock1stairs, tile.livingrock1Stairs.name
+botania:livingrock1slab:0, Livingrock Brick Slab
+botania:dreamwood0stairs, tile.dreamwood0Stairs.name
+botania:dreamwood0slab:0, Dreamwood Slab
+botania:dreamwood0wall, tile.dreamwood0Wall.name
+botania:dreamwood1stairs, tile.dreamwood1Stairs.name
+botania:dreamwood1slab:0, Dreamwood Plank Slab
+botania:quartztypedark:0, Block of Smokey Quartz
+botania:quartztypedark:1, Chiseled Smokey Quartz Block
+botania:quartztypedark:2, Pillar Smokey Quartz Block
+botania:quartzslabdarkhalf:0, Smokey Quartz Slab
+botania:quartzstairsdark, tile.quartzStairsDark.name
+botania:quartztypemana:0, Block of Mana Quartz
+botania:quartztypemana:1, Chiseled Mana Quartz Block
+botania:quartztypemana:2, Pillar Mana Quartz Block
+botania:quartzslabmanahalf:0, Mana Quartz Slab
+botania:quartzstairsmana, tile.quartzStairsMana.name
+botania:quartztypeblaze:0, Block of Blaze Quartz
+botania:quartztypeblaze:1, Chiseled Blaze Quartz Block
+botania:quartztypeblaze:2, Pillar Blaze Quartz Block
+botania:quartzslabblazehalf:0, Blaze Quartz Slab
+botania:quartzstairsblaze, tile.quartzStairsBlaze.name
+botania:quartztypelavender:0, Block of Lavender Quartz
+botania:quartztypelavender:1, Chiseled Lavender Quartz Block
+botania:quartztypelavender:2, Pillar Lavender Quartz Block
+botania:quartzslablavenderhalf:0, Lavender Quartz Slab
+botania:quartzstairslavender, tile.quartzStairsLavender.name
+botania:quartztypered:0, Block of Redquartz
+botania:quartztypered:1, Chiseled Redquartz Block
+botania:quartztypered:2, Pillar Redquartz Block
+botania:quartzslabredhalf:0, Redquartz Slab
+botania:quartzstairsred, tile.quartzStairsRed.name
+botania:quartztypeelf:0, Block of Elven Quartz
+botania:quartztypeelf:1, Chiseled Elven Quartz Block
+botania:quartztypeelf:2, Pillar Elven Quartz Block
+botania:quartzslabelfhalf:0, Elven Quartz Slab
+botania:quartzstairself, tile.quartzStairsElf.name
+botania:quartztypesunny:0, Block of Sunny Quartz
+botania:quartztypesunny:1, Chiseled Sunny Quartz Block
+botania:quartztypesunny:2, Pillar Sunny Quartz Block
+botania:quartzslabsunnyhalf:0, Sunny Quartz Slab
+botania:quartzstairssunny, tile.quartzStairsSunny.name
+botania:biomestonea:0, Metamorphic Forest Stone
+botania:biomestonea:1, Metamorphic Plains Stone
+botania:biomestonea:2, Metamorphic Mountain Stone
+botania:biomestonea:3, Metamorphic Fungal Stone
+botania:biomestonea:4, Metamorphic Swamp Stone
+botania:biomestonea:5, Metamorphic Desert Stone
+botania:biomestonea:6, Metamorphic Taiga Stone
+botania:biomestonea:7, Metamorphic Mesa Stone
+botania:biomestonea:8, Metamorphic Forest Cobblestone
+botania:biomestonea:9, Metamorphic Plains Cobblestone
+botania:biomestonea:10, Metamorphic Mountain Cobblestone
+botania:biomestonea:11, Metamorphic Fungal Cobblestone
+botania:biomestonea:12, Metamorphic Swamp Cobblestone
+botania:biomestonea:13, Metamorphic Desert Cobblestone
+botania:biomestonea:14, Metamorphic Taiga Cobblestone
+botania:biomestonea:15, Metamorphic Mesa Cobblestone
+botania:biomestoneb:0, Metamorphic Forest Stone Bricks
+botania:biomestoneb:1, Metamorphic Plains Stone Bricks
+botania:biomestoneb:2, Metamorphic Mountain Stone Bricks
+botania:biomestoneb:3, Metamorphic Fungal Stone Bricks
+botania:biomestoneb:4, Metamorphic Swamp Stone Bricks
+botania:biomestoneb:5, Metamorphic Desert Stone Bricks
+botania:biomestoneb:6, Metamorphic Taiga Stone Bricks
+botania:biomestoneb:7, Metamorphic Mesa Stone Bricks
+botania:biomestoneb:8, Chiseled Metamorphic Forest Stone Brick
+botania:biomestoneb:9, Chiseled Metamorphic Plains Stone Brick
+botania:biomestoneb:10, Chiseled Metamorphic Mountain Stone Brick
+botania:biomestoneb:11, Chiseled Metamorphic Fungal Stone Brick
+botania:biomestoneb:12, Chiseled Metamorphic Swamp Stone Brick
+botania:biomestoneb:13, Chiseled Metamorphic Desert Stone Brick
+botania:biomestoneb:14, Chiseled Metamorphic Taiga Stone Brick
+botania:biomestoneb:15, Chiseled Metamorphic Mesa Stone Brick
+botania:pavement:0, White Portuguese Pavement
+botania:pavement:1, Black Portuguese Pavement
+botania:pavement:2, Blue Portuguese Pavement
+botania:pavement:3, Red Portuguese Pavement
+botania:pavement:4, Yellow Portuguese Pavement
+botania:pavement:5, Green Portuguese Pavement
+botania:biomestonea0stairs, tile.biomeStoneA0Stairs.name
+botania:biomestonea0slab:0, Metamorphic Forest Stone Slab
+botania:biomestonea1stairs, tile.biomeStoneA1Stairs.name
+botania:biomestonea1slab:0, Metamorphic Plains Stone Slab
+botania:biomestonea2stairs, tile.biomeStoneA2Stairs.name
+botania:biomestonea2slab:0, Metamorphic Mountain Stone Slab
+botania:biomestonea3stairs, tile.biomeStoneA3Stairs.name
+botania:biomestonea3slab:0, Metamorphic Fungal Stone Slab
+botania:biomestonea4stairs, tile.biomeStoneA4Stairs.name
+botania:biomestonea4slab:0, Metamorphic Swamp Stone Slab
+botania:biomestonea5stairs, tile.biomeStoneA5Stairs.name
+botania:biomestonea5slab:0, Metamorphic Desert Stone Slab
+botania:biomestonea6stairs, tile.biomeStoneA6Stairs.name
+botania:biomestonea6slab:0, Metamorphic Taiga Stone Slab
+botania:biomestonea7stairs, tile.biomeStoneA7Stairs.name
+botania:biomestonea7slab:0, Metamorphic Mesa Stone Slab
+botania:biomestonea8stairs, tile.biomeStoneA8Stairs.name
+botania:biomestonea8slab:0, Metamorphic Forest Cobblestone Slab
+botania:biomestonea9stairs, tile.biomeStoneA9Stairs.name
+botania:biomestonea9slab:0, Metamorphic Plains Cobblestone Slab
+botania:biomestonea10stairs, tile.biomeStoneA10Stairs.name
+botania:biomestonea10slab:0, Metamorphic Mountain Cobblestone Slab
+botania:biomestonea11stairs, tile.biomeStoneA11Stairs.name
+botania:biomestonea11slab:0, Metamorphic Fungal Cobblestone Slab
+botania:biomestonea12stairs, tile.biomeStoneA12Stairs.name
+botania:biomestonea12slab:0, Metamorphic Swamp Cobblestone Slab
+botania:biomestonea13stairs, tile.biomeStoneA13Stairs.name
+botania:biomestonea13slab:0, Metamorphic Desert Cobblestone Slab
+botania:biomestonea14stairs, tile.biomeStoneA14Stairs.name
+botania:biomestonea14slab:0, Metamorphic Taiga Cobblestone Slab
+botania:biomestonea15stairs, tile.biomeStoneA15Stairs.name
+botania:biomestonea15slab:0, Metamorphic Mesa Cobblestone Slab
+botania:biomestoneb0stairs, tile.biomeStoneB0Stairs.name
+botania:biomestoneb0slab:0, Metamorphic Forest Stone Brick Slab
+botania:biomestoneb1stairs, tile.biomeStoneB1Stairs.name
+botania:biomestoneb1slab:0, Metamorphic Plains Stone Brick Slab
+botania:biomestoneb2stairs, tile.biomeStoneB2Stairs.name
+botania:biomestoneb2slab:0, Metamorphic Mountain Stone Brick Slab
+botania:biomestoneb3stairs, tile.biomeStoneB3Stairs.name
+botania:biomestoneb3slab:0, Metamorphic Fungal Stone Brick Slab
+botania:biomestoneb4stairs, tile.biomeStoneB4Stairs.name
+botania:biomestoneb4slab:0, Metamorphic Swamp Stone Brick Slab
+botania:biomestoneb5stairs, tile.biomeStoneB5Stairs.name
+botania:biomestoneb5slab:0, Metamorphic Desert Stone Brick Slab
+botania:biomestoneb6stairs, tile.biomeStoneB6Stairs.name
+botania:biomestoneb6slab:0, Metamorphic Taiga Stone Brick Slab
+botania:biomestoneb7stairs, tile.biomeStoneB7Stairs.name
+botania:biomestoneb7slab:0, Metamorphic Mesa Stone Bricks Slab
+botania:biomestonea0wall:0, Metamorphic Forest Cobblestone Wall
+botania:biomestonea0wall:1, Metamorphic Plains Cobblestone Wall
+botania:biomestonea0wall:2, Metamorphic Mountain Cobblestone Wall
+botania:biomestonea0wall:3, Metamorphic Fungal Cobblestone Wall
+botania:biomestonea0wall:4, Metamorphic Swamp Cobblestone Wall
+botania:biomestonea0wall:5, Metamorphic Desert Cobblestone Wall
+botania:biomestonea0wall:6, Metamorphic Taiga Cobblestone Wall
+botania:biomestonea0wall:7, Metamorphic Mesa Cobblestone Wall
+botania:pavement0stairs, tile.pavement0Stairs.name
+botania:pavement0slab:0, White Portuguese Pavement Slab
+botania:pavement1stairs, tile.pavement1Stairs.name
+botania:pavement1slab:0, Black Portuguese Pavement Slab
+botania:pavement2stairs, tile.pavement2Stairs.name
+botania:pavement2slab:0, Blue Portuguese Pavement Slab
+botania:pavement3stairs, tile.pavement3Stairs.name
+botania:pavement3slab:0, Red Portuguese Pavement Slab
+botania:pavement4stairs, tile.pavement4Stairs.name
+botania:pavement4slab:0, Yellow Portuguese Pavement Slab
+botania:pavement5stairs, tile.pavement5Stairs.name
+botania:pavement5slab:0, Green Portuguese Pavement Slab
+botania:shimmerrock0slab:0, Shimmerrock Slab
+botania:shimmerrock0stairs, tile.shimmerrock0Stairs.name
+botania:shimmerwoodplanks0slab:0, Shimmerwood Plank Slab
+botania:shimmerwoodplanks0stairs, tile.shimmerwoodPlanks0Stairs.name
+botania:managlasspane, tile.manaGlassPane.name
+botania:elfglasspane, tile.elfGlassPane.name
+botania:bifrostpermpane, tile.bifrostPermPane.name
+botania:flower:0, Mystical White Flower
+botania:flower:1, Mystical Orange Flower
+botania:flower:2, Mystical Magenta Flower
+botania:flower:3, Mystical Light Blue Flower
+botania:flower:4, Mystical Yellow Flower
+botania:flower:5, Mystical Lime Flower
+botania:flower:6, Mystical Pink Flower
+botania:flower:7, Mystical Gray Flower
+botania:flower:8, Mystical Light Gray Flower
+botania:flower:9, Mystical Cyan Flower
+botania:flower:10, Mystical Purple Flower
+botania:flower:11, Mystical Blue Flower
+botania:flower:12, Mystical Brown Flower
+botania:flower:13, Mystical Green Flower
+botania:flower:14, Mystical Red Flower
+botania:flower:15, Mystical Black Flower
+botania:altar:0, Petal Apothecary
+botania:altar:1, Forest Petal Apothecary
+botania:altar:2, Plains Petal Apothecary
+botania:altar:3, Mountain Petal Apothecary
+botania:altar:4, Fungal Petal Apothecary
+botania:altar:5, Swamp Petal Apothecary
+botania:altar:6, Desert Petal Apothecary
+botania:altar:7, Taiga Petal Apothecary
+botania:altar:8, Mesa Petal Apothecary
+botania:livingrock:0, Livingrock
+botania:livingrock:1, Livingrock Brick
+botania:livingrock:2, Mossy Livingrock Brick
+botania:livingrock:3, Cracked Livingrock Brick
+botania:livingrock:4, Chiseled Livingrock Brick
+botania:livingwood:0, Livingwood
+botania:livingwood:1, Livingwood Planks
+botania:livingwood:2, Mossy Livingwood Planks
+botania:livingwood:3, Framed Livingwood
+botania:livingwood:4, Pattern Framed Livingwood
+botania:livingwood:5, Glimmering Livingwood
+botania:specialflower:0, Pure Daisy
+botania:specialflower:0, Manastar
+botania:specialflower:0, Endoflame
+botania:specialflower:0, Hydroangeas
+botania:specialflower:0, Thermalily
+botania:specialflower:0, Rosa Arcana
+botania:specialflower:0, Munchdew
+botania:specialflower:0, Entropinnyum
+botania:specialflower:0, Kekimurus
+botania:specialflower:0, Gourmaryllis
+botania:specialflower:0, Narslimmus
+botania:specialflower:0, Spectrolus
+botania:specialflower:0, Rafflowsia
+botania:specialflower:0, Shulk Me Not
+botania:specialflower:0, Dandelifeon
+botania:specialflower:0, Jaded Amaranthus
+botania:specialflower:0, Bellethorne
+botania:specialflower:0, Bellethorne Petite
+botania:specialflower:0, Dreadthorne
+botania:specialflower:0, Heisei Dream
+botania:specialflower:0, Tigerseye
+botania:specialflower:0, Marimorphosis
+botania:specialflower:0, Marimorphosis Petite
+botania:specialflower:0, Orechid
+botania:specialflower:0, Orechid Ignem
+botania:specialflower:0, Fallen Kanade
+botania:specialflower:0, Exoflame
+botania:specialflower:0, Agricarnation
+botania:specialflower:0, Agricarnation Petite
+botania:specialflower:0, Hopperhock
+botania:specialflower:0, Hopperhock Petite
+botania:specialflower:0, Rannuncarpus
+botania:specialflower:0, Rannuncarpus Petite
+botania:specialflower:0, Tangleberrie
+botania:specialflower:0, Jiyuulia
+botania:specialflower:0, Hyacidus
+botania:specialflower:0, Medumone
+botania:specialflower:0, Pollidisiac
+botania:specialflower:0, Clayconia
+botania:specialflower:0, Clayconia Petite
+botania:specialflower:0, Loonium
+botania:specialflower:0, Daffomill
+botania:specialflower:0, Vinculotus
+botania:specialflower:0, Spectranthemum
+botania:specialflower:0, Bubbell
+botania:specialflower:0, Bubbell Petite
+botania:specialflower:0, Solegnolia
+botania:specialflower:0, Solegnolia Petite
+botania:specialflower:0, Bergamute
+botania:spreader:0, Mana Spreader
+botania:spreader:1, Pulse Mana Spreader
+botania:spreader:2, Elven Mana Spreader
+botania:spreader:3, Gaia Mana Spreader
+botania:pool:0, Mana Pool
+botania:pool:2, Diluted Mana Pool
+botania:pool:3, Fabulous Mana Pool
+botania:pool:1, The Everlasting Guilty Pool
+botania:runealtar, tile.runeAltar.name
+botania:pylon:0, Mana Pylon
+botania:pylon:1, Natura Pylon
+botania:pylon:2, Gaia Pylon
+botania:pistonrelay, tile.pistonRelay.name
+botania:distributor, tile.distributor.name
+botania:manavoid, tile.manaVoid.name
+botania:manadetector, tile.manaDetector.name
+botania:enchanter, tile.enchanter.name
+botania:turntable, tile.turntable.name
+botania:tinyplanetblock, tile.tinyPlanetBlock.name
+botania:alchemycatalyst, tile.alchemyCatalyst.name
+botania:opencrate:0, Open Crate
+botania:opencrate:1, Crafty Crate
+botania:foresteye, tile.forestEye.name
+botania:storage:0, Block of Manasteel
+botania:storage:1, Block of Terrasteel
+botania:storage:2, Block of Elementium
+botania:storage:3, Block of Mana Diamond
+botania:storage:4, Block of Dragonstone
+botania:forestdrum:0, Drum of the Wild
+botania:forestdrum:1, Drum of the Gathering
+botania:forestdrum:2, Drum of the Canopy
+botania:shinyflower:0, Glimmering White Flower
+botania:shinyflower:1, Glimmering Orange Flower
+botania:shinyflower:2, Glimmering Magenta Flower
+botania:shinyflower:3, Glimmering Light Blue Flower
+botania:shinyflower:4, Glimmering Yellow Flower
+botania:shinyflower:5, Glimmering Lime Flower
+botania:shinyflower:6, Glimmering Pink Flower
+botania:shinyflower:7, Glimmering Gray Flower
+botania:shinyflower:8, Glimmering Light Gray Flower
+botania:shinyflower:9, Glimmering Cyan Flower
+botania:shinyflower:10, Glimmering Purple Flower
+botania:shinyflower:11, Glimmering Blue Flower
+botania:shinyflower:12, Glimmering Brown Flower
+botania:shinyflower:13, Glimmering Green Flower
+botania:shinyflower:14, Glimmering Red Flower
+botania:shinyflower:15, Glimmering Black Flower
+botania:platform:0, Abstruse Platform
+botania:platform:1, Spectral Platform
+botania:platform:2, Infrangible Platform
+botania:alfheimportal, tile.alfheimPortal.name
+botania:dreamwood:0, Dreamwood
+botania:dreamwood:1, Dreamwood Planks
+botania:dreamwood:2, Mossy Dreamwood Planks
+botania:dreamwood:3, Framed Dreamwood
+botania:dreamwood:4, Pattern Framed Dreamwood
+botania:dreamwood:5, Glimmering Dreamwood
+botania:conjurationcatalyst, tile.conjurationCatalyst.name
+botania:bifrost, tile.bifrost.name
+botania:miniisland:0, Floating White Flower
+botania:miniisland:1, Floating Orange Flower
+botania:miniisland:2, Floating Magenta Flower
+botania:miniisland:3, Floating Light Blue Flower
+botania:miniisland:4, Floating Yellow Flower
+botania:miniisland:5, Floating Lime Flower
+botania:miniisland:6, Floating Pink Flower
+botania:miniisland:7, Floating Gray Flower
+botania:miniisland:8, Floating Light Gray Flower
+botania:miniisland:9, Floating Cyan Flower
+botania:miniisland:10, Floating Purple Flower
+botania:miniisland:11, Floating Blue Flower
+botania:miniisland:12, Floating Brown Flower
+botania:miniisland:13, Floating Green Flower
+botania:miniisland:14, Floating Red Flower
+botania:miniisland:15, Floating Black Flower
+botania:tinypotato, tile.tinyPotato.name
+botania:spawnerclaw, tile.spawnerClaw.name
+botania:custombrick:0, Azulejo
+botania:custombrick:1, Azulejo
+botania:custombrick:2, Azulejo
+botania:custombrick:3, Azulejo
+botania:custombrick:4, Azulejo
+botania:custombrick:5, Azulejo
+botania:custombrick:6, Azulejo
+botania:custombrick:7, Azulejo
+botania:custombrick:8, Azulejo
+botania:custombrick:9, Azulejo
+botania:custombrick:10, Azulejo
+botania:custombrick:11, Azulejo
+botania:custombrick:12, Azulejo
+botania:custombrick:13, Azulejo
+botania:custombrick:14, Azulejo
+botania:custombrick:15, Azulejo
+botania:endereyeblock, tile.enderEyeBlock.name
+botania:starfield, tile.starfield.name
+botania:rfgenerator, tile.rfGenerator.name
+botania:elfglass, tile.elfGlass.name
+botania:brewery, tile.brewery.name
+botania:managlass, tile.manaGlass.name
+botania:terraplate, tile.terraPlate.name
+botania:redstringcontainer, tile.redStringContainer.name
+botania:redstringdispenser, tile.redStringDispenser.name
+botania:redstringfertilizer, tile.redStringFertilizer.name
+botania:redstringcomparator, tile.redStringComparator.name
+botania:redstringrelay, tile.redStringRelay.name
+botania:floatingspecialflower:0, Floating Pure Daisy
+botania:floatingspecialflower:0, Floating Manastar
+botania:floatingspecialflower:0, Floating Endoflame
+botania:floatingspecialflower:0, Floating Hydroangeas
+botania:floatingspecialflower:0, Floating Thermalily
+botania:floatingspecialflower:0, Floating Rosa Arcana
+botania:floatingspecialflower:0, Floating Munchdew
+botania:floatingspecialflower:0, Floating Entropinnyum
+botania:floatingspecialflower:0, Floating Kekimurus
+botania:floatingspecialflower:0, Floating Gourmaryllis
+botania:floatingspecialflower:0, Floating Narslimmus
+botania:floatingspecialflower:0, Floating Spectrolus
+botania:floatingspecialflower:0, Floating Rafflowsia
+botania:floatingspecialflower:0, Floating Shulk Me Not
+botania:floatingspecialflower:0, Floating Dandelifeon
+botania:floatingspecialflower:0, Floating Jaded Amaranthus
+botania:floatingspecialflower:0, Floating Bellethorne
+botania:floatingspecialflower:0, Floating Bellethorne Petite
+botania:floatingspecialflower:0, Floating Dreadthorne
+botania:floatingspecialflower:0, Floating Heisei Dream
+botania:floatingspecialflower:0, Floating Tigerseye
+botania:floatingspecialflower:0, Floating Marimorphosis
+botania:floatingspecialflower:0, Floating Marimorphosis Petite
+botania:floatingspecialflower:0, Floating Orechid
+botania:floatingspecialflower:0, Floating Orechid Ignem
+botania:floatingspecialflower:0, Floating Fallen Kanade
+botania:floatingspecialflower:0, Floating Exoflame
+botania:floatingspecialflower:0, Floating Agricarnation
+botania:floatingspecialflower:0, Floating Agricarnation Petite
+botania:floatingspecialflower:0, Floating Hopperhock
+botania:floatingspecialflower:0, Floating Hopperhock Petite
+botania:floatingspecialflower:0, Floating Rannuncarpus
+botania:floatingspecialflower:0, Floating Rannuncarpus Petite
+botania:floatingspecialflower:0, Floating Tangleberrie
+botania:floatingspecialflower:0, Floating Jiyuulia
+botania:floatingspecialflower:0, Floating Hyacidus
+botania:floatingspecialflower:0, Floating Medumone
+botania:floatingspecialflower:0, Floating Pollidisiac
+botania:floatingspecialflower:0, Floating Clayconia
+botania:floatingspecialflower:0, Floating Clayconia Petite
+botania:floatingspecialflower:0, Floating Loonium
+botania:floatingspecialflower:0, Floating Daffomill
+botania:floatingspecialflower:0, Floating Vinculotus
+botania:floatingspecialflower:0, Floating Spectranthemum
+botania:floatingspecialflower:0, Floating Bubbell
+botania:floatingspecialflower:0, Floating Bubbell Petite
+botania:floatingspecialflower:0, Floating Solegnolia
+botania:floatingspecialflower:0, Floating Solegnolia Petite
+botania:floatingspecialflower:0, Floating Bergamute
+botania:prism, tile.prism.name
+botania:enchantedsoil, tile.enchantedSoil.name
+botania:petalblock:0, White Petal Block
+botania:petalblock:1, Orange Petal Block
+botania:petalblock:2, Magenta Petal Block
+botania:petalblock:3, Light Blue Petal Block
+botania:petalblock:4, Yellow Petal Block
+botania:petalblock:5, Lime Petal Block
+botania:petalblock:6, Pink Petal Block
+botania:petalblock:7, Gray Petal Block
+botania:petalblock:8, Light Gray Petal Block
+botania:petalblock:9, Cyan Petal Block
+botania:petalblock:10, Purple Petal Block
+botania:petalblock:11, Blue Petal Block
+botania:petalblock:12, Brown Petal Block
+botania:petalblock:13, Green Petal Block
+botania:petalblock:14, Red Petal Block
+botania:petalblock:15, Black Petal Block
+botania:corporeaindex, tile.corporeaIndex.name
+botania:corporeafunnel, tile.corporeaFunnel.name
+botania:mushroom:0, White Shimmering Mushroom
+botania:mushroom:1, Orange Shimmering Mushroom
+botania:mushroom:2, Magenta Shimmering Mushroom
+botania:mushroom:3, Light Blue Shimmering Mushroom
+botania:mushroom:4, Yellow Shimmering Mushroom
+botania:mushroom:5, Lime Shimmering Mushroom
+botania:mushroom:6, Pink Shimmering Mushroom
+botania:mushroom:7, Gray Shimmering Mushroom
+botania:mushroom:8, Light Gray Shimmering Mushroom
+botania:mushroom:9, Cyan Shimmering Mushroom
+botania:mushroom:10, Purple Shimmering Mushroom
+botania:mushroom:11, Blue Shimmering Mushroom
+botania:mushroom:12, Brown Shimmering Mushroom
+botania:mushroom:13, Green Shimmering Mushroom
+botania:mushroom:14, Red Shimmering Mushroom
+botania:mushroom:15, Black Shimmering Mushroom
+botania:pump, tile.pump.name
+botania:doubleflower1:0, Tall Mystical White Flower
+botania:doubleflower1:1, Tall Mystical Orange Flower
+botania:doubleflower1:2, Tall Mystical Magenta Flower
+botania:doubleflower1:3, Tall Mystical Light Blue Flower
+botania:doubleflower1:4, Tall Mystical Yellow Flower
+botania:doubleflower1:5, Tall Mystical Lime Flower
+botania:doubleflower1:6, Tall Mystical Pink Flower
+botania:doubleflower1:7, Tall Mystical Gray Flower
+botania:doubleflower2:0, Tall Mystical Light Gray Flower
+botania:doubleflower2:1, Tall Mystical Cyan Flower
+botania:doubleflower2:2, Tall Mystical Purple Flower
+botania:doubleflower2:3, Tall Mystical Blue Flower
+botania:doubleflower2:4, Tall Mystical Brown Flower
+botania:doubleflower2:5, Tall Mystical Green Flower
+botania:doubleflower2:6, Tall Mystical Red Flower
+botania:doubleflower2:7, Tall Mystical Black Flower
+botania:blazeblock, tile.blazeBlock.name
+botania:corporeainterceptor, tile.corporeaInterceptor.name
+botania:corporeacrystalcube, tile.corporeaCrystalCube.name
+botania:incenseplate, tile.incensePlate.name
+botania:hourglass, tile.hourglass.name
+botania:ghostrail, tile.ghostRail.name
+botania:sparkchanger, tile.sparkChanger.name
+botania:root, tile.root.name
+botania:felpumpkin, tile.felPumpkin.name
+botania:cocoon, tile.cocoon.name
+botania:lightrelay:0, Luminizer
+botania:lightrelay:1, Detector Luminizer
+botania:lightrelay:2, Fork Luminizer
+botania:lightrelay:3, Toggle Luminizer
+botania:lightlauncher, tile.lightLauncher.name
+botania:manabomb, tile.manaBomb.name
+botania:cacophoniumblock, tile.cacophoniumBlock.name
+botania:bellows, tile.bellows.name
+botania:bifrostperm, tile.bifrostPerm.name
+botania:cellblock, tile.cellBlock.name
+botania:redstringinterceptor, tile.redStringInterceptor.name
+botania:corporearetainer, tile.corporeaRetainer.name
+botania:teruterubozu, tile.teruTeruBozu.name
+botania:shimmerrock, tile.shimmerrock.name
+botania:shimmerwoodplanks, tile.shimmerwoodPlanks.name
+botania:avatar, tile.avatar.name
+botania:altgrass:0, Dry Grass
+botania:altgrass:1, Golden Grass
+botania:altgrass:2, Vivid Grass
+botania:altgrass:3, Scorched Grass
+botania:altgrass:4, Infused Grass
+botania:altgrass:5, Mutated Grass
+botania:animatedtorch, tile.animatedTorch.name
 botania:lexicon, item.lexicon.name
 botania:petal:0, Mystical White Petal
 botania:petal:1, Mystical Orange Petal
@@ -7709,494 +7761,6 @@ botania:supercloudpendant, item.superCloudPendant.name
 botania:thirdeye, item.thirdEye.name
 botania:astrolabe, item.astrolabe.name
 botania:goddesscharm, item.goddessCharm.name
-botania:flower:0, Mystical White Flower
-botania:flower:1, Mystical Orange Flower
-botania:flower:2, Mystical Magenta Flower
-botania:flower:3, Mystical Light Blue Flower
-botania:flower:4, Mystical Yellow Flower
-botania:flower:5, Mystical Lime Flower
-botania:flower:6, Mystical Pink Flower
-botania:flower:7, Mystical Gray Flower
-botania:flower:8, Mystical Light Gray Flower
-botania:flower:9, Mystical Cyan Flower
-botania:flower:10, Mystical Purple Flower
-botania:flower:11, Mystical Blue Flower
-botania:flower:12, Mystical Brown Flower
-botania:flower:13, Mystical Green Flower
-botania:flower:14, Mystical Red Flower
-botania:flower:15, Mystical Black Flower
-botania:altar:0, Petal Apothecary
-botania:altar:1, Forest Petal Apothecary
-botania:altar:2, Plains Petal Apothecary
-botania:altar:3, Mountain Petal Apothecary
-botania:altar:4, Fungal Petal Apothecary
-botania:altar:5, Swamp Petal Apothecary
-botania:altar:6, Desert Petal Apothecary
-botania:altar:7, Taiga Petal Apothecary
-botania:altar:8, Mesa Petal Apothecary
-botania:livingrock:0, Livingrock
-botania:livingrock:1, Livingrock Brick
-botania:livingrock:2, Mossy Livingrock Brick
-botania:livingrock:3, Cracked Livingrock Brick
-botania:livingrock:4, Chiseled Livingrock Brick
-botania:livingwood:0, Livingwood
-botania:livingwood:1, Livingwood Planks
-botania:livingwood:2, Mossy Livingwood Planks
-botania:livingwood:3, Framed Livingwood
-botania:livingwood:4, Pattern Framed Livingwood
-botania:livingwood:5, Glimmering Livingwood
-botania:specialflower:0, Pure Daisy
-botania:specialflower:0, Manastar
-botania:specialflower:0, Endoflame
-botania:specialflower:0, Hydroangeas
-botania:specialflower:0, Thermalily
-botania:specialflower:0, Rosa Arcana
-botania:specialflower:0, Munchdew
-botania:specialflower:0, Entropinnyum
-botania:specialflower:0, Kekimurus
-botania:specialflower:0, Gourmaryllis
-botania:specialflower:0, Narslimmus
-botania:specialflower:0, Spectrolus
-botania:specialflower:0, Rafflowsia
-botania:specialflower:0, Shulk Me Not
-botania:specialflower:0, Dandelifeon
-botania:specialflower:0, Jaded Amaranthus
-botania:specialflower:0, Bellethorne
-botania:specialflower:0, Bellethorne Petite
-botania:specialflower:0, Dreadthorne
-botania:specialflower:0, Heisei Dream
-botania:specialflower:0, Tigerseye
-botania:specialflower:0, Marimorphosis
-botania:specialflower:0, Marimorphosis Petite
-botania:specialflower:0, Orechid
-botania:specialflower:0, Orechid Ignem
-botania:specialflower:0, Fallen Kanade
-botania:specialflower:0, Exoflame
-botania:specialflower:0, Agricarnation
-botania:specialflower:0, Agricarnation Petite
-botania:specialflower:0, Hopperhock
-botania:specialflower:0, Hopperhock Petite
-botania:specialflower:0, Rannuncarpus
-botania:specialflower:0, Rannuncarpus Petite
-botania:specialflower:0, Tangleberrie
-botania:specialflower:0, Jiyuulia
-botania:specialflower:0, Hyacidus
-botania:specialflower:0, Medumone
-botania:specialflower:0, Pollidisiac
-botania:specialflower:0, Clayconia
-botania:specialflower:0, Clayconia Petite
-botania:specialflower:0, Loonium
-botania:specialflower:0, Daffomill
-botania:specialflower:0, Vinculotus
-botania:specialflower:0, Spectranthemum
-botania:specialflower:0, Bubbell
-botania:specialflower:0, Bubbell Petite
-botania:specialflower:0, Solegnolia
-botania:specialflower:0, Solegnolia Petite
-botania:specialflower:0, Bergamute
-botania:spreader:0, Mana Spreader
-botania:spreader:1, Pulse Mana Spreader
-botania:spreader:2, Elven Mana Spreader
-botania:spreader:3, Gaia Mana Spreader
-botania:pool:0, Mana Pool
-botania:pool:2, Diluted Mana Pool
-botania:pool:3, Fabulous Mana Pool
-botania:pool:1, The Everlasting Guilty Pool
-botania:runealtar, tile.runeAltar.name
-botania:pylon:0, Mana Pylon
-botania:pylon:1, Natura Pylon
-botania:pylon:2, Gaia Pylon
-botania:pistonrelay, tile.pistonRelay.name
-botania:distributor, tile.distributor.name
-botania:manavoid, tile.manaVoid.name
-botania:manadetector, tile.manaDetector.name
-botania:enchanter, tile.enchanter.name
-botania:turntable, tile.turntable.name
-botania:tinyplanetblock, tile.tinyPlanetBlock.name
-botania:alchemycatalyst, tile.alchemyCatalyst.name
-botania:opencrate:0, Open Crate
-botania:opencrate:1, Crafty Crate
-botania:foresteye, tile.forestEye.name
-botania:storage:0, Block of Manasteel
-botania:storage:1, Block of Terrasteel
-botania:storage:2, Block of Elementium
-botania:storage:3, Block of Mana Diamond
-botania:storage:4, Block of Dragonstone
-botania:forestdrum:0, Drum of the Wild
-botania:forestdrum:1, Drum of the Gathering
-botania:forestdrum:2, Drum of the Canopy
-botania:shinyflower:0, Glimmering White Flower
-botania:shinyflower:1, Glimmering Orange Flower
-botania:shinyflower:2, Glimmering Magenta Flower
-botania:shinyflower:3, Glimmering Light Blue Flower
-botania:shinyflower:4, Glimmering Yellow Flower
-botania:shinyflower:5, Glimmering Lime Flower
-botania:shinyflower:6, Glimmering Pink Flower
-botania:shinyflower:7, Glimmering Gray Flower
-botania:shinyflower:8, Glimmering Light Gray Flower
-botania:shinyflower:9, Glimmering Cyan Flower
-botania:shinyflower:10, Glimmering Purple Flower
-botania:shinyflower:11, Glimmering Blue Flower
-botania:shinyflower:12, Glimmering Brown Flower
-botania:shinyflower:13, Glimmering Green Flower
-botania:shinyflower:14, Glimmering Red Flower
-botania:shinyflower:15, Glimmering Black Flower
-botania:platform:0, Abstruse Platform
-botania:platform:1, Spectral Platform
-botania:platform:2, Infrangible Platform
-botania:alfheimportal, tile.alfheimPortal.name
-botania:dreamwood:0, Dreamwood
-botania:dreamwood:1, Dreamwood Planks
-botania:dreamwood:2, Mossy Dreamwood Planks
-botania:dreamwood:3, Framed Dreamwood
-botania:dreamwood:4, Pattern Framed Dreamwood
-botania:dreamwood:5, Glimmering Dreamwood
-botania:conjurationcatalyst, tile.conjurationCatalyst.name
-botania:bifrost, tile.bifrost.name
-botania:miniisland:0, Floating White Flower
-botania:miniisland:1, Floating Orange Flower
-botania:miniisland:2, Floating Magenta Flower
-botania:miniisland:3, Floating Light Blue Flower
-botania:miniisland:4, Floating Yellow Flower
-botania:miniisland:5, Floating Lime Flower
-botania:miniisland:6, Floating Pink Flower
-botania:miniisland:7, Floating Gray Flower
-botania:miniisland:8, Floating Light Gray Flower
-botania:miniisland:9, Floating Cyan Flower
-botania:miniisland:10, Floating Purple Flower
-botania:miniisland:11, Floating Blue Flower
-botania:miniisland:12, Floating Brown Flower
-botania:miniisland:13, Floating Green Flower
-botania:miniisland:14, Floating Red Flower
-botania:miniisland:15, Floating Black Flower
-botania:tinypotato, tile.tinyPotato.name
-botania:spawnerclaw, tile.spawnerClaw.name
-botania:custombrick:0, Azulejo
-botania:custombrick:1, Azulejo
-botania:custombrick:2, Azulejo
-botania:custombrick:3, Azulejo
-botania:custombrick:4, Azulejo
-botania:custombrick:5, Azulejo
-botania:custombrick:6, Azulejo
-botania:custombrick:7, Azulejo
-botania:custombrick:8, Azulejo
-botania:custombrick:9, Azulejo
-botania:custombrick:10, Azulejo
-botania:custombrick:11, Azulejo
-botania:custombrick:12, Azulejo
-botania:custombrick:13, Azulejo
-botania:custombrick:14, Azulejo
-botania:custombrick:15, Azulejo
-botania:endereyeblock, tile.enderEyeBlock.name
-botania:starfield, tile.starfield.name
-botania:rfgenerator, tile.rfGenerator.name
-botania:elfglass, tile.elfGlass.name
-botania:brewery, tile.brewery.name
-botania:managlass, tile.manaGlass.name
-botania:terraplate, tile.terraPlate.name
-botania:redstringcontainer, tile.redStringContainer.name
-botania:redstringdispenser, tile.redStringDispenser.name
-botania:redstringfertilizer, tile.redStringFertilizer.name
-botania:redstringcomparator, tile.redStringComparator.name
-botania:redstringrelay, tile.redStringRelay.name
-botania:floatingspecialflower:0, Floating Pure Daisy
-botania:floatingspecialflower:0, Floating Manastar
-botania:floatingspecialflower:0, Floating Endoflame
-botania:floatingspecialflower:0, Floating Hydroangeas
-botania:floatingspecialflower:0, Floating Thermalily
-botania:floatingspecialflower:0, Floating Rosa Arcana
-botania:floatingspecialflower:0, Floating Munchdew
-botania:floatingspecialflower:0, Floating Entropinnyum
-botania:floatingspecialflower:0, Floating Kekimurus
-botania:floatingspecialflower:0, Floating Gourmaryllis
-botania:floatingspecialflower:0, Floating Narslimmus
-botania:floatingspecialflower:0, Floating Spectrolus
-botania:floatingspecialflower:0, Floating Rafflowsia
-botania:floatingspecialflower:0, Floating Shulk Me Not
-botania:floatingspecialflower:0, Floating Dandelifeon
-botania:floatingspecialflower:0, Floating Jaded Amaranthus
-botania:floatingspecialflower:0, Floating Bellethorne
-botania:floatingspecialflower:0, Floating Bellethorne Petite
-botania:floatingspecialflower:0, Floating Dreadthorne
-botania:floatingspecialflower:0, Floating Heisei Dream
-botania:floatingspecialflower:0, Floating Tigerseye
-botania:floatingspecialflower:0, Floating Marimorphosis
-botania:floatingspecialflower:0, Floating Marimorphosis Petite
-botania:floatingspecialflower:0, Floating Orechid
-botania:floatingspecialflower:0, Floating Orechid Ignem
-botania:floatingspecialflower:0, Floating Fallen Kanade
-botania:floatingspecialflower:0, Floating Exoflame
-botania:floatingspecialflower:0, Floating Agricarnation
-botania:floatingspecialflower:0, Floating Agricarnation Petite
-botania:floatingspecialflower:0, Floating Hopperhock
-botania:floatingspecialflower:0, Floating Hopperhock Petite
-botania:floatingspecialflower:0, Floating Rannuncarpus
-botania:floatingspecialflower:0, Floating Rannuncarpus Petite
-botania:floatingspecialflower:0, Floating Tangleberrie
-botania:floatingspecialflower:0, Floating Jiyuulia
-botania:floatingspecialflower:0, Floating Hyacidus
-botania:floatingspecialflower:0, Floating Medumone
-botania:floatingspecialflower:0, Floating Pollidisiac
-botania:floatingspecialflower:0, Floating Clayconia
-botania:floatingspecialflower:0, Floating Clayconia Petite
-botania:floatingspecialflower:0, Floating Loonium
-botania:floatingspecialflower:0, Floating Daffomill
-botania:floatingspecialflower:0, Floating Vinculotus
-botania:floatingspecialflower:0, Floating Spectranthemum
-botania:floatingspecialflower:0, Floating Bubbell
-botania:floatingspecialflower:0, Floating Bubbell Petite
-botania:floatingspecialflower:0, Floating Solegnolia
-botania:floatingspecialflower:0, Floating Solegnolia Petite
-botania:floatingspecialflower:0, Floating Bergamute
-botania:prism, tile.prism.name
-botania:enchantedsoil, tile.enchantedSoil.name
-botania:petalblock:0, White Petal Block
-botania:petalblock:1, Orange Petal Block
-botania:petalblock:2, Magenta Petal Block
-botania:petalblock:3, Light Blue Petal Block
-botania:petalblock:4, Yellow Petal Block
-botania:petalblock:5, Lime Petal Block
-botania:petalblock:6, Pink Petal Block
-botania:petalblock:7, Gray Petal Block
-botania:petalblock:8, Light Gray Petal Block
-botania:petalblock:9, Cyan Petal Block
-botania:petalblock:10, Purple Petal Block
-botania:petalblock:11, Blue Petal Block
-botania:petalblock:12, Brown Petal Block
-botania:petalblock:13, Green Petal Block
-botania:petalblock:14, Red Petal Block
-botania:petalblock:15, Black Petal Block
-botania:corporeaindex, tile.corporeaIndex.name
-botania:corporeafunnel, tile.corporeaFunnel.name
-botania:mushroom:0, White Shimmering Mushroom
-botania:mushroom:1, Orange Shimmering Mushroom
-botania:mushroom:2, Magenta Shimmering Mushroom
-botania:mushroom:3, Light Blue Shimmering Mushroom
-botania:mushroom:4, Yellow Shimmering Mushroom
-botania:mushroom:5, Lime Shimmering Mushroom
-botania:mushroom:6, Pink Shimmering Mushroom
-botania:mushroom:7, Gray Shimmering Mushroom
-botania:mushroom:8, Light Gray Shimmering Mushroom
-botania:mushroom:9, Cyan Shimmering Mushroom
-botania:mushroom:10, Purple Shimmering Mushroom
-botania:mushroom:11, Blue Shimmering Mushroom
-botania:mushroom:12, Brown Shimmering Mushroom
-botania:mushroom:13, Green Shimmering Mushroom
-botania:mushroom:14, Red Shimmering Mushroom
-botania:mushroom:15, Black Shimmering Mushroom
-botania:pump, tile.pump.name
-botania:doubleflower1:0, Tall Mystical White Flower
-botania:doubleflower1:1, Tall Mystical Orange Flower
-botania:doubleflower1:2, Tall Mystical Magenta Flower
-botania:doubleflower1:3, Tall Mystical Light Blue Flower
-botania:doubleflower1:4, Tall Mystical Yellow Flower
-botania:doubleflower1:5, Tall Mystical Lime Flower
-botania:doubleflower1:6, Tall Mystical Pink Flower
-botania:doubleflower1:7, Tall Mystical Gray Flower
-botania:doubleflower2:0, Tall Mystical Light Gray Flower
-botania:doubleflower2:1, Tall Mystical Cyan Flower
-botania:doubleflower2:2, Tall Mystical Purple Flower
-botania:doubleflower2:3, Tall Mystical Blue Flower
-botania:doubleflower2:4, Tall Mystical Brown Flower
-botania:doubleflower2:5, Tall Mystical Green Flower
-botania:doubleflower2:6, Tall Mystical Red Flower
-botania:doubleflower2:7, Tall Mystical Black Flower
-botania:blazeblock, tile.blazeBlock.name
-botania:corporeainterceptor, tile.corporeaInterceptor.name
-botania:corporeacrystalcube, tile.corporeaCrystalCube.name
-botania:incenseplate, tile.incensePlate.name
-botania:hourglass, tile.hourglass.name
-botania:ghostrail, tile.ghostRail.name
-botania:sparkchanger, tile.sparkChanger.name
-botania:root, tile.root.name
-botania:felpumpkin, tile.felPumpkin.name
-botania:cocoon, tile.cocoon.name
-botania:lightrelay:0, Luminizer
-botania:lightrelay:1, Detector Luminizer
-botania:lightrelay:2, Fork Luminizer
-botania:lightrelay:3, Toggle Luminizer
-botania:lightlauncher, tile.lightLauncher.name
-botania:manabomb, tile.manaBomb.name
-botania:cacophoniumblock, tile.cacophoniumBlock.name
-botania:bellows, tile.bellows.name
-botania:bifrostperm, tile.bifrostPerm.name
-botania:cellblock, tile.cellBlock.name
-botania:redstringinterceptor, tile.redStringInterceptor.name
-botania:corporearetainer, tile.corporeaRetainer.name
-botania:teruterubozu, tile.teruTeruBozu.name
-botania:shimmerrock, tile.shimmerrock.name
-botania:shimmerwoodplanks, tile.shimmerwoodPlanks.name
-botania:avatar, tile.avatar.name
-botania:altgrass:0, Dry Grass
-botania:altgrass:1, Golden Grass
-botania:altgrass:2, Vivid Grass
-botania:altgrass:3, Scorched Grass
-botania:altgrass:4, Infused Grass
-botania:altgrass:5, Mutated Grass
-botania:animatedtorch, tile.animatedTorch.name
-botania:livingwood0stairs, tile.livingwood0Stairs.name
-botania:livingwood0slab:0, Livingwood Slab
-botania:livingwood0wall, tile.livingwood0Wall.name
-botania:livingwood1stairs, tile.livingwood1Stairs.name
-botania:livingwood1slab:0, Livingwood Plank Slab
-botania:livingrock0stairs, tile.livingrock0Stairs.name
-botania:livingrock0slab:0, Livingrock Slab
-botania:livingrock0wall, tile.livingrock0Wall.name
-botania:livingrock1stairs, tile.livingrock1Stairs.name
-botania:livingrock1slab:0, Livingrock Brick Slab
-botania:dreamwood0stairs, tile.dreamwood0Stairs.name
-botania:dreamwood0slab:0, Dreamwood Slab
-botania:dreamwood0wall, tile.dreamwood0Wall.name
-botania:dreamwood1stairs, tile.dreamwood1Stairs.name
-botania:dreamwood1slab:0, Dreamwood Plank Slab
-botania:quartztypedark:0, Block of Smokey Quartz
-botania:quartztypedark:1, Chiseled Smokey Quartz Block
-botania:quartztypedark:2, Pillar Smokey Quartz Block
-botania:quartzslabdarkhalf:0, Smokey Quartz Slab
-botania:quartzstairsdark, tile.quartzStairsDark.name
-botania:quartztypemana:0, Block of Mana Quartz
-botania:quartztypemana:1, Chiseled Mana Quartz Block
-botania:quartztypemana:2, Pillar Mana Quartz Block
-botania:quartzslabmanahalf:0, Mana Quartz Slab
-botania:quartzstairsmana, tile.quartzStairsMana.name
-botania:quartztypeblaze:0, Block of Blaze Quartz
-botania:quartztypeblaze:1, Chiseled Blaze Quartz Block
-botania:quartztypeblaze:2, Pillar Blaze Quartz Block
-botania:quartzslabblazehalf:0, Blaze Quartz Slab
-botania:quartzstairsblaze, tile.quartzStairsBlaze.name
-botania:quartztypelavender:0, Block of Lavender Quartz
-botania:quartztypelavender:1, Chiseled Lavender Quartz Block
-botania:quartztypelavender:2, Pillar Lavender Quartz Block
-botania:quartzslablavenderhalf:0, Lavender Quartz Slab
-botania:quartzstairslavender, tile.quartzStairsLavender.name
-botania:quartztypered:0, Block of Redquartz
-botania:quartztypered:1, Chiseled Redquartz Block
-botania:quartztypered:2, Pillar Redquartz Block
-botania:quartzslabredhalf:0, Redquartz Slab
-botania:quartzstairsred, tile.quartzStairsRed.name
-botania:quartztypeelf:0, Block of Elven Quartz
-botania:quartztypeelf:1, Chiseled Elven Quartz Block
-botania:quartztypeelf:2, Pillar Elven Quartz Block
-botania:quartzslabelfhalf:0, Elven Quartz Slab
-botania:quartzstairself, tile.quartzStairsElf.name
-botania:quartztypesunny:0, Block of Sunny Quartz
-botania:quartztypesunny:1, Chiseled Sunny Quartz Block
-botania:quartztypesunny:2, Pillar Sunny Quartz Block
-botania:quartzslabsunnyhalf:0, Sunny Quartz Slab
-botania:quartzstairssunny, tile.quartzStairsSunny.name
-botania:biomestonea:0, Metamorphic Forest Stone
-botania:biomestonea:1, Metamorphic Plains Stone
-botania:biomestonea:2, Metamorphic Mountain Stone
-botania:biomestonea:3, Metamorphic Fungal Stone
-botania:biomestonea:4, Metamorphic Swamp Stone
-botania:biomestonea:5, Metamorphic Desert Stone
-botania:biomestonea:6, Metamorphic Taiga Stone
-botania:biomestonea:7, Metamorphic Mesa Stone
-botania:biomestonea:8, Metamorphic Forest Cobblestone
-botania:biomestonea:9, Metamorphic Plains Cobblestone
-botania:biomestonea:10, Metamorphic Mountain Cobblestone
-botania:biomestonea:11, Metamorphic Fungal Cobblestone
-botania:biomestonea:12, Metamorphic Swamp Cobblestone
-botania:biomestonea:13, Metamorphic Desert Cobblestone
-botania:biomestonea:14, Metamorphic Taiga Cobblestone
-botania:biomestonea:15, Metamorphic Mesa Cobblestone
-botania:biomestoneb:0, Metamorphic Forest Stone Bricks
-botania:biomestoneb:1, Metamorphic Plains Stone Bricks
-botania:biomestoneb:2, Metamorphic Mountain Stone Bricks
-botania:biomestoneb:3, Metamorphic Fungal Stone Bricks
-botania:biomestoneb:4, Metamorphic Swamp Stone Bricks
-botania:biomestoneb:5, Metamorphic Desert Stone Bricks
-botania:biomestoneb:6, Metamorphic Taiga Stone Bricks
-botania:biomestoneb:7, Metamorphic Mesa Stone Bricks
-botania:biomestoneb:8, Chiseled Metamorphic Forest Stone Brick
-botania:biomestoneb:9, Chiseled Metamorphic Plains Stone Brick
-botania:biomestoneb:10, Chiseled Metamorphic Mountain Stone Brick
-botania:biomestoneb:11, Chiseled Metamorphic Fungal Stone Brick
-botania:biomestoneb:12, Chiseled Metamorphic Swamp Stone Brick
-botania:biomestoneb:13, Chiseled Metamorphic Desert Stone Brick
-botania:biomestoneb:14, Chiseled Metamorphic Taiga Stone Brick
-botania:biomestoneb:15, Chiseled Metamorphic Mesa Stone Brick
-botania:pavement:0, White Portuguese Pavement
-botania:pavement:1, Black Portuguese Pavement
-botania:pavement:2, Blue Portuguese Pavement
-botania:pavement:3, Red Portuguese Pavement
-botania:pavement:4, Yellow Portuguese Pavement
-botania:pavement:5, Green Portuguese Pavement
-botania:biomestonea0stairs, tile.biomeStoneA0Stairs.name
-botania:biomestonea0slab:0, Metamorphic Forest Stone Slab
-botania:biomestonea1stairs, tile.biomeStoneA1Stairs.name
-botania:biomestonea1slab:0, Metamorphic Plains Stone Slab
-botania:biomestonea2stairs, tile.biomeStoneA2Stairs.name
-botania:biomestonea2slab:0, Metamorphic Mountain Stone Slab
-botania:biomestonea3stairs, tile.biomeStoneA3Stairs.name
-botania:biomestonea3slab:0, Metamorphic Fungal Stone Slab
-botania:biomestonea4stairs, tile.biomeStoneA4Stairs.name
-botania:biomestonea4slab:0, Metamorphic Swamp Stone Slab
-botania:biomestonea5stairs, tile.biomeStoneA5Stairs.name
-botania:biomestonea5slab:0, Metamorphic Desert Stone Slab
-botania:biomestonea6stairs, tile.biomeStoneA6Stairs.name
-botania:biomestonea6slab:0, Metamorphic Taiga Stone Slab
-botania:biomestonea7stairs, tile.biomeStoneA7Stairs.name
-botania:biomestonea7slab:0, Metamorphic Mesa Stone Slab
-botania:biomestonea8stairs, tile.biomeStoneA8Stairs.name
-botania:biomestonea8slab:0, Metamorphic Forest Cobblestone Slab
-botania:biomestonea9stairs, tile.biomeStoneA9Stairs.name
-botania:biomestonea9slab:0, Metamorphic Plains Cobblestone Slab
-botania:biomestonea10stairs, tile.biomeStoneA10Stairs.name
-botania:biomestonea10slab:0, Metamorphic Mountain Cobblestone Slab
-botania:biomestonea11stairs, tile.biomeStoneA11Stairs.name
-botania:biomestonea11slab:0, Metamorphic Fungal Cobblestone Slab
-botania:biomestonea12stairs, tile.biomeStoneA12Stairs.name
-botania:biomestonea12slab:0, Metamorphic Swamp Cobblestone Slab
-botania:biomestonea13stairs, tile.biomeStoneA13Stairs.name
-botania:biomestonea13slab:0, Metamorphic Desert Cobblestone Slab
-botania:biomestonea14stairs, tile.biomeStoneA14Stairs.name
-botania:biomestonea14slab:0, Metamorphic Taiga Cobblestone Slab
-botania:biomestonea15stairs, tile.biomeStoneA15Stairs.name
-botania:biomestonea15slab:0, Metamorphic Mesa Cobblestone Slab
-botania:biomestoneb0stairs, tile.biomeStoneB0Stairs.name
-botania:biomestoneb0slab:0, Metamorphic Forest Stone Brick Slab
-botania:biomestoneb1stairs, tile.biomeStoneB1Stairs.name
-botania:biomestoneb1slab:0, Metamorphic Plains Stone Brick Slab
-botania:biomestoneb2stairs, tile.biomeStoneB2Stairs.name
-botania:biomestoneb2slab:0, Metamorphic Mountain Stone Brick Slab
-botania:biomestoneb3stairs, tile.biomeStoneB3Stairs.name
-botania:biomestoneb3slab:0, Metamorphic Fungal Stone Brick Slab
-botania:biomestoneb4stairs, tile.biomeStoneB4Stairs.name
-botania:biomestoneb4slab:0, Metamorphic Swamp Stone Brick Slab
-botania:biomestoneb5stairs, tile.biomeStoneB5Stairs.name
-botania:biomestoneb5slab:0, Metamorphic Desert Stone Brick Slab
-botania:biomestoneb6stairs, tile.biomeStoneB6Stairs.name
-botania:biomestoneb6slab:0, Metamorphic Taiga Stone Brick Slab
-botania:biomestoneb7stairs, tile.biomeStoneB7Stairs.name
-botania:biomestoneb7slab:0, Metamorphic Mesa Stone Bricks Slab
-botania:biomestonea0wall:0, Metamorphic Forest Cobblestone Wall
-botania:biomestonea0wall:1, Metamorphic Plains Cobblestone Wall
-botania:biomestonea0wall:2, Metamorphic Mountain Cobblestone Wall
-botania:biomestonea0wall:3, Metamorphic Fungal Cobblestone Wall
-botania:biomestonea0wall:4, Metamorphic Swamp Cobblestone Wall
-botania:biomestonea0wall:5, Metamorphic Desert Cobblestone Wall
-botania:biomestonea0wall:6, Metamorphic Taiga Cobblestone Wall
-botania:biomestonea0wall:7, Metamorphic Mesa Cobblestone Wall
-botania:pavement0stairs, tile.pavement0Stairs.name
-botania:pavement0slab:0, White Portuguese Pavement Slab
-botania:pavement1stairs, tile.pavement1Stairs.name
-botania:pavement1slab:0, Black Portuguese Pavement Slab
-botania:pavement2stairs, tile.pavement2Stairs.name
-botania:pavement2slab:0, Blue Portuguese Pavement Slab
-botania:pavement3stairs, tile.pavement3Stairs.name
-botania:pavement3slab:0, Red Portuguese Pavement Slab
-botania:pavement4stairs, tile.pavement4Stairs.name
-botania:pavement4slab:0, Yellow Portuguese Pavement Slab
-botania:pavement5stairs, tile.pavement5Stairs.name
-botania:pavement5slab:0, Green Portuguese Pavement Slab
-botania:shimmerrock0slab:0, Shimmerrock Slab
-botania:shimmerrock0stairs, tile.shimmerrock0Stairs.name
-botania:shimmerwoodplanks0slab:0, Shimmerwood Plank Slab
-botania:shimmerwoodplanks0stairs, tile.shimmerwoodPlanks0Stairs.name
-botania:managlasspane, tile.manaGlassPane.name
-botania:elfglasspane, tile.elfGlassPane.name
-botania:bifrostpermpane, tile.bifrostPermPane.name
 culinaryconstruct:sandwich_station, Sandwich Station
 culinaryconstruct:sandwich, Sandwich
 dungpipe:dung_pipe, Dung Pipe
@@ -8278,6 +7842,441 @@ immersivetech:metal_trash:2, Energy Trash Can
 immersivetech:metal_barrel, tile.immersivetech.metal_barrel.name
 immersivetech:stone_decoration, tile.immersivetech.stone_decoration.name
 immersivetech:material:0, Salt
+inspirations:materials:0, Blank Lock
+inspirations:materials:1, Blank Key
+inspirations:materials:8, Stone Rod
+inspirations:edibles:0, Heartbeet
+inspirations:books:0, White Book
+inspirations:books:1, Orange Book
+inspirations:books:2, Magenta Book
+inspirations:books:3, Light Blue Book
+inspirations:books:4, Yellow Book
+inspirations:books:5, Lime Book
+inspirations:books:6, Pink Book
+inspirations:books:7, Gray Book
+inspirations:books:8, Light Gray Book
+inspirations:books:9, Cyan Book
+inspirations:books:10, Purple Book
+inspirations:books:11, Blue Book
+inspirations:books:12, Brown Book
+inspirations:books:13, Green Book
+inspirations:books:14, Red Book
+inspirations:books:15, Black Book
+inspirations:books:16, Trapped Book
+inspirations:bookshelf:0, Bookshelf
+inspirations:bookshelf:0, Bookshelf
+inspirations:bookshelf:0, Bookshelf
+inspirations:bookshelf:0, Bookshelf
+inspirations:bookshelf:0, Bookshelf
+inspirations:bookshelf:0, Bookshelf
+inspirations:bookshelf:0, Bookshelf
+inspirations:bookshelf:0, Bookshelf
+inspirations:bookshelf:0, Bookshelf
+inspirations:bookshelf:0, Bookshelf
+inspirations:bookshelf:0, Bookshelf
+inspirations:bookshelf:0, Bookshelf
+inspirations:bookshelf:0, Bookshelf
+inspirations:bookshelf:0, Bookshelf
+inspirations:bookshelf:0, Bookshelf
+inspirations:bookshelf:0, Bookshelf
+inspirations:bookshelf:0, Bookshelf
+inspirations:bookshelf:0, Bookshelf
+inspirations:bookshelf:0, Bookshelf
+inspirations:bookshelf:0, Bookshelf
+inspirations:bookshelf:0, Bookshelf
+inspirations:bookshelf:0, Bookshelf
+inspirations:bookshelf:0, Bookshelf
+inspirations:bookshelf:0, Bookshelf
+inspirations:bookshelf:0, Bookshelf
+inspirations:bookshelf:0, Bookshelf
+inspirations:bookshelf:1, Rainbow Bookshelf
+inspirations:bookshelf:1, Rainbow Bookshelf
+inspirations:bookshelf:1, Rainbow Bookshelf
+inspirations:bookshelf:1, Rainbow Bookshelf
+inspirations:bookshelf:1, Rainbow Bookshelf
+inspirations:bookshelf:1, Rainbow Bookshelf
+inspirations:bookshelf:1, Rainbow Bookshelf
+inspirations:bookshelf:1, Rainbow Bookshelf
+inspirations:bookshelf:1, Rainbow Bookshelf
+inspirations:bookshelf:1, Rainbow Bookshelf
+inspirations:bookshelf:1, Rainbow Bookshelf
+inspirations:bookshelf:1, Rainbow Bookshelf
+inspirations:bookshelf:1, Rainbow Bookshelf
+inspirations:bookshelf:1, Rainbow Bookshelf
+inspirations:bookshelf:1, Rainbow Bookshelf
+inspirations:bookshelf:1, Rainbow Bookshelf
+inspirations:bookshelf:1, Rainbow Bookshelf
+inspirations:bookshelf:1, Rainbow Bookshelf
+inspirations:bookshelf:1, Rainbow Bookshelf
+inspirations:bookshelf:1, Rainbow Bookshelf
+inspirations:bookshelf:1, Rainbow Bookshelf
+inspirations:bookshelf:1, Rainbow Bookshelf
+inspirations:bookshelf:1, Rainbow Bookshelf
+inspirations:bookshelf:1, Rainbow Bookshelf
+inspirations:bookshelf:1, Rainbow Bookshelf
+inspirations:bookshelf:1, Rainbow Bookshelf
+inspirations:bookshelf:2, Tomes Bookshelf
+inspirations:bookshelf:2, Tomes Bookshelf
+inspirations:bookshelf:2, Tomes Bookshelf
+inspirations:bookshelf:2, Tomes Bookshelf
+inspirations:bookshelf:2, Tomes Bookshelf
+inspirations:bookshelf:2, Tomes Bookshelf
+inspirations:bookshelf:2, Tomes Bookshelf
+inspirations:bookshelf:2, Tomes Bookshelf
+inspirations:bookshelf:2, Tomes Bookshelf
+inspirations:bookshelf:2, Tomes Bookshelf
+inspirations:bookshelf:2, Tomes Bookshelf
+inspirations:bookshelf:2, Tomes Bookshelf
+inspirations:bookshelf:2, Tomes Bookshelf
+inspirations:bookshelf:2, Tomes Bookshelf
+inspirations:bookshelf:2, Tomes Bookshelf
+inspirations:bookshelf:2, Tomes Bookshelf
+inspirations:bookshelf:2, Tomes Bookshelf
+inspirations:bookshelf:2, Tomes Bookshelf
+inspirations:bookshelf:2, Tomes Bookshelf
+inspirations:bookshelf:2, Tomes Bookshelf
+inspirations:bookshelf:2, Tomes Bookshelf
+inspirations:bookshelf:2, Tomes Bookshelf
+inspirations:bookshelf:2, Tomes Bookshelf
+inspirations:bookshelf:2, Tomes Bookshelf
+inspirations:bookshelf:2, Tomes Bookshelf
+inspirations:bookshelf:2, Tomes Bookshelf
+inspirations:bookshelf:3, Ancient Bookshelf
+inspirations:bookshelf:3, Ancient Bookshelf
+inspirations:bookshelf:3, Ancient Bookshelf
+inspirations:bookshelf:3, Ancient Bookshelf
+inspirations:bookshelf:3, Ancient Bookshelf
+inspirations:bookshelf:3, Ancient Bookshelf
+inspirations:bookshelf:3, Ancient Bookshelf
+inspirations:bookshelf:3, Ancient Bookshelf
+inspirations:bookshelf:3, Ancient Bookshelf
+inspirations:bookshelf:3, Ancient Bookshelf
+inspirations:bookshelf:3, Ancient Bookshelf
+inspirations:bookshelf:3, Ancient Bookshelf
+inspirations:bookshelf:3, Ancient Bookshelf
+inspirations:bookshelf:3, Ancient Bookshelf
+inspirations:bookshelf:3, Ancient Bookshelf
+inspirations:bookshelf:3, Ancient Bookshelf
+inspirations:bookshelf:3, Ancient Bookshelf
+inspirations:bookshelf:3, Ancient Bookshelf
+inspirations:bookshelf:3, Ancient Bookshelf
+inspirations:bookshelf:3, Ancient Bookshelf
+inspirations:bookshelf:3, Ancient Bookshelf
+inspirations:bookshelf:3, Ancient Bookshelf
+inspirations:bookshelf:3, Ancient Bookshelf
+inspirations:bookshelf:3, Ancient Bookshelf
+inspirations:bookshelf:3, Ancient Bookshelf
+inspirations:bookshelf:3, Ancient Bookshelf
+inspirations:rope:0, Rope
+inspirations:rope:1, Chain
+inspirations:rope:2, Vine Rope
+inspirations:mulch:0, Mulch
+inspirations:mulch:1, Brown Mulch
+inspirations:mulch:2, Yellow Mulch
+inspirations:mulch:3, Amber Mulch
+inspirations:mulch:4, Ruby Mulch
+inspirations:mulch:5, Red Mulch
+inspirations:mulch:6, Black Mulch
+inspirations:mulch:7, Blue Mulch
+inspirations:path:0, Cobble Path
+inspirations:path:1, Round Path
+inspirations:path:2, Path Tiles
+inspirations:path:3, Bricks Path
+inspirations:flower:0, Rose
+inspirations:flower:1, Syringa
+inspirations:flower:2, Paeonia
+inspirations:flower:3, Cyan Flower
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:0, White Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:1, Red Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:2, Green Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:3, Blue Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:4, Rainbow Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:enlightened_bush:5, Christmas Enlightened Bush
+inspirations:glass_door, Glass Door
+inspirations:glass_trapdoor:0, Glass Trapdoor
+inspirations:torch_lever:0, Torch Lever
+inspirations:bricks_button:0, Bricks Button
+inspirations:bricks_button:1, Nether Brick Button
+inspirations:redstone_barrel:0, Redstone Barrel
+inspirations:redstone_torch_lever:0, Redstone Torch Lever
+inspirations:carpeted_trapdoor_white:0, White Carpeted Trapdoor
+inspirations:carpeted_trapdoor_orange:0, Orange Carpeted Trapdoor
+inspirations:carpeted_trapdoor_magenta:0, Magenta Carpeted Trapdoor
+inspirations:carpeted_trapdoor_light_blue:0, Light Blue Carpeted Trapdoor
+inspirations:carpeted_trapdoor_yellow:0, Yellow Carpeted Trapdoor
+inspirations:carpeted_trapdoor_lime:0, Lime Carpeted Trapdoor
+inspirations:carpeted_trapdoor_pink:0, Pink Carpeted Trapdoor
+inspirations:carpeted_trapdoor_gray:0, Gray Carpeted Trapdoor
+inspirations:carpeted_trapdoor_silver:0, Light Gray Carpeted Trapdoor
+inspirations:carpeted_trapdoor_cyan:0, Cyan Carpeted Trapdoor
+inspirations:carpeted_trapdoor_purple:0, Purple Carpeted Trapdoor
+inspirations:carpeted_trapdoor_blue:0, Blue Carpeted Trapdoor
+inspirations:carpeted_trapdoor_brown:0, Brown Carpeted Trapdoor
+inspirations:carpeted_trapdoor_green:0, Green Carpeted Trapdoor
+inspirations:carpeted_trapdoor_red:0, Red Carpeted Trapdoor
+inspirations:carpeted_trapdoor_black:0, Black Carpeted Trapdoor
+inspirations:collector:0, Collector
+inspirations:pipe:0, Pipe
+inspirations:arrow, item.inspirations.arrow.name
+inspirations:redstone_charger, Redstone Charger
+inspirations:wooden_crook, Wooden Crook
+inspirations:stone_crook, Stone Crook
+inspirations:bone_crook, Bone Crook
+inspirations:blaze_crook, Blaze Rod Crook
+inspirations:wither_crook, Withered Bone Crook
+inspirations:north_compass, North Compass
+inspirations:barometer, Barometer
+inspirations:photometer, Photometer
+inspirations:waypoint_compass:0, Beacon Compass
+inspirations:dyed_bottle:15, White Dyed Water Bottle
+inspirations:dyed_bottle:14, Orange Dyed Water Bottle
+inspirations:dyed_bottle:13, Magenta Dyed Water Bottle
+inspirations:dyed_bottle:12, Light Blue Dyed Water Bottle
+inspirations:dyed_bottle:11, Yellow Dyed Water Bottle
+inspirations:dyed_bottle:10, Lime Dyed Water Bottle
+inspirations:dyed_bottle:9, Pink Dyed Water Bottle
+inspirations:dyed_bottle:8, Gray Dyed Water Bottle
+inspirations:dyed_bottle:7, Light Gray Dyed Water Bottle
+inspirations:dyed_bottle:6, Cyan Dyed Water Bottle
+inspirations:dyed_bottle:5, Purple Dyed Water Bottle
+inspirations:dyed_bottle:4, Blue Dyed Water Bottle
+inspirations:dyed_bottle:3, Brown Dyed Water Bottle
+inspirations:dyed_bottle:2, Green Dyed Water Bottle
+inspirations:dyed_bottle:1, Red Dyed Water Bottle
+inspirations:dyed_bottle:0, Black Dyed Water Bottle
+inspirations:potato_soup, Potato Soup
+inspirations:cactus_seeds, Cactus Seeds
+inspirations:sugar_cane_seeds, Sugar Cane Seeds
+inspirations:carrot_seeds, Carrot Seeds
+inspirations:potato_seeds, Potato Seeds
 littletiles:hammer:0, Little Hammer
 littletiles:recipe:0, Little Recipe
 littletiles:recipeadvanced:0, Advanced Recipe
@@ -8474,8 +8473,8 @@ tfc:wooden_bucket:0, Liquid Purple Slime§r Bucket§r
 tfc:metal/bucket/blue_steel:0, Blue Steel Bucket
 tfc:metal/bucket/blue_steel:0, Lava§r Bucket§r
 tfc:metal/bucket/red_steel:0, Red Steel Bucket
-tfc:metal/bucket/red_steel:0, Hot water§r Bucket§r
 tfc:metal/bucket/red_steel:0, Fresh Water§r Bucket§r
+tfc:metal/bucket/red_steel:0, Hot water§r Bucket§r
 tfc:metal/bucket/red_steel:0, Water§r Bucket§r
 tfc:metal/bucket/red_steel:0, Salt Water§r Bucket§r
 tfc:rock/granite, Granite Rock
@@ -12311,21 +12310,6 @@ theoneprobe:diamond_helmet_probe:0, Diamond Helmet with Probe
 theoneprobe:gold_helmet_probe:0, Gold Helmet with Probe
 theoneprobe:iron_helmet_probe:0, Iron Helmet with Probe
 theoneprobe:probe_goggles, The One Probe (Bauble)
-apotheosis:hellshelf, Hellshelf
-apotheosis:prismatic_web, Prismatic Cobweb
-apotheosis:null_book, Tome of the Others
-apotheosis:armor_head_book, Tome of Helmets
-apotheosis:armor_chest_book, Tome of Chestplates
-apotheosis:armor_legs_book, Tome of Legplates
-apotheosis:armor_feet_book, Tome of Boots
-apotheosis:weapon_book, Tome of Weaponry
-apotheosis:digger_book, Tome of the Miners
-apotheosis:fishing_rod_book, Tome of the Fishers
-apotheosis:bow_book, Tome of the Archers
-apotheosis:prismatic_altar, Altar of the Sea
-apotheosis:scrap_tome, Tome of Scrapping
-apotheosis:farmers_leash, Ender-Farmer's Lead
-apotheosis:lucky_foot, Lucky Rabbit's Foot
 architecturecraft:sawblade, Circular Saw Blade
 architecturecraft:largepulley, Large Pulley
 architecturecraft:chisel, Architect's Chisel
