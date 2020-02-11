@@ -27,6 +27,13 @@ mods.jei.JEI.addDescription(<quark:thatch_slab>,"Magic has made this thatch soli
 	[null,<immersiveengineering:drillhead>,null],
 	[<tfc:metal/shovel_head/steel>,<tfc:metal/pick_head/steel>,<tfc:metal/axe_head/steel>],
 	[null,<minecraft:end_rod>,null]]);
+	//Framed Glass
+	recipes.remove(<quark:framed_glass>);
+	recipes.addShaped(<quark:framed_glass>,[
+	[<ore:blockGlassColorless>,<ore:stickIron>,<ore:blockGlassColorless>],
+	[<ore:stickIron>,<ore:blockGlassColorless>,<ore:stickIron>],
+	[<ore:blockGlassColorless>,<ore:stickIron>,<ore:blockGlassColorless>]]);
+	
 //Lithium
 furnace.addRecipe(<nuclearcraft:dust:6>*4, <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "brine", Amount: 1000}}));
 mods.immersiveengineering.BlastFurnace.addRecipe(<nuclearcraft:dust:6>*4, <forge:bucketfilled>.withTag({FluidName: "brine", Amount: 1000}), 2000,<minecraft:bucket>);
