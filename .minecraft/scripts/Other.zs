@@ -1,3 +1,6 @@
+//Missing Localization
+game.setLocalization("item.railcraft.charge.electrode.carbon.name", "Silver Electrode");
+game.setLocalization("item.railcraft.charge.electrode.silver.name", "Carbon Electrode");
 //Quark
 recipes.remove(<quark:thatch>);
 	//Candles
@@ -44,7 +47,7 @@ furnace.remove(<railcraft:fluid_bottle_creosote>);
 recipes.addShapeless(<minecraft:water_bucket>,[<forge:bucketfilled>.withTag({FluidName: "fresh_water", Amount: 1000})]);
 recipes.addShapeless(<forge:bucketfilled>.withTag({FluidName: "fresh_water", Amount: 1000}),[<minecraft:water_bucket>]);
 
-//
+//GlowString
 recipes.addShaped(<contenttweaker:glowstring>,[
 	[<botania:manaresource:16>,<ore:dustGlowstone>],
 	[<ore:dustGlowstone>,<ore:dustGlowstone>]]);
