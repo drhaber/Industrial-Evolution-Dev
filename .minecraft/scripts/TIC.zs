@@ -11,6 +11,7 @@ recipes.addShaped(<tconstruct:stone_torch>*2,[
 	[null,<minecraft:glowstone_dust>],
 	[null,<ore:rodStone>]]);
 //Wooden Hopper
+recipes.remove(<tconstruct:wooden_hopper>);
 recipes.addShaped(<tconstruct:wooden_hopper>,[
 	[<ore:plankWood>,null,<ore:plankWood>],
 	[<ore:plankWood>,<ore:chest>,<ore:plankWood>],
