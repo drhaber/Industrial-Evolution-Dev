@@ -27,28 +27,28 @@ mods.terrafirmacraft.Heating.addRecipe("Calculation_Kiln", <contenttweaker:unfir
 mods.terrafirmacraft.Heating.addRecipe("Logic_Kiln", <contenttweaker:unfired_material_logic_processor_press>, <contenttweaker:fired_material_logic_processor_press>,1500, 3200);
 mods.terrafirmacraft.Heating.addRecipe("Silicon_Kiln", <contenttweaker:unfired_material_silicon_press>, <contenttweaker:fired_material_silicon_press>, 1500, 3200);
 
-mods.terrafirmacraft.FireClayKnapping.addRecipe("Engineering_Knap", <contenttweaker:unfired_material_engineering_processor_press>, 
+mods.terrafirmacraft.ClayKnapping.addRecipe("Engineering_Knap", <contenttweaker:unfired_material_engineering_processor_press>, 
 																	"XX  X", 
 																	"X X X", 
 																	"XXXXX", 
 																	"X X X", 
 																	"X  XX");
 																   
-mods.terrafirmacraft.FireClayKnapping.addRecipe("Calculation_Knap", <contenttweaker:unfired_material_calculation_processor_press>, 
+mods.terrafirmacraft.ClayKnapping.addRecipe("Calculation_Knap", <contenttweaker:unfired_material_calculation_processor_press>, 
 																	"  X X", 
 																	"  XX ", 
 																	"XXXXX", 
 																	" XX  ", 
 																	"X X  ");
 
-mods.terrafirmacraft.FireClayKnapping.addRecipe("Logic_Knap", <contenttweaker:unfired_material_logic_processor_press>, 
+mods.terrafirmacraft.ClayKnapping.addRecipe("Logic_Knap", <contenttweaker:unfired_material_logic_processor_press>, 
 																	"  X  ", 
 																	"  XX ", 
 																	"XXXXX", 
 																	" XX  ", 
 																	"  X  ");
 
-mods.terrafirmacraft.FireClayKnapping.addRecipe("Silicon_Knap", <contenttweaker:unfired_material_silicon_press>, 
+mods.terrafirmacraft.ClayKnapping.addRecipe("Silicon_Knap", <contenttweaker:unfired_material_silicon_press>, 
 																	"X X X", 
 																	" XXX ", 
 																	"XX XX", 
