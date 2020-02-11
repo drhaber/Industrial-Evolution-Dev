@@ -49,7 +49,7 @@ recipes.addShapeless(<forge:bucketfilled>.withTag({FluidName: "fresh_water", Amo
 
 //GlowString
 recipes.addShaped(<contenttweaker:glowstring>,[
-	[<botania:manaresource:16>,<ore:dustGlowstone>],
+	[<ore:string>,<ore:dustGlowstone>],
 	[<ore:dustGlowstone>,<ore:dustGlowstone>]]);
 //Project Red
 furnace.addRecipe(<projectred-core:resource_item>*2, <ore:stone>);
