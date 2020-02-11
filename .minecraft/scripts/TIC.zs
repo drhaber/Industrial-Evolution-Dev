@@ -10,6 +10,11 @@ recipes.remove(<tconstruct:stone_torch>);
 recipes.addShaped(<tconstruct:stone_torch>*2,[
 	[null,<minecraft:glowstone_dust>],
 	[null,<ore:rodStone>]]);
+//Wooden Hopper
+recipes.addShaped(<tconstruct:wooden_hopper>,[
+	[<ore:plankWood>,null,<ore:plankWood>],
+	[<ore:plankWood>,<ore:chest>,<ore:plankWood>],
+	[null,<ore:plankWood>,null]]);
 //AE2 Inscriber Plates
 mods.tconstruct.Casting.addTableRecipe(<appliedenergistics2:material:14>, <contenttweaker:fired_material_engineering_processor_press>, <liquid:iron>, 144);
 mods.tconstruct.Casting.addTableRecipe(<appliedenergistics2:material:13>, <contenttweaker:fired_material_calculation_processor_press>, <liquid:iron>, 144);
