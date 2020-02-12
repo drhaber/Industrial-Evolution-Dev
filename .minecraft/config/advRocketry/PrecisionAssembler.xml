@@ -104,26 +104,6 @@
 			<itemStack>advancedrocketry:ic;1;4</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="900" power ="100">
-		<input>
-			<itemStack>minecraft:gold_ingot</itemStack>
-			<itemStack>minecraft:redstone_block</itemStack>
-			<itemStack>advancedrocketry:wafer</itemStack>
-		</input>
-		<output>
-			<itemStack>advancedrocketry:itemcircuitplate;1;1</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="900" power ="100">
-		<input>
-			<itemStack>minecraft:gold_ingot</itemStack>
-			<itemStack>minecraft:redstone</itemStack>
-			<itemStack>advancedrocketry:wafer</itemStack>
-		</input>
-		<output>
-			<itemStack>advancedrocketry:itemcircuitplate</itemStack>
-		</output>
-	</Recipe>
 	<Recipe timeRequired="200" power ="1">
 		<input>
 			<itemStack>minecraft:feather</itemStack>
@@ -197,17 +177,6 @@
 			<itemStack>advancedrocketry:ic;1;1</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="1000" power ="1">
-		<input>
-			<itemStack>libvulpes:productrod;2;4</itemStack>
-			<itemStack>libvulpes:productrod;1;7</itemStack>
-			<itemStack>advancedrocketry:ic;1;2</itemStack>
-			<itemStack>advancedrocketry:wafer;2</itemStack>
-		</input>
-		<output>
-			<itemStack>advancedrocketry:satelliteprimaryfunction;1;5</itemStack>
-		</output>
-	</Recipe>
 	<Recipe timeRequired="200" power ="10">
 		<input>
 			<itemStack>minecraft:redstone</itemStack>
@@ -216,17 +185,6 @@
 		</input>
 		<output>
 			<itemStack>advancedrocketry:ic;1;5</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="1000" power ="1">
-		<input>
-			<itemStack>tfctech:metal/copper_rod;2</itemStack>
-			<itemStack>tfctech:metal/titanium_rod</itemStack>
-			<itemStack>advancedrocketry:ic;1;2</itemStack>
-			<itemStack>advancedrocketry:wafer;2</itemStack>
-		</input>
-		<output>
-			<itemStack>advancedrocketry:satelliteprimaryfunction;1;5</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="100" power ="1">

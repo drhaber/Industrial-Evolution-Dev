@@ -1,3 +1,5 @@
+import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 //Aluminium
 <ore:ingotAluminum>.addAll(<ore:ingotAluminium>);
@@ -14,6 +16,8 @@ import crafttweaker.oredict.IOreDictEntry;
 //Iron Rod
 <ore:stickIron>.add(<tfctech:metal/wrought_iron_rod>);
 //Silicon
+<ore:itemSilicon>.remove(<libvulpes:productingot:3>);
+<ore:waferSilicon>.remove(<libvulpes:productingot:3>);
 <ore:itemSilicon>.add(<projectred-core:resource_item:301>);
 <ore:waferSilicon>.addAll(<ore:itemSilicon>);
 <ore:itemSilicon>.mirror(<ore:waferSilicon>);

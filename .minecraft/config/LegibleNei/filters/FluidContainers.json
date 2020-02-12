@@ -1,4 +1,6 @@
-{
+{forestry:[
+	{hide:[[can,capsule,refractory],[1]]}
+],
 forge:[
 {hide:[[bucketfilled],[],['*FluidName*']]};
 ]
