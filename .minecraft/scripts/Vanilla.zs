@@ -28,6 +28,6 @@ recipes.addShaped(<minecraft:lead>,[
 	[<ore:string>,null,null]]);
 //Redstone Lamp
 recipes.addShaped(<minecraft:redstone_lamp>,[
-	[<ore:projredIllumar>],
+	[<minecraft:coal:1>],
 	[<quark:framed_glass>],
 	[<minecraft:redstone_torch>]]);
