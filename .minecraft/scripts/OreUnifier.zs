@@ -15,6 +15,11 @@ import crafttweaker.oredict.IOreDictEntry;
 <ore:stickIron>.add(<tfctech:metal/wrought_iron_rod>);
 //Silicon
 <ore:itemSilicon>.add(<projectred-core:resource_item:301>);
+<ore:waferSilicon>.addAll(<ore:itemSilicon>);
+<ore:itemSilicon>.mirror(<ore:waferSilicon>);
+<ore:bouleSilicon>.add(<projectred-core:resource_item:300>);
+mods.jei.JEI.hide(<libvulpes:productboule:3>);
+mods.jei.JEI.hide(<advancedrocketry:wafer>);
 mods.jei.JEI.removeAndHide(<appliedenergistics2:material:5>);
 mods.jei.JEI.removeAndHide(<nuclearcraft:gem:6>);
 furnace.remove(<projectred-core:resource_item:300>);

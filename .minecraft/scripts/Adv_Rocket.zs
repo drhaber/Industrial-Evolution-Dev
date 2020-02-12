@@ -6,3 +6,7 @@ val iLumber = [<tfc:wood/lumber/acacia>,<tfc:wood/lumber/ash>,<tfc:wood/lumber/a
 for i, log in iLogs{
 mods.advancedrocketry.CuttingMachine.addRecipe(iLumber[i]*16, 80, 100, log); 
 }
+mods.advancedrocketry.Crystallizer.removeRecipe(<libvulpes:productboule:3>);
+mods.advancedrocketry.CuttingMachine.removeRecipe(<advancedrocketry:wafer>);
+
+mods.advancedrocketry.CuttingMachine.addRecipe(<projectred-core:resource_item:301>*12, 320, 100, [<projectred-core:resource_item:300>]);
