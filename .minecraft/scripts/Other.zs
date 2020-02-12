@@ -79,5 +79,4 @@ recipes.remove(<architecturecraft:largepulley>);
 recipes.addShapeless(<architecturecraft:largepulley>,[<astikorcarts:wheel>,<quark:rope>]);
 //Stone Rods
 mods.jei.JEI.removeAndHide(<microblockcbe:stone_rod>);
-mods.jei.JEI.removeAndHide(<inspirations:materials:8>);
-=	
+mods.jei.JEI.removeAndHide(<inspirations:materials:8>);	
