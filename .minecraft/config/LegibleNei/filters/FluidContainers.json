@@ -1,7 +1,4 @@
-{pressure:[
-   {hide:[[canister],[],['*FluidName*']]};
-
-   ],
+{
 forge:[
 {hide:[[bucketfilled],[],['*FluidName*']]};
 ]

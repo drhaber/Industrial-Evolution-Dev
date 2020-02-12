@@ -80,20 +80,4 @@ recipes.addShapeless(<architecturecraft:largepulley>,[<astikorcarts:wheel>,<quar
 //Stone Rods
 mods.jei.JEI.removeAndHide(<microblockcbe:stone_rod>);
 mods.jei.JEI.removeAndHide(<inspirations:materials:8>);
-//BiblioCraft
-	recipes.removeShaped(<bibliocraft:lanterngold>,[
-		[<minecraft:glass_pane>,<minecraft:glowstone_dust>,<minecraft:glass_pane>],
-		[<minecraft:gold_ingot>,<minecraft:torch>,<minecraft:gold_ingot>],
-		[<minecraft:glass_pane>,<minecraft:glowstone_dust>,<minecraft:glass_pane>]]);
-	recipes.addShaped(<bibliocraft:lanterngold>,[
-		[<minecraft:glass_pane>,<minecraft:glowstone_dust>,<minecraft:glass_pane>],
-		[<ore:ingotGold>,<quark:candle>,<ore:ingotGold>],
-		[<minecraft:glass_pane>,<minecraft:glowstone_dust>,<minecraft:glass_pane>]]);
-	recipes.removeShaped(<bibliocraft:lanterniron>,[
-		[<minecraft:glass_pane>,<minecraft:glowstone_dust>,<minecraft:glass_pane>],
-		[<minecraft:iron_ingot>,<minecraft:torch>,<minecraft:iron_ingot>],
-		[<minecraft:glass_pane>,<minecraft:glowstone_dust>,<minecraft:glass_pane>]]);
-	recipes.addShaped(<bibliocraft:lanterniron>,[
-		[<minecraft:glass_pane>,<minecraft:glowstone_dust>,<minecraft:glass_pane>],
-		[<ore:ingotIron>,<quark:candle>,<ore:ingotIron>],
-		[<minecraft:glass_pane>,<minecraft:glowstone_dust>,<minecraft:glass_pane>]]);		
+=	
