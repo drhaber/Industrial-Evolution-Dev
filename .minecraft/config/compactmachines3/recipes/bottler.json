@@ -15,8 +15,8 @@
       "meta": 0
     },
     "b": {
-      "id": "immersiveengineering:sheetmetal",
-      "meta": 9
+      "id": "immersiveengineering:metal_decoration0",
+      "meta": 4
     },
     "c": {
       "id": "immersiveengineering:metal_decoration1",
@@ -35,8 +35,8 @@
       "meta": 3
     },
     "g": {
-      "id": "immersiveengineering:metal_decoration0",
-      "meta": 4
+      "id": "immersiveengineering:sheetmetal",
+      "meta": 9
     }
   },
   "input-nbt": {
