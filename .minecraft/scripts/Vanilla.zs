@@ -10,6 +10,12 @@ recipes.addShaped(<minecraft:coal_block>,[
 	[CO,CO,CO]]);
 //Torch Recipes
 recipes.remove(<minecraft:torch>);
+//Furnace
+val CB = <ore:cobblestone>;
+recipes.addShaped(<minecraft:furnace>,[
+	[CB,CB,CB],
+	[CB,<tfc:bloomery>,CB],
+	[CB,CB,CB]]);
 //End Portal
 recipes.addShaped(<minecraft:end_portal_frame>,[
 	[<nuclearcraft:alloy:2>,<opencomputers:material:13>,<nuclearcraft:alloy:2>],

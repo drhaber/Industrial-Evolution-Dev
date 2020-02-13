@@ -724,7 +724,39 @@ forestry:resource_storage:2, Block of Tin
 forestry:resource_storage:3, Block of Bronze
 forestry:ash_brick:0, Ash Bricks
 forestry:ash_stairs:0, Ash Brick Stairs
-forestry:book_forester, Forester's Manual
+forestry:habitat_former:0, Habitat Former
+forestry:habitat_screen, Habitat Screen
+forestry:database:0, Database
+forestry:genetic_filter:0, Genetic Filter
+forestry:honeyed_slice, Honeyed Slice
+forestry:ambrosia, Ambrosia
+forestry:honey_pot, Honey Pot
+forestry:engine_peat:0, Peat-fired Engine
+forestry:engine_biogas:0, Biogas Engine
+forestry:engine_clockwork:0, Clockwork Engine
+forestry:bottler:0, Bottler
+forestry:carpenter:0, Carpenter
+forestry:centrifuge:0, Centrifuge
+forestry:fermenter:0, Fermenter
+forestry:moistener:0, Moistener
+forestry:squeezer:0, Squeezer
+forestry:still:0, Still
+forestry:rainmaker:0, Rainmaker
+forestry:fabricator:0, Thermionic Fabricator
+forestry:raintank:0, Rain Tank
+forestry:crate, Crate
+forestry:greenhouse:0, Greenhouse Block
+forestry:greenhouse:3, Greenhouse Energy Distributor
+forestry:greenhouse:4, Greenhouse Control
+forestry:greenhouse:5, Greenhouse Screen
+forestry:climatiser:0, Greenhouse Hygroregulator
+forestry:climatiser:1, Greenhouse Heater
+forestry:climatiser:2, Greenhouse Fan
+forestry:climatiser:3, Greenhouse Humidifier
+forestry:climatiser:4, Greenhouse Dehumidifier
+forestry:greenhouse.window:0, Greenhouse Window
+forestry:greenhouse.window_up:0, Greenhouse Roof Window
+forestry:worktable:0, Worktable
 forestry:stamps:0, Stamp (1n)
 forestry:stamps:1, Stamp (2n)
 forestry:stamps:2, Stamp (5n)
@@ -737,21 +769,98 @@ forestry:catalogue, Catalogue
 forestry:mailbox:0, Mailbox
 forestry:trade_station:0, Trade Station
 forestry:stamp_collector:0, Stamp Collector
-forestry:database:0, Database
-forestry:apiarist_bag, Apiarist's Backpack
-forestry:lepidopterist_bag, Lepidopterist's Backpack
-forestry:miner_bag, Mining Backpack
-forestry:miner_bag_t2, Woven Mining Backpack
-forestry:digger_bag, Digging Backpack
-forestry:digger_bag_t2, Woven Digging Backpack
-forestry:forester_bag, Foresting Backpack
-forestry:forester_bag_t2, Woven Foresting Backpack
-forestry:hunter_bag, Hunting Backpack
-forestry:hunter_bag_t2, Woven Hunting Backpack
-forestry:adventurer_bag, Adventuring Backpack
-forestry:adventurer_bag_t2, Woven Adventuring Backpack
-forestry:builder_bag, Building Backpack
-forestry:builder_bag_t2, Woven Building Backpack
+forestry:charcoal:0, Block of Charcoal
+forestry:wood_pile:0, Wood Pile
+forestry:wood_pile_decorative:0, Decorative Wood Pile
+forestry:ash_block_0:0, Ash Block
+forestry:ash_block_1:0, Ash Block
+forestry:ash_block_2:0, Ash Block
+forestry:ash_block_3:0, Ash Block
+forestry:loam:0, Loam
+forestry:fluid.bio.ethanol, Ethanol
+forestry:fluid.biomass, Biomass
+forestry:fluid.glass, Liquid Glass
+forestry:fluid.for.honey, Honey
+forestry:fluid.ice, Crushed Ice
+forestry:fluid.juice, Fruit Juice
+forestry:fluid.milk, Milk
+forestry:fluid.seed.oil, Seed Oil
+forestry:fluid.short.mead, Short Mead
+forestry:can, item.for.can.name
+forestry:capsule, item.for.capsule.name
+forestry:refractory, item.for.refractory.name
+forestry:book_forester, Forester's Manual
+forestry:mushroom:0, tile.for.mushroom.name
+forestry:mushroom:1, tile.for.mushroom.name
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:arboretum:0, Arboretum (Managed)
+forestry:arboretum:1, Arboretum (Manual)
+forestry:farm_crops:0, Farm (Managed)
+forestry:farm_crops:1, Farm (Manual)
+forestry:farm_mushroom:0, Mushroom Farm (Managed)
+forestry:farm_mushroom:1, Mushroom Farm (Manual)
+forestry:farm_gourd:0, Gourd Farm (Managed)
+forestry:farm_gourd:1, Gourd Farm (Manual)
+forestry:farm_nether:0, Infernal Farm (Managed)
+forestry:farm_nether:1, Infernal Farm (Manual)
+forestry:farm_ender:0, Ender Farm (Managed)
+forestry:farm_ender:1, Ender Farm (Manual)
+forestry:peat_bog:0, Peat Bog (Managed)
+forestry:peat_bog:1, Peat Bog (Manual)
 forestry:bee_queen_ge:0, Forest Queen
 forestry:bee_queen_ge:0, Meadows Queen
 forestry:bee_queen_ge:0, Common Queen
@@ -971,6 +1080,20 @@ forestry:alveary.heater:0, Alveary Heater
 forestry:alveary.hygro:0, Alveary Hygroregulator
 forestry:alveary.stabiliser:0, Alveary Stabiliser
 forestry:alveary.sieve:0, Alveary Sieve
+forestry:apiarist_bag, Apiarist's Backpack
+forestry:lepidopterist_bag, Lepidopterist's Backpack
+forestry:miner_bag, Mining Backpack
+forestry:miner_bag_t2, Woven Mining Backpack
+forestry:digger_bag, Digging Backpack
+forestry:digger_bag_t2, Woven Digging Backpack
+forestry:forester_bag, Foresting Backpack
+forestry:forester_bag_t2, Woven Foresting Backpack
+forestry:hunter_bag, Hunting Backpack
+forestry:hunter_bag_t2, Woven Hunting Backpack
+forestry:adventurer_bag, Adventuring Backpack
+forestry:adventurer_bag_t2, Woven Adventuring Backpack
+forestry:builder_bag, Building Backpack
+forestry:builder_bag_t2, Woven Building Backpack
 forestry:sapling:0, Apple Oak Sapling
 forestry:sapling:0, Dark Oak Sapling
 forestry:sapling:0, Silver Birch Sapling
@@ -1658,129 +1781,6 @@ forestry:cocoon_ge:0, Diana Fritillary Cocoon
 forestry:butterfly_chest:0, Lepidopterist's Chest
 forestry:cocoon:0, tile.for.cocoon.name
 forestry:cocoon.solid:0, tile.for.cocoon.solid.name
-forestry:greenhouse:0, Greenhouse Block
-forestry:greenhouse:3, Greenhouse Energy Distributor
-forestry:greenhouse:4, Greenhouse Control
-forestry:greenhouse:5, Greenhouse Screen
-forestry:climatiser:0, Greenhouse Hygroregulator
-forestry:climatiser:1, Greenhouse Heater
-forestry:climatiser:2, Greenhouse Fan
-forestry:climatiser:3, Greenhouse Humidifier
-forestry:climatiser:4, Greenhouse Dehumidifier
-forestry:greenhouse.window:0, Greenhouse Window
-forestry:greenhouse.window_up:0, Greenhouse Roof Window
-forestry:worktable:0, Worktable
-forestry:fluid.bio.ethanol, Ethanol
-forestry:fluid.biomass, Biomass
-forestry:fluid.glass, Liquid Glass
-forestry:fluid.for.honey, Honey
-forestry:fluid.ice, Crushed Ice
-forestry:fluid.juice, Fruit Juice
-forestry:fluid.milk, Milk
-forestry:fluid.seed.oil, Seed Oil
-forestry:fluid.short.mead, Short Mead
-forestry:can, item.for.can.name
-forestry:capsule, item.for.capsule.name
-forestry:refractory, item.for.refractory.name
-forestry:charcoal:0, Block of Charcoal
-forestry:wood_pile:0, Wood Pile
-forestry:wood_pile_decorative:0, Decorative Wood Pile
-forestry:ash_block_0:0, Ash Block
-forestry:ash_block_1:0, Ash Block
-forestry:ash_block_2:0, Ash Block
-forestry:ash_block_3:0, Ash Block
-forestry:loam:0, Loam
-forestry:bottler:0, Bottler
-forestry:carpenter:0, Carpenter
-forestry:centrifuge:0, Centrifuge
-forestry:fermenter:0, Fermenter
-forestry:moistener:0, Moistener
-forestry:squeezer:0, Squeezer
-forestry:still:0, Still
-forestry:rainmaker:0, Rainmaker
-forestry:fabricator:0, Thermionic Fabricator
-forestry:raintank:0, Rain Tank
-forestry:engine_peat:0, Peat-fired Engine
-forestry:engine_biogas:0, Biogas Engine
-forestry:engine_clockwork:0, Clockwork Engine
-forestry:honeyed_slice, Honeyed Slice
-forestry:ambrosia, Ambrosia
-forestry:honey_pot, Honey Pot
-forestry:mushroom:0, tile.for.mushroom.name
-forestry:mushroom:1, tile.for.mushroom.name
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:arboretum:0, Arboretum (Managed)
-forestry:arboretum:1, Arboretum (Manual)
-forestry:farm_crops:0, Farm (Managed)
-forestry:farm_crops:1, Farm (Manual)
-forestry:farm_mushroom:0, Mushroom Farm (Managed)
-forestry:farm_mushroom:1, Mushroom Farm (Manual)
-forestry:farm_gourd:0, Gourd Farm (Managed)
-forestry:farm_gourd:1, Gourd Farm (Manual)
-forestry:farm_nether:0, Infernal Farm (Managed)
-forestry:farm_nether:1, Infernal Farm (Manual)
-forestry:farm_ender:0, Ender Farm (Managed)
-forestry:farm_ender:1, Ender Farm (Manual)
-forestry:peat_bog:0, Peat Bog (Managed)
-forestry:peat_bog:1, Peat Bog (Manual)
-forestry:habitat_former:0, Habitat Former
-forestry:habitat_screen, Habitat Screen
-forestry:genetic_filter:0, Genetic Filter
-forestry:crate, Crate
 railcraft:steam, Steam
 railcraft:tool_crowbar_iron, Iron Crowbar
 railcraft:tool_crowbar_steel, Steel Crowbar
@@ -4624,6 +4624,23 @@ appliedenergistics2:facade:0, Cable Facade - Block of Copper
 appliedenergistics2:facade:0, Cable Facade - Block of Tin
 appliedenergistics2:facade:0, Cable Facade - Block of Bronze
 appliedenergistics2:facade:0, Cable Facade - Ash Bricks
+appliedenergistics2:facade:0, Cable Facade - Greenhouse Block
+appliedenergistics2:facade:0, Cable Facade - Greenhouse Energy Distributor
+appliedenergistics2:facade:0, Cable Facade - Greenhouse Control
+appliedenergistics2:facade:0, Cable Facade - Greenhouse Screen
+appliedenergistics2:facade:0, Cable Facade - Greenhouse Hygroregulator
+appliedenergistics2:facade:0, Cable Facade - Greenhouse Heater
+appliedenergistics2:facade:0, Cable Facade - Greenhouse Fan
+appliedenergistics2:facade:0, Cable Facade - Greenhouse Humidifier
+appliedenergistics2:facade:0, Cable Facade - Greenhouse Dehumidifier
+appliedenergistics2:facade:0, Cable Facade - Block of Charcoal
+appliedenergistics2:facade:0, Cable Facade - Wood Pile
+appliedenergistics2:facade:0, Cable Facade - Decorative Wood Pile
+appliedenergistics2:facade:0, Cable Facade - Ash Block
+appliedenergistics2:facade:0, Cable Facade - Ash Block
+appliedenergistics2:facade:0, Cable Facade - Ash Block
+appliedenergistics2:facade:0, Cable Facade - Ash Block
+appliedenergistics2:facade:0, Cable Facade - Loam
 appliedenergistics2:facade:0, Cable Facade - Honey Comb Block
 appliedenergistics2:facade:0, Cable Facade - Simmering Comb Block
 appliedenergistics2:facade:0, Cable Facade - Stringy Comb Block
@@ -4796,23 +4813,6 @@ appliedenergistics2:facade:0, Cable Facade - Sipiri Leaves
 appliedenergistics2:facade:0, Cable Facade - Papaya Leaves
 appliedenergistics2:facade:0, Cable Facade - Date Palm Leaves
 appliedenergistics2:facade:0, Cable Facade - White Poplar Leaves
-appliedenergistics2:facade:0, Cable Facade - Greenhouse Block
-appliedenergistics2:facade:0, Cable Facade - Greenhouse Energy Distributor
-appliedenergistics2:facade:0, Cable Facade - Greenhouse Control
-appliedenergistics2:facade:0, Cable Facade - Greenhouse Screen
-appliedenergistics2:facade:0, Cable Facade - Greenhouse Hygroregulator
-appliedenergistics2:facade:0, Cable Facade - Greenhouse Heater
-appliedenergistics2:facade:0, Cable Facade - Greenhouse Fan
-appliedenergistics2:facade:0, Cable Facade - Greenhouse Humidifier
-appliedenergistics2:facade:0, Cable Facade - Greenhouse Dehumidifier
-appliedenergistics2:facade:0, Cable Facade - Block of Charcoal
-appliedenergistics2:facade:0, Cable Facade - Wood Pile
-appliedenergistics2:facade:0, Cable Facade - Decorative Wood Pile
-appliedenergistics2:facade:0, Cable Facade - Ash Block
-appliedenergistics2:facade:0, Cable Facade - Ash Block
-appliedenergistics2:facade:0, Cable Facade - Ash Block
-appliedenergistics2:facade:0, Cable Facade - Ash Block
-appliedenergistics2:facade:0, Cable Facade - Loam
 appliedenergistics2:facade:0, Cable Facade - Nickel-Iron Battery
 appliedenergistics2:facade:0, Cable Facade - Nickel-Zinc Battery
 appliedenergistics2:facade:0, Cable Facade - Zinc-Carbon Battery
@@ -5188,9 +5188,6 @@ appliedenergistics2:facade:0, Cable Facade - Sky Stone Brick
 appliedenergistics2:facade:0, Cable Facade - Sky Stone Small Brick
 appliedenergistics2:facade:0, Cable Facade - Naquadah Ore
 appliedenergistics2:facade:0, Cable Facade - Naquadah Block
-appliedenergistics2:facade:0, Cable Facade - Sugar Block
-appliedenergistics2:facade:0, Cable Facade - Red Slime Block
-appliedenergistics2:facade:0, Cable Facade - Gravisand
 appliedenergistics2:facade:0, Cable Facade - Swamp Oak Leaves
 appliedenergistics2:facade:0, Cable Facade - White Cave Crystal
 appliedenergistics2:facade:0, Cable Facade - Ender Biotite Ore
@@ -5212,6 +5209,9 @@ appliedenergistics2:facade:0, Cable Facade - Spruce Bookshelf
 appliedenergistics2:facade:0, Cable Facade - Lit Redstone Lamp
 appliedenergistics2:facade:0, Cable Facade - Blaze Lantern
 appliedenergistics2:facade:0, Cable Facade - Block of Charcoal
+appliedenergistics2:facade:0, Cable Facade - Sugar Block
+appliedenergistics2:facade:0, Cable Facade - Red Slime Block
+appliedenergistics2:facade:0, Cable Facade - Gravisand
 appliedenergistics2:facade:0, Cable Facade - Polished Sandstone
 appliedenergistics2:facade:0, Cable Facade - Polished Stone
 appliedenergistics2:facade:0, Cable Facade - White Stained Planks
@@ -6818,18 +6818,6 @@ astikorcarts:cargocart, Cart
 astikorcarts:plowcart, Plow
 astikorcarts:mobcart, Transportation Cart
 baubles:ring:0, Miner's Ring
-aunis:naquadah_ore, Naquadah Ore
-aunis:naquadah_block, Naquadah Block
-aunis:stargate_milkyway_base_block, Stargate Base (Milky Way)
-aunis:stargate_orlin_base_block, Stargate Base (Orlin)
-aunis:stargate_orlin_member_block, Stargate Ring (Orlin)
-aunis:dhd_block, Dial Home Device (DHD)
-aunis:crystal_infuser_block, Crystal Infuser
-aunis:transportrings_block, Transport rings
-aunis:transportrings_controller_block, Transport rings controller
-aunis:invisible_block, You can't see me block
-aunis:stargate_milkyway_member_block:6, Stargate Ring (Milky Way)
-aunis:stargate_milkyway_member_block:14, Stargate Chevron (Milky Way)
 aunis:analyzer_ancient, Ancient Analyzer
 aunis:crystal_control_dhd:0, DHD Control Crystal
 aunis:crystal_control_dhd:0, DHD Control Crystal
@@ -6853,23 +6841,18 @@ aunis:holder_crystal, Crystal Holder
 aunis:dhd_brb, Bright Red Button (BRB)
 aunis:page_mysterious, Mysterious Page
 aunis:page_notebook:0, Notebook Page
-quark:chute, tile.chute.name
-quark:sugar_block, tile.sugar_block.name
-quark:redstone_randomizer, tile.redstone_randomizer.name
-quark:iron_button, tile.iron_button.name
-quark:gold_button, tile.gold_button.name
-quark:ender_watcher, tile.ender_watcher.name
-quark:iron_rod, tile.iron_rod.name
-quark:color_slime:0, Red Slime Block
-quark:color_slime:1, Blue Slime Block
-quark:color_slime:2, Cyan Slime Block
-quark:color_slime:3, Magenta Slime Block
-quark:color_slime:4, Yellow Slime Block
-quark:gravisand, tile.gravisand.name
-quark:redstone_inductor, tile.redstone_inductor.name
-quark:obsidian_pressure_plate, tile.obsidian_pressure_plate.name
-quark:rain_detector, tile.rain_detector.name
-quark:chain, item.chain.name
+aunis:naquadah_ore, Naquadah Ore
+aunis:naquadah_block, Naquadah Block
+aunis:stargate_milkyway_base_block, Stargate Base (Milky Way)
+aunis:stargate_orlin_base_block, Stargate Base (Orlin)
+aunis:stargate_orlin_member_block, Stargate Ring (Orlin)
+aunis:dhd_block, Dial Home Device (DHD)
+aunis:crystal_infuser_block, Crystal Infuser
+aunis:transportrings_block, Transport rings
+aunis:transportrings_controller_block, Transport rings controller
+aunis:invisible_block, You can't see me block
+aunis:stargate_milkyway_member_block:6, Stargate Ring (Milky Way)
+aunis:stargate_milkyway_member_block:14, Stargate Chevron (Milky Way)
 quark:roots, tile.roots.name
 quark:root, item.root.name
 quark:roots_blue_flower, tile.roots_blue_flower.name
@@ -7094,24 +7077,23 @@ quark:dark_oak_button, tile.dark_oak_button.name
 quark:grate, tile.grate.name
 quark:charcoal_block, tile.charcoal_block.name
 quark:glass_item_frame, item.glass_item_frame.name
-quark:glass_shards:0, Glass Shard
-quark:glass_shards:1, White Glass Shard
-quark:glass_shards:2, Orange Glass Shard
-quark:glass_shards:3, Magenta Glass Shard
-quark:glass_shards:4, Light Blue Glass Shard
-quark:glass_shards:5, Yellow Glass Shard
-quark:glass_shards:6, Lime Glass Shard
-quark:glass_shards:7, Pink Glass Shard
-quark:glass_shards:8, Gray Glass Shard
-quark:glass_shards:9, Light Gray Glass Shard
-quark:glass_shards:10, Cyan Glass Shard
-quark:glass_shards:11, Purple Glass Shard
-quark:glass_shards:12, Blue Glass Shard
-quark:glass_shards:13, Brown Glass Shard
-quark:glass_shards:14, Green Glass Shard
-quark:glass_shards:15, Red Glass Shard
-quark:glass_shards:16, Black Glass Shard
-quark:witch_hat, item.witch_hat.name
+quark:chute, tile.chute.name
+quark:sugar_block, tile.sugar_block.name
+quark:redstone_randomizer, tile.redstone_randomizer.name
+quark:iron_button, tile.iron_button.name
+quark:gold_button, tile.gold_button.name
+quark:ender_watcher, tile.ender_watcher.name
+quark:iron_rod, tile.iron_rod.name
+quark:color_slime:0, Red Slime Block
+quark:color_slime:1, Blue Slime Block
+quark:color_slime:2, Cyan Slime Block
+quark:color_slime:3, Magenta Slime Block
+quark:color_slime:4, Yellow Slime Block
+quark:gravisand, tile.gravisand.name
+quark:redstone_inductor, tile.redstone_inductor.name
+quark:obsidian_pressure_plate, tile.obsidian_pressure_plate.name
+quark:rain_detector, tile.rain_detector.name
+quark:chain, item.chain.name
 quark:sandstone_new:0, Polished Sandstone
 quark:sandstone_new:1, Sandstone Bricks
 quark:sandstone_new:2, Polished Red Sandstone
@@ -7432,6 +7414,23 @@ quark:quilted_wool:12, Brown Quilted Wool
 quark:quilted_wool:13, Green Quilted Wool
 quark:quilted_wool:14, Red Quilted Wool
 quark:quilted_wool:15, Black Quilted Wool
+quark:glass_shards:0, Glass Shard
+quark:glass_shards:1, White Glass Shard
+quark:glass_shards:2, Orange Glass Shard
+quark:glass_shards:3, Magenta Glass Shard
+quark:glass_shards:4, Light Blue Glass Shard
+quark:glass_shards:5, Yellow Glass Shard
+quark:glass_shards:6, Lime Glass Shard
+quark:glass_shards:7, Pink Glass Shard
+quark:glass_shards:8, Gray Glass Shard
+quark:glass_shards:9, Light Gray Glass Shard
+quark:glass_shards:10, Cyan Glass Shard
+quark:glass_shards:11, Purple Glass Shard
+quark:glass_shards:12, Blue Glass Shard
+quark:glass_shards:13, Brown Glass Shard
+quark:glass_shards:14, Green Glass Shard
+quark:glass_shards:15, Red Glass Shard
+quark:glass_shards:16, Black Glass Shard
 quark:pickarang, item.pickarang.name
 quark:arrow_ender, item.arrow_ender.name
 quark:arrow_explosive, item.arrow_explosive.name
@@ -7464,6 +7463,7 @@ quark:parrot_egg:2, Green Parrot Egg
 quark:parrot_egg:3, Cyan Parrot Egg
 quark:parrot_egg:4, Gray Parrot Egg
 quark:enderdragon_scale, item.enderdragon_scale.name
+quark:witch_hat, item.witch_hat.name
 compactmachines3:tunnel, Tunnel
 compactmachines3:redstonetunnel, Redstone Tunnel
 compactmachines3:wall, Solid Compact Machine Wall
@@ -7478,6 +7478,8 @@ compactmachines3:fieldprojector, Miniaturization Field Projector
 compactmachines3:psd, Personal Shrinking Device
 compactmachines3:tunneltool, Tunnel
 compactmachines3:redstonetunneltool, Redstone Tunnel
+coroutil:repairing_block, Repairing Block
+coroutil:item_repairing_gel, Repairing Gel
 culinaryconstruct:sandwich_station, Sandwich Station
 culinaryconstruct:sandwich, Sandwich
 flopper:flopper:0, Flopper
@@ -8541,10 +8543,10 @@ tfc:wooden_bucket:0, Liquid Purple Slime§r Bucket§r
 tfc:metal/bucket/blue_steel:0, Blue Steel Bucket
 tfc:metal/bucket/blue_steel:0, Lava§r Bucket§r
 tfc:metal/bucket/red_steel:0, Red Steel Bucket
-tfc:metal/bucket/red_steel:0, Fresh Water§r Bucket§r
 tfc:metal/bucket/red_steel:0, Salt Water§r Bucket§r
-tfc:metal/bucket/red_steel:0, Water§r Bucket§r
+tfc:metal/bucket/red_steel:0, Fresh Water§r Bucket§r
 tfc:metal/bucket/red_steel:0, Hot water§r Bucket§r
+tfc:metal/bucket/red_steel:0, Water§r Bucket§r
 tfc:rock/granite, Granite Rock
 tfc:rock/diorite, Diorite Rock
 tfc:rock/gabbro, Gabbro Rock

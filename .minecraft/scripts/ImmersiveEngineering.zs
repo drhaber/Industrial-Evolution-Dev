@@ -21,6 +21,16 @@ mods.immersivetech.Distiller.addRecipe(<liquid:water>*1000,<liquid:fresh_water>*
 
 //Liquid Catalyst
 mods.immersiveengineering.ArcFurnace.addRecipe(<forge:bucketfilled>.withTag({FluidName: "liquidcatalyst", Amount: 1000}), <minecraft:bucket>,<immersiveengineering:material:7>, 2000, 2048, [<ore:dustObsidian>,<tfc:powder/salt>, <ore:dustGlowstone>,<ore:dustTin>]);
+//Powered Lantern
+recipes.remove(<immersiveengineering:metal_device1:4>);
+recipes.addShaped("Tungsten_Lantern",<immersiveengineering:metal_device1:4>,[
+	[null,<ore:plateLead>,null],
+	[<ore:paneGlass>,<tfctech:metal/tungsten_wire>,<ore:paneGlass>],
+	[<ore:plateCopper>,<ore:plateLead>,<ore:plateCopper>]]);
+recipes.addShaped("Magic_Lantern",<immersiveengineering:metal_device1:4>,[
+	[null,<ore:plateLead>,null],
+	[<ore:paneGlass>,<astralsorcery:itemrockcrystalsimple>,<ore:paneGlass>],
+	[<ore:plateCopper>,<ore:plateLead>,<ore:plateCopper>]]);
 //Iron Rod
 recipes.remove(<immersiveengineering:material:1>);
 //Silicon
