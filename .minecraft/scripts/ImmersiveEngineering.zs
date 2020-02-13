@@ -4,6 +4,8 @@ mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust_oxide:1>, <tfc:or
 mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust:7>, <tfc:ore/magnesite>, 2048);
 mods.immersiveengineering.CokeOven.addRecipe( <immersiveengineering:material:6>, 500,<tfc:ore/bituminous_coal>, 2000);
 mods.terrafirmacraft.Barrel.addRecipe("Hemp_Fibre", <tfc:crop/product/jute_fiber>, <liquid:creosote>*10, <immersiveengineering:material:4>, <liquid:creosote>*8, 4);
+mods.terrafirmacraft.Barrel.addRecipe("Treated_Lumber", <ore:lumber>, <liquid:creosote>*250, <contenttweaker:treatedlumber>, <liquid:creosote>*150, 4);
+mods.terrafirmacraft.Barrel.addRecipe("Treated_Stick", <ore:stickWood>, <liquid:creosote>*50, <immersiveengineering:material>, <liquid:creosote>*25, 4);
 //Wires
 val wires = <immersiveengineering:material>.definition;
 for i in 20 to 24{
@@ -18,7 +20,20 @@ for i in 30 to 41{
 
 mods.immersivetech.Distiller.addRecipe(<liquid:fresh_water>*10,<liquid:salt_water>*30,<tfc:powder/salt>);
 mods.immersivetech.Distiller.addRecipe(<liquid:water>*1000,<liquid:fresh_water>*1000,<tfc:powder/salt>);
-
+//Scaffold
+recipes.remove(<immersiveengineering:wooden_decoration:1>);
+recipes.addShaped(<immersiveengineering:wooden_decoration:1>,[
+	[<contenttweaker:treatedlumber>,<contenttweaker:treatedlumber>,<contenttweaker:treatedlumber>],
+	[null,<immersiveengineering:material>,null],
+	[<immersiveengineering:material>,null,<immersiveengineering:material>]]);
+//Kiln Brick
+val n = <minecraft:netherbrick>;
+val f = <tfc:ceramics/fired/fire_brick>;
+recipes.remove(<immersiveengineering:stone_decoration:10>);
+recipes.addShaped(<immersiveengineering:stone_decoration:10>,[
+	[n,f,n],
+	[f,n,f],
+	[n,f,n]]);
 //Liquid Catalyst
 mods.immersiveengineering.ArcFurnace.addRecipe(<forge:bucketfilled>.withTag({FluidName: "liquidcatalyst", Amount: 1000}), <minecraft:bucket>,<immersiveengineering:material:7>, 2000, 2048, [<ore:dustObsidian>,<tfc:powder/salt>, <ore:dustGlowstone>,<ore:dustTin>]);
 //Powered Lantern

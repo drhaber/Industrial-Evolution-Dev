@@ -25,6 +25,12 @@ recipes.addShaped(<minecraft:end_portal_frame>,[
 recipes.remove(<railcraft:anvil>);
 recipes.addShapeless(<minecraft:anvil>,[<tfc:metal/anvil/wrought_iron>]);
 recipes.addShapeless(<railcraft:anvil>,[<tfc:metal/anvil/black_steel>]);	
+//Sand 
+mods.terrafirmacraft.Barrel.addRecipe("Vanilla_sand", <ore:tfcSand>, <liquid:hot_water>*250, <minecraft:sand>, <liquid:hot_water>*0, 4);
+//Sandstone
+recipes.addShaped(<minecraft:sandstone>,[
+[<minecraft:sand>,<minecraft:sand>],
+[<minecraft:sand>,<minecraft:sand>]]);
 //Charcoal 
 furnace.remove(<minecraft:coal:1>);
 //Leads
@@ -34,6 +40,6 @@ recipes.addShaped(<minecraft:lead>,[
 	[<ore:string>,null,null]]);
 //Redstone Lamp
 recipes.addShaped(<minecraft:redstone_lamp>,[
-	[<minecraft:coal:1>],
+	[<minecraft:glowstone>],
 	[<quark:framed_glass>],
 	[<minecraft:redstone_torch>]]);

@@ -1,0 +1,107 @@
+{
+  "name": "squeezer",
+
+  "target-item": "forestry:squeezer",
+  "target-count": 1,
+
+  "duration": 300,
+  "symmetrical": false,
+
+  "catalyst": "forestry:sturdy_machine",
+  
+  
+  "input-types": {
+    "a": {
+      "id": "immersiveengineering:metal_decoration1",
+      "meta": 0
+    },
+    "b": {
+      "id": "immersiveengineering:wooden_device0",
+      "meta": 1
+    },
+    "c": {
+      "id": "immersiveengineering:metal_decoration1",
+      "meta": 1
+    },
+    "d": {
+      "id": "minecraft:piston",
+      "meta": 0
+    },
+    "e": {
+      "id": "immersiveengineering:metal_device1",
+      "meta": 6
+    },
+    "f": {
+      "id": "immersiveengineering:metal_decoration0",
+      "meta": 4
+    },
+    "g": {
+      "id": "immersiveengineering:metal_decoration0",
+      "meta": 3
+    }
+  },
+  "input-nbt": {
+    "b:A": {
+      "nbt": "{id:\"immersiveengineering:woodenbarrel\"}"
+    },
+    "e:A": {
+      "nbt": "{id:\"immersiveengineering:fluidpipe\",connections:6b}"
+    },
+    "e:B": {
+      "nbt": "{id:\"immersiveengineering:fluidpipe\",connections:8b}"
+    }
+  },
+  "shape": [
+    [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "d",
+        "a"
+      ],
+      [
+        "_",
+        "a",
+        "a"
+      ]
+    ],
+    [
+      [
+        "g",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "b:A",
+        "b:A"
+      ],
+      [
+        "f",
+        "b:A",
+        "b:A"
+      ]
+    ],
+    [
+      [
+        "c",
+        "e:B",
+        "c"
+      ],
+      [
+        "c",
+        "e:A",
+        "c"
+      ],
+      [
+        "f",
+        "c",
+        "c"
+      ]
+    ]
+  ]
+}

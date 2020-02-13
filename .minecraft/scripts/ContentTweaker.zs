@@ -9,6 +9,11 @@ import crafttweaker.game.IGame;
 var glowstring = VanillaFactory.createItem("glowstring");
 glowstring.register();
 game.setLocalization("item.contenttweaker.glowstring.name", "Glow String");
+//Treated Lumber
+var treatedlumber = VanillaFactory.createItem("treatedlumber");
+treatedlumber.register();
+game.setLocalization("item.contenttweaker.treatedlumber.name", "Treated Lumber");
+
 //AE2 Inscriber Casts
 	//Material Calculation Processor Cast
 	var unfired_material_calculation_processor_press = VanillaFactory.createItem("unfired_material_calculation_processor_press");

@@ -3,3 +3,4 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 
 recipes.remove(<forestry:bottler>);
+recipes.remove(<forestry:squeezer>);
