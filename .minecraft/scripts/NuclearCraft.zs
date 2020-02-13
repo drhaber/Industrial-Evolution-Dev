@@ -4,3 +4,5 @@ mods.nuclearcraft.crystallizer.addRecipe(<liquid:liquidcarbonsolution>*100, <tfc
 //Silicon
 mods.nuclearcraft.melter.addRecipe(<ore:itemSilicon>, <liquid:silicon_molten_black>*125);
 mods.nuclearcraft.melter.addRecipe(<projectred-core:resource_item:300>, <liquid:silicon_molten_black>*1000);
+//Iridium
+mods.nuclearcraft.infuser.addRecipe(<ore:dustCobalt>, <liquid:neutron>*100, <libvulpes:productdust:10>);
