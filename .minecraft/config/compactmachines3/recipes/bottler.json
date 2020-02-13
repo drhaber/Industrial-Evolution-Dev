@@ -5,7 +5,7 @@
   "target-count": 1,
 
   "duration": 300,
-  "symmetrical": true,
+  "symmetrical": false,
 
   "catalyst": "forestry:sturdy_machine",
   
@@ -15,8 +15,8 @@
       "meta": 0
     },
     "b": {
-      "id": "immersiveengineering:sheetmetal",
-      "meta": 9
+      "id": "immersiveengineering:metal_decoration0",
+      "meta": 4
     },
     "c": {
       "id": "immersiveengineering:metal_decoration1",
@@ -35,8 +35,8 @@
       "meta": 3
     },
     "g": {
-      "id": "immersiveengineering:metal_decoration0",
-      "meta": 4
+      "id": "immersiveengineering:sheetmetal",
+      "meta": 9
     }
   },
   "input-nbt": {
@@ -44,10 +44,10 @@
       "nbt": "{conveyorBeltSubtypeNBT:{dyeColour:-1,direction:0},facing:2,conveyorBeltSubtype:\"immersiveengineering:conveyor\",id:\"immersiveengineering:conveyorbelt\"}"
     },
     "e:A": {
-      "nbt": "{dummy:1b,id:\"immersiveengineering:fluidpump\"}"
+      "nbt": "{dummy:1b}"
     },
     "e:B": {
-      "nbt": "{dummy:0b,id:\"immersiveengineering:fluidpump\"}"
+      "nbt": "{dummy:0b}"
     }
   },
   "shape": [
