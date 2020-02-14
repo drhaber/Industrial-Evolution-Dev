@@ -10,6 +10,12 @@ recipes.addShaped(<minecraft:coal_block>,[
 	[CO,CO,CO]]);
 //Torch Recipes
 recipes.remove(<minecraft:torch>);
+//Pressure Plate
+<minecraft:wooden_pressure_plate>.displayName = "Wooden Pressure Plate";
+recipes.remove(<minecraft:wooden_pressure_plate>);
+recipes.addShaped(<minecraft:wooden_pressure_plate>*2,[
+	[<ore:saw>.transformDamage(1)],
+	[<ore:lumber>,<ore:lumber>]]);
 //Furnace
 val CB = <ore:cobblestone>;
 recipes.addShaped(<minecraft:furnace>,[
