@@ -89,3 +89,14 @@ recipes.addShapeless(<architecturecraft:largepulley>,[<astikorcarts:wheel>,<quar
 //Stone Rods
 mods.jei.JEI.removeAndHide(<microblockcbe:stone_rod>);
 mods.jei.JEI.removeAndHide(<inspirations:materials:8>);	
+//Remove Nuggets
+val ingots = [<minecraft:iron_ingot>,<advancedrocketry:productingot>,<advancedrocketry:productingot:1>,<immersiveengineering:metal>,
+<immersiveengineering:metal:1>,<immersiveengineering:metal:2>,<immersiveengineering:metal:3>,<immersiveengineering:metal:4>,<immersiveengineering:metal:5>,
+<immersiveengineering:metal:6>,<immersiveengineering:metal:7>,<immersiveengineering:metal:8>,<railcraft:ingot>,<railcraft:ingot:1>,
+<railcraft:ingot:2>,<railcraft:ingot:3>,<railcraft:ingot:4>,<railcraft:ingot:5>,<railcraft:ingot:6>,<railcraft:ingot:7>,<railcraft:ingot:8>,
+<railcraft:ingot:9>,<tconstruct:ingots>,<tconstruct:ingots:1>,<tconstruct:ingots:2>,<tconstruct:ingots:4>,<tconstruct:ingots:5>,<libvulpes:productingot:3>,
+<libvulpes:productingot:3>,<libvulpes:productingot:4>,<libvulpes:productingot:5>,<libvulpes:productingot:6>,<libvulpes:productingot:7>,<libvulpes:productingot:9>,
+<libvulpes:productingot:10>] as IItemStack[];
+for i, ingot in ingots{
+recipes.removeShaped(ingot);
+}
