@@ -6,6 +6,10 @@ import crafttweaker.oredict.IOreDictEntry;
 <ore:ingotAluminium>.mirror(<ore:ingotAluminum>);
 //Bricks
 <ore:ingotBrick>.addAll(<ore:brick>); //This adds ingot brick to all bricks
+//Soot Black Dye
+<ore:dyeBlack>.add(<contenttweaker:soot>);
+//Marble
+<ore:stoneMarble>.add(<tfc:raw/marble>);
 //Aquamarine
 <ore:gemAquamarine>.addAll(<ore:gemBeryl>);
 //Biotite

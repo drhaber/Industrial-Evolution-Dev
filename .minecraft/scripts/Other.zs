@@ -1,3 +1,6 @@
+import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
+import crafttweaker.oredict.IOreDictEntry;
 //Missing Localization
 game.setLocalization("item.railcraft.charge.electrode.carbon.name", "Silver Electrode");
 game.setLocalization("item.railcraft.charge.electrode.silver.name", "Carbon Electrode");
@@ -36,11 +39,17 @@ mods.jei.JEI.addDescription(<quark:thatch_slab>,"Magic has made this thatch soli
 	[<ore:blockGlassColorless>,<ore:stickIron>,<ore:blockGlassColorless>],
 	[<ore:stickIron>,<ore:blockGlassColorless>,<ore:stickIron>],
 	[<ore:blockGlassColorless>,<ore:stickIron>,<ore:blockGlassColorless>]]);
-	
+//Marble
+mods.terrafirmacraft.Barrel.addRecipe("Quark_marble", <tfc:raw/marble>, <liquid:hot_water>*250, <quark:marble>, <liquid:hot_water>*0, 4);
 //Lithium
 furnace.addRecipe(<nuclearcraft:dust:6>*4, <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "brine", Amount: 1000}}));
 mods.immersiveengineering.BlastFurnace.addRecipe(<nuclearcraft:dust:6>*4, <forge:bucketfilled>.withTag({FluidName: "brine", Amount: 1000}), 2000,<minecraft:bucket>);
-
+//AE2
+	//Tiny TNT
+	recipes.remove(<appliedenergistics2:tiny_tnt>);
+	recipes.addShaped(<appliedenergistics2:tiny_tnt>,[
+	[<ore:gunpowder>,<minecraft:flint>],
+	[<minecraft:flint>,<ore:gunpowder>]]);
 //Creosote
 furnace.remove(<railcraft:fluid_bottle_creosote>);
 //Water Bucket

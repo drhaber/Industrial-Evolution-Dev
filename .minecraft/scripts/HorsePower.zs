@@ -13,3 +13,7 @@ mods.horsepower.Recipes.addShaped(<ore:logWood>, <horsepower:chopper>, [[<ore:ge
 																		   [<ore:stickWood>,<ore:logWood>,<ore:stickWood>]]);
 
 mods.jei.JEI.removeAndHide(<horsepower:hand_grindstone>);
+//Parchment
+mods.horsepower.Press.add(<ore:reed>*3, <astralsorcery:itemcraftingcomponent:5>);
+//Manual Chopping Block
+mods.jei.JEI.addDescription(<horsepower:chopping_block>,"Simply place a log onto the chopping block use right click and then, with an axe in your hand left click the block, about 2 to 4 times, until lumber is acquired. ");

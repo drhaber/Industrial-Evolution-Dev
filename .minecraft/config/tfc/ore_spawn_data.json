@@ -14,8 +14,8 @@
   },
     "certus_quartz": {
     "ore": "appliedenergistics2:quartz_ore",
-    "width": 32,
-    "height": 40,
+    "width": 10,
+    "height": 10,
     "shape": "cluster",
     "rarity": 100,
     "minimum_height": 5,
@@ -29,13 +29,13 @@
   },
     "dilithium_ore": {
     "ore": "libvulpes:ore0",
-    "width": 32,
-    "height": 40,
+    "width": 10,
+    "height": 10,
     "shape": "cluster",
     "rarity": 100,
     "minimum_height": 5,
     "maximum_height": 200,
-    "density": 70,
+    "density": 10,
     "base_rocks": [
       "tfc:igneous_extrusive",
 	  "tfc:sedimentary",
@@ -44,8 +44,8 @@
   },
     "rockcrystal_ore": {
     "ore": "astralsorcery:blockcustomore",
-    "width": 32,
-    "height": 40,
+    "width": 10,
+    "height": 5,
     "shape": "cluster",
     "rarity": 100,
     "minimum_height": 50,

@@ -1,5 +1,10 @@
+//Coals
+furnace.setFuel(<tfc:ore/bituminous_coal>, 1600);
+furnace.setFuel(<tfc:ore/lignite>, 800);
 //Bowl
 <tfc:ceramics/fired/bowl>.displayName = "Clay Bowl";
+//Soot
+mods.terrafirmacraft.Quern.addRecipe("Soot", <ore:charcoal>, <contenttweaker:soot>*4);
 //Glass_Bottle
 mods.terrafirmacraft.ItemRegistry.registerItemHeat(<minecraft:glass>, 0.35, 1300, true);
 mods.terrafirmacraft.ItemRegistry.registerItemHeat(<minecraft:glass_bottle>, 0.35, 1300, true);

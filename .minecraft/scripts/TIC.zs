@@ -26,7 +26,25 @@ mods.tconstruct.Casting.addTableRecipe(<appliedenergistics2:material:13>, <conte
 mods.tconstruct.Casting.addTableRecipe(<appliedenergistics2:material:15>, <contenttweaker:fired_material_logic_processor_press>, <liquid:iron>, 144);
 mods.tconstruct.Casting.addTableRecipe(<appliedenergistics2:material:19>, <contenttweaker:fired_material_silicon_press>, <liquid:iron>, 144);
 recipes.remove(<tconstruct:stone_stick>);
-
+//Seared Brick
+recipes.addShapeless(<tconstruct:materials>,[<tconstruct:seared:1>,<ore:chisel>.transformDamage(4)]);
+//Smeltry Controller
+recipes.remove(<tconstruct:smeltery_controller>);
+recipes.addShaped(<tconstruct:smeltery_controller>,[
+	[<tconstruct:materials>,<tconstruct:materials>,<tconstruct:materials>],
+	[<tfc:bellows>,null,<tfc:bellows>],
+	[<tconstruct:materials>,<tconstruct:materials>,<tconstruct:materials>]]);
+//Cauldron
+mods.tconstruct.Melting.removeRecipe(<liquid:iron>, <minecraft:cauldron>);
+//Clear Stained Glass
+val dyes = [<ore:dyeWhite>,<ore:dyeOrange>,<ore:dyeMagenta>,<ore:dyeLightBlue>,<ore:dyeYellow>,<ore:dyeLime>,<ore:dyePink>,<ore:dyeGray>,<ore:dyeLightGray>,<ore:dyeCyan>,<ore:dyePurple>,<ore:dyeBlue>,<ore:dyeBrown>,<ore:dyeGreen>,<ore:dyeRed>,<ore:dyeBlack>] as IOreDictEntry[];
+val CSG = <tconstruct:clear_stained_glass>.definition;
+for i in 0 to 16{
+recipes.remove(CSG.makeStack(i));
+mods.tconstruct.Casting.addBasinRecipe(CSG.makeStack(i)*8, dyes[i], <liquid:glass>, 1000, true, 180);
+}
+mods.tconstruct.Casting.removeBasinRecipe(<tconstruct:clear_glass>);
+mods.tconstruct.Casting.addBasinRecipe(<tconstruct:clear_glass>*8, null, <liquid:glass>, 1000, false, 180);
 //Casting Table TFC Tool Parts
 
 val castingMetal = [<liquid:tungsten>,<liquid:black_bronze>,<liquid:red_steel>,<liquid:invar>,

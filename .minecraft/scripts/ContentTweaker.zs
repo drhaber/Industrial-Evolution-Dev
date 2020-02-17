@@ -5,6 +5,7 @@ import mods.contenttweaker.Color;
 import mods.contenttweaker.Item;
 import crafttweaker.game.IGame;
 
+
 //Glow String
 var glowstring = VanillaFactory.createItem("glowstring");
 glowstring.register();
@@ -13,7 +14,10 @@ game.setLocalization("item.contenttweaker.glowstring.name", "Glow String");
 var treatedlumber = VanillaFactory.createItem("treatedlumber");
 treatedlumber.register();
 game.setLocalization("item.contenttweaker.treatedlumber.name", "Treated Lumber");
-
+//Soot
+var soot = VanillaFactory.createItem("soot");
+soot.register();
+game.setLocalization("item.contenttweaker.soot.name", "Soot");
 //AE2 Inscriber Casts
 	//Material Calculation Processor Cast
 	var unfired_material_calculation_processor_press = VanillaFactory.createItem("unfired_material_calculation_processor_press");
