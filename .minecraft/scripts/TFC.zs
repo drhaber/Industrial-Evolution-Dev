@@ -6,6 +6,19 @@ furnace.setFuel(<tfc:ore/bituminous_coal>, 1600);
 furnace.setFuel(<tfc:ore/lignite>, 800);
 //Bowl
 <tfc:ceramics/fired/bowl>.displayName = "Clay Bowl";
+//Sleeves
+recipes.addShaped(<tfctech:metal/tin_sleeve>*4,[
+	[null,<ore:sheetTin>,null],
+	[<ore:sheetTin>,<ore:chisel>.transformDamage(4),<ore:sheetTin>],
+	[null,<ore:sheetTin>,null]]);
+recipes.addShaped(<tfctech:metal/brass_sleeve>*4,[
+	[null,<ore:sheetBrass>,null],
+	[<ore:sheetBrass>,<ore:chisel>.transformDamage(4),<ore:sheetBrass>],
+	[null,<ore:sheetBrass>,null]]);
+recipes.addShaped(<tfctech:metal/steel_sleeve>*4,[
+	[null,<ore:sheetSteel>,null],
+	[<ore:sheetSteel>,<ore:chisel>.transformDamage(4),<ore:sheetSteel>],
+	[null,<ore:sheetSteel>,null]]);
 //Soot
 mods.terrafirmacraft.Quern.addRecipe("Soot", <ore:charcoal>, <contenttweaker:soot>*4);
 //Glass_Bottle

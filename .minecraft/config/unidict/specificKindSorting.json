@@ -1,0 +1,153 @@
+[
+	{
+		"kindName" : "longRod",
+		"modIdPriorityList" :
+		[
+		tfctech
+		]
+	},
+	{
+		"kindName" : "rod",
+		"modIdPriorityList" :
+		[
+		tfctech
+		]
+	},
+		{
+		"kindName" : "stick",
+		"modIdPriorityList" :
+		[
+		tfctech
+		]
+	},
+	{
+		"kindName" : "gem",
+		"modIdPriorityList" :
+		[
+		tfc
+		]
+	},	
+	{
+		"kindName" : "oreNugget",
+		"modIdPriorityList" :
+		[
+		tfc
+		nuclearcraft
+		]
+	},		
+	{
+		"kindName" : "gear",
+		"modIdPriorityList" :
+		[
+		tfctech
+		]
+	},		
+	{
+		"kindName" : "bolt",
+		"modIdPriorityList" :
+		[
+		tfctech
+		]
+	},	
+	{
+		"kindName" : "dust",
+		"modIdPriorityList" :
+		[
+		tfc
+		tfctech
+		morebees
+		nuclearcraft
+		immersiveengineering
+		]
+	},	
+	{
+		"kindName" : "wire",
+		"modIdPriorityList" :
+		[
+		tfctech
+		]
+	},	
+	{
+		"kindName" : "ingot",
+		"modIdPriorityList" :
+		[
+		tfc
+		tfctech
+		tconstruct
+		nuclearcraft
+		immersiveengineering
+		]
+	},		
+	{
+		"kindName" : "nugget",
+		"modIdPriorityList" :
+		[
+		tfc
+		]
+	},	
+	{
+		"kindName" : "plate",
+		"modIdPriorityList" :
+		[
+		tfc
+		]
+	},
+	{
+		"kindName" : "sheetDouble",
+		"modIdPriorityList" :
+		[
+		tfc
+		]
+	},	
+		{
+		"kindName" : "sheetDouble",
+		"modIdPriorityList" :
+		[
+		tfc
+		]
+	},	
+	{
+		"kindName" : "shovel",
+		"modIdPriorityList" :
+		[
+		tfc
+		]
+	},
+	{
+		"kindName" : "pickaxe",
+		"modIdPriorityList" :
+		[
+		tfc
+		]
+	},	
+	{
+		"kindName" : "axe",
+		"modIdPriorityList" :
+		[
+		tfc
+		]
+	},	
+	{
+		"kindName" : "sword",
+		"modIdPriorityList" :
+		[
+		tfc
+		]
+	},
+	{
+		"kindName" : "hoe",
+		"modIdPriorityList" :
+		[
+		tfc
+		]
+	},		
+	{
+		"kindName" : "sheet",
+		"modIdPriorityList" :
+		[
+		tfc
+		]
+	}
+]	
+
+

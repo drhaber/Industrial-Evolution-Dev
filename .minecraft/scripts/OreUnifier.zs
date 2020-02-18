@@ -1,6 +1,7 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
+
 //Aluminium
 <ore:ingotAluminum>.addAll(<ore:ingotAluminium>);
 <ore:ingotAluminium>.mirror(<ore:ingotAluminum>);
@@ -17,8 +18,8 @@ import crafttweaker.oredict.IOreDictEntry;
 <ore:quartzDark>.mirror(<ore:gemEnderBiotite>);
 //End Stone
 <ore:endstone>.add(<opencomputers:endstone>);
-//Iron Rod
-<ore:stickIron>.add(<tfctech:metal/wrought_iron_rod>);
+//Brass Sleeve
+<ore:sleeveBrass>.add(<railcraft:gear:3>);
 //Silicon
 <ore:itemSilicon>.remove(<libvulpes:productingot:3>);
 <ore:waferSilicon>.remove(<libvulpes:productingot:3>);
@@ -44,3 +45,16 @@ mods.nuclearcraft.alloy_furnace.addRecipe(<ore:itemSilicon>, <ore:dustGraphite>,
 						   <tfc:sand/dolomite>,<tfc:sand/phyllite>,<tfc:sand/slate>,<tfc:sand/quartzite>,
 						   <tfc:sand/dacite>,<tfc:sand/andesite>,<tfc:sand/basalt>,<tfc:sand/rhyolite>,<tfc:sand/chalk>,
 						   <tfc:sand/chert>,<tfc:sand/schist>,<tfc:sand/gneiss>,<tfc:sand/marble>]);
+//Aluminium Plate
+<ore:plateAluminum>.addAll(<ore:plateAluminium>);
+<ore:plateAluminium>.mirror(<ore:plateAluminum>);
+//Gears
+<ore:gearIron>.addAll(<ore:gearWroughtIron>);
+mods.jei.JEI.removeAndHide(<railcraft:gear:3>);
+//Rods/Sticks
+<ore:stickIron>.addAll(<ore:rodWroughtIron>);
+<ore:stickSteel>.addAll(<ore:rodSteel>);
+<ore:stickCopper>.addAll(<ore:rodCopper>);
+<ore:stickSteel>.addAll(<ore:rodSteel>);
+<ore:stickTitanium>.addAll(<ore:rodTitanium>);
+<ore:stickAluminum>.addAll(<ore:rodAluminium>);

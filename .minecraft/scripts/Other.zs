@@ -58,13 +58,13 @@ recipes.addShapeless(<forge:bucketfilled>.withTag({FluidName: "fresh_water", Amo
 
 //GlowString
 recipes.addShaped(<contenttweaker:glowstring>,[
-	[<ore:string>,<ore:dustGlowstone>],
+	[<botania:manaresource:16>,<ore:dustGlowstone>],
 	[<ore:dustGlowstone>,<ore:dustGlowstone>]]);
 //Project Red
 furnace.addRecipe(<projectred-core:resource_item>*2, <ore:stone>);
 mods.jei.JEI.removeAndHide(<projectred-transmission:wire:34>, false);
 mods.jei.JEI.removeAndHide(<projectred-transmission:framed_wire:34>, false);
-recipes.addShapeless(<projectred-core:resource_item:301> * 8, [<ore:saw>.reuse().transformDamage(7), <projectred-core:resource_item:300>]);
+recipes.addShapeless(<projectred-core:resource_item:301> * 8, [<ore:saw>.transformDamage(7), <projectred-core:resource_item:300>]);
 furnace.remove(<projectred-core:resource_item:104>);
 furnace.remove(<projectred-core:resource_item:342>);
 mods.jei.JEI.removeAndHide(<projectred-core:resource_item:312>, false);
@@ -86,10 +86,15 @@ mods.jei.JEI.addDescription(<appliedenergistics2:smooth_sky_stone_chest>,"The se
 //Architecture Craft
 recipes.remove(<architecturecraft:largepulley>);
 recipes.addShapeless(<architecturecraft:largepulley>,[<astikorcarts:wheel>,<quark:rope>]);
+//Liquid Catalyst
+mods.jei.JEI.addDescription(<liquid:liquidcatalyst>,"3 Bottles worth in a cauldron can be used to make Nanomachines");
 //Stone Rods
 mods.jei.JEI.removeAndHide(<microblockcbe:stone_rod>);
 mods.jei.JEI.removeAndHide(<inspirations:materials:8>);	
 //Remove Nuggets
+#mods.unidict.removalByKind.get("Crafting").remove("ingot", ["nugget"]);
+#mods.unidict.removalByKind.get("Furnace").remove("ingot",["dust"]);
+
 val ingots = [<minecraft:iron_ingot>,<advancedrocketry:productingot>,<advancedrocketry:productingot:1>,<immersiveengineering:metal>,
 <immersiveengineering:metal:1>,<immersiveengineering:metal:2>,<immersiveengineering:metal:3>,<immersiveengineering:metal:4>,<immersiveengineering:metal:5>,
 <immersiveengineering:metal:6>,<immersiveengineering:metal:7>,<immersiveengineering:metal:8>,<railcraft:ingot>,<railcraft:ingot:1>,

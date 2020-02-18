@@ -1,0 +1,1434 @@
+ConductiveIron
+
+Californium249
+	nuggetCalifornium249
+	ingotCalifornium249
+
+Tough
+	ingotTough
+
+TitaniumIridium
+	sheetTitaniumIridium
+	gearTitaniumIridium
+	dustTitaniumIridium
+	nuggetTitaniumIridium
+	plateTitaniumIridium
+	blockTitaniumIridium
+	stickTitaniumIridium
+	ingotTitaniumIridium
+
+Silicon
+	plateSilicon
+	dustSilicon
+	nuggetSilicon
+	bouleSilicon
+	waferSilicon
+	ingotSilicon
+
+Osmium
+	stripOsmium
+	boltOsmium
+	screwOsmium
+	sheetOsmium
+	scrapOsmium
+	rodOsmium
+	lampOsmium
+	longRodOsmium
+	gearOsmium
+	rackwheelOsmium
+	rackwheelPieceOsmium
+	dustOsmium
+	nuggetOsmium
+	plateOsmium
+	wireOsmium
+	ingotOsmium
+
+Manyullyn
+	stripManyullyn
+	blockManyullyn
+	boltManyullyn
+	screwManyullyn
+	sheetManyullyn
+	scrapManyullyn
+	rodManyullyn
+	lampManyullyn
+	longRodManyullyn
+	gearManyullyn
+	rackwheelManyullyn
+	rackwheelPieceManyullyn
+	dustManyullyn
+	nuggetManyullyn
+	plateManyullyn
+	wireManyullyn
+	ingotManyullyn
+
+ElectrotineAlloy
+	ingotElectrotineAlloy
+
+Iridium
+	coilIridium
+	dustIridium
+	nuggetIridium
+	plateIridium
+	blockIridium
+	oreIridium
+	stickIridium
+	ingotIridium
+
+Berkelium248
+	nuggetBerkelium248
+	ingotBerkelium248
+
+Berkelium247
+	nuggetBerkelium247
+	blockBerkelium247
+	ingotBerkelium247
+
+Americium243Base
+	ingotAmericium243Base
+
+DoubleAluminiumBrass
+	sheetDoubleAluminiumBrass
+	ingotDoubleAluminiumBrass
+
+Curium247Oxide
+	nuggetCurium247Oxide
+	ingotCurium247Oxide
+
+EnergeticAlloy
+
+Plutonium241Oxide
+	nuggetPlutonium241Oxide
+	ingotPlutonium241Oxide
+
+Plutonium242Base
+	ingotPlutonium242Base
+
+Cobalt
+	stripCobalt
+	blockCobalt
+	boltCobalt
+	screwCobalt
+	sheetCobalt
+	scrapCobalt
+	rodCobalt
+	lampCobalt
+	longRodCobalt
+	gearCobalt
+	rackwheelCobalt
+	rackwheelPieceCobalt
+	dustCobalt
+	nuggetCobalt
+	plateCobalt
+	wireCobalt
+	oreCobalt
+	ingotCobalt
+
+DoubleManyullyn
+	sheetDoubleManyullyn
+	ingotDoubleManyullyn
+
+WroughtIron
+	bowlMountWroughtIron
+	grooveWroughtIron
+	tongsWroughtIron
+	drawPlateWroughtIron
+	stripWroughtIron
+	boltWroughtIron
+	screwWroughtIron
+	sheetWroughtIron
+	scrapWroughtIron
+	rodWroughtIron
+	lampWroughtIron
+	longRodWroughtIron
+	gearWroughtIron
+	rackwheelWroughtIron
+	rackwheelPieceWroughtIron
+	dustWroughtIron
+	nuggetWroughtIron
+	plateWroughtIron
+	wireWroughtIron
+	ingotWroughtIron
+
+AluminiumBrass
+	stripAluminiumBrass
+	boltAluminiumBrass
+	screwAluminiumBrass
+	sheetAluminiumBrass
+	scrapAluminiumBrass
+	rodAluminiumBrass
+	lampAluminiumBrass
+	longRodAluminiumBrass
+	gearAluminiumBrass
+	rackwheelAluminiumBrass
+	rackwheelPieceAluminiumBrass
+	dustAluminiumBrass
+	nuggetAluminiumBrass
+	plateAluminiumBrass
+	wireAluminiumBrass
+	ingotAluminiumBrass
+
+DarkSteel
+
+DoubleTitanium
+	sheetDoubleTitanium
+	ingotDoubleTitanium
+
+Curium247
+	nuggetCurium247
+	ingotCurium247
+
+Curium246
+	nuggetCurium246
+	blockCurium246
+	ingotCurium246
+
+Curium245
+	nuggetCurium245
+	ingotCurium245
+
+Curium243
+	nuggetCurium243
+	ingotCurium243
+
+HighCarbonBlackSteel
+	ingotHighCarbonBlackSteel
+
+RedAlloy
+	ingotRedAlloy
+
+Uranium233Oxide
+	nuggetUranium233Oxide
+	ingotUranium233Oxide
+
+DoubleInvar
+	sheetDoubleInvar
+	ingotDoubleInvar
+
+Thorium232
+	nuggetThorium232
+	ingotThorium232
+
+Thorium230
+	nuggetThorium230
+	blockThorium230
+	ingotThorium230
+
+MagnesiumDiboride
+	solenoidMagnesiumDiboride
+	ingotMagnesiumDiboride
+
+Carbon
+	ingotCarbon
+
+DoubleArdite
+	sheetDoubleArdite
+	ingotDoubleArdite
+
+Berkelium248Oxide
+	nuggetBerkelium248Oxide
+	ingotBerkelium248Oxide
+
+DoubleSilver
+	sheetDoubleSilver
+	ingotDoubleSilver
+
+Pigiron
+	nuggetPigiron
+	blockPigiron
+	ingotPigiron
+
+Californium250Base
+	ingotCalifornium250Base
+
+DoubleWroughtIron
+	sheetDoubleWroughtIron
+	ingotDoubleWroughtIron
+
+ElvenElementium
+	nuggetElvenElementium
+	ingotElvenElementium
+
+Curium243Base
+	ingotCurium243Base
+
+DoubleAnyBronze
+	sheetDoubleAnyBronze
+	ingotDoubleAnyBronze
+
+Americium243
+	nuggetAmericium243
+	blockAmericium243
+	ingotAmericium243
+
+Americium242
+	nuggetAmericium242
+	ingotAmericium242
+
+Americium241
+	nuggetAmericium241
+	ingotAmericium241
+
+Curium247Base
+	ingotCurium247Base
+
+DoubleAntimony
+	sheetDoubleAntimony
+	ingotDoubleAntimony
+
+Steel
+	scaffoldingSteel
+	fanSteel
+	sleeveSteel
+	slabSheetmetalSteel
+	drawPlateSteel
+	axeSteel
+	stripSteel
+	shovelSteel
+	blockSteel
+	slabSteel
+	stickSteel
+	pickaxeSteel
+	swordSteel
+	boltSteel
+	screwSteel
+	sheetSteel
+	scrapSteel
+	blockSheetmetalSteel
+	rodSteel
+	lampSteel
+	longRodSteel
+	hoeSteel
+	gearSteel
+	rackwheelSteel
+	rackwheelPieceSteel
+	fenceSteel
+	dustSteel
+	nuggetSteel
+	plateSteel
+	wireSteel
+	ingotSteel
+
+Ferroboron
+	ingotFerroboron
+
+TinSilver
+	ingotTinSilver
+
+Silver
+	slabSheetmetalSilver
+	orePoorSilver
+	stripSilver
+	blockSilver
+	slabSilver
+	boltSilver
+	screwSilver
+	sheetSilver
+	scrapSilver
+	blockSheetmetalSilver
+	rodSilver
+	lampSilver
+	longRodSilver
+	gearSilver
+	rackwheelSilver
+	rackwheelPieceSilver
+	dustSilver
+	nuggetSilver
+	plateSilver
+	wireSilver
+	oreSilver
+	ingotSilver
+
+Enderium
+
+DoubleIron
+	sheetDoubleIron
+	ingotDoubleIron
+
+SiCSiCCMC
+	ingotSiCSiCCMC
+
+BlackBronze
+	stripBlackBronze
+	boltBlackBronze
+	screwBlackBronze
+	sheetBlackBronze
+	scrapBlackBronze
+	rodBlackBronze
+	lampBlackBronze
+	longRodBlackBronze
+	gearBlackBronze
+	rackwheelBlackBronze
+	rackwheelPieceBlackBronze
+	dustBlackBronze
+	nuggetBlackBronze
+	plateBlackBronze
+	wireBlackBronze
+	ingotBlackBronze
+
+DoublePlatinum
+	sheetDoublePlatinum
+	ingotDoublePlatinum
+
+Magnesium
+	dustMagnesium
+	blockMagnesium
+	oreMagnesium
+	ingotMagnesium
+
+BismuthBronze
+	stripBismuthBronze
+	boltBismuthBronze
+	screwBismuthBronze
+	sheetBismuthBronze
+	scrapBismuthBronze
+	rodBismuthBronze
+	lampBismuthBronze
+	longRodBismuthBronze
+	gearBismuthBronze
+	rackwheelBismuthBronze
+	rackwheelPieceBismuthBronze
+	dustBismuthBronze
+	nuggetBismuthBronze
+	plateBismuthBronze
+	wireBismuthBronze
+	ingotBismuthBronze
+
+DoubleMithril
+	sheetDoubleMithril
+	ingotDoubleMithril
+
+Unknown
+	ingotUnknown
+
+Californium249Oxide
+	nuggetCalifornium249Oxide
+	ingotCalifornium249Oxide
+
+Bismuth
+	stripBismuth
+	boltBismuth
+	screwBismuth
+	sheetBismuth
+	scrapBismuth
+	rodBismuth
+	lampBismuth
+	longRodBismuth
+	gearBismuth
+	rackwheelBismuth
+	rackwheelPieceBismuth
+	dustBismuth
+	nuggetBismuth
+	plateBismuth
+	wireBismuth
+	ingotBismuth
+
+AnyBronze
+	sheetAnyBronze
+	scrapAnyBronze
+	lampAnyBronze
+	dustAnyBronze
+	nuggetAnyBronze
+	ingotAnyBronze
+
+PigIron
+	stripPigIron
+	boltPigIron
+	screwPigIron
+	sheetPigIron
+	scrapPigIron
+	rodPigIron
+	lampPigIron
+	longRodPigIron
+	gearPigIron
+	rackwheelPigIron
+	rackwheelPiecePigIron
+	dustPigIron
+	nuggetPigIron
+	platePigIron
+	wirePigIron
+	ingotPigIron
+
+Manasteel
+	nuggetManasteel
+	ingotManasteel
+
+Berkelium247Oxide
+	nuggetBerkelium247Oxide
+	ingotBerkelium247Oxide
+
+DoubleBlueSteel
+	sheetDoubleBlueSteel
+	ingotDoubleBlueSteel
+
+HOPGraphite
+	dustHOPGraphite
+	ingotHOPGraphite
+
+Aluminum
+	scaffoldingAluminum
+	slabSheetmetalAluminum
+	coilAluminum
+	blockAluminum
+	slabAluminum
+	stickAluminum
+	sheetAluminum
+	blockSheetmetalAluminum
+	fenceAluminum
+	dustAluminum
+	nuggetAluminum
+	plateAluminum
+	wireAluminum
+	oreAluminum
+	ingotAluminum
+
+DoubleLead
+	sheetDoubleLead
+	ingotDoubleLead
+
+Extreme
+	ingotExtreme
+
+TungstenSteel
+	stripTungstenSteel
+	boltTungstenSteel
+	screwTungstenSteel
+	sheetTungstenSteel
+	scrapTungstenSteel
+	rodTungstenSteel
+	lampTungstenSteel
+	longRodTungstenSteel
+	gearTungstenSteel
+	rackwheelTungstenSteel
+	rackwheelPieceTungstenSteel
+	dustTungstenSteel
+	nuggetTungstenSteel
+	plateTungstenSteel
+	wireTungstenSteel
+	ingotTungstenSteel
+
+Tungsten
+	stripTungsten
+	boltTungsten
+	screwTungsten
+	sheetTungsten
+	scrapTungsten
+	rodTungsten
+	lampTungsten
+	longRodTungsten
+	gearTungsten
+	rackwheelTungsten
+	rackwheelPieceTungsten
+	dustTungsten
+	nuggetTungsten
+	plateTungsten
+	wireTungsten
+	ingotTungsten
+
+DoubleBlackBronze
+	sheetDoubleBlackBronze
+	ingotDoubleBlackBronze
+
+Graphite
+	dustGraphite
+	blockGraphite
+	gemGraphite
+	ingotGraphite
+
+Shibuichi
+	ingotShibuichi
+
+WeakSteel
+	ingotWeakSteel
+
+Curium245Oxide
+	nuggetCurium245Oxide
+	ingotCurium245Oxide
+
+Plutonium239Oxide
+	nuggetPlutonium239Oxide
+	ingotPlutonium239Oxide
+
+RefinedIron
+
+Uranium233Base
+	ingotUranium233Base
+
+DoubleElectrum
+	sheetDoubleElectrum
+	ingotDoubleElectrum
+
+Zirconium
+	dustZirconium
+	blockZirconium
+	ingotZirconium
+
+HSLASteel
+	ingotHSLASteel
+
+HighCarbonSteel
+	ingotHighCarbonSteel
+
+SterlingSilver
+	stripSterlingSilver
+	boltSterlingSilver
+	screwSterlingSilver
+	sheetSterlingSilver
+	scrapSterlingSilver
+	rodSterlingSilver
+	lampSterlingSilver
+	longRodSterlingSilver
+	gearSterlingSilver
+	rackwheelSterlingSilver
+	rackwheelPieceSterlingSilver
+	dustSterlingSilver
+	nuggetSterlingSilver
+	plateSterlingSilver
+	wireSterlingSilver
+	ingotSterlingSilver
+
+Iron
+	ringIron
+	slabSheetmetalIron
+	orePoorIron
+	axeIron
+	shovelIron
+	blockIron
+	stickIron
+	pickaxeIron
+	swordIron
+	sheetIron
+	scrapIron
+	blockSheetmetalIron
+	lampIron
+	hoeIron
+	gearIron
+	dustIron
+	nuggetIron
+	plateIron
+	oreIron
+	ingotIron
+
+BlueSteel
+	bucketBlueSteel
+	stripBlueSteel
+	boltBlueSteel
+	screwBlueSteel
+	sheetBlueSteel
+	scrapBlueSteel
+	rodBlueSteel
+	lampBlueSteel
+	longRodBlueSteel
+	gearBlueSteel
+	rackwheelBlueSteel
+	rackwheelPieceBlueSteel
+	dustBlueSteel
+	nuggetBlueSteel
+	plateBlueSteel
+	wireBlueSteel
+	ingotBlueSteel
+
+Thorium232Base
+	ingotThorium232Base
+
+Neptunium237Oxide
+	nuggetNeptunium237Oxide
+	ingotNeptunium237Oxide
+
+Uranium238Oxide
+	nuggetUranium238Oxide
+	ingotUranium238Oxide
+
+DoubleConstantan
+	sheetDoubleConstantan
+	ingotDoubleConstantan
+
+Ardite
+	stripArdite
+	blockArdite
+	boltArdite
+	screwArdite
+	sheetArdite
+	scrapArdite
+	rodArdite
+	lampArdite
+	longRodArdite
+	gearArdite
+	rackwheelArdite
+	rackwheelPieceArdite
+	dustArdite
+	nuggetArdite
+	plateArdite
+	wireArdite
+	oreArdite
+	ingotArdite
+
+Californium251Base
+	ingotCalifornium251Base
+
+RoseGold
+	stripRoseGold
+	boltRoseGold
+	screwRoseGold
+	sheetRoseGold
+	scrapRoseGold
+	rodRoseGold
+	lampRoseGold
+	longRodRoseGold
+	gearRoseGold
+	rackwheelRoseGold
+	rackwheelPieceRoseGold
+	dustRoseGold
+	nuggetRoseGold
+	plateRoseGold
+	wireRoseGold
+	ingotRoseGold
+
+Americium243Oxide
+	nuggetAmericium243Oxide
+	ingotAmericium243Oxide
+
+Marshmallow
+	ingotMarshmallow
+
+DoubleBrass
+	sheetDoubleBrass
+	ingotDoubleBrass
+
+Plutonium238Base
+	ingotPlutonium238Base
+
+Tin
+	sleeveTin
+	orePoorTin
+	stripTin
+	blockTin
+	boltTin
+	screwTin
+	sheetTin
+	scrapTin
+	rodTin
+	lampTin
+	longRodTin
+	gearTin
+	rackwheelTin
+	rackwheelPieceTin
+	dustTin
+	nuggetTin
+	plateTin
+	wireTin
+	oreTin
+	ingotTin
+
+Uranium
+	oreUranium
+	blockSheetmetalUranium
+	slabSheetmetalUranium
+	dustUranium
+	nuggetUranium
+	plateUranium
+	blockUranium
+	slabUranium
+	ingotUranium
+
+HighCarbonBlueSteel
+	ingotHighCarbonBlueSteel
+
+Invar
+	stripInvar
+	blockInvar
+	boltInvar
+	screwInvar
+	sheetInvar
+	scrapInvar
+	rodInvar
+	lampInvar
+	longRodInvar
+	gearInvar
+	rackwheelInvar
+	rackwheelPieceInvar
+	dustInvar
+	nuggetInvar
+	plateInvar
+	wireInvar
+	ingotInvar
+
+Lead
+	tinyDustLead
+	slabSheetmetalLead
+	orePoorLead
+	stripLead
+	blockLead
+	slabLead
+	boltLead
+	screwLead
+	sheetLead
+	scrapLead
+	blockSheetmetalLead
+	rodLead
+	lampLead
+	longRodLead
+	gearLead
+	rackwheelLead
+	rackwheelPieceLead
+	dustLead
+	nuggetLead
+	plateLead
+	wireLead
+	oreLead
+	ingotLead
+
+Plutonium238Oxide
+	nuggetPlutonium238Oxide
+	ingotPlutonium238Oxide
+
+ManganeseOxide
+	dustManganeseOxide
+	ingotManganeseOxide
+
+HardCarbon
+	ingotHardCarbon
+
+Thermoconducting
+	ingotThermoconducting
+
+DoubleTin
+	sheetDoubleTin
+	ingotDoubleTin
+
+PulsatingIron
+
+DoubleBlackSteel
+	sheetDoubleBlackSteel
+	ingotDoubleBlackSteel
+
+Boron11
+	nuggetBoron11
+	ingotBoron11
+
+Boron10
+	nuggetBoron10
+	ingotBoron10
+
+Americium241Base
+	ingotAmericium241Base
+
+Plutonium241Base
+	ingotPlutonium241Base
+
+ThoriumOxide
+	dustThoriumOxide
+	ingotThoriumOxide
+
+Neptunium236Oxide
+	nuggetNeptunium236Oxide
+	ingotNeptunium236Oxide
+
+DoubleNickel
+	sheetDoubleNickel
+	ingotDoubleNickel
+
+WeakBlueSteel
+	ingotWeakBlueSteel
+
+DoubleBronze
+	sheetDoubleBronze
+	ingotDoubleBronze
+
+Berkelium247Base
+	ingotBerkelium247Base
+
+UnsweetenedChocolate
+	ingotUnsweetenedChocolate
+
+Americium242Oxide
+	nuggetAmericium242Oxide
+	ingotAmericium242Oxide
+
+Mithril
+	stripMithril
+	boltMithril
+	screwMithril
+	sheetMithril
+	scrapMithril
+	rodMithril
+	lampMithril
+	longRodMithril
+	gearMithril
+	rackwheelMithril
+	rackwheelPieceMithril
+	dustMithril
+	nuggetMithril
+	plateMithril
+	wireMithril
+	ingotMithril
+
+HighCarbonRedSteel
+	ingotHighCarbonRedSteel
+
+BlackSteel
+	drawPlateBlackSteel
+	stripBlackSteel
+	boltBlackSteel
+	screwBlackSteel
+	sheetBlackSteel
+	scrapBlackSteel
+	rodBlackSteel
+	lampBlackSteel
+	longRodBlackSteel
+	gearBlackSteel
+	rackwheelBlackSteel
+	rackwheelPieceBlackSteel
+	dustBlackSteel
+	nuggetBlackSteel
+	plateBlackSteel
+	wireBlackSteel
+	ingotBlackSteel
+
+Californium249Base
+	ingotCalifornium249Base
+
+Thorium230Oxide
+	nuggetThorium230Oxide
+	ingotThorium230Oxide
+
+Manganese
+	dustManganese
+	dustCarbonManganese
+	blockManganese
+	ingotManganese
+
+Nickel
+	slabSheetmetalNickel
+	orePoorNickel
+	stripNickel
+	blockNickel
+	slabNickel
+	boltNickel
+	screwNickel
+	sheetNickel
+	scrapNickel
+	blockSheetmetalNickel
+	rodNickel
+	lampNickel
+	longRodNickel
+	gearNickel
+	rackwheelNickel
+	rackwheelPieceNickel
+	dustNickel
+	nuggetNickel
+	plateNickel
+	wireNickel
+	oreNickel
+	ingotNickel
+
+Californium252Oxide
+	nuggetCalifornium252Oxide
+	ingotCalifornium252Oxide
+
+SiliconCarbide
+	fiberSiliconCarbide
+	ingotSiliconCarbide
+
+Uranium238Base
+	ingotUranium238Base
+
+Uranium238
+	nuggetUranium238
+	blockUranium238
+	ingotUranium238
+
+Lithium
+	dustLithium
+	blockLithium
+	oreLithium
+	ingotLithium
+
+Uranium235
+	nuggetUranium235
+	ingotUranium235
+
+Curium243Oxide
+	nuggetCurium243Oxide
+	ingotCurium243Oxide
+
+Plutonium242
+	nuggetPlutonium242
+	blockPlutonium242
+	ingotPlutonium242
+
+Plutonium241
+	nuggetPlutonium241
+	ingotPlutonium241
+
+DoubleTungsten
+	sheetDoubleTungsten
+	ingotDoubleTungsten
+
+Beryllium
+	dustBeryllium
+	blockBeryllium
+	ingotBeryllium
+
+LeadPlatinum
+	ingotLeadPlatinum
+
+Lithium7
+	nuggetLithium7
+	ingotLithium7
+
+Lithium6
+	nuggetLithium6
+	ingotLithium6
+
+DoubleBismuthBronze
+	sheetDoubleBismuthBronze
+	ingotDoubleBismuthBronze
+
+Tungstensteel
+
+Plutonium239
+	nuggetPlutonium239
+	ingotPlutonium239
+
+Plutonium238
+	nuggetPlutonium238
+	ingotPlutonium238
+
+Neptunium237Base
+	ingotNeptunium237Base
+
+Zircaloy
+	ingotZircaloy
+
+LithiumManganeseDioxide
+	ingotLithiumManganeseDioxide
+
+DoubleZinc
+	sheetDoubleZinc
+	ingotDoubleZinc
+
+Californium252Base
+	ingotCalifornium252Base
+
+CocoaButter
+	ingotCocoaButter
+
+DoubleCopper
+	sheetDoubleCopper
+	ingotDoubleCopper
+
+Curium245Base
+	ingotCurium245Base
+
+RedSteel
+	bucketRedSteel
+	stripRedSteel
+	boltRedSteel
+	screwRedSteel
+	sheetRedSteel
+	scrapRedSteel
+	rodRedSteel
+	lampRedSteel
+	longRodRedSteel
+	gearRedSteel
+	rackwheelRedSteel
+	rackwheelPieceRedSteel
+	dustRedSteel
+	nuggetRedSteel
+	plateRedSteel
+	wireRedSteel
+	ingotRedSteel
+
+DoubleBismuth
+	sheetDoubleBismuth
+	ingotDoubleBismuth
+
+Plutonium239Base
+	ingotPlutonium239Base
+
+Constantan
+	slabSheetmetalConstantan
+	stripConstantan
+	blockConstantan
+	slabConstantan
+	boltConstantan
+	screwConstantan
+	sheetConstantan
+	scrapConstantan
+	blockSheetmetalConstantan
+	rodConstantan
+	lampConstantan
+	longRodConstantan
+	gearConstantan
+	rackwheelConstantan
+	rackwheelPieceConstantan
+	dustConstantan
+	nuggetConstantan
+	plateConstantan
+	wireConstantan
+	ingotConstantan
+
+TitaniumAluminide
+	sheetTitaniumAluminide
+	gearTitaniumAluminide
+	dustTitaniumAluminide
+	nuggetTitaniumAluminide
+	plateTitaniumAluminide
+	blockTitaniumAluminide
+	stickTitaniumAluminide
+	ingotTitaniumAluminide
+
+DoublePigIron
+	sheetDoublePigIron
+	ingotDoublePigIron
+
+DoubleGold
+	sheetDoubleGold
+	ingotDoubleGold
+
+Boron
+	dustBoron
+	blockBoron
+	oreBoron
+	gemBoron
+	ingotBoron
+
+Uranium233
+	nuggetUranium233
+	ingotUranium233
+
+Americium241Oxide
+	nuggetAmericium241Oxide
+	ingotAmericium241Oxide
+
+Curium246Oxide
+	nuggetCurium246Oxide
+	ingotCurium246Oxide
+
+DoubleSteel
+	sheetDoubleSteel
+	ingotDoubleSteel
+
+DoubleRoseGold
+	sheetDoubleRoseGold
+	ingotDoubleRoseGold
+
+DarkChocolate
+	ingotDarkChocolate
+
+Thorium
+	dustThorium
+	blockThorium
+	oreThorium
+	ingotThorium
+
+Californium251Oxide
+	nuggetCalifornium251Oxide
+	ingotCalifornium251Oxide
+
+Chocolate
+	ingotChocolate
+
+AstralStarmetal
+	dustAstralStarmetal
+	oreAstralStarmetal
+	ingotAstralStarmetal
+
+Americium242Base
+	ingotAmericium242Base
+
+Titanium
+	coilTitanium
+	stripTitanium
+	blockTitanium
+	stickTitanium
+	boltTitanium
+	screwTitanium
+	sheetTitanium
+	scrapTitanium
+	rodTitanium
+	lampTitanium
+	longRodTitanium
+	gearTitanium
+	rackwheelTitanium
+	rackwheelPieceTitanium
+	dustTitanium
+	nuggetTitanium
+	plateTitanium
+	wireTitanium
+	oreTitanium
+	ingotTitanium
+
+Terrasteel
+	nuggetTerrasteel
+	ingotTerrasteel
+
+DoubleCobalt
+	sheetDoubleCobalt
+	ingotDoubleCobalt
+
+DoubleSterlingSilver
+	sheetDoubleSterlingSilver
+	ingotDoubleSterlingSilver
+
+DoubleRedSteel
+	sheetDoubleRedSteel
+	ingotDoubleRedSteel
+
+Electrum
+	slabSheetmetalElectrum
+	stripElectrum
+	blockElectrum
+	slabElectrum
+	boltElectrum
+	screwElectrum
+	sheetElectrum
+	scrapElectrum
+	blockSheetmetalElectrum
+	rodElectrum
+	lampElectrum
+	longRodElectrum
+	gearElectrum
+	rackwheelElectrum
+	rackwheelPieceElectrum
+	dustElectrum
+	nuggetElectrum
+	plateElectrum
+	wireElectrum
+	ingotElectrum
+
+ManganeseDioxide
+	dustManganeseDioxide
+	ingotManganeseDioxide
+
+Berkelium248Base
+	ingotBerkelium248Base
+
+ElectricalSteel
+
+Uranium235Oxide
+	nuggetUranium235Oxide
+	ingotUranium235Oxide
+
+Bronze
+	stripBronze
+	shovelBronze
+	blockBronze
+	pickaxeBronze
+	boltBronze
+	screwBronze
+	sheetBronze
+	scrapBronze
+	rodBronze
+	lampBronze
+	longRodBronze
+	gearBronze
+	rackwheelBronze
+	rackwheelPieceBronze
+	dustBronze
+	nuggetBronze
+	plateBronze
+	wireBronze
+	ingotBronze
+
+Zinc
+	orePoorZinc
+	stripZinc
+	blockZinc
+	boltZinc
+	screwZinc
+	sheetZinc
+	scrapZinc
+	rodZinc
+	lampZinc
+	longRodZinc
+	gearZinc
+	rackwheelZinc
+	rackwheelPieceZinc
+	dustZinc
+	nuggetZinc
+	plateZinc
+	wireZinc
+	oreZinc
+	ingotZinc
+
+Alubrass
+	nuggetAlubrass
+	blockAlubrass
+	ingotAlubrass
+
+Uranium235Base
+	ingotUranium235Base
+
+UraniumOxide
+	dustUraniumOxide
+	ingotUraniumOxide
+
+Neptunium236
+	nuggetNeptunium236
+	ingotNeptunium236
+
+Thorium232Oxide
+	nuggetThorium232Oxide
+	ingotThorium232Oxide
+
+Neptunium237
+	nuggetNeptunium237
+	blockNeptunium237
+	ingotNeptunium237
+
+Antimony
+	stripAntimony
+	boltAntimony
+	screwAntimony
+	sheetAntimony
+	scrapAntimony
+	rodAntimony
+	lampAntimony
+	longRodAntimony
+	gearAntimony
+	rackwheelAntimony
+	rackwheelPieceAntimony
+	dustAntimony
+	nuggetAntimony
+	plateAntimony
+	wireAntimony
+	ingotAntimony
+
+Gold
+	slabSheetmetalGold
+	coilGold
+	orePoorGold
+	stripGold
+	blockGold
+	boltGold
+	screwGold
+	sheetGold
+	scrapGold
+	blockSheetmetalGold
+	rodGold
+	lampGold
+	longRodGold
+	gearGold
+	rackwheelGold
+	rackwheelPieceGold
+	dustGold
+	nuggetGold
+	plateGold
+	wireGold
+	oreGold
+	ingotGold
+
+Thorium230Base
+	ingotThorium230Base
+
+Californium250Oxide
+	nuggetCalifornium250Oxide
+	ingotCalifornium250Oxide
+
+Platinum
+	stripPlatinum
+	blockPlatinum
+	boltPlatinum
+	screwPlatinum
+	sheetPlatinum
+	scrapPlatinum
+	rodPlatinum
+	lampPlatinum
+	longRodPlatinum
+	gearPlatinum
+	rackwheelPlatinum
+	rackwheelPiecePlatinum
+	dustPlatinum
+	nuggetPlatinum
+	platePlatinum
+	wirePlatinum
+	ingotPlatinum
+
+Plutonium242Oxide
+	nuggetPlutonium242Oxide
+	ingotPlutonium242Oxide
+
+Brass
+	sleeveBrass
+	stripBrass
+	blockBrass
+	boltBrass
+	screwBrass
+	sheetBrass
+	scrapBrass
+	rodBrass
+	lampBrass
+	longRodBrass
+	gearBrass
+	rackwheelBrass
+	rackwheelPieceBrass
+	dustBrass
+	nuggetBrass
+	plateBrass
+	wireBrass
+	ingotBrass
+
+DoubleAluminium
+	sheetDoubleAluminium
+	ingotDoubleAluminium
+
+Neptunium236Base
+	ingotNeptunium236Base
+
+Curium246Base
+	ingotCurium246Base
+
+DoubleOsmium
+	sheetDoubleOsmium
+	ingotDoubleOsmium
+
+WeakRedSteel
+	ingotWeakRedSteel
+
+Californium252
+	nuggetCalifornium252
+	blockCalifornium252
+	ingotCalifornium252
+
+Californium251
+	nuggetCalifornium251
+	ingotCalifornium251
+
+Californium250
+	nuggetCalifornium250
+	ingotCalifornium250
+
+Copper
+	inductorCopper
+	solenoidCopper
+	slabSheetmetalCopper
+	coilCopper
+	orePoorCopper
+	stripCopper
+	blockCopper
+	slabCopper
+	stickCopper
+	boltCopper
+	screwCopper
+	sheetCopper
+	scrapCopper
+	blockSheetmetalCopper
+	rodCopper
+	lampCopper
+	longRodCopper
+	gearCopper
+	rackwheelCopper
+	rackwheelPieceCopper
+	dustCopper
+	nuggetCopper
+	plateCopper
+	wireCopper
+	oreCopper
+	ingotCopper
+
+DoubleTungstenSteel
+	sheetDoubleTungstenSteel
+	ingotDoubleTungstenSteel
+

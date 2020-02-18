@@ -1,0 +1,17 @@
+[
+	{
+		"entryName" : "Silicon",
+		"modIdPriorityList" :
+		[
+		projectred-core
+		libvulpes
+		]
+	},
+	{
+	"entryName" : "ingotUnknown",
+	"modIdPriorityList" :
+	[
+	tfc
+	]
+	}
+]

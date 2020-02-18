@@ -1,7 +1,14 @@
 {forestry:[
 	{hide:[[can,capsule,refractory],[1]]}
-],
+		  ],
 forge:[
 {hide:[[bucketfilled],[],['*FluidName*']]};
-]
+	  ],
+pressure:[
+   {hide:[[canister],[],['*FluidName*']]};
+		 ],   
+waterflasks:[
+{hide:[[iron_flask],[],['*FluidName*']]};
+{hide:[[leather_flask],[],['*FluidName*']]};
+			]
 }

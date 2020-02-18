@@ -1,0 +1,225 @@
+Brass
+	sheetBrass
+	rodBrass
+	gearBrass
+	dustBrass
+	nuggetBrass
+	plateBrass
+	wireBrass
+	ingotBrass
+
+Lead
+	sheetLead
+	rodLead
+	gearLead
+	dustLead
+	nuggetLead
+	plateLead
+	wireLead
+	oreLead
+	ingotLead
+
+Aluminum
+	sheetAluminum
+	dustAluminum
+	nuggetAluminum
+	plateAluminum
+	wireAluminum
+	oreAluminum
+	stickAluminum
+	ingotAluminum
+
+Nickel
+	sheetNickel
+	rodNickel
+	gearNickel
+	dustNickel
+	nuggetNickel
+	plateNickel
+	wireNickel
+	oreNickel
+	ingotNickel
+
+Titanium
+	sheetTitanium
+	rodTitanium
+	gearTitanium
+	dustTitanium
+	nuggetTitanium
+	plateTitanium
+	wireTitanium
+	oreTitanium
+	stickTitanium
+	ingotTitanium
+
+Invar
+	sheetInvar
+	rodInvar
+	gearInvar
+	dustInvar
+	nuggetInvar
+	plateInvar
+	wireInvar
+	ingotInvar
+
+Osmium
+	sheetOsmium
+	rodOsmium
+	gearOsmium
+	dustOsmium
+	nuggetOsmium
+	plateOsmium
+	wireOsmium
+	ingotOsmium
+
+Iron
+	axeIron
+	shovelIron
+	stickIron
+	pickaxeIron
+	swordIron
+	sheetIron
+	hoeIron
+	gearIron
+	dustIron
+	nuggetIron
+	plateIron
+	oreIron
+	ingotIron
+
+Steel
+	axeSteel
+	shovelSteel
+	stickSteel
+	pickaxeSteel
+	swordSteel
+	sheetSteel
+	rodSteel
+	hoeSteel
+	gearSteel
+	dustSteel
+	nuggetSteel
+	plateSteel
+	wireSteel
+	ingotSteel
+
+Bronze
+	sheetBronze
+	rodBronze
+	gearBronze
+	shovelBronze
+	dustBronze
+	nuggetBronze
+	plateBronze
+	wireBronze
+	pickaxeBronze
+	ingotBronze
+
+Silver
+	sheetSilver
+	rodSilver
+	gearSilver
+	dustSilver
+	nuggetSilver
+	plateSilver
+	wireSilver
+	oreSilver
+	ingotSilver
+
+Iridium
+	dustIridium
+	nuggetIridium
+	plateIridium
+	oreIridium
+	stickIridium
+	ingotIridium
+
+Gold
+	sheetGold
+	rodGold
+	gearGold
+	dustGold
+	nuggetGold
+	plateGold
+	wireGold
+	oreGold
+	ingotGold
+
+Copper
+	sheetCopper
+	rodCopper
+	gearCopper
+	dustCopper
+	nuggetCopper
+	plateCopper
+	wireCopper
+	oreCopper
+	stickCopper
+	ingotCopper
+
+Constantan
+	sheetConstantan
+	rodConstantan
+	gearConstantan
+	dustConstantan
+	nuggetConstantan
+	plateConstantan
+	wireConstantan
+	ingotConstantan
+
+Electrum
+	sheetElectrum
+	rodElectrum
+	gearElectrum
+	dustElectrum
+	nuggetElectrum
+	plateElectrum
+	wireElectrum
+	ingotElectrum
+
+Zinc
+	sheetZinc
+	rodZinc
+	gearZinc
+	dustZinc
+	nuggetZinc
+	plateZinc
+	wireZinc
+	oreZinc
+	ingotZinc
+
+Uranium
+	dustUranium
+	nuggetUranium
+	plateUranium
+	oreUranium
+	ingotUranium
+
+Tin
+	sheetTin
+	rodTin
+	gearTin
+	dustTin
+	nuggetTin
+	plateTin
+	wireTin
+	oreTin
+	ingotTin
+
+Platinum
+	sheetPlatinum
+	rodPlatinum
+	gearPlatinum
+	dustPlatinum
+	nuggetPlatinum
+	platePlatinum
+	wirePlatinum
+	ingotPlatinum
+
+Silicon
+	plateSilicon
+	dustSilicon
+	nuggetSilicon
+	bouleSilicon
+	ingotSilicon
+

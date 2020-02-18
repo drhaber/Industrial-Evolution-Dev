@@ -6,7 +6,6 @@ mods.astralsorcery.StarlightInfusion.addInfusion(<minecraft:iron_ingot>, <astral
 mods.astralsorcery.StarlightInfusion.addInfusion(<tfc:metal/ingot/wrought_iron>, <astralsorcery:itemcraftingcomponent:1>, false, 0.3, 100);
 mods.terrafirmacraft.Barrel.addRecipe("Star_Dust", <tombstone:dust_of_vanishing>, <liquid:astralsorcery.liquidstarlight>*100, <astralsorcery:itemcraftingcomponent:2>,12);
 
-mods.terrafirmacraft.Barrel.addRecipe("Astral-Marble", <quark:marble>, <liquid:hot_water>*250, <astralsorcery:blockmarble>, <liquid:hot_water>*0, 4);
 //Parchment
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/cc_parchment");
 recipes.remove(<astralsorcery:itemcraftingcomponent:5>);

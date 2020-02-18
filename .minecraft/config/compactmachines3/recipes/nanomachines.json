@@ -1,0 +1,50 @@
+{
+  "name": "nanomachines",
+
+  "target-item": "opencomputers:tool",
+  "target-meta": 5,
+  "target-count": 4,
+
+  "duration": 300,
+  "symmetrical": false,
+
+  "catalyst": "opencomputers:material",
+  "catalyst-meta": 23,
+  "input-types": {
+    "a": {
+      "id": "opencomputers:cable",
+      "meta": 0
+    },
+    "b": {
+      "id": "opencomputers:capacitor",
+      "meta": 0
+    },
+    "c": {
+      "id": "minecraft:cauldron",
+      "meta": 3
+    }
+  },
+  "input-nbt": {
+    "c:A": {
+      "nbt": "{id:\"inspirations:cauldron\",state:{fluid:\"liquidcatalyst\"}}"
+    }
+  },
+  "shape": [
+    [
+      [
+        "a"
+      ]
+    ],
+    [
+      [
+        "b"
+      ]
+    ],
+    [
+      [
+        "c:A"
+      ]
+    ]
+  ]
+
+}  
