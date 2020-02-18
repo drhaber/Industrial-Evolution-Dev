@@ -1,10 +1,28 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.mods.IMod;
 
+//Beds
+val carpets = <minecraft:carpet>.definition;
+for i in 0 to 16{
+<ore:carpet>.add(carpets.makeStack(i));
+}
+//Carpet
+val beds = <minecraft:bed>.definition;
+for i in 0 to 16{
+<ore:bed>.add(beds.makeStack(i));
+}
+//Petals
+val petals = <botania:petal>.definition;
+for i in 0 to 16{
+<ore:Petals>.add(petals.makeStack(i));
+}
 //Aluminium
 <ore:ingotAluminum>.addAll(<ore:ingotAluminium>);
 <ore:ingotAluminium>.mirror(<ore:ingotAluminum>);
+<ore:dustAluminum>.addAll(<ore:dustAluminium>);
+<ore:dustAluminium>.mirror(<ore:dustAluminum>);
 //Bricks
 <ore:ingotBrick>.addAll(<ore:brick>); //This adds ingot brick to all bricks
 //Soot Black Dye

@@ -1,9 +1,57 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.mods.IMod;
+import crafttweaker.liquid.ILiquidStack;
+
 //Missing Localization
 game.setLocalization("item.railcraft.charge.electrode.carbon.name", "Silver Electrode");
 game.setLocalization("item.railcraft.charge.electrode.silver.name", "Carbon Electrode");
+#=============================================================================================================================================		
+//Colored Water 
+recipes.removeByMod("colored_water");
+val dyes = [<ore:dyeWhite>,<ore:dyeOrange>,<ore:dyeMagenta>,<ore:dyeLightBlue>,<ore:dyeYellow>,<ore:dyeLime>,<ore:dyePink>,<ore:dyeGray>,<ore:dyeLightGray>,
+<ore:dyeCyan>,<ore:dyePurple>,<ore:dyeBlue>,<ore:dyeBrown>,<ore:dyeGreen>,<ore:dyeRed>,<ore:dyeBlack>] as IOreDictEntry[];
+
+val coloredWater = [<liquid:water_white>,<liquid:water_orange>,<liquid:water_magenta>,<liquid:water_light_blue>,<liquid:water_yellow>,<liquid:water_lime>,<liquid:water_pink>,<liquid:water_gray>,<liquid:water_silver>,
+<liquid:water_cyan>,<liquid:water_purple>,<liquid:water_blue>,<liquid:water_brown>,<liquid:water_green>,<liquid:water_red>,<liquid:water_black>] as ILiquidStack[];
+
+val glowingcoloredWater = [<liquid:glowing_water_white>,<liquid:glowing_water_orange>,<liquid:glowing_water_magenta>,<liquid:glowing_water_light_blue>,<liquid:glowing_water_yellow>,<liquid:glowing_water_lime>,<liquid:glowing_water_pink>,<liquid:glowing_water_gray>,<liquid:glowing_water_silver>,
+<liquid:glowing_water_cyan>,<liquid:glowing_water_purple>,<liquid:glowing_water_blue>,<liquid:glowing_water_brown>,<liquid:glowing_water_green>,<liquid:glowing_water_red>,<liquid:glowing_water_black>] as ILiquidStack[];
+
+val Illumar = <projectred-core:resource_item>.definition;
+val wools = <minecraft:wool>.definition;
+val carpets = <minecraft:carpet>.definition;
+val beds = <minecraft:bed>.definition;
+val petalblocks = <botania:petalblock>.definition;
+val petals = <botania:petal>.definition;
+
+for i in 0 to 16{
+var stringname = "colored_water" ~ i as string;
+var stringname1 = "glowing_colored_water" ~ i as string;
+var stringname3 = "glowstone_colored_water" ~ i as string;
+var stringname2 = "Colored_Wool_Barrel" ~ i as string;
+var stringname4 = "Colored_carpet_Barrel" ~ i as string;
+var stringname5 = "Colored_bed_Barrel" ~ i as string;
+var stringname6 = "colored_petalBlock_water" ~ i as string;
+var stringname7 = "colored_petal_water" ~ i as string;
+
+mods.terrafirmacraft.Barrel.addRecipe(stringname, dyes[i], <liquid:water>*1000, null, coloredWater[i]*1000, 0);
+mods.terrafirmacraft.Barrel.addRecipe(stringname1, Illumar.makeStack(i+500), <liquid:water>*1000, null, glowingcoloredWater[i]*1000, 4);
+mods.terrafirmacraft.Barrel.addRecipe(stringname3, <ore:dustGlowstone>, <liquid:water>*1000, null, glowingcoloredWater[i]*500, 72);
+mods.terrafirmacraft.Barrel.addRecipe(stringname2, <ore:wool>, coloredWater[i]*100, wools.makeStack(i), null, 2);
+mods.terrafirmacraft.Barrel.addRecipe(stringname4, <ore:carpet>, coloredWater[i]*10, carpets.makeStack(i), null, 1);
+mods.terrafirmacraft.Barrel.addRecipe(stringname5, <ore:bed>, coloredWater[i]*250, beds.makeStack(i), null, 4);
+mods.terrafirmacraft.Barrel.addRecipe(stringname6, petalblocks.makeStack(i), <liquid:water>*1000, null, coloredWater[i]*1500, 0);
+mods.terrafirmacraft.Barrel.addRecipe(stringname7, petals.makeStack(i), <liquid:water>*100, null, coloredWater[i]*100, 0);
+
+recipes.removeShapeless(wools.makeStack(i)*8);
+recipes.removeShapeless(wools.makeStack(i));
+recipes.removeShapeless(beds.makeStack(i));
+
+}
+#=============================================================================================================================================		
+
 //Quark
 recipes.remove(<quark:thatch>);
 	//Candles
@@ -39,6 +87,17 @@ mods.jei.JEI.addDescription(<quark:thatch_slab>,"Magic has made this thatch soli
 	[<ore:blockGlassColorless>,<ore:stickIron>,<ore:blockGlassColorless>],
 	[<ore:stickIron>,<ore:blockGlassColorless>,<ore:stickIron>],
 	[<ore:blockGlassColorless>,<ore:stickIron>,<ore:blockGlassColorless>]]);
+	//Quilted wool
+	val quilted_wools = <quark:quilted_wool>.definition;
+	for i in 0 to 16{
+	recipes.remove(quilted_wools.makeStack(i));
+	recipes.addShaped(quilted_wools.makeStack(i)*4,[
+	[<ore:string>,<ore:clothHighQuality>,<ore:string>],
+	[<ore:clothHighQuality>,wools.makeStack(i),<ore:clothHighQuality>],
+	[<ore:string>,<ore:clothHighQuality>,<ore:string>]]);
+	}
+#=============================================================================================================================================		
+
 //Marble
 mods.terrafirmacraft.Barrel.addRecipe("Quark_marble", <tfc:raw/marble>, <liquid:hot_water>*250, <quark:marble>, <liquid:hot_water>*0, 4);
 //Lithium
@@ -52,14 +111,12 @@ mods.immersiveengineering.BlastFurnace.addRecipe(<nuclearcraft:dust:6>*4, <forge
 	[<minecraft:flint>,<ore:gunpowder>]]);
 //Creosote
 furnace.remove(<railcraft:fluid_bottle_creosote>);
-//Water Bucket
-recipes.addShapeless(<minecraft:water_bucket>,[<forge:bucketfilled>.withTag({FluidName: "fresh_water", Amount: 1000})]);
-recipes.addShapeless(<forge:bucketfilled>.withTag({FluidName: "fresh_water", Amount: 1000}),[<minecraft:water_bucket>]);
-
 //GlowString
 recipes.addShaped(<contenttweaker:glowstring>,[
 	[<botania:manaresource:16>,<ore:dustGlowstone>],
 	[<ore:dustGlowstone>,<ore:dustGlowstone>]]);
+#=============================================================================================================================================		
+	
 //Project Red
 furnace.addRecipe(<projectred-core:resource_item>*2, <ore:stone>);
 mods.jei.JEI.removeAndHide(<projectred-transmission:wire:34>, false);
@@ -77,6 +134,8 @@ mods.jei.JEI.hide(<projectred-core:resource_item:101>);
 mods.jei.JEI.hide(<projectred-core:resource_item:102>);
 mods.jei.JEI.hide(<projectred-core:resource_item:100>);
 mods.jei.JEI.hide(<projectred-core:resource_item:600>);
+#=============================================================================================================================================		
+
 //Culinary Construct
 mods.jei.JEI.hide(<culinaryconstruct:sandwich>);
 mods.jei.JEI.addDescription(<culinaryconstruct:sandwich_station>,"Using Bread and up to any five food items, this unique crafting station can dynamically create sandwiches.");
@@ -91,17 +150,4 @@ mods.jei.JEI.addDescription(<liquid:liquidcatalyst>,"3 Bottles worth in a cauldr
 //Stone Rods
 mods.jei.JEI.removeAndHide(<microblockcbe:stone_rod>);
 mods.jei.JEI.removeAndHide(<inspirations:materials:8>);	
-//Remove Nuggets
-#mods.unidict.removalByKind.get("Crafting").remove("ingot", ["nugget"]);
-#mods.unidict.removalByKind.get("Furnace").remove("ingot",["dust"]);
-
-val ingots = [<minecraft:iron_ingot>,<advancedrocketry:productingot>,<advancedrocketry:productingot:1>,<immersiveengineering:metal>,
-<immersiveengineering:metal:1>,<immersiveengineering:metal:2>,<immersiveengineering:metal:3>,<immersiveengineering:metal:4>,<immersiveengineering:metal:5>,
-<immersiveengineering:metal:6>,<immersiveengineering:metal:7>,<immersiveengineering:metal:8>,<railcraft:ingot>,<railcraft:ingot:1>,
-<railcraft:ingot:2>,<railcraft:ingot:3>,<railcraft:ingot:4>,<railcraft:ingot:5>,<railcraft:ingot:6>,<railcraft:ingot:7>,<railcraft:ingot:8>,
-<railcraft:ingot:9>,<tconstruct:ingots>,<tconstruct:ingots:1>,<tconstruct:ingots:2>,<tconstruct:ingots:4>,<tconstruct:ingots:5>,<libvulpes:productingot:3>,
-<libvulpes:productingot:3>,<libvulpes:productingot:4>,<libvulpes:productingot:5>,<libvulpes:productingot:6>,<libvulpes:productingot:7>,<libvulpes:productingot:9>,
-<libvulpes:productingot:10>] as IItemStack[];
-for i, ingot in ingots{
-recipes.removeShaped(ingot);
-}
+#=============================================================================================================================================		

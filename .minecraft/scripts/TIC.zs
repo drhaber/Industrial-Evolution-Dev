@@ -27,7 +27,7 @@ mods.tconstruct.Casting.addTableRecipe(<appliedenergistics2:material:15>, <conte
 mods.tconstruct.Casting.addTableRecipe(<appliedenergistics2:material:19>, <contenttweaker:fired_material_silicon_press>, <liquid:iron>, 144);
 recipes.remove(<tconstruct:stone_stick>);
 //Liquid Catalyst
-mods.tconstruct.Melting.addRecipe(<liquid:liquidcatalyst> * 4000,<botania:alchemycatalyst>);
+mods.tconstruct.Melting.addRecipe(<liquid:liquidcatalyst> * 4000,<botania:alchemycatalyst>, 350);
 //Seared Brick
 recipes.addShapeless(<tconstruct:materials>,[<tconstruct:seared:1>,<ore:chisel>.transformDamage(4)]);
 //Smeltry Controller
@@ -51,7 +51,17 @@ mods.tconstruct.Casting.addTableRecipe(Illumar.makeStack(i+500), dyes[i], <liqui
 }
 mods.tconstruct.Casting.removeBasinRecipe(<tconstruct:clear_glass>);
 mods.tconstruct.Casting.addBasinRecipe(<tconstruct:clear_glass>*8, null, <liquid:glass>, 1000, false, 180);
-
+//Glass Bottle
+mods.tconstruct.Casting.addTableRecipe(<minecraft:glass_bottle>*4,<ore:tuyere>, <liquid:glass>, 250, true, 90);
+//Shard
+mods.tconstruct.Melting.addRecipe(<liquid:glass> * 250,<ore:shardGlass>);
+//Crystals
+val ReducedDyes = [<ore:dyeWhite>,<ore:dyeRed>,<ore:dyeOrange>,<ore:dyeYellow>,<ore:dyeGreen>,<ore:dyeLightBlue>,<ore:dyeBlue>,<ore:dyePurple>,<ore:dyeBlack>] as IOreDictEntry[];
+val crystalBlocks = <quark:crystal>.definition;
+for i in 0 to 9{
+mods.tconstruct.Casting.addBasinRecipe(crystalBlocks.makeStack(i), ReducedDyes[i], <liquid:quartz>, 125, true, 180);
+}
+mods.tconstruct.Melting.addRecipe(<liquid:quartz>*666,<ore:dustQuartz>);
 //Casting Table TFC Tool Parts
 
 val castingMetal = [<liquid:tungsten>,<liquid:black_bronze>,<liquid:red_steel>,<liquid:invar>,
