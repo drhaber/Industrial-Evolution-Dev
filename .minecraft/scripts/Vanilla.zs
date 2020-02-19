@@ -14,6 +14,16 @@ recipes.addShaped(<minecraft:coal_block>,[
 	[CO,CO,CO]]);
 //Torch Recipes
 recipes.remove(<minecraft:torch>);
+//Piston
+recipes.addShaped(<minecraft:piston>,[
+	[<ore:lumber>,<ore:lumber>,<ore:lumber>],
+	[null,<ore:ingotBrass>,null],
+	[<ore:ingotBrick>,<tfc:bellows>,<ore:ingotBrick>]]);
+recipes.addShaped(<minecraft:piston>,[
+	[<ore:lumber>,<ore:lumber>,<ore:lumber>],
+	[null,<ore:ingotBronze>,null],
+	[<ore:ingotBrick>,<tfc:bellows>,<ore:ingotBrick>]]);	
+recipes.addShapeless(<minecraft:sticky_piston>,[<minecraft:piston>,<ore:slimeball>]);	
 //Cauldron
 recipes.remove(<minecraft:cauldron>);
 recipes.addShaped(<minecraft:cauldron>,[
