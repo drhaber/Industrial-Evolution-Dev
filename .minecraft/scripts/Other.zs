@@ -3,10 +3,22 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.mods.IMod;
 import crafttweaker.liquid.ILiquidStack;
+import moretweaker.railcraft.RollingMachine;
 
 //Missing Localization
 game.setLocalization("item.railcraft.charge.electrode.carbon.name", "Silver Electrode");
 game.setLocalization("item.railcraft.charge.electrode.silver.name", "Carbon Electrode");
+//Rails
+recipes.remove(<railcraft:tie>);
+recipes.addShaped(<railcraft:tie>,[
+	[<contenttweaker:treatedlumber>,<contenttweaker:treatedlumber>,<contenttweaker:treatedlumber>]]);
+recipes.remove(<tconstruct:wood_rail>);
+recipes.addShaped(<tconstruct:wood_rail>*4,[
+	[<ore:stickTreatedWood>,null,<ore:stickTreatedWood>],
+	[<ore:stickTreatedWood>,<railcraft:railbed>,<ore:stickTreatedWood>],
+	[<ore:stickTreatedWood>,null,<ore:stickTreatedWood>]]);
+recipes.remove(<tconstruct:wood_rail_trapdoor>);
+recipes.addShapeless(<tconstruct:wood_rail_trapdoor>, [<tconstruct:wood_rail>,<ore:trapdoorWood>]);
 #=============================================================================================================================================		
 //Colored Water 
 recipes.removeByMod("colored_water");
@@ -50,6 +62,15 @@ recipes.removeShapeless(wools.makeStack(i));
 recipes.removeShapeless(beds.makeStack(i));
 
 }
+#=============================================================================================================================================		
+//Bucket
+RollingMachine.addShapeless(<minecraft:bucket>, [<ore:sheetDoubleIron>]);
+//Flopper
+recipes.remove(<flopper:flopper>);
+recipes.addShaped(<flopper:flopper>,[
+	[null,<tfc:wooden_bucket>,null],
+	[<ore:sheetIron>,<tconstruct:wooden_hopper>,<ore:sheetIron>],
+	[null,<ore:sheetIron>,null]]);
 #=============================================================================================================================================		
 
 //Quark
@@ -151,3 +172,8 @@ mods.jei.JEI.addDescription(<liquid:liquidcatalyst>,"3 Bottles worth in a cauldr
 mods.jei.JEI.removeAndHide(<microblockcbe:stone_rod>);
 mods.jei.JEI.removeAndHide(<inspirations:materials:8>);	
 #=============================================================================================================================================		
+//Gear Remove
+val Gears = [<tfctech:metal/bronze_gear>,<tfctech:metal/copper_gear>,<tfctech:metal/tin_gear>,<tfctech:metal/steel_gear>,<tfctech:metal/titanium_gear>] as IItemStack[];
+for i, gear in Gears{
+recipes.remove(gear);
+}

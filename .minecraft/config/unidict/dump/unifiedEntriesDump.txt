@@ -1,33 +1,13 @@
-Brass
-	sheetBrass
-	rodBrass
-	gearBrass
-	dustBrass
-	nuggetBrass
-	plateBrass
-	wireBrass
-	ingotBrass
-
-Lead
-	sheetLead
-	rodLead
-	gearLead
-	dustLead
-	nuggetLead
-	plateLead
-	wireLead
-	oreLead
-	ingotLead
-
-Aluminum
-	sheetAluminum
-	dustAluminum
-	nuggetAluminum
-	plateAluminum
-	wireAluminum
-	oreAluminum
-	stickAluminum
-	ingotAluminum
+Tin
+	sheetTin
+	rodTin
+	gearTin
+	dustTin
+	nuggetTin
+	plateTin
+	wireTin
+	oreTin
+	ingotTin
 
 Nickel
 	sheetNickel
@@ -40,18 +20,6 @@ Nickel
 	oreNickel
 	ingotNickel
 
-Titanium
-	sheetTitanium
-	rodTitanium
-	gearTitanium
-	dustTitanium
-	nuggetTitanium
-	plateTitanium
-	wireTitanium
-	oreTitanium
-	stickTitanium
-	ingotTitanium
-
 Invar
 	sheetInvar
 	rodInvar
@@ -61,31 +29,6 @@ Invar
 	plateInvar
 	wireInvar
 	ingotInvar
-
-Osmium
-	sheetOsmium
-	rodOsmium
-	gearOsmium
-	dustOsmium
-	nuggetOsmium
-	plateOsmium
-	wireOsmium
-	ingotOsmium
-
-Iron
-	axeIron
-	shovelIron
-	stickIron
-	pickaxeIron
-	swordIron
-	sheetIron
-	hoeIron
-	gearIron
-	dustIron
-	nuggetIron
-	plateIron
-	oreIron
-	ingotIron
 
 Steel
 	axeSteel
@@ -103,6 +46,66 @@ Steel
 	wireSteel
 	ingotSteel
 
+Osmium
+	sheetOsmium
+	rodOsmium
+	gearOsmium
+	dustOsmium
+	nuggetOsmium
+	plateOsmium
+	wireOsmium
+	ingotOsmium
+
+Graphite
+	dustGraphite
+	ingotGraphite
+
+Zinc
+	sheetZinc
+	rodZinc
+	gearZinc
+	dustZinc
+	nuggetZinc
+	plateZinc
+	wireZinc
+	oreZinc
+	ingotZinc
+
+Electrum
+	sheetElectrum
+	rodElectrum
+	gearElectrum
+	dustElectrum
+	nuggetElectrum
+	plateElectrum
+	wireElectrum
+	ingotElectrum
+
+Iron
+	axeIron
+	shovelIron
+	stickIron
+	pickaxeIron
+	swordIron
+	sheetIron
+	hoeIron
+	gearIron
+	dustIron
+	nuggetIron
+	plateIron
+	oreIron
+	ingotIron
+
+Aluminum
+	sheetAluminum
+	dustAluminum
+	nuggetAluminum
+	plateAluminum
+	wireAluminum
+	oreAluminum
+	stickAluminum
+	ingotAluminum
+
 Bronze
 	sheetBronze
 	rodBronze
@@ -115,6 +118,70 @@ Bronze
 	pickaxeBronze
 	ingotBronze
 
+Silicon
+	plateSilicon
+	dustSilicon
+	nuggetSilicon
+	bouleSilicon
+	ingotSilicon
+
+Constantan
+	sheetConstantan
+	rodConstantan
+	gearConstantan
+	dustConstantan
+	nuggetConstantan
+	plateConstantan
+	wireConstantan
+	ingotConstantan
+
+Iridium
+	dustIridium
+	nuggetIridium
+	plateIridium
+	oreIridium
+	stickIridium
+	ingotIridium
+
+Brass
+	sheetBrass
+	rodBrass
+	gearBrass
+	dustBrass
+	nuggetBrass
+	plateBrass
+	wireBrass
+	ingotBrass
+
+Uranium
+	dustUranium
+	nuggetUranium
+	plateUranium
+	oreUranium
+	ingotUranium
+
+Platinum
+	sheetPlatinum
+	rodPlatinum
+	gearPlatinum
+	dustPlatinum
+	nuggetPlatinum
+	platePlatinum
+	wirePlatinum
+	ingotPlatinum
+
+Titanium
+	sheetTitanium
+	rodTitanium
+	gearTitanium
+	dustTitanium
+	nuggetTitanium
+	plateTitanium
+	wireTitanium
+	oreTitanium
+	stickTitanium
+	ingotTitanium
+
 Silver
 	sheetSilver
 	rodSilver
@@ -126,13 +193,19 @@ Silver
 	oreSilver
 	ingotSilver
 
-Iridium
-	dustIridium
-	nuggetIridium
-	plateIridium
-	oreIridium
-	stickIridium
-	ingotIridium
+Lead
+	sheetLead
+	rodLead
+	gearLead
+	dustLead
+	nuggetLead
+	plateLead
+	wireLead
+	oreLead
+	ingotLead
+
+Unknown
+	ingotUnknown
 
 Gold
 	sheetGold
@@ -156,70 +229,4 @@ Copper
 	oreCopper
 	stickCopper
 	ingotCopper
-
-Constantan
-	sheetConstantan
-	rodConstantan
-	gearConstantan
-	dustConstantan
-	nuggetConstantan
-	plateConstantan
-	wireConstantan
-	ingotConstantan
-
-Electrum
-	sheetElectrum
-	rodElectrum
-	gearElectrum
-	dustElectrum
-	nuggetElectrum
-	plateElectrum
-	wireElectrum
-	ingotElectrum
-
-Zinc
-	sheetZinc
-	rodZinc
-	gearZinc
-	dustZinc
-	nuggetZinc
-	plateZinc
-	wireZinc
-	oreZinc
-	ingotZinc
-
-Uranium
-	dustUranium
-	nuggetUranium
-	plateUranium
-	oreUranium
-	ingotUranium
-
-Tin
-	sheetTin
-	rodTin
-	gearTin
-	dustTin
-	nuggetTin
-	plateTin
-	wireTin
-	oreTin
-	ingotTin
-
-Platinum
-	sheetPlatinum
-	rodPlatinum
-	gearPlatinum
-	dustPlatinum
-	nuggetPlatinum
-	platePlatinum
-	wirePlatinum
-	ingotPlatinum
-
-Silicon
-	plateSilicon
-	dustSilicon
-	nuggetSilicon
-	bouleSilicon
-	ingotSilicon
 

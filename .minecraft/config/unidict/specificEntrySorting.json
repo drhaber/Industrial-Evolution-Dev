@@ -15,13 +15,6 @@
 		]
 	},
 		{
-		"entryName" : "dustCoke",
-		"modIdPriorityList" :
-		[
-		tfc
-		]
-	},
-		{
 		"entryName" : "fuelCoke",
 		"modIdPriorityList" :
 		[

@@ -14,6 +14,11 @@ recipes.addShaped(<minecraft:coal_block>,[
 	[CO,CO,CO]]);
 //Torch Recipes
 recipes.remove(<minecraft:torch>);
+//Beacon
+recipes.addShaped(<minecraft:beacon>,[
+	[<ore:blockGlass>,<ore:blockGlass>,<ore:blockGlass>],
+	[<ore:blockGlass>,<ore:netherStar>,<ore:blockGlass>],
+	[<ore:obsidian>,<ore:obsidian>,<ore:obsidian>]]);
 //Piston
 recipes.addShaped(<minecraft:piston>,[
 	[<ore:lumber>,<ore:lumber>,<ore:lumber>],

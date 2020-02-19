@@ -1,0 +1,69 @@
+// For more info visit https://github.com/FTBTeam/FTB-Ranks/wiki
+
+[player]
+power: 1
+default_player_rank: true
+ftbutilities.homes.cooldown: 10m
+ftbutilities.homes.warmup: 5s
+ftbutilities.homes.max: 1
+ftbutilities.claims.max_chunks: 64
+ftbutilities.chunkloader.max_chunks: 1
+ftbutilities.chunkloader.load_offline: false
+ftbutilities.spawn.warmup: 5s
+ftbutilities.spawn.cooldown: 5m
+ftbutilities.tpa.warmup: 5s
+ftbutilities.homes.cross_dim: false
+ftbutilities.rtp.cooldown: 60m
+ftbutilities.rtp.warmup: 5s
+
+[emp]
+power: 20
+parent: player
+ftbutilities.chat.name_format: <&bEMP {name}&r>
+ftbutilities.homes.cooldown: 10m
+ftbutilities.homes.warmup: 5s
+ftbutilities.homes.max: 1
+ftbutilities.claims.max_chunks: 64
+ftbutilities.chunkloader.max_chunks: 3
+ftbutilities.chunkloader.load_offline: false
+ftbutilities.spawn.warmup: 5s
+ftbutilities.spawn.cooldown: 5m
+ftbutilities.tpa.warmup: 5s
+ftbutilities.homes.cross_dim: false
+ftbutilities.rtp.cooldown: 60m
+ftbutilities.rtp.warmup: 5s
+
+[vip]
+power: 20
+parent: player
+ftbutilities.chat.name_format: <&bVIP {name}&r>
+ftbutilities.homes.cooldown: 10m
+ftbutilities.homes.warmup: 5s
+ftbutilities.homes.max: 1
+ftbutilities.claims.max_chunks: 64
+ftbutilities.chunkloader.max_chunks: 3
+ftbutilities.chunkloader.load_offline: false
+ftbutilities.spawn.warmup: 5s
+ftbutilities.spawn.cooldown: 5m
+ftbutilities.tpa.warmup: 5s
+ftbutilities.homes.cross_dim: false
+ftbutilities.rtp.cooldown: 60m
+ftbutilities.rtp.warmup: 5s
+
+[admin]
+power: 100
+parent: vip
+default_op_rank: true
+ftbutilities.chat.name_format: <&2{name}&r>
+ftbutilities.homes.cooldown: 10m
+ftbutilities.homes.warmup: 5s
+ftbutilities.homes.max: 1
+ftbutilities.claims.max_chunks: 64
+ftbutilities.chunkloader.max_chunks: 3
+ftbutilities.chunkloader.load_offline: false
+ftbutilities.spawn.warmup: 5s
+ftbutilities.spawn.cooldown: 5m
+ftbutilities.tpa.warmup: 5s
+ftbutilities.homes.cross_dim: false
+ftbutilities.rtp.cooldown: 60m
+ftbutilities.rtp.warmup: 5s

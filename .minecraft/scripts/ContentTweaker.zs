@@ -18,6 +18,10 @@ game.setLocalization("item.contenttweaker.treatedlumber.name", "Treated Lumber")
 var soot = VanillaFactory.createItem("soot");
 soot.register();
 game.setLocalization("item.contenttweaker.soot.name", "Soot");
+//Bauxite Dust
+var bauxitedust = VanillaFactory.createItem("bauxitedust");
+bauxitedust.register();
+game.setLocalization("item.contenttweaker.bauxitedust.name", "Bauxite Dust");
 //AE2 Inscriber Casts
 	//Material Calculation Processor Cast
 	var unfired_material_calculation_processor_press = VanillaFactory.createItem("unfired_material_calculation_processor_press");
