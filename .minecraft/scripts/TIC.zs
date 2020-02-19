@@ -29,7 +29,7 @@ recipes.remove(<tconstruct:stone_stick>);
 //Liquid Catalyst
 mods.tconstruct.Melting.addRecipe(<liquid:liquidcatalyst> * 4000,<botania:alchemycatalyst>, 350);
 //Seared Brick
-recipes.addShapeless(<tconstruct:materials>,[<tconstruct:seared:1>,<ore:chisel>.transformDamage(4)]);
+recipes.addShapeless(<tconstruct:materials>*4,[<tconstruct:seared:1>,<ore:chisel>.transformDamage(4)]);
 //Smeltry Controller
 recipes.remove(<tconstruct:smeltery_controller>);
 recipes.addShaped(<tconstruct:smeltery_controller>,[
