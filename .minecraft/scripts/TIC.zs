@@ -30,6 +30,9 @@ recipes.remove(<tconstruct:stone_stick>);
 mods.tconstruct.Melting.addRecipe(<liquid:liquidcatalyst> * 4000,<botania:alchemycatalyst>, 350);
 //Seared Brick
 recipes.addShapeless(<tconstruct:materials>*4,[<tconstruct:seared:1>,<ore:chisel>.transformDamage(4)]);
+//Grout
+recipes.removeShapeless(<tconstruct:soil>);
+recipes.addShapeless(<tconstruct:soil>*2,[<ore:gravel>,<ore:sand>,<ore:fireClay>]);
 //Smeltry Controller
 recipes.remove(<tconstruct:smeltery_controller>);
 recipes.addShaped(<tconstruct:smeltery_controller>,[

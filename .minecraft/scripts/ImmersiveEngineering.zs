@@ -36,6 +36,8 @@ recipes.addShaped(<immersiveengineering:stone_decoration:10>,[
 	[n,f,n]]);
 //Liquid Catalyst
 mods.immersiveengineering.ArcFurnace.addRecipe(<forge:bucketfilled>.withTag({FluidName: "liquidcatalyst", Amount: 1000}), <minecraft:bucket>,<immersiveengineering:material:7>, 2000, 2048, [<ore:dustObsidian>,<tfc:powder/salt>, <ore:dustGlowstone>,<ore:dustTin>]);
+//Graphite
+mods.immersiveengineering.CokeOven.addRecipe(<tfc:ore/graphite>, 0, <ore:fuelCoke>, 2400);
 //Powered Lantern
 recipes.remove(<immersiveengineering:metal_device1:4>);
 recipes.addShaped("Tungsten_Lantern",<immersiveengineering:metal_device1:4>,[

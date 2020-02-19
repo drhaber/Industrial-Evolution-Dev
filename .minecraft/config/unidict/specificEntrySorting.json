@@ -8,10 +8,24 @@
 		]
 	},
 	{
-	"entryName" : "ingotUnknown",
-	"modIdPriorityList" :
-	[
-	tfc
-	]
+		"entryName" : "ingotUnknown",
+		"modIdPriorityList" :
+		[
+		tfc
+		]
+	},
+		{
+		"entryName" : "dustCoke",
+		"modIdPriorityList" :
+		[
+		tfc
+		]
+	},
+		{
+		"entryName" : "fuelCoke",
+		"modIdPriorityList" :
+		[
+		immersiveengineering
+		]
 	}
 ]
