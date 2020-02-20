@@ -118,7 +118,11 @@ mods.jei.JEI.addDescription(<quark:thatch_slab>,"Magic has made this thatch soli
 	[<ore:string>,<ore:clothHighQuality>,<ore:string>]]);
 	}
 #=============================================================================================================================================		
-
+//Astikoor
+recipes.addShaped(<astikorcarts:cargocart>,[
+	[<ore:plankWood>,<ore:chestWood>,<ore:plankWood>],
+	[<ore:plankWood>,<ore:chestWood>,<ore:plankWood>],
+	[<astikorcarts:wheel>,<ore:plankWood>,<astikorcarts:wheel>]]);
 //Marble
 mods.terrafirmacraft.Barrel.addRecipe("Quark_marble", <tfc:raw/marble>, <liquid:hot_water>*250, <quark:marble>, <liquid:hot_water>*0, 4);
 //Lithium
