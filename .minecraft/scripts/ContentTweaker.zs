@@ -14,6 +14,10 @@ game.setLocalization("item.contenttweaker.glowstring.name", "Glow String");
 var treatedlumber = VanillaFactory.createItem("treatedlumber");
 treatedlumber.register();
 game.setLocalization("item.contenttweaker.treatedlumber.name", "Treated Lumber");
+//Saw Dust
+var sawdust = VanillaFactory.createItem("sawdust");
+sawdust.register();
+game.setLocalization("item.contenttweaker.sawdust.name", "Saw Dust");
 //Soot
 var soot = VanillaFactory.createItem("soot");
 soot.register();

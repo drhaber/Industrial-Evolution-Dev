@@ -41,8 +41,10 @@ recipes.remove(<minecraft:wooden_pressure_plate>);
 recipes.addShaped(<minecraft:wooden_pressure_plate>*2,[
 	[<ore:saw>.transformDamage(1)],
 	[<ore:lumber>,<ore:lumber>]]);
-//Crafting Table COnversion
-recipes.addShapeless(<minecraft:crafting_table>,[<astralsorcery:itemcraftingcomponent:5>,<ore:craftingTableWood>]);
+//Crafting Table Conversion
+mods.jei.JEI.addDescription(<minecraft:crafting_table>,"If I place a crafting table directly into the collector crystal by shift right clicking maybe I can aquire the specific table notch created...");
+mods.jei.JEI.addDescription(<ore:craftingTableWood>,"Placing a crafting table into the magical feild of a collector crystal yeilds some intersting results. However, it appears not all tables are created equal...");
+#recipes.addShapeless(<minecraft:crafting_table>,[<astralsorcery:itemcraftingcomponent:5>,<ore:craftingTableWood>]);
 //Furnace
 val CB = <ore:cobblestone>;
 recipes.addShaped(<minecraft:furnace>,[
@@ -64,7 +66,7 @@ recipes.addShapeless(<railcraft:anvil>,[<tfc:metal/anvil/wrought_iron>]);
 #mods.terrafirmacraft.Barrel.addRecipe("Vanilla_sand", <ore:tfcSand>, <liquid:hot_water>*250, <minecraft:sand>, <liquid:hot_water>*0, 4);
 mods.jei.JEI.addDescription(<minecraft:sand>,"Exposing Liquid Starlight to Lava seems to have a rather peculiar reaction...");
 //Paper
-mods.terrafirmacraft.Barrel.addRecipe("Paper", <astralsorcery:itemcraftingcomponent:5>, <liquid:hot_water>*250, <minecraft:paper>, <liquid:hot_water>*0, 4);
+#mods.terrafirmacraft.Barrel.addRecipe("Paper", <astralsorcery:itemcraftingcomponent:5>, <liquid:hot_water>*250, <minecraft:paper>, <liquid:hot_water>*0, 4);
 //Sandstone
 recipes.addShaped(<minecraft:sandstone>,[
 [<minecraft:sand>,<minecraft:sand>],

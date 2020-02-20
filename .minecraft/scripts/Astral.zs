@@ -7,8 +7,8 @@ mods.astralsorcery.StarlightInfusion.addInfusion(<tfc:metal/ingot/wrought_iron>,
 mods.terrafirmacraft.Barrel.addRecipe("Star_Dust", <tombstone:dust_of_vanishing>, <liquid:astralsorcery.liquidstarlight>*100, <astralsorcery:itemcraftingcomponent:2>,12);
 
 //Parchment
-mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/cc_parchment");
-recipes.remove(<astralsorcery:itemcraftingcomponent:5>);
+#mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/cc_parchment");
+#recipes.remove(<astralsorcery:itemcraftingcomponent:5>);
 //Sooty Marble
 recipes.remove(<astralsorcery:blockblackmarble>);
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/marble_black_raw");

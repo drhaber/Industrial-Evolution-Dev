@@ -1,0 +1,52 @@
+{ "block_pools" : 
+[ 
+{ 
+"name": "CraftingTableRitual", 
+"type": { "type": "block", "name": "astralsorcery:blockcollectorcrystal" }, 
+"clicktype": "rightclick ", 
+"properties": [ 
+    { "type": "require_sneak" }, 
+    { "type": "require_item_list", 
+        "items":[
+      {"name":"tfc:wood/workbench/palm"},
+      {"name":"tfc:wood/workbench/willow"},
+      {"name":"tfc:wood/workbench/sequoia"},
+      {"name":"tfc:wood/workbench/hickory"},
+      {"name":"tfc:wood/workbench/kapok"},
+      {"name":"tfc:wood/workbench/sycamore"},
+      {"name":"tfc:wood/workbench/aspen"},
+      {"name":"tfc:wood/workbench/maple"},
+      {"name":"tfc:wood/workbench/oak"},
+      {"name":"tfc:wood/workbench/hevea"},
+      {"name":"tfc:wood/workbench/acacia"},
+      {"name":"tfc:wood/workbench/birch"},
+      {"name":"tfc:wood/workbench/rosewood"},
+      {"name":"tfc:wood/workbench/pine"},
+      {"name":"tfc:wood/workbench/blackwood"},
+      {"name":"tfc:wood/workbench/ash"},
+      {"name":"tfc:wood/workbench/spruce"},
+      {"name":"tfc:wood/workbench/chestnut"},
+      {"name":"tfc:wood/workbench/white_cedar"},
+      {"name":"tfc:wood/workbench/douglas_fir"}]
+    },
+    {
+      "type": "consume_item",  
+      "amount": "1"
+    },
+    {
+        "type": "swing_hand",
+        "disableJEI": true
+    },
+    {
+        "type": "play_sound",
+        "name": "astralsorcery:finish",
+        "category": "master",
+        "volume": 0.3,
+        "disableJEI": true
+    }
+], 
+"drops": [ { "name": "minecraft:crafting_table" } ], 
+"messages": []
+} 
+] 
+}

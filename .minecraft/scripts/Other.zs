@@ -19,6 +19,10 @@ recipes.addShaped(<tconstruct:wood_rail>*4,[
 	[<ore:stickTreatedWood>,null,<ore:stickTreatedWood>]]);
 recipes.remove(<tconstruct:wood_rail_trapdoor>);
 recipes.addShapeless(<tconstruct:wood_rail_trapdoor>, [<tconstruct:wood_rail>,<ore:trapdoorWood>]);
+//Paper Pulp
+mods.terrafirmacraft.Barrel.addRecipe("Paper", <contenttweaker:sawdust>*4, <liquid:hot_water>*150, <emergingtechnology:paperpulp>, <liquid:hot_water>*0, 4);
+//Paper
+mods.forestry.Carpenter.removeRecipe(<minecraft:paper>);
 #=============================================================================================================================================		
 //Colored Water 
 recipes.removeByMod("colored_water");
@@ -72,7 +76,11 @@ recipes.addShaped(<flopper:flopper>,[
 	[<ore:sheetIron>,<tconstruct:wooden_hopper>,<ore:sheetIron>],
 	[null,<ore:sheetIron>,null]]);
 #=============================================================================================================================================		
-
+recipes.remove(<astikorcarts:cargocart>);
+recipes.addShaped(<astikorcarts:cargocart>,[
+	[<ore:plankWood>,<ore:chestWood>,<ore:plankWood>],
+	[<ore:plankWood>,<ore:chestWood>,<ore:plankWood>],
+	[<astikorcarts:wheel>,<ore:plankWood>,<astikorcarts:wheel>]]);
 //Quark
 recipes.remove(<quark:thatch>);
 	//Candles
@@ -118,11 +126,6 @@ mods.jei.JEI.addDescription(<quark:thatch_slab>,"Magic has made this thatch soli
 	[<ore:string>,<ore:clothHighQuality>,<ore:string>]]);
 	}
 #=============================================================================================================================================		
-//Astikoor
-recipes.addShaped(<astikorcarts:cargocart>,[
-	[<ore:plankWood>,<ore:chestWood>,<ore:plankWood>],
-	[<ore:plankWood>,<ore:chestWood>,<ore:plankWood>],
-	[<astikorcarts:wheel>,<ore:plankWood>,<astikorcarts:wheel>]]);
 //Marble
 mods.terrafirmacraft.Barrel.addRecipe("Quark_marble", <tfc:raw/marble>, <liquid:hot_water>*250, <quark:marble>, <liquid:hot_water>*0, 4);
 //Lithium

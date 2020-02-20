@@ -2,7 +2,8 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.mods.IMod;
-
+//woodPulp
+<ore:pulpWood>.remove(<emergingtechnology:paperpulp>);
 //Beds
 val carpets = <minecraft:carpet>.definition;
 for i in 0 to 16{
@@ -23,8 +24,13 @@ for i in 0 to 16{
 <ore:ingotAluminium>.mirror(<ore:ingotAluminum>);
 <ore:dustAluminum>.addAll(<ore:dustAluminium>);
 <ore:dustAluminium>.mirror(<ore:dustAluminum>);
+//Chests
+<ore:chest>.addAll(<ore:chestWood>);
+<ore:chestWood>.mirror(<ore:chest>);
 //Bricks
 <ore:ingotBrick>.addAll(<ore:brick>); //This adds ingot brick to all bricks
+//woodDust
+<ore:woodDust>.add(<contenttweaker:sawdust>);
 //Soot Black Dye
 <ore:dyeBlack>.add(<contenttweaker:soot>);
 //Marble
