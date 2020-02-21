@@ -18,8 +18,8 @@ for i in 30 to 41{
 	recipes.remove(plates.makeStack(i));
 }
 
-mods.immersivetech.Distiller.addRecipe(<liquid:fresh_water>*10,<liquid:salt_water>*30,<tfc:powder/salt>);
-mods.immersivetech.Distiller.addRecipe(<liquid:water>*1000,<liquid:fresh_water>*1000,<tfc:powder/salt>);
+mods.immersivetechnology.Distiller.addRecipe(<liquid:fresh_water>*10,<liquid:salt_water>*30,<tfc:powder/salt>);
+mods.immersivetechnology.Distiller.addRecipe(<liquid:water>*1000,<liquid:fresh_water>*1000,<tfc:powder/salt>);
 //Scaffold
 recipes.remove(<immersiveengineering:wooden_decoration:1>);
 recipes.addShaped(<immersiveengineering:wooden_decoration:1>,[
