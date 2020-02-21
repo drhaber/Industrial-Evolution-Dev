@@ -180,7 +180,34 @@ mods.jei.JEI.removeAndHide(<microblockcbe:stone_rod>);
 mods.jei.JEI.removeAndHide(<inspirations:materials:8>);	
 #=============================================================================================================================================		
 //Gear Remove
-val Gears = [<tfctech:metal/bronze_gear>,<tfctech:metal/copper_gear>,<tfctech:metal/tin_gear>,<tfctech:metal/steel_gear>,<tfctech:metal/titanium_gear>] as IItemStack[];
-for i, gear in Gears{
-recipes.remove(gear);
-}
+mods.unidict.removalByKind.get("Crafting").remove("gear");
+//Vanilla Woods Recipes
+val VanillaPlanks = <minecraft:planks>.definition;
+val VanillaSlabs = <minecraft:wooden_slab>.definition;
+val VanillaStairs = [<minecraft:oak_stairs>,<minecraft:spruce_stairs>,<minecraft:birch_stairs>,<minecraft:jungle_stairs>,<minecraft:acacia_stairs>,<minecraft:dark_oak_stairs>] as IItemStack[];
+val VanillaFences = [<minecraft:fence>,<minecraft:spruce_fence>,<minecraft:birch_fence>,<minecraft:jungle_fence>,<minecraft:acacia_fence>,<minecraft:dark_oak_fence>] as IItemStack[];
+val VanillaGates = [<minecraft:fence_gate>,<minecraft:spruce_fence_gate>,<minecraft:birch_fence_gate>,<minecraft:jungle_fence_gate>,<minecraft:acacia_fence_gate>,<minecraft:dark_oak_fence_gate>] as IItemStack[];
+val VanillaDoors = [<minecraft:wooden_door>,<minecraft:spruce_door>,<minecraft:birch_door>,<minecraft:jungle_door>,<minecraft:acacia_door>,<minecraft:dark_oak_door>] as IItemStack[];
+val VanillaBoats = [<minecraft:boat>,<minecraft:spruce_boat>,<minecraft:birch_boat>,<minecraft:jungle_boat>,<minecraft:acacia_boat>,<minecraft:dark_oak_boat>] as IItemStack[];
+
+for i in 0 to 6{
+recipes.addShaped(VanillaSlabs.makeStack(i)*6,[
+	[VanillaPlanks.makeStack(i),VanillaPlanks.makeStack(i),VanillaPlanks.makeStack(i)]]);
+recipes.addShaped(VanillaFences[i]*3,[
+	[VanillaPlanks.makeStack(i),<ore:stickWood>,VanillaPlanks.makeStack(i)],
+	[VanillaPlanks.makeStack(i),<ore:stickWood>,VanillaPlanks.makeStack(i)]]);
+recipes.addShaped(VanillaStairs[i]*8,[
+	[VanillaPlanks.makeStack(i),null,null],
+	[VanillaPlanks.makeStack(i),VanillaPlanks.makeStack(i),null],
+	[VanillaPlanks.makeStack(i),VanillaPlanks.makeStack(i),VanillaPlanks.makeStack(i)]]);	
+recipes.addShaped(VanillaGates[i],[
+	[<ore:stickWood>,VanillaPlanks.makeStack(i),<ore:stickWood>],
+	[<ore:stickWood>,VanillaPlanks.makeStack(i),<ore:stickWood>]]);	
+recipes.addShaped(VanillaDoors[i]*3,[
+	[VanillaPlanks.makeStack(i),VanillaPlanks.makeStack(i),null],
+	[VanillaPlanks.makeStack(i),VanillaPlanks.makeStack(i),null],
+	[VanillaPlanks.makeStack(i),VanillaPlanks.makeStack(i),null]]);	
+recipes.addShaped(VanillaBoats[i],[
+	[VanillaPlanks.makeStack(i),null,VanillaPlanks.makeStack(i)],
+	[VanillaPlanks.makeStack(i),VanillaPlanks.makeStack(i),VanillaPlanks.makeStack(i)]]);	
+}	

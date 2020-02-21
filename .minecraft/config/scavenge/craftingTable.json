@@ -39,7 +39,7 @@
     },
     {
         "type": "play_sound",
-        "name": "astralsorcery:finish",
+        "name": "botania:ding",
         "category": "master",
         "volume": 0.3,
         "disableJEI": true

@@ -24,10 +24,10 @@ mods.terrafirmacraft.Quern.addRecipe("Soot", <ore:charcoal>, <contenttweaker:soo
 //Saw Dust
 mods.terrafirmacraft.Quern.addRecipe("Sawdust", <ore:logWood>, <tfctech:powder/wood>*4);
 //Glass_Bottle
-mods.terrafirmacraft.ItemRegistry.registerItemHeat(<minecraft:glass>, 0.35, 1300, true);
-mods.terrafirmacraft.ItemRegistry.registerItemHeat(<minecraft:glass_bottle>, 0.35, 1300, true);
+#mods.terrafirmacraft.ItemRegistry.registerItemHeat(<minecraft:glass>, 0.35, 1300, true);
+#mods.terrafirmacraft.ItemRegistry.registerItemHeat(<minecraft:glass_bottle>, 0.35, 1300, true);
 #mods.terrafirmacraft.ItemRegistry.registerItemHeat(<contenttweaker:splashbottle>, 0.35, 1300, true);
-mods.terrafirmacraft.Anvil.addRecipe("Glass_Bottle", <minecraft:glass>, <minecraft:glass_bottle>, 1, "general","BEND_NOT_LAST","SHRINK_NOT_LAST","DRAW_LAST");
+#mods.terrafirmacraft.Anvil.addRecipe("Glass_Bottle", <minecraft:glass>, <minecraft:glass_bottle>, 1, "general","BEND_NOT_LAST","SHRINK_NOT_LAST","DRAW_LAST");
 #mods.terrafirmacraft.Anvil.addRecipe("Splash_Bottle", <minecraft:glass_bottle>, <contenttweaker:splashbottle>, 1, "general","BEND_NOT_LAST","SHRINK_NOT_LAST","DRAW_LAST");
 //TFC Coal Stack Size
 <tfc:ore/bituminous_coal>.maxStackSize = 32;
@@ -52,15 +52,7 @@ for i, oreIron in oreIrons{
 oreIron.addTooltip(format.red("This ore is unprocessed!"));
 mods.jei.JEI.addDescription(oreIron,"This ore is unprocessed, in order to acquire Wrought Iron Ingots or use it in alloys one must first process it in a bloomery.");
 }
-//Anvils
-val Anvils = [<tfc:metal/anvil/mithril>,<tfc:metal/anvil/invar>,<tfc:metal/anvil/aluminium>,<tfc:metal/anvil/cobalt>,<tfc:metal/anvil/manyullyn>,<tfc:metal/anvil/osmium>,<tfc:metal/anvil/titanium>,<tfc:metal/anvil/tungsten>,<tfc:metal/anvil/tungsten_steel>] as IItemStack[];
-val DBI = [<tfc:metal/double_ingot/mithril>,<tfc:metal/double_ingot/invar>,<tfc:metal/double_ingot/aluminium>,<tfc:metal/double_ingot/cobalt>,<tfc:metal/double_ingot/manyullyn>,<tfc:metal/double_ingot/osmium>,<tfc:metal/double_ingot/titanium>,<tfc:metal/double_ingot/tungsten>,<tfc:metal/double_ingot/tungsten_steel>] as IItemStack[];
-for i, anvil in Anvils{
-recipes.addShaped(anvil,[
-	[DBI[i],DBI[i],DBI[i]],
-	[null,DBI[i],null],
-	[DBI[i],DBI[i],DBI[i]]]);
-}
+
 //Bauxite Dust
 mods.terrafirmacraft.Quern.addRecipe("bauxite_dust_rich",<ore:oreAluminiumRich>,<contenttweaker:bauxitedust>*7);
 mods.terrafirmacraft.Quern.addRecipe("bauxite_dust_normal",<ore:oreAluminiumNormal>,<contenttweaker:bauxitedust>*5);
@@ -114,4 +106,48 @@ mods.terrafirmacraft.StoneKnapping.addRecipe("Stone_Rod", [<tconstruct:stone_sti
 																	"   X ", 
 																	"  X  ", 
 																	" X   ", 
-																	"X    ");															   																   																   														   
+																	"X    ");
+#=============================================================================================================================================		
+
+//TFC Mettallum Missing Recipes																	
+//Anvils
+val Anvils = [<tfc:metal/anvil/mithril>,<tfc:metal/anvil/invar>,<tfc:metal/anvil/aluminium>,<tfc:metal/anvil/cobalt>,<tfc:metal/anvil/manyullyn>,<tfc:metal/anvil/osmium>,<tfc:metal/anvil/titanium>,<tfc:metal/anvil/tungsten>,<tfc:metal/anvil/tungsten_steel>] as IItemStack[];
+val DBI = [<tfc:metal/double_ingot/mithril>,<tfc:metal/double_ingot/invar>,<tfc:metal/double_ingot/aluminium>,<tfc:metal/double_ingot/cobalt>,<tfc:metal/double_ingot/manyullyn>,<tfc:metal/double_ingot/osmium>,<tfc:metal/double_ingot/titanium>,<tfc:metal/double_ingot/tungsten>,<tfc:metal/double_ingot/tungsten_steel>] as IItemStack[];
+for i, anvil in Anvils{
+recipes.addShaped(anvil,[
+	[DBI[i],DBI[i],DBI[i]],
+	[null,DBI[i],null],
+	[DBI[i],DBI[i],DBI[i]]]);
+}
+//Missing Tools																	
+val missing_heads = [<tfc:metal/axe_head/mithril>,<tfc:metal/axe_head/invar>,<tfc:metal/axe_head/aluminium>,<tfc:metal/axe_head/cobalt>,<tfc:metal/axe_head/manyullyn>,<tfc:metal/axe_head/osmium>,<tfc:metal/axe_head/titanium>,<tfc:metal/axe_head/tungsten>,<tfc:metal/axe_head/tungsten_steel>
+,<tfc:metal/propick_head/mithril>,<tfc:metal/propick_head/invar>,<tfc:metal/propick_head/aluminium>,<tfc:metal/propick_head/cobalt>,<tfc:metal/propick_head/manyullyn>,<tfc:metal/propick_head/osmium>,<tfc:metal/propick_head/titanium>,<tfc:metal/propick_head/tungsten>,<tfc:metal/propick_head/tungsten_steel>
+,<tfc:metal/pick_head/mithril>,<tfc:metal/pick_head/invar>,<tfc:metal/pick_head/aluminium>,<tfc:metal/pick_head/cobalt>,<tfc:metal/pick_head/manyullyn>,<tfc:metal/pick_head/osmium>,<tfc:metal/pick_head/titanium>,<tfc:metal/pick_head/tungsten>,<tfc:metal/pick_head/tungsten_steel>
+,<tfc:metal/shovel_head/mithril>,<tfc:metal/shovel_head/invar>,<tfc:metal/shovel_head/aluminium>,<tfc:metal/shovel_head/cobalt>,<tfc:metal/shovel_head/manyullyn>,<tfc:metal/shovel_head/osmium>,<tfc:metal/shovel_head/titanium>,<tfc:metal/shovel_head/tungsten>,<tfc:metal/shovel_head/tungsten_steel>
+,<tfc:metal/hoe_head/mithril>,<tfc:metal/hoe_head/invar>,<tfc:metal/hoe_head/aluminium>,<tfc:metal/hoe_head/cobalt>,<tfc:metal/hoe_head/manyullyn>,<tfc:metal/hoe_head/osmium>,<tfc:metal/hoe_head/titanium>,<tfc:metal/hoe_head/tungsten>,<tfc:metal/hoe_head/tungsten_steel>
+,<tfc:metal/chisel_head/mithril>,<tfc:metal/chisel_head/invar>,<tfc:metal/chisel_head/aluminium>,<tfc:metal/chisel_head/cobalt>,<tfc:metal/chisel_head/manyullyn>,<tfc:metal/chisel_head/osmium>,<tfc:metal/chisel_head/titanium>,<tfc:metal/chisel_head/tungsten>,<tfc:metal/chisel_head/tungsten_steel>
+,<tfc:metal/mace_head/mithril>,<tfc:metal/mace_head/invar>,<tfc:metal/mace_head/aluminium>,<tfc:metal/mace_head/cobalt>,<tfc:metal/mace_head/manyullyn>,<tfc:metal/mace_head/osmium>,<tfc:metal/mace_head/titanium>,<tfc:metal/mace_head/tungsten>,<tfc:metal/mace_head/tungsten_steel>
+,<tfc:metal/javelin_head/mithril>,<tfc:metal/javelin_head/invar>,<tfc:metal/javelin_head/aluminium>,<tfc:metal/javelin_head/cobalt>,<tfc:metal/javelin_head/manyullyn>,<tfc:metal/javelin_head/osmium>,<tfc:metal/javelin_head/titanium>,<tfc:metal/javelin_head/tungsten>,<tfc:metal/javelin_head/tungsten_steel>
+,<tfc:metal/sword_blade/mithril>,<tfc:metal/sword_blade/invar>,<tfc:metal/sword_blade/aluminium>,<tfc:metal/sword_blade/cobalt>,<tfc:metal/sword_blade/manyullyn>,<tfc:metal/sword_blade/osmium>,<tfc:metal/sword_blade/titanium>,<tfc:metal/sword_blade/tungsten>,<tfc:metal/sword_blade/tungsten_steel>
+,<tfc:metal/saw_blade/mithril>,<tfc:metal/saw_blade/invar>,<tfc:metal/saw_blade/aluminium>,<tfc:metal/saw_blade/cobalt>,<tfc:metal/saw_blade/manyullyn>,<tfc:metal/saw_blade/osmium>,<tfc:metal/saw_blade/titanium>,<tfc:metal/saw_blade/tungsten>,<tfc:metal/saw_blade/tungsten_steel>
+,<tfc:metal/knife_blade/mithril>,<tfc:metal/knife_blade/invar>,<tfc:metal/knife_blade/aluminium>,<tfc:metal/knife_blade/cobalt>,<tfc:metal/knife_blade/manyullyn>,<tfc:metal/knife_blade/osmium>,<tfc:metal/knife_blade/titanium>,<tfc:metal/knife_blade/tungsten>,<tfc:metal/knife_blade/tungsten_steel>
+,<tfc:metal/scythe_blade/mithril>,<tfc:metal/scythe_blade/invar>,<tfc:metal/scythe_blade/aluminium>,<tfc:metal/scythe_blade/cobalt>,<tfc:metal/scythe_blade/manyullyn>,<tfc:metal/scythe_blade/osmium>,<tfc:metal/scythe_blade/titanium>,<tfc:metal/scythe_blade/tungsten>,<tfc:metal/scythe_blade/tungsten_steel>] as IItemStack[];
+
+val missing_tools = [<tfc:metal/axe/mithril>,<tfc:metal/axe/invar>,<tfc:metal/axe/aluminium>,<tfc:metal/axe/cobalt>,<tfc:metal/axe/manyullyn>,<tfc:metal/axe/osmium>,<tfc:metal/axe/titanium>,<tfc:metal/axe/tungsten>,<tfc:metal/axe/tungsten_steel>
+,<tfc:metal/propick/mithril>,<tfc:metal/propick/invar>,<tfc:metal/propick/aluminium>,<tfc:metal/propick/cobalt>,<tfc:metal/propick/manyullyn>,<tfc:metal/propick/osmium>,<tfc:metal/propick/titanium>,<tfc:metal/propick/tungsten>,<tfc:metal/propick/tungsten_steel>
+,<tfc:metal/pick/mithril>,<tfc:metal/pick/invar>,<tfc:metal/pick/aluminium>,<tfc:metal/pick/cobalt>,<tfc:metal/pick/manyullyn>,<tfc:metal/pick/osmium>,<tfc:metal/pick/titanium>,<tfc:metal/pick/tungsten>,<tfc:metal/pick/tungsten_steel>
+,<tfc:metal/shovel/mithril>,<tfc:metal/shovel/invar>,<tfc:metal/shovel/aluminium>,<tfc:metal/shovel/cobalt>,<tfc:metal/shovel/manyullyn>,<tfc:metal/shovel/osmium>,<tfc:metal/shovel/titanium>,<tfc:metal/shovel/tungsten>,<tfc:metal/shovel/tungsten_steel>
+,<tfc:metal/hoe/mithril>,<tfc:metal/hoe/invar>,<tfc:metal/hoe/aluminium>,<tfc:metal/hoe/cobalt>,<tfc:metal/hoe/manyullyn>,<tfc:metal/hoe/osmium>,<tfc:metal/hoe/titanium>,<tfc:metal/hoe/tungsten>,<tfc:metal/hoe/tungsten_steel>
+,<tfc:metal/chisel/mithril>,<tfc:metal/chisel/invar>,<tfc:metal/chisel/aluminium>,<tfc:metal/chisel/cobalt>,<tfc:metal/chisel/manyullyn>,<tfc:metal/chisel/osmium>,<tfc:metal/chisel/titanium>,<tfc:metal/chisel/tungsten>,<tfc:metal/chisel/tungsten_steel>
+,<tfc:metal/mace/mithril>,<tfc:metal/mace/invar>,<tfc:metal/mace/aluminium>,<tfc:metal/mace/cobalt>,<tfc:metal/mace/manyullyn>,<tfc:metal/mace/osmium>,<tfc:metal/mace/titanium>,<tfc:metal/mace/tungsten>,<tfc:metal/mace/tungsten_steel>
+,<tfc:metal/javelin/mithril>,<tfc:metal/javelin/invar>,<tfc:metal/javelin/aluminium>,<tfc:metal/javelin/cobalt>,<tfc:metal/javelin/manyullyn>,<tfc:metal/javelin/osmium>,<tfc:metal/javelin/titanium>,<tfc:metal/javelin/tungsten>,<tfc:metal/javelin/tungsten_steel>
+,<tfc:metal/sword/mithril>,<tfc:metal/sword/invar>,<tfc:metal/sword/aluminium>,<tfc:metal/sword/cobalt>,<tfc:metal/sword/manyullyn>,<tfc:metal/sword/osmium>,<tfc:metal/sword/titanium>,<tfc:metal/sword/tungsten>,<tfc:metal/sword/tungsten_steel>
+,<tfc:metal/saw/mithril>,<tfc:metal/saw/invar>,<tfc:metal/saw/aluminium>,<tfc:metal/saw/cobalt>,<tfc:metal/saw/manyullyn>,<tfc:metal/saw/osmium>,<tfc:metal/saw/titanium>,<tfc:metal/saw/tungsten>,<tfc:metal/saw/tungsten_steel>
+,<tfc:metal/knife/mithril>,<tfc:metal/knife/invar>,<tfc:metal/knife/aluminium>,<tfc:metal/knife/cobalt>,<tfc:metal/knife/manyullyn>,<tfc:metal/knife/osmium>,<tfc:metal/knife/titanium>,<tfc:metal/knife/tungsten>,<tfc:metal/knife/tungsten_steel>
+,<tfc:metal/scythe/mithril>,<tfc:metal/scythe/invar>,<tfc:metal/scythe/aluminium>,<tfc:metal/scythe/cobalt>,<tfc:metal/scythe/manyullyn>,<tfc:metal/scythe/osmium>,<tfc:metal/scythe/titanium>,<tfc:metal/scythe/tungsten>,<tfc:metal/scythe/tungsten_steel>] as IItemStack[];
+
+for i, missing in missing_heads{
+recipes.addShaped(missing_tools[i],[
+	[missing],
+	[<ore:stickWood>]]);
+}

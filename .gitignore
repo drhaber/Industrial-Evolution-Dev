@@ -26,3 +26,5 @@ instance.cfg~b38a6bd1105e139bca4d75d9b3ad0c79c1c58452
 .minecraft/config/BiomeTweaker/output/biome/
 .minecraft/config/BiomeTweaker/output/
 .minecraft/crash-reports/
+.minecraft/local/ftbutilities/backups.json
+.minecraft/backups/2020-02-21-11-33-39.zip
