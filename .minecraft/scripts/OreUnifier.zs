@@ -29,8 +29,6 @@ for i in 0 to 16{
 <ore:chestWood>.mirror(<ore:chest>);
 //Bricks
 <ore:ingotBrick>.addAll(<ore:brick>); //This adds ingot brick to all bricks
-//woodDust
-<ore:woodDust>.add(<contenttweaker:sawdust>);
 //Soot Black Dye
 <ore:dyeBlack>.add(<contenttweaker:soot>);
 //Marble

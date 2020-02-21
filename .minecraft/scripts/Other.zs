@@ -20,7 +20,7 @@ recipes.addShaped(<tconstruct:wood_rail>*4,[
 recipes.remove(<tconstruct:wood_rail_trapdoor>);
 recipes.addShapeless(<tconstruct:wood_rail_trapdoor>, [<tconstruct:wood_rail>,<ore:trapdoorWood>]);
 //Paper Pulp
-mods.terrafirmacraft.Barrel.addRecipe("Paper", <contenttweaker:sawdust>*4, <liquid:hot_water>*150, <emergingtechnology:paperpulp>, <liquid:hot_water>*0, 4);
+mods.terrafirmacraft.Barrel.addRecipe("Paper", <tfctech:powder/wood>*4, <liquid:hot_water>*150, <emergingtechnology:paperpulp>, <liquid:hot_water>*0, 4);
 //Paper
 mods.forestry.Carpenter.removeRecipe(<minecraft:paper>);
 #=============================================================================================================================================		

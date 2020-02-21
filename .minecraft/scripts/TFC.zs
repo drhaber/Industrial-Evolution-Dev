@@ -22,7 +22,7 @@ recipes.addShaped(<tfctech:metal/steel_sleeve>*4,[
 //Soot
 mods.terrafirmacraft.Quern.addRecipe("Soot", <ore:charcoal>, <contenttweaker:soot>*4);
 //Saw Dust
-mods.terrafirmacraft.Quern.addRecipe("Sawdust", <ore:logWood>, <contenttweaker:sawdust>*4);
+mods.terrafirmacraft.Quern.addRecipe("Sawdust", <ore:logWood>, <tfctech:powder/wood>*4);
 //Glass_Bottle
 mods.terrafirmacraft.ItemRegistry.registerItemHeat(<minecraft:glass>, 0.35, 1300, true);
 mods.terrafirmacraft.ItemRegistry.registerItemHeat(<minecraft:glass_bottle>, 0.35, 1300, true);
