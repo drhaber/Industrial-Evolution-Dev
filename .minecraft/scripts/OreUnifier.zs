@@ -82,3 +82,8 @@ mods.jei.JEI.removeAndHide(<railcraft:gear:3>);
 <ore:stickSteel>.addAll(<ore:rodSteel>);
 <ore:stickTitanium>.addAll(<ore:rodTitanium>);
 <ore:stickAluminum>.addAll(<ore:rodAluminium>);
+#=============================================================================================================================================		
+//Woods
+#<ore:plankWoodOak>.add(<minecraft:planks>);
+#<ore:slabWoodOak>.add(<minecraft:wooden_slab>);
+#<ore:logWoodOak>.add(<minecraft:log>);

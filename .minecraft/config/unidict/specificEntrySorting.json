@@ -3,22 +3,22 @@
 		"entryName" : "Silicon",
 		"modIdPriorityList" :
 		[
-		projectred-core
-		libvulpes
+		"projectred-core",
+		"libvulpes"
 		]
 	},
 	{
 		"entryName" : "ingotUnknown",
 		"modIdPriorityList" :
 		[
-		tfc
+		"tfc"
 		]
 	},
 		{
 		"entryName" : "fuelCoke",
 		"modIdPriorityList" :
 		[
-		immersiveengineering
+		"immersiveengineering"
 		]
 	}
 ]

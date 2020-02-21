@@ -3,149 +3,170 @@
 		"kindName" : "longRod",
 		"modIdPriorityList" :
 		[
-		tfctech
+		"tfctech"
 		]
 	},
 	{
 		"kindName" : "rod",
 		"modIdPriorityList" :
 		[
-		tfctech
+		"tfctech"
 		]
 	},
 		{
 		"kindName" : "stick",
 		"modIdPriorityList" :
 		[
-		tfctech
+		"tfctech"
 		]
 	},
 	{
 		"kindName" : "gem",
 		"modIdPriorityList" :
 		[
-		tfc
+		"tfc"
 		]
 	},	
 	{
 		"kindName" : "oreNugget",
 		"modIdPriorityList" :
 		[
-		tfc
-		nuclearcraft
+		"tfc",
+		"nuclearcraft"
 		]
 	},		
 	{
 		"kindName" : "gear",
 		"modIdPriorityList" :
 		[
-		tfctech
+		"tfctech"
 		]
 	},		
 	{
 		"kindName" : "bolt",
 		"modIdPriorityList" :
 		[
-		tfctech
+		"tfctech"
 		]
 	},	
 	{
 		"kindName" : "dust",
 		"modIdPriorityList" :
 		[
-		tfc
-		tfctech
-		morebees
-		nuclearcraft
-		immersiveengineering
+		"tfc",
+		"tfctech",
+		"morebees",
+		"nuclearcraft",
+		"immersiveengineering"
 		]
 	},	
 	{
 		"kindName" : "wire",
 		"modIdPriorityList" :
 		[
-		tfctech
+		"tfctech"
 		]
 	},	
 	{
 		"kindName" : "ingot",
 		"modIdPriorityList" :
 		[
-		tfc
-		tfctech
-		tconstruct
-		nuclearcraft
-		immersiveengineering
+		"tfc",
+		"tfctech",
+		"tconstruct",
+		"nuclearcraft",
+		"immersiveengineering"
 		]
 	},		
 	{
 		"kindName" : "nugget",
 		"modIdPriorityList" :
 		[
-		tfc
+		"tfc"
 		]
 	},	
 	{
 		"kindName" : "plate",
 		"modIdPriorityList" :
 		[
-		tfc
+		"tfc"
 		]
 	},
 	{
 		"kindName" : "sheetDouble",
 		"modIdPriorityList" :
 		[
-		tfc
+		"tfc"
 		]
 	},	
 		{
 		"kindName" : "sheetDouble",
 		"modIdPriorityList" :
 		[
-		tfc
+		"tfc"
 		]
 	},	
 	{
 		"kindName" : "shovel",
 		"modIdPriorityList" :
 		[
-		tfc
+		"tfc"
 		]
 	},
 	{
 		"kindName" : "pickaxe",
 		"modIdPriorityList" :
 		[
-		tfc
+		"tfc"
 		]
 	},	
 	{
 		"kindName" : "axe",
 		"modIdPriorityList" :
 		[
-		tfc
+		"tfc"
 		]
 	},	
 	{
 		"kindName" : "sword",
 		"modIdPriorityList" :
 		[
-		tfc
+		"tfc"
 		]
 	},
 	{
 		"kindName" : "hoe",
 		"modIdPriorityList" :
 		[
-		tfc
+		"tfc"
+		]
+	},
+	{
+		"kindName" : "plank",
+		"modIdPriorityList" :
+		[
+		"tfc"
+		]
+	},
+	{
+		"kindName" : "slab",
+		"modIdPriorityList" :
+		[
+		"tfc"
+		]
+	},
+	{
+		"kindName" : "log",
+		"modIdPriorityList" :
+		[
+		"tfc"
 		]
 	},		
 	{
 		"kindName" : "sheet",
 		"modIdPriorityList" :
 		[
-		tfc
+		"tfc"
 		]
 	}
 ]	
