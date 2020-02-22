@@ -83,6 +83,7 @@ recipes.addShaped(<astikorcarts:cargocart>,[
 	[<astikorcarts:wheel>,<ore:plankWood>,<astikorcarts:wheel>]]);
 //Quark
 recipes.remove(<quark:thatch>);
+recipes.remove(<minecraft:wheat>);
 	//Candles
 	recipes.removeShaped(<quark:candle>*2,[
 		[<ore:string>],
