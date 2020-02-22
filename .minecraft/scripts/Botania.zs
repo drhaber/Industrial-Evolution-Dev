@@ -9,7 +9,8 @@ recipes.addShapeless(<botania:waterbowl>.withTag({Fluid: {FluidName: "water", Am
 mods.inworldcrafting.FluidToItem.transform(<botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}), <liquid:water>, [<minecraft:bowl>], true);
 mods.inworldcrafting.FluidToItem.transform(<botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}), <liquid:fresh_water>, [<minecraft:bowl>], true);
 mods.inworldcrafting.FluidToItem.transform(<botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}), <liquid:salt_water>, [<minecraft:bowl>], true);
-
+mods.jei.JEI.addDescription(<botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}),"Seems only some water containers can handle the magic of the Apothecary.");
+mods.jei.JEI.addDescription(<botania:altar>,"Seems only some water containers can handle the magic of the Apothecary.");
 //TFC Conversions 
 mods.botania.PureDaisy.addRecipe(<ore:tfcSand>,<minecraft:sand>);
 mods.botania.PureDaisy.addRecipe(<tfc:thatch>,<quark:thatch>);
