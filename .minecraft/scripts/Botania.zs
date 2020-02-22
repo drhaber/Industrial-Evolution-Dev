@@ -4,6 +4,11 @@ import crafttweaker.oredict.IOreDictEntry;
 
   
 import mods.botania.PureDaisy;
+//Bowl of Water
+recipes.addShapeless(<botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}),[<minecraft:bowl>,<tfc:wooden_bucket>.withTag({Fluid: {FluidName: "fresh_water", Amount: 1000}}).transformReplace(<tfc:wooden_bucket>)]);
+mods.inworldcrafting.FluidToItem.transform(<botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}), <liquid:water>, [<minecraft:bowl>], true);
+mods.inworldcrafting.FluidToItem.transform(<botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}), <liquid:fresh_water>, [<minecraft:bowl>], true);
+mods.inworldcrafting.FluidToItem.transform(<botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}), <liquid:salt_water>, [<minecraft:bowl>], true);
 
 //TFC Conversions 
 mods.botania.PureDaisy.addRecipe(<ore:tfcSand>,<minecraft:sand>);
