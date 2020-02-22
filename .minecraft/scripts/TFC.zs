@@ -59,6 +59,14 @@ mods.terrafirmacraft.Quern.addRecipe("bauxite_dust_rich",<ore:oreAluminiumRich>,
 mods.terrafirmacraft.Quern.addRecipe("bauxite_dust_normal",<ore:oreAluminiumNormal>,<contenttweaker:bauxitedust>*5);
 mods.terrafirmacraft.Quern.addRecipe("bauxite_dust_poor",<ore:oreAluminiumPoor>,<contenttweaker:bauxitedust>*3);
 mods.terrafirmacraft.Quern.addRecipe("bauxite_dust_small",<ore:oreAluminiumSmall>,<contenttweaker:bauxitedust>*2);
+//Unfired Glass Block 
+mods.terrafirmacraft.ClayKnapping.removeRecipe(<tfctech:ceramics/unfired/glass_block>);
+mods.terrafirmacraft.ClayKnapping.addRecipe("Glass_Block_Knap", <tfctech:ceramics/unfired/glass_block>, 
+																	"X   X", 
+																	"X   X", 
+																	"X   X", 
+																	"XXXXX", 
+																	"     ");
 
 //Casts
 mods.terrafirmacraft.ItemRegistry.registerItemHeat(<contenttweaker:unfired_material_engineering_processor_press>, 1, 1599, false);
