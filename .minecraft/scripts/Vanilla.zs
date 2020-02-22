@@ -12,6 +12,16 @@ recipes.addShaped(<minecraft:coal_block>,[
 	[CO,CO,CO],
 	[CO,CO,CO],
 	[CO,CO,CO]]);
+//Vanilla Chest
+recipes.remove(<minecraft:chest>);
+recipes.addShaped(<minecraft:chest>,[
+	[<minecraft:planks>,<minecraft:planks>,<minecraft:planks>],
+	[<minecraft:planks>,<ore:chestWood>,<minecraft:planks>],
+	[<minecraft:planks>,<minecraft:planks>,<minecraft:planks>]]);
+recipes.addShaped(<minecraft:chest>,[
+	[<botania:livingwood>,<botania:livingwood>,<botania:livingwood>],
+	[<botania:livingwood>,null,<botania:livingwood>],
+	[<botania:livingwood>,<botania:livingwood>,<botania:livingwood>]]);
 //Torch Recipes
 recipes.remove(<minecraft:torch>);
 //Beacon

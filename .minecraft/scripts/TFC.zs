@@ -44,6 +44,7 @@ recipes.addShaped(<tfc:ceramics/fire_clay>,[
 	[<contenttweaker:bauxitedust>,<ore:dustGraphite>,<contenttweaker:bauxitedust>],
 	[<ore:dustGraphite>,<ore:clay>,<ore:dustGraphite>],
 	[<contenttweaker:bauxitedust>,<ore:dustGraphite>,<contenttweaker:bauxitedust>]]);
+/*	
 //Iron Ore Tool Tip
 val oreIrons = [<tfc:ore/hematite>,<tfc:ore/hematite:1>,<tfc:ore/hematite:2>,<tfc:ore/small/hematite>,
 <tfc:ore/magnetite>,<tfc:ore/magnetite:1>,<tfc:ore/magnetite:2>,<tfc:ore/small/magnetite>,
@@ -52,7 +53,7 @@ for i, oreIron in oreIrons{
 oreIron.addTooltip(format.red("This ore is unprocessed!"));
 mods.jei.JEI.addDescription(oreIron,"This ore is unprocessed, in order to acquire Wrought Iron Ingots or use it in alloys one must first process it in a bloomery.");
 }
-
+*/
 //Bauxite Dust
 mods.terrafirmacraft.Quern.addRecipe("bauxite_dust_rich",<ore:oreAluminiumRich>,<contenttweaker:bauxitedust>*7);
 mods.terrafirmacraft.Quern.addRecipe("bauxite_dust_normal",<ore:oreAluminiumNormal>,<contenttweaker:bauxitedust>*5);
