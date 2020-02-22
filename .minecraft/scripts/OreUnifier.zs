@@ -2,6 +2,18 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.mods.IMod;
+
+//Seeds
+<ore:seedPumpkin>.add(<tfc:crop/seeds/pumpkin>);
+<ore:seedWheat>.add(<tfc:crop/seeds/wheat>);
+<ore:seedMelon>.add(<tfc:crop/seeds/melon>);
+<ore:seedBeetroot>.add(<tfc:crop/seeds/beet>);
+<ore:seedSugar>.add(<inspirations:sugar_cane_seeds>);
+<ore:seedSugar>.add(<tfc:crop/seeds/sugarcane>);
+<ore:seedPotato>.add(<inspirations:potato_seeds>);
+<ore:seedPotato>.add(<tfc:crop/seeds/potato>);
+<ore:seedCarrot>.add(<inspirations:carrot_seeds>);
+<ore:seedCarrot>.add(<tfc:crop/seeds/carrot>);
 //woodPulp
 <ore:pulpWood>.remove(<emergingtechnology:paperpulp>);
 //Beds

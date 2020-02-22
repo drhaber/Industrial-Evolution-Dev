@@ -5,6 +5,9 @@ import crafttweaker.mods.IMod;
 import crafttweaker.liquid.ILiquidStack;
 import moretweaker.railcraft.RollingMachine;
 
+//Torch Lever
+recipes.remove(<inspirations:torch_lever>);
+recipes.addShapeless(<inspirations:torch_lever>, [<tconstruct:stone_torch>,<minecraft:lever>]);
 //Missing Localization
 game.setLocalization("item.railcraft.charge.electrode.carbon.name", "Silver Electrode");
 game.setLocalization("item.railcraft.charge.electrode.silver.name", "Carbon Electrode");

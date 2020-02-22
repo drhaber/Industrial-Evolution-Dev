@@ -161,7 +161,14 @@
 		[
 		"tfc"
 		]
-	},		
+	},
+	{
+		"kindName" : "seed",
+		"modIdPriorityList" :
+		[
+		"tfc"
+		]
+	},			
 	{
 		"kindName" : "sheet",
 		"modIdPriorityList" :
