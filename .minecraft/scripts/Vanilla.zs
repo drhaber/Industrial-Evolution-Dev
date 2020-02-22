@@ -39,6 +39,7 @@ recipes.addShaped(<minecraft:piston>,[
 	[null,<ore:ingotBronze>,null],
 	[<ore:ingotBrick>,<tfc:bellows>,<ore:ingotBrick>]]);	
 recipes.addShapeless(<minecraft:sticky_piston>,[<minecraft:piston>,<ore:slimeball>]);	
+recipes.addShapeless(<minecraft:sticky_piston>,[<minecraft:piston>,<ore:dropHoney>]);	
 //Cauldron
 recipes.remove(<minecraft:cauldron>);
 recipes.addShaped(<minecraft:cauldron>,[

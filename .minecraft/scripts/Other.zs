@@ -69,6 +69,7 @@ recipes.removeShapeless(wools.makeStack(i));
 recipes.removeShapeless(beds.makeStack(i));
 
 }
+
 #=============================================================================================================================================		
 //Bucket
 RollingMachine.addShapeless(<minecraft:bucket>, [<ore:sheetDoubleIron>]);
@@ -215,3 +216,110 @@ recipes.addShaped(VanillaBoats[i],[
 	[VanillaPlanks.makeStack(i),null,VanillaPlanks.makeStack(i)],
 	[VanillaPlanks.makeStack(i),VanillaPlanks.makeStack(i),VanillaPlanks.makeStack(i)]]);	
 }	
+#=============================================================================================================================================		
+
+//Rolled Knapping Recipes
+	RollingMachine.addShaped(<tconstruct:stone_stick>*3,[
+		[null,null,<ore:rock>],
+		[null,<ore:rock>,null],
+		[<ore:rock>,null,null]]);
+	//Igneous Intrusive
+	RollingMachine.addShaped(<tfc:stone/axe_head/igneous_intrusive>,[
+		[null,<ore:rockIgneousIntrusive>,<ore:rockIgneousIntrusive>],
+		[null,null,<ore:rockIgneousIntrusive>],
+		[null,null,null]]);
+	RollingMachine.addShaped(<tfc:stone/shovel_head/igneous_intrusive>,[
+		[null,<ore:rockIgneousIntrusive>,null],
+		[null,null,null],
+		[null,null,null]]);
+	RollingMachine.addShaped(<tfc:stone/hoe_head/igneous_intrusive>,[
+		[<ore:rockIgneousIntrusive>,<ore:rockIgneousIntrusive>,null],
+		[null,null,null],
+		[null,null,null]]);
+	RollingMachine.addShaped(<tfc:stone/knife_head/igneous_intrusive>*3,[
+		[<ore:rockIgneousIntrusive>,<ore:rockIgneousIntrusive>,<ore:rockIgneousIntrusive>],
+		[null,<ore:rockIgneousIntrusive>,<ore:rockIgneousIntrusive>],
+		[null,null,null]]);
+	RollingMachine.addShaped(<tfc:stone/javelin_head/igneous_intrusive>,[
+		[<ore:rockIgneousIntrusive>,<ore:rockIgneousIntrusive>,<ore:rockIgneousIntrusive>],
+		[<ore:rockIgneousIntrusive>,<ore:rockIgneousIntrusive>,null],
+		[<ore:rockIgneousIntrusive>,null,<ore:rockIgneousIntrusive>]]);
+	RollingMachine.addShaped(<tfc:stone/hammer_head/igneous_intrusive>,[
+		[<ore:rockIgneousIntrusive>,<ore:rockIgneousIntrusive>,<ore:rockIgneousIntrusive>],
+		[<ore:rockIgneousIntrusive>,<ore:rockIgneousIntrusive>,<ore:rockIgneousIntrusive>],
+		[null,<ore:rockIgneousIntrusive>,null]]);		
+	//Igneous Extrusive
+	RollingMachine.addShaped(<tfc:stone/axe_head/igneous_extrusive>,[
+		[null,<ore:rockIgneousExtrusive>,<ore:rockIgneousExtrusive>],
+		[null,null,<ore:rockIgneousExtrusive>],
+		[null,null,null]]);
+	RollingMachine.addShaped(<tfc:stone/shovel_head/igneous_extrusive>,[
+		[null,<ore:rockIgneousExtrusive>,null],
+		[null,null,null],
+		[null,null,null]]);
+	RollingMachine.addShaped(<tfc:stone/hoe_head/igneous_extrusive>,[
+		[<ore:rockIgneousExtrusive>,<ore:rockIgneousExtrusive>,null],
+		[null,null,null],
+		[null,null,null]]);
+	RollingMachine.addShaped(<tfc:stone/knife_head/igneous_extrusive>*3,[
+		[<ore:rockIgneousExtrusive>,<ore:rockIgneousExtrusive>,<ore:rockIgneousExtrusive>],
+		[null,<ore:rockIgneousExtrusive>,<ore:rockIgneousExtrusive>],
+		[null,null,null]]);
+	RollingMachine.addShaped(<tfc:stone/javelin_head/igneous_extrusive>,[
+		[<ore:rockIgneousExtrusive>,<ore:rockIgneousExtrusive>,<ore:rockIgneousExtrusive>],
+		[<ore:rockIgneousExtrusive>,<ore:rockIgneousExtrusive>,null],
+		[<ore:rockIgneousExtrusive>,null,<ore:rockIgneousExtrusive>]]);
+	RollingMachine.addShaped(<tfc:stone/hammer_head/igneous_extrusive>,[
+		[<ore:rockIgneousExtrusive>,<ore:rockIgneousExtrusive>,<ore:rockIgneousExtrusive>],
+		[<ore:rockIgneousExtrusive>,<ore:rockIgneousExtrusive>,<ore:rockIgneousExtrusive>],
+		[null,<ore:rockIgneousExtrusive>,null]]);	
+	//Sedimentary
+	RollingMachine.addShaped(<tfc:stone/axe_head/sedimentary>,[
+		[null,<ore:rockSedimentary>,<ore:rockSedimentary>],
+		[null,null,<ore:rockSedimentary>],
+		[null,null,null]]);
+	RollingMachine.addShaped(<tfc:stone/shovel_head/sedimentary>,[
+		[null,<ore:rockSedimentary>,null],
+		[null,null,null],
+		[null,null,null]]);
+	RollingMachine.addShaped(<tfc:stone/hoe_head/sedimentary>,[
+		[<ore:rockSedimentary>,<ore:rockSedimentary>,null],
+		[null,null,null],
+		[null,null,null]]);
+	RollingMachine.addShaped(<tfc:stone/knife_head/sedimentary>*3,[
+		[<ore:rockSedimentary>,<ore:rockSedimentary>,<ore:rockSedimentary>],
+		[null,<ore:rockSedimentary>,<ore:rockSedimentary>],
+		[null,null,null]]);
+	RollingMachine.addShaped(<tfc:stone/javelin_head/sedimentary>,[
+		[<ore:rockSedimentary>,<ore:rockSedimentary>,<ore:rockSedimentary>],
+		[<ore:rockSedimentary>,<ore:rockSedimentary>,null],
+		[<ore:rockSedimentary>,null,<ore:rockSedimentary>]]);
+	RollingMachine.addShaped(<tfc:stone/hammer_head/sedimentary>,[
+		[<ore:rockSedimentary>,<ore:rockSedimentary>,<ore:rockSedimentary>],
+		[<ore:rockSedimentary>,<ore:rockSedimentary>,<ore:rockSedimentary>],
+		[null,<ore:rockSedimentary>,null]]);	
+	//Metamorphic
+	RollingMachine.addShaped(<tfc:stone/axe_head/metamorphic>,[
+		[null,<ore:rockMetamorphic>,<ore:rockMetamorphic>],
+		[null,null,<ore:rockMetamorphic>],
+		[null,null,null]]);
+	RollingMachine.addShaped(<tfc:stone/shovel_head/metamorphic>,[
+		[null,<ore:rockMetamorphic>,null],
+		[null,null,null],
+		[null,null,null]]);
+	RollingMachine.addShaped(<tfc:stone/hoe_head/metamorphic>,[
+		[<ore:rockMetamorphic>,<ore:rockMetamorphic>,null],
+		[null,null,null],
+		[null,null,null]]);
+	RollingMachine.addShaped(<tfc:stone/knife_head/metamorphic>*3,[
+		[<ore:rockMetamorphic>,<ore:rockMetamorphic>,<ore:rockMetamorphic>],
+		[null,<ore:rockMetamorphic>,<ore:rockMetamorphic>],
+		[null,null,null]]);
+	RollingMachine.addShaped(<tfc:stone/javelin_head/metamorphic>,[
+		[<ore:rockMetamorphic>,<ore:rockMetamorphic>,<ore:rockMetamorphic>],
+		[<ore:rockMetamorphic>,<ore:rockMetamorphic>,null],
+		[<ore:rockMetamorphic>,null,<ore:rockMetamorphic>]]);
+	RollingMachine.addShaped(<tfc:stone/hammer_head/metamorphic>,[
+		[<ore:rockMetamorphic>,<ore:rockMetamorphic>,<ore:rockMetamorphic>],
+		[<ore:rockMetamorphic>,<ore:rockMetamorphic>,<ore:rockMetamorphic>],
+		[null,<ore:rockMetamorphic>,null]]);	
