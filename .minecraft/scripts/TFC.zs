@@ -4,6 +4,8 @@ import crafttweaker.oredict.IOreDictEntry;
 //Coals
 furnace.setFuel(<tfc:ore/bituminous_coal>, 1600);
 furnace.setFuel(<tfc:ore/lignite>, 800);
+//Stone Hammer Fix
+ItemRegistry.registerItemSize(<ore:hammerStone>, "HEAVY", "SMALL");
 //Bowl
 <tfc:ceramics/fired/bowl>.displayName = "Clay Bowl";
 //Sleeves
