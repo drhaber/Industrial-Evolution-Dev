@@ -5,6 +5,31 @@ import crafttweaker.mods.IMod;
 import crafttweaker.liquid.ILiquidStack;
 import moretweaker.railcraft.RollingMachine;
 
+//Little Tiles Tools
+recipes.remove(<littletiles:hammer>);
+recipes.addShaped(<littletiles:hammer>,[
+	[<tfc:metal/hammer_head/wrought_iron>,null],
+	[<ore:rodStone>,<ore:dyeBlue>]]);
+recipes.remove(<littletiles:saw>);
+recipes.addShaped(<littletiles:saw>,[
+	[<tfc:metal/saw_blade/wrought_iron>,null],
+	[<ore:rodStone>,<ore:dyeBlue>]]);		
+recipes.remove(<littletiles:wrench>);
+recipes.addShaped(<littletiles:wrench>,[
+	[<contenttweaker:ironwrenchhead>,null],
+	[<ore:rodStone>,<ore:dyeBlue>]]);	
+recipes.remove(<littletiles:chisel>);
+recipes.addShaped(<littletiles:chisel>,[
+	[<tfc:metal/chisel_head/wrought_iron>,null],
+	[<ore:rodStone>,<ore:dyeBlue>]]);	
+recipes.remove(<littletiles:colortube>);
+recipes.addShaped(<littletiles:colortube>,[
+	[<ore:woolWhite>,null],
+	[<ore:rodStone>,<ore:dyeBlue>]]);	
+recipes.remove(<littletiles:container>);
+recipes.addShapeless(<littletiles:container>,[<contenttweaker:leatherbag>,<ore:dyeBlue>,<littletiles:hammer>.transformDamage(1)]);
+recipes.remove(<littletiles:grabber>);
+recipes.addShapeless(<littletiles:grabber>,[<contenttweaker:leatherglove>,<ore:dyeBlue>,<littletiles:hammer>.transformDamage(1)]);							
 //Torch Lever
 recipes.remove(<inspirations:torch_lever>);
 recipes.addShapeless(<inspirations:torch_lever>, [<tconstruct:stone_torch>,<minecraft:lever>]);

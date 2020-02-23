@@ -88,10 +88,7 @@ recipes.addShaped(<minecraft:sandstone>,[
 //Charcoal 
 furnace.remove(<minecraft:coal:1>);
 //Leads
-recipes.addShaped(<minecraft:lead>,[
-	[null,<ore:string>,<ore:string>],
-	[null,<ore:string>,<ore:string>],
-	[<ore:string>,null,null]]);
+recipes.remove(<minecraft:lead>);
 //Redstone Lamp
 recipes.addShaped(<minecraft:redstone_lamp>,[
 	[<minecraft:glowstone>],

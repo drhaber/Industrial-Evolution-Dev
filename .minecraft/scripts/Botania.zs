@@ -1,9 +1,17 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
-import crafttweaker.oredict.IOreDictEntry;
-
-  
+import crafttweaker.oredict.IOreDictEntry; 
 import mods.botania.PureDaisy;
+
+//Hand of Ender
+recipes.remove(<botania:enderhand>);
+recipes.addShaped(<botania:enderhand>,[
+	[<botania:manaresource:1>,null,<ore:dustObsidian>],
+	[null,<minecraft:ender_chest>,null],
+	[<ore:dustObsidian>,null,<contenttweaker:leatherglove>]]);
+//Pouch
+recipes.remove(<botania:flowerbag>);
+recipes.addShapeless(<botania:flowerbag>, [<contenttweaker:leatherbag>,<ore:Petals>]);
 //Bowl of Water
 recipes.addShapeless(<botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}),[<minecraft:bowl>,<tfc:wooden_bucket>.withTag({Fluid: {FluidName: "fresh_water", Amount: 1000}}).transformReplace(<tfc:wooden_bucket>)]);
 mods.inworldcrafting.FluidToItem.transform(<botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}), <liquid:water>, [<minecraft:bowl>], true);

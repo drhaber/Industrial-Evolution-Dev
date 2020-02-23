@@ -20,6 +20,12 @@ for i in 30 to 41{
 
 mods.immersivetechnology.Distiller.addRecipe(<liquid:fresh_water>*10,<liquid:salt_water>*30,<tfc:powder/salt>);
 mods.immersivetechnology.Distiller.addRecipe(<liquid:water>*1000,<liquid:fresh_water>*1000,<tfc:powder/salt>);
+//Glove
+recipes.remove(<immersiveengineering:toolupgrade:12>);
+recipes.addShaped(<immersiveengineering:toolupgrade:12>,[
+	[null,null,<contenttweaker:leatherglove>],
+	[null,<railcraft:charge>,null],
+	[<ore:itemBattery>,null,null]]);
 //Scaffold
 recipes.remove(<immersiveengineering:wooden_decoration:1>);
 recipes.addShaped(<immersiveengineering:wooden_decoration:1>,[

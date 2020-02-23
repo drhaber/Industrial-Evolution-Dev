@@ -1,6 +1,8 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
+//Wrench Head
+mods.terrafirmacraft.Anvil.addRecipe("Iron_Wrench_Head", <ore:ingotWroughtIron>, <contenttweaker:ironwrenchhead>, 3, "general","BEND_NOT_LAST","SHRINK_NOT_LAST","DRAW_LAST");
 //Coals
 furnace.setFuel(<tfc:ore/bituminous_coal>, 1600);
 furnace.setFuel(<tfc:ore/lignite>, 800);
@@ -121,6 +123,24 @@ mods.terrafirmacraft.StoneKnapping.addRecipe("Stone_Rod", [<tconstruct:stone_sti
 																	"  X  ", 
 																	" X   ", 
 																	"X    ");
+mods.terrafirmacraft.LeatherKnapping.addRecipe("Little_Bag_Knap", <contenttweaker:leatherbag>, 
+																	"  X  ", 
+																	"XXXXX", 
+																	"X   X", 
+																	"X   X", 
+																	"XXXXX");	
+mods.terrafirmacraft.LeatherKnapping.addRecipe("leather_glove_Knap", <contenttweaker:leatherglove>, 
+																	"X X X", 
+																	"X X X", 
+																	"XXXXX", 
+																	"XXXXX", 
+																	" XXX ");
+mods.terrafirmacraft.LeatherKnapping.addRecipe("lead_Knap", <minecraft:lead>, 
+																	"XXXXX", 
+																	"X   X", 
+																	"XXXXX", 
+																	"   X ", 
+																	"XXX  ");																																																																					
 #=============================================================================================================================================		
 
 //TFC Mettallum Missing Recipes																	

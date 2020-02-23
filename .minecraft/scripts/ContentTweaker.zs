@@ -5,7 +5,18 @@ import mods.contenttweaker.Color;
 import mods.contenttweaker.Item;
 import crafttweaker.game.IGame;
 
-
+//LeatherBag
+var leatherbag = VanillaFactory.createItem("leatherbag");
+leatherbag.register();
+game.setLocalization("item.contenttweaker.leatherbag.name", "Leather Bag");
+//LeatherGlove
+var leatherglove = VanillaFactory.createItem("leatherglove");
+leatherglove.register();
+game.setLocalization("item.contenttweaker.leatherglove.name", "Leather Glove");
+//Iron_Wrench_Head
+var ironwrenchhead = VanillaFactory.createItem("ironwrenchhead");
+ironwrenchhead.register();
+game.setLocalization("item.contenttweaker.ironwrenchhead.name", "Wrought Iron Wrench Head");
 //Glow String
 var glowstring = VanillaFactory.createItem("glowstring");
 glowstring.register();
