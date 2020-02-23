@@ -23,7 +23,7 @@ recipes.addShaped(<tconstruct:wood_rail>*4,[
 recipes.remove(<tconstruct:wood_rail_trapdoor>);
 recipes.addShapeless(<tconstruct:wood_rail_trapdoor>, [<tconstruct:wood_rail>,<ore:trapdoorWood>]);
 //Paper Pulp
-mods.terrafirmacraft.Barrel.addRecipe("Paper", <tfctech:powder/wood>*4, <liquid:hot_water>*150, <emergingtechnology:paperpulp>, <liquid:hot_water>*0, 4);
+mods.terrafirmacraft.Barrel.addRecipe("Paper", <tfctech:powder/wood>*4, <liquid:hot_water>*150, <emergingtechnology:paperpulp>, 4);
 //Paper
 mods.forestry.Carpenter.removeRecipe(<minecraft:paper>);
 #=============================================================================================================================================		
@@ -132,7 +132,7 @@ mods.jei.JEI.addDescription(<quark:thatch_slab>,"Magic has made this thatch soli
 	}
 #=============================================================================================================================================		
 //Marble
-mods.terrafirmacraft.Barrel.addRecipe("Quark_marble", <tfc:raw/marble>, <liquid:hot_water>*250, <quark:marble>, <liquid:hot_water>*0, 4);
+mods.terrafirmacraft.Barrel.addRecipe("Quark_marble", <tfc:raw/marble>, <liquid:hot_water>*250, <quark:marble>, 4);
 //Lithium
 furnace.addRecipe(<nuclearcraft:dust:6>*4, <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "brine", Amount: 1000}}));
 mods.immersiveengineering.BlastFurnace.addRecipe(<nuclearcraft:dust:6>*4, <forge:bucketfilled>.withTag({FluidName: "brine", Amount: 1000}), 2000,<minecraft:bucket>);

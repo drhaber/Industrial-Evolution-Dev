@@ -78,6 +78,9 @@ recipes.addShapeless(<railcraft:anvil>,[<tfc:metal/anvil/wrought_iron>]);
 mods.jei.JEI.addDescription(<minecraft:sand>,"Exposing Liquid Starlight to Lava seems to have a rather peculiar reaction...");
 //Paper
 #mods.terrafirmacraft.Barrel.addRecipe("Paper", <astralsorcery:itemcraftingcomponent:5>, <liquid:hot_water>*250, <minecraft:paper>, <liquid:hot_water>*0, 4);
+recipes.remove(<minecraft:paper>);
+recipes.addShaped(<minecraft:paper>,[
+	[<ore:pulpWood>,<ore:pulpWood>,<ore:pulpWood>]]);
 //Sandstone
 recipes.addShaped(<minecraft:sandstone>,[
 [<minecraft:sand>,<minecraft:sand>],

@@ -15,7 +15,7 @@ mods.horsepower.Recipes.addShaped(<ore:logWood>, <horsepower:chopper>, [[<ore:ge
 mods.jei.JEI.removeAndHide(<horsepower:hand_grindstone>);
 //Honey Drop
 mods.horsepower.Press.add(<ore:beeComb>, <forestry:honey_drop>*3);
-//Parchment
+//Paper
 mods.horsepower.Press.add(<ore:pulpWood>, <minecraft:paper>*3);
 mods.horsepower.Press.add(<emergingtechnology:paperpulp>, <minecraft:paper>*3);
 //Manual Chopping Block

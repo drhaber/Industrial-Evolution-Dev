@@ -6,6 +6,11 @@ furnace.setFuel(<tfc:ore/bituminous_coal>, 1600);
 furnace.setFuel(<tfc:ore/lignite>, 800);
 //Bowl
 <tfc:ceramics/fired/bowl>.displayName = "Clay Bowl";
+//Hot Water
+val fluidcontainers = [<tfc:wooden_bucket>,<minecraft:bucket>,<tfc:metal/bucket/red_steel>,<forestry:can>,<forestry:refractory>,<tfctech:ceramics/fluid_bowl>] as IItemStack[];
+for i, FC in fluidcontainers {
+mods.inspirations.Cauldron.addFluidRecipe(FC.withTag({Fluid: {FluidName: "hot_water", Amount: 1000}}), FC, <liquid:water>, 4, true);
+}
 //Sleeves
 recipes.addShaped(<tfctech:metal/tin_sleeve>*4,[
 	[null,<ore:sheetTin>,null],
