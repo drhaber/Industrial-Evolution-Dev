@@ -5,6 +5,12 @@ import crafttweaker.mods.IMod;
 import crafttweaker.liquid.ILiquidStack;
 import moretweaker.railcraft.RollingMachine;
 
+//Canister
+recipes.remove(<pressure:canister>);
+recipes.addShaped(<pressure:canister>,[
+	[<ore:stickPlastic>,<ore:sheetPlastic>,null],
+	[<ore:sheetPlastic>,null,<ore:sheetPlastic>],
+	[<ore:sheetPlastic>,<ore:sheetPlastic>,<ore:sheetPlastic>]]);
 //Little Tiles Tools
 recipes.remove(<littletiles:hammer>);
 recipes.addShaped(<littletiles:hammer>,[
