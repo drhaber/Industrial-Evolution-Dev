@@ -1,5 +1,7 @@
+import moretweaker.railcraft.RollingMachine;
 
-recipes.remove(<minecraft:glass_bottle>);
+//Bucket
+RollingMachine.addShapeless(<minecraft:bucket>, [<ore:sheetDoubleIron>]);
 //Black Stained Glass
 recipes.addShaped(<minecraft:stained_glass:15>*8,[
 	[<minecraft:glass>,<minecraft:glass>,<minecraft:glass>],
@@ -60,7 +62,7 @@ mods.jei.JEI.addDescription(<ore:craftingTableWood>,"Placing a crafting table in
 val CB = <ore:cobblestone>;
 recipes.addShaped(<minecraft:furnace>,[
 	[CB,CB,CB],
-	[CB,<tfc:bloomery>,CB],
+	[CB,null,CB],
 	[CB,CB,CB]]);
 //End Portal
 recipes.addShaped(<minecraft:end_portal_frame>,[
@@ -87,10 +89,16 @@ recipes.addShaped(<minecraft:sandstone>,[
 [<minecraft:sand>,<minecraft:sand>]]);
 //Charcoal 
 furnace.remove(<minecraft:coal:1>);
-//Leads
-recipes.remove(<minecraft:lead>);
 //Redstone Lamp
 recipes.addShaped(<minecraft:redstone_lamp>,[
 	[<minecraft:glowstone>],
 	[<quark:framed_glass>],
 	[<minecraft:redstone_torch>]]);
+//Concrete
+val Concrete = <minecraft:concrete>.definition;
+val ConcretePowder = <minecraft:concrete_powder>.definition;
+for i in 0 to 16{
+	var stringname = "concrete" ~ i as string;
+mods.terrafirmacraft.Barrel.addRecipe(stringname, ConcretePowder.makeStack(i), <liquid:water>*125, Concrete.makeStack(i), 8);
+}
+

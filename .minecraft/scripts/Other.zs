@@ -4,7 +4,38 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.mods.IMod;
 import crafttweaker.liquid.ILiquidStack;
 import moretweaker.railcraft.RollingMachine;
-
+/*
+//Bad Steel Tool Recipes
+recipes.remove(<tfc:metal/pick/steel>);
+recipes.addShaped(<tfc:metal/pick/steel>,[
+	[<tfc:metal/pick_head/steel>],
+	[<ore:stickWood>]]);
+recipes.remove(<tfc:metal/axe/steel>);
+recipes.addShaped(<tfc:metal/axe/steel>,[
+	[<tfc:metal/axe_head/steel>],
+	[<ore:stickWood>]]);
+recipes.remove(<tfc:metal/shovel/steel>);
+recipes.addShaped(<tfc:metal/shovel/steel>,[
+	[<tfc:metal/shovel_head/steel>],
+	[<ore:stickWood>]]);
+recipes.remove(<tfc:metal/sword/steel>);
+recipes.addShaped(<tfc:metal/sword/steel>,[
+	[<tfc:metal/sword_blade/steel>],
+	[<ore:stickWood>]]);	
+*/	
+//Bad Leather Recipes
+furnace.remove(<minecraft:leather>);
+//Batteries 
+recipes.remove(<libvulpes:battery>);
+recipes.addShaped(<libvulpes:battery>,[
+	[null,<ore:stripCopper>,null],
+	[<ore:paper>,<ore:dustPotassiumHydroxide>,<ore:paper>],
+	[null,<tfctech:metal/zinc_strip>,null]]);
+//Bleach
+mods.terrafirmacraft.Barrel.addRecipe("sodiumcarbonate", <ore:dustPotash>, <liquid:brine>*250, <contenttweaker:sodiumcarbonate>, 8);
+mods.terrafirmacraft.Barrel.addRecipe("bleach", <contenttweaker:sodiumcarbonate>, <liquid:limewater>*250, <liquid:bleach>*250, 24);
+//Potassium Hydroxide 
+mods.terrafirmacraft.Barrel.addRecipe("potassiumhydroxide ", <contenttweaker:potassiumcarbonate>, <liquid:limewater>*150, <nuclearcraft:compound:6>, 8);
 //Jack-o-Lantern
 recipes.remove(<minecraft:lit_pumpkin>);
 recipes.addShapeless(<minecraft:lit_pumpkin>,[<minecraft:pumpkin>,<ore:torch>,<ore:knife>.transformDamage(4)]);							
@@ -105,8 +136,6 @@ recipes.removeShapeless(beds.makeStack(i));
 }
 
 #=============================================================================================================================================		
-//Bucket
-RollingMachine.addShapeless(<minecraft:bucket>, [<ore:sheetDoubleIron>]);
 //Flopper
 recipes.remove(<flopper:flopper>);
 recipes.addShaped(<flopper:flopper>,[
@@ -166,7 +195,9 @@ mods.jei.JEI.addDescription(<quark:thatch_slab>,"Magic has made this thatch soli
 	}
 #=============================================================================================================================================		
 //Marble
-mods.terrafirmacraft.Barrel.addRecipe("Quark_marble", <tfc:raw/marble>, <liquid:hot_water>*250, <quark:marble>, 4);
+mods.terrafirmacraft.Barrel.addRecipe("Quark_marble", <tfc:raw/marble>, <liquid:bleach>*50, <quark:marble>, 4);
+mods.terrafirmacraft.Barrel.addRecipe("Astral_marble", <quark:marble>, <liquid:bleach>*50, <astralsorcery:blockmarble>, 4);
+
 //Lithium
 furnace.addRecipe(<nuclearcraft:dust:6>*4, <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "brine", Amount: 1000}}));
 mods.immersiveengineering.BlastFurnace.addRecipe(<nuclearcraft:dust:6>*4, <forge:bucketfilled>.withTag({FluidName: "brine", Amount: 1000}), 2000,<minecraft:bucket>);
@@ -188,6 +219,7 @@ recipes.addShaped(<contenttweaker:glowstring>,[
 furnace.addRecipe(<projectred-core:resource_item>*2, <ore:stone>);
 mods.jei.JEI.removeAndHide(<projectred-transmission:wire:34>, false);
 mods.jei.JEI.removeAndHide(<projectred-transmission:framed_wire:34>, false);
+mods.jei.JEI.removeAndHide(<projectred-core:resource_item:252>, false);
 recipes.addShapeless(<projectred-core:resource_item:301> * 8, [<ore:saw>.transformDamage(7), <projectred-core:resource_item:300>]);
 furnace.remove(<projectred-core:resource_item:104>);
 furnace.remove(<projectred-core:resource_item:342>);
@@ -203,9 +235,6 @@ mods.jei.JEI.hide(<projectred-core:resource_item:100>);
 mods.jei.JEI.hide(<projectred-core:resource_item:600>);
 #=============================================================================================================================================		
 
-//Culinary Construct
-mods.jei.JEI.hide(<culinaryconstruct:sandwich>);
-mods.jei.JEI.addDescription(<culinaryconstruct:sandwich_station>,"Using Bread and up to any five food items, this unique crafting station can dynamically create sandwiches.");
 //OSISA
 mods.jei.JEI.addDescription(<appliedenergistics2:sky_stone_chest>,"The seemingly Magic like nature of this alien stone enables storage properties many would consider to be... Unnatural.");
 mods.jei.JEI.addDescription(<appliedenergistics2:smooth_sky_stone_chest>,"The seemingly Magic like nature of this alien stone enables storage properties many would consider to be... Unnatural.");
@@ -252,108 +281,3 @@ recipes.addShaped(VanillaBoats[i],[
 }	
 #=============================================================================================================================================		
 
-//Rolled Knapping Recipes
-	RollingMachine.addShaped(<tconstruct:stone_stick>*3,[
-		[null,null,<ore:rock>],
-		[null,<ore:rock>,null],
-		[<ore:rock>,null,null]]);
-	//Igneous Intrusive
-	RollingMachine.addShaped(<tfc:stone/axe_head/igneous_intrusive>,[
-		[null,<ore:rockIgneousIntrusive>,<ore:rockIgneousIntrusive>],
-		[null,null,<ore:rockIgneousIntrusive>],
-		[null,null,null]]);
-	RollingMachine.addShaped(<tfc:stone/shovel_head/igneous_intrusive>,[
-		[null,<ore:rockIgneousIntrusive>,null],
-		[null,null,null],
-		[null,null,null]]);
-	RollingMachine.addShaped(<tfc:stone/hoe_head/igneous_intrusive>,[
-		[<ore:rockIgneousIntrusive>,<ore:rockIgneousIntrusive>,null],
-		[null,null,null],
-		[null,null,null]]);
-	RollingMachine.addShaped(<tfc:stone/knife_head/igneous_intrusive>*3,[
-		[<ore:rockIgneousIntrusive>,<ore:rockIgneousIntrusive>,<ore:rockIgneousIntrusive>],
-		[null,<ore:rockIgneousIntrusive>,<ore:rockIgneousIntrusive>],
-		[null,null,null]]);
-	RollingMachine.addShaped(<tfc:stone/javelin_head/igneous_intrusive>,[
-		[<ore:rockIgneousIntrusive>,<ore:rockIgneousIntrusive>,<ore:rockIgneousIntrusive>],
-		[<ore:rockIgneousIntrusive>,<ore:rockIgneousIntrusive>,null],
-		[<ore:rockIgneousIntrusive>,null,<ore:rockIgneousIntrusive>]]);
-	RollingMachine.addShaped(<tfc:stone/hammer_head/igneous_intrusive>,[
-		[<ore:rockIgneousIntrusive>,<ore:rockIgneousIntrusive>,<ore:rockIgneousIntrusive>],
-		[<ore:rockIgneousIntrusive>,<ore:rockIgneousIntrusive>,<ore:rockIgneousIntrusive>],
-		[null,<ore:rockIgneousIntrusive>,null]]);		
-	//Igneous Extrusive
-	RollingMachine.addShaped(<tfc:stone/axe_head/igneous_extrusive>,[
-		[null,<ore:rockIgneousExtrusive>,<ore:rockIgneousExtrusive>],
-		[null,null,<ore:rockIgneousExtrusive>],
-		[null,null,null]]);
-	RollingMachine.addShaped(<tfc:stone/shovel_head/igneous_extrusive>,[
-		[null,<ore:rockIgneousExtrusive>,null],
-		[null,null,null],
-		[null,null,null]]);
-	RollingMachine.addShaped(<tfc:stone/hoe_head/igneous_extrusive>,[
-		[<ore:rockIgneousExtrusive>,<ore:rockIgneousExtrusive>,null],
-		[null,null,null],
-		[null,null,null]]);
-	RollingMachine.addShaped(<tfc:stone/knife_head/igneous_extrusive>*3,[
-		[<ore:rockIgneousExtrusive>,<ore:rockIgneousExtrusive>,<ore:rockIgneousExtrusive>],
-		[null,<ore:rockIgneousExtrusive>,<ore:rockIgneousExtrusive>],
-		[null,null,null]]);
-	RollingMachine.addShaped(<tfc:stone/javelin_head/igneous_extrusive>,[
-		[<ore:rockIgneousExtrusive>,<ore:rockIgneousExtrusive>,<ore:rockIgneousExtrusive>],
-		[<ore:rockIgneousExtrusive>,<ore:rockIgneousExtrusive>,null],
-		[<ore:rockIgneousExtrusive>,null,<ore:rockIgneousExtrusive>]]);
-	RollingMachine.addShaped(<tfc:stone/hammer_head/igneous_extrusive>,[
-		[<ore:rockIgneousExtrusive>,<ore:rockIgneousExtrusive>,<ore:rockIgneousExtrusive>],
-		[<ore:rockIgneousExtrusive>,<ore:rockIgneousExtrusive>,<ore:rockIgneousExtrusive>],
-		[null,<ore:rockIgneousExtrusive>,null]]);	
-	//Sedimentary
-	RollingMachine.addShaped(<tfc:stone/axe_head/sedimentary>,[
-		[null,<ore:rockSedimentary>,<ore:rockSedimentary>],
-		[null,null,<ore:rockSedimentary>],
-		[null,null,null]]);
-	RollingMachine.addShaped(<tfc:stone/shovel_head/sedimentary>,[
-		[null,<ore:rockSedimentary>,null],
-		[null,null,null],
-		[null,null,null]]);
-	RollingMachine.addShaped(<tfc:stone/hoe_head/sedimentary>,[
-		[<ore:rockSedimentary>,<ore:rockSedimentary>,null],
-		[null,null,null],
-		[null,null,null]]);
-	RollingMachine.addShaped(<tfc:stone/knife_head/sedimentary>*3,[
-		[<ore:rockSedimentary>,<ore:rockSedimentary>,<ore:rockSedimentary>],
-		[null,<ore:rockSedimentary>,<ore:rockSedimentary>],
-		[null,null,null]]);
-	RollingMachine.addShaped(<tfc:stone/javelin_head/sedimentary>,[
-		[<ore:rockSedimentary>,<ore:rockSedimentary>,<ore:rockSedimentary>],
-		[<ore:rockSedimentary>,<ore:rockSedimentary>,null],
-		[<ore:rockSedimentary>,null,<ore:rockSedimentary>]]);
-	RollingMachine.addShaped(<tfc:stone/hammer_head/sedimentary>,[
-		[<ore:rockSedimentary>,<ore:rockSedimentary>,<ore:rockSedimentary>],
-		[<ore:rockSedimentary>,<ore:rockSedimentary>,<ore:rockSedimentary>],
-		[null,<ore:rockSedimentary>,null]]);	
-	//Metamorphic
-	RollingMachine.addShaped(<tfc:stone/axe_head/metamorphic>,[
-		[null,<ore:rockMetamorphic>,<ore:rockMetamorphic>],
-		[null,null,<ore:rockMetamorphic>],
-		[null,null,null]]);
-	RollingMachine.addShaped(<tfc:stone/shovel_head/metamorphic>,[
-		[null,<ore:rockMetamorphic>,null],
-		[null,null,null],
-		[null,null,null]]);
-	RollingMachine.addShaped(<tfc:stone/hoe_head/metamorphic>,[
-		[<ore:rockMetamorphic>,<ore:rockMetamorphic>,null],
-		[null,null,null],
-		[null,null,null]]);
-	RollingMachine.addShaped(<tfc:stone/knife_head/metamorphic>*3,[
-		[<ore:rockMetamorphic>,<ore:rockMetamorphic>,<ore:rockMetamorphic>],
-		[null,<ore:rockMetamorphic>,<ore:rockMetamorphic>],
-		[null,null,null]]);
-	RollingMachine.addShaped(<tfc:stone/javelin_head/metamorphic>,[
-		[<ore:rockMetamorphic>,<ore:rockMetamorphic>,<ore:rockMetamorphic>],
-		[<ore:rockMetamorphic>,<ore:rockMetamorphic>,null],
-		[<ore:rockMetamorphic>,null,<ore:rockMetamorphic>]]);
-	RollingMachine.addShaped(<tfc:stone/hammer_head/metamorphic>,[
-		[<ore:rockMetamorphic>,<ore:rockMetamorphic>,<ore:rockMetamorphic>],
-		[<ore:rockMetamorphic>,<ore:rockMetamorphic>,<ore:rockMetamorphic>],
-		[null,<ore:rockMetamorphic>,null]]);	

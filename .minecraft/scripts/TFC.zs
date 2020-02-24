@@ -1,6 +1,26 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
+import moretweaker.railcraft.RollingMachine;
+
+//Cheaper Glass Machines
+recipes.remove(<tfctech:smeltery_firebox>);
+recipes.addShaped(<tfctech:smeltery_firebox>,[
+	[<tfctech:metal/black_bronze_long_rod>,<tfc:ceramics/fired/fire_brick>,],
+	[<tfc:ceramics/fired/fire_brick>,null,<tfc:ceramics/fired/fire_brick>],
+	[<tfctech:metal/black_bronze_long_rod>,<tfc:ceramics/fired/fire_brick>,<tfctech:metal/black_bronze_long_rod>]]);
+recipes.remove(<tfctech:smeltery_cauldron>);
+recipes.addShaped(<tfctech:smeltery_cauldron>,[
+	[<ore:sheetBlackBronze>,<ore:sheetBlackBronze>,<ore:sheetBlackBronze>],
+	[<ore:sheetBlackBronze>,null,<ore:sheetBlackBronze>],
+	[<tfctech:metal/black_bronze_long_rod>,null,<tfctech:metal/black_bronze_long_rod>]]);	
+//Cheaper Buckets
+mods.terrafirmacraft.Anvil.removeRecipe(<tfc:metal/bucket/red_steel>);
+<tfc:metal/bucket/red_steel>.displayName = "Copper Bucket";
+RollingMachine.addShapeless(<tfc:metal/bucket/red_steel>, [<ore:sheetDoubleCopper>]);
+mods.terrafirmacraft.Anvil.removeRecipe(<tfc:metal/bucket/blue_steel>);
+<tfc:metal/bucket/blue_steel>.displayName = "Mithril Bucket";
+RollingMachine.addShapeless(<tfc:metal/bucket/blue_steel>, [<ore:sheetDoubleMithril>]);
 //Wrench Head
 mods.terrafirmacraft.Anvil.addRecipe("Iron_Wrench_Head", <ore:ingotWroughtIron>, <contenttweaker:ironwrenchhead>, 3, "general","BEND_NOT_LAST","SHRINK_NOT_LAST","DRAW_LAST");
 //Coals
@@ -30,12 +50,9 @@ recipes.addShaped(<tfctech:metal/steel_sleeve>*4,[
 mods.terrafirmacraft.Quern.addRecipe("Soot", <ore:charcoal>, <contenttweaker:soot>*4);
 //Saw Dust
 mods.terrafirmacraft.Quern.addRecipe("Sawdust", <ore:logWood>, <tfctech:powder/wood>*4);
-//Glass_Bottle
-#mods.terrafirmacraft.ItemRegistry.registerItemHeat(<minecraft:glass>, 0.35, 1300, true);
-#mods.terrafirmacraft.ItemRegistry.registerItemHeat(<minecraft:glass_bottle>, 0.35, 1300, true);
-#mods.terrafirmacraft.ItemRegistry.registerItemHeat(<contenttweaker:splashbottle>, 0.35, 1300, true);
-#mods.terrafirmacraft.Anvil.addRecipe("Glass_Bottle", <minecraft:glass>, <minecraft:glass_bottle>, 1, "general","BEND_NOT_LAST","SHRINK_NOT_LAST","DRAW_LAST");
-#mods.terrafirmacraft.Anvil.addRecipe("Splash_Bottle", <minecraft:glass_bottle>, <contenttweaker:splashbottle>, 1, "general","BEND_NOT_LAST","SHRINK_NOT_LAST","DRAW_LAST");
+//Flux from Soot and Potash
+recipes.addShapeless(<tfc:powder/flux>*2,[<contenttweaker:soot>,<tfctech:powder/potash>,<botania:pestleandmortar>.giveBack()]);							
+
 //TFC Coal Stack Size
 <tfc:ore/bituminous_coal>.maxStackSize = 32;
 //Silicon
@@ -135,14 +152,37 @@ mods.terrafirmacraft.LeatherKnapping.addRecipe("leather_glove_Knap", <contenttwe
 																	"XXXXX", 
 																	"XXXXX", 
 																	" XXX ");
-mods.terrafirmacraft.LeatherKnapping.addRecipe("lead_Knap", <minecraft:lead>, 
+mods.terrafirmacraft.LeatherKnapping.addRecipe("lead_Knap", <minecraft:lead>*3, 
 																	"XXXXX", 
 																	"X   X", 
 																	"XXXXX", 
 																	"   X ", 
-																	"XXX  ");																																																																					
+																	"XXX  ");	
+mods.tfctech.Glassworking.addRecipe("splash_bottle_knap", <inspirations:materials:2>*2,
+																	"   X ", 
+																	"  X  ", 
+																	" X X ", 
+																	"X   X", 
+																	" XXX ");
+mods.tfctech.Glassworking.addRecipe("lingering_bottle_knap", <inspirations:materials:3>,
+																	"     ", 
+																	" x x ", 
+																	"  X  ", 
+																	"X   X", 
+																	" XXX ");
+mods.tfctech.Glassworking.addRecipe("quick_vial_knap", <extraalchemy:vial_break>*3,
+																	"  X  ", 
+																	" X X ", 
+																	" X X ", 
+																	" X X ", 
+																	" XXX ");																																																																																																																									
 #=============================================================================================================================================		
-
+//Removed Cause Knapping
+recipes.remove(<minecraft:lead>);
+recipes.remove(<inspirations:materials:3>);
+recipes.remove(<inspirations:materials:3>);
+recipes.remove(<extraalchemy:vial_break>);
+recipes.remove(<minecraft:glass_bottle>);
 //TFC Mettallum Missing Recipes																	
 //Anvils
 val Anvils = [<tfc:metal/anvil/mithril>,<tfc:metal/anvil/invar>,<tfc:metal/anvil/aluminium>,<tfc:metal/anvil/cobalt>,<tfc:metal/anvil/manyullyn>,<tfc:metal/anvil/osmium>,<tfc:metal/anvil/titanium>,<tfc:metal/anvil/tungsten>,<tfc:metal/anvil/tungsten_steel>] as IItemStack[];

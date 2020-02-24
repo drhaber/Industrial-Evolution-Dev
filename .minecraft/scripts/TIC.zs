@@ -54,8 +54,6 @@ mods.tconstruct.Casting.addTableRecipe(Illumar.makeStack(i+500), dyes[i], <liqui
 }
 mods.tconstruct.Casting.removeBasinRecipe(<tconstruct:clear_glass>);
 mods.tconstruct.Casting.addBasinRecipe(<tconstruct:clear_glass>*8, null, <liquid:glass>, 1000, false, 180);
-//Glass Bottle
-mods.tconstruct.Casting.addTableRecipe(<minecraft:glass_bottle>*4,<ore:tuyere>, <liquid:glass>, 250, true, 90);
 //Shard
 mods.tconstruct.Melting.addRecipe(<liquid:glass> * 250,<ore:shardGlass>);
 //Crystals

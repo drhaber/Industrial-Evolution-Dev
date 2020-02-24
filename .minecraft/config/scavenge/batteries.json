@@ -1,0 +1,30 @@
+{
+	"block_pools" :
+	[
+		{
+			"name": "battery",
+			"type":
+			{
+				"type": "block",
+				"name": "immersiveengineering:metal_device0"
+			},
+			"clicktype": "right",
+			"properties":
+			[
+				{
+					"type": "require_item",
+					"name": "libvulpes:battery"
+				},
+				{
+					"type": "consume_item",
+					"amount": 1
+				},
+				{
+          "type": "modify_Block_FE",
+          "consume": "false",
+					"amount": 1000
+				}
+			]
+		}
+	]
+}

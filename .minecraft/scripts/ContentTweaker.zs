@@ -5,6 +5,14 @@ import mods.contenttweaker.Color;
 import mods.contenttweaker.Item;
 import crafttweaker.game.IGame;
 
+//sodiumcarbonate
+var sodiumcarbonate = VanillaFactory.createItem("sodiumcarbonate");
+sodiumcarbonate.register();
+game.setLocalization("item.contenttweaker.sodiumcarbonate.name", "Sodium Carbonate");
+//potassiumcarbonate
+var potassiumcarbonate = VanillaFactory.createItem("potassiumcarbonate");
+potassiumcarbonate.register();
+game.setLocalization("item.contenttweaker.potassiumcarbonate.name", "Potassium Carbonate");
 //LeatherBag
 var leatherbag = VanillaFactory.createItem("leatherbag");
 leatherbag.register();
@@ -83,3 +91,10 @@ LiquidCarbonSolution.viscosity = 3000;
 LiquidCarbonSolution.temperature= 100;
 LiquidCarbonSolution.register();
 game.setLocalization("fluid.LiquidCarbonSolution", "Liquid Carbon Solution");
+
+//Bleach
+var bleach = VanillaFactory.createFluid("bleach", Color.fromHex("CFD74F"));
+bleach.viscosity = 3000;
+bleach.temperature= 100;
+bleach.register();
+game.setLocalization("fluid.bleach", "Bleach");
