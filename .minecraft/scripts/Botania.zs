@@ -3,6 +3,9 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry; 
 import mods.botania.PureDaisy;
 
+//Mana Steel
+mods.botania.ManaInfusion.removeRecipe(<botania:manaresource>);
+mods.botania.ManaInfusion.addInfusion(<botania:manaresource>, <tfc:metal/ingot/pig_iron>, 10000);
 //Hand of Ender
 recipes.remove(<botania:enderhand>);
 recipes.addShaped(<botania:enderhand>,[
