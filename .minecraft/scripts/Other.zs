@@ -5,6 +5,9 @@ import crafttweaker.mods.IMod;
 import crafttweaker.liquid.ILiquidStack;
 import moretweaker.railcraft.RollingMachine;
 
+//Jack-o-Lantern
+recipes.remove(<minecraft:lit_pumpkin>);
+recipes.addShapeless(<minecraft:lit_pumpkin>,[<minecraft:pumpkin>,<ore:torch>,<ore:knife>.transformDamage(4)]);							
 //Canister
 recipes.remove(<pressure:canister>);
 recipes.addShaped(<pressure:canister>,[
