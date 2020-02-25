@@ -168,6 +168,13 @@
 		[
 		"tfc"
 		]
+	},		
+	{
+		"kindName" : "food",
+		"modIdPriorityList" :
+		[
+		"tfc"
+		]
 	},			
 	{
 		"kindName" : "sheet",

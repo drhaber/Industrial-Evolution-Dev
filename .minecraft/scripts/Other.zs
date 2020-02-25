@@ -285,14 +285,24 @@ val remove = [<ore:plateBrass>,<ore:plateZinc>,<ore:plateInvar>,<ore:plateNickel
 for i in remove{
 RollingMachine.remove(i);
 }
-val sheets = [<tfc:metal/sheet/tungsten>,<tfc:metal/sheet/black_bronze>,<tfc:metal/sheet/red_steel>,<tfc:metal/sheet/invar>,
-<tfc:metal/sheet/aluminium>,<tfc:metal/sheet/wrought_iron>,<tfc:metal/sheet/black_steel>,<tfc:metal/sheet/mithril>,
-<tfc:metal/sheet/titanium>,<tfc:metal/sheet/manyullyn>,<tfc:metal/sheet/copper>,<tfc:metal/sheet/osmium>,<tfc:metal/sheet/steel>,
-<tfc:metal/sheet/tungsten_steel>,<tfc:metal/sheet/bronze>,<tfc:metal/sheet/blue_steel>,<tfc:metal/sheet/cobalt>,<tfc:metal/sheet/bismuth_bronze>] as IItemStack[];
-val ingots = [<tfc:metal/ingot/tungsten>,<tfc:metal/ingot/black_bronze>,<tfc:metal/ingot/red_steel>,<tfc:metal/ingot/invar>,
-<tfc:metal/ingot/aluminium>,<tfc:metal/ingot/wrought_iron>,<tfc:metal/ingot/black_steel>,<tfc:metal/ingot/mithril>,
-<tfc:metal/ingot/titanium>,<tfc:metal/ingot/manyullyn>,<tfc:metal/ingot/copper>,<tfc:metal/ingot/osmium>,<tfc:metal/ingot/steel>,
-<tfc:metal/ingot/tungsten_steel>,<tfc:metal/ingot/bronze>,<tfc:metal/ingot/blue_steel>,<tfc:metal/ingot/cobalt>,<tfc:metal/ingot/bismuth_bronze>] as IItemStack[];
+
+val sheets =[<tfc:metal/sheet/bismuth>,<tfc:metal/sheet/bismuth_bronze>,<tfc:metal/sheet/black_bronze>,<tfc:metal/sheet/brass>,
+<tfc:metal/sheet/bronze>,<tfc:metal/sheet/copper>,<tfc:metal/sheet/gold>,<tfc:metal/sheet/lead>,<tfc:metal/sheet/nickel>,
+<tfc:metal/sheet/rose_gold>,<tfc:metal/sheet/silver>,<tfc:metal/sheet/tin>,<tfc:metal/sheet/zinc>,<tfc:metal/sheet/sterling_silver>,
+<tfc:metal/sheet/wrought_iron>,<tfc:metal/sheet/pig_iron>,<tfc:metal/sheet/steel>,<tfc:metal/sheet/platinum>,<tfc:metal/sheet/black_steel>,
+<tfc:metal/sheet/blue_steel>,<tfc:metal/sheet/red_steel>,<tfc:metal/sheet/antimony>,<tfc:metal/sheet/constantan>,
+<tfc:metal/sheet/electrum>,<tfc:metal/sheet/mithril>,<tfc:metal/sheet/invar>,<tfc:metal/sheet/aluminium>,<tfc:metal/sheet/aluminium_brass>,
+<tfc:metal/sheet/ardite>,<tfc:metal/sheet/cobalt>,<tfc:metal/sheet/manyullyn>,<tfc:metal/sheet/osmium>,<tfc:metal/sheet/titanium>,
+<tfc:metal/sheet/tungsten>,<tfc:metal/sheet/tungsten_steel>] as IItemStack[];
+
+val ingots =[<tfc:metal/ingot/bismuth>,<tfc:metal/ingot/bismuth_bronze>,<tfc:metal/ingot/black_bronze>,<tfc:metal/ingot/brass>,
+<tfc:metal/ingot/bronze>,<tfc:metal/ingot/copper>,<tfc:metal/ingot/gold>,<tfc:metal/ingot/lead>,<tfc:metal/ingot/nickel>,
+<tfc:metal/ingot/rose_gold>,<tfc:metal/ingot/silver>,<tfc:metal/ingot/tin>,<tfc:metal/ingot/zinc>,<tfc:metal/ingot/sterling_silver>,
+<tfc:metal/ingot/wrought_iron>,<tfc:metal/ingot/pig_iron>,<tfc:metal/ingot/steel>,<tfc:metal/ingot/platinum>,<tfc:metal/ingot/black_steel>,
+<tfc:metal/ingot/blue_steel>,<tfc:metal/ingot/red_steel>,<tfc:metal/ingot/antimony>,<tfc:metal/ingot/constantan>,
+<tfc:metal/ingot/electrum>,<tfc:metal/ingot/mithril>,<tfc:metal/ingot/invar>,<tfc:metal/ingot/aluminium>,<tfc:metal/ingot/aluminium_brass>,
+<tfc:metal/ingot/ardite>,<tfc:metal/ingot/cobalt>,<tfc:metal/ingot/manyullyn>,<tfc:metal/ingot/osmium>,<tfc:metal/ingot/titanium>,
+<tfc:metal/ingot/tungsten>,<tfc:metal/ingot/tungsten_steel>] as IItemStack[];
 
 for i, iIngot in ingots{
 RollingMachine.addShaped(sheets[i]*2,[[iIngot,iIngot],[iIngot,iIngot]], 300);

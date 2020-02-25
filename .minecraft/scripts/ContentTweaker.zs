@@ -2,6 +2,7 @@
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Fluid;
 import mods.contenttweaker.Color;
+import mods.contenttweaker.Block;
 import mods.contenttweaker.Item;
 import crafttweaker.game.IGame;
 
@@ -98,3 +99,19 @@ bleach.viscosity = 3000;
 bleach.temperature= 100;
 bleach.register();
 game.setLocalization("fluid.bleach", "Bleach");
+
+#=============================================================================================================================================	
+
+var dirtyglass = VanillaFactory.createBlock("dirtyglass", <blockmaterial:glass>);
+dirtyglass.setFullBlock(false);
+dirtyglass.setBlockLayer("TRANSLUCENT");
+dirtyglass.setLightOpacity(3);
+dirtyglass.setLightValue(0);
+dirtyglass.setTranslucent(true);
+dirtyglass.setBlockHardness(5.0);
+dirtyglass.setBlockResistance(5.0);
+dirtyglass.setToolClass("pickaxe");
+dirtyglass.setToolLevel(0);
+dirtyglass.setBlockSoundType(<soundtype:glass>);
+dirtyglass.register();
+game.setLocalization("tile.contenttweaker.dirtyglass.name", "Dirty Glass");

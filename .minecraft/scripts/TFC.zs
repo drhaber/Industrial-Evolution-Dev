@@ -3,7 +3,12 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import moretweaker.railcraft.RollingMachine;
 
-//Cheaper Glass Machines
+//Cheaper Glass
+mods.terrafirmacraft.ItemRegistry.registerItemHeat(<contenttweaker:dirtyglass>, 0.35, 1350, false);
+var sands = <ore:tfcSand>.items;
+for i, sand in sands{
+mods.terrafirmacraft.Heating.addRecipe("dirty_glass"~i, sand, <contenttweaker:dirtyglass>, 630, 1300);
+}
 recipes.remove(<tfctech:smeltery_firebox>);
 recipes.addShaped(<tfctech:smeltery_firebox>,[
 	[<tfctech:metal/black_bronze_long_rod>,<tfc:ceramics/fired/fire_brick>,<tfctech:metal/black_bronze_long_rod>],
