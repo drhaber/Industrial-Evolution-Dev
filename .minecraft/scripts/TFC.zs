@@ -6,7 +6,7 @@ import moretweaker.railcraft.RollingMachine;
 //Cheaper Glass Machines
 recipes.remove(<tfctech:smeltery_firebox>);
 recipes.addShaped(<tfctech:smeltery_firebox>,[
-	[<tfctech:metal/black_bronze_long_rod>,<tfc:ceramics/fired/fire_brick>,],
+	[<tfctech:metal/black_bronze_long_rod>,<tfc:ceramics/fired/fire_brick>,<tfctech:metal/black_bronze_long_rod>],
 	[<tfc:ceramics/fired/fire_brick>,null,<tfc:ceramics/fired/fire_brick>],
 	[<tfctech:metal/black_bronze_long_rod>,<tfc:ceramics/fired/fire_brick>,<tfctech:metal/black_bronze_long_rod>]]);
 recipes.remove(<tfctech:smeltery_cauldron>);
