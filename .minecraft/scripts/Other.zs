@@ -280,4 +280,20 @@ recipes.addShaped(VanillaBoats[i],[
 	[VanillaPlanks.makeStack(i),VanillaPlanks.makeStack(i),VanillaPlanks.makeStack(i)]]);	
 }	
 #=============================================================================================================================================		
+//Rolling Machines Sheets
+val remove = [<ore:plateBrass>,<ore:plateZinc>,<ore:plateInvar>,<ore:plateNickel>,<ore:plateGold>,<ore:plateBronze>,<ore:plateSilver>,<ore:plateLead>,<ore:plateCopper>,<ore:plateTin>,<ore:plateSteel>,<ore:plateIron>,<railcraft:gear:3>] as IIngredient[];
+for i in remove{
+RollingMachine.remove(i);
+}
+val sheets = [<tfc:metal/sheet/tungsten>,<tfc:metal/sheet/black_bronze>,<tfc:metal/sheet/red_steel>,<tfc:metal/sheet/invar>,
+<tfc:metal/sheet/aluminium>,<tfc:metal/sheet/wrought_iron>,<tfc:metal/sheet/black_steel>,<tfc:metal/sheet/mithril>,
+<tfc:metal/sheet/titanium>,<tfc:metal/sheet/manyullyn>,<tfc:metal/sheet/copper>,<tfc:metal/sheet/osmium>,<tfc:metal/sheet/steel>,
+<tfc:metal/sheet/tungsten_steel>,<tfc:metal/sheet/bronze>,<tfc:metal/sheet/blue_steel>,<tfc:metal/sheet/cobalt>,<tfc:metal/sheet/bismuth_bronze>] as IItemStack[];
+val ingots = [<tfc:metal/ingot/tungsten>,<tfc:metal/ingot/black_bronze>,<tfc:metal/ingot/red_steel>,<tfc:metal/ingot/invar>,
+<tfc:metal/ingot/aluminium>,<tfc:metal/ingot/wrought_iron>,<tfc:metal/ingot/black_steel>,<tfc:metal/ingot/mithril>,
+<tfc:metal/ingot/titanium>,<tfc:metal/ingot/manyullyn>,<tfc:metal/ingot/copper>,<tfc:metal/ingot/osmium>,<tfc:metal/ingot/steel>,
+<tfc:metal/ingot/tungsten_steel>,<tfc:metal/ingot/bronze>,<tfc:metal/ingot/blue_steel>,<tfc:metal/ingot/cobalt>,<tfc:metal/ingot/bismuth_bronze>] as IItemStack[];
 
+for i, iIngot in ingots{
+RollingMachine.addShaped(sheets[i]*2,[[iIngot,iIngot],[iIngot,iIngot]], 300);
+}
