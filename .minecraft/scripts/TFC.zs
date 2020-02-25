@@ -165,9 +165,9 @@ mods.tfctech.Glassworking.addRecipe("splash_bottle_knap", <inspirations:material
 																	"X   X", 
 																	" XXX ");
 mods.tfctech.Glassworking.addRecipe("lingering_bottle_knap", <inspirations:materials:3>,
-																	"     ", 
-																	" x x ", 
+																	" X X ", 
 																	"  X  ", 
+																	" XXX  ", 
 																	"X   X", 
 																	" XXX ");
 mods.tfctech.Glassworking.addRecipe("quick_vial_knap", <extraalchemy:vial_break>*3,
@@ -179,7 +179,7 @@ mods.tfctech.Glassworking.addRecipe("quick_vial_knap", <extraalchemy:vial_break>
 #=============================================================================================================================================		
 //Removed Cause Knapping
 recipes.remove(<minecraft:lead>);
-recipes.remove(<inspirations:materials:3>);
+recipes.remove(<inspirations:materials:2>);
 recipes.remove(<inspirations:materials:3>);
 recipes.remove(<extraalchemy:vial_break>);
 recipes.remove(<minecraft:glass_bottle>);
