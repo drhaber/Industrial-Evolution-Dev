@@ -167,7 +167,7 @@ mods.tfctech.Glassworking.addRecipe("splash_bottle_knap", <inspirations:material
 mods.tfctech.Glassworking.addRecipe("lingering_bottle_knap", <inspirations:materials:3>,
 																	" X X ", 
 																	"  X  ", 
-																	" XXX  ", 
+																	" XXX ", 
 																	"X   X", 
 																	" XXX ");
 mods.tfctech.Glassworking.addRecipe("quick_vial_knap", <extraalchemy:vial_break>*3,
