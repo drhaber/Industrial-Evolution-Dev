@@ -15,3 +15,10 @@ mods.forestry.Carpenter.addRecipe(iPlanks[i]*4,[
     [il,il,null],
     [il,il,null]],30,<liquid:water>*50);
 }    
+
+//Compost
+recipes.remove(<forestry:fertilizer_bio>);
+recipes.addShaped(<forestry:fertilizer_bio>*4,[
+	[<ore:itemFood>,<ore:itemFood>,<ore:itemFood>],
+	[<ore:itemFood>,<ore:dirt>,<ore:itemFood>],
+	[<ore:itemFood>,<ore:itemFood>,<ore:itemFood>]]);

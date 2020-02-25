@@ -30,6 +30,8 @@ mods.terrafirmacraft.Anvil.removeRecipe(<tfc:metal/bucket/blue_steel>);
 mods.terrafirmacraft.Heating.addRecipe("destroy_blue", <tfc:metal/bucket/blue_steel>, <tfc:metal/scrap/mithril>, 700, 1300);
 <tfc:metal/bucket/blue_steel>.displayName = "Mithril Bucket";
 RollingMachine.addShapeless(<tfc:metal/bucket/blue_steel>, [<ore:sheetDoubleMithril>]);
+//Salt
+mods.rustic.EvaporatingBasin.addRecipe(<tfc:powder/salt>, <liquid:salt_water>*250);
 //Wrench Head
 mods.terrafirmacraft.Anvil.addRecipe("Iron_Wrench_Head", <ore:ingotWroughtIron>, <contenttweaker:ironwrenchhead>, 3, "general","BEND_NOT_LAST","SHRINK_NOT_LAST","DRAW_LAST");
 //Coals
