@@ -11,7 +11,7 @@ import moretweaker.railcraft.RollingMachine;
 mods.rustic.CrushingTub.addRecipe(<liquid:ice>*250, null, <minecraft:snowball>);
 //Alchemy Bag
 recipes.remove(<extraalchemy:potion_bag>);
-recipes.addShaped(<extraalchemy:potion_bag>),[
+recipes.addShaped(<extraalchemy:potion_bag>,[
 	[<extraalchemy:vial_break>,<extraalchemy:vial_break>,<extraalchemy:vial_break>],
 	[null,<contenttweaker:leatherbag>,null]]);
 //Bad Leather Recipes

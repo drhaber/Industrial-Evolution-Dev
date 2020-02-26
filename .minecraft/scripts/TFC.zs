@@ -50,6 +50,10 @@ mods.inspirations.Cauldron.addFluidRecipe(FC.withTag({Fluid: {FluidName: "hot_wa
 mods.inspirations.Cauldron.addFluidRecipe(FC.withTag({Fluid: {FluidName: "hot_water", Amount: 1000}}), FC, <liquid:fresh_water>, 4, true);
 mods.inspirations.Cauldron.addFillRecipe(FC.withTag({Fluid: {FluidName: "ice", Amount: 1000}}), <liquid:fresh_water>, 4,FC);
 }
+//Fresh Water Jug
+mods.inspirations.Cauldron.addFluidRecipe(<tfc:ceramics/fired/jug>.withTag({Fluid: {FluidName: "fresh_water", Amount: 100}}), <tfc:ceramics/fired/jug>, <liquid:fresh_water>, 2, false);
+mods.inspirations.Cauldron.addFluidRecipe(<tfc:ceramics/fired/jug>.withTag({Fluid: {FluidName: "fresh_water", Amount: 100}}), <tfc:ceramics/fired/jug>, <liquid:water>, 2, true);
+mods.inspirations.Cauldron.addFluidRecipe(<tfc:ceramics/fired/jug>.withTag({Fluid: {FluidName: "fresh_water", Amount: 100}}), <tfc:ceramics/fired/jug>, <liquid:ice>, 2, true);
 //Sleeves
 recipes.addShaped(<tfctech:metal/tin_sleeve>*4,[
 	[null,<ore:sheetTin>,null],
