@@ -63,8 +63,8 @@ for i in 0 to 9{
 mods.tconstruct.Casting.addBasinRecipe(crystalBlocks.makeStack(i), ReducedDyes[i], <liquid:quartz>, 125, true, 180);
 }
 mods.tconstruct.Melting.addRecipe(<liquid:quartz>*666,<ore:dustQuartz>);
-//Casting Table TFC Tool Parts
 
+//Casting Table TFC Tool Parts
 val castingMetal = [<liquid:tungsten>,<liquid:black_bronze>,<liquid:red_steel>,<liquid:invar>,
 <liquid:aluminium>,<liquid:wrought_iron>,<liquid:black_steel>,<liquid:mithril>,
 <liquid:titanium>,<liquid:manyullyn>,<liquid:copper>,<liquid:osmium>,<liquid:steel>,
@@ -238,41 +238,53 @@ mods.tconstruct.Casting.addTableRecipe(syb,<tfc:ceramics/fired/mold/scythe_blade
 mods.tconstruct.Casting.addTableRecipe(<tfc:metal/scythe_blade/aluminium>,<tfc:ceramics/fired/mold/scythe_blade>,<liquid:aluminum>,144*ingots_SyB,false,time_SyB*20);
 mods.tconstruct.Casting.addTableRecipe(<tfc:metal/scythe_blade/wrought_iron>,<tfc:ceramics/fired/mold/scythe_blade>,<liquid:iron>,144*ingots_SyB,false,time_SyB*20);
 
-
-
-
-
-
-
-
-
-/*
-for items in <ore:axeHead>.items {
-    print(items.commandString);
+#=============================================================================================================================================		
+//Remove "Pig Iron"
+mods.tconstruct.Alloy.removeRecipe(<liquid:pigiron>);
+mods.tconstruct.Melting.removeRecipe(<liquid:pigiron>);
+mods.tconstruct.Casting.removeTableRecipe(<tconstruct:nuggets:4>);
+mods.tconstruct.Casting.removeTableRecipe(<tconstruct:ingots:4>);
+mods.tconstruct.Casting.removeBasinRecipe(<tconstruct:metal:4>);
+mods.jei.JEI.removeAndHide(<tconstruct:nuggets:4>, false);
+mods.jei.JEI.removeAndHide(<tconstruct:ingots:4>, false);
+mods.jei.JEI.removeAndHide(<tconstruct:metal:4>, false);
+#=============================================================================================================================================		
+//Remove Gears
+val gears =[<tfctech:metal/bismuth_gear>,<tfctech:metal/bismuth_bronze_gear>,<tfctech:metal/black_bronze_gear>,<tfctech:metal/brass_gear>,
+<tfctech:metal/bronze_gear>,<tfctech:metal/copper_gear>,<tfctech:metal/gold_gear>,<tfctech:metal/lead_gear>,<tfctech:metal/nickel_gear>,
+<tfctech:metal/rose_gold_gear>,<tfctech:metal/silver_gear>,<tfctech:metal/tin_gear>,<tfctech:metal/zinc_gear>,<tfctech:metal/sterling_silver_gear>,
+<tfctech:metal/wrought_iron_gear>,<tfctech:metal/pig_iron_gear>,<tfctech:metal/steel_gear>,<tfctech:metal/platinum_gear>,<tfctech:metal/black_steel_gear>,
+<tfctech:metal/blue_steel_gear>,<tfctech:metal/red_steel_gear>,<tfctech:metal/antimony_gear>,<tfctech:metal/constantan_gear>,
+<tfctech:metal/electrum_gear>,<tfctech:metal/mithril_gear>,<tfctech:metal/invar_gear>,<tfctech:metal/aluminium_gear>,<tfctech:metal/aluminium_brass_gear>,
+<tfctech:metal/ardite_gear>,<tfctech:metal/cobalt_gear>,<tfctech:metal/manyullyn_gear>,<tfctech:metal/osmium_gear>,<tfctech:metal/titanium_gear>,
+<tfctech:metal/tungsten_gear>,<tfctech:metal/tungsten_steel_gear>] as IItemStack[];
+for gear in gears{
+mods.tconstruct.Casting.removeTableRecipe(gear);
 }
-val material = [	"wood","stone","flint","cactus","bone","obsidian",
-	"prismarine","endstone","paper","sponge","firewood",
-	"iron","pigiron","knightslime","slime","blueslime",
-	"magmaslime","netherrack","cobalt","ardite","manyullyn",
-	"copper","bronze","lead","silver","electrum","steel",
-	"string","slimevine_blue","slimevine_purple","vine",
-	"blaze","reed","ice","endrod","feather","slimeleaf_blue",
-	"slimeleaf_orange","slimeleaf_purple","leaf","treatedwood",
-	"hemp","constantan","boron","tough","hard_carbon",
-	"boron_nitride","thorium","uranium","magnesium",
-	"chocolate","black_steel","blue_steel","red_steel",
-	"sterling_silver","rose_gold","wrought_iron","bismuth",
-	"bismuth_bronze","black_bronze","zinc","platinum","nickel"] as string[];
-	
-val ToolPart = [<tconstruct:sharpening_kit>,<tconstruct:pick_head>,<tconstruct:shovel_head>,<tconstruct:axe_head>,
-<tconstruct:sword_blade>,<tconstruct:hammer_head>,<tconstruct:excavator_head>,<tconstruct:kama_head>,
-<tconstruct:pan_head>,<tconstruct:sign_head>,<tconstruct:tool_rod>,<tconstruct:tough_tool_rod>,<tconstruct:binding>,<tconstruct:wide_guard>,
-<tconstruct:hand_guard>,<tconstruct:cross_guard>,<tconstruct:large_plate>,<tconstruct:knife_blade>] as IItemStack[];
 
-for mat in material {
-	for TP in ToolPart{
-	mods.tconstruct.Casting.removeTableRecipe(TP.withTag({Material: mat}));
-	mods.jei.JEI.hide(TP.withTag({Material: mat}));
-	}
+val rackwheels = [<tfctech:metal/bismuth_rackwheel>,<tfctech:metal/bismuth_bronze_rackwheel>,<tfctech:metal/black_bronze_rackwheel>,<tfctech:metal/brass_rackwheel>,
+<tfctech:metal/bronze_rackwheel>,<tfctech:metal/copper_rackwheel>,<tfctech:metal/gold_rackwheel>,<tfctech:metal/lead_rackwheel>,<tfctech:metal/nickel_rackwheel>,
+<tfctech:metal/rose_gold_rackwheel>,<tfctech:metal/silver_rackwheel>,<tfctech:metal/tin_rackwheel>,<tfctech:metal/zinc_rackwheel>,<tfctech:metal/sterling_silver_rackwheel>,
+<tfctech:metal/wrought_iron_rackwheel>,<tfctech:metal/pig_iron_rackwheel>,<tfctech:metal/steel_rackwheel>,<tfctech:metal/platinum_rackwheel>,<tfctech:metal/black_steel_rackwheel>,
+<tfctech:metal/blue_steel_rackwheel>,<tfctech:metal/red_steel_rackwheel>,<tfctech:metal/antimony_rackwheel>,<tfctech:metal/constantan_rackwheel>,
+<tfctech:metal/electrum_rackwheel>,<tfctech:metal/mithril_rackwheel>,<tfctech:metal/invar_rackwheel>,<tfctech:metal/aluminium_rackwheel>,<tfctech:metal/aluminium_brass_rackwheel>,
+<tfctech:metal/ardite_rackwheel>,<tfctech:metal/cobalt_rackwheel>,<tfctech:metal/manyullyn_rackwheel>,<tfctech:metal/osmium_rackwheel>,<tfctech:metal/titanium_rackwheel>,
+<tfctech:metal/tungsten_rackwheel>,<tfctech:metal/tungsten_steel_rackwheel>] as IItemStack[];
+
+val molten_metals = [<liquid:bismuth>,<liquid:bismuth_bronze>,<liquid:black_bronze>,<liquid:brass>,
+<liquid:bronze>,<liquid:copper>,<liquid:gold>,<liquid:lead>,<liquid:nickel>,
+<liquid:rose_gold>,<liquid:silver>,<liquid:tin>,<liquid:zinc>,<liquid:sterling_silver>,
+<liquid:wrought_iron>,<liquid:pig_iron>,<liquid:steel>,<liquid:platinum>,<liquid:black_steel>,
+<liquid:blue_steel>,<liquid:red_steel>,<liquid:antimony>,<liquid:constantan>,
+<liquid:electrum>,<liquid:mithril>,<liquid:invar>,<liquid:aluminium>,<liquid:aluminium_brass>,
+<liquid:ardite>,<liquid:cobalt>,<liquid:manyullyn>,<liquid:osmium>,<liquid:titanium>,
+<liquid:tungsten>,<liquid:tungsten_steel>] as ILiquidStack[];
+
+for i, rackwheel in rackwheels{
+mods.tconstruct.Casting.addTableRecipe(rackwheel, <tconstruct:cast_custom:4>, molten_metals[i], 576, false, 240);
 }
-*/
+#=============================================================================================================================================		
+
+//Alloys
+//mods.tconstruct.Alloy.addRecipe(ILiquidStack output, ILiquidStack[] inputs);
+
