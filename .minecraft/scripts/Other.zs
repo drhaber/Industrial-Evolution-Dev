@@ -4,25 +4,16 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.mods.IMod;
 import crafttweaker.liquid.ILiquidStack;
 import moretweaker.railcraft.RollingMachine;
-/*
-//Bad Steel Tool Recipes
-recipes.remove(<tfc:metal/pick/steel>);
-recipes.addShaped(<tfc:metal/pick/steel>,[
-	[<tfc:metal/pick_head/steel>],
-	[<ore:stickWood>]]);
-recipes.remove(<tfc:metal/axe/steel>);
-recipes.addShaped(<tfc:metal/axe/steel>,[
-	[<tfc:metal/axe_head/steel>],
-	[<ore:stickWood>]]);
-recipes.remove(<tfc:metal/shovel/steel>);
-recipes.addShaped(<tfc:metal/shovel/steel>,[
-	[<tfc:metal/shovel_head/steel>],
-	[<ore:stickWood>]]);
-recipes.remove(<tfc:metal/sword/steel>);
-recipes.addShaped(<tfc:metal/sword/steel>,[
-	[<tfc:metal/sword_blade/steel>],
-	[<ore:stickWood>]]);	
-*/	
+
+//Hook Rename
+<jaff:iron_hook>.displayName = "Iron Hook";
+//Crushed Ice
+mods.rustic.CrushingTub.addRecipe(<liquid:ice>*250, null, <minecraft:snowball>);
+//Alchemy Bag
+recipes.remove(<extraalchemy:potion_bag>);
+recipes.addShaped(<extraalchemy:potion_bag>),[
+	[<extraalchemy:vial_break>,<extraalchemy:vial_break>,<extraalchemy:vial_break>],
+	[null,<contenttweaker:leatherbag>,null]]);
 //Bad Leather Recipes
 furnace.remove(<minecraft:leather>);
 //Batteries 
@@ -154,12 +145,12 @@ recipes.remove(<minecraft:wheat>);
 	//Candles
 	recipes.removeShaped(<quark:candle>*2,[
 		[<ore:string>],
-		[<quark:tallow>],
-		[<quark:tallow>]]);
+		[<ore:tallow>],
+		[<ore:tallow>]]);
 	recipes.addShaped(<quark:candle>*2,[
 		[<contenttweaker:glowstring>],
-		[<quark:tallow>],
-		[<quark:tallow>]]);
+		[<ore:tallow>],
+		[<ore:tallow>]]);
 <quark:thatch>.displayName = "Solid Thatch";
 <quark:thatch_stairs>.displayName = "Solid Thatch Stairs";
 <quark:thatch_slab>.displayName = "Solid Thatch Slab";
@@ -216,13 +207,16 @@ recipes.addShaped(<contenttweaker:glowstring>,[
 #=============================================================================================================================================		
 	
 //Project Red
+recipes.remove(<projectred-transmission:wire>);
 furnace.addRecipe(<projectred-core:resource_item>*2, <ore:stone>);
 mods.jei.JEI.removeAndHide(<projectred-transmission:wire:34>, false);
 mods.jei.JEI.removeAndHide(<projectred-transmission:framed_wire:34>, false);
 mods.jei.JEI.removeAndHide(<projectred-core:resource_item:252>, false);
+mods.jei.JEI.removeAndHide(<projectred-core:resource_item:251>, false);
 recipes.addShapeless(<projectred-core:resource_item:301> * 8, [<ore:saw>.transformDamage(7), <projectred-core:resource_item:300>]);
 furnace.remove(<projectred-core:resource_item:104>);
 furnace.remove(<projectred-core:resource_item:342>);
+furnace.remove(<projectred-core:resource_item:103>);
 mods.jei.JEI.removeAndHide(<projectred-core:resource_item:312>, false);
 mods.jei.JEI.removeAndHide(<projectred-core:multimeter>, false);
 mods.jei.JEI.removeAndHide(<projectred-core:screwdriver>, false);
@@ -280,6 +274,16 @@ recipes.addShaped(VanillaBoats[i],[
 	[VanillaPlanks.makeStack(i),VanillaPlanks.makeStack(i),VanillaPlanks.makeStack(i)]]);	
 }	
 #=============================================================================================================================================		
+
+//Compact Machines
+
+recipes.remove(<compactmachines3:fieldprojector>);
+recipes.addShaped(<compactmachines3:fieldprojector>,[
+	[null,<ore:sheetSteel>,null],
+	[<advancedrocketry:lens>,<minecraft:ender_eye>,<immersiveengineering:metal_device1:9>],
+	[<immersiveengineering:sheetmetal_slab:8>,<immersiveengineering:sheetmetal_slab:8>,<immersiveengineering:sheetmetal_slab:8>]]);
+#=============================================================================================================================================		
+
 //Rolling Machines Sheets
 val remove = [<ore:plateBrass>,<ore:plateZinc>,<ore:plateInvar>,<ore:plateNickel>,<ore:plateGold>,<ore:plateBronze>,<ore:plateSilver>,<ore:plateLead>,<ore:plateCopper>,<ore:plateTin>,<ore:plateSteel>,<ore:plateIron>,<railcraft:gear:3>] as IIngredient[];
 for i in remove{

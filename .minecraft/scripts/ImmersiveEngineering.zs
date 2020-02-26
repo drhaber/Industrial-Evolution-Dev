@@ -5,13 +5,13 @@ import crafttweaker.mods.IMod;
 import crafttweaker.liquid.ILiquidStack;
 
 mods.immersiveengineering.Crusher.removeRecipe(<tfc:metal/dust/wrought_iron>);
-#mods.immersiveengineering.AlloySmelter.addRecipe(<tfc:metal/ingot/wrought_iron>, <minecraft:iron_ingot>, <ore:dustFlux>, 2048);
 mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust_oxide:1>, <tfc:ore/thorianite>, 2048, <nuclearcraft:dust_oxide>);
 mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust:7>, <tfc:ore/magnesite>, 2048);
 mods.immersiveengineering.CokeOven.addRecipe( <immersiveengineering:material:6>, 500,<tfc:ore/bituminous_coal>, 2000);
 mods.terrafirmacraft.Barrel.addRecipe("Hemp_Fibre", <tfc:crop/product/jute_fiber>, <liquid:creosote>*10, <immersiveengineering:material:4>, <liquid:creosote>*8, 4);
 mods.terrafirmacraft.Barrel.addRecipe("Treated_Lumber", <ore:lumber>, <liquid:creosote>*250, <contenttweaker:treatedlumber>, <liquid:creosote>*150, 4);
 mods.terrafirmacraft.Barrel.addRecipe("Treated_Stick", <ore:stickWood>, <liquid:creosote>*50, <immersiveengineering:material>, <liquid:creosote>*25, 4);
+
 //Wires
 val wires = <immersiveengineering:material>.definition;
 for i in 20 to 24{
@@ -23,9 +23,13 @@ val plates = <immersiveengineering:metal:30>.definition;
 for i in 30 to 41{
 	recipes.remove(plates.makeStack(i));
 }
+mods.immersiveengineering.MetalPress.addRecipe(<projectred-transmission:wire>*4, <projectred-core:resource_item:103>, <immersiveengineering:mold:4>, 2000, 1); #Place Holder Mold
+
+
 
 mods.immersivetechnology.Distiller.addRecipe(<liquid:fresh_water>*10,<liquid:salt_water>*30,<tfc:powder/salt>);
 mods.immersivetechnology.Distiller.addRecipe(<liquid:water>*1000,<liquid:fresh_water>*1000,<tfc:powder/salt>);
+mods.immersivetechnology.SolarTower.addRecipe(<liquid:fresh_water>*2000, <liquid:steam>*500, 1);
 //Glove
 recipes.remove(<immersiveengineering:toolupgrade:12>);
 recipes.addShaped(<immersiveengineering:toolupgrade:12>,[
@@ -38,6 +42,11 @@ recipes.addShaped(<immersiveengineering:wooden_decoration:1>,[
 	[<contenttweaker:treatedlumber>,<contenttweaker:treatedlumber>,<contenttweaker:treatedlumber>],
 	[null,<immersiveengineering:material>,null],
 	[<immersiveengineering:material>,null,<immersiveengineering:material>]]);
+//Belts
+recipes.remove(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}));
+recipes.addShaped(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"})*16,[
+	[<tfctech:wiredraw/leather_belt>,<tfctech:wiredraw/leather_belt>,<tfctech:wiredraw/leather_belt>],
+	[<ore:sheetWroughtIron>,<ore:sheetWroughtIron>,<ore:sheetWroughtIron>]]);
 //Kiln Brick
 val n = <minecraft:netherbrick>;
 val f = <tfc:ceramics/fired/fire_brick>;
@@ -46,6 +55,9 @@ recipes.addShaped(<immersiveengineering:stone_decoration:10>,[
 	[n,f,n],
 	[f,n,f],
 	[n,f,n]]);
+//Leather
+mods.immersiveengineering.Squeezer.removeItemRecipe(<minecraft:leather>);
+mods.immersiveengineering.Squeezer.addRecipe(<tfc:hide/scraped/small>, <liquid:blood>*50, <minecraft:rotten_flesh>*10, 2048);
 //Liquid Catalyst
 mods.immersiveengineering.ArcFurnace.addRecipe(<forge:bucketfilled>.withTag({FluidName: "liquidcatalyst", Amount: 1000}), <minecraft:bucket>,<immersiveengineering:material:7>, 2000, 2048, [<ore:dustObsidian>,<tfc:powder/salt>, <ore:dustGlowstone>,<ore:dustTin>]);
 //Graphite
@@ -67,12 +79,15 @@ recipes.remove(<immersiveengineering:material:1>);
 //Silicon
 mods.immersiveengineering.ArcFurnace.addRecipe(<projectred-core:resource_item:300>*2, <ore:dustQuartz>, <forge:bucketfilled>.withTag({FluidName: "carbon_dioxide", Amount: 1000}), 2000, 2048, [<minecraft:bucket>, <ore:dustCoal>]);
 mods.immersiveengineering.ArcFurnace.addRecipe(<projectred-core:resource_item:300>*4, <ore:dustQuartz>, <forge:bucketfilled>.withTag({FluidName: "carbon_dioxide", Amount: 1000}), 2000, 2048, [<minecraft:bucket>, <ore:dustGraphite>]);
+//Slag Recyling
+
+mods.immersiveengineering.Crusher.removeRecipesForInput(<immersiveengineering:material:7>);
+mods.immersiveengineering.Crusher.addRecipe(<railcraft:dust:4>, <immersiveengineering:material:7>, 2048);
+mods.terrafirmacraft.Barrel.addRecipe("slag_to_flux", <railcraft:dust:4>*4, <liquid:bleach>*1000, <tfc:powder/flux>, <liquid:waste>*1000,16);
+#=============================================================================================================================================		
 
 //Pressed Sheets
-#val remove = [<ore:plateBrass>,<ore:plateZinc>,<ore:plateInvar>,<ore:plateNickel>,<ore:plateGold>,<ore:plateBronze>,<ore:plateSilver>,<ore:plateLead>,<ore:plateCopper>,<ore:plateTin>,<ore:plateSteel>,<ore:plateIron>,<railcraft:gear:3>] as IIngredient[];
-#for i in remove{
-#RollingMachine.remove(i);
-#}
+
 mods.immersiveengineering.MetalPress.removeRecipeByMold(<immersiveengineering:mold>);
 
 val sheets =[<tfc:metal/sheet/bismuth>,<tfc:metal/sheet/bismuth_bronze>,<tfc:metal/sheet/black_bronze>,<tfc:metal/sheet/brass>,
@@ -102,8 +117,18 @@ val double_sheets =[<tfc:metal/double_sheet/bismuth>,<tfc:metal/double_sheet/bis
 <tfc:metal/double_sheet/ardite>,<tfc:metal/double_sheet/cobalt>,<tfc:metal/double_sheet/manyullyn>,<tfc:metal/double_sheet/osmium>,<tfc:metal/double_sheet/titanium>,
 <tfc:metal/double_sheet/tungsten>,<tfc:metal/double_sheet/tungsten_steel>] as IItemStack[];
 
+val double_ingots =[<tfc:metal/double_ingot/bismuth>,<tfc:metal/double_ingot/bismuth_bronze>,<tfc:metal/double_ingot/black_bronze>,<tfc:metal/double_ingot/brass>,
+<tfc:metal/double_ingot/bronze>,<tfc:metal/double_ingot/copper>,<tfc:metal/double_ingot/gold>,<tfc:metal/double_ingot/lead>,<tfc:metal/double_ingot/nickel>,
+<tfc:metal/double_ingot/rose_gold>,<tfc:metal/double_ingot/silver>,<tfc:metal/double_ingot/tin>,<tfc:metal/double_ingot/zinc>,<tfc:metal/double_ingot/sterling_silver>,
+<tfc:metal/double_ingot/wrought_iron>,<tfc:metal/double_ingot/pig_iron>,<tfc:metal/double_ingot/steel>,<tfc:metal/double_ingot/platinum>,<tfc:metal/double_ingot/black_steel>,
+<tfc:metal/double_ingot/blue_steel>,<tfc:metal/double_ingot/red_steel>,<tfc:metal/double_ingot/antimony>,<tfc:metal/double_ingot/constantan>,
+<tfc:metal/double_ingot/electrum>,<tfc:metal/double_ingot/mithril>,<tfc:metal/double_ingot/invar>,<tfc:metal/double_ingot/aluminium>,<tfc:metal/double_ingot/aluminium_brass>,
+<tfc:metal/double_ingot/ardite>,<tfc:metal/double_ingot/cobalt>,<tfc:metal/double_ingot/manyullyn>,<tfc:metal/double_ingot/osmium>,<tfc:metal/double_ingot/titanium>,
+<tfc:metal/double_ingot/tungsten>,<tfc:metal/double_ingot/tungsten_steel>] as IItemStack[];
+
 for i, iIngot in ingots{
 mods.immersiveengineering.MetalPress.addRecipe(sheets[i], iIngot, <immersiveengineering:mold>, 2000, 2);
 mods.immersiveengineering.MetalPress.addRecipe(double_sheets[i], sheets[i], <immersiveengineering:mold>, 2000, 2);
+mods.immersiveengineering.MetalPress.addRecipe(double_ingots[i], iIngot, <immersiveengineering:mold:5>, 2000, 2); #Place Holder Mold
 }
 

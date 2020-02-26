@@ -11,6 +11,9 @@
 	<asteroid name="Extra Solar asteroid" distance="150" mass="50" massVariability="0.5" minLevel="0" probability="0.9" richness="1" richnessVariability="0.3">
 		<ore itemStack="appliedenergistics2:sky_stone_block" chance="25" />
 		<ore itemStack="appliedenergistics2:charged_quartz_ore" chance="5" />
+		<ore itemStack="railcraft:ore:2" chance="5" />
+		<ore itemStack="railcraft:ore:3" chance="5" />
+		<ore itemStack="railcraft:ore:4" chance="5" />
 	</asteroid>
 	<asteroid name="Large Asteroid" distance="10" mass="250" massVariability="0.5" minLevel="0" probability=".5" richness="0.2" richnessVariability="0.5">
 		<ore itemStack="minecraft:iron_ore" chance="15" />

@@ -20,8 +20,8 @@
 					"amount": 1
 				},
 				{
-          "type": "modify_Block_FE",
-          "consume": "false",
+          			"type": "modify_Block_FE",
+          			"consume": "false",
 					"amount": 1000
 				}
 			]

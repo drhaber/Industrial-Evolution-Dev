@@ -100,6 +100,19 @@ bleach.temperature= 100;
 bleach.register();
 game.setLocalization("fluid.bleach", "Bleach");
 
+//Waste
+var waste = VanillaFactory.createFluid("waste", Color.fromHex("5C2F07"));
+waste.viscosity = 9000;
+waste.temperature= 100;
+waste.register();
+game.setLocalization("fluid.waste", "Waste");
+
+//Molten Red Alloy
+var moltenredalloy = VanillaFactory.createFluid("moltenredalloy", Color.fromHex("FF6145"));
+moltenredalloy.viscosity = 1000;
+moltenredalloy.temperature= 1200;
+moltenredalloy.register();
+game.setLocalization("fluid.moltenredalloy", "Molten Red Alloy");
 #=============================================================================================================================================	
 
 var dirtyglass = VanillaFactory.createBlock("dirtyglass", <blockmaterial:glass>);

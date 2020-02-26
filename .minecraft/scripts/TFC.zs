@@ -2,6 +2,8 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import moretweaker.railcraft.RollingMachine;
+import mods.tfctech.WireDrawing;
+import crafttweaker.item.IItemCondition;
 
 //Cheaper Glass
 mods.terrafirmacraft.ItemRegistry.registerItemHeat(<contenttweaker:dirtyglass>, 0.35, 1350, false);
@@ -30,6 +32,8 @@ mods.terrafirmacraft.Anvil.removeRecipe(<tfc:metal/bucket/blue_steel>);
 mods.terrafirmacraft.Heating.addRecipe("destroy_blue", <tfc:metal/bucket/blue_steel>, <tfc:metal/scrap/mithril>, 700, 1300);
 <tfc:metal/bucket/blue_steel>.displayName = "Mithril Bucket";
 RollingMachine.addShapeless(<tfc:metal/bucket/blue_steel>, [<ore:sheetDoubleMithril>]);
+//Red Alloy Wire
+WireDrawing.addRecipe("red_alloy_wire", <projectred-core:resource_item:103>, 3, <projectred-transmission:wire>*4, 0xC21D00);
 //Salt
 mods.rustic.EvaporatingBasin.addRecipe(<tfc:powder/salt>, <liquid:salt_water>*250);
 //Wrench Head
@@ -39,10 +43,12 @@ furnace.setFuel(<tfc:ore/bituminous_coal>, 1600);
 furnace.setFuel(<tfc:ore/lignite>, 800);
 //Bowl
 <tfc:ceramics/fired/bowl>.displayName = "Clay Bowl";
-//Hot Water
+//Hot Water - Water
 val fluidcontainers = [<tfc:wooden_bucket>,<minecraft:bucket>,<tfc:metal/bucket/red_steel>,<forestry:can>,<forestry:refractory>,<tfctech:ceramics/fluid_bowl>] as IItemStack[];
 for i, FC in fluidcontainers {
 mods.inspirations.Cauldron.addFluidRecipe(FC.withTag({Fluid: {FluidName: "hot_water", Amount: 1000}}), FC, <liquid:water>, 4, true);
+mods.inspirations.Cauldron.addFluidRecipe(FC.withTag({Fluid: {FluidName: "hot_water", Amount: 1000}}), FC, <liquid:fresh_water>, 4, true);
+mods.inspirations.Cauldron.addFillRecipe(FC.withTag({Fluid: {FluidName: "ice", Amount: 1000}}), <liquid:fresh_water>, 4,FC);
 }
 //Sleeves
 recipes.addShaped(<tfctech:metal/tin_sleeve>*4,[
@@ -169,6 +175,24 @@ mods.terrafirmacraft.LeatherKnapping.addRecipe("lead_Knap", <minecraft:lead>*3,
 																	"XXXXX", 
 																	"   X ", 
 																	"XXX  ");	
+mods.terrafirmacraft.LeatherKnapping.addRecipe("belt_Knap_1", <tfctech:wiredraw/leather_belt>, 
+																	"     ", 
+																	"XXXXX", 
+																	"     ", 
+																	"     ", 
+																	"     ");	
+mods.terrafirmacraft.LeatherKnapping.addRecipe("belt_Knap_2", <tfctech:wiredraw/leather_belt>, 
+																	"     ", 
+																	"     ", 
+																	"XXXXX", 
+																	"     ", 
+																	"     ");		
+mods.terrafirmacraft.LeatherKnapping.addRecipe("belt_Knap_3", <tfctech:wiredraw/leather_belt>, 
+																	"     ", 
+																	"     ", 
+																	"     ", 
+																	"XXXXX", 
+																	"     ");																																																		
 mods.tfctech.Glassworking.addRecipe("splash_bottle_knap", <inspirations:materials:2>*2,
 																	"   X ", 
 																	"  X  ", 
@@ -186,10 +210,18 @@ mods.tfctech.Glassworking.addRecipe("quick_vial_knap", <extraalchemy:vial_break>
 																	" X X ", 
 																	" X X ", 
 																	" X X ", 
-																	" XXX ");																																																																																																																									
+																	" XXX ");		
+mods.tfctech.Glassworking.addRecipe("lens_knap", <advancedrocketry:lens>,
+																	"     ", 
+																	" XXX ", 
+																	"XXXXX", 
+																	" XXX ", 
+																	"     ");																																																																																																																																									
 #=============================================================================================================================================		
 //Removed Cause Knapping
+recipes.remove(<advancedrocketry:lens>);
 recipes.remove(<minecraft:lead>);
+recipes.remove(<tfctech:wiredraw/leather_belt>);
 recipes.remove(<inspirations:materials:2>);
 recipes.remove(<inspirations:materials:3>);
 recipes.remove(<extraalchemy:vial_break>);

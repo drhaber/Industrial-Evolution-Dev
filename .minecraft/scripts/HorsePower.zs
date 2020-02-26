@@ -13,6 +13,8 @@ mods.horsepower.Recipes.addShaped(<ore:logWood>, <horsepower:chopper>, [[<ore:ge
 																		   [<ore:stickWood>,<ore:logWood>,<ore:stickWood>]]);
 
 mods.jei.JEI.removeAndHide(<horsepower:hand_grindstone>);
+//Blood
+mods.horsepower.Press.add(<minecraft:rotten_flesh>, <liquid:blood>*5);
 //Honey Drop
 mods.horsepower.Press.add(<ore:beeComb>, <forestry:honey_drop>*3);
 //Paper

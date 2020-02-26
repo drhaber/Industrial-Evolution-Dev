@@ -3,6 +3,15 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.liquid.ILiquidStack;
 
+//Piggy Back Pack
+recipes.remove(<tconstruct:piggybackpack>);
+recipes.addShaped(<tconstruct:piggybackpack>,[
+	[<tfctech:wiredraw/leather_belt>,<ore:stickTreatedWood>,<tfctech:wiredraw/leather_belt>],
+	[<tfctech:wiredraw/leather_belt>,<minecraft:leather>,<tfctech:wiredraw/leather_belt>],
+	[<tfctech:wiredraw/leather_belt>,<ore:stickTreatedWood>,<tfctech:wiredraw/leather_belt>]]);
+//Glowball
+recipes.remove(<tconstruct:throwball>);
+mods.tconstruct.Casting.addTableRecipe(<tconstruct:throwball>*8, <ore:enderpearl>, <liquid:glowstone>, 125, true, 180);
 //ENFL
 recipes.remove(<tconstruct:throwball:1>);
 recipes.addShaped(<tconstruct:throwball:1>,[
@@ -288,3 +297,6 @@ mods.tconstruct.Casting.addTableRecipe(rackwheel, <tconstruct:cast_custom:4>, mo
 //Alloys
 //mods.tconstruct.Alloy.addRecipe(ILiquidStack output, ILiquidStack[] inputs);
 
+//Red Alloy
+mods.tconstruct.Alloy.addRecipe(<liquid:moltenredalloy>*144, [<liquid:copper>*144,<liquid:redstone>*576]);
+mods.tconstruct.Casting.addTableRecipe(<projectred-core:resource_item:103>, <tconstruct:cast_custom>, <liquid:moltenredalloy>, 144, false, 240);

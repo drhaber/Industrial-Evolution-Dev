@@ -10,6 +10,9 @@ import mods.terrafirmacraft.ItemRegistry.registerFood;
 #mods.terrafirmacraft.Anvil.addRecipe("Splash_Bottle", <minecraft:glass_bottle>, <contenttweaker:splashbottle>, 1, "general","BEND_NOT_LAST","SHRINK_NOT_LAST","DRAW_LAST");
 #<tfc:ore/bituminous_coal>.maxStackSize = 32;
 #mods.terrafirmacraft.Heating.addRecipe("Seared_Brick", <tconstruct:soil>, <tconstruct:seared:1>, 1500, 3200);
+<foodexpansion:itemcompressedflesh>.displayName = "Salted Flesh";
+mods.tconstruct.Drying.removeRecipe(<tconstruct:edible:10>);
+mods.tconstruct.Drying.addRecipe(<tconstruct:edible:10>,<foodexpansion:itemcompressedflesh>, 6000);
 
 //ItemRegistry.registerFood(IIngredient input, float[] nutrients, float calories, float water, float decay);
 //Mc Bread

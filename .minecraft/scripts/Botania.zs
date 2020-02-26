@@ -3,6 +3,17 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry; 
 import mods.botania.PureDaisy;
 
+//Belts
+recipes.remove(<botania:travelbelt>);
+recipes.addShaped(<botania:travelbelt>,[
+	[<botania:rune:2>,null,null],
+	[null,<tfctech:wiredraw/leather_belt>,null],
+	[<botania:manaresource>,null,<botania:rune:3>]]);
+recipes.remove(<botania:knockbackbelt>);
+recipes.addShaped(<botania:knockbackbelt>,[
+	[<botania:rune:1>,null,null],
+	[null,<tfctech:wiredraw/leather_belt>,null],
+	[<botania:manaresource>,null,<botania:rune:2>]]);
 //Mana Steel
 mods.botania.ManaInfusion.removeRecipe(<botania:manaresource>);
 mods.botania.ManaInfusion.addInfusion(<botania:manaresource>, <tfc:metal/ingot/pig_iron>, 10000);

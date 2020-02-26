@@ -39,11 +39,15 @@ for i in 0 to 16{
 <ore:ingotAluminium>.mirror(<ore:ingotAluminum>);
 <ore:dustAluminum>.addAll(<ore:dustAluminium>);
 <ore:dustAluminium>.mirror(<ore:dustAluminum>);
+<ore:sheetAluminum>.addAll(<ore:sheetAluminium>);
+<ore:sheetAluminium>.mirror(<ore:sheetAluminum>);
 //Chests
 <ore:chest>.addAll(<ore:chestWood>);
 <ore:chestWood>.mirror(<ore:chest>);
 //Bricks
 <ore:ingotBrick>.addAll(<ore:brick>); //This adds ingot brick to all bricks
+//Tallow
+<ore:lumpTallow>.addItems([<quark:tallow>,<rustic:tallow>]);
 //Soot Black Dye
 <ore:dyeBlack>.add(<contenttweaker:soot>);
 //Marble
