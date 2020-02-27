@@ -17,6 +17,8 @@ mods.jei.JEI.removeAndHide(<horsepower:hand_grindstone>);
 mods.horsepower.Press.add(<minecraft:rotten_flesh>, <liquid:blood>*5);
 //Honey Drop
 mods.horsepower.Press.add(<ore:beeComb>, <forestry:honey_drop>*3);
+//Peat Brick
+mods.horsepower.Press.add(<tfc:peat>, <forestry:peat>*4);
 //Paper
 mods.horsepower.Press.add(<ore:pulpWood>, <minecraft:paper>*3);
 mods.horsepower.Press.add(<emergingtechnology:paperpulp>, <minecraft:paper>*3);

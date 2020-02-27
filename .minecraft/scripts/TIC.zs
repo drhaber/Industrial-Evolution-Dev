@@ -30,10 +30,10 @@ recipes.addShaped(<tconstruct:wooden_hopper>,[
 	[<ore:plankWood>,<ore:chest>,<ore:plankWood>],
 	[null,<ore:plankWood>,null]]);
 //AE2 Inscriber Plates
-mods.tconstruct.Casting.addTableRecipe(<appliedenergistics2:material:14>, <contenttweaker:fired_material_engineering_processor_press>, <liquid:iron>, 144);
-mods.tconstruct.Casting.addTableRecipe(<appliedenergistics2:material:13>, <contenttweaker:fired_material_calculation_processor_press>, <liquid:iron>, 144);
-mods.tconstruct.Casting.addTableRecipe(<appliedenergistics2:material:15>, <contenttweaker:fired_material_logic_processor_press>, <liquid:iron>, 144);
-mods.tconstruct.Casting.addTableRecipe(<appliedenergistics2:material:19>, <contenttweaker:fired_material_silicon_press>, <liquid:iron>, 144);
+mods.tconstruct.Casting.addTableRecipe(<appliedenergistics2:material:14>, <contenttweaker:fired_material_engineering_processor_press>, <liquid:wrought_iron>, 576,false,1800);
+mods.tconstruct.Casting.addTableRecipe(<appliedenergistics2:material:13>, <contenttweaker:fired_material_calculation_processor_press>, <liquid:wrought_iron>, 576,false,1800);
+mods.tconstruct.Casting.addTableRecipe(<appliedenergistics2:material:15>, <contenttweaker:fired_material_logic_processor_press>, <liquid:wrought_iron>, 576,false,1800);
+mods.tconstruct.Casting.addTableRecipe(<appliedenergistics2:material:19>, <contenttweaker:fired_material_silicon_press>, <liquid:wrought_iron>, 576,false,1800);
 recipes.remove(<tconstruct:stone_stick>);
 //Liquid Catalyst
 mods.tconstruct.Melting.addRecipe(<liquid:liquidcatalyst> * 4000,<botania:alchemycatalyst>, 350);
@@ -285,7 +285,7 @@ val molten_metals = [<liquid:bismuth>,<liquid:bismuth_bronze>,<liquid:black_bron
 <liquid:rose_gold>,<liquid:silver>,<liquid:tin>,<liquid:zinc>,<liquid:sterling_silver>,
 <liquid:wrought_iron>,<liquid:pig_iron>,<liquid:steel>,<liquid:platinum>,<liquid:black_steel>,
 <liquid:blue_steel>,<liquid:red_steel>,<liquid:antimony>,<liquid:constantan>,
-<liquid:electrum>,<liquid:mithril>,<liquid:invar>,<liquid:aluminium>,<liquid:aluminium_brass>,
+<liquid:electrum>,<liquid:mithril>,<liquid:invar>,<liquid:aluminium>,<liquid:alubrass>,
 <liquid:ardite>,<liquid:cobalt>,<liquid:manyullyn>,<liquid:osmium>,<liquid:titanium>,
 <liquid:tungsten>,<liquid:tungsten_steel>] as ILiquidStack[];
 
@@ -300,3 +300,41 @@ mods.tconstruct.Casting.addTableRecipe(rackwheel, <tconstruct:cast_custom:4>, mo
 //Red Alloy
 mods.tconstruct.Alloy.addRecipe(<liquid:moltenredalloy>*144, [<liquid:copper>*144,<liquid:redstone>*576]);
 mods.tconstruct.Casting.addTableRecipe(<projectred-core:resource_item:103>, <tconstruct:cast_custom>, <liquid:moltenredalloy>, 144, false, 240);
+
+//Bismuth Bronze
+mods.tconstruct.Alloy.addRecipe(<liquid:bismuth_bronze>*144, [<liquid:bismuth>*144,<liquid:zinc>*288,<liquid:copper>*576]);
+//Black Bronze
+mods.tconstruct.Alloy.addRecipe(<liquid:black_bronze>*144, [<liquid:gold>*288,<liquid:silver>*288,<liquid:copper>*720]);
+//Brass
+mods.tconstruct.Alloy.removeRecipe(<liquid:brass>);
+mods.tconstruct.Alloy.addRecipe(<liquid:brass>*144, [<liquid:zinc>*144,<liquid:copper>*864]);
+//Bronze
+mods.tconstruct.Alloy.removeRecipe(<liquid:bronze>);
+mods.tconstruct.Alloy.addRecipe(<liquid:bronze>*144, [<liquid:tin>*144,<liquid:copper>*864]);
+//Rose Gold
+mods.tconstruct.Alloy.addRecipe(<liquid:rose_gold>*144, [<liquid:copper>*144,<liquid:gold>*720]);
+//Sterling Silver
+mods.tconstruct.Alloy.addRecipe(<liquid:sterling_silver>*144, [<liquid:copper>*288,<liquid:silver>*576]);
+//Steel
+mods.tconstruct.Alloy.removeRecipe(<liquid:steel>);
+//Weak Steel
+mods.tconstruct.Alloy.addRecipe(<liquid:weak_steel>*144, [<liquid:black_bronze>*144,<liquid:nickel>*288,<liquid:steel>*720]);
+//Weak Blue Steel
+mods.tconstruct.Alloy.addRecipe(<liquid:weak_blue_steel>*144, [<liquid:bismuth_bronze>*144,<liquid:sterling_silver>*144,<liquid:steel>*288,<liquid:black_steel>*720]);
+//Weak Red Steel
+mods.tconstruct.Alloy.addRecipe(<liquid:weak_red_steel>*144, [<liquid:brass>*144,<liquid:rose_gold>*144,<liquid:steel>*288,<liquid:black_steel>*720]);
+//Constantan
+mods.tconstruct.Alloy.addRecipe(<liquid:constantan>*144, [<liquid:copper>*432,<liquid:nickel>*432]);
+//Electrum
+mods.tconstruct.Alloy.removeRecipe(<liquid:electrum>);
+mods.tconstruct.Alloy.addRecipe(<liquid:electrum>*144, [<liquid:silver>*432,<liquid:gold>*432]);
+//Invar
+mods.tconstruct.Alloy.addRecipe(<liquid:invar>*144, [<liquid:nickel>*288,<liquid:wrought_iron>*432]);
+//Aluminium Brass
+mods.tconstruct.Alloy.removeRecipe(<liquid:alubrass>);
+mods.tconstruct.Alloy.addRecipe(<liquid:alubrass>*144, [<liquid:copper>*288,<liquid:aluminium>*576]);
+//Manyullyn
+mods.tconstruct.Alloy.removeRecipe(<liquid:manyullyn>);
+mods.tconstruct.Alloy.addRecipe(<liquid:manyullyn>*144, [<liquid:ardite>*432,<liquid:cobalt>*432]);
+//Tungsten Steel
+mods.tconstruct.Alloy.addRecipe(<liquid:tungsten_steel>*144, [<liquid:tungsten>*144,<liquid:steel>*720]);

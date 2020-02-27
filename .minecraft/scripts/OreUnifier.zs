@@ -41,6 +41,11 @@ for i in 0 to 16{
 <ore:dustAluminium>.mirror(<ore:dustAluminum>);
 <ore:sheetAluminum>.addAll(<ore:sheetAluminium>);
 <ore:sheetAluminium>.mirror(<ore:sheetAluminum>);
+//Aluminium Brass
+<ore:ingotAlubrass>.addAll(<ore:ingotAluminiumBrass>);
+<ore:ingotAluminiumBrass>.mirror(<ore:ingotAlubrass>);
+<ore:nuggetAlubrass>.addAll(<ore:nuggetAluminiumBrass>);
+<ore:nuggetAluminiumBrass>.mirror(<ore:nuggetAlubrass>);
 //Chests
 <ore:chest>.addAll(<ore:chestWood>);
 <ore:chestWood>.mirror(<ore:chest>);
@@ -99,6 +104,24 @@ mods.jei.JEI.removeAndHide(<railcraft:gear:3>);
 <ore:stickSteel>.addAll(<ore:rodSteel>);
 <ore:stickTitanium>.addAll(<ore:rodTitanium>);
 <ore:stickAluminum>.addAll(<ore:rodAluminium>);
+//Botania Wands
+<ore:wands>.add(<botania:twigwand>.withTag({color1: 0, color2: 0, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:wands>.add(<botania:twigwand>.withTag({color1: 1, color2: 1, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:wands>.add(<botania:twigwand>.withTag({color1: 2, color2: 2, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:wands>.add(<botania:twigwand>.withTag({color1: 3, color2: 3, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:wands>.add(<botania:twigwand>.withTag({color1: 4, color2: 4, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:wands>.add(<botania:twigwand>.withTag({color1: 5, color2: 5, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:wands>.add(<botania:twigwand>.withTag({color1: 6, color2: 6, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:wands>.add(<botania:twigwand>.withTag({color1: 7, color2: 7, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:wands>.add(<botania:twigwand>.withTag({color1: 8, color2: 8, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:wands>.add(<botania:twigwand>.withTag({color1: 8, color2: 8, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:wands>.add(<botania:twigwand>.withTag({color1: 9, color2: 9, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:wands>.add(<botania:twigwand>.withTag({color1: 10, color2: 10, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:wands>.add(<botania:twigwand>.withTag({color1: 11, color2: 11, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:wands>.add(<botania:twigwand>.withTag({color1: 12, color2: 12, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:wands>.add(<botania:twigwand>.withTag({color1: 13, color2: 13, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:wands>.add(<botania:twigwand>.withTag({color1: 14, color2: 14, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:wands>.add(<botania:twigwand>.withTag({color1: 15, color2: 15, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
 #=============================================================================================================================================		
 //foods
 <ore:foodApple>.addItems([<minecraft:apple>,<tfc:food/red_apple>]);

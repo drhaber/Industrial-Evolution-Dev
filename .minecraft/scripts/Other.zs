@@ -64,6 +64,8 @@ recipes.addShapeless(<littletiles:grabber>,[<contenttweaker:leatherglove>,<ore:d
 //Torch Lever
 recipes.remove(<inspirations:torch_lever>);
 recipes.addShapeless(<inspirations:torch_lever>, [<tconstruct:stone_torch>,<minecraft:lever>]);
+//Coal Coke Block
+mods.jei.JEI.removeAndHide(<railcraft:generic:6>);
 //Missing Localization
 game.setLocalization("item.railcraft.charge.electrode.carbon.name", "Silver Electrode");
 game.setLocalization("item.railcraft.charge.electrode.silver.name", "Carbon Electrode");
@@ -190,8 +192,8 @@ mods.terrafirmacraft.Barrel.addRecipe("Quark_marble", <tfc:raw/marble>, <liquid:
 mods.terrafirmacraft.Barrel.addRecipe("Astral_marble", <quark:marble>, <liquid:bleach>*50, <astralsorcery:blockmarble>, 4);
 
 //Lithium
-furnace.addRecipe(<nuclearcraft:dust:6>*4, <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "brine", Amount: 1000}}));
-mods.immersiveengineering.BlastFurnace.addRecipe(<nuclearcraft:dust:6>*4, <forge:bucketfilled>.withTag({FluidName: "brine", Amount: 1000}), 2000,<minecraft:bucket>);
+#furnace.addRecipe(<nuclearcraft:dust:6>*4, <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "brine", Amount: 1000}}));
+#mods.immersiveengineering.BlastFurnace.addRecipe(<nuclearcraft:dust:6>*4, <forge:bucketfilled>.withTag({FluidName: "brine", Amount: 1000}), 2000,<minecraft:bucket>);
 //AE2
 	//Tiny TNT
 	recipes.remove(<appliedenergistics2:tiny_tnt>);

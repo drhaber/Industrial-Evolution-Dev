@@ -2,6 +2,7 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry; 
 import mods.botania.PureDaisy;
+import mods.botaniatweaks.Agglomeration;
 
 //Belts
 recipes.remove(<botania:travelbelt>);
@@ -14,6 +15,9 @@ recipes.addShaped(<botania:knockbackbelt>,[
 	[<botania:rune:1>,null,null],
 	[null,<tfctech:wiredraw/leather_belt>,null],
 	[<botania:manaresource>,null,<botania:rune:2>]]);
+//Leather
+mods.botania.ManaInfusion.removeRecipe(<minecraft:leather>);
+mods.botania.ManaInfusion.addAlchemy(<tfc:hide/prepared/medium>, <minecraft:rotten_flesh>, 1000);
 //Mana Steel
 mods.botania.ManaInfusion.removeRecipe(<botania:manaresource>);
 mods.botania.ManaInfusion.addInfusion(<botania:manaresource>, <tfc:metal/ingot/pig_iron>, 10000);
@@ -23,9 +27,18 @@ recipes.addShaped(<botania:enderhand>,[
 	[<botania:manaresource:1>,null,<ore:dustObsidian>],
 	[null,<minecraft:ender_chest>,null],
 	[<ore:dustObsidian>,null,<contenttweaker:leatherglove>]]);
+//Reasonable Terra Steal	
+Agglomeration.removeDefaultRecipe();
+Agglomeration.addRecipe(<botania:manaresource:4>, 	[<tfc:metal/ingot/antimony>,<botania:manaresource:1>, <botania:manaresource>,<ore:gemChipped>]);
+Agglomeration.addRecipe(<botania:manaresource:4>*2, [<tfc:metal/ingot/antimony>,<botania:manaresource:1>, <botania:manaresource>,<ore:gemFlawed>]);
+Agglomeration.addRecipe(<botania:manaresource:4>*3, [<tfc:metal/ingot/antimony>,<botania:manaresource:1>, <botania:manaresource>,<ore:gemNormal>]);
+Agglomeration.addRecipe(<botania:manaresource:4>*4, [<tfc:metal/ingot/antimony>,<botania:manaresource:1>, <botania:manaresource>,<ore:gemFlawless>]);
+Agglomeration.addRecipe(<botania:manaresource:4>*5, [<tfc:metal/ingot/antimony>,<botania:manaresource:1>, <botania:manaresource>,<ore:gemExquisite>]);
+
 //Pouch
 recipes.remove(<botania:flowerbag>);
 recipes.addShapeless(<botania:flowerbag>, [<contenttweaker:leatherbag>,<ore:Petals>]);
+/*
 //Bowl of Water
 recipes.addShapeless(<botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}),[<minecraft:bowl>,<tfc:wooden_bucket>.withTag({Fluid: {FluidName: "fresh_water", Amount: 1000}}).transformReplace(<tfc:wooden_bucket>)]);
 mods.inworldcrafting.FluidToItem.transform(<botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}), <liquid:water>, [<minecraft:bowl>], true);
@@ -33,6 +46,7 @@ mods.inworldcrafting.FluidToItem.transform(<botania:waterbowl>.withTag({Fluid: {
 mods.inworldcrafting.FluidToItem.transform(<botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}), <liquid:salt_water>, [<minecraft:bowl>], true);
 mods.jei.JEI.addDescription(<botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}),"Seems only some water containers can handle the magic of the Apothecary.");
 mods.jei.JEI.addDescription(<botania:altar>,"Seems only some water containers can handle the magic of the Apothecary.");
+*/
 //TFC Conversions 
 mods.botania.PureDaisy.addRecipe(<ore:tfcSand>,<minecraft:sand>);
 mods.botania.PureDaisy.addRecipe(<tfc:thatch>,<quark:thatch>);
