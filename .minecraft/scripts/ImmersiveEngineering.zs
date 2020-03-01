@@ -11,7 +11,7 @@ mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust_oxide>, <tfc:ore/
 mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust:7>, <tfc:ore/magnesite>, 2048);
 
 mods.immersiveengineering.CokeOven.addRecipe( <immersiveengineering:material:6>, 500,<tfc:ore/bituminous_coal>, 2000);
-mods.terrafirmacraft.Barrel.addRecipe("Hemp_Fibre", <tfc:crop/product/jute_fiber>, <liquid:creosote>*10, <immersiveengineering:material:4>, <liquid:creosote>*8, 4);
+#mods.terrafirmacraft.Barrel.addRecipe("Hemp_Fibre", <tfc:crop/product/jute_fiber>, <liquid:creosote>*10, <immersiveengineering:material:4>, <liquid:creosote>*8, 4);
 mods.terrafirmacraft.Barrel.addRecipe("Treated_Lumber", <ore:lumber>, <liquid:creosote>*250, <contenttweaker:treatedlumber>, <liquid:creosote>*150, 4);
 mods.terrafirmacraft.Barrel.addRecipe("Treated_Stick", <ore:stickWood>, <liquid:creosote>*50, <immersiveengineering:material>, <liquid:creosote>*25, 4);
 
@@ -60,7 +60,7 @@ recipes.addShaped(<immersiveengineering:stone_decoration:10>,[
 	[n,f,n]]);
 //Leather
 mods.immersiveengineering.Squeezer.removeItemRecipe(<minecraft:leather>);
-mods.immersiveengineering.Squeezer.addRecipe(<tfc:hide/scraped/small>, <liquid:blood>*50, <minecraft:rotten_flesh>*10, 2048);
+mods.immersiveengineering.Squeezer.addRecipe(<contenttweaker:squeezed_flesh>, <liquid:blood>*50, <minecraft:rotten_flesh>*5, 2048);
 //Liquid Catalyst
 mods.immersiveengineering.ArcFurnace.addRecipe(<forge:bucketfilled>.withTag({FluidName: "liquidcatalyst", Amount: 1000}), <minecraft:bucket>,<immersiveengineering:material:7>, 2000, 2048, [<ore:dustObsidian>,<tfc:powder/salt>, <ore:dustGlowstone>,<ore:dustTin>]);
 //Graphite

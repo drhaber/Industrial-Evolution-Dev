@@ -4,6 +4,8 @@ import crafttweaker.oredict.IOreDictEntry;
 import mods.botania.PureDaisy;
 import mods.botaniatweaks.Agglomeration;
 
+//Hemp Seeds
+mods.botania.Apothecary.addRecipe(<immersiveengineering:seed>,[<tfc:crop/product/jute_fiber>,<tfc:straw>,<immersiveengineering:material>]);
 //Belts
 recipes.remove(<botania:travelbelt>);
 recipes.addShaped(<botania:travelbelt>,[
@@ -38,15 +40,6 @@ Agglomeration.addRecipe(<botania:manaresource:4>*5, [<tfc:metal/ingot/antimony>,
 //Pouch
 recipes.remove(<botania:flowerbag>);
 recipes.addShapeless(<botania:flowerbag>, [<contenttweaker:leatherbag>,<ore:Petals>]);
-/*
-//Bowl of Water
-recipes.addShapeless(<botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}),[<minecraft:bowl>,<tfc:wooden_bucket>.withTag({Fluid: {FluidName: "fresh_water", Amount: 1000}}).transformReplace(<tfc:wooden_bucket>)]);
-mods.inworldcrafting.FluidToItem.transform(<botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}), <liquid:water>, [<minecraft:bowl>], true);
-mods.inworldcrafting.FluidToItem.transform(<botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}), <liquid:fresh_water>, [<minecraft:bowl>], true);
-mods.inworldcrafting.FluidToItem.transform(<botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}), <liquid:salt_water>, [<minecraft:bowl>], true);
-mods.jei.JEI.addDescription(<botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}),"Seems only some water containers can handle the magic of the Apothecary.");
-mods.jei.JEI.addDescription(<botania:altar>,"Seems only some water containers can handle the magic of the Apothecary.");
-*/
 //TFC Conversions 
 mods.botania.PureDaisy.addRecipe(<ore:tfcSand>,<minecraft:sand>);
 mods.botania.PureDaisy.addRecipe(<tfc:thatch>,<quark:thatch>);
