@@ -30,10 +30,10 @@ recipes.addShaped(<tconstruct:wooden_hopper>,[
 	[<ore:plankWood>,<ore:chest>,<ore:plankWood>],
 	[null,<ore:plankWood>,null]]);
 //AE2 Inscriber Plates
-mods.tconstruct.Casting.addTableRecipe(<appliedenergistics2:material:14>, <contenttweaker:fired_material_engineering_processor_press>, <liquid:wrought_iron>, 576,false,1800);
-mods.tconstruct.Casting.addTableRecipe(<appliedenergistics2:material:13>, <contenttweaker:fired_material_calculation_processor_press>, <liquid:wrought_iron>, 576,false,1800);
-mods.tconstruct.Casting.addTableRecipe(<appliedenergistics2:material:15>, <contenttweaker:fired_material_logic_processor_press>, <liquid:wrought_iron>, 576,false,1800);
-mods.tconstruct.Casting.addTableRecipe(<appliedenergistics2:material:19>, <contenttweaker:fired_material_silicon_press>, <liquid:wrought_iron>, 576,false,1800);
+mods.tconstruct.Casting.addTableRecipe(<appliedenergistics2:material:14>, <contenttweaker:fired_material_engineering_processor_press>, <liquid:iron>, 576,false,1800);
+mods.tconstruct.Casting.addTableRecipe(<appliedenergistics2:material:13>, <contenttweaker:fired_material_calculation_processor_press>, <liquid:iron>, 576,false,1800);
+mods.tconstruct.Casting.addTableRecipe(<appliedenergistics2:material:15>, <contenttweaker:fired_material_logic_processor_press>, <liquid:iron>, 576,false,1800);
+mods.tconstruct.Casting.addTableRecipe(<appliedenergistics2:material:19>, <contenttweaker:fired_material_silicon_press>, <liquid:iron>, 576,false,1800);
 recipes.remove(<tconstruct:stone_stick>);
 //Liquid Catalyst
 mods.tconstruct.Melting.addRecipe(<liquid:liquidcatalyst> * 4000,<botania:alchemycatalyst>, 350);
@@ -246,6 +246,20 @@ mods.tconstruct.Casting.addTableRecipe(syb,<tfc:ceramics/fired/mold/scythe_blade
 }
 mods.tconstruct.Casting.addTableRecipe(<tfc:metal/scythe_blade/aluminium>,<tfc:ceramics/fired/mold/scythe_blade>,<liquid:aluminum>,144*ingots_SyB,false,time_SyB*20);
 mods.tconstruct.Casting.addTableRecipe(<tfc:metal/scythe_blade/wrought_iron>,<tfc:ceramics/fired/mold/scythe_blade>,<liquid:iron>,144*ingots_SyB,false,time_SyB*20);
+#=============================================================================================================================================		
+
+val hammerhead = [<tfc:metal/hammer_head/tungsten>,<tfc:metal/hammer_head/black_bronze>,<tfc:metal/hammer_head/red_steel>,<tfc:metal/hammer_head/invar>,
+<tfc:metal/hammer_head/aluminium>,<tfc:metal/hammer_head/wrought_iron>,<tfc:metal/hammer_head/black_steel>,<tfc:metal/hammer_head/mithril>,
+<tfc:metal/hammer_head/titanium>,<tfc:metal/hammer_head/manyullyn>,<tfc:metal/hammer_head/copper>,<tfc:metal/hammer_head/osmium>,<tfc:metal/hammer_head/steel>,
+<tfc:metal/hammer_head/tungsten_steel>,<tfc:metal/hammer_head/bronze>,<tfc:metal/hammer_head/blue_steel>,<tfc:metal/hammer_head/cobalt>,<tfc:metal/hammer_head/bismuth_bronze>] as IItemStack[];
+
+val ingots_HamH = 1; #Number of Ingots
+val time_HamH = 15; #Number of Seconds
+for i, HamH in hammerhead{
+mods.tconstruct.Casting.addTableRecipe(HamH,<tfc:ceramics/fired/mold/hammer_head>,castingMetal[i],144*ingots_HamH,false,time_HamH*20);
+}
+mods.tconstruct.Casting.addTableRecipe(<tfc:metal/hammer_head/aluminium>,<tfc:ceramics/fired/mold/hammer_head>,<liquid:aluminum>,144*ingots_HamH,false,time_HamH*20);
+mods.tconstruct.Casting.addTableRecipe(<tfc:metal/hammer_head/wrought_iron>,<tfc:ceramics/fired/mold/hammer_head>,<liquid:iron>,144*ingots_HamH,false,time_HamH*20);
 
 #=============================================================================================================================================		
 //Remove "Pig Iron"
@@ -289,6 +303,20 @@ val molten_metals = [<liquid:bismuth>,<liquid:bismuth_bronze>,<liquid:black_bron
 <liquid:ardite>,<liquid:cobalt>,<liquid:manyullyn>,<liquid:osmium>,<liquid:titanium>,
 <liquid:tungsten>,<liquid:tungsten_steel>] as ILiquidStack[];
 
+val ingots = [<tfc:metal/ingot/bismuth>,<tfc:metal/ingot/bismuth_bronze>,<tfc:metal/ingot/black_bronze>,<tfc:metal/ingot/brass>,
+<tfc:metal/ingot/bronze>,<tfc:metal/ingot/copper>,<tfc:metal/ingot/gold>,<tfc:metal/ingot/lead>,<tfc:metal/ingot/nickel>,
+<tfc:metal/ingot/rose_gold>,<tfc:metal/ingot/silver>,<tfc:metal/ingot/tin>,<tfc:metal/ingot/zinc>,<tfc:metal/ingot/sterling_silver>,
+<tfc:metal/ingot/wrought_iron>,<tfc:metal/ingot/pig_iron>,<tfc:metal/ingot/steel>,<tfc:metal/ingot/platinum>,<tfc:metal/ingot/black_steel>,
+<tfc:metal/ingot/blue_steel>,<tfc:metal/ingot/red_steel>,<tfc:metal/ingot/antimony>,<tfc:metal/ingot/constantan>,
+<tfc:metal/ingot/electrum>,<tfc:metal/ingot/mithril>,<tfc:metal/ingot/invar>,<tfc:metal/ingot/aluminium>,<tfc:metal/ingot/aluminium_brass>,
+<tfc:metal/ingot/ardite>,<tfc:metal/ingot/cobalt>,<tfc:metal/ingot/manyullyn>,<tfc:metal/ingot/osmium>,<tfc:metal/ingot/titanium>,
+<tfc:metal/ingot/tungsten>,<tfc:metal/ingot/tungsten_steel>] as IItemStack[];
+
+
+for i, ingot in ingots{
+mods.tconstruct.Casting.addTableRecipe(ingot,<tfc:ceramics/fired/mold/ingot>, molten_metals[i], 144, false, 240);
+} 
+
 for i, rackwheel in rackwheels{
 mods.tconstruct.Casting.addTableRecipe(rackwheel, <tconstruct:cast_custom:4>, molten_metals[i], 576, false, 240);
 }
@@ -329,7 +357,7 @@ mods.tconstruct.Alloy.addRecipe(<liquid:constantan>*144, [<liquid:copper>*432,<l
 mods.tconstruct.Alloy.removeRecipe(<liquid:electrum>);
 mods.tconstruct.Alloy.addRecipe(<liquid:electrum>*144, [<liquid:silver>*432,<liquid:gold>*432]);
 //Invar
-mods.tconstruct.Alloy.addRecipe(<liquid:invar>*144, [<liquid:nickel>*288,<liquid:wrought_iron>*432]);
+mods.tconstruct.Alloy.addRecipe(<liquid:invar>*144, [<liquid:nickel>*288,<liquid:iron>*432]);
 //Aluminium Brass
 mods.tconstruct.Alloy.removeRecipe(<liquid:alubrass>);
 mods.tconstruct.Alloy.addRecipe(<liquid:alubrass>*144, [<liquid:copper>*288,<liquid:aluminium>*576]);

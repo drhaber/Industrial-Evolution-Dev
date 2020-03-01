@@ -226,7 +226,13 @@ mods.tfctech.Glassworking.addRecipe("lens_knap", <advancedrocketry:lens>,
 																	" XXX ", 
 																	"XXXXX", 
 																	" XXX ", 
-																	"     ");																																																																																																																																									
+																	"     ");	
+mods.tfctech.Glassworking.addRecipe("vac_knap", <contenttweaker:casing_electron_tube>,
+																	"  X  ", 
+																	" X X ", 
+																	" X X ", 
+																	" X X ", 
+																	" X X ");																																																																																																																																																											
 #=============================================================================================================================================		
 //Removed Cause Knapping
 recipes.remove(<advancedrocketry:lens>);
@@ -236,6 +242,15 @@ recipes.remove(<inspirations:materials:2>);
 recipes.remove(<inspirations:materials:3>);
 recipes.remove(<extraalchemy:vial_break>);
 recipes.remove(<minecraft:glass_bottle>);
+//Leather Rework
+mods.terrafirmacraft.Barrel.removeRecipe(<minecraft:leather>);
+mods.terrafirmacraft.Barrel.addRecipe("tanned_hide_s", <tfc:hide/prepared/small>, <liquid:tannin>*300, <contenttweaker:tanned_small>,8);
+mods.terrafirmacraft.Barrel.addRecipe("tanned_hide_m", <tfc:hide/prepared/medium>,<liquid:tannin>*400, <contenttweaker:tanned_small>*2,8);
+mods.terrafirmacraft.Barrel.addRecipe("tanned_hide_l", <tfc:hide/prepared/large>, <liquid:tannin>*500, <contenttweaker:tanned_small>*3,8);
+mods.terrafirmacraft.Barrel.addRecipe("tanned_flesh", <contenttweaker:squeezed_flesh>, <liquid:tannin>*500, <contenttweaker:tanned_flesh>,8);
+mods.tconstruct.Drying.addRecipe(<minecraft:leather>,<contenttweaker:tanned_small>, 6000);
+mods.tconstruct.Drying.addRecipe(<minecraft:leather>,<contenttweaker:tanned_flesh>, 6000);
+
 //TFC Mettallum Missing Recipes																	
 //Anvils
 val Anvils = [<tfc:metal/anvil/mithril>,<tfc:metal/anvil/invar>,<tfc:metal/anvil/aluminium>,<tfc:metal/anvil/cobalt>,<tfc:metal/anvil/manyullyn>,<tfc:metal/anvil/osmium>,<tfc:metal/anvil/titanium>,<tfc:metal/anvil/tungsten>,<tfc:metal/anvil/tungsten_steel>] as IItemStack[];
