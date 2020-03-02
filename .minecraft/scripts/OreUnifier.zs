@@ -41,6 +41,8 @@ for i in 0 to 16{
 <ore:dustAluminium>.mirror(<ore:dustAluminum>);
 <ore:sheetAluminum>.addAll(<ore:sheetAluminium>);
 <ore:sheetAluminium>.mirror(<ore:sheetAluminum>);
+<ore:wireAluminum>.addAll(<ore:wireAluminium>);
+<ore:wireAluminium>.mirror(<ore:wireAluminum>);
 //Aluminium Brass
 <ore:ingotAlubrass>.addAll(<ore:ingotAluminiumBrass>);
 <ore:ingotAluminiumBrass>.mirror(<ore:ingotAlubrass>);

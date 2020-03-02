@@ -7,6 +7,18 @@ import mods.contenttweaker.Item;
 import crafttweaker.game.IGame;
 import mods.contenttweaker.ItemFood;
 
+//Glass Fibre
+var glass_fibre = VanillaFactory.createItem("glass_fibre");
+glass_fibre.register();
+game.setLocalization("item.contenttweaker.glass_fibre.name", "Fiberglass");
+//Glass Wire
+var glass_wire = VanillaFactory.createItem("glass_wire");
+glass_wire.register();
+game.setLocalization("item.contenttweaker.glass_wire.name", "Glass Wire");
+//Wooden_Glass_Casing
+var Wooden_Glass_Casing = VanillaFactory.createItem("Wooden_Glass_Casing");
+Wooden_Glass_Casing.register();
+game.setLocalization("item.contenttweaker.Wooden_Glass_Casing.name", "Wooden Glass Casing");
 //tanned_flesh
 var tanned_flesh = VanillaFactory.createItem("tanned_flesh");
 tanned_flesh.register();

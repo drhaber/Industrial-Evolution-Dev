@@ -15,7 +15,12 @@ mods.forestry.Carpenter.addRecipe(iPlanks[i]*4,[
     [il,il,null],
     [il,il,null]],30,<liquid:water>*50);
 }    
-
+//Clockwork Engine
+recipes.remove(<forestry:engine_clockwork>);
+recipes.addShaped(<forestry:engine_clockwork>,[
+	[null,<ore:blockGlass>,null],
+	[<ore:longRodBrass>,<minecraft:piston>,<ore:longRodBrass>],
+	[<ore:sheetBrass>,<contenttweaker:winding_apparatus>,<ore:sheetBrass>]]);
 //Compost
 recipes.remove(<forestry:fertilizer_bio>);
 recipes.addShaped(<forestry:fertilizer_bio>*4,[

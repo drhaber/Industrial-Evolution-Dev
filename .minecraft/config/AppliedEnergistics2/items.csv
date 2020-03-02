@@ -724,6 +724,15 @@ forestry:resource_storage:2, Block of Tin
 forestry:resource_storage:3, Block of Bronze
 forestry:ash_brick:0, Ash Bricks
 forestry:ash_stairs:0, Ash Brick Stairs
+forestry:charcoal:0, Block of Charcoal
+forestry:wood_pile:0, Wood Pile
+forestry:wood_pile_decorative:0, Decorative Wood Pile
+forestry:ash_block_0:0, Ash Block
+forestry:ash_block_1:0, Ash Block
+forestry:ash_block_2:0, Ash Block
+forestry:ash_block_3:0, Ash Block
+forestry:loam:0, Loam
+forestry:database:0, Database
 forestry:bee_queen_ge:0, Forest Queen
 forestry:bee_queen_ge:0, Meadows Queen
 forestry:bee_queen_ge:0, Common Queen
@@ -944,7 +953,52 @@ forestry:alveary.hygro:0, Alveary Hygroregulator
 forestry:alveary.stabiliser:0, Alveary Stabiliser
 forestry:alveary.sieve:0, Alveary Sieve
 forestry:crate, Crate
-forestry:book_forester, Forester's Manual
+forestry:fluid.bio.ethanol, Ethanol
+forestry:fluid.biomass, Biomass
+forestry:fluid.glass, Liquid Glass
+forestry:fluid.for.honey, Honey
+forestry:fluid.ice, Crushed Ice
+forestry:fluid.juice, Fruit Juice
+forestry:fluid.milk, Milk
+forestry:fluid.seed.oil, Seed Oil
+forestry:fluid.short.mead, Short Mead
+forestry:can, item.for.can.name
+forestry:capsule, item.for.capsule.name
+forestry:refractory, item.for.refractory.name
+forestry:worktable:0, Worktable
+forestry:bottler:0, Bottler
+forestry:carpenter:0, Carpenter
+forestry:centrifuge:0, Centrifuge
+forestry:fermenter:0, Fermenter
+forestry:moistener:0, Moistener
+forestry:squeezer:0, Squeezer
+forestry:still:0, Still
+forestry:rainmaker:0, Rainmaker
+forestry:fabricator:0, Thermionic Fabricator
+forestry:raintank:0, Rain Tank
+forestry:habitat_former:0, Habitat Former
+forestry:habitat_screen, Habitat Screen
+forestry:genetic_filter:0, Genetic Filter
+forestry:honeyed_slice, Honeyed Slice
+forestry:ambrosia, Ambrosia
+forestry:honey_pot, Honey Pot
+forestry:engine_peat:0, Peat-fired Engine
+forestry:engine_biogas:0, Biogas Engine
+forestry:engine_clockwork:0, Clockwork Engine
+forestry:apiarist_bag, Apiarist's Backpack
+forestry:lepidopterist_bag, Lepidopterist's Backpack
+forestry:miner_bag, Mining Backpack
+forestry:miner_bag_t2, Woven Mining Backpack
+forestry:digger_bag, Digging Backpack
+forestry:digger_bag_t2, Woven Digging Backpack
+forestry:forester_bag, Foresting Backpack
+forestry:forester_bag_t2, Woven Foresting Backpack
+forestry:hunter_bag, Hunting Backpack
+forestry:hunter_bag_t2, Woven Hunting Backpack
+forestry:adventurer_bag, Adventuring Backpack
+forestry:adventurer_bag_t2, Woven Adventuring Backpack
+forestry:builder_bag, Building Backpack
+forestry:builder_bag_t2, Woven Building Backpack
 forestry:sapling:0, Apple Oak Sapling
 forestry:sapling:0, Dark Oak Sapling
 forestry:sapling:0, Silver Birch Sapling
@@ -1632,6 +1686,18 @@ forestry:cocoon_ge:0, Diana Fritillary Cocoon
 forestry:butterfly_chest:0, Lepidopterist's Chest
 forestry:cocoon:0, tile.for.cocoon.name
 forestry:cocoon.solid:0, tile.for.cocoon.solid.name
+forestry:book_forester, Forester's Manual
+forestry:greenhouse:0, Greenhouse Block
+forestry:greenhouse:3, Greenhouse Energy Distributor
+forestry:greenhouse:4, Greenhouse Control
+forestry:greenhouse:5, Greenhouse Screen
+forestry:climatiser:0, Greenhouse Hygroregulator
+forestry:climatiser:1, Greenhouse Heater
+forestry:climatiser:2, Greenhouse Fan
+forestry:climatiser:3, Greenhouse Humidifier
+forestry:climatiser:4, Greenhouse Dehumidifier
+forestry:greenhouse.window:0, Greenhouse Window
+forestry:greenhouse.window_up:0, Greenhouse Roof Window
 forestry:mushroom:0, tile.for.mushroom.name
 forestry:mushroom:1, tile.for.mushroom.name
 forestry:ffarm:0, Farm Block
@@ -1703,54 +1769,6 @@ forestry:farm_ender:0, Ender Farm (Managed)
 forestry:farm_ender:1, Ender Farm (Manual)
 forestry:peat_bog:0, Peat Bog (Managed)
 forestry:peat_bog:1, Peat Bog (Manual)
-forestry:database:0, Database
-forestry:greenhouse:0, Greenhouse Block
-forestry:greenhouse:3, Greenhouse Energy Distributor
-forestry:greenhouse:4, Greenhouse Control
-forestry:greenhouse:5, Greenhouse Screen
-forestry:climatiser:0, Greenhouse Hygroregulator
-forestry:climatiser:1, Greenhouse Heater
-forestry:climatiser:2, Greenhouse Fan
-forestry:climatiser:3, Greenhouse Humidifier
-forestry:climatiser:4, Greenhouse Dehumidifier
-forestry:greenhouse.window:0, Greenhouse Window
-forestry:greenhouse.window_up:0, Greenhouse Roof Window
-forestry:engine_peat:0, Peat-fired Engine
-forestry:engine_biogas:0, Biogas Engine
-forestry:engine_clockwork:0, Clockwork Engine
-forestry:charcoal:0, Block of Charcoal
-forestry:wood_pile:0, Wood Pile
-forestry:wood_pile_decorative:0, Decorative Wood Pile
-forestry:ash_block_0:0, Ash Block
-forestry:ash_block_1:0, Ash Block
-forestry:ash_block_2:0, Ash Block
-forestry:ash_block_3:0, Ash Block
-forestry:loam:0, Loam
-forestry:apiarist_bag, Apiarist's Backpack
-forestry:lepidopterist_bag, Lepidopterist's Backpack
-forestry:miner_bag, Mining Backpack
-forestry:miner_bag_t2, Woven Mining Backpack
-forestry:digger_bag, Digging Backpack
-forestry:digger_bag_t2, Woven Digging Backpack
-forestry:forester_bag, Foresting Backpack
-forestry:forester_bag_t2, Woven Foresting Backpack
-forestry:hunter_bag, Hunting Backpack
-forestry:hunter_bag_t2, Woven Hunting Backpack
-forestry:adventurer_bag, Adventuring Backpack
-forestry:adventurer_bag_t2, Woven Adventuring Backpack
-forestry:builder_bag, Building Backpack
-forestry:builder_bag_t2, Woven Building Backpack
-forestry:bottler:0, Bottler
-forestry:carpenter:0, Carpenter
-forestry:centrifuge:0, Centrifuge
-forestry:fermenter:0, Fermenter
-forestry:moistener:0, Moistener
-forestry:squeezer:0, Squeezer
-forestry:still:0, Still
-forestry:rainmaker:0, Rainmaker
-forestry:fabricator:0, Thermionic Fabricator
-forestry:raintank:0, Rain Tank
-forestry:worktable:0, Worktable
 forestry:stamps:0, Stamp (1n)
 forestry:stamps:1, Stamp (2n)
 forestry:stamps:2, Stamp (5n)
@@ -1763,24 +1781,6 @@ forestry:catalogue, Catalogue
 forestry:mailbox:0, Mailbox
 forestry:trade_station:0, Trade Station
 forestry:stamp_collector:0, Stamp Collector
-forestry:fluid.bio.ethanol, Ethanol
-forestry:fluid.biomass, Biomass
-forestry:fluid.glass, Liquid Glass
-forestry:fluid.for.honey, Honey
-forestry:fluid.ice, Crushed Ice
-forestry:fluid.juice, Fruit Juice
-forestry:fluid.milk, Milk
-forestry:fluid.seed.oil, Seed Oil
-forestry:fluid.short.mead, Short Mead
-forestry:can, item.for.can.name
-forestry:capsule, item.for.capsule.name
-forestry:refractory, item.for.refractory.name
-forestry:honeyed_slice, Honeyed Slice
-forestry:ambrosia, Ambrosia
-forestry:honey_pot, Honey Pot
-forestry:habitat_former:0, Habitat Former
-forestry:habitat_screen, Habitat Screen
-forestry:genetic_filter:0, Genetic Filter
 railcraft:tool_crowbar_iron, Iron Crowbar
 railcraft:tool_crowbar_steel, Steel Crowbar
 railcraft:tool_axe_steel, Steel Axe
@@ -3802,6 +3802,8 @@ pressure:canister:0, Canister - Molten High Carbon Black Steel
 pressure:canister:0, Canister - Unknown Molten Metal
 pressure:canister:0, Canister - Molten Antimony
 pressure:canister:0, Canister - Molten Constantan
+pressure:canister:0, Canister - Molten Nickel Silver
+pressure:canister:0, Canister - Molten Red Alloy
 pressure:canister:0, Canister - Molten Mithril
 pressure:canister:0, Canister - Molten Invar
 pressure:canister:0, Canister - Molten Aluminium
@@ -7957,6 +7959,14 @@ appliedenergistics2:facade:0, Cable Facade - Block of Copper
 appliedenergistics2:facade:0, Cable Facade - Block of Tin
 appliedenergistics2:facade:0, Cable Facade - Block of Bronze
 appliedenergistics2:facade:0, Cable Facade - Ash Bricks
+appliedenergistics2:facade:0, Cable Facade - Block of Charcoal
+appliedenergistics2:facade:0, Cable Facade - Wood Pile
+appliedenergistics2:facade:0, Cable Facade - Decorative Wood Pile
+appliedenergistics2:facade:0, Cable Facade - Ash Block
+appliedenergistics2:facade:0, Cable Facade - Ash Block
+appliedenergistics2:facade:0, Cable Facade - Ash Block
+appliedenergistics2:facade:0, Cable Facade - Ash Block
+appliedenergistics2:facade:0, Cable Facade - Loam
 appliedenergistics2:facade:0, Cable Facade - Honey Comb Block
 appliedenergistics2:facade:0, Cable Facade - Simmering Comb Block
 appliedenergistics2:facade:0, Cable Facade - Stringy Comb Block
@@ -8138,14 +8148,6 @@ appliedenergistics2:facade:0, Cable Facade - Greenhouse Heater
 appliedenergistics2:facade:0, Cable Facade - Greenhouse Fan
 appliedenergistics2:facade:0, Cable Facade - Greenhouse Humidifier
 appliedenergistics2:facade:0, Cable Facade - Greenhouse Dehumidifier
-appliedenergistics2:facade:0, Cable Facade - Block of Charcoal
-appliedenergistics2:facade:0, Cable Facade - Wood Pile
-appliedenergistics2:facade:0, Cable Facade - Decorative Wood Pile
-appliedenergistics2:facade:0, Cable Facade - Ash Block
-appliedenergistics2:facade:0, Cable Facade - Ash Block
-appliedenergistics2:facade:0, Cable Facade - Ash Block
-appliedenergistics2:facade:0, Cable Facade - Ash Block
-appliedenergistics2:facade:0, Cable Facade - Loam
 appliedenergistics2:facade:0, Cable Facade - Nickel-Iron Battery
 appliedenergistics2:facade:0, Cable Facade - Nickel-Zinc Battery
 appliedenergistics2:facade:0, Cable Facade - Zinc-Carbon Battery
@@ -10543,9 +10545,6 @@ appliedenergistics2:facade:0, Cable Facade - Sky Stone Small Brick
 appliedenergistics2:facade:0, Cable Facade - Aqueduct
 appliedenergistics2:facade:0, Cable Facade - Naquadah Ore
 appliedenergistics2:facade:0, Cable Facade - Naquadah Block
-appliedenergistics2:facade:0, Cable Facade - Sugar Block
-appliedenergistics2:facade:0, Cable Facade - Red Slime Block
-appliedenergistics2:facade:0, Cable Facade - Gravisand
 appliedenergistics2:facade:0, Cable Facade - Swamp Oak Leaves
 appliedenergistics2:facade:0, Cable Facade - White Cave Crystal
 appliedenergistics2:facade:0, Cable Facade - Ender Biotite Ore
@@ -10594,6 +10593,9 @@ appliedenergistics2:facade:0, Cable Facade - Soul Sandstone
 appliedenergistics2:facade:0, Cable Facade - Turf Block
 appliedenergistics2:facade:0, Cable Facade - Netherwrought Stone
 appliedenergistics2:facade:0, Cable Facade - White Quilted Wool
+appliedenergistics2:facade:0, Cable Facade - Sugar Block
+appliedenergistics2:facade:0, Cable Facade - Red Slime Block
+appliedenergistics2:facade:0, Cable Facade - Gravisand
 appliedenergistics2:facade:0, Cable Facade - Block of Smokey Quartz
 appliedenergistics2:facade:0, Cable Facade - Chiseled Smokey Quartz Block
 appliedenergistics2:facade:0, Cable Facade - Pillar Smokey Quartz Block
@@ -11927,6 +11929,27 @@ appliedenergistics2:facade:0, Cable Facade - Phyllite Boron
 appliedenergistics2:facade:0, Cable Facade - Schist Boron
 appliedenergistics2:facade:0, Cable Facade - Gneiss Boron
 appliedenergistics2:facade:0, Cable Facade - Marble Boron
+appliedenergistics2:facade:0, Cable Facade - Granite Spodumene
+appliedenergistics2:facade:0, Cable Facade - Diorite Spodumene
+appliedenergistics2:facade:0, Cable Facade - Gabbro Spodumene
+appliedenergistics2:facade:0, Cable Facade - Shale Spodumene
+appliedenergistics2:facade:0, Cable Facade - Claystone Spodumene
+appliedenergistics2:facade:0, Cable Facade - Rocksalt Spodumene
+appliedenergistics2:facade:0, Cable Facade - Limestone Spodumene
+appliedenergistics2:facade:0, Cable Facade - Conglomerate Spodumene
+appliedenergistics2:facade:0, Cable Facade - Dolomite Spodumene
+appliedenergistics2:facade:0, Cable Facade - Chert Spodumene
+appliedenergistics2:facade:0, Cable Facade - Chalk Spodumene
+appliedenergistics2:facade:0, Cable Facade - Rhyolite Spodumene
+appliedenergistics2:facade:0, Cable Facade - Basalt Spodumene
+appliedenergistics2:facade:0, Cable Facade - Andesite Spodumene
+appliedenergistics2:facade:0, Cable Facade - Dacite Spodumene
+appliedenergistics2:facade:0, Cable Facade - Quartzite Spodumene
+appliedenergistics2:facade:0, Cable Facade - Slate Spodumene
+appliedenergistics2:facade:0, Cable Facade - Phyllite Spodumene
+appliedenergistics2:facade:0, Cable Facade - Schist Spodumene
+appliedenergistics2:facade:0, Cable Facade - Gneiss Spodumene
+appliedenergistics2:facade:0, Cable Facade - Marble Spodumene
 appliedenergistics2:facade:0, Cable Facade - Acacia Bookshelf
 appliedenergistics2:facade:0, Cable Facade - Ash Bookshelf
 appliedenergistics2:facade:0, Cable Facade - Aspen Bookshelf
@@ -12376,23 +12399,6 @@ aunis:transportrings_controller_block, Transport rings controller
 aunis:invisible_block, You can't see me block
 aunis:stargate_milkyway_member_block:6, Stargate Ring (Milky Way)
 aunis:stargate_milkyway_member_block:14, Stargate Chevron (Milky Way)
-quark:glass_shards:0, Glass Shard
-quark:glass_shards:1, White Glass Shard
-quark:glass_shards:2, Orange Glass Shard
-quark:glass_shards:3, Magenta Glass Shard
-quark:glass_shards:4, Light Blue Glass Shard
-quark:glass_shards:5, Yellow Glass Shard
-quark:glass_shards:6, Lime Glass Shard
-quark:glass_shards:7, Pink Glass Shard
-quark:glass_shards:8, Gray Glass Shard
-quark:glass_shards:9, Light Gray Glass Shard
-quark:glass_shards:10, Cyan Glass Shard
-quark:glass_shards:11, Purple Glass Shard
-quark:glass_shards:12, Blue Glass Shard
-quark:glass_shards:13, Brown Glass Shard
-quark:glass_shards:14, Green Glass Shard
-quark:glass_shards:15, Red Glass Shard
-quark:glass_shards:16, Black Glass Shard
 quark:witch_hat, item.witch_hat.name
 quark:pickarang, item.pickarang.name
 quark:arrow_ender, item.arrow_ender.name
@@ -12426,22 +12432,23 @@ quark:parrot_egg:2, Green Parrot Egg
 quark:parrot_egg:3, Cyan Parrot Egg
 quark:parrot_egg:4, Gray Parrot Egg
 quark:enderdragon_scale, item.enderdragon_scale.name
-quark:chute, tile.chute.name
-quark:sugar_block, tile.sugar_block.name
-quark:redstone_randomizer, tile.redstone_randomizer.name
-quark:iron_button, tile.iron_button.name
-quark:gold_button, tile.gold_button.name
-quark:iron_rod, tile.iron_rod.name
-quark:color_slime:0, Red Slime Block
-quark:color_slime:1, Blue Slime Block
-quark:color_slime:2, Cyan Slime Block
-quark:color_slime:3, Magenta Slime Block
-quark:color_slime:4, Yellow Slime Block
-quark:gravisand, tile.gravisand.name
-quark:redstone_inductor, tile.redstone_inductor.name
-quark:obsidian_pressure_plate, tile.obsidian_pressure_plate.name
-quark:rain_detector, tile.rain_detector.name
-quark:chain, item.chain.name
+quark:glass_shards:0, Glass Shard
+quark:glass_shards:1, White Glass Shard
+quark:glass_shards:2, Orange Glass Shard
+quark:glass_shards:3, Magenta Glass Shard
+quark:glass_shards:4, Light Blue Glass Shard
+quark:glass_shards:5, Yellow Glass Shard
+quark:glass_shards:6, Lime Glass Shard
+quark:glass_shards:7, Pink Glass Shard
+quark:glass_shards:8, Gray Glass Shard
+quark:glass_shards:9, Light Gray Glass Shard
+quark:glass_shards:10, Cyan Glass Shard
+quark:glass_shards:11, Purple Glass Shard
+quark:glass_shards:12, Blue Glass Shard
+quark:glass_shards:13, Brown Glass Shard
+quark:glass_shards:14, Green Glass Shard
+quark:glass_shards:15, Red Glass Shard
+quark:glass_shards:16, Black Glass Shard
 quark:roots, tile.roots.name
 quark:root, item.root.name
 quark:roots_blue_flower, tile.roots_blue_flower.name
@@ -12985,6 +12992,22 @@ quark:quilted_wool:12, Brown Quilted Wool
 quark:quilted_wool:13, Green Quilted Wool
 quark:quilted_wool:14, Red Quilted Wool
 quark:quilted_wool:15, Black Quilted Wool
+quark:chute, tile.chute.name
+quark:sugar_block, tile.sugar_block.name
+quark:redstone_randomizer, tile.redstone_randomizer.name
+quark:iron_button, tile.iron_button.name
+quark:gold_button, tile.gold_button.name
+quark:iron_rod, tile.iron_rod.name
+quark:color_slime:0, Red Slime Block
+quark:color_slime:1, Blue Slime Block
+quark:color_slime:2, Cyan Slime Block
+quark:color_slime:3, Magenta Slime Block
+quark:color_slime:4, Yellow Slime Block
+quark:gravisand, tile.gravisand.name
+quark:redstone_inductor, tile.redstone_inductor.name
+quark:obsidian_pressure_plate, tile.obsidian_pressure_plate.name
+quark:rain_detector, tile.rain_detector.name
+quark:chain, item.chain.name
 bibliocraft:bookcase:0, Oak Bookcase
 bibliocraft:bookcase:1, Spruce Bookcase
 bibliocraft:bookcase:2, Birch Bookcase
@@ -14302,9 +14325,9 @@ tfc:wooden_bucket:0, Crushed Ice§r Bucket§r
 tfc:metal/bucket/blue_steel:0, Mithril Bucket
 tfc:metal/bucket/blue_steel:0, Lava§r Bucket§r
 tfc:metal/bucket/red_steel:0, Copper Bucket
-tfc:metal/bucket/red_steel:0, Salt Water§r Bucket§r
-tfc:metal/bucket/red_steel:0, Hot water§r Bucket§r
 tfc:metal/bucket/red_steel:0, Fresh Water§r Bucket§r
+tfc:metal/bucket/red_steel:0, Hot water§r Bucket§r
+tfc:metal/bucket/red_steel:0, Salt Water§r Bucket§r
 tfc:metal/bucket/red_steel:0, Water§r Bucket§r
 tfc:rock/granite, Granite Rock
 tfc:rock/diorite, Diorite Rock
@@ -14451,9 +14474,10 @@ tfc:ore/cobaltite:2, Rich Cobaltite
 tfc:ore/small/cobaltite, Small Cobaltite
 tfc:ore/thorianite, Thorianite
 tfc:ore/chromite, Chromite
-tfc:ore/pyrolusite, item.tfc.ore.pyrolusite.name
+tfc:ore/pyrolusite, Pyrolusite
 tfc:ore/magnesite, Magnesite
 tfc:ore/boron, Boron
+tfc:ore/spodumene, Spodumene
 tfc:gem/agate:0, Chipped Agate
 tfc:gem/agate:1, Flawed Agate
 tfc:gem/agate:2, Agate
@@ -14551,6 +14575,8 @@ tfc:metal/ingot/unknown, Unknown Metal Ingot
 tfc:metal/ingot/antimony, Antimony Ingot
 tfc:metal/ingot/constantan, Constantan Ingot
 tfc:metal/ingot/electrum, Electrum Ingot
+tfc:metal/ingot/nickel_silver, Nickel Silver Ingot
+tfc:metal/ingot/red_alloy, Red Alloy Ingot
 tfc:metal/ingot/mithril, Mithril Ingot
 tfc:metal/ingot/invar, Invar Ingot
 tfc:metal/ingot/aluminium, Aluminium Ingot
@@ -14586,6 +14612,8 @@ tfc:metal/double_ingot/red_steel, Red Steel Double Ingot
 tfc:metal/double_ingot/antimony, Antimony Double Ingot
 tfc:metal/double_ingot/constantan, Constantan Double Ingot
 tfc:metal/double_ingot/electrum, Electrum Double Ingot
+tfc:metal/double_ingot/nickel_silver, Nickel Silver Double Ingot
+tfc:metal/double_ingot/red_alloy, Red Alloy Double Ingot
 tfc:metal/double_ingot/mithril, Mithril Double Ingot
 tfc:metal/double_ingot/invar, Invar Double Ingot
 tfc:metal/double_ingot/aluminium, Aluminium Double Ingot
@@ -14621,6 +14649,8 @@ tfc:metal/scrap/red_steel, Red Steel Scrap
 tfc:metal/scrap/antimony, Antimony Scrap
 tfc:metal/scrap/constantan, Constantan Scrap
 tfc:metal/scrap/electrum, Electrum Scrap
+tfc:metal/scrap/nickel_silver, Nickel Silver Scrap
+tfc:metal/scrap/red_alloy, Red Alloy Scrap
 tfc:metal/scrap/mithril, Mithril Scrap
 tfc:metal/scrap/invar, Invar Scrap
 tfc:metal/scrap/aluminium, Aluminium Scrap
@@ -14656,6 +14686,8 @@ tfc:metal/dust/red_steel, Red Steel Dust
 tfc:metal/dust/antimony, Antimony Dust
 tfc:metal/dust/constantan, Constantan Dust
 tfc:metal/dust/electrum, Electrum Dust
+tfc:metal/dust/nickel_silver, Nickel Silver Dust
+tfc:metal/dust/red_alloy, Red Alloy Dust
 tfc:metal/dust/mithril, Mithril Dust
 tfc:metal/dust/invar, Invar Dust
 tfc:metal/dust/aluminium, Aluminium Dust
@@ -14691,6 +14723,8 @@ tfc:metal/nugget/red_steel, Red Steel Nugget
 tfc:metal/nugget/antimony, Antimony Nugget
 tfc:metal/nugget/constantan, Constantan Nugget
 tfc:metal/nugget/electrum, Electrum Nugget
+tfc:metal/nugget/nickel_silver, Nickel Silver Nugget
+tfc:metal/nugget/red_alloy, Red Alloy Nugget
 tfc:metal/nugget/mithril, Mithril Nugget
 tfc:metal/nugget/invar, Invar Nugget
 tfc:metal/nugget/aluminium, Aluminium Nugget
@@ -14726,6 +14760,8 @@ tfc:metal/sheet/red_steel, Red Steel Sheet
 tfc:metal/sheet/antimony, Antimony Sheet
 tfc:metal/sheet/constantan, Constantan Sheet
 tfc:metal/sheet/electrum, Electrum Sheet
+tfc:metal/sheet/nickel_silver, Nickel Silver Sheet
+tfc:metal/sheet/red_alloy, Red Alloy Sheet
 tfc:metal/sheet/mithril, Mithril Sheet
 tfc:metal/sheet/invar, Invar Sheet
 tfc:metal/sheet/aluminium, Aluminium Sheet
@@ -14761,6 +14797,8 @@ tfc:metal/double_sheet/red_steel, Red Steel Double Sheet
 tfc:metal/double_sheet/antimony, Antimony Double Sheet
 tfc:metal/double_sheet/constantan, Constantan Double Sheet
 tfc:metal/double_sheet/electrum, Electrum Double Sheet
+tfc:metal/double_sheet/nickel_silver, Nickel Silver Double Sheet
+tfc:metal/double_sheet/red_alloy, Red Alloy Double Sheet
 tfc:metal/double_sheet/mithril, Mithril Double Sheet
 tfc:metal/double_sheet/invar, Invar Double Sheet
 tfc:metal/double_sheet/aluminium, Aluminium Double Sheet
@@ -14796,6 +14834,8 @@ tfc:metal/lamp/red_steel, Red Steel Lamp
 tfc:metal/lamp/antimony, Antimony Lamp
 tfc:metal/lamp/constantan, Constantan Lamp
 tfc:metal/lamp/electrum, Electrum Lamp
+tfc:metal/lamp/nickel_silver, Nickel Silver Lamp
+tfc:metal/lamp/red_alloy, Red Alloy Lamp
 tfc:metal/lamp/mithril, Mithril Lamp
 tfc:metal/lamp/invar, Invar Lamp
 tfc:metal/lamp/aluminium, Aluminium Lamp
@@ -14816,6 +14856,7 @@ tfc:metal/anvil/steel, Steel Anvil
 tfc:metal/anvil/black_steel, Black Steel Anvil
 tfc:metal/anvil/blue_steel, Blue Steel Anvil
 tfc:metal/anvil/red_steel, Red Steel Anvil
+tfc:metal/anvil/nickel_silver, Nickel Silver Anvil
 tfc:metal/anvil/mithril, Mithril Anvil
 tfc:metal/anvil/invar, Invar Anvil
 tfc:metal/anvil/aluminium, Aluminium Anvil
@@ -14834,6 +14875,7 @@ tfc:metal/tuyere/steel, Steel Tuyere
 tfc:metal/tuyere/black_steel, Black Steel Tuyere
 tfc:metal/tuyere/blue_steel, Blue Steel Tuyere
 tfc:metal/tuyere/red_steel, Red Steel Tuyere
+tfc:metal/tuyere/nickel_silver, Nickel Silver Tuyere
 tfc:metal/tuyere/mithril, Mithril Tuyere
 tfc:metal/tuyere/invar, Invar Tuyere
 tfc:metal/tuyere/aluminium, Aluminium Tuyere
@@ -14852,6 +14894,7 @@ tfc:metal/pick/steel, Steel Pickaxe
 tfc:metal/pick/black_steel, Black Steel Pickaxe
 tfc:metal/pick/blue_steel, Blue Steel Pickaxe
 tfc:metal/pick/red_steel, Red Steel Pickaxe
+tfc:metal/pick/nickel_silver, Nickel Silver Pickaxe
 tfc:metal/pick/mithril, Mithril Pickaxe
 tfc:metal/pick/invar, Invar Pickaxe
 tfc:metal/pick/aluminium, Aluminium Pickaxe
@@ -14870,6 +14913,7 @@ tfc:metal/pick_head/steel, Steel Pickaxe Head
 tfc:metal/pick_head/black_steel, Black Steel Pickaxe Head
 tfc:metal/pick_head/blue_steel, Blue Steel Pickaxe Head
 tfc:metal/pick_head/red_steel, Red Steel Pickaxe Head
+tfc:metal/pick_head/nickel_silver, Nickel Silver Pickaxe Head
 tfc:metal/pick_head/mithril, Mithril Pickaxe Head
 tfc:metal/pick_head/invar, Invar Pickaxe Head
 tfc:metal/pick_head/aluminium, Aluminium Pickaxe Head
@@ -14888,6 +14932,7 @@ tfc:metal/shovel/steel, Steel Shovel
 tfc:metal/shovel/black_steel, Black Steel Shovel
 tfc:metal/shovel/blue_steel, Blue Steel Shovel
 tfc:metal/shovel/red_steel, Red Steel Shovel
+tfc:metal/shovel/nickel_silver, Nickel Silver Shovel
 tfc:metal/shovel/mithril, Mithril Shovel
 tfc:metal/shovel/invar, Invar Shovel
 tfc:metal/shovel/aluminium, Aluminium Shovel
@@ -14906,6 +14951,7 @@ tfc:metal/shovel_head/steel, Steel Shovel Head
 tfc:metal/shovel_head/black_steel, Black Steel Shovel Head
 tfc:metal/shovel_head/blue_steel, Blue Steel Shovel Head
 tfc:metal/shovel_head/red_steel, Red Steel Shovel Head
+tfc:metal/shovel_head/nickel_silver, Nickel Silver Shovel Head
 tfc:metal/shovel_head/mithril, Mithril Shovel Head
 tfc:metal/shovel_head/invar, Invar Shovel Head
 tfc:metal/shovel_head/aluminium, Aluminium Shovel Head
@@ -14924,6 +14970,7 @@ tfc:metal/axe/steel, Steel Axe
 tfc:metal/axe/black_steel, Black Steel Axe
 tfc:metal/axe/blue_steel, Blue Steel Axe
 tfc:metal/axe/red_steel, Red Steel Axe
+tfc:metal/axe/nickel_silver, Nickel Silver Axe
 tfc:metal/axe/mithril, Mithril Axe
 tfc:metal/axe/invar, Invar Axe
 tfc:metal/axe/aluminium, Aluminium Axe
@@ -14942,6 +14989,7 @@ tfc:metal/axe_head/steel, Steel Axe Head
 tfc:metal/axe_head/black_steel, Black Steel Axe Head
 tfc:metal/axe_head/blue_steel, Blue Steel Axe Head
 tfc:metal/axe_head/red_steel, Red Steel Axe Head
+tfc:metal/axe_head/nickel_silver, Nickel Silver Axe Head
 tfc:metal/axe_head/mithril, Mithril Axe Head
 tfc:metal/axe_head/invar, Invar Axe Head
 tfc:metal/axe_head/aluminium, Aluminium Axe Head
@@ -14960,6 +15008,7 @@ tfc:metal/hoe/steel, Steel Hoe
 tfc:metal/hoe/black_steel, Black Steel Hoe
 tfc:metal/hoe/blue_steel, Blue Steel Hoe
 tfc:metal/hoe/red_steel, Red Steel Hoe
+tfc:metal/hoe/nickel_silver, Nickel Silver Hoe
 tfc:metal/hoe/mithril, Mithril Hoe
 tfc:metal/hoe/invar, Invar Hoe
 tfc:metal/hoe/aluminium, Aluminium Hoe
@@ -14978,6 +15027,7 @@ tfc:metal/hoe_head/steel, Steel Hoe Head
 tfc:metal/hoe_head/black_steel, Black Steel Hoe Head
 tfc:metal/hoe_head/blue_steel, Blue Steel Hoe Head
 tfc:metal/hoe_head/red_steel, Red Steel Hoe Head
+tfc:metal/hoe_head/nickel_silver, Nickel Silver Hoe Head
 tfc:metal/hoe_head/mithril, Mithril Hoe Head
 tfc:metal/hoe_head/invar, Invar Hoe Head
 tfc:metal/hoe_head/aluminium, Aluminium Hoe Head
@@ -14996,6 +15046,7 @@ tfc:metal/chisel/steel, Steel Chisel
 tfc:metal/chisel/black_steel, Black Steel Chisel
 tfc:metal/chisel/blue_steel, Blue Steel Chisel
 tfc:metal/chisel/red_steel, Red Steel Chisel
+tfc:metal/chisel/nickel_silver, Nickel Silver Chisel
 tfc:metal/chisel/mithril, Mithril Chisel
 tfc:metal/chisel/invar, Invar Chisel
 tfc:metal/chisel/aluminium, Aluminium Chisel
@@ -15014,6 +15065,7 @@ tfc:metal/chisel_head/steel, Steel Chisel Head
 tfc:metal/chisel_head/black_steel, Black Steel Chisel Head
 tfc:metal/chisel_head/blue_steel, Blue Steel Chisel Head
 tfc:metal/chisel_head/red_steel, Red Steel Chisel Head
+tfc:metal/chisel_head/nickel_silver, Nickel Silver Chisel Head
 tfc:metal/chisel_head/mithril, Mithril Chisel Head
 tfc:metal/chisel_head/invar, Invar Chisel Head
 tfc:metal/chisel_head/aluminium, Aluminium Chisel Head
@@ -15032,6 +15084,7 @@ tfc:metal/sword/steel, Steel Sword
 tfc:metal/sword/black_steel, Black Steel Sword
 tfc:metal/sword/blue_steel, Blue Steel Sword
 tfc:metal/sword/red_steel, Red Steel Sword
+tfc:metal/sword/nickel_silver, Nickel Silver Sword
 tfc:metal/sword/mithril, Mithril Sword
 tfc:metal/sword/invar, Invar Sword
 tfc:metal/sword/aluminium, Aluminium Sword
@@ -15050,6 +15103,7 @@ tfc:metal/sword_blade/steel, Steel Sword Blade
 tfc:metal/sword_blade/black_steel, Black Steel Sword Blade
 tfc:metal/sword_blade/blue_steel, Blue Steel Sword Blade
 tfc:metal/sword_blade/red_steel, Red Steel Sword Blade
+tfc:metal/sword_blade/nickel_silver, Nickel Silver Sword Blade
 tfc:metal/sword_blade/mithril, Mithril Sword Blade
 tfc:metal/sword_blade/invar, Invar Sword Blade
 tfc:metal/sword_blade/aluminium, Aluminium Sword Blade
@@ -15068,6 +15122,7 @@ tfc:metal/mace/steel, Steel Mace
 tfc:metal/mace/black_steel, Black Steel Mace
 tfc:metal/mace/blue_steel, Blue Steel Mace
 tfc:metal/mace/red_steel, Red Steel Mace
+tfc:metal/mace/nickel_silver, Nickel Silver Mace
 tfc:metal/mace/mithril, Mithril Mace
 tfc:metal/mace/invar, Invar Mace
 tfc:metal/mace/aluminium, Aluminium Mace
@@ -15086,6 +15141,7 @@ tfc:metal/mace_head/steel, Steel Mace Head
 tfc:metal/mace_head/black_steel, Black Steel Mace Head
 tfc:metal/mace_head/blue_steel, Blue Steel Mace Head
 tfc:metal/mace_head/red_steel, Red Steel Mace Head
+tfc:metal/mace_head/nickel_silver, Nickel Silver Mace Head
 tfc:metal/mace_head/mithril, Mithril Mace Head
 tfc:metal/mace_head/invar, Invar Mace Head
 tfc:metal/mace_head/aluminium, Aluminium Mace Head
@@ -15104,6 +15160,7 @@ tfc:metal/saw/steel, Steel Saw
 tfc:metal/saw/black_steel, Black Steel Saw
 tfc:metal/saw/blue_steel, Blue Steel Saw
 tfc:metal/saw/red_steel, Red Steel Saw
+tfc:metal/saw/nickel_silver, Nickel Silver Saw
 tfc:metal/saw/mithril, Mithril Saw
 tfc:metal/saw/invar, Invar Saw
 tfc:metal/saw/aluminium, Aluminium Saw
@@ -15122,6 +15179,7 @@ tfc:metal/saw_blade/steel, Steel Saw Blade
 tfc:metal/saw_blade/black_steel, Black Steel Saw Blade
 tfc:metal/saw_blade/blue_steel, Blue Steel Saw Blade
 tfc:metal/saw_blade/red_steel, Red Steel Saw Blade
+tfc:metal/saw_blade/nickel_silver, Nickel Silver Saw Blade
 tfc:metal/saw_blade/mithril, Mithril Saw Blade
 tfc:metal/saw_blade/invar, Invar Saw Blade
 tfc:metal/saw_blade/aluminium, Aluminium Saw Blade
@@ -15140,6 +15198,7 @@ tfc:metal/javelin/steel, Steel Javelin
 tfc:metal/javelin/black_steel, Black Steel Javelin
 tfc:metal/javelin/blue_steel, Blue Steel Javelin
 tfc:metal/javelin/red_steel, Red Steel Javelin
+tfc:metal/javelin/nickel_silver, Nickel Silver Javelin
 tfc:metal/javelin/mithril, Mithril Javelin
 tfc:metal/javelin/invar, Invar Javelin
 tfc:metal/javelin/aluminium, Aluminium Javelin
@@ -15158,6 +15217,7 @@ tfc:metal/javelin_head/steel, Steel Javelin Head
 tfc:metal/javelin_head/black_steel, Black Steel Javelin Head
 tfc:metal/javelin_head/blue_steel, Blue Steel Javelin Head
 tfc:metal/javelin_head/red_steel, Red Steel Javelin Head
+tfc:metal/javelin_head/nickel_silver, Nickel Silver Javelin Head
 tfc:metal/javelin_head/mithril, Mithril Javelin Head
 tfc:metal/javelin_head/invar, Invar Javelin Head
 tfc:metal/javelin_head/aluminium, Aluminium Javelin Head
@@ -15176,6 +15236,7 @@ tfc:metal/hammer/steel, Steel Hammer
 tfc:metal/hammer/black_steel, Black Steel Hammer
 tfc:metal/hammer/blue_steel, Blue Steel Hammer
 tfc:metal/hammer/red_steel, Red Steel Hammer
+tfc:metal/hammer/nickel_silver, Nickel Silver Hammer
 tfc:metal/hammer/mithril, Mithril Hammer
 tfc:metal/hammer/invar, Invar Hammer
 tfc:metal/hammer/aluminium, Aluminium Hammer
@@ -15194,6 +15255,7 @@ tfc:metal/hammer_head/steel, Steel Hammer Head
 tfc:metal/hammer_head/black_steel, Black Steel Hammer Head
 tfc:metal/hammer_head/blue_steel, Blue Steel Hammer Head
 tfc:metal/hammer_head/red_steel, Red Steel Hammer Head
+tfc:metal/hammer_head/nickel_silver, Nickel Silver Hammer Head
 tfc:metal/hammer_head/mithril, Mithril Hammer Head
 tfc:metal/hammer_head/invar, Invar Hammer Head
 tfc:metal/hammer_head/aluminium, Aluminium Hammer Head
@@ -15212,6 +15274,7 @@ tfc:metal/propick/steel, Steel Prospector's Pickaxe
 tfc:metal/propick/black_steel, Black Steel Prospector's Pickaxe
 tfc:metal/propick/blue_steel, Blue Steel Prospector's Pickaxe
 tfc:metal/propick/red_steel, Red Steel Prospector's Pickaxe
+tfc:metal/propick/nickel_silver, Nickel Silver Prospector's Pickaxe
 tfc:metal/propick/mithril, Mithril Prospector's Pickaxe
 tfc:metal/propick/invar, Invar Prospector's Pickaxe
 tfc:metal/propick/aluminium, Aluminium Prospector's Pickaxe
@@ -15230,6 +15293,7 @@ tfc:metal/propick_head/steel, Steel Prospector's Pickaxe Head
 tfc:metal/propick_head/black_steel, Black Steel Prospector's Pickaxe Head
 tfc:metal/propick_head/blue_steel, Blue Steel Prospector's Pickaxe Head
 tfc:metal/propick_head/red_steel, Red Steel Prospector's Pickaxe Head
+tfc:metal/propick_head/nickel_silver, Nickel Silver Prospector's Pickaxe Head
 tfc:metal/propick_head/mithril, Mithril Prospector's Pickaxe Head
 tfc:metal/propick_head/invar, Invar Prospector's Pickaxe Head
 tfc:metal/propick_head/aluminium, Aluminium Prospector's Pickaxe Head
@@ -15248,6 +15312,7 @@ tfc:metal/knife/steel, Steel Knife
 tfc:metal/knife/black_steel, Black Steel Knife
 tfc:metal/knife/blue_steel, Blue Steel Knife
 tfc:metal/knife/red_steel, Red Steel Knife
+tfc:metal/knife/nickel_silver, Nickel Silver Knife
 tfc:metal/knife/mithril, Mithril Knife
 tfc:metal/knife/invar, Invar Knife
 tfc:metal/knife/aluminium, Aluminium Knife
@@ -15266,6 +15331,7 @@ tfc:metal/knife_blade/steel, Steel Knife Blade
 tfc:metal/knife_blade/black_steel, Black Steel Knife Blade
 tfc:metal/knife_blade/blue_steel, Blue Steel Knife Blade
 tfc:metal/knife_blade/red_steel, Red Steel Knife Blade
+tfc:metal/knife_blade/nickel_silver, Nickel Silver Knife Blade
 tfc:metal/knife_blade/mithril, Mithril Knife Blade
 tfc:metal/knife_blade/invar, Invar Knife Blade
 tfc:metal/knife_blade/aluminium, Aluminium Knife Blade
@@ -15284,6 +15350,7 @@ tfc:metal/scythe/steel, Steel Scythe
 tfc:metal/scythe/black_steel, Black Steel Scythe
 tfc:metal/scythe/blue_steel, Blue Steel Scythe
 tfc:metal/scythe/red_steel, Red Steel Scythe
+tfc:metal/scythe/nickel_silver, Nickel Silver Scythe
 tfc:metal/scythe/mithril, Mithril Scythe
 tfc:metal/scythe/invar, Invar Scythe
 tfc:metal/scythe/aluminium, Aluminium Scythe
@@ -15302,6 +15369,7 @@ tfc:metal/scythe_blade/steel, Steel Scythe Blade
 tfc:metal/scythe_blade/black_steel, Black Steel Scythe Blade
 tfc:metal/scythe_blade/blue_steel, Blue Steel Scythe Blade
 tfc:metal/scythe_blade/red_steel, Red Steel Scythe Blade
+tfc:metal/scythe_blade/nickel_silver, Nickel Silver Scythe Blade
 tfc:metal/scythe_blade/mithril, Mithril Scythe Blade
 tfc:metal/scythe_blade/invar, Invar Scythe Blade
 tfc:metal/scythe_blade/aluminium, Aluminium Scythe Blade
@@ -15320,6 +15388,7 @@ tfc:metal/shears/steel, Steel Shears
 tfc:metal/shears/black_steel, Black Steel Shears
 tfc:metal/shears/blue_steel, Blue Steel Shears
 tfc:metal/shears/red_steel, Red Steel Shears
+tfc:metal/shears/nickel_silver, Nickel Silver Shears
 tfc:metal/shears/mithril, Mithril Shears
 tfc:metal/shears/invar, Invar Shears
 tfc:metal/shears/aluminium, Aluminium Shears
@@ -15338,6 +15407,7 @@ tfc:metal/unfinished_helmet/steel, Unfinished Steel Helmet
 tfc:metal/unfinished_helmet/black_steel, Unfinished Black Steel Helmet
 tfc:metal/unfinished_helmet/blue_steel, Unfinished Blue Steel Helmet
 tfc:metal/unfinished_helmet/red_steel, Unfinished Red Steel Helmet
+tfc:metal/unfinished_helmet/nickel_silver, Unfinished Nickel Silver Helmet
 tfc:metal/unfinished_helmet/mithril, Unfinished Mithril Helmet
 tfc:metal/unfinished_helmet/invar, Unfinished Invar Helmet
 tfc:metal/unfinished_helmet/aluminium, Unfinished Aluminium Helmet
@@ -15356,6 +15426,7 @@ tfc:metal/helmet/steel, Steel Helmet
 tfc:metal/helmet/black_steel, Black Steel Helmet
 tfc:metal/helmet/blue_steel, Blue Steel Helmet
 tfc:metal/helmet/red_steel, Red Steel Helmet
+tfc:metal/helmet/nickel_silver, Nickel Silver Helmet
 tfc:metal/helmet/mithril, Mithril Helmet
 tfc:metal/helmet/invar, Invar Helmet
 tfc:metal/helmet/aluminium, Aluminium Helmet
@@ -15374,6 +15445,7 @@ tfc:metal/unfinished_chestplate/steel, Unfinished Steel Chestplate
 tfc:metal/unfinished_chestplate/black_steel, Unfinished Black Steel Chestplate
 tfc:metal/unfinished_chestplate/blue_steel, Unfinished Blue Steel Chestplate
 tfc:metal/unfinished_chestplate/red_steel, Unfinished Red Steel Chestplate
+tfc:metal/unfinished_chestplate/nickel_silver, Unfinished Nickel Silver Chestplate
 tfc:metal/unfinished_chestplate/mithril, Unfinished Mithril Chestplate
 tfc:metal/unfinished_chestplate/invar, Unfinished Invar Chestplate
 tfc:metal/unfinished_chestplate/aluminium, Unfinished Aluminium Chestplate
@@ -15392,6 +15464,7 @@ tfc:metal/chestplate/steel, Steel Chestplate
 tfc:metal/chestplate/black_steel, Black Steel Chestplate
 tfc:metal/chestplate/blue_steel, Blue Steel Chestplate
 tfc:metal/chestplate/red_steel, Red Steel Chestplate
+tfc:metal/chestplate/nickel_silver, Nickel Silver Chestplate
 tfc:metal/chestplate/mithril, Mithril Chestplate
 tfc:metal/chestplate/invar, Invar Chestplate
 tfc:metal/chestplate/aluminium, Aluminium Chestplate
@@ -15410,6 +15483,7 @@ tfc:metal/unfinished_greaves/steel, Unfinished Steel Greaves
 tfc:metal/unfinished_greaves/black_steel, Unfinished Black Steel Greaves
 tfc:metal/unfinished_greaves/blue_steel, Unfinished Blue Steel Greaves
 tfc:metal/unfinished_greaves/red_steel, Unfinished Red Steel Greaves
+tfc:metal/unfinished_greaves/nickel_silver, Unfinished Nickel Silver Greaves
 tfc:metal/unfinished_greaves/mithril, Unfinished Mithril Greaves
 tfc:metal/unfinished_greaves/invar, Unfinished Invar Greaves
 tfc:metal/unfinished_greaves/aluminium, Unfinished Aluminium Greaves
@@ -15428,6 +15502,7 @@ tfc:metal/greaves/steel, Steel Greaves
 tfc:metal/greaves/black_steel, Black Steel Greaves
 tfc:metal/greaves/blue_steel, Blue Steel Greaves
 tfc:metal/greaves/red_steel, Red Steel Greaves
+tfc:metal/greaves/nickel_silver, Nickel Silver Greaves
 tfc:metal/greaves/mithril, Mithril Greaves
 tfc:metal/greaves/invar, Invar Greaves
 tfc:metal/greaves/aluminium, Aluminium Greaves
@@ -15446,6 +15521,7 @@ tfc:metal/unfinished_boots/steel, Unfinished Steel Boots
 tfc:metal/unfinished_boots/black_steel, Unfinished Black Steel Boots
 tfc:metal/unfinished_boots/blue_steel, Unfinished Blue Steel Boots
 tfc:metal/unfinished_boots/red_steel, Unfinished Red Steel Boots
+tfc:metal/unfinished_boots/nickel_silver, Unfinished Nickel Silver Boots
 tfc:metal/unfinished_boots/mithril, Unfinished Mithril Boots
 tfc:metal/unfinished_boots/invar, Unfinished Invar Boots
 tfc:metal/unfinished_boots/aluminium, Unfinished Aluminium Boots
@@ -15464,6 +15540,7 @@ tfc:metal/boots/steel, Steel Boots
 tfc:metal/boots/black_steel, Black Steel Boots
 tfc:metal/boots/blue_steel, Blue Steel Boots
 tfc:metal/boots/red_steel, Red Steel Boots
+tfc:metal/boots/nickel_silver, Nickel Silver Boots
 tfc:metal/boots/mithril, Mithril Boots
 tfc:metal/boots/invar, Invar Boots
 tfc:metal/boots/aluminium, Aluminium Boots
@@ -15482,6 +15559,7 @@ tfc:metal/shield/steel, Steel Shield
 tfc:metal/shield/black_steel, Black Steel Shield
 tfc:metal/shield/blue_steel, Blue Steel Shield
 tfc:metal/shield/red_steel, Red Steel Shield
+tfc:metal/shield/nickel_silver, Nickel Silver Shield
 tfc:metal/shield/mithril, Mithril Shield
 tfc:metal/shield/invar, Invar Shield
 tfc:metal/shield/aluminium, Aluminium Shield
@@ -16740,6 +16818,27 @@ tfc:ore/boron/phyllite, Phyllite Boron
 tfc:ore/boron/schist, Schist Boron
 tfc:ore/boron/gneiss, Gneiss Boron
 tfc:ore/boron/marble, Marble Boron
+tfc:ore/spodumene/granite, Granite Spodumene
+tfc:ore/spodumene/diorite, Diorite Spodumene
+tfc:ore/spodumene/gabbro, Gabbro Spodumene
+tfc:ore/spodumene/shale, Shale Spodumene
+tfc:ore/spodumene/claystone, Claystone Spodumene
+tfc:ore/spodumene/rocksalt, Rocksalt Spodumene
+tfc:ore/spodumene/limestone, Limestone Spodumene
+tfc:ore/spodumene/conglomerate, Conglomerate Spodumene
+tfc:ore/spodumene/dolomite, Dolomite Spodumene
+tfc:ore/spodumene/chert, Chert Spodumene
+tfc:ore/spodumene/chalk, Chalk Spodumene
+tfc:ore/spodumene/rhyolite, Rhyolite Spodumene
+tfc:ore/spodumene/basalt, Basalt Spodumene
+tfc:ore/spodumene/andesite, Andesite Spodumene
+tfc:ore/spodumene/dacite, Dacite Spodumene
+tfc:ore/spodumene/quartzite, Quartzite Spodumene
+tfc:ore/spodumene/slate, Slate Spodumene
+tfc:ore/spodumene/phyllite, Phyllite Spodumene
+tfc:ore/spodumene/schist, Schist Spodumene
+tfc:ore/spodumene/gneiss, Gneiss Spodumene
+tfc:ore/spodumene/marble, Marble Spodumene
 tfc:wood/bookshelf/acacia, Acacia Bookshelf
 tfc:wood/bookshelf/ash, Ash Bookshelf
 tfc:wood/bookshelf/aspen, Aspen Bookshelf
@@ -17896,11 +17995,11 @@ engineersdoors:door_steel_reinforced, Steel Door
 engineersdoors:door_treated, Treated Wood Door
 engineersdoors:door_treated_ornate, Treated Wood Door
 engineersdoors:door_treated_reinforced, Treated Wood Door
+engineersdoors:trapdoor_steel, Steel Trapdoor
+engineersdoors:trapdoor_treated, Treated Wood Trapdoor
 engineersdoors:fencegate_aluminium, Aluminum Fence Gate
 engineersdoors:fencegate_steel, Steel Fence Gate
 engineersdoors:fencegate_treated, Treated Wood Fence Gate
-engineersdoors:trapdoor_steel, Steel Trapdoor
-engineersdoors:trapdoor_treated, Treated Wood Trapdoor
 extraalchemy:breakable_potion, item.null.name
 extraalchemy:vial_break, item.null.name
 extraalchemy:potion_bag, item.null.name
@@ -19872,6 +19971,24 @@ tfctech:metal/electrum_long_rod, item.tfctech.metal.electrum_long_rod.name
 tfctech:metal/electrum_rod, item.tfctech.metal.electrum_rod.name
 tfctech:metal/electrum_bolt, item.tfctech.metal.electrum_bolt.name
 tfctech:metal/electrum_screw, item.tfctech.metal.electrum_screw.name
+tfctech:metal/nickel_silver_strip, item.tfctech.metal.nickel_silver_strip.name
+tfctech:metal/nickel_silver_rackwheel_piece, item.tfctech.metal.nickel_silver_rackwheel_piece.name
+tfctech:metal/nickel_silver_rackwheel, item.tfctech.metal.nickel_silver_rackwheel.name
+tfctech:metal/nickel_silver_gear, item.tfctech.metal.nickel_silver_gear.name
+tfctech:metal/nickel_silver_wire, item.tfctech.metal.nickel_silver_wire.name
+tfctech:metal/nickel_silver_long_rod, item.tfctech.metal.nickel_silver_long_rod.name
+tfctech:metal/nickel_silver_rod, item.tfctech.metal.nickel_silver_rod.name
+tfctech:metal/nickel_silver_bolt, item.tfctech.metal.nickel_silver_bolt.name
+tfctech:metal/nickel_silver_screw, item.tfctech.metal.nickel_silver_screw.name
+tfctech:metal/red_alloy_strip, item.tfctech.metal.red_alloy_strip.name
+tfctech:metal/red_alloy_rackwheel_piece, item.tfctech.metal.red_alloy_rackwheel_piece.name
+tfctech:metal/red_alloy_rackwheel, item.tfctech.metal.red_alloy_rackwheel.name
+tfctech:metal/red_alloy_gear, item.tfctech.metal.red_alloy_gear.name
+tfctech:metal/red_alloy_wire, item.tfctech.metal.red_alloy_wire.name
+tfctech:metal/red_alloy_long_rod, item.tfctech.metal.red_alloy_long_rod.name
+tfctech:metal/red_alloy_rod, item.tfctech.metal.red_alloy_rod.name
+tfctech:metal/red_alloy_bolt, item.tfctech.metal.red_alloy_bolt.name
+tfctech:metal/red_alloy_screw, item.tfctech.metal.red_alloy_screw.name
 tfctech:metal/mithril_strip, item.tfctech.metal.mithril_strip.name
 tfctech:metal/mithril_rackwheel_piece, item.tfctech.metal.mithril_rackwheel_piece.name
 tfctech:metal/mithril_rackwheel, item.tfctech.metal.mithril_rackwheel.name
@@ -21470,6 +21587,7 @@ contenttweaker:me_spider_eye_stew, Mise En Place Spider Eye Stew
 contenttweaker:tanned_small, Tanned Hide
 contenttweaker:treatedlumber, Treated Lumber
 contenttweaker:me_rabbit_stew, Mise En Place Rabbit Stew
+contenttweaker:glass_wire, Glass Wire
 contenttweaker:me_vegetable_soup, Mise En Place Vegetable Soup
 contenttweaker:unfired_material_engineering_processor_press, Unfired Engineering Processor Cast
 contenttweaker:fired_material_silicon_press, Fired Silicon Processor Cast
@@ -21478,11 +21596,13 @@ contenttweaker:dried_fruit, Dried Fruit
 contenttweaker:leatherglove, Leather Glove
 contenttweaker:dirtyglass:0, Dirty Glass
 contenttweaker:leatherbag, Leather Bag
+contenttweaker:glass_fibre, Fiberglass
 contenttweaker:tanned_flesh, Tanned Flesh
 contenttweaker:magic_motion_rune, Magic Motion Rune
 contenttweaker:sodiumcarbonate, Sodium Carbonate
 contenttweaker:creosote_string, Treated String
 contenttweaker:me_carrot_soup, Mise En Place Carrot Soup
+contenttweaker:wooden_glass_casing, Wooden Glass Casing
 contenttweaker:fired_material_engineering_processor_press, Fired Engineering Processor Cast
 contenttweaker:unfired_material_logic_processor_press, Unfired logic Processor Cast
 contenttweaker:me_nether_wart_stew, Mise En Place Nether Wart Stew
@@ -21563,13 +21683,13 @@ magicbees:mysteriousmagnet:18, Mysterious Magnet
 magicbees:moondial, Jade Moon Dial
 magicbees:manasteelgrafter, Manasteel Grafter
 magicbees:manasteelscoop, Manasteel Scoop
-magicbees:frames.necrotic, Necrotic Frame
-magicbees:frames.oblivion, Oblivion Frame
-magicbees:frames.gentle, Gentle Frame
-magicbees:frames.resilient, Resilient Frame
-magicbees:frames.magic, Magic Frame
-magicbees:frames.metabolic, Metabolic Frame
 magicbees:frames.temporal, Temporal Frame
+magicbees:frames.necrotic, Necrotic Frame
+magicbees:frames.magic, Magic Frame
+magicbees:frames.resilient, Resilient Frame
+magicbees:frames.metabolic, Metabolic Frame
+magicbees:frames.gentle, Gentle Frame
+magicbees:frames.oblivion, Oblivion Frame
 magicbees:hiveblock:0, Curious Hive
 magicbees:hiveblock:1, Unusual Hive
 magicbees:hiveblock:2, Resonating Hive
