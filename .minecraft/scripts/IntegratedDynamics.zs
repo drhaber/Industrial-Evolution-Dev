@@ -1,0 +1,1 @@
+mods.integrateddynamics.DryingBasin.removeRecipesWithOutput(<minecraft:leather>, null);
