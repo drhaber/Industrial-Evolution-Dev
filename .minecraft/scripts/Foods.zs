@@ -36,8 +36,6 @@ recipes.remove(<inspirations:potato_soup>);
 recipes.remove(<minecraft:mushroom_stew>);
 recipes.remove(<foodexpansion:itemcarrotseedsoup>);
 
-
-
 mods.inspirations.Cauldron.addFluidRecipe(<minecraft:beetroot_soup>,<minecraft:bowl>,  <liquid:beetroot_soup>, 1, true);
 mods.inspirations.Cauldron.addFluidRecipe(<foodexpansion:itemcarrotseedsoup>,<minecraft:bowl>,  <liquid:carrot_soup>, 1, true);
 mods.inspirations.Cauldron.addFluidRecipe(<foodexpansion:itemspidersoup>,<minecraft:bowl>, <liquid:spider_eye_stew>, 1, true);
@@ -62,41 +60,6 @@ mods.inspirations.Cauldron.addFillRecipe(<contenttweaker:me_vegetable_soup>, <li
 
 //ItemRegistry.registerFood(IIngredient input, float[] nutrients, float calories, float water, float decay);
 //Mc Bread
-var FoodItem = <minecraft:bread> as IItemStack;
-var	Carbs = 2.0 as double;
-var	Fat = 0.5 as double;
-var	Protien = 0.5 as double;
-var	Vitamins = 0.0 as double;
-var	Minerals = 0.0 as double;
-var Calories = 0.6 as double;
-var Water = 0.0 as double;
-var Decay = 0.8 as double;
-registerItemHeat(FoodItem, 1, 480, false);
-registerFood(FoodItem, [Carbs,Fat,Protien,Vitamins,Minerals], Calories, Water, Decay);
+#            FoodItem              carbs    Fat     Protien     Vitamins    Minerals    Calories    Water   Decay                                           Heat Capacity           Melt Temp
+registerFood(<minecraft:bread>,   [2.0,     0.5,    0.5,        0.0,        0.0],       0.6,        0.0,    0.8);   registerItemHeat(<minecraft:bread>,     1,                      480, false);
 
-//Mc Apple
-FoodItem = <minecraft:apple>;
-Carbs = 0.5;
-Fat = 0.0;
-Protien = 0.0;
-Vitamins = 0.5;
-Minerals = 0.0;
-Calories = 0.4;
-Water = 5.0;
-Decay = 3.75;
-registerFood(FoodItem, [Carbs,Fat,Protien,Vitamins,Minerals], Calories, Water, Decay);
-
-/*
-//
-FoodItem = IItemStack;
-Carbs = float;
-Fat = float;
-Protien = float;
-Vitamins = float;
-Minerals = float;
-Calories = float;
-Water = float;
-Decay = float;
-registerItemHeat(FoodItem, 1, 480, false);
-registerFood(FoodItem, [Carbs,Fat,Protien,Vitamins,Minerals], Calories, Water, Decay);
-*/

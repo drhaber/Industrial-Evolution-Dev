@@ -1,6 +1,8 @@
 {
 chisel:[
 	{keep:[[*],[0]]};
-
+],
+unlimitedchiselworks:[
+	{hide:[[*],[]]};
 ]
 }
