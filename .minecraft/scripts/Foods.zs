@@ -11,6 +11,11 @@ import mods.terrafirmacraft.ItemRegistry.registerFood;
 #<tfc:ore/bituminous_coal>.maxStackSize = 32;
 #mods.terrafirmacraft.Heating.addRecipe("Seared_Brick", <tconstruct:soil>, <tconstruct:seared:1>, 1500, 3200);
 
+recipes.remove(<foodexpansion:itembaconandegg>);
+recipes.addShapeless(<foodexpansion:itembaconandegg>,[<ore:foodCookedegg>,<foodexpansion:itemcookedbacon>]);
+
+furnace.remove(<minecraft:bread>);
+mods.jei.JEI.removeAndHide(<foodexpansion:itemdough>);
 <foodexpansion:itemcompressedflesh>.displayName = "Salted Flesh";
 mods.tconstruct.Drying.removeRecipe(<tconstruct:edible:10>);
 mods.tconstruct.Drying.addRecipe(<tconstruct:edible:10>,<foodexpansion:itemcompressedflesh>, 6000);
@@ -56,10 +61,18 @@ mods.inspirations.Cauldron.addFillRecipe(<contenttweaker:me_mushroom_stew>, <liq
 mods.inspirations.Cauldron.addFillRecipe(<contenttweaker:me_rabbit_stew>, <liquid:rabbit_stew>, 4, <tfc:ceramics/fired/pot>);
 mods.inspirations.Cauldron.addFillRecipe(<contenttweaker:me_vegetable_soup>, <liquid:vegetable_soup>, 4, <tfc:ceramics/fired/pot>);
 
+#============================================================================================================================================		
+val rawmeats = [<minecraft:fish:1>,<foodexpansion:itemparrotmeat>,<foodexpansion:itemllamameat>,<foodexpansion:itempolarbearmeat>,<tfc:food/beef>,
+<tfc:food/pork>,<tfc:food/chicken>,<tfc:food/mutton>,<tfc:food/fish>,<foodexpansion:itemcompressedflesh>,<foodexpansion:itembacon>,
+<foodexpansion:itembatwing>,<quark:frog_leg>,<quark:crab_leg>,<tfc:food/bear>,<tfc:food/calamari>,<tfc:food/horse_meat>,
+<tfc:food/pheasant>,<tfc:food/venison>,<tfc:food/wolf>,<tfc:food/rabbit>,<minecraft:fish:2>] as IItemStack[];
+val groundqty = [1,1,1,2,2,2,2,2,2,3,1,1,1,1,2,2,2,2,2,2,2,1] as int[];
+
+for i, RM in rawmeats{
+mods.terrafirmacraft.Quern.addRecipe("ground_meat"~i, RM, <contenttweaker:ground_meat>*groundqty[i]);
+}
 #=============================================================================================================================================		
 
 //ItemRegistry.registerFood(IIngredient input, float[] nutrients, float calories, float water, float decay);
-//Mc Bread
-#            FoodItem              carbs    Fat     Protien     Vitamins    Minerals    Calories    Water   Decay                                           Heat Capacity           Melt Temp
-registerFood(<minecraft:bread>,   [2.0,     0.5,    0.5,        0.0,        0.0],       0.6,        0.0,    0.8);   registerItemHeat(<minecraft:bread>,     1,                      480, false);
-
+#            FoodItem                      carbs    Fat     Protien     Vitamins    Minerals    Calories    Water   Decay                                           Heat Capacity           Melt Temp
+registerFood(<minecraft:mushroom_stew>,   [1,       0.8,    1,          0,          0.2],       1.2,        2,      6);  #registerItemHeat(<minecraft:bread>,       1,                      480, false);

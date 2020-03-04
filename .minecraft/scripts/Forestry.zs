@@ -27,3 +27,6 @@ recipes.addShaped(<forestry:fertilizer_bio>*4,[
 	[<ore:itemFood>,<ore:itemFood>,<ore:itemFood>],
 	[<ore:itemFood>,<ore:dirt>,<ore:itemFood>],
 	[<ore:itemFood>,<ore:itemFood>,<ore:itemFood>]]);
+
+//Kerosene
+mods.forestry.Still.addRecipe(<liquid:kerosene>, <liquid:oil>, 200);    

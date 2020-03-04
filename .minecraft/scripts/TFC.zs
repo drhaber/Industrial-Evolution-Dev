@@ -38,8 +38,6 @@ mods.terrafirmacraft.Anvil.removeRecipe(<tfc:metal/bucket/blue_steel>);
 mods.terrafirmacraft.Heating.addRecipe("destroy_blue", <tfc:metal/bucket/blue_steel>, <tfc:metal/scrap/mithril>, 700, 1300);
 <tfc:metal/bucket/blue_steel>.displayName = "Mithril Bucket";
 RollingMachine.addShapeless(<tfc:metal/bucket/blue_steel>, [<ore:sheetDoubleMithril>]);
-//Red Alloy Wire
-WireDrawing.addRecipe("red_alloy_wire", <projectred-core:resource_item:103>, 3, <projectred-transmission:wire>*4, 0xC21D00);
 //Salt
 mods.rustic.EvaporatingBasin.addRecipe(<tfc:powder/salt>, <liquid:salt_water>*250);
 //Wrench Head
@@ -133,6 +131,22 @@ mods.terrafirmacraft.Heating.addRecipe("Calculation_Kiln", <contenttweaker:unfir
 mods.terrafirmacraft.Heating.addRecipe("Logic_Kiln", <contenttweaker:unfired_material_logic_processor_press>, <contenttweaker:fired_material_logic_processor_press>,1500, 3200);
 mods.terrafirmacraft.Heating.addRecipe("Silicon_Kiln", <contenttweaker:unfired_material_silicon_press>, <contenttweaker:fired_material_silicon_press>, 1500, 3200);
 
+mods.terrafirmacraft.ItemRegistry.registerItemHeat(<contenttweaker:clay_insulator>, 1, 1599, false);
+mods.terrafirmacraft.ItemRegistry.registerItemHeat(<contenttweaker:ceramic_insulator>, 1, 1599, false);
+mods.terrafirmacraft.Heating.addRecipe("insulator_Kiln", <contenttweaker:clay_insulator>, <contenttweaker:ceramic_insulator>, 1500, 3200);
+
+mods.terrafirmacraft.ClayKnapping.addRecipe("clay_insulator_knap", <contenttweaker:clay_insulator>, 
+																	"  X  ", 
+																	"XXXXX", 
+																	" XXX ", 
+																	" XXX ", 
+																	"     ");
+mods.terrafirmacraft.ClayKnapping.addRecipe("clay_insulator_knap2", <contenttweaker:clay_insulator>, 
+																	"     ", 
+																	"  X  ", 
+																	"XXXXX", 
+																	" XXX ", 
+																	" XXX ");																	
 mods.terrafirmacraft.ClayKnapping.addRecipe("Engineering_Knap", <contenttweaker:unfired_material_engineering_processor_press>, 
 																	"XX  X", 
 																	"X X X", 

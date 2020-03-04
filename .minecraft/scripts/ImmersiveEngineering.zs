@@ -3,12 +3,15 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.mods.IMod;
 import crafttweaker.liquid.ILiquidStack;
+import mods.tfctech.WireDrawing;
 
 mods.immersiveengineering.Crusher.removeRecipe(<tfc:metal/dust/wrought_iron>);
 //Thorium
 mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust_oxide>, <tfc:ore/thorianite>, 2048, <nuclearcraft:dust_oxide:1>, 0.25);
 //Magnesium
 mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust:7>, <tfc:ore/magnesite>, 2048);
+//Lithium
+mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust:6>, <tfc:ore/spodumene>, 2048);
 
 mods.immersiveengineering.CokeOven.addRecipe( <immersiveengineering:material:6>, 500,<tfc:ore/bituminous_coal>, 2000);
 #mods.terrafirmacraft.Barrel.addRecipe("Hemp_Fibre", <tfc:crop/product/jute_fiber>, <liquid:creosote>*10, <immersiveengineering:material:4>, <liquid:creosote>*8, 4);
@@ -26,13 +29,16 @@ val plates = <immersiveengineering:metal:30>.definition;
 for i in 30 to 41{
 	recipes.remove(plates.makeStack(i));
 }
-mods.immersiveengineering.MetalPress.addRecipe(<projectred-transmission:wire>*4, <projectred-core:resource_item:103>, <immersiveengineering:mold:4>, 2000, 1); #Place Holder Mold
-
-
 
 mods.immersivetechnology.Distiller.addRecipe(<liquid:fresh_water>*10,<liquid:salt_water>*30,<tfc:powder/salt>);
 mods.immersivetechnology.Distiller.addRecipe(<liquid:water>*1000,<liquid:fresh_water>*1000,<tfc:powder/salt>);
 mods.immersivetechnology.SolarTower.addRecipe(<liquid:fresh_water>*2000, <liquid:steam>*500, 1);
+//Hammer and blocked Machines
+val blockedhammer = <immersiveengineering:tool>.withTag({multiblockInterdiction: ["IE:BlastFurnace"]});
+recipes.remove(<immersiveengineering:tool>);
+recipes.addShaped(blockedhammer,[
+	[<tfc:metal/hammer_head/wrought_iron>],
+	[<ore:stickTreatedWood>]]);
 //Glove
 recipes.remove(<immersiveengineering:toolupgrade:12>);
 recipes.addShaped(<immersiveengineering:toolupgrade:12>,[
@@ -58,6 +64,17 @@ recipes.addShaped(<immersiveengineering:stone_decoration:10>,[
 	[n,f,n],
 	[f,n,f],
 	[n,f,n]]);
+//Vacuum Tube
+recipes.addShaped(<immersiveengineering:material:26>*3,[
+	[null,<contenttweaker:casing_electron_tube>,null],
+	[null,<ore:stripCopper>,null],
+	[<tfctech:metal/copper_wire>,<ore:stripCopper>,<tfctech:metal/copper_wire>]]);
+//Insultaing Glass	
+recipes.remove(<immersiveengineering:stone_decoration:8>);
+recipes.addShaped(<immersiveengineering:stone_decoration:8>*4,[
+	[null,<contenttweaker:glass_fibre>,null],
+	[<contenttweaker:glass_fibre>,<contenttweaker:ceramic_insulator>,<contenttweaker:glass_fibre>],
+	[null,<contenttweaker:glass_fibre>,null]]);	
 //Leather
 mods.immersiveengineering.Squeezer.removeItemRecipe(<minecraft:leather>);
 mods.immersiveengineering.Squeezer.addRecipe(<contenttweaker:squeezed_flesh>, <liquid:blood>*50, <minecraft:rotten_flesh>*5, 2048);
@@ -87,6 +104,165 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<projectred-core:resource_item:30
 mods.immersiveengineering.Crusher.removeRecipesForInput(<immersiveengineering:material:7>);
 mods.immersiveengineering.Crusher.addRecipe(<railcraft:dust:4>, <immersiveengineering:material:7>, 2048);
 mods.terrafirmacraft.Barrel.addRecipe("slag_to_flux", <railcraft:dust:4>*4, <liquid:bleach>*1000, <tfc:powder/flux>, <liquid:waste>*1000,16);
+#=============================================================================================================================================		
+//Blueprint Rework
+mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:material:26>);
+mods.immersiveengineering.Blueprint.addRecipe("molds", <contenttweaker:mold_circuit>, [<ore:sheetDoubleSteel>,<immersiveengineering:tool:1>]);
+
+var IE_molds = <immersiveengineering:mold>.definition;
+for i in 0 to 8 {
+mods.immersiveengineering.Blueprint.removeRecipe(IE_molds.makeStack(i));
+mods.immersiveengineering.Blueprint.addRecipe("molds", IE_molds.makeStack(i), [<ore:sheetDoubleSteel>,<immersiveengineering:tool:1>]);
+}
+#=============================================================================================================================================		
+//Fibre Cables
+WireDrawing.addRecipe("quartz_wire", <appliedenergistics2:material>, 3, <contenttweaker:quartz_wire>*4, 0xFFA9CDD1);
+WireDrawing.addRecipe("fluix_wire", <appliedenergistics2:material:7>, 3, <contenttweaker:fluix_wire>*4, 0xFF614EAB);
+mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:quartz_wire>*6, <appliedenergistics2:material>, <immersiveengineering:mold:4>, 1024);
+mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:fluix_wire>*6, <appliedenergistics2:material:7>, <immersiveengineering:mold:4>, 1024);
+
+
+//Wire Coils
+val sp = <contenttweaker:emptyspool>;
+recipes.addShaped(sp,[
+	[<appliedenergistics2:material:40>,null,null],
+	[null,<ore:lumber>,null],
+	[null,null,<appliedenergistics2:material:40>]]);
+recipes.remove(<alternatingflux:wirecoil>); #AF Wire
+recipes.addShaped(<alternatingflux:wirecoil>*4,[
+	[<ore:wireConstantan>,<ore:wireConstantan>,<ore:wireConstantan>],
+	[<ore:wireConstantan>,sp,<ore:wireConstantan>],
+	[<ore:wireConstantan>,<ore:wireConstantan>,<ore:wireConstantan>]]);
+
+recipes.remove(<immersivecables:wire_coil>); #fluix wire
+recipes.addShaped(<immersivecables:wire_coil>*4,[
+	[<contenttweaker:glass_wire>,<contenttweaker:fluix_wire>,<contenttweaker:glass_wire>],
+	[<contenttweaker:fluix_wire>,sp,<contenttweaker:fluix_wire>],
+	[<contenttweaker:glass_wire>,<contenttweaker:fluix_wire>,<contenttweaker:glass_wire>]]);
+recipes.remove(<immersivecables:wire_coil:1>); #dense fluix wire
+recipes.addShaped(<immersivecables:wire_coil:1>*4,[
+	[<ore:wireSteel>,<contenttweaker:fluix_wire>,<ore:wireSteel>],
+	[<contenttweaker:fluix_wire>,sp,<contenttweaker:fluix_wire>],
+	[<ore:wireSteel>,<contenttweaker:fluix_wire>,<ore:wireSteel>]]);
+recipes.remove(<immersivecables:wire_coil:2>); #quartz wire
+recipes.addShaped(<immersivecables:wire_coil:2>*4,[
+	[<contenttweaker:glass_wire>,<contenttweaker:quartz_wire>,<contenttweaker:glass_wire>],
+	[<contenttweaker:quartz_wire>,sp,<contenttweaker:quartz_wire>],
+	[<contenttweaker:glass_wire>,<contenttweaker:quartz_wire>,<contenttweaker:glass_wire>]]);
+
+recipes.remove(<immersiveengineering:wirecoil>); #lv wire #Copper Wire
+recipes.addShaped(<immersiveengineering:wirecoil>*4,[
+	[<ore:wireCopper>,<ore:wireCopper>,<ore:wireCopper>],
+	[<ore:wireCopper>,sp,<ore:wireCopper>],
+	[<ore:wireCopper>,<ore:wireCopper>,<ore:wireCopper>]]);
+recipes.remove(<immersiveengineering:wirecoil:1>); #mv wirer #electrum wire
+recipes.addShaped(<immersiveengineering:wirecoil:1>*4,[
+	[<ore:wireElectrum>,<ore:wireElectrum>,<ore:wireElectrum>],
+	[<ore:wireElectrum>,sp,<ore:wireElectrum>],
+	[<ore:wireElectrum>,<ore:wireElectrum>,<ore:wireElectrum>]]);
+recipes.remove(<immersiveengineering:wirecoil:2>); #hv wire #aluminium and steel
+recipes.addShaped(<immersiveengineering:wirecoil:2>*4,[
+	[<ore:wireAluminium>,<ore:wireSteel>,<ore:wireAluminium>],
+	[<ore:wireSteel>,sp,<ore:wireSteel>],
+	[<ore:wireAluminium>,<ore:wireSteel>,<ore:wireAluminium>]]);
+recipes.remove(<immersiveengineering:wirecoil:3>); #hemp
+recipes.addShaped(<immersiveengineering:wirecoil:3>*4,[
+	[<ore:fiberHemp>,<ore:fiberHemp>,<ore:fiberHemp>],
+	[<ore:fiberHemp>,sp,<ore:fiberHemp>],
+	[<ore:fiberHemp>,<ore:fiberHemp>,<ore:fiberHemp>]]);
+
+recipes.remove(<projectred-core:resource_item:401>); #iron coil
+recipes.addShaped(<projectred-core:resource_item:401>*2,[
+	[null,<ore:wireWroughtIron>,null],
+	[<ore:wireWroughtIron>,sp,<ore:wireWroughtIron>],
+	[null,<ore:wireWroughtIron>,null]]);
+recipes.remove(<projectred-core:resource_item:400>); #copper coil
+recipes.addShaped(<projectred-core:resource_item:400>*2,[
+	[null,<ore:wireCopper>,null],
+	[<ore:wireCopper>,sp,<ore:wireCopper>],
+	[null,<ore:wireCopper>,null]]);
+recipes.remove(<projectred-core:resource_item:402>); #gold coil
+recipes.addShaped(<projectred-core:resource_item:402>*2,[
+	[null,<ore:wireGold>,null],
+	[<ore:wireGold>,sp,<ore:wireGold>],
+	[null,<ore:wireGold>,null]]);
+
+val cc = <projectred-core:resource_item:400>;
+recipes.remove(<railcraft:charge:2>); #small
+recipes.addShaped(<railcraft:charge:2>*4,[
+	[cc,cc,cc]]);
+recipes.remove(<railcraft:charge:3>); #medium
+recipes.addShaped(<railcraft:charge:3>*4,[
+	[cc,cc,cc],
+	[cc,cc,cc]]);
+recipes.remove(<railcraft:charge:4>); #large
+recipes.addShaped(<railcraft:charge:4>*4,[
+	[cc,cc,cc],
+	[cc,cc,cc],
+	[cc,cc,cc]]);
+
+recipes.remove(<immersiveengineering:wirecoil:4>); #steel
+recipes.addShaped(<immersiveengineering:wirecoil:4>*4,[
+	[<ore:wireSteel>,<ore:wireSteel>,<ore:wireSteel>],
+	[<ore:wireSteel>,sp,<ore:wireSteel>],
+	[<ore:wireSteel>,<ore:wireSteel>,<ore:wireSteel>]]);
+recipes.remove(<immersiveengineering:wirecoil:5>); #redstone #redalloy wire
+recipes.addShaped(<immersiveengineering:wirecoil:5>*4,[
+	[<ore:wireRedAlloy>,<ore:wireRedAlloy>,<ore:wireRedAlloy>],
+	[<ore:wireRedAlloy>,sp,<ore:wireRedAlloy>],
+	[<ore:wireRedAlloy>,<ore:wireRedAlloy>,<ore:wireRedAlloy>]]);
+/*
+recipes.remove(<immersiveengineering:wirecoil:6>); #insulated lv
+recipes.addShaped(<immersiveengineering:wirecoil:6>*4,[
+	[,,],
+	[,sp,],
+	[,,]]);
+recipes.remove(<immersiveengineering:wirecoil:7>); #insulated mv
+recipes.addShaped(<immersiveengineering:wirecoil:7>*4,[
+	[,,],
+	[,sp,],
+	[,,]]);
+*/
+mods.jei.JEI.removeAndHide(<immersivecables:wire_coil:3>);
+mods.jei.JEI.removeAndHide(<immersivecables:coil_block:3>);
+#=============================================================================================================================================		
+//Connectors & Relays
+val CI = <contenttweaker:ceramic_insulator>;
+recipes.remove(<immersiveengineering:connector>); #LV
+recipes.addShaped(<immersiveengineering:connector>*2,[
+	[<ore:longRodCopper>],
+	[CI]]);
+recipes.remove(<immersiveengineering:connector:2>); #MV
+recipes.addShaped(<immersiveengineering:connector:2>*2,[
+	[<ore:longRodElectrum>],
+	[CI],
+	[CI]]);
+recipes.remove(<immersiveengineering:connector:4>); #HV
+recipes.addShaped(<immersiveengineering:connector:4>*2,[
+	[<ore:longRodAluminium>],
+	[CI,CI],
+	[CI,CI]]);		
+
+recipes.remove(<immersiveengineering:connector:1>); #LV
+recipes.addShaped(<immersiveengineering:connector:1>*4,[
+	[<ore:longRodCopper>],
+	[<ore:hardenedClay>]]);
+recipes.remove(<immersiveengineering:connector:3>); #MV
+recipes.addShaped(<immersiveengineering:connector:3>*4,[
+	[<ore:longRodElectrum>],
+	[<ore:hardenedClay>],
+	[<ore:hardenedClay>]]);
+recipes.remove(<immersiveengineering:connector:5>); #HV
+recipes.addShaped(<immersiveengineering:connector:5>*4,[
+	[<ore:longRodAluminium>],
+	[<immersiveengineering:stone_decoration:8>,<immersiveengineering:stone_decoration:8>],
+	[<immersiveengineering:stone_decoration:8>,<immersiveengineering:stone_decoration:8>]]);
+
+recipes.remove(<alternatingflux:connector>); #AF
+recipes.addShaped(<alternatingflux:connector>*4,[
+	[<ore:longRodConstantan>],
+	[<immersiveengineering:stone_decoration:8>,<immersiveengineering:stone_decoration:8>],
+	[<immersiveengineering:stone_decoration:8>,<immersiveengineering:stone_decoration:8>]]);		
 #=============================================================================================================================================		
 
 //Pressed Sheets

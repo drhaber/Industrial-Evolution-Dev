@@ -1,6 +1,7 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
+import moretweaker.railcraft.BlastFurnace;
 
 val Dusts = 	[<tfc:metal/dust/gold>,	<tfc:metal/dust/platinum>,	<tfc:metal/dust/silver>,	<tfc:metal/dust/tin>,	<tfc:metal/dust/lead>,	<tfc:metal/dust/bismuth>,	<tfc:metal/dust/zinc>,	<tfc:metal/dust/ardite>,<tfc:metal/dust/osmium>,<tfc:metal/dust/antimony>,	<tfc:metal/dust/aluminium>,	<tfc:metal/dust/tungsten>,	<tfc:metal/dust/cobalt>] as IItemStack[];
 val Rich =   	[<ore:oreGoldRich>,		<ore:orePlatinumRich>,		<ore:oreSilverRich>,		<ore:oreTinRich>,		<ore:oreLeadRich>,		<ore:oreBismuthRich>,		<ore:oreZincRich>,		<ore:oreArditeRich>,	<ore:oreOsmiumRich>,	<ore:oreAntimonyRich>,		<ore:oreAluminiumRich>,		<ore:oreTungstenRich>,		<ore:oreCobaltRich>] as IOreDictEntry[];
@@ -46,20 +47,11 @@ mods.immersiveengineering.Crusher.addRecipe(IronSmal[n]*3, IronNorm[n], 2048, Ir
 mods.immersiveengineering.Crusher.addRecipe(IronSmal[n]*2, IronPoor[n], 2048);
 }
 mods.immersiveengineering.Crusher.addRecipe(<tfc:metal/dust/wrought_iron>, <ore:oreIronSmall>*10, 2048);
+#=============================================================================================================================================		
 
-/*
-//Remove Nuggets
-#mods.unidict.removalByKind.get("Crafting").remove("ingot", ["nugget"]);
-#mods.unidict.removalByKind.get("Furnace").remove("ingot",["dust"]);
-
-val ingots = [<minecraft:iron_ingot>,<advancedrocketry:productingot>,<advancedrocketry:productingot:1>,<immersiveengineering:metal>,
-<immersiveengineering:metal:1>,<immersiveengineering:metal:2>,<immersiveengineering:metal:3>,<immersiveengineering:metal:4>,<immersiveengineering:metal:5>,
-<immersiveengineering:metal:6>,<immersiveengineering:metal:7>,<immersiveengineering:metal:8>,<railcraft:ingot>,<railcraft:ingot:1>,
-<railcraft:ingot:2>,<railcraft:ingot:3>,<railcraft:ingot:4>,<railcraft:ingot:5>,<railcraft:ingot:6>,<railcraft:ingot:7>,<railcraft:ingot:8>,
-<railcraft:ingot:9>,<tconstruct:ingots>,<tconstruct:ingots:1>,<tconstruct:ingots:2>,<tconstruct:ingots:4>,<tconstruct:ingots:5>,<libvulpes:productingot:3>,
-<libvulpes:productingot:3>,<libvulpes:productingot:4>,<libvulpes:productingot:5>,<libvulpes:productingot:6>,<libvulpes:productingot:7>,<libvulpes:productingot:9>,
-<libvulpes:productingot:10>] as IItemStack[];
-for i, ingot in ingots{
-recipes.removeShaped(ingot);
-}
-*/
+//Steelingot
+BlastFurnace.remove(<railcraft:ingot>);
+BlastFurnace.remove(<railcraft:nugget>);
+BlastFurnace.remove(<railcraft:metal:3>);
+mods.immersiveengineering.BlastFurnace.removeRecipe(<immersiveengineering:metal:8>);
+mods.immersiveengineering.BlastFurnace.removeRecipe(<immersiveengineering:storage:8>);

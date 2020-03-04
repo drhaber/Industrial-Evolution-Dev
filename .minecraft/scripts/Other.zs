@@ -195,6 +195,12 @@ mods.jei.JEI.addDescription(<quark:thatch_slab>,"Magic has made this thatch soli
 	[<ore:clothHighQuality>,wools.makeStack(i),<ore:clothHighQuality>],
 	[<ore:string>,<ore:clothHighQuality>,<ore:string>]]);
 	}
+	//Tallow
+	furnace.remove(<quark:tallow>);
+	mods.inspirations.Cauldron.addFluidTransform(<liquid:meat_broth>,  <contenttweaker:ground_meat>, <liquid:water>, 1, true);
+	mods.inspirations.Cauldron.addFluidTransform(<liquid:meat_broth>,  <contenttweaker:ground_meat>, <liquid:fresh_water>, 1, true);
+	mods.inspirations.Cauldron.addFluidRecipe(<quark:tallow>*4, <minecraft:ice>, <liquid:meat_broth>, 4, true);
+	mods.inspirations.Cauldron.addFluidRecipe(<quark:tallow>, <minecraft:snowball>, <liquid:meat_broth>, 1, true);
 #=============================================================================================================================================		
 //Marble
 mods.terrafirmacraft.Barrel.addRecipe("Quark_marble", <tfc:raw/marble>, <liquid:bleach>*50, <quark:marble>, 4);
@@ -219,6 +225,13 @@ recipes.addShaped(<contenttweaker:glowstring>,[
 	
 //Project Red
 recipes.remove(<projectred-transmission:wire>);
+recipes.remove(<projectred-core:resource_item:400>);
+recipes.remove(<projectred-core:resource_item:401>);
+recipes.remove(<projectred-core:resource_item:402>);
+recipes.addShaped(<projectred-transmission:wire>*12,[
+	[null,<tfctech:metal/red_alloy_wire>,null],
+	[<tfctech:metal/red_alloy_wire>,<tfctech:metal/red_alloy_wire>,<tfctech:metal/red_alloy_wire>],
+	[null,<tfctech:metal/red_alloy_wire>,null]]);
 furnace.addRecipe(<projectred-core:resource_item>*2, <ore:stone>);
 mods.jei.JEI.removeAndHide(<projectred-transmission:wire:34>, false);
 mods.jei.JEI.removeAndHide(<projectred-transmission:framed_wire:34>, false);
@@ -284,6 +297,19 @@ recipes.addShaped(VanillaBoats[i],[
 	[VanillaPlanks.makeStack(i),null,VanillaPlanks.makeStack(i)],
 	[VanillaPlanks.makeStack(i),VanillaPlanks.makeStack(i),VanillaPlanks.makeStack(i)]]);	
 }	
+#=============================================================================================================================================		
+//Applied Energistics
+recipes.remove(<appliedenergistics2:part:140>); #quartz cable
+recipes.addShaped(<appliedenergistics2:part:140>,[
+	[<contenttweaker:quartz_wire>,<contenttweaker:quartz_wire>,<contenttweaker:quartz_wire>]]);
+recipes.remove(<appliedenergistics2:part:16>); #fluix cable
+recipes.addShaped(<appliedenergistics2:part:16>,[
+	[<contenttweaker:fluix_wire>,<contenttweaker:fluix_wire>,<contenttweaker:fluix_wire>]]);	
+recipes.remove(<appliedenergistics2:part:56>); #smart cable
+recipes.addShaped(<appliedenergistics2:part:56>,[
+	[<contenttweaker:glass_wire>,<contenttweaker:glass_wire>,<contenttweaker:glass_wire>],
+	[<contenttweaker:fluix_wire>,<contenttweaker:fluix_wire>,<contenttweaker:fluix_wire>],
+	[<tfctech:metal/red_alloy_wire>,<tfctech:metal/red_alloy_wire>,<tfctech:metal/red_alloy_wire>]]);		
 #=============================================================================================================================================		
 
 //Compact Machines

@@ -6,10 +6,14 @@ import crafttweaker.liquid.ILiquidStack;
 import moretweaker.railcraft.RollingMachine;
 import mods.tfctech.WireDrawing;
 
-
+//End Stone
+mods.jei.JEI.removeAndHide(<opencomputers:endstone>);
 //Circuit Boards
-WireDrawing.addRecipe("glass_wire", <ore:blockGlass>, 3, <contenttweaker:glass_wire>*4, 0xEDE7D8);
-mods.terrafirmacraft.Loom.addRecipe("glass_fibre", <contenttweaker:glass_wire>*24,<contenttweaker:glass_fibre>*6, 12, "contenttweaker:items/glass_fibre.png");
+WireDrawing.addRecipe("glass_wire", <ore:blockGlass>, 3, <contenttweaker:glass_wire>*16, 0xFFFF9966);
+mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:glass_wire>*24, <ore:blockGlass>, <immersiveengineering:mold:4>, 1024);
+
+mods.terrafirmacraft.Loom.addRecipe("glass_fibre", <contenttweaker:glass_wire>*24,<contenttweaker:glass_fibre>*6, 12, "minecraft:textures/blocks/wool_colored_brown.png"); 
+mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:glass_fibre>, <contenttweaker:glass_wire>, <immersiveengineering:mold>, 1024,4);
 
 recipes.remove(<opencomputers:material:2>);
 furnace.remove(<opencomputers:material:3>);
@@ -18,8 +22,8 @@ recipes.addShaped(<opencomputers:material:2>,[
 	[<contenttweaker:glass_fibre>,<contenttweaker:glass_fibre>,<contenttweaker:glass_fibre>],
 	[<ore:slimeballGreen>,<ore:slimeballGreen>,<ore:slimeballGreen>],
 	[<contenttweaker:glass_fibre>,<contenttweaker:glass_fibre>,<contenttweaker:glass_fibre>]]);
-RollingMachine.addShapeless(<opencomputers:material:3>, [<opencomputers:material:2>], 300);
-mods.appliedenergistics2.Inscriber.addRecipe(<opencomputers:material:4>, <opencomputers:material:3>, false, <tfctech:metal/gold_strip>,<tfctech:metal/copper_strip>);
+RollingMachine.addShaped(<opencomputers:material:3>, [[<tfctech:metal/gold_strip>],[<opencomputers:material:2>]], 300);
+mods.appliedenergistics2.Inscriber.addRecipe(<opencomputers:material:4>, <opencomputers:material:3>, true,<contenttweaker:mold_circuit>);
 //Transistor
 recipes.remove(<opencomputers:material:6>);
 recipes.addShaped(<opencomputers:material:6>,[

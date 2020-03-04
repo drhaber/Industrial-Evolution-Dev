@@ -64,8 +64,6 @@ for i in 0 to 16{
 //Biotite
 <ore:gemEnderBiotite>.addAll(<ore:quartzDark>);
 <ore:quartzDark>.mirror(<ore:gemEnderBiotite>);
-//End Stone
-<ore:endstone>.add(<opencomputers:endstone>);
 //Brass Sleeve
 <ore:sleeveBrass>.add(<railcraft:gear:3>);
 //Silicon
@@ -154,4 +152,4 @@ mods.jei.JEI.removeAndHide(<railcraft:gear:3>);
 <ore:foodPlum>.addItems([<forestry:fruits:4>,<tfc:food/plum>]);
 <ore:foodOlive>.addItems([<rustic:olives>,<tfc:food/olive>]);
 <ore:foodTomato>.addItems([<rustic:tomato>,<tfc:food/tomato>]);
-<ore:foodBerrieswild>.addItems([<rustic:wildberries>,<tfc:food/bunch_berry>]);
+<ore:foodCookedegg>.addItems([<tfc:food/cooked_egg>,<foodexpansion:itemfriedegg>]);

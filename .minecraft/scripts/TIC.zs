@@ -326,8 +326,8 @@ mods.tconstruct.Casting.addTableRecipe(rackwheel, <tconstruct:cast_custom:4>, mo
 //mods.tconstruct.Alloy.addRecipe(ILiquidStack output, ILiquidStack[] inputs);
 
 //Red Alloy
-mods.tconstruct.Alloy.addRecipe(<liquid:moltenredalloy>*144, [<liquid:copper>*144,<liquid:redstone>*576]);
-mods.tconstruct.Casting.addTableRecipe(<projectred-core:resource_item:103>, <tconstruct:cast_custom>, <liquid:moltenredalloy>, 144, false, 240);
+mods.tconstruct.Alloy.addRecipe(<liquid:red_alloy>*144, [<liquid:copper>*144,<liquid:redstone>*576]);
+mods.tconstruct.Casting.addTableRecipe(<tfc:metal/ingot/red_alloy>, <tconstruct:cast_custom>, <liquid:red_alloy>, 144, false, 240);
 
 //Bismuth Bronze
 mods.tconstruct.Alloy.addRecipe(<liquid:bismuth_bronze>*144, [<liquid:bismuth>*144,<liquid:zinc>*288,<liquid:copper>*576]);

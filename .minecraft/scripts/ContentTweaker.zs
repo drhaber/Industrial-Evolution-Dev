@@ -6,7 +6,54 @@ import mods.contenttweaker.Block;
 import mods.contenttweaker.Item;
 import crafttweaker.game.IGame;
 import mods.contenttweaker.ItemFood;
+import crafttweaker.potions.IPotion;
+import mods.contenttweaker.Random;
+import mods.contenttweaker.World;
 
+//uncooked_beet_noodles
+var uncooked_beet_noodles = VanillaFactory.createItem("uncooked_beet_noodles");
+uncooked_beet_noodles.register();
+game.setLocalization("item.contenttweaker.uncooked_beet_noodles.name", "Uncooked Beetroot Noodles");
+//uncooked_carrot_cake
+var uncooked_carrot_cake = VanillaFactory.createItem("uncooked_carrot_cake");
+uncooked_carrot_cake.register();
+game.setLocalization("item.contenttweaker.uncooked_carrot_cake.name", "Uncooked Carrot Cake");
+//uncooked_pumpkin_pie
+var uncooked_pumpkin_pie = VanillaFactory.createItem("uncooked_pumpkin_pie");
+uncooked_pumpkin_pie.register();
+game.setLocalization("item.contenttweaker.uncooked_pumpkin_pie.name", "Uncooked Pumpkin Pie");
+//clay_insulator
+var clay_insulator = VanillaFactory.createItem("clay_insulator");
+clay_insulator.register();
+game.setLocalization("item.contenttweaker.clay_insulator.name", "Unfired Ceramic Insulator");
+//mold_circuit
+var mold_circuit = VanillaFactory.createItem("mold_circuit");
+mold_circuit.register();
+game.setLocalization("item.contenttweaker.mold_circuit.name", "Mold Circuit");
+//ceramic_insulator
+var ceramic_insulator = VanillaFactory.createItem("ceramic_insulator");
+ceramic_insulator.register();
+game.setLocalization("item.contenttweaker.ceramic_insulator.name", "Ceramic Insulator");
+//fluix_wire
+var fluix_wire = VanillaFactory.createItem("fluix_wire");
+fluix_wire.register();
+game.setLocalization("item.contenttweaker.fluix_wire.name", "Fluix Wire");
+//quartz_wire
+var quartz_wire = VanillaFactory.createItem("quartz_wire");
+quartz_wire.register();
+game.setLocalization("item.contenttweaker.quartz_wire.name", "Quartz_wire");
+//emptyspool
+var emptyspool = VanillaFactory.createItem("emptyspool");
+emptyspool.register();
+game.setLocalization("item.contenttweaker.emptyspool.name", "Empty Spool");
+//redstoneEmitter
+var redstoneEmitter = VanillaFactory.createItem("redstoneEmitter");
+redstoneEmitter.register();
+game.setLocalization("item.contenttweaker.redstoneEmitter.name", "Redstone Emitter");
+//redstoneSensor
+var redstoneSensor = VanillaFactory.createItem("redstoneSensor");
+redstoneSensor.register();
+game.setLocalization("item.contenttweaker.redstoneSensor.name", "Redstone Sensor");
 //Glass Fibre
 var glass_fibre = VanillaFactory.createItem("glass_fibre");
 glass_fibre.register();
@@ -163,6 +210,13 @@ me_vegetable_soup.register();
 game.setLocalization("item.contenttweaker.me_vegetable_soup.name", "Mise En Place Vegetable Soup");
 #=============================================================================================================================================	
 
+//meat_broth
+var meat_broth = VanillaFactory.createFluid("meat_broth", Color.fromHex("806D2F"));
+meat_broth.viscosity = 3000;
+meat_broth.temperature= 100;
+meat_broth.register();
+game.setLocalization("fluid.meat_broth", "meat_broth");
+
 //vegetable_soup
 var vegetable_soup = VanillaFactory.createFluid("vegetable_soup", Color.fromHex("B89C44"));
 vegetable_soup.viscosity = 3000;
@@ -234,18 +288,31 @@ waste.temperature= 100;
 waste.register();
 game.setLocalization("fluid.waste", "Waste");
 
-//Molten Red Alloy
-var moltenredalloy = VanillaFactory.createFluid("moltenredalloy", Color.fromHex("FF6145"));
-moltenredalloy.viscosity = 1000;
-moltenredalloy.temperature= 1200;
-moltenredalloy.register();
-game.setLocalization("fluid.moltenredalloy", "Molten Red Alloy");
 #=============================================================================================================================================	
+//cookie_dough
+var cookie_dough = VanillaFactory.createItemFood("cookie_dough",1);
+cookie_dough.saturation = 0.1;
+cookie_dough.alwaysEdible = true;
+cookie_dough.onItemFoodEaten = function(stack, world, player) {
+	var rand = world.getRandom();
+    if (!world.isRemote() & rand.nextInt(100)<7) {
+        player.addPotionEffect(<potion:minecraft:weakness>.makePotionEffect(200, 1));
+    }
+};
+cookie_dough.register();
+game.setLocalization("item.contenttweaker.cookie_dough.name", "Cookie Dough");
+
 //dried_fruit
 var dried_fruit = VanillaFactory.createItemFood("dried_fruit",4);
 dried_fruit.saturation = 0.6;
 dried_fruit.register();
 game.setLocalization("item.contenttweaker.dried_fruit.name", "Dried Fruit");
+
+//ground_meat
+var ground_meat = VanillaFactory.createItemFood("ground_meat",1);
+ground_meat.saturation = 0.2;
+ground_meat.register();
+game.setLocalization("item.contenttweaker.ground_meat.name", "Ground Meat");
 
 //vegetable_soup
 var i_vegetable_soup = VanillaFactory.createItemFood("i_vegetable_soup",6);

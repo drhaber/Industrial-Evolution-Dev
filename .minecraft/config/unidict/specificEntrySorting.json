@@ -22,13 +22,6 @@
 		]
 	},	
 	{
-		"entryName" : "Endstone",
-		"modIdPriorityList" :
-		[
-		"minecraft"
-		]
-	},	
-		{
 		"entryName" : "fuelCoke",
 		"modIdPriorityList" :
 		[
