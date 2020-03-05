@@ -3,18 +3,27 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.terrafirmacraft.ItemRegistry.registerItemHeat;
 import mods.terrafirmacraft.ItemRegistry.registerFood;
+import mods.terrafirmacraft.Heating;
 
+
+mods.emergingtechnology.Biomass.removeAll();
 
 recipes.remove(<foodexpansion:itembaconandegg>);
 recipes.addShapeless(<foodexpansion:itembaconandegg>,[<ore:foodCookedegg>,<foodexpansion:itemcookedbacon>]);
 
 furnace.remove(<minecraft:bread>);
+
+//Jerky
 mods.jei.JEI.removeAndHide(<foodexpansion:itemdough>);
 <foodexpansion:itemcompressedflesh>.displayName = "Salted Flesh";
 mods.tconstruct.Drying.removeRecipe(<tconstruct:edible:10>);
 mods.tconstruct.Drying.addRecipe(<tconstruct:edible:10>,<foodexpansion:itemcompressedflesh>, 6000);
+mods.tconstruct.Drying.addRecipe(<contenttweaker:dried_ground_meat>,<contenttweaker:ground_meat>, 6000);
+
 #=============================================================================================================================================		
 //Food Recipes
+mods.terrafirmacraft.Barrel.addRecipe("honey_bread1", <ore:breadAny>, <liquid:honey>*10, <forestry:honeyed_slice>,1);
+mods.terrafirmacraft.Barrel.addRecipe("honey_bread1", <ore:breadAny>, <liquid:for.honey>*10, <forestry:honeyed_slice>,1);
 
 recipes.addShapeless(<contenttweaker:raw_seeds>,[<ore:seedAny>,<ore:knife>.transformDamage(2)]);
 
@@ -36,6 +45,9 @@ recipes.remove(<foodexpansion:itemcompressedflesh>);
 recipes.addShapeless(<foodexpansion:itemcompressedflesh>,[<minecraft:rotten_flesh>,<minecraft:rotten_flesh>,<ore:dustSalt>]);
 
 recipes.addShapeless(<contenttweaker:uncooked_beet_noodles>,[<botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}),<ore:knife>.transformDamage(5),<ore:dough>,<ore:dustSalt>,<tfc:food/beet>,<tfc:food/beet>]);
+
+recipes.addShapeless(<contenttweaker:snow_cream>,[<tfc:wooden_bucket>.withTag({Fluid: {FluidName: "milk", Amount: 1000}}).transformReplace(<tfc:wooden_bucket>),<minecraft:snowball>,<minecraft:snowball>,<minecraft:snowball>,<minecraft:sugar>,<minecraft:bowl>]);
+recipes.addShapeless(<contenttweaker:snow_cream>,[<minecraft:milk_bucket>.transformReplace(<minecraft:bucket>),<minecraft:snowball>,<minecraft:snowball>,<minecraft:snowball>,<minecraft:sugar>,<minecraft:bowl>]);
 
 recipes.addShapeless(<contenttweaker:pemmican>,[<ore:jerkyAny>,<contenttweaker:dried_fruit>,<botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}).transformReplace(<minecraft:bowl>),<ore:knife>.transformDamage(5),<ore:grain>]);
 #=============================================================================================================================================		
@@ -110,8 +122,6 @@ mods.terrafirmacraft.Quern.addRecipe("ground_meat"~i, RM, <contenttweaker:ground
 #=============================================================================================================================================		
 
 //ItemRegistry.registerFood(IIngredient input, float[] nutrients, float calories, float water, float decay);
-#            FoodItem                       carbs    Fat     Protien     Vitamins    Minerals    Calories    Water   Decay                                           Heat Capacity           Melt Temp
-#registerFood(<minecraft:mushroom_stew>,   [1,       0.8,    1,          0,          0.2],       1.2,        2,      6);  #registerItemHeat(<minecraft:bread>,       1,                      480, false);
 
 registerFood(<minecraft:mushroom_stew>,[1,0.8,1,0,0.2],1.2,2,6);	          #mushroom stew
 registerFood(<minecraft:fish:1>,[0,0.2,2,0,0],0.2,1,3);	registerItemHeat(<minecraft:fish:1>,1,480,false);          #raw salmon
@@ -236,3 +246,47 @@ registerFood(<extrabotany:manadrink>,[0,0,0,0,0.6],0.4,3,0);	          #Mana Coc
 registerFood(<extrabotany:candy>,[0.2,0.3,0,0,0],0.3,0,0);	          #Candy Eins
 registerFood(<extrabotany:candy:1>,[0.2,0.3,0,0,0],0.3,0,0);	          #Candy Zwei
 registerFood(<extrabotany:candy:2>,[0.2,0.3,0,0,0],0.3,0,0);	          #Candy Drei
+
+#=============================================================================================================================================		
+
+#Heating.addRecipe(String registryName, IItemStack input, IItemStack output, float transformTemp, float maxTemp);
+
+furnace.remove(<minecraft:cooked_fish:1>);
+Heating.addRecipe("cooked_salmon", <minecraft:fish:1>, <minecraft:cooked_fish:1>, 250, 480);
+
+furnace.remove(<minecraft:baked_potato>);
+Heating.addRecipe("baked_potato", <tfc:food/potato>, <minecraft:baked_potato>, 250, 480);
+
+furnace.remove(<foodexpansion:itemcookedmushroom>);
+val shrooms = <ore:mushroomAny>.items;
+for i, shroom in shrooms{
+Heating.addRecipe("cooked_mushroom"~i, shroom, <foodexpansion:itemcookedmushroom>, 250, 480);
+}
+
+furnace.remove(<foodexpansion:itemroastedseed>);
+Heating.addRecipe("cooked_seed", <contenttweaker:raw_seeds>, <foodexpansion:itemroastedseed>, 250, 480);
+
+furnace.remove(<foodexpansion:itemcookedbacon>);
+Heating.addRecipe("cooked_bacon",<foodexpansion:itembacon>, <foodexpansion:itemcookedbacon>, 250, 480);
+
+furnace.remove(<foodexpansion:itemcookedocelotmeat>);
+Heating.addRecipe("cooked_ocelot",<foodexpansion:itemocelotmeat>, <foodexpansion:itemcookedocelotmeat>, 250, 480);
+
+furnace.remove(<foodexpansion:itemcookedparrotmeat>);
+Heating.addRecipe("cooked_parrot",<foodexpansion:itemparrotmeat>, <foodexpansion:itemcookedparrotmeat>, 250, 480);
+
+furnace.remove(<foodexpansion:itemcookedllamameat>);
+Heating.addRecipe("cooked_llama",<foodexpansion:itemllamameat>, <foodexpansion:itemcookedllamameat>, 250, 480);
+
+furnace.remove(<foodexpansion:itemcookedpolarbearmeat>);
+Heating.addRecipe("cooked_polar_bear",<foodexpansion:itempolarbearmeat>, <foodexpansion:itemcookedpolarbearmeat>, 250, 480);
+
+furnace.remove(<quark:cooked_frog_leg>);
+Heating.addRecipe("cooked_frog",<quark:frog_leg>, <quark:cooked_frog_leg>, 250, 480);
+
+furnace.remove(<quark:cooked_crab_leg>);
+Heating.addRecipe("cooked_crab",<quark:crab_leg>, <quark:cooked_crab_leg>, 250, 480);
+
+
+
+
