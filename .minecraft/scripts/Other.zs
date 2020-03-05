@@ -237,7 +237,6 @@ mods.jei.JEI.removeAndHide(<projectred-transmission:wire:34>, false);
 mods.jei.JEI.removeAndHide(<projectred-transmission:framed_wire:34>, false);
 mods.jei.JEI.removeAndHide(<projectred-core:resource_item:252>, false);
 mods.jei.JEI.removeAndHide(<projectred-core:resource_item:251>, false);
-recipes.addShapeless(<projectred-core:resource_item:301> * 8, [<ore:saw>.transformDamage(7), <projectred-core:resource_item:300>]);
 furnace.remove(<projectred-core:resource_item:104>);
 furnace.remove(<projectred-core:resource_item:342>);
 furnace.remove(<projectred-core:resource_item:103>);
@@ -251,6 +250,14 @@ mods.jei.JEI.hide(<projectred-core:resource_item:101>);
 mods.jei.JEI.hide(<projectred-core:resource_item:102>);
 mods.jei.JEI.hide(<projectred-core:resource_item:100>);
 mods.jei.JEI.hide(<projectred-core:resource_item:600>);
+
+//Silicon
+recipes.addShapeless(<projectred-core:resource_item:301> * 4, [<ore:sawII>.transformDamage(3), <projectred-core:resource_item:300>]);
+recipes.addShapeless(<projectred-core:resource_item:301> * 6, [<ore:sawIII>.transformDamage(5), <projectred-core:resource_item:300>]);
+recipes.addShapeless(<projectred-core:resource_item:301> * 8, [<ore:sawIV>.transformDamage(7), <projectred-core:resource_item:300>]);
+recipes.addShapeless(<projectred-core:resource_item:301> * 8, [<ore:sawV>.transformDamage(7), <projectred-core:resource_item:300>]);
+recipes.addShapeless(<projectred-core:resource_item:301> * 12, [<ore:sawVI>.transformDamage(11), <projectred-core:resource_item:300>]);
+
 #=============================================================================================================================================		
 
 //OSISA

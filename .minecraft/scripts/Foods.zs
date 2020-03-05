@@ -20,6 +20,15 @@ mods.jei.JEI.removeAndHide(<foodexpansion:itemdough>);
 mods.tconstruct.Drying.removeRecipe(<tconstruct:edible:10>);
 mods.tconstruct.Drying.addRecipe(<tconstruct:edible:10>,<foodexpansion:itemcompressedflesh>, 6000);
 #=============================================================================================================================================		
+//Uncooked Items
+recipes.addShapeless(<contenttweaker:cookie_dough>,[<ore:dough>,<nuclearcraft:ground_cocoa_nibs>,<minecraft:sugar>]);
+recipes.remove(<foodexpansion:itembacon>);
+recipes.addShapeless(<foodexpansion:itembacon>*3,[<ore:knife>.transformDamage(2),<tfc:food/pork>]);
+
+recipes.addShapeless(<contenttweaker:uncooked_pumpkin_pie>,[<minecraft:milk_bucket>.transformReplace(<minecraft:bucket>),<ore:knife>.transformDamage(1),<ore:flour>,<minecraft:pumpkin>,<minecraft:sugar>]);
+recipes.addShapeless(<contenttweaker:uncooked_pumpkin_pie>,[<tfc:wooden_bucket>.withTag({Fluid: {FluidName: "milk", Amount: 1000}}).transformReplace(<tfc:wooden_bucket>),<ore:knife>.transformDamage(1),<ore:flour>,<minecraft:pumpkin>,<minecraft:sugar>]);
+
+#=============================================================================================================================================		
 
 //Soups and stews
 mods.inspirations.Cauldron.removeFluidRecipe(<minecraft:beetroot_soup>);
@@ -61,6 +70,20 @@ mods.inspirations.Cauldron.addFillRecipe(<contenttweaker:me_mushroom_stew>, <liq
 mods.inspirations.Cauldron.addFillRecipe(<contenttweaker:me_rabbit_stew>, <liquid:rabbit_stew>, 4, <tfc:ceramics/fired/pot>);
 mods.inspirations.Cauldron.addFillRecipe(<contenttweaker:me_vegetable_soup>, <liquid:vegetable_soup>, 4, <tfc:ceramics/fired/pot>);
 
+val hotwater_pot = <tfctech:ceramics/fluid_bowl>.withTag({Fluid: {FluidName: "hot_water", Amount: 1000}});
+val empty_pot = <tfctech:ceramics/fluid_bowl>;
+
+
+#recipes.addShapeless(<contenttweaker:me_beetroot_soup>,[hotwater_pot,<ore:knife>.transformDamage(3)]);
+#recipes.addShapeless(<contenttweaker:me_carrot_soup>,[hotwater_pot,<ore:knife>.transformDamage(3)]);
+#recipes.addShapeless(<contenttweaker:me_spider_eye_stew>,[hotwater_pot,<ore:knife>.transformDamage(3)]);
+#recipes.addShapeless(<contenttweaker:me_nether_wart_stew>,[hotwater_pot,<ore:knife>.transformDamage(3)]);
+#recipes.addShapeless(<contenttweaker:me_blaze_cream_soup>,[hotwater_pot,<ore:knife>.transformDamage(3)]);
+#recipes.addShapeless(<contenttweaker:me_potato_soup>,[hotwater_pot,<ore:knife>.transformDamage(3)]);
+recipes.addShapeless(<contenttweaker:me_mushroom_stew>,[hotwater_pot,<ore:knife>.transformDamage(5),<rustic:fluid_bottle>.withTag({Fluid: {FluidName: "wine", Amount: 1000}}).transformReplace(<minecraft:glass_bottle>),<ore:mushroomAny>,<ore:mushroomAny>,<ore:mushroomAny>,<tfc:food/potato>,<tfc:food/onion>,<ore:dustSalt>]);
+recipes.addShapeless(<contenttweaker:me_rabbit_stew>,[hotwater_pot,<ore:knife>.transformDamage(4),<tfc:food/onion>,<ore:dustSalt>,<ore:flour>,<tfc:food/carrot>,<tfc:food/rabbit>,<tfc:food/cabbage>]);
+#recipes.addShapeless(<contenttweaker:me_vegetable_soup>,[hotwater_pot,<ore:knife>.transformDamage(3)]);
+
 #============================================================================================================================================		
 val rawmeats = [<minecraft:fish:1>,<foodexpansion:itemparrotmeat>,<foodexpansion:itemllamameat>,<foodexpansion:itempolarbearmeat>,<tfc:food/beef>,
 <tfc:food/pork>,<tfc:food/chicken>,<tfc:food/mutton>,<tfc:food/fish>,<foodexpansion:itemcompressedflesh>,<foodexpansion:itembacon>,
@@ -74,5 +97,20 @@ mods.terrafirmacraft.Quern.addRecipe("ground_meat"~i, RM, <contenttweaker:ground
 #=============================================================================================================================================		
 
 //ItemRegistry.registerFood(IIngredient input, float[] nutrients, float calories, float water, float decay);
-#            FoodItem                      carbs    Fat     Protien     Vitamins    Minerals    Calories    Water   Decay                                           Heat Capacity           Melt Temp
-registerFood(<minecraft:mushroom_stew>,   [1,       0.8,    1,          0,          0.2],       1.2,        2,      6);  #registerItemHeat(<minecraft:bread>,       1,                      480, false);
+#            FoodItem                       carbs    Fat     Protien     Vitamins    Minerals    Calories    Water   Decay                                           Heat Capacity           Melt Temp
+#registerFood(<minecraft:mushroom_stew>,   [1,       0.8,    1,          0,          0.2],       1.2,        2,      6);  #registerItemHeat(<minecraft:bread>,       1,                      480, false);
+
+registerFood(<minecraft:mushroom_stew>,[1,0.8,1,0,0.2],1.2,2,6);          #mushroom stew
+registerFood(<minecraft:fish:1>,[0,0.2,2,0,0],0.2,1,3);          #raw salmon
+registerFood(<minecraft:fish:2>,[0,0.2,2,0,0],0.2,1,3);          #clownfish
+registerFood(<minecraft:fish:3>,[0,0.1,1,0,2],0.2,1,3);          #pufferfish
+registerFood(<minecraft:cooked_fish:1>,[0,0,2,0,0],0.6,2,2.25);          #cooked salmon
+registerFood(<minecraft:cookie>,[1.5,1,0,0,0],0.2,0,0.8);          #cookie
+registerFood(<minecraft:melon>,[0,0,0,1,0],0.4,10,4);          #melon
+registerFood(<minecraft:spider_eye>,[0,0,0,0,0.2],0.1,1,3);          #spider eye
+registerFood(<minecraft:baked_potato>,[1,0,0.5,1,0],0.9,1.5,5);          #baked potato
+registerFood(<minecraft:poisonous_potato>,[1,0,0,0,2],0,3,2);          #poisonous potato
+registerFood(<minecraft:pumpkin_pie>,[3.6,3,1.7,0,0],1.8,1,4);          #pumpkin pie
+registerFood(<minecraft:rabbit_stew>,[0.2,0.5,1.5,2,2],1.8,5,5);          #rabbit stew
+registerFood(<minecraft:chorus_fruit>,[0,0,0,0.1,0.2],0.1,0.1,1.3);          #chorus fruit
+registerFood(<minecraft:beetroot_soup>,[2,0,1.5,4,0],2,3,5);          #beetroot soup

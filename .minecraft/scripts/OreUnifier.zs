@@ -104,6 +104,17 @@ mods.jei.JEI.removeAndHide(<railcraft:gear:3>);
 <ore:stickSteel>.addAll(<ore:rodSteel>);
 <ore:stickTitanium>.addAll(<ore:rodTitanium>);
 <ore:stickAluminum>.addAll(<ore:rodAluminium>);
+//Saw Teirs
+<ore:sawI>.addItems([<tfc:metal/saw/copper:*>]);
+<ore:sawII>.addItems([<tfc:metal/saw/bismuth_bronze:*>,<tfc:metal/saw/black_bronze:*>,<tfc:metal/saw/bronze:*>,<tfc:metal/saw/nickel_silver:*>,<tfc:metal/saw/mithril:*>]);
+<ore:sawIII>.addItems([<tfc:metal/saw/wrought_iron:*>,<tfc:metal/saw/invar:*>]);
+<ore:sawIV>.addItems([<tfc:metal/saw/steel:*>,<tfc:metal/saw/aluminium:*>]);
+<ore:sawV>.addItems([<tfc:metal/saw/black_steel:*>]);
+<ore:sawVI>.addItems([<tfc:metal/saw/blue_steel:*>,<tfc:metal/saw/red_steel:*>,<tfc:metal/saw/cobalt:*>,<tfc:metal/saw/manyullyn:*>,<tfc:metal/saw/osmium:*>,<tfc:metal/saw/titanium:*>,<tfc:metal/saw/tungsten:*>,<tfc:metal/saw/tungsten_steel:*>]);
+//Dough
+<ore:dough>.addItems([<tfc:food/barley_dough>,<tfc:food/cornmeal_dough>,<tfc:food/oat_dough>,<tfc:food/rice_dough>,<tfc:food/rye_dough>,<tfc:food/wheat_dough>]);
+//Mushrooms
+<ore:mushroomAny>.addItems([<rustic:mooncap_mushroom>,<tfc:plants/porcini>]);				   
 //Botania Wands
 <ore:wands>.add(<botania:twigwand>.withTag({color1: 0, color2: 0, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
 <ore:wands>.add(<botania:twigwand>.withTag({color1: 1, color2: 1, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
@@ -153,3 +164,4 @@ mods.jei.JEI.removeAndHide(<railcraft:gear:3>);
 <ore:foodOlive>.addItems([<rustic:olives>,<tfc:food/olive>]);
 <ore:foodTomato>.addItems([<rustic:tomato>,<tfc:food/tomato>]);
 <ore:foodCookedegg>.addItems([<tfc:food/cooked_egg>,<foodexpansion:itemfriedegg>]);
+<ore:foodWheatflour>.addItems([<nuclearcraft:flour>]);

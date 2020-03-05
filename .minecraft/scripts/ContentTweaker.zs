@@ -10,6 +10,10 @@ import crafttweaker.potions.IPotion;
 import mods.contenttweaker.Random;
 import mods.contenttweaker.World;
 
+//naquadah_sheet
+var naquadah_sheet = VanillaFactory.createItem("naquadah_sheet");
+naquadah_sheet.register();
+game.setLocalization("item.contenttweaker.naquadah_sheet.name", "Naquadah Sheet");
 //uncooked_beet_noodles
 var uncooked_beet_noodles = VanillaFactory.createItem("uncooked_beet_noodles");
 uncooked_beet_noodles.register();
