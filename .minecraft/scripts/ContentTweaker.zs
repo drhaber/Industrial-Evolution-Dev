@@ -10,6 +10,10 @@ import crafttweaker.potions.IPotion;
 import mods.contenttweaker.Random;
 import mods.contenttweaker.World;
 
+//uncooked_pizza
+var uncooked_pizza = VanillaFactory.createItem("uncooked_pizza");
+uncooked_pizza.register();
+game.setLocalization("item.contenttweaker.uncooked_pizza.name", "Uncooked Pizza Pie");
 //naquadah_sheet
 var naquadah_sheet = VanillaFactory.createItem("naquadah_sheet");
 naquadah_sheet.register();
@@ -312,17 +316,76 @@ dried_fruit.saturation = 0.6;
 dried_fruit.register();
 game.setLocalization("item.contenttweaker.dried_fruit.name", "Dried Fruit");
 
+//raw_seeds
+var raw_seeds = VanillaFactory.createItemFood("raw_seeds",1);
+raw_seeds.saturation = 0.1;
+raw_seeds.register();
+game.setLocalization("item.contenttweaker.raw_seeds.name", "Raw Seeds");
+
 //ground_meat
 var ground_meat = VanillaFactory.createItemFood("ground_meat",1);
 ground_meat.saturation = 0.2;
 ground_meat.register();
 game.setLocalization("item.contenttweaker.ground_meat.name", "Ground Meat");
 
+//dried_ground_meat
+var dried_ground_meat = VanillaFactory.createItemFood("dried_ground_meat",1);
+dried_ground_meat.saturation = 0.1;
+dried_ground_meat.register();
+game.setLocalization("item.contenttweaker.dried_ground_meat.name", "Dried Ground Meat");
+
 //vegetable_soup
 var i_vegetable_soup = VanillaFactory.createItemFood("i_vegetable_soup",6);
 i_vegetable_soup.saturation = 1;
+i_vegetable_soup.onItemFoodEaten = function(stack, world, player) {
+    if (!world.isRemote()) {
+        player.give(<item:minecraft:bowl>);
+    }
+};	
 i_vegetable_soup.register();
 game.setLocalization("item.contenttweaker.i_vegetable_soup.name", "Vegetable Soup");
+
+//smoothie
+var smoothie = VanillaFactory.createItemFood("smoothie",4);
+smoothie.saturation = 0.6;
+smoothie.itemUseAction ="DRINK";
+smoothie.onItemFoodEaten = function(stack, world, player) {
+    if (!world.isRemote()) {
+        player.give(<item:extrabotany:material:4>);
+    }
+};
+smoothie.register();
+game.setLocalization("item.contenttweaker.smoothie.name", "Fruit Smoothie");
+
+//water_glass
+var water_glass = VanillaFactory.createItemFood("water_glass",0);
+water_glass.saturation = 0;
+water_glass.alwaysEdible= true;
+water_glass.itemUseAction ="DRINK";
+water_glass.onItemFoodEaten = function(stack, world, player) {
+    if (!world.isRemote()) {
+        player.give(<item:extrabotany:material:4>);
+    }
+};
+water_glass.register();
+game.setLocalization("item.contenttweaker.water_glass.name", "Glass of Water");
+
+//snow_cream
+var snow_cream = VanillaFactory.createItemFood("snow_cream",4);
+snow_cream.saturation = 1;
+snow_cream.onItemFoodEaten = function(stack, world, player) {
+    if (!world.isRemote()) {
+        player.give(<item:minecraft:bowl>);
+    }
+};	
+snow_cream.register();
+game.setLocalization("item.contenttweaker.snow_cream.name", "Snow Cream");
+
+//pemmican
+var pemmican = VanillaFactory.createItemFood("pemmican",8);
+pemmican.saturation = 1.2;
+pemmican.register();
+game.setLocalization("item.contenttweaker.pemmican.name", "pemmican");
 #=============================================================================================================================================	
 
 var dirtyglass = VanillaFactory.createBlock("dirtyglass", <blockmaterial:glass>);

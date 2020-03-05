@@ -36,13 +36,18 @@ Agglomeration.addRecipe(<botania:manaresource:4>*2, [<tfc:metal/ingot/antimony>,
 Agglomeration.addRecipe(<botania:manaresource:4>*3, [<tfc:metal/ingot/antimony>,<botania:manaresource:1>, <botania:manaresource>,<ore:gemNormal>]);
 Agglomeration.addRecipe(<botania:manaresource:4>*4, [<tfc:metal/ingot/antimony>,<botania:manaresource:1>, <botania:manaresource>,<ore:gemFlawless>]);
 Agglomeration.addRecipe(<botania:manaresource:4>*5, [<tfc:metal/ingot/antimony>,<botania:manaresource:1>, <botania:manaresource>,<ore:gemExquisite>]);
-
+//Mana Cocktail Glass Rename
+<extrabotany:material:4>.displayName = "Drinking Glass";
+mods.jei.JEI.addDescription(<extrabotany:manadrink>,"I've always wondered what would happen if I scooped up some mana and tried to drink it...");
+//Fried Chicken Rename
+<extrabotany:friedchicken>.displayName = "Mana Fried Chicken";
 //Pouch
 recipes.remove(<botania:flowerbag>);
 recipes.addShapeless(<botania:flowerbag>, [<contenttweaker:leatherbag>,<ore:Petals>]);
 //TFC Conversions 
 mods.botania.PureDaisy.addRecipe(<ore:tfcSand>,<minecraft:sand>);
 mods.botania.PureDaisy.addRecipe(<tfc:thatch>,<quark:thatch>);
+mods.botania.PureDaisy.addRecipe(<ore:tfcDirt>,<minecraft:dirt>);
 //AE2 Conversions
 mods.botania.ManaInfusion.addInfusion(<appliedenergistics2:sky_stone_block>, <tconstruct:seared>, 10000);
 #mods.botania.ManaInfusion.addInfusion(<contenttweaker:potion_bottle_lingering>, <contenttweaker:splashbottle>, 1000);

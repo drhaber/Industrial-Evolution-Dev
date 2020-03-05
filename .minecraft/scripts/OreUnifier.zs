@@ -4,17 +4,6 @@ import crafttweaker.item.IItemDefinition;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.mods.IMod;
 
-//Seeds
-<ore:seedPumpkin>.add(<tfc:crop/seeds/pumpkin>);
-<ore:seedWheat>.add(<tfc:crop/seeds/wheat>);
-<ore:seedMelon>.add(<tfc:crop/seeds/melon>);
-<ore:seedBeetroot>.add(<tfc:crop/seeds/beet>);
-<ore:seedSugar>.add(<inspirations:sugar_cane_seeds>);
-<ore:seedSugar>.add(<tfc:crop/seeds/sugarcane>);
-<ore:seedPotato>.add(<inspirations:potato_seeds>);
-<ore:seedPotato>.add(<tfc:crop/seeds/potato>);
-<ore:seedCarrot>.add(<inspirations:carrot_seeds>);
-<ore:seedCarrot>.add(<tfc:crop/seeds/carrot>);
 //glass
 <ore:blockGlass>.add(<contenttweaker:dirtyglass>);
 //woodPulp
@@ -85,6 +74,12 @@ mods.nuclearcraft.alloy_furnace.addRecipe(<ore:itemSilicon>, <ore:dustGraphite>,
 //Coal
 <ore:gemCoal>.addAll(<ore:coal>);
 <ore:coal>.mirror(<ore:gemCoal>);
+//dirt
+<ore:tfcDirt>.addItems([<tfc:dirt/marble>,<tfc:dirt/andesite>,<tfc:dirt/phyllite>,
+<tfc:dirt/claystone>,<tfc:dirt/granite>,<tfc:dirt/chert>,<tfc:dirt/gneiss>,
+<tfc:dirt/chalk>,<tfc:dirt/rocksalt>,<tfc:dirt/shale>,<tfc:dirt/conglomerate>,
+<tfc:dirt/quartzite>,<tfc:dirt/diorite>,<tfc:dirt/limestone>,<tfc:dirt/dolomite>,
+<tfc:dirt/slate>,<tfc:dirt/dacite>,<tfc:dirt/schist>,<tfc:dirt/basalt>,<tfc:dirt/rhyolite>,<tfc:dirt/gabbro>]);
 //Sand 
 <ore:tfcSand>.addItems([<tfc:sand/granite>,<tfc:sand/diorite>,<tfc:sand/gabbro>,<tfc:sand/shale>,
 						   <tfc:sand/claystone>,<tfc:sand/rocksalt>,<tfc:sand/limestone>,<tfc:sand/conglomerate>,
@@ -114,25 +109,72 @@ mods.jei.JEI.removeAndHide(<railcraft:gear:3>);
 //Dough
 <ore:dough>.addItems([<tfc:food/barley_dough>,<tfc:food/cornmeal_dough>,<tfc:food/oat_dough>,<tfc:food/rice_dough>,<tfc:food/rye_dough>,<tfc:food/wheat_dough>]);
 //Mushrooms
-<ore:mushroomAny>.addItems([<rustic:mooncap_mushroom>,<tfc:plants/porcini>]);				   
-//Botania Wands
-<ore:wands>.add(<botania:twigwand>.withTag({color1: 0, color2: 0, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
-<ore:wands>.add(<botania:twigwand>.withTag({color1: 1, color2: 1, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
-<ore:wands>.add(<botania:twigwand>.withTag({color1: 2, color2: 2, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
-<ore:wands>.add(<botania:twigwand>.withTag({color1: 3, color2: 3, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
-<ore:wands>.add(<botania:twigwand>.withTag({color1: 4, color2: 4, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
-<ore:wands>.add(<botania:twigwand>.withTag({color1: 5, color2: 5, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
-<ore:wands>.add(<botania:twigwand>.withTag({color1: 6, color2: 6, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
-<ore:wands>.add(<botania:twigwand>.withTag({color1: 7, color2: 7, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
-<ore:wands>.add(<botania:twigwand>.withTag({color1: 8, color2: 8, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
-<ore:wands>.add(<botania:twigwand>.withTag({color1: 8, color2: 8, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
-<ore:wands>.add(<botania:twigwand>.withTag({color1: 9, color2: 9, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
-<ore:wands>.add(<botania:twigwand>.withTag({color1: 10, color2: 10, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
-<ore:wands>.add(<botania:twigwand>.withTag({color1: 11, color2: 11, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
-<ore:wands>.add(<botania:twigwand>.withTag({color1: 12, color2: 12, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
-<ore:wands>.add(<botania:twigwand>.withTag({color1: 13, color2: 13, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
-<ore:wands>.add(<botania:twigwand>.withTag({color1: 14, color2: 14, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
-<ore:wands>.add(<botania:twigwand>.withTag({color1: 15, color2: 15, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:mushroomAny>.addItems([<rustic:mooncap_mushroom>,<tfc:plants/porcini>]);	
+//Jerky
+<ore:jerkyAny>.addItems([<tconstruct:edible:10>,<tconstruct:edible:11>,<tconstruct:edible:12>,<tconstruct:edible:13>,<tconstruct:edible:14>,<tconstruct:edible:15>,<tconstruct:edible:20>,<tconstruct:edible:21>,<tconstruct:edible:22>,<tconstruct:edible:23>]);		   
+//Wands
+
+<ore:botWands>.add(<botania:twigwand>.withTag({color1: 0, color2: 0, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:botWands>.add(<botania:twigwand>.withTag({color1: 1, color2: 1, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:botWands>.add(<botania:twigwand>.withTag({color1: 2, color2: 2, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:botWands>.add(<botania:twigwand>.withTag({color1: 3, color2: 3, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:botWands>.add(<botania:twigwand>.withTag({color1: 4, color2: 4, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:botWands>.add(<botania:twigwand>.withTag({color1: 5, color2: 5, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:botWands>.add(<botania:twigwand>.withTag({color1: 6, color2: 6, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:botWands>.add(<botania:twigwand>.withTag({color1: 7, color2: 7, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:botWands>.add(<botania:twigwand>.withTag({color1: 8, color2: 8, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:botWands>.add(<botania:twigwand>.withTag({color1: 8, color2: 8, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:botWands>.add(<botania:twigwand>.withTag({color1: 9, color2: 9, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:botWands>.add(<botania:twigwand>.withTag({color1: 10, color2: 10, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:botWands>.add(<botania:twigwand>.withTag({color1: 11, color2: 11, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:botWands>.add(<botania:twigwand>.withTag({color1: 12, color2: 12, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:botWands>.add(<botania:twigwand>.withTag({color1: 13, color2: 13, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:botWands>.add(<botania:twigwand>.withTag({color1: 14, color2: 14, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+<ore:botWands>.add(<botania:twigwand>.withTag({color1: 15, color2: 15, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));
+
+<ore:anyWands>.addAll(<ore:botWands>);
+#=============================================================================================================================================		
+
+//spalings
+<ore:treeSapling>.addItems([<dynamictrees:appleseed>,<dynamictrees:oakseed>,<dynamictrees:spruceseed>,
+<dynamictrees:birchseed>,<dynamictrees:jungleseed>,<dynamictrees:acaciaseed>,<dynamictrees:darkoakseed>,
+<dynamictrees:cactusseed>,<dynamictreestfc:seed/acacia>,<rustic:oliveseed>,<dynamictreestfc:seed/hevea>,
+<dynamictreestfc:seed/willow>,<dynamictreestfc:seed/white_cedar>,<dynamictreestfc:seed/sycamore>,
+<dynamictreestfc:seed/spruce>,<dynamictreestfc:seed/sequoia>,<dynamictreestfc:seed/rosewood>,<dynamictreestfc:seed/pine>,
+<dynamictreestfc:seed/palm>,<dynamictreestfc:seed/oak>,<dynamictreestfc:seed/maple>,<dynamictreestfc:seed/kapok>,
+<dynamictreestfc:seed/hickory>,<dynamictreestfc:seed/douglas_fir>,<dynamictreestfc:seed/chestnut>,
+<dynamictreestfc:seed/blackwood>,<dynamictreestfc:seed/birch>,<dynamictreestfc:seed/aspen>,<dynamictreestfc:seed/ash>]);
+
+//seeds
+<ore:seedAny>.addItems([<agricraft:agri_seed:*>,<botania:grassseeds:*>,<tfc:crop/seeds/barley>,<tfc:crop/seeds/maize>,
+<tfc:crop/seeds/oat>,<tfc:crop/seeds/rice>,<tfc:crop/seeds/rye>,<tfc:crop/seeds/wheat>,
+<tfc:crop/seeds/beet>,<tfc:crop/seeds/cabbage>,<tfc:crop/seeds/carrot>,<rustic:chili_pepper_seeds>,
+<rustic:ironwoodseed>,<botania:worldseed>,<botania:overgrowthseed>,<tfc:crop/seeds/yellow_bell_pepper>,
+<tfc:crop/seeds/jute>,<tfc:crop/seeds/pumpkin>,<tfc:crop/seeds/melon>,<immersiveengineering:seed>,
+<inspirations:cactus_seeds>,<rustic:grape_stem>,<rustic:apple_seeds>,<tfc:crop/seeds/garlic>,
+<tfc:crop/seeds/green_bean>,<tfc:crop/seeds/onion>,<tfc:crop/seeds/potato>,<tfc:crop/seeds/soybean>,
+<tfc:crop/seeds/squash>,<tfc:crop/seeds/sugarcane>,<tfc:crop/seeds/tomato>,<tfc:crop/seeds/red_bell_pepper>,
+<dynamictrees:appleseed>,<dynamictrees:oakseed>,<dynamictrees:spruceseed>,<dynamictrees:birchseed>,
+<dynamictrees:jungleseed>,<dynamictrees:acaciaseed>,<dynamictrees:darkoakseed>,<dynamictrees:cactusseed>,
+<dynamictreestfc:seed/acacia>,<rustic:oliveseed>,<dynamictreestfc:seed/hevea>,<dynamictreestfc:seed/willow>,
+<dynamictreestfc:seed/white_cedar>,<dynamictreestfc:seed/sycamore>,<dynamictreestfc:seed/spruce>,
+<dynamictreestfc:seed/sequoia>,<dynamictreestfc:seed/rosewood>,<dynamictreestfc:seed/pine>,<dynamictreestfc:seed/palm>,
+<dynamictreestfc:seed/oak>,<dynamictreestfc:seed/maple>,<dynamictreestfc:seed/kapok>,<dynamictreestfc:seed/hickory>,
+<dynamictreestfc:seed/douglas_fir>,<dynamictreestfc:seed/chestnut>,<dynamictreestfc:seed/blackwood>,
+<dynamictreestfc:seed/birch>,<dynamictreestfc:seed/aspen>,<dynamictreestfc:seed/ash>]);
+
+<ore:seedPumpkin>.add(<tfc:crop/seeds/pumpkin>);
+<ore:seedWheat>.add(<tfc:crop/seeds/wheat>);
+<ore:seedMelon>.add(<tfc:crop/seeds/melon>);
+<ore:seedBeetroot>.add(<tfc:crop/seeds/beet>);
+<ore:seedSugar>.add(<inspirations:sugar_cane_seeds>);
+<ore:seedSugar>.add(<tfc:crop/seeds/sugarcane>);
+<ore:seedPotato>.add(<inspirations:potato_seeds>);
+<ore:seedPotato>.add(<tfc:crop/seeds/potato>);
+<ore:seedCarrot>.add(<inspirations:carrot_seeds>);
+<ore:seedCarrot>.add(<tfc:crop/seeds/carrot>);
+<ore:seedTomato>.add(<rustic:tomato_seeds>);
+<ore:seedTomato>.add(<tfc:crop/seeds/tomato>);
 #=============================================================================================================================================		
 //foods
 <ore:foodApple>.addItems([<minecraft:apple>,<tfc:food/red_apple>]);

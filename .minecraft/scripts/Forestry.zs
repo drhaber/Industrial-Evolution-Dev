@@ -30,3 +30,6 @@ recipes.addShaped(<forestry:fertilizer_bio>*4,[
 
 //Kerosene
 mods.forestry.Still.addRecipe(<liquid:kerosene>, <liquid:oil>, 200);    
+
+//Seed Oil
+mods.forestry.Squeezer.removeRecipe(<liquid:seed.oil>);
