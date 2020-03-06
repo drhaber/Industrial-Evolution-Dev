@@ -23,7 +23,7 @@ mods.tconstruct.Drying.addRecipe(<contenttweaker:dried_ground_meat>,<contenttwea
 #=============================================================================================================================================		
 //Food Recipes
 mods.terrafirmacraft.Barrel.addRecipe("honey_bread1", <ore:breadAny>, <liquid:honey>*10, <forestry:honeyed_slice>,1);
-mods.terrafirmacraft.Barrel.addRecipe("honey_bread1", <ore:breadAny>, <liquid:for.honey>*10, <forestry:honeyed_slice>,1);
+mods.terrafirmacraft.Barrel.addRecipe("honey_bread2", <ore:breadAny>, <liquid:for.honey>*10, <forestry:honeyed_slice>,1);
 
 recipes.addShapeless(<contenttweaker:raw_seeds>,[<ore:seedAny>,<ore:knife>.transformDamage(2)]);
 
@@ -38,6 +38,9 @@ recipes.addShapeless(<foodexpansion:itembacon>*3,[<ore:knife>.transformDamage(2)
 
 recipes.addShapeless(<contenttweaker:uncooked_pumpkin_pie>,[<minecraft:milk_bucket>.transformReplace(<minecraft:bucket>),<ore:knife>.transformDamage(1),<ore:flour>,<minecraft:pumpkin>,<minecraft:sugar>]);
 recipes.addShapeless(<contenttweaker:uncooked_pumpkin_pie>,[<tfc:wooden_bucket>.withTag({Fluid: {FluidName: "milk", Amount: 1000}}).transformReplace(<tfc:wooden_bucket>),<ore:knife>.transformDamage(1),<ore:flour>,<minecraft:pumpkin>,<minecraft:sugar>]);
+
+recipes.addShapeless(<contenttweaker:uncooked_carrot_cake>,[<minecraft:milk_bucket>.transformReplace(<minecraft:bucket>),<ore:knife>.transformDamage(1),<ore:flour>,<tfc:food/carrot>,<minecraft:sugar>]);
+recipes.addShapeless(<contenttweaker:uncooked_carrot_cake>,[<tfc:wooden_bucket>.withTag({Fluid: {FluidName: "milk", Amount: 1000}}).transformReplace(<tfc:wooden_bucket>),<ore:knife>.transformDamage(1),<ore:flour>,<tfc:food/carrot>,<minecraft:sugar>]);
 
 recipes.addShapeless(<contenttweaker:uncooked_pizza>,[<ore:knife>.transformDamage(5),<ore:dough>,<ore:dustSalt>,<ore:categoryMeat>,<tfc:food/tomato>,<tfc:food/cheese>,<ore:mushroomAny>,<tfc:food/garlic>]);
 
@@ -131,7 +134,7 @@ registerFood(<minecraft:cooked_fish:1>,[0,0,2,0,0],0.6,2,2.25);	registerItemHeat
 registerFood(<minecraft:cookie>,[1.5,1,0,0,0],0.2,0,0.8);	          #cookie
 registerFood(<minecraft:melon>,[0,0,0,1,0],0.4,1,4);	          #melon
 registerFood(<minecraft:spider_eye>,[0,0,0,0,0.2],0.1,1,3);	          #spider eye
-registerFood(<minecraft:baked_potato>,[1,0,0.5,1,0],0.9,1.5,5);	registerItemHeat(<minecraft:baked_potato>,1,480,false);          #baked potato
+registerFood(<minecraft:baked_potato>,[1,0,0.5,1,0],0.9,1.5,5);	registerItemHeat(<minecraft:baked_potato>,1,480,false);  registerItemHeat(<tfc:food/potato>,1,480,false);        #baked potato
 registerFood(<minecraft:poisonous_potato>,[1,0,0,0,2],0,3,2);	          #poisonous potato
 registerFood(<minecraft:pumpkin_pie>,[3.6,3,1.7,0,0],1.8,1,4);	          #pumpkin pie
 registerFood(<minecraft:rabbit_stew>,[0.2,0.5,1.5,2,2],1.8,5,5);	          #rabbit stew
@@ -260,6 +263,7 @@ Heating.addRecipe("baked_potato", <tfc:food/potato>, <minecraft:baked_potato>, 2
 furnace.remove(<foodexpansion:itemcookedmushroom>);
 val shrooms = <ore:mushroomAny>.items;
 for i, shroom in shrooms{
+    registerItemHeat(shroom,1,480,false);
 Heating.addRecipe("cooked_mushroom"~i, shroom, <foodexpansion:itemcookedmushroom>, 250, 480);
 }
 
@@ -287,6 +291,18 @@ Heating.addRecipe("cooked_frog",<quark:frog_leg>, <quark:cooked_frog_leg>, 250, 
 furnace.remove(<quark:cooked_crab_leg>);
 Heating.addRecipe("cooked_crab",<quark:crab_leg>, <quark:cooked_crab_leg>, 250, 480);
 
+registerItemHeat(<contenttweaker:uncooked_pizza>,1,480,false);
+registerItemHeat(<contenttweaker:uncooked_beet_noodles>,1,480,false);
+registerItemHeat(<contenttweaker:uncooked_pumpkin_pie>,1,480,false);
+registerItemHeat(<contenttweaker:uncooked_carrot_cake>,1,480,false);
 
+registerItemHeat(<nuclearcraft:dominos>,1,480,false);
+registerItemHeat(<foodexpansion:itembeetrootnoodles>,1,480,false);
+registerItemHeat(<minecraft:pumpkin_pie>,1,480,false);
+registerItemHeat(<foodexpansion:itemcarrotpie>,1,480,false);
 
+Heating.addRecipe("cooked_pizza",<contenttweaker:uncooked_pizza>,<nuclearcraft:dominos>, 250, 480);
+Heating.addRecipe("cooked_beetroot_noodles",<contenttweaker:uncooked_beet_noodles>,<foodexpansion:itembeetrootnoodles>, 250, 480);
+Heating.addRecipe("cooked_pumpkin_pie",<contenttweaker:uncooked_pumpkin_pie>,<minecraft:pumpkin_pie>, 250, 480);
+Heating.addRecipe("cooked_carrot_cake",<contenttweaker:uncooked_carrot_cake>,<foodexpansion:itemcarrotpie>, 250, 480);
 
