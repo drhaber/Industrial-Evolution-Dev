@@ -255,41 +255,34 @@ registerFood(<extrabotany:candy:2>,[0.2,0.3,0,0,0],0.3,0,0);	          #Candy Dr
 #Heating.addRecipe(String registryName, IItemStack input, IItemStack output, float transformTemp, float maxTemp);
 
 furnace.remove(<minecraft:cooked_fish:1>);
-Heating.addRecipe("cooked_salmon", <minecraft:fish:1>, <minecraft:cooked_fish:1>, 250, 480);
+Heating.addRecipe("cooked_salmon", <minecraft:fish:1>, <minecraft:cooked_fish:1>, 400, 480);
 
 furnace.remove(<minecraft:baked_potato>);
-Heating.addRecipe("baked_potato", <tfc:food/potato>, <minecraft:baked_potato>, 250, 480);
-
-furnace.remove(<foodexpansion:itemcookedmushroom>);
-val shrooms = <ore:mushroomAny>.items;
-for i, shroom in shrooms{
-    registerItemHeat(shroom,1,480,false);
-Heating.addRecipe("cooked_mushroom"~i, shroom, <foodexpansion:itemcookedmushroom>, 250, 480);
-}
+Heating.addRecipe("baked_potato", <tfc:food/potato>, <minecraft:baked_potato>, 400, 480);
 
 furnace.remove(<foodexpansion:itemroastedseed>);
-Heating.addRecipe("cooked_seed", <contenttweaker:raw_seeds>, <foodexpansion:itemroastedseed>, 250, 480);
+Heating.addRecipe("cooked_seed", <contenttweaker:raw_seeds>, <foodexpansion:itemroastedseed>, 400, 480);
 
 furnace.remove(<foodexpansion:itemcookedbacon>);
-Heating.addRecipe("cooked_bacon",<foodexpansion:itembacon>, <foodexpansion:itemcookedbacon>, 250, 480);
+Heating.addRecipe("cooked_bacon",<foodexpansion:itembacon>, <foodexpansion:itemcookedbacon>, 400, 480);
 
 furnace.remove(<foodexpansion:itemcookedocelotmeat>);
-Heating.addRecipe("cooked_ocelot",<foodexpansion:itemocelotmeat>, <foodexpansion:itemcookedocelotmeat>, 250, 480);
+Heating.addRecipe("cooked_ocelot",<foodexpansion:itemocelotmeat>, <foodexpansion:itemcookedocelotmeat>, 400, 480);
 
 furnace.remove(<foodexpansion:itemcookedparrotmeat>);
-Heating.addRecipe("cooked_parrot",<foodexpansion:itemparrotmeat>, <foodexpansion:itemcookedparrotmeat>, 250, 480);
+Heating.addRecipe("cooked_parrot",<foodexpansion:itemparrotmeat>, <foodexpansion:itemcookedparrotmeat>, 400, 480);
 
 furnace.remove(<foodexpansion:itemcookedllamameat>);
-Heating.addRecipe("cooked_llama",<foodexpansion:itemllamameat>, <foodexpansion:itemcookedllamameat>, 250, 480);
+Heating.addRecipe("cooked_llama",<foodexpansion:itemllamameat>, <foodexpansion:itemcookedllamameat>, 400, 480);
 
 furnace.remove(<foodexpansion:itemcookedpolarbearmeat>);
-Heating.addRecipe("cooked_polar_bear",<foodexpansion:itempolarbearmeat>, <foodexpansion:itemcookedpolarbearmeat>, 250, 480);
+Heating.addRecipe("cooked_polar_bear",<foodexpansion:itempolarbearmeat>, <foodexpansion:itemcookedpolarbearmeat>, 400, 480);
 
 furnace.remove(<quark:cooked_frog_leg>);
-Heating.addRecipe("cooked_frog",<quark:frog_leg>, <quark:cooked_frog_leg>, 250, 480);
+Heating.addRecipe("cooked_frog",<quark:frog_leg>, <quark:cooked_frog_leg>, 400, 480);
 
 furnace.remove(<quark:cooked_crab_leg>);
-Heating.addRecipe("cooked_crab",<quark:crab_leg>, <quark:cooked_crab_leg>, 250, 480);
+Heating.addRecipe("cooked_crab",<quark:crab_leg>, <quark:cooked_crab_leg>, 400, 480);
 
 registerItemHeat(<contenttweaker:uncooked_pizza>,1,480,false);
 registerItemHeat(<contenttweaker:uncooked_beet_noodles>,1,480,false);
@@ -301,8 +294,26 @@ registerItemHeat(<foodexpansion:itembeetrootnoodles>,1,480,false);
 registerItemHeat(<minecraft:pumpkin_pie>,1,480,false);
 registerItemHeat(<foodexpansion:itemcarrotpie>,1,480,false);
 
-Heating.addRecipe("cooked_pizza",<contenttweaker:uncooked_pizza>,<nuclearcraft:dominos>, 250, 480);
-Heating.addRecipe("cooked_beetroot_noodles",<contenttweaker:uncooked_beet_noodles>,<foodexpansion:itembeetrootnoodles>, 250, 480);
-Heating.addRecipe("cooked_pumpkin_pie",<contenttweaker:uncooked_pumpkin_pie>,<minecraft:pumpkin_pie>, 250, 480);
-Heating.addRecipe("cooked_carrot_cake",<contenttweaker:uncooked_carrot_cake>,<foodexpansion:itemcarrotpie>, 250, 480);
+recipes.remove(<nuclearcraft:dominos>);
+recipes.remove(<foodexpansion:itembeetrootnoodles>);
+recipes.remove(<foodexpansion:itemcarrotpie>);
 
+Heating.addRecipe("cooked_pizza",<contenttweaker:uncooked_pizza>,<nuclearcraft:dominos>, 400, 480);
+Heating.addRecipe("cooked_beetroot_noodles",<contenttweaker:uncooked_beet_noodles>,<foodexpansion:itembeetrootnoodles>, 400, 480);
+Heating.addRecipe("cooked_pumpkin_pie",<contenttweaker:uncooked_pumpkin_pie>,<minecraft:pumpkin_pie>, 400, 480);
+Heating.addRecipe("cooked_carrot_cake",<contenttweaker:uncooked_carrot_cake>,<foodexpansion:itemcarrotpie>, 400, 480);
+
+
+registerItemHeat(<minecraft:red_mushroom>,1,480,false);
+registerItemHeat(<minecraft:brown_mushroom>,1,480,false);
+registerItemHeat(<quark:glowshroom>,1,480,false);
+registerItemHeat(<rustic:mooncap_mushroom>,1,480,false);
+registerItemHeat(<tfc:plants/porcini>,1,480,false);
+registerItemHeat(<minecraft:red_mushroom>,1,480,false);
+registerItemHeat(<minecraft:brown_mushroom>,1,480,false);
+
+furnace.remove(<foodexpansion:itemcookedmushroom>);
+val shrooms = <ore:mushroomAny>.items;
+for i, shroom in shrooms{
+Heating.addRecipe("cooked_mushroom"~i, shroom, <foodexpansion:itemcookedmushroom>, 400, 480);
+}
