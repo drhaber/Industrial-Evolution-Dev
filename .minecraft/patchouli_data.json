@@ -1,1 +1,32 @@
-{"bookGuiScale":0,"clickedVisualize":false,"bookData":{}}
+{
+  "bookGuiScale": 0,
+  "clickedVisualize": false,
+  "bookData": {
+    "pneumaticcraft:book": {
+      "viewedEntries": [
+        "pneumaticcraft:manufacturing/assembly_system",
+        "pneumaticcraft:manufacturing/plastic_mixer",
+        "pneumaticcraft:components/stop_worm",
+        "pneumaticcraft:manufacturing/etching_acid",
+        "pneumaticcraft:programming/harvest",
+        "pneumaticcraft:programming/suicide",
+        "pneumaticcraft:programming/standby",
+        "pneumaticcraft:programming/dig",
+        "pneumaticcraft:programming/item_filter"
+      ],
+      "bookmarks": [],
+      "history": [
+        "pneumaticcraft:programming/item_filter",
+        "pneumaticcraft:programming/dig",
+        "pneumaticcraft:programming/harvest",
+        "pneumaticcraft:programming/standby",
+        "pneumaticcraft:programming/suicide",
+        "pneumaticcraft:manufacturing/etching_acid",
+        "pneumaticcraft:components/stop_worm",
+        "pneumaticcraft:manufacturing/assembly_system",
+        "pneumaticcraft:manufacturing/plastic_mixer"
+      ],
+      "completedManualQuests": []
+    }
+  }
+}

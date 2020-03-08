@@ -2,5 +2,8 @@
    {keep:[[typewriter,swordpedestal,
 		lanterngold,lanterniron,lampgold,lampiron],[0]]};
    {hide:[[BiblioClipboard,BookcaseFilled],[]]};
+   {keep-one:[[bookcase,shelf,furniturepaneler,framedchest,fancysign,fancyworkbench,potionshelf,toolrack,label,desk,table,seat,clock,case,frame,armorstand,mapframe],[]]};
+   {keep-one:[paintingframe,[flat,simple,middle,fancy,borderless],[]]};
+   {keep-one:[seatback,[1,2,3,4,5],[]]};   
    ]
 }

@@ -6,7 +6,7 @@ import mods.terrafirmacraft.ItemRegistry.registerFood;
 import mods.terrafirmacraft.Heating;
 
 
-mods.emergingtechnology.Biomass.removeAll();
+mods.emergingtechnology.Cooker.removeAll();
 
 recipes.remove(<foodexpansion:itembaconandegg>);
 recipes.addShapeless(<foodexpansion:itembaconandegg>,[<ore:foodCookedegg>,<foodexpansion:itemcookedbacon>]);
@@ -309,11 +309,12 @@ registerItemHeat(<minecraft:brown_mushroom>,1,480,false);
 registerItemHeat(<quark:glowshroom>,1,480,false);
 registerItemHeat(<rustic:mooncap_mushroom>,1,480,false);
 registerItemHeat(<tfc:plants/porcini>,1,480,false);
-registerItemHeat(<minecraft:red_mushroom>,1,480,false);
-registerItemHeat(<minecraft:brown_mushroom>,1,480,false);
+
 
 furnace.remove(<foodexpansion:itemcookedmushroom>);
-val shrooms = <ore:mushroomAny>.items;
-for i, shroom in shrooms{
-Heating.addRecipe("cooked_mushroom"~i, shroom, <foodexpansion:itemcookedmushroom>, 400, 480);
-}
+
+Heating.addRecipe("cooked_mushroom1", <minecraft:red_mushroom>, <foodexpansion:itemcookedmushroom>, 400, 480);
+Heating.addRecipe("cooked_mushroom2", <minecraft:brown_mushroom>, <foodexpansion:itemcookedmushroom>, 400, 480);
+Heating.addRecipe("cooked_mushroom3", <quark:glowshroom>, <foodexpansion:itemcookedmushroom>, 400, 480);
+Heating.addRecipe("cooked_mushroom4", <rustic:mooncap_mushroom>, <foodexpansion:itemcookedmushroom>, 400, 480);
+Heating.addRecipe("cooked_mushroom5", <tfc:plants/porcini>, <foodexpansion:itemcookedmushroom>, 400, 480);

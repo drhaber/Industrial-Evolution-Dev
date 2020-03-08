@@ -5,6 +5,7 @@ appliedenergistics2:[
 		charged_staff,matter_cannon,portable_cell,color_applicator],[],['{}','']]};
 	{keep-one:[[facade],[]]};
 	{keep:[[paint_ball],[0]]};
+	{keep:[[part],[300,120,36,516,76,16,56,420,360,200,260,302,261,321,241,441,281,221,520,320,301,240,440,480,100,280,160,469,463,462,467,460,461,340,140,180,220,400,380,80]]};
 ]
 }
 
