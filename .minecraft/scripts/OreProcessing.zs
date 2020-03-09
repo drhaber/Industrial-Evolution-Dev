@@ -49,9 +49,18 @@ mods.immersiveengineering.Crusher.addRecipe(IronSmal[n]*2, IronPoor[n], 2048);
 mods.immersiveengineering.Crusher.addRecipe(<tfc:metal/dust/wrought_iron>, <ore:oreIronSmall>*10, 2048);
 #=============================================================================================================================================		
 
+//Iron
+
+
+
+
 //Steelingot
 BlastFurnace.remove(<railcraft:ingot>);
 BlastFurnace.remove(<railcraft:nugget>);
 BlastFurnace.remove(<railcraft:metal:3>);
 mods.immersiveengineering.BlastFurnace.removeRecipe(<immersiveengineering:metal:8>);
 mods.immersiveengineering.BlastFurnace.removeRecipe(<immersiveengineering:storage:8>);
+
+
+mods.magneticraft.HydraulicPress.addRecipe(<tfc:metal/ingot/pig_iron>, <tfc:metal/ingot/high_carbon_steel>, 10, 0, true);
+mods.magneticraft.HydraulicPress.addRecipe(<tfc:metal/ingot/high_carbon_steel>, <tfc:metal/ingot/steel>, 10, 0, true);
