@@ -27,6 +27,28 @@
         "pneumaticcraft:manufacturing/plastic_mixer"
       ],
       "completedManualQuests": []
+    },
+    "steamagerevolution:guide": {
+      "viewedEntries": [
+        "steamagerevolution:mining/drill_entry",
+        "steamagerevolution:transportstorage/pneumatic_entry",
+        "steamagerevolution:production/crucible_entry",
+        "steamagerevolution:production/casting_block_entry",
+        "steamagerevolution:production/steelworks_entry",
+        "steamagerevolution:alchemical/vat_entry",
+        "steamagerevolution:production/steam_hammer_entry"
+      ],
+      "bookmarks": [],
+      "history": [
+        "steamagerevolution:production/steam_hammer_entry",
+        "steamagerevolution:alchemical/vat_entry",
+        "steamagerevolution:production/steelworks_entry",
+        "steamagerevolution:production/casting_block_entry",
+        "steamagerevolution:production/crucible_entry",
+        "steamagerevolution:transportstorage/pneumatic_entry",
+        "steamagerevolution:mining/drill_entry"
+      ],
+      "completedManualQuests": []
     }
   }
 }

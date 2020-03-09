@@ -10,5 +10,8 @@ pressure:[
 waterflasks:[
 {hide:[[iron_flask],[],['*FluidName*']]};
 {hide:[[leather_flask],[],['*FluidName*']]};
-			]
+			],
+steamagerevolution:[
+   {hide:[[canister],[],['*FluidName*']]};
+		 ]		
 }

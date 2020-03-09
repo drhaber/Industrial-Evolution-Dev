@@ -26,6 +26,8 @@ recipes.addShaped(<minecraft:chest>,[
 	[<botania:livingwood>,<botania:livingwood>,<botania:livingwood>]]);
 //Torch Recipes
 recipes.remove(<minecraft:torch>);
+//Bucket
+recipes.remove(<minecraft:bucket>);
 //Beacon
 recipes.addShaped(<minecraft:beacon>,[
 	[<ore:blockGlass>,<ore:blockGlass>,<ore:blockGlass>],
