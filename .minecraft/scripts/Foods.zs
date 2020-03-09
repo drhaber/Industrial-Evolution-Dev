@@ -249,6 +249,7 @@ registerFood(<extrabotany:manadrink>,[0,0,0,0,0.6],0.4,3,0);	          #Mana Coc
 registerFood(<extrabotany:candy>,[0.2,0.3,0,0,0],0.3,0,0);	          #Candy Eins
 registerFood(<extrabotany:candy:1>,[0.2,0.3,0,0,0],0.3,0,0);	          #Candy Zwei
 registerFood(<extrabotany:candy:2>,[0.2,0.3,0,0,0],0.3,0,0);	          #Candy Drei
+registerFood(<tconstruct:moms_spaghetti>,[0.7,0.1,0,0,0],0.3,0.3,3);	          #Mom's Spaghetti
 
 #=============================================================================================================================================		
 
