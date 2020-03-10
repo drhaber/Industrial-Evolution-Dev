@@ -263,6 +263,7 @@ mods.tconstruct.Casting.addTableRecipe(<tfc:metal/hammer_head/wrought_iron>,<tfc
 
 #=============================================================================================================================================		
 //Remove "Pig Iron"
+mods.tcomplement.highoven.HighOven.removeMixRecipe(<liquid:pigiron>);
 mods.tconstruct.Alloy.removeRecipe(<liquid:pigiron>);
 mods.tconstruct.Melting.removeRecipe(<liquid:pigiron>);
 mods.tconstruct.Casting.removeTableRecipe(<tconstruct:nuggets:4>);
@@ -271,6 +272,8 @@ mods.tconstruct.Casting.removeBasinRecipe(<tconstruct:metal:4>);
 mods.jei.JEI.removeAndHide(<tconstruct:nuggets:4>, false);
 mods.jei.JEI.removeAndHide(<tconstruct:ingots:4>, false);
 mods.jei.JEI.removeAndHide(<tconstruct:metal:4>, false);
+//Remove Steel from Smelter (use High Oven)
+mods.tconstruct.Melting.removeRecipe(<liquid:steel>);
 #=============================================================================================================================================		
 //Remove Gears
 val gears =[<tfctech:metal/bismuth_gear>,<tfctech:metal/bismuth_bronze_gear>,<tfctech:metal/black_bronze_gear>,<tfctech:metal/brass_gear>,
@@ -366,3 +369,17 @@ mods.tconstruct.Alloy.removeRecipe(<liquid:manyullyn>);
 mods.tconstruct.Alloy.addRecipe(<liquid:manyullyn>*144, [<liquid:ardite>*432,<liquid:cobalt>*432]);
 //Tungsten Steel
 mods.tconstruct.Alloy.addRecipe(<liquid:tungsten_steel>*144, [<liquid:tungsten>*144,<liquid:steel>*720]);
+#=============================================================================================================================================		
+
+//Ceramics 
+furnace.remove(<ceramics:unfired_clay:5>);
+furnace.remove(<ceramics:clay_barrel>);
+furnace.remove(<ceramics:clay_barrel:1>);
+furnace.remove(<ceramics:faucet>);
+furnace.remove(<ceramics:channel>);
+furnace.remove(<ceramics:porcelain_barrel>);
+furnace.remove(<ceramics:porcelain_barrel_extension>);
+furnace.remove(<ceramics:unfired_clay:9>);
+furnace.remove(<ceramics:clay_bucket>);
+furnace.remove(<ceramics:clay_shears>);
+mods.jei.JEI.removeAndHide(<ceramics:unfired_clay:4>);

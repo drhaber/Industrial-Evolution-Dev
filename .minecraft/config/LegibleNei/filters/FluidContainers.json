@@ -10,5 +10,8 @@ pressure:[
 waterflasks:[
 {hide:[[iron_flask],[],['*FluidName*']]};
 {hide:[[leather_flask],[],['*FluidName*']]};
-			]	
+			],
+ceramics:[
+   {hide:[[clay_bucket],[],['*FluidName*']]};
+		 ]			
 }

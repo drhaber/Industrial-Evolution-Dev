@@ -51,8 +51,8 @@ mods.immersiveengineering.Crusher.addRecipe(<tfc:metal/dust/wrought_iron>, <ore:
 
 //Iron
 
-
-
+mods.immersiveengineering.BlastFurnace.addRecipe(<tfc:bloom/unrefined>, <tfc:metal/dust/wrought_iron>, 2000);
+mods.immersiveengineering.MetalPress.addRecipe(<tfc:bloom/refined>, <tfc:bloom/unrefined>, <contenttweaker:striking_die>, 2000);
 
 //Steelingot
 BlastFurnace.remove(<railcraft:ingot>);
@@ -61,6 +61,5 @@ BlastFurnace.remove(<railcraft:metal:3>);
 mods.immersiveengineering.BlastFurnace.removeRecipe(<immersiveengineering:metal:8>);
 mods.immersiveengineering.BlastFurnace.removeRecipe(<immersiveengineering:storage:8>);
 
-
-mods.magneticraft.HydraulicPress.addRecipe(<tfc:metal/ingot/pig_iron>, <tfc:metal/ingot/high_carbon_steel>, 10, 0, true);
-mods.magneticraft.HydraulicPress.addRecipe(<tfc:metal/ingot/high_carbon_steel>, <tfc:metal/ingot/steel>, 10, 0, true);
+#mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/high_carbon_steel>, <tfc:metal/ingot/pig_iron>, <contenttweaker:striking_die>, 2000);
+#mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/steel>, <tfc:metal/ingot/high_carbon_steel>, <contenttweaker:striking_die>, 2000);

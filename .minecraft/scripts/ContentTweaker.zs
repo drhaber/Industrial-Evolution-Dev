@@ -10,6 +10,10 @@ import crafttweaker.potions.IPotion;
 import mods.contenttweaker.Random;
 import mods.contenttweaker.World;
 
+//striking_die
+var striking_die = VanillaFactory.createItem("striking_die");
+striking_die.register();
+game.setLocalization("item.contenttweaker.striking_die.name", "Striking Die");
 //uncooked_pizza
 var uncooked_pizza = VanillaFactory.createItem("uncooked_pizza");
 uncooked_pizza.register();

@@ -12,10 +12,12 @@
         "pneumaticcraft:programming/suicide",
         "pneumaticcraft:programming/standby",
         "pneumaticcraft:programming/dig",
-        "pneumaticcraft:programming/item_filter"
+        "pneumaticcraft:programming/item_filter",
+        "pneumaticcraft:tools/micromissiles"
       ],
       "bookmarks": [],
       "history": [
+        "pneumaticcraft:tools/micromissiles",
         "pneumaticcraft:programming/item_filter",
         "pneumaticcraft:programming/dig",
         "pneumaticcraft:programming/harvest",

@@ -37,7 +37,7 @@ mods.immersivetechnology.SolarTower.addRecipe(<liquid:fresh_water>*2000, <liquid
 //Hammer and blocked Machines
 val blockedhammer = <immersiveengineering:tool>.withTag({multiblockInterdiction: ["IE:BlastFurnace"]});
 recipes.remove(<immersiveengineering:tool>);
-recipes.addShaped(blockedhammer,[
+recipes.addShaped(<immersiveengineering:tool>,[
 	[<tfc:metal/hammer_head/wrought_iron>],
 	[<ore:stickTreatedWood>]]);
 //Glove
@@ -115,6 +115,8 @@ for i in 0 to 8 {
 mods.immersiveengineering.Blueprint.removeRecipe(IE_molds.makeStack(i));
 mods.immersiveengineering.Blueprint.addRecipe("molds", IE_molds.makeStack(i), [<ore:sheetDoubleSteel>,<immersiveengineering:tool:1>]);
 }
+mods.immersiveengineering.Blueprint.addRecipe("molds", <contenttweaker:striking_die>, [<ore:sheetDoubleSteel>,<tfc:metal/hammer_head/steel>]);
+
 #=============================================================================================================================================		
 //Fibre Cables
 WireDrawing.addRecipe("quartz_wire", <appliedenergistics2:material>, 3, <contenttweaker:quartz_wire>*4, 0xFFA9CDD1);
