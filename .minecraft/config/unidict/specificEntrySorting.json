@@ -27,5 +27,12 @@
 		[
 		"immersiveengineering"
 		]
+	},
+	{
+		"entryName" : "componetTransistor",
+		"modIdPriorityList" :
+		[
+		"opencomputers"
+		]
 	}
 ]

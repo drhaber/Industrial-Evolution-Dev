@@ -105,6 +105,11 @@ val coloredWater = [<liquid:water_white>,<liquid:water_orange>,<liquid:water_mag
 val glowingcoloredWater = [<liquid:glowing_water_white>,<liquid:glowing_water_orange>,<liquid:glowing_water_magenta>,<liquid:glowing_water_light_blue>,<liquid:glowing_water_yellow>,<liquid:glowing_water_lime>,<liquid:glowing_water_pink>,<liquid:glowing_water_gray>,<liquid:glowing_water_silver>,
 <liquid:glowing_water_cyan>,<liquid:glowing_water_purple>,<liquid:glowing_water_blue>,<liquid:glowing_water_brown>,<liquid:glowing_water_green>,<liquid:glowing_water_red>,<liquid:glowing_water_black>] as ILiquidStack[];
 
+val bottles = [<inspirations:dyed_bottle:15>,<inspirations:dyed_bottle:14>,<inspirations:dyed_bottle:13>,<inspirations:dyed_bottle:12>,
+<inspirations:dyed_bottle:11>,<inspirations:dyed_bottle:10>,<inspirations:dyed_bottle:9>,<inspirations:dyed_bottle:8>,
+<inspirations:dyed_bottle:7>,<inspirations:dyed_bottle:6>,<inspirations:dyed_bottle:5>,<inspirations:dyed_bottle:4>,
+<inspirations:dyed_bottle:3>,<inspirations:dyed_bottle:2>,<inspirations:dyed_bottle:1>,<inspirations:dyed_bottle:0>] as IItemStack[];
+
 val Illumar = <projectred-core:resource_item>.definition;
 val wools = <minecraft:wool>.definition;
 val carpets = <minecraft:carpet>.definition;
@@ -130,6 +135,8 @@ mods.terrafirmacraft.Barrel.addRecipe(stringname4, <ore:carpet>, coloredWater[i]
 mods.terrafirmacraft.Barrel.addRecipe(stringname5, <ore:bed>, coloredWater[i]*250, beds.makeStack(i), null, 4);
 mods.terrafirmacraft.Barrel.addRecipe(stringname6, petalblocks.makeStack(i), <liquid:water>*1000, null, coloredWater[i]*1500, 0);
 mods.terrafirmacraft.Barrel.addRecipe(stringname7, petals.makeStack(i), <liquid:water>*100, null, coloredWater[i]*100, 0);
+
+mods.terrafirmacraft.Barrel.addRecipe(stringname ~ "_bottled", <minecraft:glass_bottle>, coloredWater[i]*250, bottles[i], null, 0);
 
 recipes.removeShapeless(wools.makeStack(i)*8);
 recipes.removeShapeless(wools.makeStack(i));

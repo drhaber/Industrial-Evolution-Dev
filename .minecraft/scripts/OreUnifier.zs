@@ -55,6 +55,8 @@ for i in 0 to 16{
 <ore:quartzDark>.mirror(<ore:gemEnderBiotite>);
 //Brass Sleeve
 <ore:sleeveBrass>.add(<railcraft:gear:3>);
+//Transistors
+<ore:componetTransistor>.addItems([<pneumaticcraft:transistor>,<opencomputers:material:6>]);
 //Silicon
 <ore:itemSilicon>.remove(<libvulpes:productingot:3>);
 <ore:waferSilicon>.remove(<libvulpes:productingot:3>);
