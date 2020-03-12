@@ -3,6 +3,10 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import moretweaker.railcraft.BlastFurnace;
 
+mods.unidict.removalByKind.get("Furnace").remove("ingot");
+
+
+
 val Dusts = 	[<tfc:metal/dust/gold>,	<tfc:metal/dust/platinum>,	<tfc:metal/dust/silver>,	<tfc:metal/dust/tin>,	<tfc:metal/dust/lead>,	<tfc:metal/dust/bismuth>,	<tfc:metal/dust/zinc>,	<tfc:metal/dust/ardite>,<tfc:metal/dust/osmium>,<tfc:metal/dust/antimony>,	<tfc:metal/dust/aluminium>,	<tfc:metal/dust/tungsten>,	<tfc:metal/dust/cobalt>] as IItemStack[];
 val Rich =   	[<ore:oreGoldRich>,		<ore:orePlatinumRich>,		<ore:oreSilverRich>,		<ore:oreTinRich>,		<ore:oreLeadRich>,		<ore:oreBismuthRich>,		<ore:oreZincRich>,		<ore:oreArditeRich>,	<ore:oreOsmiumRich>,	<ore:oreAntimonyRich>,		<ore:oreAluminiumRich>,		<ore:oreTungstenRich>,		<ore:oreCobaltRich>] as IOreDictEntry[];
 val Normal = 	[<ore:oreGoldNormal>,	<ore:orePlatinumNormal>,	<ore:oreSilverNormal>,		<ore:oreTinNormal>,		<ore:oreLeadNormal>,	<ore:oreBismuthNormal>,		<ore:oreZincNormal>,	<ore:oreArditeNormal>,	<ore:oreOsmiumNormal>,	<ore:oreAntimonyNormal>,	<ore:oreAluminiumNormal>,	<ore:oreTungstenNormal>,	<ore:oreCobaltNormal>] as IOreDictEntry[];
@@ -45,14 +49,22 @@ for n, oreiron in IronSmal{
 mods.immersiveengineering.Crusher.addRecipe(IronSmal[n]*4, IronRich[n], 2048, IronSmal[n], 0.5);
 mods.immersiveengineering.Crusher.addRecipe(IronSmal[n]*3, IronNorm[n], 2048, IronSmal[n], 0.1);
 mods.immersiveengineering.Crusher.addRecipe(IronSmal[n]*2, IronPoor[n], 2048);
+
+mods.immersiveengineering.BlastFurnace.addRecipe(<tfc:metal/scrap/pig_iron>, IronPoor[n]*10, 2000);
+
 }
 mods.immersiveengineering.Crusher.addRecipe(<tfc:metal/dust/wrought_iron>, <ore:oreIronSmall>*10, 2048);
+
+
 #=============================================================================================================================================		
 
 //Iron
 
-mods.immersiveengineering.BlastFurnace.addRecipe(<tfc:bloom/unrefined>, <tfc:metal/dust/wrought_iron>, 2000);
-mods.immersiveengineering.MetalPress.addRecipe(<tfc:bloom/refined>, <tfc:bloom/unrefined>, <contenttweaker:striking_die>, 2000);
+#mods.immersiveengineering.BlastFurnace.addRecipe(<tfc:bloom/unrefined>, <tfc:metal/dust/wrought_iron>, 2000);
+#mods.immersiveengineering.MetalPress.addRecipe(<tfc:bloom/refined>, <tfc:bloom/unrefined>, <contenttweaker:striking_die>, 2000);
+
+//Pig Iron
+
 
 //Steelingot
 BlastFurnace.remove(<railcraft:ingot>);
@@ -60,6 +72,9 @@ BlastFurnace.remove(<railcraft:nugget>);
 BlastFurnace.remove(<railcraft:metal:3>);
 mods.immersiveengineering.BlastFurnace.removeRecipe(<immersiveengineering:metal:8>);
 mods.immersiveengineering.BlastFurnace.removeRecipe(<immersiveengineering:storage:8>);
+
+mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:pig_iron>*288, <tfc:powder/flux>, -0.75, 773.0, <liquid:steel>*144);
+
 
 #mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/high_carbon_steel>, <tfc:metal/ingot/pig_iron>, <contenttweaker:striking_die>, 2000);
 #mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/steel>, <tfc:metal/ingot/high_carbon_steel>, <contenttweaker:striking_die>, 2000);

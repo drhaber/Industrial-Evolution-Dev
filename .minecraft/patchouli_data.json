@@ -13,10 +13,14 @@
         "pneumaticcraft:programming/standby",
         "pneumaticcraft:programming/dig",
         "pneumaticcraft:programming/item_filter",
-        "pneumaticcraft:tools/micromissiles"
+        "pneumaticcraft:tools/micromissiles",
+        "pneumaticcraft:base_concepts/pressure",
+        "pneumaticcraft:machines/vacuum_pump"
       ],
       "bookmarks": [],
       "history": [
+        "pneumaticcraft:machines/vacuum_pump",
+        "pneumaticcraft:base_concepts/pressure",
         "pneumaticcraft:tools/micromissiles",
         "pneumaticcraft:programming/item_filter",
         "pneumaticcraft:programming/dig",
@@ -38,10 +42,12 @@
         "steamagerevolution:production/casting_block_entry",
         "steamagerevolution:production/steelworks_entry",
         "steamagerevolution:alchemical/vat_entry",
-        "steamagerevolution:production/steam_hammer_entry"
+        "steamagerevolution:production/steam_hammer_entry",
+        "steamagerevolution:basics/brass_entry"
       ],
       "bookmarks": [],
       "history": [
+        "steamagerevolution:basics/brass_entry",
         "steamagerevolution:production/steelworks_entry",
         "steamagerevolution:production/steam_hammer_entry",
         "steamagerevolution:alchemical/vat_entry",
