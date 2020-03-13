@@ -6,6 +6,12 @@ import crafttweaker.liquid.ILiquidStack;
 import moretweaker.railcraft.RollingMachine;
 import mods.tfctech.WireDrawing;
 
+//Wrench
+recipes.remove(<opencomputers:wrench>);
+recipes.addShaped(<opencomputers:wrench>,[
+	[<contenttweaker:ironwrenchhead>,null,null],
+	[null,<tfctech:metal/copper_strip>,null],
+	[null,null,<tfctech:metal/wrought_iron_rod>]]);
 //End Stone
 mods.jei.JEI.removeAndHide(<opencomputers:endstone>);
 //Circuit Boards
@@ -77,12 +83,143 @@ recipes.addShaped(<opencomputers:material:9>,[
 	[<ore:wireTin>,<ore:wireTin>,<ore:wireTin>],
 	[<opencomputers:material:8>,<appliedenergistics2:material:22>,<opencomputers:material:8>],
 	[<ore:wireTin>,<ore:wireTin>,<ore:wireTin>]]);
+
+//Integrated Circuits
+
+recipes.addShaped(<advancedrocketry:ic>,[
+	[<opencomputers:material:6>,<advancedrocketry:itemcircuitplate>,<opencomputers:material:6>],
+	[<opencomputers:material:6>,<libvulpes:productplate:3>,<opencomputers:material:6>],
+	[<opencomputers:material:6>,<opencomputers:material:7>,<opencomputers:material:6>]]);
+
+recipes.addShaped(<advancedrocketry:ic:2>,[
+	[<opencomputers:material:6>,<advancedrocketry:itemcircuitplate:1>,<opencomputers:material:6>],
+	[<opencomputers:material:6>,<libvulpes:productplate:3>,<opencomputers:material:6>],
+	[<opencomputers:material:6>,<opencomputers:material:9>,<opencomputers:material:6>]]);
+
+//RAM
+recipes.remove(<opencomputers:component:6>); #Teir 1
+recipes.addShaped(<opencomputers:component:6>,[
+	[<opencomputers:material:7>,null,<tfctech:metal/gold_strip>],
+	[null,<pneumaticcraft:unassembled_pcb>,<tfctech:metal/gold_strip>],
+	[<opencomputers:material:7>,<forestry:soldering_iron>.reuse(),<tfctech:metal/gold_strip>]]);
+recipes.remove(<opencomputers:component:7>); #Teir 1.5
+recipes.addShaped(<opencomputers:component:7>,[
+	[<opencomputers:material:7>,null,<tfctech:metal/gold_strip>],
+	[<opencomputers:material:7>,<pneumaticcraft:unassembled_pcb>,<tfctech:metal/gold_strip>],
+	[<opencomputers:material:7>,<forestry:soldering_iron>.reuse(),<tfctech:metal/gold_strip>]]);
+
+recipes.remove(<opencomputers:component:8>); #Teir 2
+recipes.addShaped(<opencomputers:component:8>,[
+	[<opencomputers:material:8>,null,<tfctech:metal/gold_strip>],
+	[null,<pneumaticcraft:unassembled_pcb>,<tfctech:metal/gold_strip>],
+	[<opencomputers:material:8>,<forestry:soldering_iron>.reuse(),<tfctech:metal/gold_strip>]]);
+recipes.remove(<opencomputers:component:9>); #Teir 2.5
+recipes.addShaped(<opencomputers:component:9>,[
+	[<opencomputers:material:8>,null,<tfctech:metal/gold_strip>],
+	[<opencomputers:material:8>,<pneumaticcraft:unassembled_pcb>,<tfctech:metal/gold_strip>],
+	[<opencomputers:material:8>,<forestry:soldering_iron>.reuse(),<tfctech:metal/gold_strip>]]);
+
+recipes.remove(<opencomputers:component:10>); #Teir 3
+recipes.addShaped(<opencomputers:component:10>,[
+	[<opencomputers:material:9>,null,<tfctech:metal/gold_strip>],
+	[null,<pneumaticcraft:unassembled_pcb>,<tfctech:metal/gold_strip>],
+	[<opencomputers:material:9>,<forestry:soldering_iron>.reuse(),<tfctech:metal/gold_strip>]]);
+recipes.remove(<opencomputers:component:11>); #Teir 3.5
+recipes.addShaped(<opencomputers:component:11>,[
+	[<opencomputers:material:9>,null,<tfctech:metal/gold_strip>],
+	[<opencomputers:material:9>,<pneumaticcraft:unassembled_pcb>,<tfctech:metal/gold_strip>],
+	[<opencomputers:material:9>,<forestry:soldering_iron>.reuse(),<tfctech:metal/gold_strip>]]);
+
+//Cards and Expansions items
+
+recipes.remove(<opencomputers:material:5>); #Card Base
+recipes.addShaped(<opencomputers:material:5>,[
+	[<tfctech:metal/wrought_iron_rackwheel_piece>,null,null],
+	[<tfctech:metal/wrought_iron_rod>,<pneumaticcraft:printed_circuit_board>,null],
+	[<tfctech:metal/gold_strip>,<tfctech:metal/gold_strip>,<tfctech:metal/gold_strip>]]);
+
+//Bus
+
+recipes.remove(<opencomputers:component:3>);
+recipes.addShaped(<opencomputers:component:3>,[
+	[<opencomputers:material:7>,<opencomputers:material:3>,<tfctech:metal/gold_strip>],
+	[<opencomputers:material:11>,<pneumaticcraft:printed_circuit_board>,<tfctech:metal/gold_strip>],
+	[<opencomputers:material:7>,<opencomputers:material:3>,<tfctech:metal/gold_strip>]]);
+
+recipes.remove(<opencomputers:component:4>);
+recipes.addShaped(<opencomputers:component:4>,[
+	[<opencomputers:component:8>,<opencomputers:material:3>,<tfctech:metal/gold_strip>],
+	[<opencomputers:component:3>,<pneumaticcraft:printed_circuit_board>,<tfctech:metal/gold_strip>],
+	[<opencomputers:component:8>,<opencomputers:material:3>,<tfctech:metal/gold_strip>]]);
+
+recipes.remove(<opencomputers:component:5>);
+recipes.addShaped(<opencomputers:component:5>,[
+	[<opencomputers:component:10>,<opencomputers:material:3>,<tfctech:metal/gold_strip>],
+	[<opencomputers:component:4>,<pneumaticcraft:printed_circuit_board>,<tfctech:metal/gold_strip>],
+	[<opencomputers:component:10>,<opencomputers:material:3>,<tfctech:metal/gold_strip>]]);
+
+//Hard Disks
+
+recipes.remove(<opencomputers:storage:2>); #Teir 1
+recipes.addShaped(<opencomputers:storage:2>,[
+	[null,<tfc:metal/sheet/black_bronze>,null],
+	[null,<opencomputers:material:12>,null],
+	[<pneumaticcraft:printed_circuit_board>,<minecraft:sticky_piston>,<opencomputers:material:7>]]);
+
+recipes.remove(<opencomputers:storage:3>); #Teir 2
+recipes.addShaped(<opencomputers:storage:3>,[
+	[null,<tfc:metal/sheet/gold>,null],
+	[<opencomputers:material:12>,<opencomputers:material:12>,<opencomputers:material:12>],
+	[<pneumaticcraft:printed_circuit_board>,<minecraft:sticky_piston>,<opencomputers:material:7>]]);
+
+recipes.remove(<opencomputers:storage:4>); #Teir 3
+recipes.addShaped(<opencomputers:storage:4>,[
+	[<opencomputers:material:12>,<tfc:metal/sheet/mithril>,<opencomputers:material:12>],
+	[<opencomputers:material:12>,<opencomputers:material:12>,<opencomputers:material:12>],
+	[<pneumaticcraft:printed_circuit_board>,<minecraft:sticky_piston>,<opencomputers:material:7>]]);
+
+//Floppy
+recipes.remove(<opencomputers:storage:1>);
+recipes.addShaped(<opencomputers:storage:1>,[
+	[<tfctech:metal/tin_strip>],
+	[<pneumaticcraft:plastic>],
+	[<minecraft:paper>]]);
+
+//EEPROM
+recipes.remove(<opencomputers:storage>);
+recipes.addShaped(<opencomputers:storage>,[
+	[<tfctech:metal/gold_strip>],
+	[<advancedrocketry:itemcircuitplate:1>],
+	[<pneumaticcraft:plastic:2>]]);
+
+//Printed Circuit Board
+recipes.remove(<pneumaticcraft:printed_circuit_board>); #Assembled CIrcuit Board
+recipes.addShaped(<pneumaticcraft:printed_circuit_board>,[
+	[<tfctech:metal/copper_wire>,<opencomputers:material:6>,<pneumaticcraft:capacitor>],
+	[<opencomputers:material:6>,<opencomputers:material:7>,<tfctech:metal/copper_wire>],
+	[<pneumaticcraft:capacitor>,UPCB,<forestry:soldering_iron>.reuse()]]);
+
+//Control Unit
+recipes.remove(<opencomputers:material:11>);
+recipes.addShaped(<opencomputers:material:11>,[
+	[<opencomputers:material:7>,<advancedrocketry:itemcircuitplate>,<opencomputers:material:7>],
+	[<opencomputers:material:6>,<minecraft:clock>,<opencomputers:material:6>],
+	[<opencomputers:material:7>,<advancedrocketry:itemcircuitplate>,<opencomputers:material:7>]]);
+
 //Primitive Circuits
 mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:material:27>);
 recipes.addShaped(<immersiveengineering:material:27>,[
 	[<tfctech:metal/copper_wire>,<tfctech:metal/gold_wire>,<immersiveengineering:material:26>],
 	[<immersiveengineering:material:26>,<opencomputers:material:4>,<tfctech:metal/copper_wire>],
-	[<tfctech:metal/gold_wire>,<tfctech:metal/red_alloy_wire>,<forestry:soldering_iron>.transformDamage(1)]]);
+	[<tfctech:metal/gold_wire>,<tfctech:metal/red_alloy_wire>,<forestry:soldering_iron>.reuse()]]);
+
+//ALU
+recipes.remove(<opencomputers:material:10>);
+recipes.addShaped(<opencomputers:material:10>,[
+	[<opencomputers:material:7>,<minecraft:redstone>,<opencomputers:material:7>],
+	[<opencomputers:material:6>,<advancedrocketry:itemcircuitplate:1>,<opencomputers:material:6>],
+	[<opencomputers:material:7>,<minecraft:redstone>,<opencomputers:material:7>]]);
+
 //Primitive Computer TIS-3D
 recipes.removeByMod("tis3d");	
 val PrimCB = <immersiveengineering:material:27>;

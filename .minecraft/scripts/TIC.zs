@@ -371,15 +371,3 @@ mods.tconstruct.Alloy.addRecipe(<liquid:manyullyn>*144, [<liquid:ardite>*432,<li
 mods.tconstruct.Alloy.addRecipe(<liquid:tungsten_steel>*144, [<liquid:tungsten>*144,<liquid:steel>*720]);
 #=============================================================================================================================================		
 
-//Ceramics 
-furnace.remove(<ceramics:unfired_clay:5>);
-furnace.remove(<ceramics:clay_barrel>);
-furnace.remove(<ceramics:clay_barrel:1>);
-furnace.remove(<ceramics:faucet>);
-furnace.remove(<ceramics:channel>);
-furnace.remove(<ceramics:porcelain_barrel>);
-furnace.remove(<ceramics:porcelain_barrel_extension>);
-furnace.remove(<ceramics:unfired_clay:9>);
-furnace.remove(<ceramics:clay_bucket>);
-furnace.remove(<ceramics:clay_shears>);
-mods.jei.JEI.removeAndHide(<ceramics:unfired_clay:4>);

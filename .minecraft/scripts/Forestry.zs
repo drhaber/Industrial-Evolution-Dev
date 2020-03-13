@@ -28,8 +28,41 @@ recipes.addShaped(<forestry:fertilizer_bio>*4,[
 	[<ore:itemFood>,<ore:dirt>,<ore:itemFood>],
 	[<ore:itemFood>,<ore:itemFood>,<ore:itemFood>]]);
 
+//Soldering Iron
+
+recipes.remove(<forestry:soldering_iron>);
+recipes.addShaped(<forestry:soldering_iron>,[
+	[<tfctech:metal/wrought_iron_rod>,null,null],
+	[null,<tfctech:metal/wrought_iron_rod>,<tconstruct:materials>],
+	[null,<tconstruct:materials>,<embers:superheater>]]);
+
 //Kerosene
 mods.forestry.Still.addRecipe(<liquid:kerosene>, <liquid:oil>, 200);    
 
 //Seed Oil
 mods.forestry.Squeezer.removeRecipe(<liquid:seed.oil>);
+
+//Circuits
+mods.forestry.Carpenter.removeRecipe(<forestry:chipsets>);
+recipes.addShaped(<forestry:chipsets>,[
+	[<tfc:metal/sheet/mithril>],
+	[<pneumaticcraft:unassembled_pcb>],
+	[<projectred-transmission:wire:17>]]);
+
+mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:1>);
+recipes.addShaped(<forestry:chipsets:1>,[
+	[<tfc:metal/sheet/rose_gold>],
+	[<pneumaticcraft:advanced_pcb>],
+	[<projectred-transmission:wire:17>]]);
+
+mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:2>);
+recipes.addShaped(<forestry:chipsets:2>,[
+	[<tfc:metal/sheet/silver>,null],
+	[<pneumaticcraft:advanced_pcb>,<pneumaticcraft:advanced_pcb>,],
+	[<projectred-transmission:wire:17>,<projectred-transmission:wire:17>]]);
+
+mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:3>);
+recipes.addShaped(<forestry:chipsets:3>,[
+	[null,<tfc:metal/sheet/electrum>,null],
+	[<pneumaticcraft:advanced_pcb>,<pneumaticcraft:advanced_pcb>,<pneumaticcraft:advanced_pcb>],
+	[<projectred-transmission:wire:17>,<projectred-transmission:wire:17>,<projectred-transmission:wire:17>]]);

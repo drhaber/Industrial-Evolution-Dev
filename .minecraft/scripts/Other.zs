@@ -362,3 +362,29 @@ val ingots =[<tfc:metal/ingot/bismuth>,<tfc:metal/ingot/bismuth_bronze>,<tfc:met
 for i, iIngot in ingots{
 RollingMachine.addShaped(sheets[i]*2,[[iIngot,iIngot],[iIngot,iIngot]], 300);
 }
+//Railcraft Circuits
+recipes.remove(<railcraft:circuit:2>); #Singal 
+recipes.addShaped(<railcraft:circuit:2>,[
+	[<forestry:soldering_iron>.reuse(),<opencomputers:material:7>,<pneumaticcraft:plastic:11>],
+	[<opencomputers:material:6>,<pneumaticcraft:unassembled_pcb>,<pneumaticcraft:plastic:11>],
+	[<opencomputers:material:6>,<pneumaticcraft:plastic:11>,<pneumaticcraft:plastic:11>]]);
+
+recipes.remove(<railcraft:circuit:1>); #Receiver
+recipes.addShaped(<railcraft:circuit:1>,[
+	[<forestry:soldering_iron>.reuse(),<opencomputers:material:7>,<pneumaticcraft:plastic:10>],
+	[<opencomputers:material:6>,<pneumaticcraft:unassembled_pcb>,<pneumaticcraft:plastic:10>],
+	[<opencomputers:material:6>,<pneumaticcraft:plastic:10>,<pneumaticcraft:plastic:10>]]);
+
+recipes.remove(<railcraft:circuit:3>); #Radio
+recipes.addShaped(<railcraft:circuit:3>,[
+	[<forestry:soldering_iron>.reuse(),<opencomputers:material:7>,<pneumaticcraft:plastic:1>],
+	[<opencomputers:material:6>,<pneumaticcraft:unassembled_pcb>,<pneumaticcraft:plastic:1>],
+	[<opencomputers:material:6>,<pneumaticcraft:plastic:1>,<pneumaticcraft:plastic:1>]]);
+
+recipes.remove(<railcraft:circuit>); #Controller
+recipes.addShaped(<railcraft:circuit>,[
+	[<forestry:soldering_iron>.reuse(),<opencomputers:material:7>,<pneumaticcraft:plastic:4>],
+	[<opencomputers:material:6>,<pneumaticcraft:unassembled_pcb>,<pneumaticcraft:plastic:4>],
+	[<opencomputers:material:6>,<pneumaticcraft:plastic:4>,<pneumaticcraft:plastic:4>]]);
+
+			

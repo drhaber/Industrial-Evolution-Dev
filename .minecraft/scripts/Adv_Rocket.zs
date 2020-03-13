@@ -31,6 +31,29 @@ mods.advancedrocketry.PrecisionAssembler.removeRecipe(<advancedrocketry:itemcirc
 mods.advancedrocketry.PrecisionAssembler.removeRecipe(<advancedrocketry:itemcircuitplate:1>);
 mods.advancedrocketry.PrecisionAssembler.removeRecipe(<advancedrocketry:satelliteprimaryfunction:5>);
 
+mods.advancedrocketry.CuttingMachine.removeRecipe(<advancedrocketry:ic>);
+mods.advancedrocketry.CuttingMachine.removeRecipe(<advancedrocketry:ic:2>);
+
 #mods.advancedrocketry.PrecisionAssembler.addRecipe(<advancedrocketry:itemcircuitplate>, 900, 100, <tfc:metal/ingot/gold>,<minecraft:redstone>,<projectred-core:resource_item:301>);
 #mods.advancedrocketry.PrecisionAssembler.addRecipe(<advancedrocketry:itemcircuitplate:1>, 900, 100, <tfc:metal/ingot/gold>,<minecraft:redstone_block>,<projectred-core:resource_item:301>);
 mods.advancedrocketry.PrecisionAssembler.addRecipe(<advancedrocketry:satelliteprimaryfunction:5>, 1000, 100, <tfctech:metal/copper_rod>*2,<tfctech:metal/titanium_rod>,<advancedrocketry:ic:2>,<projectred-core:resource_item:301>*2);
+
+//Circuits
+
+recipes.remove(<advancedrocketry:ic:3>); #Control Circuit
+recipes.addShaped(<advancedrocketry:ic:3>,[
+	[<tfctech:metal/gold_strip>,<pneumaticcraft:advanced_pcb>,<opencomputers:material:7>],
+	[<tfctech:metal/gold_strip>,<opencomputers:material:6>,<pneumaticcraft:plastic:10>],
+	[<forestry:soldering_iron>.reuse(),<tfctech:metal/red_alloy_wire>,<pneumaticcraft:plastic:10>]]);
+
+recipes.remove(<advancedrocketry:ic:4>); #Item IO
+recipes.addShaped(<advancedrocketry:ic:4>,[
+	[<tfctech:metal/gold_strip>,<pneumaticcraft:advanced_pcb>,<opencomputers:material:7>],
+	[<tfctech:metal/gold_strip>,<opencomputers:material:6>,<pneumaticcraft:plastic:11>],
+	[<forestry:soldering_iron>.reuse(),<tfctech:metal/red_alloy_wire>,<pneumaticcraft:plastic:11>]]);
+
+recipes.remove(<advancedrocketry:ic:5>); # Liquid IO
+recipes.addShaped(<advancedrocketry:ic:5>,[
+	[<tfctech:metal/gold_strip>,<pneumaticcraft:advanced_pcb>,<opencomputers:material:7>],
+	[<tfctech:metal/gold_strip>,<opencomputers:material:6>,<pneumaticcraft:plastic:6>],
+	[<forestry:soldering_iron>.reuse(),<tfctech:metal/red_alloy_wire>,<pneumaticcraft:plastic:6>]]);
