@@ -40,6 +40,8 @@ for i in 0 to 16{
 //Chests
 <ore:chest>.addAll(<ore:chestWood>);
 <ore:chestWood>.mirror(<ore:chest>);
+
+<ore:chestVanilla>.addItems([<minecraft:chest>,<quark:custom_chest:*>]);
 //Bricks
 <ore:ingotBrick>.addAll(<ore:brick>); //This adds ingot brick to all bricks
 //Tallow

@@ -12,7 +12,7 @@
 include file("hardmode.recipes")
 #include file("gregtech.recipes")
 #include file("peaceful.recipes")
-include file("user.recipes")
+#include file("user.recipes")
 
 # You can also specify custom recipes in this file directly. Have a look at the
 # default.recipes file to get an idea how recipes have to be structured. You'll

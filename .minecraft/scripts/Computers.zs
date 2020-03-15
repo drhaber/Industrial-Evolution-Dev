@@ -230,6 +230,20 @@ recipes.addShaped(<opencomputers:storage:4>,[
 	[<opencomputers:material:12>,<opencomputers:material:12>,<opencomputers:material:12>],
 	[<pneumaticcraft:printed_circuit_board>,<minecraft:sticky_piston>,<opencomputers:material:7>]]);
 
+//Disk Drives
+
+recipes.remove(<opencomputers:component:20>);
+recipes.addShaped(<opencomputers:component:20>,[
+	[<forestry:soldering_iron>.reuse(),<opencomputers:material:7>,null],
+	[<tfctech:metal/tin_wire>,<pneumaticcraft:unassembled_pcb>,<tfctech:metal/tin_wire>],
+	[<railcraft:charge>,<tfctech:metal/wrought_iron_strip>,<tfctech:metal/tin_wire>]]);
+
+recipes.remove(<opencomputers:diskdrive>);
+recipes.addShaped(<opencomputers:diskdrive>,[
+	[<tfctech:metal/black_bronze_long_rod>,<tfc:metal/sheet/black_bronze>,<tfctech:metal/black_bronze_long_rod>],
+	[<tfc:metal/sheet/black_bronze>,<opencomputers:component:20>,<tfc:metal/sheet/black_bronze>],
+	[<rsgauges:indicator1>,<projectred-transmission:wire:17>,<tfctech:metal/black_bronze_long_rod>]]);
+
 //Floppy
 recipes.remove(<opencomputers:storage:1>);
 recipes.addShaped(<opencomputers:storage:1>,[
@@ -354,6 +368,60 @@ recipes.addShaped(<opencomputers:case3>,[
 	[<tfctech:metal/mithril_long_rod>,<rsgauges:indicator2>,<rsgauges:indicator1>],
 	[<mysticalmechanics:gear_fan>,<appliedenergistics2:sky_stone_chest>,<mysticalmechanics:gear_fan>],
 	[<tfctech:metal/mithril_long_rod>,<tfc:metal/sheet/mithril>,<tfctech:metal/mithril_long_rod>]]);	
+
+//Servers
+
+recipes.remove(<opencomputers:component:13>);
+recipes.addShaped(<opencomputers:component:13>,[
+	[<forestry:soldering_iron>.reuse(),<pneumaticcraft:unassembled_pcb>,<pneumaticcraft:plastic>],
+	[<tfctech:metal/tin_sleeve>,<tfctech:metal/tin_sleeve>,<pneumaticcraft:plastic>],
+	[<ore:tfcChest>,<pneumaticcraft:unassembled_pcb>,<tfctech:metal/wrought_iron_strip>]]);
+
+recipes.remove(<opencomputers:component:14>);
+recipes.addShaped(<opencomputers:component:14>,[
+	[<forestry:soldering_iron>.reuse(),<pneumaticcraft:unassembled_pcb>,<pneumaticcraft:plastic>],
+	[<tfctech:metal/brass_sleeve>,<tfctech:metal/brass_sleeve>,<pneumaticcraft:plastic>],
+	[<ore:chestVanilla>,<pneumaticcraft:unassembled_pcb>,<tfctech:metal/gold_strip>]]);
+
+recipes.remove(<opencomputers:component:15>);
+recipes.addShaped(<opencomputers:component:15>,[
+	[<forestry:soldering_iron>.reuse(),<pneumaticcraft:unassembled_pcb>,<pneumaticcraft:plastic>],
+	[<tfctech:metal/steel_sleeve>,<tfctech:metal/steel_sleeve>,<pneumaticcraft:plastic>],
+	[<appliedenergistics2:sky_stone_chest>,<pneumaticcraft:unassembled_pcb>,<tfctech:metal/mithril_strip>]]);	
+
+//CPUS
+
+recipes.remove(<opencomputers:component>);
+recipes.addShaped(<opencomputers:component>,[
+	[<tfctech:metal/wrought_iron_strip>,<opencomputers:material:11>,<tfctech:metal/wrought_iron_strip>],
+	[<opencomputers:material:7>,<projectred-core:resource_item:301>,<opencomputers:material:7>],
+	[<tfctech:metal/wrought_iron_strip>,<opencomputers:material:10>,<tfctech:metal/wrought_iron_strip>]]);
+
+recipes.remove(<opencomputers:component:1>);
+recipes.addShaped(<opencomputers:component:1>,[
+	[<tfctech:metal/gold_strip>,<opencomputers:material:11>,<tfctech:metal/gold_strip>],
+	[<opencomputers:material:8>,<projectred-core:resource_item:301>,<opencomputers:material:8>],
+	[<tfctech:metal/gold_strip>,<opencomputers:material:10>,<tfctech:metal/gold_strip>]]);
+
+recipes.remove(<opencomputers:component:2>);
+recipes.addShaped(<opencomputers:component:2>,[
+	[<tfctech:metal/mithril_strip>,<opencomputers:component:1>,<tfctech:metal/mithril_strip>],
+	[<opencomputers:material:9>,<projectred-core:resource_item:301>,<opencomputers:material:9>],
+	[<tfctech:metal/mithril_strip>,<opencomputers:component:1>,<tfctech:metal/mithril_strip>]]);
+
+//APU
+
+recipes.remove(<opencomputers:component:16>);
+recipes.addShaped(<opencomputers:component:16>,[
+	[<tfctech:metal/gold_strip>,<opencomputers:component:1>,<tfctech:metal/gold_strip>],
+	[<opencomputers:material:8>,<opencomputers:component:3>,<opencomputers:material:8>],
+	[<tfctech:metal/gold_strip>,<opencomputers:card:1>,<tfctech:metal/gold_strip>]]);
+
+recipes.remove(<opencomputers:component:17>);
+recipes.addShaped(<opencomputers:component:17>,[
+	[<tfctech:metal/mithril_strip>,<opencomputers:component:2>,<tfctech:metal/mithril_strip>],
+	[<opencomputers:material:9>,<opencomputers:component:4>,<opencomputers:material:9>],
+	[<tfctech:metal/mithril_strip>,<opencomputers:card:2>,<tfctech:metal/mithril_strip>]]);
 
 //Primitive Computer TIS-3D
 recipes.removeByMod("tis3d");	
