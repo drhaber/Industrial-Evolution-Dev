@@ -175,11 +175,6 @@ recipes.remove(<minecraft:wheat>);
 mods.jei.JEI.addDescription(<quark:thatch>,"Magic has made this thatch solid");
 mods.jei.JEI.addDescription(<quark:thatch_stairs>,"Magic has made this thatch solid");
 mods.jei.JEI.addDescription(<quark:thatch_slab>,"Magic has made this thatch solid");
-	//Rope
-	recipes.addShaped(<quark:rope>*2,[
-		[<tfc:crop/product/jute_fiber>,<tfc:crop/product/jute_fiber>,<tfc:crop/product/jute_fiber>],
-		[<tfc:crop/product/jute_fiber>,null,<tfc:crop/product/jute_fiber>],
-		[<tfc:crop/product/jute_fiber>,<tfc:crop/product/jute_fiber>,<tfc:crop/product/jute_fiber>]]);
 	//Iron Rod
 	<quark:iron_rod>.displayName = "Steel Mining Rod";
 	recipes.remove(<quark:iron_rod>);
@@ -264,7 +259,110 @@ recipes.addShapeless(<projectred-core:resource_item:301> * 6, [<ore:sawIII>.tran
 recipes.addShapeless(<projectred-core:resource_item:301> * 8, [<ore:sawIV>.transformDamage(7), <projectred-core:resource_item:300>]);
 recipes.addShapeless(<projectred-core:resource_item:301> * 8, [<ore:sawV>.transformDamage(7), <projectred-core:resource_item:300>]);
 recipes.addShapeless(<projectred-core:resource_item:301> * 12, [<ore:sawVI>.transformDamage(11), <projectred-core:resource_item:300>]);
+#=============================================================================================================================================		
+//Hooks
+recipes.removeByMod("hooked");
+val Handle = <immersiveengineering:material:13>;
 
+#Wooden
+recipes.addShaped(<hooked:hook>,[
+	[null,<inspirations:wooden_crook>,null],
+	[null,<quark:rope>,<inspirations:wooden_crook>],
+	[Handle,null,null]]);
+
+#Iron
+recipes.addShaped(<hooked:hook:1>,[
+	[null,<jaff:iron_hook>,<ore:pickaxeIron>],
+	[null,<hooked:microcrafting:3>,<jaff:iron_hook>],
+	[Handle,null,null]]);
+
+#Diamond
+recipes.addShaped(<hooked:hook:2>,[
+	[<jaff:iron_hook>,<yurtmod:tent_upgrade_diamond>,<minecraft:diamond_pickaxe>],
+	[null,<hooked:microcrafting:3>,<yurtmod:tent_upgrade_diamond>],
+	[Handle,null,<jaff:iron_hook>]]);
+
+#Redstone
+recipes.addShaped(<hooked:hook:3>,[
+	[<jaff:iron_hook>,<tfctech:wiredraw/winch>,<tfc:metal/pick/red_steel>],
+	[<projectred-core:resource_item:410>,<immersiveengineering:wirecoil:5>,<tfctech:wiredraw/winch>],
+	[Handle,<projectred-core:resource_item:410>,<jaff:iron_hook>]]);
+
+#Ender
+recipes.addShaped(<hooked:hook:4>,[
+	[<minecraft:ender_pearl>,<aunis:crystal_ender>,<quark:arrow_ender>],
+	[null,<opencomputers:hologram1>,<aunis:crystal_ender>],
+	[Handle,null,<minecraft:ender_pearl>]]);	
+
+//Ropes + Chains
+
+	//Chains
+	mods.terrafirmacraft.Anvil.addRecipe("Iron_Chain_Link", <ore:ingotWroughtIron>, <hooked:microcrafting:2>, 3, "general","BEND_NOT_LAST","SHRINK_NOT_LAST","DRAW_LAST");
+		//Quark
+		recipes.remove(<quark:chain>);
+		recipes.addShaped(<quark:chain>*3,[
+			[null,null,<hooked:microcrafting:2>],
+			[null,<hooked:microcrafting:2>,null],
+			[<hooked:microcrafting:2>,null,null]]);
+		//Hooked
+		recipes.remove(<hooked:microcrafting:3>);
+		recipes.addShaped(<hooked:microcrafting:3>,[
+			[null,null,<quark:chain>],
+			[null,<quark:chain>,null],
+			[<quark:chain>,null,null]]);
+		//Rustic
+		recipes.remove(<rustic:chain>);
+		recipes.addShaped(<rustic:chain>*8,[
+			[<hooked:microcrafting:2>],
+			[<hooked:microcrafting:2>],
+			[<hooked:microcrafting:2>]]);	
+		//Inspirations
+		recipes.remove(<inspirations:rope:1>);
+		recipes.addShaped(<inspirations:rope:1>*8,[
+			[<quark:chain>],
+			[<quark:chain>],
+			[<quark:chain>]]);	
+		//Rustic Gold Chain
+		recipes.remove(<rustic:chain_gold>);
+		recipes.addShaped(<rustic:chain_gold>*8,[
+			[<tfctech:metal/gold_wire>],
+			[<tfctech:metal/gold_wire>],
+			[<tfctech:metal/gold_wire>]]);
+
+	//Rope
+	recipes.remove();
+	recipes.addShapeless(<hooked:microcrafting>*8, [<tfc:crop/product/jute_fiber>,<tfc:spindle>.transformDamage(8)]);
+	recipes.addShaped(<hooked:microcrafting:1>,[
+		[null,null,<contenttweaker:creosote_string>],
+		[null,<contenttweaker:creosote_string>,null],
+		[<contenttweaker:creosote_string>,null,null]]);
+	recipes.addShaped(<hooked:microcrafting:1>,[
+		[null,null,<immersiveengineering:material:4>],
+		[null,<immersiveengineering:material:4>,null],
+		[<immersiveengineering:material:4>,null,null]]);
+		//Rustic
+		recipes.remove(<rustic:rope>);
+		recipes.addShaped(<rustic:rope>*8,[
+			[<hooked:microcrafting:1>],
+			[<hooked:microcrafting:1>],
+			[<hooked:microcrafting:1>]]);
+		//Inspirations
+		recipes.remove(<inspirations:rope>);
+		recipes.addShaped(<inspirations:rope>*8,[
+			[<hooked:microcrafting:1>,<hooked:microcrafting:1>],
+			[<hooked:microcrafting:1>,<hooked:microcrafting:1>],
+			[<hooked:microcrafting:1>,<hooked:microcrafting:1>]]);
+		//Quark
+		recipes.remove(<quark:rope>);
+		recipes.addShaped(<quark:rope>*8,[
+			[<hooked:microcrafting:1>,<hooked:microcrafting:1>,<hooked:microcrafting:1>],
+			[<hooked:microcrafting:1>,null,<hooked:microcrafting:1>],
+			[<hooked:microcrafting:1>,<hooked:microcrafting:1>,<hooked:microcrafting:1>]]);
+	//Comforts
+	recipes.remove(<comforts:rope>);
+	recipes.addShaped(<comforts:rope>*2,[
+		[<hooked:microcrafting:1>,<tfctech:metal/wrought_iron_rod>],
+		[<hooked:microcrafting:1>,<hooked:microcrafting:1>]]);
 #=============================================================================================================================================		
 
 //OSISA

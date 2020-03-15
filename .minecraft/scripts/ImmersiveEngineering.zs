@@ -17,6 +17,7 @@ mods.immersiveengineering.CokeOven.addRecipe( <immersiveengineering:material:6>,
 #mods.terrafirmacraft.Barrel.addRecipe("Hemp_Fibre", <tfc:crop/product/jute_fiber>, <liquid:creosote>*10, <immersiveengineering:material:4>, <liquid:creosote>*8, 4);
 mods.terrafirmacraft.Barrel.addRecipe("Treated_Lumber", <ore:lumber>, <liquid:creosote>*250, <contenttweaker:treatedlumber>, <liquid:creosote>*150, 4);
 mods.terrafirmacraft.Barrel.addRecipe("Treated_Stick", <ore:stickWood>, <liquid:creosote>*50, <immersiveengineering:material>, <liquid:creosote>*25, 4);
+mods.terrafirmacraft.Barrel.addRecipe("Treated_String", <ore:string>, <liquid:creosote>*50, <contenttweaker:creosote_string>, <liquid:creosote>*25, 4);
 
 //Wires
 val wires = <immersiveengineering:material>.definition;

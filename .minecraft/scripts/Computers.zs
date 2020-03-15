@@ -43,9 +43,9 @@ recipes.addShaped(<opencomputers:material:28>*16,[
 //Data Cable
 recipes.remove(<opencomputers:cable>);
 recipes.addShaped(<opencomputers:cable>,[
-	[<immersiveengineering:material:5>,<tfctech:metal/gold_wire>,<immersiveengineering:material:5>],
-	[<tfctech:metal/gold_wire>,<projectred-transmission:framed_wire:17>,<tfctech:metal/gold_wire>],
-	[<immersiveengineering:material:5>,<tfctech:metal/gold_wire>,<immersiveengineering:material:5>]]);	
+	[null,<tfc:metal/nugget/gold>,null],
+	[<tfc:metal/nugget/gold>,<projectred-transmission:framed_wire:17>,<tfc:metal/nugget/gold>],
+	[null,<tfc:metal/nugget/gold>,null]]);	
 //Hover boots
 recipes.remove(<opencomputers:hoverboots>);
 recipes.addShaped(<opencomputers:hoverboots>,[
