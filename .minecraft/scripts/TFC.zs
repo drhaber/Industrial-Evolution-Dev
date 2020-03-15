@@ -6,11 +6,11 @@ import mods.tfctech.WireDrawing;
 import crafttweaker.item.IItemCondition;
 
 //Fuels BROKEN AT THE TIME TFC ISSUE NOT ZS 
-#mods.terrafirmacraft.ItemRegistry.registerFuel(<minecraft:blaze_powder>, 1800, 1350, true, false);
-#mods.terrafirmacraft.ItemRegistry.registerFuel(<minecraft:coal_block>, 19800, 1415, true, true);
-#mods.terrafirmacraft.ItemRegistry.registerFuel(<forestry:charcoal>, 16200, 1350, true, true);
-#mods.terrafirmacraft.ItemRegistry.registerFuel(<immersiveengineering:material:6>, 4400, 1500, true, true);
-#mods.terrafirmacraft.ItemRegistry.registerFuel(<immersiveengineering:stone_decoration:3>, 39600, 1500, true, true);
+mods.terrafirmacraft.ItemRegistry.registerFuel(<minecraft:blaze_powder>, 1800, 1350, true, false);
+mods.terrafirmacraft.ItemRegistry.registerFuel(<minecraft:coal_block>, 19800, 1415, true, true);
+mods.terrafirmacraft.ItemRegistry.registerFuel(<forestry:charcoal>, 16200, 1350, true, true);
+mods.terrafirmacraft.ItemRegistry.registerFuel(<immersiveengineering:material:6>, 4400, 1500, true, true);
+mods.terrafirmacraft.ItemRegistry.registerFuel(<immersiveengineering:stone_decoration:3>, 39600, 1500, true, true);
 
 //Embers & Engineer's Hammer
 mods.terrafirmacraft.ItemRegistry.registerItemHeat(<contenttweaker:bismuth_hammer_head>,0.14,270,true);

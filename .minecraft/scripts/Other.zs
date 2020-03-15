@@ -330,8 +330,12 @@ recipes.addShaped(<hooked:hook:4>,[
 			[<tfctech:metal/gold_wire>]]);
 
 	//Rope
-	recipes.remove();
+	recipes.remove(<hooked:microcrafting>);
 	recipes.addShapeless(<hooked:microcrafting>*8, [<tfc:crop/product/jute_fiber>,<tfc:spindle>.transformDamage(8)]);
+	recipes.addShaped(<hooked:microcrafting:1>,[
+		[null,null,<hooked:microcrafting>],
+		[null,<hooked:microcrafting>,null],
+		[<hooked:microcrafting>,null,null]]);
 	recipes.addShaped(<hooked:microcrafting:1>,[
 		[null,null,<contenttweaker:creosote_string>],
 		[null,<contenttweaker:creosote_string>,null],
