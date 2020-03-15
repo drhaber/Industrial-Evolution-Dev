@@ -88,9 +88,14 @@ mods.nuclearcraft.alloy_furnace.addRecipe(<ore:itemSilicon>, <ore:dustGraphite>,
 						   <tfc:sand/dolomite>,<tfc:sand/phyllite>,<tfc:sand/slate>,<tfc:sand/quartzite>,
 						   <tfc:sand/dacite>,<tfc:sand/andesite>,<tfc:sand/basalt>,<tfc:sand/rhyolite>,<tfc:sand/chalk>,
 						   <tfc:sand/chert>,<tfc:sand/schist>,<tfc:sand/gneiss>,<tfc:sand/marble>]);
+//Chests
+<ore:tfcChest>.addItems([<tfc:wood/chest/spruce>,<tfc:wood/chest/hevea>,<tfc:wood/chest/rosewood>,<tfc:wood/chest/white_cedar>,<tfc:wood/chest/birch>,<tfc:wood/chest/acacia>,<tfc:wood/chest/pine>,<tfc:wood/chest/blackwood>,<tfc:wood/chest/douglas_fir>,<tfc:wood/chest/chestnut>,<tfc:wood/chest/kapok>,<tfc:wood/chest/oak>,<tfc:wood/chest/palm>,<tfc:wood/chest/maple>,<tfc:wood/chest/hickory>,<tfc:wood/chest/ash>,<tfc:wood/chest/aspen>,<tfc:wood/chest/willow>,<tfc:wood/chest/sequoia>,<tfc:wood/chest/sycamore>]);						   
+<ore:chestWood>.addAll(<ore:chestTrapped>);
 //Aluminium Plate
 <ore:plateAluminum>.addAll(<ore:plateAluminium>);
 <ore:plateAluminium>.mirror(<ore:plateAluminum>);
+//Diamond
+<ore:chipDiamond>.add(<tfc:gem/diamond:0>);
 //Gears
 <ore:gearIron>.addAll(<ore:gearWroughtIron>);
 mods.jei.JEI.removeAndHide(<railcraft:gear:3>);
@@ -116,6 +121,8 @@ mods.jei.JEI.removeAndHide(<railcraft:gear:3>);
 <ore:breadAny>.addItems([<tfc:food/oat_bread>,<tfc:food/cornbread>,<tfc:food/oat_bread>,<tfc:food/rice_bread>,<tfc:food/rye_bread>,<tfc:food/wheat_bread>]);	
 //Jerky
 <ore:jerkyAny>.addItems([<tconstruct:edible:10>,<tconstruct:edible:11>,<tconstruct:edible:12>,<tconstruct:edible:13>,<tconstruct:edible:14>,<tconstruct:edible:15>,<tconstruct:edible:20>,<tconstruct:edible:21>,<tconstruct:edible:22>,<tconstruct:edible:23>]);		   
+//Crooks
+<ore:crookAny>.addItems([<inspirations:wooden_crook>,<inspirations:stone_crook>,<inspirations:bone_crook>,<inspirations:blaze_crook>,<inspirations:wither_crook>]);
 //Wands
 
 <ore:botWands>.add(<botania:twigwand>.withTag({color1: 0, color2: 0, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));

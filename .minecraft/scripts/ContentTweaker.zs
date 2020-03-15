@@ -10,6 +10,18 @@ import crafttweaker.potions.IPotion;
 import mods.contenttweaker.Random;
 import mods.contenttweaker.World;
 
+//pitcher
+var pitcher = VanillaFactory.createItem("pitcher");
+pitcher.register();
+game.setLocalization("item.contenttweaker.pitcher.name", "Pitcher");
+//bismuth_hammer_head
+var bismuth_hammer_head = VanillaFactory.createItem("bismuth_hammer_head");
+bismuth_hammer_head.register();
+game.setLocalization("item.contenttweaker.bismuth_hammer_head.name", "Bismuth Hammer Head");
+//bismuth_engineers_hammer_head
+var bismuth_engineers_hammer_head = VanillaFactory.createItem("bismuth_engineers_hammer_head");
+bismuth_engineers_hammer_head.register();
+game.setLocalization("item.contenttweaker.bismuth_engineers_hammer_head.name", "Bismuth Engineer's Hammer Head");
 //striking_die
 var striking_die = VanillaFactory.createItem("striking_die");
 striking_die.register();
@@ -264,6 +276,13 @@ carrot_soup.temperature= 100;
 carrot_soup.register();
 game.setLocalization("fluid.carrot_soup", "Carrot Soup");
 #=============================================================================================================================================	
+
+//liquid_grog
+var grog = VanillaFactory.createFluid("grog", Color.fromHex("42FF5C"));
+grog.viscosity = 9000;
+grog.temperature= 100;
+grog.register();
+game.setLocalization("fluid.grog", "Liquid Grog");
 
 //kerosene
 var kerosene = VanillaFactory.createFluid("kerosene", Color.fromHex("040B6E"));

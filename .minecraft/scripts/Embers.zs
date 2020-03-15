@@ -17,3 +17,9 @@ recipes.addShaped(<embers:superheater>,[
 recipes.remove(<embers:archaic_circuit>);
 mods.appliedenergistics2.Inscriber.addRecipe(<embers:archaic_circuit>,<embers:archaic_brick>,true,<appliedenergistics2:material:19>);
 
+//Hammer
+recipes.remove(<embers:tinker_hammer>);
+recipes.addShaped(<embers:tinker_hammer>,[
+	[<contenttweaker:bismuth_hammer_head>],
+	[<ore:stickWood>]]);
+

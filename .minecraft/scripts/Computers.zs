@@ -6,6 +6,17 @@ import crafttweaker.liquid.ILiquidStack;
 import moretweaker.railcraft.RollingMachine;
 import mods.tfctech.WireDrawing;
 
+//Grog
+recipes.remove(<opencomputers:material:1>);
+mods.inspirations.Cauldron.addFluidRecipe(<opencomputers:material:1>,<contenttweaker:pitcher>,<liquid:grog>, 1, true);
+mods.inspirations.Cauldron.addFluidTransform(<liquid:grog>,<minecraft:chorus_fruit>,<liquid:methanol>, 1, true);
+//Disassembler Doesn't work?
+mods.jei.JEI.removeAndHide(<opencomputers:disassembler>);
+//Chipped Diamond
+recipes.remove(<opencomputers:material:29>);
+//Book
+recipes.remove(<opencomputers:tool:4>);
+recipes.addShapeless(<opencomputers:tool:4>,[<minecraft:book>,<opencomputers:material:6>]);
 //Wrench
 recipes.remove(<opencomputers:wrench>);
 recipes.addShaped(<opencomputers:wrench>,[
@@ -14,6 +25,47 @@ recipes.addShaped(<opencomputers:wrench>,[
 	[null,null,<tfctech:metal/wrought_iron_rod>]]);
 //End Stone
 mods.jei.JEI.removeAndHide(<opencomputers:endstone>);
+//Platter
+recipes.remove(<opencomputers:material:12>);
+RollingMachine.addShaped(<opencomputers:material:12>, [[<tfctech:metal/steel_sleeve>]], 300);
+//Wire Cutter
+recipes.remove(<opencomputers:material>);
+recipes.addShaped(<opencomputers:material>*4,[
+	[<minecraft:stick>,<tfctech:metal/tin_wire>,<minecraft:stick>]]);
+recipes.addShaped(<opencomputers:material>*4,[
+	[<minecraft:stick>,<tfctech:metal/zinc_wire>,<minecraft:stick>]]);	
+//Chamelium
+recipes.remove(<opencomputers:material:28>);
+recipes.addShaped(<opencomputers:material:28>*16,[
+	[<tfctech:powder/wood>,<minecraft:rotten_flesh>,<tfctech:powder/wood>],
+	[<minecraft:rotten_flesh>,<openlights:prismaticpaste>,<minecraft:rotten_flesh>],
+	[<tfctech:powder/wood>,<minecraft:rotten_flesh>,<tfctech:powder/wood>]]);	
+//Data Cable
+recipes.remove(<opencomputers:cable>);
+recipes.addShaped(<opencomputers:cable>,[
+	[<immersiveengineering:material:5>,<tfctech:metal/gold_wire>,<immersiveengineering:material:5>],
+	[<tfctech:metal/gold_wire>,<projectred-transmission:framed_wire:17>,<tfctech:metal/gold_wire>],
+	[<immersiveengineering:material:5>,<tfctech:metal/gold_wire>,<immersiveengineering:material:5>]]);	
+//Hover boots
+recipes.remove(<opencomputers:hoverboots>);
+recipes.addShaped(<opencomputers:hoverboots>,[
+	[<opencomputers:material:11>,<opencomputers:upgrade:28>,<opencomputers:material:10>],
+	[<projectred-core:resource_item:410>,<immersiveengineering:metal_device0>,<projectred-core:resource_item:410>],
+	[<mysticalmechanics:gear_fan>,<minecraft:leather_boots>,<mysticalmechanics:gear_fan>]]);
+//Open Lights
+recipes.remove(<openlights:prismaticpaste>);
+recipes.addShaped(<openlights:prismaticpaste>,[
+	[<ore:projredIllumar>,<ore:projredIllumar>,<ore:projredIllumar>],
+	[<ore:projredIllumar>,<tis3d:prism>,<ore:projredIllumar>],
+	[<ore:projredIllumar>,<ore:projredIllumar>,<ore:projredIllumar>]]);
+
+recipes.remove(<openlights:openlight>);
+recipes.addShaped(<openlights:openlight>,[
+	[<ore:paneGlass>,<ore:paneGlass>,<ore:paneGlass>],
+	[<ore:paneGlass>,<openlights:prismaticpaste>,<ore:paneGlass>],
+	[<ore:paneGlass>,<opencomputers:cable>,<ore:paneGlass>]]);
+//Etching Acid
+mods.immersiveengineering.Refinery.addRecipe(<liquid:etchacid>*25, <liquid:liquidchorus>*10, <liquid:sulfuric_acid>*15, 1024);	
 //Circuit Boards
 WireDrawing.addRecipe("glass_wire", <ore:blockGlass>, 3, <contenttweaker:glass_wire>*16, 0xFFFF9966);
 mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:glass_wire>*24, <ore:blockGlass>, <immersiveengineering:mold:4>, 1024);
@@ -186,7 +238,7 @@ recipes.addShaped(<opencomputers:storage:1>,[
 	[<minecraft:paper>]]);
 
 //EEPROM
-recipes.remove(<opencomputers:storage>);
+recipes.removeShaped(<opencomputers:storage>);
 recipes.addShaped(<opencomputers:storage>,[
 	[<tfctech:metal/gold_strip>],
 	[<advancedrocketry:itemcircuitplate:1>],
@@ -219,6 +271,89 @@ recipes.addShaped(<opencomputers:material:10>,[
 	[<opencomputers:material:7>,<minecraft:redstone>,<opencomputers:material:7>],
 	[<opencomputers:material:6>,<advancedrocketry:itemcircuitplate:1>,<opencomputers:material:6>],
 	[<opencomputers:material:7>,<minecraft:redstone>,<opencomputers:material:7>]]);
+
+//Screens
+recipes.remove(<opencomputers:screen1>);
+recipes.addShaped(<opencomputers:screen1>,[
+	[<tfctech:metal/black_bronze_long_rod>,<pneumaticcraft:heat_sink>,<tfctech:metal/black_bronze_long_rod>],
+	[<minecraft:iron_bars>,<minecraft:redstone_lamp>,<minecraft:glass_pane>],
+	[<tfctech:metal/black_bronze_long_rod>,<opencomputers:cable>,<tfctech:metal/black_bronze_long_rod>]]);
+
+recipes.remove(<opencomputers:screen2>);
+recipes.addShaped(<opencomputers:screen2>,[
+	[<tfctech:metal/gold_long_rod>,<pneumaticcraft:heat_sink>,<tfctech:metal/gold_long_rod>],
+	[<minecraft:iron_bars>,<tis3d:prism>,<minecraft:glass_pane>],
+	[<tfctech:metal/gold_long_rod>,<opencomputers:cable>,<tfctech:metal/gold_long_rod>]]);
+
+recipes.remove(<opencomputers:screen3>);
+recipes.addShaped(<opencomputers:screen3>,[
+	[<tfctech:metal/mithril_long_rod>,<pneumaticcraft:heat_sink>,<tfctech:metal/mithril_long_rod>],
+	[<minecraft:iron_bars>,<openlights:prismaticpaste>,<minecraft:glass_pane>],
+	[<tfctech:metal/mithril_long_rod>,<opencomputers:cable>,<tfctech:metal/mithril_long_rod>]]);	
+
+recipes.remove(<openscreens:backflatscreen1>);
+RollingMachine.addShaped(<openscreens:backflatscreen1>, [[<opencomputers:screen1>]], 300);
+recipes.remove(<openscreens:backflatscreen2>);
+RollingMachine.addShaped(<openscreens:backflatscreen2>, [[<opencomputers:screen2>]], 300);
+recipes.remove(<openscreens:backflatscreen3>);
+RollingMachine.addShaped(<openscreens:backflatscreen3>, [[<opencomputers:screen3>]], 300);
+
+recipes.remove(<openscreens:frontflatscreen1>);
+recipes.addShapeless(<openscreens:frontflatscreen1>,[<openscreens:backflatscreen1>, <ore:crookAny>.transformDamage(1)]);
+recipes.remove(<openscreens:frontflatscreen2>);
+recipes.addShapeless(<openscreens:frontflatscreen2>,[<openscreens:backflatscreen2>, <ore:crookAny>.transformDamage(1)]);
+recipes.remove(<openscreens:frontflatscreen3>);
+recipes.addShapeless(<openscreens:frontflatscreen3>,[<openscreens:backflatscreen3>, <ore:crookAny>.transformDamage(1)]);
+
+recipes.remove(<openscreens:holoscreen1>);
+recipes.addShaped(<openscreens:holoscreen1>,[
+	[<advancedrocketry:lens>,<advancedrocketry:lens>,<advancedrocketry:lens>],
+	[<tfctech:metal/black_bronze_strip>,<immersiveengineering:fluorescent_tube>,<tfctech:metal/black_bronze_strip>],
+	[<tfc:metal/double_ingot/black_bronze>,<aunis:circuit_control_crystal>,<tfc:metal/double_ingot/black_bronze>]]);
+
+recipes.remove(<openscreens:holoscreen2>);
+recipes.addShaped(<openscreens:holoscreen2>,[
+	[<advancedrocketry:lens>,<advancedrocketry:lens>,<advancedrocketry:lens>],
+	[<tfctech:metal/gold_strip>,<immersiveengineering:fluorescent_tube>,<tfctech:metal/gold_strip>],
+	[<tfc:metal/double_ingot/gold>,<aunis:circuit_control_crystal>,<tfc:metal/double_ingot/gold>]]);
+
+recipes.remove(<openscreens:holoscreen3>);
+recipes.addShaped(<openscreens:holoscreen3>,[
+	[<advancedrocketry:lens>,<advancedrocketry:lens>,<advancedrocketry:lens>],
+	[<tfctech:metal/mithril_strip>,<immersiveengineering:fluorescent_tube>,<tfctech:metal/mithril_strip>],
+	[<tfc:metal/double_ingot/mithril>,<aunis:circuit_control_crystal>,<tfc:metal/double_ingot/mithril>]]);
+
+//Holo Projector 	
+recipes.remove(<opencomputers:hologram1>);
+recipes.addShaped(<opencomputers:hologram1>,[
+	[<tfctech:metal/bismuth_bronze_strip>,null,<tfctech:metal/bismuth_bronze_strip>],
+	[<cfm:mirror>,<advancedrocketry:blocklens>,<cfm:mirror>],
+	[<tfc:metal/double_ingot/black_bronze>,<immersiveengineering:metal_device1:9>,<tfc:metal/double_ingot/black_bronze>]]);
+
+recipes.remove(<opencomputers:hologram2>);
+recipes.addShaped(<opencomputers:hologram2>,[
+	[<tfctech:metal/mithril_strip>,<advancedrocketry:blocklens>,<tfctech:metal/mithril_strip>],
+	[<cfm:mirror>,<tis3d:prism>,<cfm:mirror>],
+	[<tfc:metal/double_ingot/black_bronze>,<immersiveengineering:metal_device1:9>,<tfc:metal/double_ingot/black_bronze>]]);	
+//Cases
+
+recipes.remove(<opencomputers:case1>);
+recipes.addShaped(<opencomputers:case1>,[
+	[<tfctech:metal/black_bronze_long_rod>,<rsgauges:indicator2>,<rsgauges:indicator1>],
+	[<mysticalmechanics:gear_fan>,<bibliocraft:shelf:6>,<mysticalmechanics:gear_fan>],
+	[<tfctech:metal/black_bronze_long_rod>,<tfc:metal/sheet/black_bronze>,<tfctech:metal/black_bronze_long_rod>]]);
+
+recipes.remove(<opencomputers:case2>);
+recipes.addShaped(<opencomputers:case2>,[
+	[<tfctech:metal/gold_long_rod>,<rsgauges:indicator2>,<rsgauges:indicator1>],
+	[<mysticalmechanics:gear_fan>,<ore:tfcChest>,<mysticalmechanics:gear_fan>],
+	[<tfctech:metal/gold_long_rod>,<tfc:metal/sheet/gold>,<tfctech:metal/gold_long_rod>]]);
+
+recipes.remove(<opencomputers:case3>);
+recipes.addShaped(<opencomputers:case3>,[
+	[<tfctech:metal/mithril_long_rod>,<rsgauges:indicator2>,<rsgauges:indicator1>],
+	[<mysticalmechanics:gear_fan>,<appliedenergistics2:sky_stone_chest>,<mysticalmechanics:gear_fan>],
+	[<tfctech:metal/mithril_long_rod>,<tfc:metal/sheet/mithril>,<tfctech:metal/mithril_long_rod>]]);	
 
 //Primitive Computer TIS-3D
 recipes.removeByMod("tis3d");	

@@ -38,8 +38,8 @@ mods.immersivetechnology.SolarTower.addRecipe(<liquid:fresh_water>*2000, <liquid
 val blockedhammer = <immersiveengineering:tool>.withTag({multiblockInterdiction: ["IE:BlastFurnace"]});
 recipes.remove(<immersiveengineering:tool>);
 recipes.addShaped(<immersiveengineering:tool>,[
-	[<tfc:metal/hammer_head/wrought_iron>],
-	[<ore:stickTreatedWood>]]);
+	[<contenttweaker:bismuth_engineers_hammer_head>],
+	[<ore:stickWood>]]);
 //Glove
 recipes.remove(<immersiveengineering:toolupgrade:12>);
 recipes.addShaped(<immersiveengineering:toolupgrade:12>,[

@@ -18,3 +18,4 @@ recipes.addShaped(<pneumaticcraft:uv_light_box>,[
 	[<emergingtechnology:purplebulb>,<emergingtechnology:purplebulb>,<emergingtechnology:purplebulb>],
 	[<pneumaticcraft:pressure_tube>,<pneumaticcraft:pcb_blueprint>,null],
 	[<tfc:metal/sheet/black_bronze>,<tfc:metal/sheet/black_bronze>,<tfc:metal/sheet/black_bronze>]]); 
+    

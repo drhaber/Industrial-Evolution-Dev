@@ -175,6 +175,13 @@
 		[
 		"tfc"
 		]
+	},	
+	{
+		"kindName" : "chip",
+		"modIdPriorityList" :
+		[
+		"tfc"
+		]
 	},			
 	{
 		"kindName" : "sheet",
