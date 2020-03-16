@@ -323,6 +323,15 @@ mods.tconstruct.Casting.addTableRecipe(ingot,<tfc:ceramics/fired/mold/ingot>, mo
 for i, rackwheel in rackwheels{
 mods.tconstruct.Casting.addTableRecipe(rackwheel, <tconstruct:cast_custom:4>, molten_metals[i], 576, false, 240);
 }
+
+//Gears from Embers
+val StampedGears = [<tfctech:metal/wrought_iron_gear>,<tfctech:metal/gold_rackwheel>,<tfctech:metal/lead_rackwheel>,
+<tfctech:metal/copper_rackwheel>,<mystgears:gear_aluminium>,<tfctech:metal/tin_rackwheel>,<tfctech:metal/bronze_rackwheel>,
+<tfctech:metal/nickel_rackwheel>,<tfctech:metal/silver_rackwheel>,<tfctech:metal/electrum_rackwheel>,<mystgears:gear_antimony>,
+<embers:gear_dawnstone>,<mystgears:gear_diamond>] as IItemStack[];
+for i, SG in StampedGears{
+mods.embers.Stamper.remove(SG);
+}
 #=============================================================================================================================================		
 
 //Alloys
