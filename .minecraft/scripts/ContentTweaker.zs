@@ -110,10 +110,6 @@ game.setLocalization("item.contenttweaker.tanned_small.name", "Tanned Hide");
 var casing_electron_tube = VanillaFactory.createItem("casing_electron_tube");
 casing_electron_tube.register();
 game.setLocalization("item.contenttweaker.casing_electron_tube.name", "Vacuum Tube Casing");
-//winding_apparatus
-var winding_apparatus = VanillaFactory.createItem("winding_apparatus");
-winding_apparatus.register();
-game.setLocalization("item.contenttweaker.winding_apparatus.name", "Winding Apparatus");
 //magic_motion_rune
 var magic_motion_rune = VanillaFactory.createItem("magic_motion_rune");
 magic_motion_rune.register();

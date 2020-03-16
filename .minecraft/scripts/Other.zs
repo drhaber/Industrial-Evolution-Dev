@@ -88,11 +88,7 @@ mods.forestry.Carpenter.removeRecipe(<minecraft:paper>);
 recipes.addShaped(<contenttweaker:wooden_glass_casing>,[
 	[null,<ore:stickWood>,null],
 	[<ore:stickWood>,<ore:blockGlass>,<ore:stickWood>],
-	[null,<ore:stickWood>,null]]);
-recipes.addShaped(<contenttweaker:winding_apparatus>,[
-	[null,<contenttweaker:wooden_glass_casing>,<ore:rodStone>],
-	[<ore:wireBrass>,<ore:gearBrass>,null],
-	[<ore:wireBrass>,<ore:wireBrass>,null]]);	
+	[null,<ore:stickWood>,null]]);	
 #=============================================================================================================================================		
 //Colored Water 
 recipes.removeByMod("colored_water");

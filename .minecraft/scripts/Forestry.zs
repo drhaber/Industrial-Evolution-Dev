@@ -20,7 +20,7 @@ recipes.remove(<forestry:engine_clockwork>);
 recipes.addShaped(<forestry:engine_clockwork>,[
 	[null,<ore:blockGlass>,null],
 	[<ore:longRodBrass>,<minecraft:piston>,<ore:longRodBrass>],
-	[<ore:sheetBrass>,<contenttweaker:winding_apparatus>,<ore:sheetBrass>]]);
+	[<ore:sheetBrass>,<embers:winding_gears>,<ore:sheetBrass>]]);
 //Compost
 recipes.remove(<forestry:fertilizer_bio>);
 recipes.addShaped(<forestry:fertilizer_bio>*4,[

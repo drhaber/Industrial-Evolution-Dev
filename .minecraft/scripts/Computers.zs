@@ -7,6 +7,30 @@ import moretweaker.railcraft.RollingMachine;
 import mods.tfctech.WireDrawing;
 
 
+//3D Printer
+recipes.remove(<opencomputers:printer>);
+recipes.addShaped(<opencomputers:printer>,[
+	[<projectred-core:resource_item:410>,<tfctech:metal/black_bronze_gear>,<projectred-core:resource_item:410>],
+	[<tfctech:metal/black_bronze_long_rod>,<emergingtechnology:nozzleprecise>,<tfctech:metal/black_bronze_long_rod>],
+	[<opencomputers:cable>,<minecraft:sticky_piston>,<immersiveengineering:wirecoil:1>]]);
+//Waypoint
+recipes.remove(<opencomputers:waypoint>);
+recipes.addShaped(<opencomputers:waypoint>,[
+	[null,<signals:station_marker>,null],
+	[<pneumaticcraft:printed_circuit_board>,<tfc:metal/double_ingot/black_bronze>,<opencomputers:material:13>],
+	[null,<opencomputers:material:8>,null]]);
+//Transposer
+recipes.remove(<opencomputers:transposer>);
+recipes.addShaped(<opencomputers:transposer>,[
+	[<embers:item_pipe>,<opencomputers:upgrade:18>,<embers:item_pipe>],
+	[<integratedtunnels:part_interface_fluid_item>,<tfc:metal/double_ingot/black_bronze>,<integratedtunnels:part_interface_item_item>],
+	[<embers:pipe>,<opencomputers:upgrade:24>,<embers:pipe>]]);
+//Net Splitter
+recipes.remove(<opencomputers:netsplitter>);
+recipes.addShaped(<opencomputers:netsplitter>,[
+	[<tfctech:metal/black_bronze_long_rod>,<opencomputers:cable>,<tfctech:metal/black_bronze_long_rod>],
+	[<opencomputers:cable>,<minecraft:sticky_piston>,<opencomputers:cable>],
+	[<tfctech:metal/black_bronze_long_rod>,<opencomputers:cable>,<tfctech:metal/black_bronze_long_rod>]]);
 //Ink
 recipes.remove(<opencomputers:material:26>);
 recipes.addShaped(<opencomputers:material:26>,[
@@ -112,7 +136,9 @@ recipes.addShaped(<openlights:openlight>,[
 	[<ore:paneGlass>,<openlights:prismaticpaste>,<ore:paneGlass>],
 	[<ore:paneGlass>,<opencomputers:cable>,<ore:paneGlass>]]);
 //Etching Acid
-mods.immersiveengineering.Refinery.addRecipe(<liquid:etchacid>*25, <liquid:liquidchorus>*10, <liquid:sulfuric_acid>*15, 1024);	
+mods.immersiveengineering.Refinery.addRecipe(<liquid:etchacid>*25, <liquid:liquidchorus>*10, <liquid:sulfuric_acid>*15, 1024);
+#=============================================================================================================================================		
+
 //Circuit Boards
 WireDrawing.addRecipe("glass_wire", <ore:blockGlass>, 3, <contenttweaker:glass_wire>*16, 0xFFFF9966);
 mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:glass_wire>*24, <ore:blockGlass>, <immersiveengineering:mold:4>, 1024);
@@ -194,6 +220,7 @@ recipes.addShaped(<advancedrocketry:ic:2>,[
 	[<opencomputers:material:6>,<advancedrocketry:itemcircuitplate:1>,<opencomputers:material:6>],
 	[<opencomputers:material:6>,<libvulpes:productplate:3>,<opencomputers:material:6>],
 	[<opencomputers:material:6>,<opencomputers:material:9>,<opencomputers:material:6>]]);
+#=============================================================================================================================================		
 
 //RAM
 recipes.remove(<opencomputers:component:6>); #Teir 1
@@ -228,6 +255,7 @@ recipes.addShaped(<opencomputers:component:11>,[
 	[<opencomputers:material:9>,null,<tfctech:metal/gold_strip>],
 	[<opencomputers:material:9>,<pneumaticcraft:unassembled_pcb>,<tfctech:metal/gold_strip>],
 	[<opencomputers:material:9>,<forestry:soldering_iron>.reuse(),<tfctech:metal/gold_strip>]]);
+#=============================================================================================================================================		
 
 //Cards and Expansions items
 
@@ -332,6 +360,7 @@ recipes.addShaped(<opencomputers:material:10>,[
 	[<opencomputers:material:7>,<minecraft:redstone>,<opencomputers:material:7>],
 	[<opencomputers:material:6>,<advancedrocketry:itemcircuitplate:1>,<opencomputers:material:6>],
 	[<opencomputers:material:7>,<minecraft:redstone>,<opencomputers:material:7>]]);
+#=============================================================================================================================================		
 
 //Screens
 recipes.remove(<opencomputers:screen1>);
@@ -396,6 +425,8 @@ recipes.addShaped(<opencomputers:hologram2>,[
 	[<tfctech:metal/mithril_strip>,<advancedrocketry:blocklens>,<tfctech:metal/mithril_strip>],
 	[<cfm:mirror>,<tis3d:prism>,<cfm:mirror>],
 	[<tfc:metal/double_ingot/black_bronze>,<immersiveengineering:metal_device1:9>,<tfc:metal/double_ingot/black_bronze>]]);	
+#=============================================================================================================================================		
+
 //Cases
 
 recipes.remove(<opencomputers:case1>);
@@ -435,6 +466,7 @@ recipes.addShaped(<opencomputers:component:15>,[
 	[<forestry:soldering_iron>.reuse(),<pneumaticcraft:unassembled_pcb>,<pneumaticcraft:plastic>],
 	[<tfctech:metal/steel_sleeve>,<tfctech:metal/steel_sleeve>,<pneumaticcraft:plastic>],
 	[<appliedenergistics2:sky_stone_chest>,<pneumaticcraft:unassembled_pcb>,<tfctech:metal/mithril_strip>]]);	
+#=============================================================================================================================================		
 
 //CPUS
 
@@ -489,6 +521,7 @@ recipes.addShaped(<opencomputers:card:3>,[
 	[<forestry:soldering_iron>.reuse(),<openlights:prismaticpaste>,null],
 	[<opencomputers:material:9>,<opencomputers:component:1>,<opencomputers:component:10>],
 	[null,<opencomputers:material:5>,null]]);	
+#=============================================================================================================================================		
 
 //Data Cards
 
@@ -556,6 +589,7 @@ recipes.addShaped(<opencomputers:card:9>,[
 	[null,<aunis:crystal_blue>,null],
 	[<opencomputers:material:7>,<aunis:circuit_control_crystal>,<aunis:crystal_ender>],
 	[<forestry:soldering_iron>.reuse(),<opencomputers:material:5>,null]]);
+#=============================================================================================================================================		
 
 //Primitive Computer TIS-3D
 recipes.removeByMod("tis3d");	
