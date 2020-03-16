@@ -6,6 +6,53 @@ import crafttweaker.liquid.ILiquidStack;
 import moretweaker.railcraft.RollingMachine;
 import mods.tfctech.WireDrawing;
 
+
+//Ink
+recipes.remove(<opencomputers:material:26>);
+recipes.addShaped(<opencomputers:material:26>,[
+	[<emergingtechnology:nozzleprecise>,null,<emergingtechnology:nozzleprecise>],
+	[<tfc:metal/sheet/bismuth>,<embers:pipe>,<tfc:metal/sheet/bismuth>],
+	[<minecraft:piston>,<forestry:can>,<minecraft:piston>]]);
+//Analyzer
+recipes.remove(<opencomputers:tool>);
+recipes.addShaped(<opencomputers:tool>,[
+	[<rsgauges:flatgauge3>],
+	[<opencomputers:component:3>],
+	[<opencomputers:material:16>]]);
+//Texture Picker
+recipes.remove(<opencomputers:tool:3>);
+recipes.addShaped(<opencomputers:tool:3>,[
+	[<tis3d:prism>],
+	[<opencomputers:component:3>],
+	[<opencomputers:material:16>]]);
+//Remote Terminal
+recipes.remove(<opencomputers:tool:2>);
+recipes.addShaped(<opencomputers:tool:2>,[
+	[null,<openscreens:backflatscreen1>,<minecraft:end_rod>],
+	[<opencomputers:material:9>,<pneumaticcraft:unassembled_pcb>,<forestry:thermionic_tubes:12>],
+	[<forestry:soldering_iron>.reuse(),<opencomputers:keyboard>,null]]);
+//MicroController Cases
+recipes.remove(<opencomputers:material:20>);
+recipes.addShaped(<opencomputers:material:20>,[
+	[<tfctech:metal/gold_rackwheel_piece>,<immersiveengineering:material:27>,<tfctech:metal/gold_rackwheel_piece>],
+	[<opencomputers:material:4>,<contenttweaker:wooden_glass_casing>,<opencomputers:material:4>],
+	[<tfctech:metal/gold_rackwheel_piece>,<immersiveengineering:material:27>,<tfctech:metal/gold_rackwheel_piece>]]);
+recipes.remove(<opencomputers:material:21>);
+recipes.addShaped(<opencomputers:material:21>,[
+	[<tfctech:metal/mithril_rackwheel_piece>,<opencomputers:material:8>,<tfctech:metal/mithril_rackwheel_piece>],
+	[<pneumaticcraft:printed_circuit_board>,<contenttweaker:wooden_glass_casing>,<pneumaticcraft:printed_circuit_board>],
+	[<tfctech:metal/mithril_rackwheel_piece>,<opencomputers:material:8>,<tfctech:metal/mithril_rackwheel_piece>]]);	
+//Drones
+recipes.remove(<opencomputers:material:23>);
+recipes.addShaped(<opencomputers:material:23>,[
+	[<mysticalmechanics:gear_fan>,<minecraft:compass>,<mysticalmechanics:gear_fan>],
+	[<opencomputers:component:7>,<opencomputers:material:20>,<opencomputers:material:10>],
+	[<mysticalmechanics:gear_fan>,<opencomputers:material:11>,<mysticalmechanics:gear_fan>]]);
+recipes.remove(<opencomputers:material:24>);
+recipes.addShaped(<opencomputers:material:24>,[
+	[<libvulpes:productfan:6>,<minecraft:compass>,<libvulpes:productfan:6>],
+	[<opencomputers:component:9>,<opencomputers:material:21>,<opencomputers:material:10>],
+	[<libvulpes:productfan:6>,<opencomputers:material:11>,<libvulpes:productfan:6>]]);	
 //Grog
 recipes.remove(<opencomputers:material:1>);
 mods.inspirations.Cauldron.addFluidRecipe(<opencomputers:material:1>,<contenttweaker:pitcher>,<liquid:grog>, 1, true);
@@ -422,6 +469,93 @@ recipes.addShaped(<opencomputers:component:17>,[
 	[<tfctech:metal/mithril_strip>,<opencomputers:component:2>,<tfctech:metal/mithril_strip>],
 	[<opencomputers:material:9>,<opencomputers:component:4>,<opencomputers:material:9>],
 	[<tfctech:metal/mithril_strip>,<opencomputers:card:2>,<tfctech:metal/mithril_strip>]]);
+
+//GPU
+
+recipes.remove(<opencomputers:card:1>);
+recipes.addShaped(<opencomputers:card:1>,[
+	[<forestry:soldering_iron>.reuse(),<ore:dyeBlack>,null],
+	[<opencomputers:material:7>,<opencomputers:material:10>,<opencomputers:component:6>],
+	[null,<opencomputers:material:5>,null]]);
+
+recipes.remove(<opencomputers:card:2>);
+recipes.addShaped(<opencomputers:card:2>,[
+	[<forestry:soldering_iron>.reuse(),<tis3d:prism>,null],
+	[<opencomputers:material:8>,<opencomputers:component>,<opencomputers:component:8>],
+	[null,<opencomputers:material:5>,null]]);
+
+recipes.remove(<opencomputers:card:3>);
+recipes.addShaped(<opencomputers:card:3>,[
+	[<forestry:soldering_iron>.reuse(),<openlights:prismaticpaste>,null],
+	[<opencomputers:material:9>,<opencomputers:component:1>,<opencomputers:component:10>],
+	[null,<opencomputers:material:5>,null]]);	
+
+//Data Cards
+
+recipes.remove(<opencomputers:card:10>);
+recipes.addShaped(<opencomputers:card:10>,[
+	[<opencomputers:material:7>,<tfctech:metal/tin_wire>,null],
+	[<tfctech:metal/tin_wire>,<opencomputers:material:10>,<forestry:soldering_iron>.reuse()],
+	[null,<opencomputers:material:5>,null]]);
+
+recipes.remove(<opencomputers:card:11>);
+recipes.addShaped(<opencomputers:card:11>,[
+	[<opencomputers:material:8>,<tfctech:metal/tin_wire>,<forestry:thermionic_tubes:7>],
+	[<tfctech:metal/tin_wire>,<opencomputers:material:10>,<forestry:soldering_iron>.reuse()],
+	[null,<opencomputers:material:5>,null]]);
+
+recipes.remove(<opencomputers:card:12>);
+recipes.addShaped(<opencomputers:card:12>,[
+	[<opencomputers:material:9>,<tfctech:metal/tin_wire>,<forestry:thermionic_tubes:5>],
+	[<tfctech:metal/tin_wire>,<opencomputers:material:10>,<forestry:soldering_iron>.reuse()],
+	[null,<opencomputers:material:5>,null]]);	
+
+//Remote & Network Componets
+
+recipes.remove(<opencomputers:component:19>); #Server Terminal
+recipes.addShaped(<opencomputers:component:19>,[
+	[<forestry:soldering_iron>.reuse(),<pneumaticcraft:unassembled_pcb>,<minecraft:end_rod>],
+	[<forestry:thermionic_tubes:12>,<forestry:thermionic_tubes:12>,<forestry:thermionic_tubes:12>],
+	[<opencomputers:keyboard>,<pneumaticcraft:unassembled_pcb>,<tis3d:module_display>]]);
+
+recipes.remove(<opencomputers:upgrade:31>); #Wireless Network Card
+recipes.addShaped(<opencomputers:upgrade:31>,[
+	[<forestry:soldering_iron>.reuse(),<forestry:thermionic_tubes:12>,<minecraft:end_rod>],
+	[null,<opencomputers:material:5>,null]]);
+
+recipes.remove(<opencomputers:card:7>); #Wireless Network Card 2
+recipes.addShaped(<opencomputers:card:7>,[
+	[<forestry:soldering_iron>.reuse(),null,<minecraft:end_rod>],
+	[<forestry:thermionic_tubes:12>,<forestry:thermionic_tubes:12>,<forestry:thermionic_tubes:12>],
+	[null,<opencomputers:material:5>,null]]);
+
+recipes.remove(<opencomputers:card:6>); #Network Card
+recipes.addShaped(<opencomputers:card:6>,[
+	[<forestry:soldering_iron>.reuse(),<opencomputers:cable>],
+	[null,<opencomputers:material:5>]]);
+
+recipes.remove(<opencomputers:card:4>); #Redstone Card
+recipes.addShaped(<opencomputers:card:4>,[
+	[<forestry:soldering_iron>.reuse(),<minecraft:comparator>],
+	[null,<opencomputers:material:5>]]);
+
+recipes.remove(<opencomputers:card:5>); #Redstone Card 2
+recipes.addShaped(<opencomputers:card:5>,[
+	[<forestry:soldering_iron>.reuse(),<projectred-integration:gate:22>],
+	[null,<opencomputers:material:5>]]);
+
+
+recipes.remove(<opencomputers:card:8>); #Internet Card
+recipes.addShaped(<opencomputers:card:8>,[
+	[<minecraft:ender_pearl>,<opencomputers:material:7>,<minecraft:ender_pearl>],
+	[<opencomputers:material:13>,<rsgauges:indicator3blink1>,<forestry:mailbox>],
+	[<forestry:soldering_iron>.reuse(),<opencomputers:material:5>,null]]);
+
+recipes.remove(<opencomputers:card:9>); #Linked Card
+recipes.addShaped(<opencomputers:card:9>,[
+	[null,<aunis:crystal_blue>,null],
+	[<opencomputers:material:7>,<aunis:circuit_control_crystal>,<aunis:crystal_ender>],
+	[<forestry:soldering_iron>.reuse(),<opencomputers:material:5>,null]]);
 
 //Primitive Computer TIS-3D
 recipes.removeByMod("tis3d");	

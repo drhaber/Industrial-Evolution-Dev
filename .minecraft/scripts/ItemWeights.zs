@@ -74,3 +74,5 @@ val boats_and_wood_carts = [<minecraft:boat>,<minecraft:spruce_boat>,<minecraft:
 for BWC in boats_and_wood_carts{
 ItemRegistry.registerItemSize(BWC, "LARGE", "LIGHT");
 }
+
+ItemRegistry.registerItemSize(<openlights:prismaticpaste>, "LARGE", "LIGHT");
