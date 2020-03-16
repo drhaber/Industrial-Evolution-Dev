@@ -322,7 +322,7 @@ mods.tconstruct.Casting.addTableRecipe(ingot,<tfc:ceramics/fired/mold/ingot>, mo
 
 for i, rackwheel in rackwheels{
 mods.tconstruct.Casting.addTableRecipe(rackwheel, <tconstruct:cast_custom:4>, molten_metals[i], 576, false, 240);
-mods.embers.Stamper.add(rackwheel,molten_metals[i],<embers:stamp_gear>,null);
+mods.embers.Stamper.add(rackwheel,molten_metals[i]*576,<embers:stamp_gear>,null);
 }
 
 //Gears from Embers

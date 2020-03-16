@@ -39,7 +39,8 @@
 		"kindName" : "gear",
 		"modIdPriorityList" :
 		[
-		"tfctech"
+		"tfctech",
+		"mystgears"
 		]
 	},		
 	{
