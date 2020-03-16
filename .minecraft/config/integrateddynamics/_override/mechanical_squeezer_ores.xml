@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<recipes>
+
+    <recipe type="integrateddynamics:mechanical_squeezer">
+        <tag>ores</tag>
+        <condition type="config">mechanical_squeezer</condition>
+        <input>
+            <item>minecraft:magma</item>
+        </input>
+        <output>
+            <item amount="4">minecraft:magma_cream</item>
+        </output>
+        <properties>
+            <duration>40</duration>
+        </properties>
+    </recipe>
+
+</recipes>

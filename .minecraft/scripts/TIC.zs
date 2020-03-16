@@ -283,7 +283,7 @@ val gears =[<tfctech:metal/bismuth_gear>,<tfctech:metal/bismuth_bronze_gear>,<tf
 <tfctech:metal/blue_steel_gear>,<tfctech:metal/red_steel_gear>,<tfctech:metal/antimony_gear>,<tfctech:metal/constantan_gear>,
 <tfctech:metal/electrum_gear>,<tfctech:metal/mithril_gear>,<tfctech:metal/invar_gear>,<tfctech:metal/aluminium_gear>,<tfctech:metal/aluminium_brass_gear>,
 <tfctech:metal/ardite_gear>,<tfctech:metal/cobalt_gear>,<tfctech:metal/manyullyn_gear>,<tfctech:metal/osmium_gear>,<tfctech:metal/titanium_gear>,
-<tfctech:metal/tungsten_gear>,<tfctech:metal/tungsten_steel_gear>] as IItemStack[];
+<tfctech:metal/tungsten_gear>,<tfctech:metal/tungsten_steel_gear>,<mystgears:gear_aluminium>] as IItemStack[];
 for gear in gears{
 mods.tconstruct.Casting.removeTableRecipe(gear);
 }

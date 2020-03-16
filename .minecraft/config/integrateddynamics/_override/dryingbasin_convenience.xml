@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<recipes>
+
+	<recipe type="integrateddynamics:dryingbasin">
+		<tag>convenience</tag>
+		<condition type="config">drying_basin</condition>
+		<input>
+			<item type="oredict">treeSapling</item>
+		</input>
+		<output>
+			<item>minecraft:deadbush</item>
+		</output>
+		<properties>
+			<duration>150</duration>
+		</properties>
+	</recipe>
+
+	<recipe type="integrateddynamics:dryingbasin">
+		<tag>convenience</tag>
+		<condition type="config">drying_basin</condition>
+		<input>
+			<fluid amount="250">water</fluid>
+			<item meta="*">minecraft:stained_hardened_clay</item>
+		</input>
+		<output>
+			<item>minecraft:hardened_clay</item>
+		</output>
+		<properties>
+			<duration>100</duration>
+		</properties>
+	</recipe>
+
+	<recipe type="integrateddynamics:dryingbasin">
+		<tag>convenience</tag>
+		<condition type="config">drying_basin</condition>
+		<input>
+			<item meta="1">minecraft:sponge</item>
+		</input>
+		<output>
+			<item>minecraft:sponge</item>
+		</output>
+		<properties>
+			<duration>200</duration>
+		</properties>
+	</recipe>
+
+</recipes>
