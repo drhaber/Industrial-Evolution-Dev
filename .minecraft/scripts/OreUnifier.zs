@@ -219,4 +219,4 @@ mods.jei.JEI.removeAndHide(<railcraft:gear:3>);
 <ore:foodOlive>.addItems([<rustic:olives>,<tfc:food/olive>]);
 <ore:foodTomato>.addItems([<rustic:tomato>,<tfc:food/tomato>]);
 <ore:foodCookedegg>.addItems([<tfc:food/cooked_egg>,<foodexpansion:itemfriedegg>]);
-<ore:foodWheatflour>.addItems([<nuclearcraft:flour>]);
+<ore:foodWheatflour>.addItems([<nuclearcraft:flour>,<rustichromia:dust_flour>,<tfc:food/wheat_flour>]);

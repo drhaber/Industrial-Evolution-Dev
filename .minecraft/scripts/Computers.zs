@@ -6,12 +6,85 @@ import crafttweaker.liquid.ILiquidStack;
 import moretweaker.railcraft.RollingMachine;
 import mods.tfctech.WireDrawing;
 
+val BBR = <tfctech:metal/black_bronze_long_rod>;
 
+//Hardness Scanner
+recipes.remove(<opencomputers:geolyzer>);
+recipes.addShaped(<opencomputers:geolyzer>,[
+	[BBR,<advancedrocketry:orescanner>,BBR],
+	[<ore:propick>,<opencomputers:tool>,<ore:propick>],
+	[BBR,<opencomputers:cable>,BBR]]);
+//Redstone IO
+recipes.remove(<opencomputers:redstone>);
+recipes.addShaped(<opencomputers:redstone>,[
+	[BBR,<minecraft:redstone_torch>,BBR],
+	[<minecraft:comparator>,<ore:blockRedstone>,<minecraft:repeater>],
+	[BBR,<opencomputers:cable>,BBR]]);
+//Electronics Assembler
+recipes.remove(<opencomputers:assembler>);
+recipes.addShaped(<opencomputers:assembler>,[
+	[BBR,<ore:craftingTableWood>,BBR],
+	[<ore:hammer>,<bibliocraft:handdrill>,<forestry:soldering_iron>],
+	[BBR,<pneumaticcraft:capacitor>,BBR]]);
+//Motion Sensor
+recipes.remove(<opencomputers:motionsensor>);
+recipes.addShaped(<opencomputers:motionsensor>,[
+	[BBR,<advancedrocketry:lens>,BBR],
+	[<advancedrocketry:lens>,<botania:endereyeblock>,<advancedrocketry:lens>],
+	[BBR,<opencomputers:cable>,BBR]]);
+//Relay
+recipes.remove(<opencomputers:relay>);
+recipes.addShaped(<opencomputers:relay>,[
+	[BBR,<opencomputers:material:8>,BBR],
+	[<opencomputers:cable>,<minecraft:lever>,<opencomputers:cable>],
+	[BBR,<pneumaticcraft:printed_circuit_board>,BBR]]);
+//Adapter
+recipes.remove(<opencomputers:adapter>);
+recipes.addShaped(<opencomputers:adapter>,[
+	[BBR,<minecraft:ender_eye>,BBR],
+	[<minecraft:ender_eye>,<opencomputers:tool>,<minecraft:ender_eye>],
+	[BBR,<opencomputers:cable>,BBR]]);
+//Raid
+recipes.remove(<opencomputers:raid>);
+recipes.addShaped(<opencomputers:raid>,[
+	[<opencomputers:component:7>,<opencomputers:cable>,<opencomputers:component:7>],
+	[<opencomputers:cable>,<bibliocraft:shelf:6>,<opencomputers:cable>],
+	[<opencomputers:material:8>,<tfc:metal/double_ingot/black_bronze>,<opencomputers:material:8>]]);
+//Charger
+recipes.remove(<opencomputers:charger>);
+recipes.addShaped(<opencomputers:charger>,[
+	[BBR,<opencomputers:material:8>,BBR],
+	[<opencomputers:capacitor>,<immersiveengineering:connector:10>,<opencomputers:capacitor>],
+	[BBR,<minecraft:comparator>,BBR]]);
+//Power Converter
+recipes.remove(<opencomputers:powerconverter>);
+recipes.addShaped(<opencomputers:powerconverter>,[
+	[BBR,<opencomputers:cable>,BBR],
+	[<immersiveengineering:connector>,<immersiveengineering:connector:7>,<immersiveengineering:connector>],
+	[BBR,<immersiveengineering:connector>,BBR]]);
+//Rack
+recipes.remove(<opencomputers:rack>);
+recipes.addShaped(<opencomputers:rack>,[
+	[<opencomputers:material:9>,<tfc:metal/sheet/black_bronze>,<opencomputers:material:9>],
+	[<tfc:metal/sheet/black_bronze>,<bibliocraft:shelf:6>,<tfc:metal/sheet/black_bronze>],
+	[<opencomputers:cable>,<pneumaticcraft:printed_circuit_board>,<opencomputers:cable>]]);
+//Power Distributor
+recipes.remove(<opencomputers:powerdistributor>);
+recipes.addShaped(<opencomputers:powerdistributor>,[
+	[BBR,<opencomputers:material:7>,BBR],
+	[<opencomputers:cable>,<immersiveengineering:connector:10>,<opencomputers:cable>],
+	[BBR,<ore:dirt>,BBR]]);
+//Capacitor
+recipes.remove(<opencomputers:capacitor>);
+recipes.addShaped(<opencomputers:capacitor>,[
+	[<pneumaticcraft:capacitor>,<pneumaticcraft:plastic:10>,<pneumaticcraft:capacitor>],
+	[<pneumaticcraft:capacitor>,<tfctech:metal/tin_wire>,<pneumaticcraft:capacitor>],
+	[<pneumaticcraft:capacitor>,<tfc:metal/sheet/black_bronze>,<pneumaticcraft:capacitor>]]);
 //3D Printer
 recipes.remove(<opencomputers:printer>);
 recipes.addShaped(<opencomputers:printer>,[
 	[<projectred-core:resource_item:410>,<tfctech:metal/black_bronze_gear>,<projectred-core:resource_item:410>],
-	[<tfctech:metal/black_bronze_long_rod>,<emergingtechnology:nozzleprecise>,<tfctech:metal/black_bronze_long_rod>],
+	[BBR,<emergingtechnology:nozzleprecise>,BBR],
 	[<opencomputers:cable>,<minecraft:sticky_piston>,<immersiveengineering:wirecoil:1>]]);
 //Waypoint
 recipes.remove(<opencomputers:waypoint>);
@@ -28,9 +101,9 @@ recipes.addShaped(<opencomputers:transposer>,[
 //Net Splitter
 recipes.remove(<opencomputers:netsplitter>);
 recipes.addShaped(<opencomputers:netsplitter>,[
-	[<tfctech:metal/black_bronze_long_rod>,<opencomputers:cable>,<tfctech:metal/black_bronze_long_rod>],
+	[BBR,<opencomputers:cable>,BBR],
 	[<opencomputers:cable>,<minecraft:sticky_piston>,<opencomputers:cable>],
-	[<tfctech:metal/black_bronze_long_rod>,<opencomputers:cable>,<tfctech:metal/black_bronze_long_rod>]]);
+	[BBR,<opencomputers:cable>,BBR]]);
 //Ink
 recipes.remove(<opencomputers:material:26>);
 recipes.addShaped(<opencomputers:material:26>,[
@@ -315,9 +388,9 @@ recipes.addShaped(<opencomputers:component:20>,[
 
 recipes.remove(<opencomputers:diskdrive>);
 recipes.addShaped(<opencomputers:diskdrive>,[
-	[<tfctech:metal/black_bronze_long_rod>,<tfc:metal/sheet/black_bronze>,<tfctech:metal/black_bronze_long_rod>],
+	[BBR,<tfc:metal/sheet/black_bronze>,BBR],
 	[<tfc:metal/sheet/black_bronze>,<opencomputers:component:20>,<tfc:metal/sheet/black_bronze>],
-	[<rsgauges:indicator1>,<projectred-transmission:wire:17>,<tfctech:metal/black_bronze_long_rod>]]);
+	[<rsgauges:indicator1>,<projectred-transmission:wire:17>,BBR]]);
 
 //Floppy
 recipes.remove(<opencomputers:storage:1>);
@@ -365,9 +438,9 @@ recipes.addShaped(<opencomputers:material:10>,[
 //Screens
 recipes.remove(<opencomputers:screen1>);
 recipes.addShaped(<opencomputers:screen1>,[
-	[<tfctech:metal/black_bronze_long_rod>,<pneumaticcraft:heat_sink>,<tfctech:metal/black_bronze_long_rod>],
+	[BBR,<pneumaticcraft:heat_sink>,BBR],
 	[<minecraft:iron_bars>,<minecraft:redstone_lamp>,<minecraft:glass_pane>],
-	[<tfctech:metal/black_bronze_long_rod>,<opencomputers:cable>,<tfctech:metal/black_bronze_long_rod>]]);
+	[BBR,<opencomputers:cable>,BBR]]);
 
 recipes.remove(<opencomputers:screen2>);
 recipes.addShaped(<opencomputers:screen2>,[
@@ -431,9 +504,9 @@ recipes.addShaped(<opencomputers:hologram2>,[
 
 recipes.remove(<opencomputers:case1>);
 recipes.addShaped(<opencomputers:case1>,[
-	[<tfctech:metal/black_bronze_long_rod>,<rsgauges:indicator2>,<rsgauges:indicator1>],
+	[BBR,<rsgauges:indicator2>,<rsgauges:indicator1>],
 	[<mysticalmechanics:gear_fan>,<bibliocraft:shelf:6>,<mysticalmechanics:gear_fan>],
-	[<tfctech:metal/black_bronze_long_rod>,<tfc:metal/sheet/black_bronze>,<tfctech:metal/black_bronze_long_rod>]]);
+	[BBR,<tfc:metal/sheet/black_bronze>,BBR]]);
 
 recipes.remove(<opencomputers:case2>);
 recipes.addShaped(<opencomputers:case2>,[
@@ -697,11 +770,11 @@ recipes.addShaped(<tis3d:prism>,[
 	[<ore:dyeCyan>,<ore:dyeMagenta>,<ore:dyePink>]]);
 
 recipes.addShaped(<tis3d:casing>,[
-	[<tfctech:metal/black_bronze_long_rod>,BundCab,<tfctech:metal/black_bronze_long_rod>],
+	[BBR,BundCab,BBR],
 	[BundCab,<projectred-transmission:framed_wire:17>,BundCab],
-	[<tfctech:metal/black_bronze_long_rod>,BundCab,<tfctech:metal/black_bronze_long_rod>]]);
+	[BBR,BundCab,BBR]]);
 
 recipes.addShaped(<tis3d:controller>,[
-	[<tfctech:metal/black_bronze_long_rod>,BundCab,<tfctech:metal/black_bronze_long_rod>],
+	[BBR,BundCab,BBR],
 	[BundCab,PrimCB,BundCab],
-	[<tfctech:metal/black_bronze_long_rod>,BundCab,<tfctech:metal/black_bronze_long_rod>]]);
+	[BBR,BundCab,BBR]]);

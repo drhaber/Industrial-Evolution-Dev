@@ -10,6 +10,10 @@ import crafttweaker.potions.IPotion;
 import mods.contenttweaker.Random;
 import mods.contenttweaker.World;
 
+//Type K Thermocouple
+var tkt = VanillaFactory.createItem("tkt");
+tkt.register();
+game.setLocalization("item.contenttweaker.tkt.name", "Type K Thermocouple");
 //pitcher
 var pitcher = VanillaFactory.createItem("pitcher");
 pitcher.register();

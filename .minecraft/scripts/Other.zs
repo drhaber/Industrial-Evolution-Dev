@@ -84,11 +84,14 @@ recipes.addShapeless(<tconstruct:wood_rail_trapdoor>, [<tconstruct:wood_rail>,<o
 mods.terrafirmacraft.Barrel.addRecipe("Paper", <tfctech:powder/wood>*4, <liquid:hot_water>*150, <emergingtechnology:paperpulp>, 4);
 //Paper
 mods.forestry.Carpenter.removeRecipe(<minecraft:paper>);
-//Winding Apparatus
+//Wooden Glass Casing
 recipes.addShaped(<contenttweaker:wooden_glass_casing>,[
 	[null,<ore:stickWood>,null],
 	[<ore:stickWood>,<ore:blockGlass>,<ore:stickWood>],
 	[null,<ore:stickWood>,null]]);	
+//Type K Thermocouple
+RollingMachine.addShaped(<contenttweaker:tkt>,[[<tfc:metal/sheet/aluminium>],[<tfc:ore/chromite>],[<tfc:metal/sheet/nickel>]]);
+
 #=============================================================================================================================================		
 //Colored Water 
 recipes.removeByMod("colored_water");
