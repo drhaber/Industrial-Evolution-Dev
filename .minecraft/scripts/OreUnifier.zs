@@ -78,18 +78,30 @@ mods.nuclearcraft.alloy_furnace.addRecipe(<ore:itemSilicon>, <ore:dustGraphite>,
 //Coal
 <ore:gemCoal>.addAll(<ore:coal>);
 <ore:coal>.mirror(<ore:gemCoal>);
+//Cobblestone
+<ore:tfcCobblestone>.addItems([<tfc:cobble/gneiss>,<tfc:cobble/diorite>,<tfc:cobble/marble>,<tfc:cobble/granite>,
+<tfc:cobble/rhyolite>,<tfc:cobble/limestone>,<tfc:cobble/schist>,<tfc:cobble/chert>,<tfc:cobble/dacite>,
+<tfc:cobble/conglomerate>,<tfc:cobble/claystone>,<tfc:cobble/shale>,<tfc:cobble/gabbro>,<tfc:cobble/dolomite>,
+<tfc:cobble/quartzite>,<tfc:cobble/slate>,<tfc:cobble/rocksalt>,<tfc:cobble/phyllite>,<tfc:cobble/chalk>,
+<tfc:cobble/basalt>,<tfc:cobble/andesite>]);
 //dirt
 <ore:tfcDirt>.addItems([<tfc:dirt/marble>,<tfc:dirt/andesite>,<tfc:dirt/phyllite>,
 <tfc:dirt/claystone>,<tfc:dirt/granite>,<tfc:dirt/chert>,<tfc:dirt/gneiss>,
 <tfc:dirt/chalk>,<tfc:dirt/rocksalt>,<tfc:dirt/shale>,<tfc:dirt/conglomerate>,
 <tfc:dirt/quartzite>,<tfc:dirt/diorite>,<tfc:dirt/limestone>,<tfc:dirt/dolomite>,
 <tfc:dirt/slate>,<tfc:dirt/dacite>,<tfc:dirt/schist>,<tfc:dirt/basalt>,<tfc:dirt/rhyolite>,<tfc:dirt/gabbro>]);
+//Grass
+<ore:tfcGrass>.addItems([<tfc:grass/limestone>,<tfc:grass/schist>,<tfc:grass/marble>,<tfc:grass/quartzite>,
+<tfc:grass/diorite>,<tfc:grass/gabbro>,<tfc:grass/dacite>,<tfc:grass/phyllite>,<tfc:grass/claystone>,
+<tfc:grass/granite>,<tfc:grass/chalk>,<tfc:grass/basalt>,<tfc:grass/rocksalt>,<tfc:grass/slate>,
+<tfc:grass/shale>,<tfc:grass/gneiss>,<tfc:grass/chert>,<tfc:grass/dolomite>,<tfc:grass/conglomerate>,
+<tfc:grass/andesite>,<tfc:grass/rhyolite>]);
 //Sand 
 <ore:tfcSand>.addItems([<tfc:sand/granite>,<tfc:sand/diorite>,<tfc:sand/gabbro>,<tfc:sand/shale>,
-						   <tfc:sand/claystone>,<tfc:sand/rocksalt>,<tfc:sand/limestone>,<tfc:sand/conglomerate>,
-						   <tfc:sand/dolomite>,<tfc:sand/phyllite>,<tfc:sand/slate>,<tfc:sand/quartzite>,
-						   <tfc:sand/dacite>,<tfc:sand/andesite>,<tfc:sand/basalt>,<tfc:sand/rhyolite>,<tfc:sand/chalk>,
-						   <tfc:sand/chert>,<tfc:sand/schist>,<tfc:sand/gneiss>,<tfc:sand/marble>]);
+<tfc:sand/claystone>,<tfc:sand/rocksalt>,<tfc:sand/limestone>,<tfc:sand/conglomerate>,
+<tfc:sand/dolomite>,<tfc:sand/phyllite>,<tfc:sand/slate>,<tfc:sand/quartzite>,
+<tfc:sand/dacite>,<tfc:sand/andesite>,<tfc:sand/basalt>,<tfc:sand/rhyolite>,<tfc:sand/chalk>,
+<tfc:sand/chert>,<tfc:sand/schist>,<tfc:sand/gneiss>,<tfc:sand/marble>]);
 //Chests
 <ore:tfcChest>.addItems([<tfc:wood/chest/spruce>,<tfc:wood/chest/hevea>,<tfc:wood/chest/rosewood>,<tfc:wood/chest/white_cedar>,<tfc:wood/chest/birch>,<tfc:wood/chest/acacia>,<tfc:wood/chest/pine>,<tfc:wood/chest/blackwood>,<tfc:wood/chest/douglas_fir>,<tfc:wood/chest/chestnut>,<tfc:wood/chest/kapok>,<tfc:wood/chest/oak>,<tfc:wood/chest/palm>,<tfc:wood/chest/maple>,<tfc:wood/chest/hickory>,<tfc:wood/chest/ash>,<tfc:wood/chest/aspen>,<tfc:wood/chest/willow>,<tfc:wood/chest/sequoia>,<tfc:wood/chest/sycamore>]);						   
 <ore:chestWood>.addAll(<ore:chestTrapped>);
@@ -101,6 +113,9 @@ mods.nuclearcraft.alloy_furnace.addRecipe(<ore:itemSilicon>, <ore:dustGraphite>,
 //Gears
 <ore:gearIron>.addAll(<ore:gearWroughtIron>);
 mods.jei.JEI.removeAndHide(<railcraft:gear:3>);
+//Rock Shovel Head
+<ore:tfcRockShovelHead>.addItems([<tfc:stone/shovel_head/metamorphic>,<tfc:stone/shovel_head/sedimentary>,
+<tfc:stone/shovel_head/igneous_intrusive>,<tfc:stone/shovel_head/igneous_extrusive>]);
 //Rods/Sticks
 <ore:stickIron>.addAll(<ore:rodWroughtIron>);
 <ore:stickSteel>.addAll(<ore:rodSteel>);

@@ -72,6 +72,27 @@ for i in 0 to 9{
 mods.tconstruct.Casting.addBasinRecipe(crystalBlocks.makeStack(i), ReducedDyes[i], <liquid:quartz>, 125, true, 180);
 }
 mods.tconstruct.Melting.addRecipe(<liquid:quartz>*666,<ore:dustQuartz>);
+//Botania
+	mods.tconstruct.Melting.addRecipe(<liquid:elementium> * 1296, <botania:storage:2>);
+	mods.tconstruct.Melting.addRecipe(<liquid:elementium> * 144, <botania:manaresource:7>);
+	mods.tconstruct.Melting.addRecipe(<liquid:elementium> * 16, <botania:manaresource:19>);
+	mods.tconstruct.Casting.addBasinRecipe(<botania:storage:2>, null, <liquid:elementium>, 1296);
+	mods.tconstruct.Casting.addTableRecipe(<botania:manaresource:7>, <tconstruct:cast_custom:0>, <liquid:elementium>, 144);
+	mods.tconstruct.Casting.addTableRecipe(<botania:manaresource:19>, <tconstruct:cast_custom:1>, <liquid:elementium>, 16);
+	//Manasteel
+	mods.tconstruct.Melting.addRecipe(<liquid:manasteel> * 1296, <botania:storage:0>);
+	mods.tconstruct.Melting.addRecipe(<liquid:manasteel> * 144, <botania:manaresource:0>);
+	mods.tconstruct.Melting.addRecipe(<liquid:manasteel> * 16, <botania:manaresource:17>);
+	mods.tconstruct.Casting.addBasinRecipe(<botania:storage:0>, null, <liquid:manasteel>, 1296);
+	mods.tconstruct.Casting.addTableRecipe(<botania:manaresource:0>, <tconstruct:cast_custom:0>, <liquid:manasteel>, 144);
+	mods.tconstruct.Casting.addTableRecipe(<botania:manaresource:17>, <tconstruct:cast_custom:1>, <liquid:manasteel>, 16);
+	//Terrasteel
+	mods.tconstruct.Melting.addRecipe(<liquid:terrasteel> * 1296, <botania:storage:1>);
+	mods.tconstruct.Melting.addRecipe(<liquid:terrasteel> * 144, <botania:manaresource:4>);
+	mods.tconstruct.Melting.addRecipe(<liquid:terrasteel> * 16, <botania:manaresource:18>);
+	mods.tconstruct.Casting.addBasinRecipe(<botania:storage:1>, null, <liquid:terrasteel>, 1296);
+	mods.tconstruct.Casting.addTableRecipe(<botania:manaresource:4>, <tconstruct:cast_custom:0>, <liquid:terrasteel>, 144);
+	mods.tconstruct.Casting.addTableRecipe(<botania:manaresource:18>, <tconstruct:cast_custom:1>, <liquid:terrasteel>, 16);
 
 //Casting Table TFC Tool Parts
 val castingMetal = [<liquid:tungsten>,<liquid:black_bronze>,<liquid:red_steel>,<liquid:invar>,
@@ -134,6 +155,12 @@ mods.tconstruct.Casting.addTableRecipe(sh,<tfc:ceramics/fired/mold/shovel_head>,
 }
 mods.tconstruct.Casting.addTableRecipe(<tfc:metal/shovel_head/aluminium>,<tfc:ceramics/fired/mold/shovel_head>,<liquid:aluminum>,144*ingots_SH,false,time_SH*20);
 mods.tconstruct.Casting.addTableRecipe(<tfc:metal/shovel_head/wrought_iron>,<tfc:ceramics/fired/mold/shovel_head>,<liquid:iron>,144*ingots_SH,false,time_SH*20);
+
+mods.tconstruct.Casting.addTableRecipe(<contenttweaker:gold_shovel_head>,<tfc:ceramics/fired/mold/shovel_head>,<liquid:gold>,144*ingots_SH,false,time_SH*20);
+mods.tconstruct.Casting.addTableRecipe(<contenttweaker:obsidian_shovel_head>,<tfc:ceramics/fired/mold/shovel_head>,<liquid:obsidian>,144*ingots_SH,false,time_SH*20);
+mods.tconstruct.Casting.addTableRecipe(<contenttweaker:manasteel_shovel_head>,<tfc:ceramics/fired/mold/shovel_head>,<liquid:manasteel>,144*ingots_SH,true,time_SH*20);
+mods.tconstruct.Casting.addTableRecipe(<contenttweaker:diamond_shovel_head>,<contenttweaker:manasteel_shovel_head>,<liquid:diamond>,144*ingots_SH,true,time_SH*20);
+
 #=============================================================================================================================================		
 
 val hoehead = [<tfc:metal/hoe_head/tungsten>,<tfc:metal/hoe_head/black_bronze>,<tfc:metal/hoe_head/red_steel>,<tfc:metal/hoe_head/invar>,

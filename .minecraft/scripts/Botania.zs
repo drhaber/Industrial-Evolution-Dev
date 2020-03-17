@@ -44,10 +44,17 @@ mods.jei.JEI.addDescription(<extrabotany:manadrink>,"I've always wondered what w
 //Pouch
 recipes.remove(<botania:flowerbag>);
 recipes.addShapeless(<botania:flowerbag>, [<contenttweaker:leatherbag>,<ore:Petals>]);
+//Mana Steel Shovel
+recipes.remove(<botania:manasteelshovel>);
+recipes.addShaped(<botania:manasteelshovel>,[
+	[<contenttweaker:manasteel_shovel_head>],
+	[<botania:manaresource:3>]]);
 //TFC Conversions 
 mods.botania.PureDaisy.addRecipe(<ore:tfcSand>,<minecraft:sand>);
 mods.botania.PureDaisy.addRecipe(<tfc:thatch>,<quark:thatch>);
 mods.botania.PureDaisy.addRecipe(<ore:tfcDirt>,<minecraft:dirt>);
+mods.botania.PureDaisy.addRecipe(<ore:tfcGrass>,<minecraft:grass>);
+mods.botania.PureDaisy.addRecipe(<ore:tfcCobblestone>,<minecraft:cobblestone>);
 //AE2 Conversions
 mods.botania.ManaInfusion.addInfusion(<appliedenergistics2:sky_stone_block>, <tconstruct:seared>, 10000);
 #mods.botania.ManaInfusion.addInfusion(<contenttweaker:potion_bottle_lingering>, <contenttweaker:splashbottle>, 1000);

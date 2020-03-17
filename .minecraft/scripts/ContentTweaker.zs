@@ -10,6 +10,26 @@ import crafttweaker.potions.IPotion;
 import mods.contenttweaker.Random;
 import mods.contenttweaker.World;
 
+//wooden_cross_beam
+var wooden_cross_beam = VanillaFactory.createItem("wooden_cross_beam");
+wooden_cross_beam.register();
+game.setLocalization("item.contenttweaker.wooden_cross_beam.name", "Wooden Cross Beam");
+//gold_shovel_head
+var gold_shovel_head = VanillaFactory.createItem("gold_shovel_head");
+gold_shovel_head.register();
+game.setLocalization("item.contenttweaker.gold_shovel_head.name", "Gold Shovel Head");
+//obsidian_shovel_head
+var obsidian_shovel_head = VanillaFactory.createItem("obsidian_shovel_head");
+obsidian_shovel_head.register();
+game.setLocalization("item.contenttweaker.obsidian_shovel_head.name", "Obsidian Shovel Head");
+//manasteel_shovel_head
+var manasteel_shovel_head = VanillaFactory.createItem("manasteel_shovel_head");
+manasteel_shovel_head.register();
+game.setLocalization("item.contenttweaker.manasteel_shovel_head.name", "Manasteel Shovel HSead");
+//diamond_shovel_head
+var diamond_shovel_head = VanillaFactory.createItem("diamond_shovel_head");
+diamond_shovel_head.register();
+game.setLocalization("item.contenttweaker.diamond_shovel_head.name", "Diamond Shovel Head");
 //Type K Thermocouple
 var tkt = VanillaFactory.createItem("tkt");
 tkt.register();
@@ -275,6 +295,40 @@ carrot_soup.viscosity = 3000;
 carrot_soup.temperature= 100;
 carrot_soup.register();
 game.setLocalization("fluid.carrot_soup", "Carrot Soup");
+
+//Botania Fluids
+		var liquidElementium = VanillaFactory.createFluid("elementium", 0xf66afd);
+			liquidElementium.density = 3000;
+			liquidElementium.viscosity = 3000;
+			liquidElementium.luminosity = 10;
+			liquidElementium.material = <blockmaterial:lava>;
+			liquidElementium.temperature = 800;
+			liquidElementium.stillLocation = "tconstruct:blocks/fluids/molten_metal";
+			liquidElementium.flowingLocation = "tconstruct:blocks/fluids/molten_metal_flow";
+		liquidElementium.register();
+		game.setLocalization("fluid.elementium", "Molten Elementium");
+
+		var liquidManasteel = VanillaFactory.createFluid ("manasteel", 0x2494ff);
+			liquidManasteel.density = 3000;
+			liquidManasteel.viscosity = 3000;
+			liquidManasteel.luminosity = 10;
+			liquidManasteel.material = <blockmaterial:lava>;
+			liquidManasteel.temperature = 681;
+			liquidManasteel.stillLocation = "tconstruct:blocks/fluids/molten_metal";
+			liquidManasteel.flowingLocation = "tconstruct:blocks/fluids/molten_metal_flow";
+		liquidManasteel.register();
+		game.setLocalization("fluid.manasteel", "Molten Manasteel");
+
+		var liquidTerrasteel = VanillaFactory.createFluid("terrasteel", Color.fromHex("00ff00").getIntColor());
+			liquidTerrasteel.density = 3000;
+			liquidTerrasteel.viscosity = 3000;
+			liquidTerrasteel.luminosity = 10;
+			liquidTerrasteel.material = <blockmaterial:lava>;
+			liquidTerrasteel.temperature = 760;
+			liquidTerrasteel.stillLocation = "tconstruct:blocks/fluids/molten_metal";
+			liquidTerrasteel.flowingLocation = "tconstruct:blocks/fluids/molten_metal_flow";
+		liquidTerrasteel.register();
+		game.setLocalization("fluid.terrasteel", "Molten Terrasteel");
 #=============================================================================================================================================	
 
 //liquid_grog

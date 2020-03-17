@@ -1,4 +1,5 @@
 {yurtmod:[
 {hide:[[tentmod_barrier,super_dirt,yurt*,bed*,indlu*,tepee*,shamiana*],[]]};
+{show:[[yurt_wall_piece,bed_wall_piece,indlu_wall_piece,tepee_wall_piece,shamiana_wall_piece],[]]};
 ]
 }
