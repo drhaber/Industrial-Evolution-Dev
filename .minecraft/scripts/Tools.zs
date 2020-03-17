@@ -40,6 +40,17 @@ mods.jei.JEI.removeAndHide(<minecraft:wooden_axe>);
 <ore:hoeIron>.addItems([<minecraft:iron_hoe>,<tfc:metal/hoe/wrought_iron>]);
 <ore:hoeSteel>.addItems([<railcraft:tool_hoe_steel>,<tfc:metal/hoe/steel>]);
 
+//Shears
+<ore:shearsSteel>.addItems([<railcraft:tool_shears_steel>]);
+
+//Helmet
+
+//Chestplate
+
+//Leggings
+
+//Boots
+
 //Diamond Tools
 mods.tconstruct.Casting.addTableRecipe(<minecraft:diamond_sword>, <botania:manasteelsword>, <liquid:diamond>, 1332, true, 1800);
 mods.tconstruct.Casting.addTableRecipe(<minecraft:diamond_pickaxe>, <botania:manasteelpick>, <liquid:diamond>, 1998, true, 1800);
@@ -57,22 +68,23 @@ recipes.addShaped(<minecraft:golden_shovel>,[
 	[<minecraft:stick>]]);
 
 //Embers Recipes
-val embersRecipes = [<embers:pickaxe_copper>,<embers:axe_copper>,<embers:shovel_copper>,<embers:hoe_copper>,
-<embers:sword_copper>,<embers:pickaxe_silver>,<embers:axe_silver>,<embers:shovel_silver>,<embers:hoe_silver>,
-<embers:hoe_electrum>,<embers:sword_electrum>,<embers:shovel_electrum>,<embers:axe_electrum>,<embers:pickaxe_electrum>,
-<embers:hoe_bronze>,<embers:sword_bronze>,<embers:shovel_bronze>,<embers:hoe_dawnstone>,<embers:sword_dawnstone>,
-<embers:pickaxe_aluminum>,<embers:axe_aluminum>,<embers:shovel_aluminum>,<embers:sword_aluminum>,<embers:hoe_aluminum>,
-<embers:pickaxe_bronze>,<embers:axe_bronze>,<embers:shovel_dawnstone>,<embers:axe_dawnstone>,<embers:pickaxe_dawnstone>,
-<embers:sword_lead>,<embers:hoe_lead>,<embers:shovel_lead>,<embers:axe_lead>,<embers:pickaxe_lead>,<embers:sword_silver>,
+val embersRecipes = [
 <embers:pickaxe_copper>,<embers:axe_copper>,<embers:shovel_copper>,<embers:hoe_copper>,<embers:sword_copper>,
-<embers:pickaxe_silver>,<embers:axe_silver>,<embers:shovel_silver>,<embers:hoe_silver>,<embers:hoe_electrum>,
-<embers:sword_electrum>,<embers:shovel_electrum>,<embers:axe_electrum>,<embers:pickaxe_electrum>,<embers:hoe_bronze>,
-<embers:sword_bronze>,<embers:shovel_bronze>,<embers:hoe_dawnstone>,<embers:sword_dawnstone>,<embers:pickaxe_aluminum>,
-<embers:axe_aluminum>,<embers:shovel_aluminum>,<embers:sword_aluminum>,<embers:hoe_aluminum>,<embers:pickaxe_bronze>,
-<embers:axe_bronze>,<embers:shovel_dawnstone>,<embers:axe_dawnstone>,<embers:pickaxe_dawnstone>,<embers:sword_lead>,
-<embers:hoe_lead>,<embers:shovel_lead>,<embers:axe_lead>,<embers:pickaxe_lead>,<embers:sword_silver>,<embers:pickaxe_nickel>,
-<embers:axe_nickel>,<embers:shovel_nickel>,<embers:sword_nickel>,<embers:hoe_nickel>,<embers:pickaxe_tin>,<embers:axe_tin>,
-<embers:shovel_tin>,<embers:sword_tin>,<embers:pickaxe_aluminum>,<embers:pickaxe_bronze>,<embers:hoe_tin>] as IItemStack[];
+<embers:pickaxe_silver>,<embers:axe_silver>,<embers:shovel_silver>,<embers:hoe_silver>,<embers:sword_silver>,
+<embers:pickaxe_lead>,<embers:axe_lead>,<embers:shovel_lead>,<embers:hoe_lead>,<embers:sword_lead>,
+#<embers:pickaxe_dawnstone>,<embers:axe_dawnstone>,<embers:shovel_dawnstone>,<embers:hoe_dawnstone>,<embers:sword_dawnstone>,
+<embers:pickaxe_aluminum>,<embers:axe_aluminum>,<embers:shovel_aluminum>,<embers:hoe_aluminum>,<embers:sword_aluminum>,
+<embers:pickaxe_bronze>,<embers:axe_bronze>,<embers:shovel_bronze>,<embers:hoe_bronze>,<embers:sword_bronze>,
+<embers:pickaxe_electrum>,<embers:axe_electrum>,<embers:shovel_electrum>,<embers:hoe_electrum>,<embers:sword_electrum>,
+<embers:pickaxe_nickel>,<embers:axe_nickel>,<embers:shovel_nickel>,<embers:hoe_nickel>,<embers:sword_nickel>,
+<embers:pickaxe_tin>,<embers:axe_tin>,<embers:shovel_tin>,<embers:hoe_tin>,<embers:sword_tin>] as IItemStack[];
 for i, ER in embersRecipes{
 	recipes.remove(ER);
+}
+val steelTools = [<railcraft:tool_pickaxe_steel>,<railcraft:tool_axe_steel>,<railcraft:tool_shovel_steel>,<railcraft:tool_hoe_steel>,<railcraft:tool_sword_steel>,<railcraft:tool_shears_steel>,
+<railcraft:armor_helmet_steel>,<railcraft:armor_chestplate_steel>,<railcraft:armor_leggings_steel>,<railcraft:armor_boots_steel>,
+<tcomplement:steel_helmet>,<tcomplement:steel_chestplate>,<tcomplement:steel_leggings>,<tcomplement:steel_boots>] as IItemStack[];
+
+for i, ST in steelTools{
+	recipes.remove(ST);
 }

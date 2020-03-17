@@ -79,6 +79,10 @@ recipes.addShaped(<yurtmod:depth_upgrade_diamond>,[
 //Crossbeams
 val time_SH = 300; #Number of Seconds   
 val WCB = <contenttweaker:wooden_cross_beam>;
+recipes.remove(<yurtmod:tent_upgrade_gold>);
+recipes.remove(<yurtmod:tent_upgrade_obsidian>);
+recipes.remove(<yurtmod:tent_upgrade_diamond>);
+
 recipes.addShaped(WCB,[
 	[<minecraft:stick>,null,<minecraft:stick>],
 	[null,<minecraft:stick>,null],

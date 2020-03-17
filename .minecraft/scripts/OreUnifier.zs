@@ -44,6 +44,8 @@ for i in 0 to 16{
 <ore:chestVanilla>.addItems([<minecraft:chest>,<quark:custom_chest:*>]);
 //Bricks
 <ore:ingotBrick>.addAll(<ore:brick>); //This adds ingot brick to all bricks
+//magnifying_glass
+<ore:glassMagnifying>.addItems([<agricraft:magnifying_glass>,<railcraft:tool_magnifying_glass>]);
 //Tallow
 <ore:lumpTallow>.addItems([<quark:tallow>,<rustic:tallow>]);
 //Soot Black Dye

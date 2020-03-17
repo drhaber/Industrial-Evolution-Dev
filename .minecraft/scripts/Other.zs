@@ -5,6 +5,15 @@ import crafttweaker.mods.IMod;
 import crafttweaker.liquid.ILiquidStack;
 import moretweaker.railcraft.RollingMachine;
 
+//Magnifying Glass
+recipes.remove(<agricraft:magnifying_glass>);
+recipes.addShaped(<agricraft:magnifying_glass>,[
+	[<advancedrocketry:lens>,null],
+	[null,<minecraft:stick>]]);
+recipes.remove(<railcraft:tool_magnifying_glass>);
+recipes.addShaped(<railcraft:tool_magnifying_glass>,[
+	[null,<advancedrocketry:lens>],
+	[<minecraft:stick>,null]]);	
 //Hook Rename
 <jaff:iron_hook>.displayName = "Iron Hook";
 //Crushed Ice
