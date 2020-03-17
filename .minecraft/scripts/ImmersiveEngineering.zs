@@ -19,6 +19,12 @@ mods.terrafirmacraft.Barrel.addRecipe("Treated_Lumber", <ore:lumber>, <liquid:cr
 mods.terrafirmacraft.Barrel.addRecipe("Treated_Stick", <ore:stickWood>, <liquid:creosote>*50, <immersiveengineering:material>, <liquid:creosote>*25, 4);
 mods.terrafirmacraft.Barrel.addRecipe("Treated_String", <ore:string>, <liquid:creosote>*50, <contenttweaker:creosote_string>, <liquid:creosote>*25, 4);
 
+//Thermoelectric Generator
+recipes.remove(<immersiveengineering:metal_device1:3>);
+recipes.addShaped(<immersiveengineering:metal_device1:3>,[
+	[<tfctech:metal/steel_long_rod>,<immersiveengineering:metal_decoration0>,<tfctech:metal/steel_long_rod>],
+	[<tfc:metal/sheet/tungsten>,<contenttweaker:tkt>,<tfc:metal/sheet/tungsten>],
+	[<tfc:metal/sheet/tungsten>,<contenttweaker:tkt>,<tfc:metal/sheet/tungsten>]]);
 //Wires
 val wires = <immersiveengineering:material>.definition;
 for i in 20 to 24{

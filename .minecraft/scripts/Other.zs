@@ -90,7 +90,7 @@ recipes.addShaped(<contenttweaker:wooden_glass_casing>,[
 	[<ore:stickWood>,<ore:blockGlass>,<ore:stickWood>],
 	[null,<ore:stickWood>,null]]);	
 //Type K Thermocouple
-RollingMachine.addShaped(<contenttweaker:tkt>,[[<tfc:metal/sheet/aluminium>],[<tfc:ore/chromite>],[<tfc:metal/sheet/nickel>]]);
+RollingMachine.addShaped(<contenttweaker:tkt>,[[<tfc:metal/sheet/aluminium>,null,null],[<tfc:ore/chromite>,null,null],[<tfc:metal/sheet/nickel>,null,null]]);
 
 #=============================================================================================================================================		
 //Colored Water 
