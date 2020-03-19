@@ -436,5 +436,7 @@ mods.tconstruct.Alloy.removeRecipe(<liquid:manyullyn>);
 mods.tconstruct.Alloy.addRecipe(<liquid:manyullyn>*144, [<liquid:ardite>*432,<liquid:cobalt>*432]);
 //Tungsten Steel
 mods.tconstruct.Alloy.addRecipe(<liquid:tungsten_steel>*144, [<liquid:tungsten>*144,<liquid:steel>*720]);
+//Mithril
+mods.tconstruct.Alloy.addRecipe(<liquid:mithril>*144, [<liquid:antimony>*144,<liquid:copper>*864]);
 #=============================================================================================================================================		
 

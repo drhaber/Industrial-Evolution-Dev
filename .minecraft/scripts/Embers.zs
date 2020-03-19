@@ -23,3 +23,6 @@ recipes.addShaped(<embers:tinker_hammer>,[
 	[<contenttweaker:bismuth_hammer_head>],
 	[<ore:stickWood>]]);
 
+//Antimony
+mods.soot.AlchemicalMixer.remove(<liquid:antimony>);	
+
