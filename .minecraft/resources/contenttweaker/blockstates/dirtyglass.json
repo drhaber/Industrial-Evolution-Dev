@@ -5,7 +5,7 @@
       "texture": "contenttweaker:blocks/dirtyglass",
       "particle": "contenttweaker:blocks/dirtyglass"
     },
-    "model": "base:storage",
+    "model": "contenttweaker:dirtyglass",
     "uvlock": true,
     "transform": "forge:default-block"
   },

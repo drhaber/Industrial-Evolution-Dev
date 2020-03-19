@@ -10,6 +10,10 @@ import crafttweaker.potions.IPotion;
 import mods.contenttweaker.Random;
 import mods.contenttweaker.World;
 
+//wax_anvil
+var wax_anvil = VanillaFactory.createItem("wax_anvil");
+wax_anvil.register();
+game.setLocalization("item.contenttweaker.wax_anvil.name", "Wax Anvil");
 //wooden_cross_beam
 var wooden_cross_beam = VanillaFactory.createItem("wooden_cross_beam");
 wooden_cross_beam.register();
@@ -478,3 +482,13 @@ dirtyglass.setToolLevel(0);
 dirtyglass.setBlockSoundType(<soundtype:glass>);
 dirtyglass.register();
 game.setLocalization("tile.contenttweaker.dirtyglass.name", "Dirty Glass");
+
+var anvilmold = VanillaFactory.createBlock("anvilmold", <blockmaterial:clay>);
+anvilmold.setFullBlock(false);
+anvilmold.setBlockHardness(5.0);
+anvilmold.setBlockResistance(5.0);
+anvilmold.setToolClass("shovel");
+anvilmold.setToolLevel(0);
+anvilmold.setBlockSoundType(<soundtype:sand>);
+anvilmold.register();
+game.setLocalization("tile.contenttweaker.anvilmold.name", "Anvil Sand Cast");

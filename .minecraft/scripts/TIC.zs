@@ -61,6 +61,7 @@ mods.tconstruct.Casting.addBasinRecipe(CSG.makeStack(i)*8, dyes[i], <liquid:glas
 recipes.remove(Illumar.makeStack(i+500));
 mods.tconstruct.Casting.addTableRecipe(Illumar.makeStack(i+500), dyes[i], <liquid:glowstone>, 250, true, 180);
 }
+//Glass
 mods.tconstruct.Casting.removeBasinRecipe(<tconstruct:clear_glass>);
 mods.tconstruct.Casting.addBasinRecipe(<tconstruct:clear_glass>*8, null, <liquid:glass>, 1000, false, 180);
 //Shard
@@ -342,7 +343,6 @@ val ingots = [<tfc:metal/ingot/bismuth>,<tfc:metal/ingot/bismuth_bronze>,<tfc:me
 <tfc:metal/ingot/ardite>,<tfc:metal/ingot/cobalt>,<tfc:metal/ingot/manyullyn>,<tfc:metal/ingot/osmium>,<tfc:metal/ingot/titanium>,
 <tfc:metal/ingot/tungsten>,<tfc:metal/ingot/tungsten_steel>] as IItemStack[];
 
-
 for i, ingot in ingots{
 mods.tconstruct.Casting.addTableRecipe(ingot,<tfc:ceramics/fired/mold/ingot>, molten_metals[i], 144, false, 240);
 } 
@@ -358,6 +358,37 @@ val StampedGears = [<mysticalmechanics:gear_iron>,<mysticalmechanics:gear_gold>,
 <mystgears:gear_aluminium>,<mystgears:gear_antimony>] as IItemStack[];
 for i, SG in StampedGears{
 mods.embers.Stamper.remove(SG);
+}
+
+val anvils = [<tfc:metal/anvil/bismuth_bronze>,<tfc:metal/anvil/black_bronze>,
+<tfc:metal/anvil/bronze>,<tfc:metal/anvil/copper>,
+<tfc:metal/anvil/wrought_iron>,<tfc:metal/anvil/steel>,<tfc:metal/anvil/black_steel>,
+<tfc:metal/anvil/blue_steel>,<tfc:metal/anvil/red_steel>,
+<tfc:metal/anvil/mithril>,<tfc:metal/anvil/invar>,<tfc:metal/anvil/aluminium>,
+<tfc:metal/anvil/cobalt>,<tfc:metal/anvil/manyullyn>,<tfc:metal/anvil/osmium>,<tfc:metal/anvil/titanium>,
+<tfc:metal/anvil/tungsten>,<tfc:metal/anvil/tungsten_steel>] as IItemStack[];
+
+val molten_anvil_metals = [<liquid:bismuth_bronze>,<liquid:black_bronze>,
+<liquid:bronze>,<liquid:copper>,
+<liquid:wrought_iron>,<liquid:steel>,<liquid:black_steel>,
+<liquid:blue_steel>,<liquid:red_steel>,
+<liquid:mithril>,<liquid:invar>,<liquid:aluminium>,
+<liquid:cobalt>,<liquid:manyullyn>,<liquid:osmium>,<liquid:titanium>,
+<liquid:tungsten>,<liquid:tungsten_steel>] as ILiquidStack[];
+
+//Anvil Casting
+mods.forestry.Carpenter.addRecipe(<contenttweaker:wax_anvil>,[
+    [<forestry:beeswax>,<forestry:beeswax>,<forestry:beeswax>],
+    [null,<forestry:beeswax>,null],
+    [<forestry:beeswax>,<forestry:beeswax>,<forestry:beeswax>]],30,<liquid:water>*150);
+
+recipes.addShaped(<contenttweaker:anvilmold>,[
+	[<minecraft:sand>,<minecraft:sand>,<minecraft:sand>],
+	[<minecraft:sand>,<contenttweaker:wax_anvil>,<minecraft:sand>],
+	[<minecraft:sand>,<minecraft:sand>,<minecraft:sand>]]);	
+
+for i, anvil in anvils{	
+mods.tconstruct.Casting.addBasinRecipe(anvil, <contenttweaker:anvilmold>, molten_anvil_metals[i], 144*14, true, 3000);
 }
 #=============================================================================================================================================		
 
