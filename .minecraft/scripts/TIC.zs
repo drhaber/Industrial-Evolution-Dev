@@ -61,6 +61,30 @@ mods.tconstruct.Casting.addBasinRecipe(CSG.makeStack(i)*8, dyes[i], <liquid:glas
 recipes.remove(Illumar.makeStack(i+500));
 mods.tconstruct.Casting.addTableRecipe(Illumar.makeStack(i+500), dyes[i], <liquid:glowstone>, 250, true, 180);
 }
+
+//Slime
+mods.tconstruct.Casting.removeTableRecipe(<tconstruct:edible:3>);
+mods.tconstruct.Melting.removeRecipe(<liquid:purpleslime>);
+
+val liquidSlimes = [<liquid:liquid_green_slime>,<liquid:blueslime>,<liquid:purpleslime>,<liquid:blood>,<liquid:liquid_orange_slime>] as ILiquidStack[];
+val slimeBlocks = <tconstruct:slime_congealed>.definition;
+val slimeBoots = <tconstruct:slime_boots>.definition;
+val slimeSling = <tconstruct:slimesling>.definition;
+val slimeBall = [<minecraft:slime_ball>,<tconstruct:edible:1>,<tconstruct:edible:2>,<tconstruct:edible:3>,<tconstruct:edible:4>] as IItemStack[];
+for i, LS in liquidSlimes{
+mods.tconstruct.Casting.addBasinRecipe(slimeBlocks.makeStack(i),null,LS, 640, false, 180);
+mods.tconstruct.Casting.addTableRecipe(slimeBoots.makeStack(i), <minecraft:chainmail_boots>, LS, 160, true, 180);
+mods.tconstruct.Casting.addTableRecipe(slimeBall[i], null, LS, 160, true, 20);
+recipes.remove(slimeSling.makeStack(i));
+mods.forestry.Carpenter.addRecipe(slimeSling.makeStack(i),[
+    [null,<botania:manaresource:16>,<tfctech:metal/steel_strip>],
+    [null,<tfctech:metal/steel_strip>,<tfctech:metal/steel_rod>],
+    [null,null,<immersiveengineering:material:13>]],300, LS*640);   
+mods.tconstruct.Melting.addRecipe(LS*250,slimeBall[i], 341);	
+mods.tconstruct.Melting.addRecipe(LS*1000,slimeBlocks.makeStack(i), 364);	
+}
+
+
 //Glass
 mods.tconstruct.Casting.removeBasinRecipe(<tconstruct:clear_glass>);
 mods.tconstruct.Casting.addBasinRecipe(<tconstruct:clear_glass>*8, null, <liquid:glass>, 1000, false, 180);

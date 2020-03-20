@@ -335,6 +335,20 @@ game.setLocalization("fluid.carrot_soup", "Carrot Soup");
 		game.setLocalization("fluid.terrasteel", "Molten Terrasteel");
 #=============================================================================================================================================	
 
+//liquid_orange_slime
+var liquid_orange_slime = VanillaFactory.createFluid("liquid_orange_slime", Color.fromHex("FFA249"));
+liquid_orange_slime.viscosity = 1500;
+liquid_orange_slime.temperature= 310;
+liquid_orange_slime.register();
+game.setLocalization("fluid.liquid_orange_slime", "Liquid Orange Slime");
+
+//liquid_green_slime
+var liquid_green_slime = VanillaFactory.createFluid("liquid_green_slime", Color.fromHex("82C873"));
+liquid_green_slime.viscosity = 1500;
+liquid_green_slime.temperature= 310;
+liquid_green_slime.register();
+game.setLocalization("fluid.liquid_green_slime", "Liquid Green Slime");
+
 //liquid_grog
 var grog = VanillaFactory.createFluid("grog", Color.fromHex("42FF5C"));
 grog.viscosity = 9000;
