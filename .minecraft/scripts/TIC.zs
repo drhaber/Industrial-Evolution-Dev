@@ -400,6 +400,26 @@ val molten_anvil_metals = [<liquid:bismuth_bronze>,<liquid:black_bronze>,
 <liquid:cobalt>,<liquid:manyullyn>,<liquid:osmium>,<liquid:titanium>,
 <liquid:tungsten>,<liquid:tungsten_steel>] as ILiquidStack[];
 
+//Plates
+val sheets = [<tfc:metal/sheet/bismuth>,<tfc:metal/sheet/bismuth_bronze>,<tfc:metal/sheet/black_bronze>,<tfc:metal/sheet/brass>,
+<tfc:metal/sheet/bronze>,<tfc:metal/sheet/copper>,<tfc:metal/sheet/gold>,<tfc:metal/sheet/lead>,<tfc:metal/sheet/nickel>,
+<tfc:metal/sheet/rose_gold>,<tfc:metal/sheet/silver>,<tfc:metal/sheet/tin>,<tfc:metal/sheet/zinc>,<tfc:metal/sheet/sterling_silver>,
+<tfc:metal/sheet/wrought_iron>,<tfc:metal/sheet/pig_iron>,<tfc:metal/sheet/steel>,<tfc:metal/sheet/platinum>,<tfc:metal/sheet/black_steel>,
+<tfc:metal/sheet/blue_steel>,<tfc:metal/sheet/red_steel>,<tfc:metal/sheet/antimony>,<tfc:metal/sheet/constantan>,
+<tfc:metal/sheet/electrum>,<tfc:metal/sheet/mithril>,<tfc:metal/sheet/invar>,<tfc:metal/sheet/aluminium>,<tfc:metal/sheet/aluminium_brass>,
+<tfc:metal/sheet/ardite>,<tfc:metal/sheet/cobalt>,<tfc:metal/sheet/manyullyn>,<tfc:metal/sheet/osmium>,<tfc:metal/sheet/titanium>,
+<tfc:metal/sheet/tungsten>,<tfc:metal/sheet/tungsten_steel>] as IItemStack[];
+for sheet in sheets{
+mods.tconstruct.Casting.removeTableRecipe(sheet);
+mods.nuclearcraft.pressurizer.removeRecipeWithOutput(sheet);
+}
+mods.nuclearcraft.pressurizer.removeRecipeWithOutput(<tfc:metal/sheet/nickel_silver>);
+mods.nuclearcraft.pressurizer.removeRecipeWithOutput(<tfc:metal/sheet/red_alloy>);
+
+for i, sheet in sheets{
+mods.tconstruct.Casting.addTableRecipe(sheet,<tconstruct:cast_custom:3>, molten_metals[i], 288, false, 240);
+mods.embers.Stamper.add(sheet,molten_metals[i]*288,<embers:stamp_plate>);
+} 
 //Anvil Casting
 mods.forestry.Carpenter.addRecipe(<contenttweaker:wax_anvil>,[
     [<forestry:beeswax>,<forestry:beeswax>,<forestry:beeswax>],

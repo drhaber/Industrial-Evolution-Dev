@@ -1,7 +1,10 @@
 import moretweaker.railcraft.RollingMachine;
 
 //Bucket
-RollingMachine.addShapeless(<minecraft:bucket>, [<ore:sheetDoubleIron>]);
+mods.tconstruct.Casting.removeTableRecipe(<minecraft:bucket>);
+recipes.remove(<minecraft:bucket>);
+RollingMachine.addShapeless(<minecraft:bucket>, [<ore:sheetDoubleSteel>]);
+
 //Black Stained Glass
 recipes.addShaped(<minecraft:stained_glass:15>*8,[
 	[<minecraft:glass>,<minecraft:glass>,<minecraft:glass>],
@@ -26,8 +29,7 @@ recipes.addShaped(<minecraft:chest>,[
 	[<botania:livingwood>,<botania:livingwood>,<botania:livingwood>]]);
 //Torch Recipes
 recipes.remove(<minecraft:torch>);
-//Bucket
-recipes.remove(<minecraft:bucket>);
+
 //Beacon
 recipes.addShaped(<minecraft:beacon>,[
 	[<ore:blockGlass>,<ore:blockGlass>,<ore:blockGlass>],

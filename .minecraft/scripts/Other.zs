@@ -500,4 +500,4 @@ recipes.addShaped(<railcraft:circuit:3>,[
 //rustichromia
 mods.rustichromia.Assembler.removeAll();		
 mods.rustichromia.Quern.removeAll();	
-mods.rustichromia.Gin.add("Wool_Yarn", [<tfc:animal/product/wool>], [<tfc:animal/product/wool_yarn>*8], [null], 7, -1, 0);
+mods.rustichromia.Gin.add("Wool_Yarn", [<tfc:animal/product/wool>], [<tfc:animal/product/wool_yarn>*8], [null], 7, 25, 5);

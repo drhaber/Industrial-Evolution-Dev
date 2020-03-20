@@ -16,9 +16,16 @@ furnace.remove(<minecraft:bread>);
 //Jerky
 mods.jei.JEI.removeAndHide(<foodexpansion:itemdough>);
 <foodexpansion:itemcompressedflesh>.displayName = "Salted Flesh";
-mods.tconstruct.Drying.removeRecipe(<tconstruct:edible:10>);
-mods.tconstruct.Drying.addRecipe(<tconstruct:edible:10>,<foodexpansion:itemcompressedflesh>, 6000);
+val Jerky = [<tconstruct:edible:10>,<tconstruct:edible:11>,<tconstruct:edible:12>,
+<tconstruct:edible:13>,<tconstruct:edible:14>,<tconstruct:edible:15>,<tconstruct:edible:20>] as IItemStack[];	
+val JerkyInputs = [<foodexpansion:itemcompressedflesh>,<tfc:food/cooked_beef>,<tfc:food/cooked_chicken>,
+<tfc:food/cooked_pork>,<tfc:food/cooked_mutton>,<tfc:food/cooked_rabbit>,<tfc:food/fish>] as IItemStack[];
+for i, J in Jerky{	
+mods.tconstruct.Drying.removeRecipe(J);
+mods.tconstruct.Drying.addRecipe(J,JerkyInputs[i], 6000);
+}
 mods.tconstruct.Drying.addRecipe(<contenttweaker:dried_ground_meat>,<contenttweaker:ground_meat>, 6000);
+
 
 #=============================================================================================================================================		
 //Food Recipes
@@ -74,6 +81,8 @@ recipes.remove(<foodexpansion:itemblazecream>);
 recipes.remove(<inspirations:potato_soup>);
 recipes.remove(<minecraft:mushroom_stew>);
 recipes.remove(<foodexpansion:itemcarrotseedsoup>);
+recipes.remove(<betternether:stalagnate_bowl_wart>);
+recipes.remove(<betternether:stalagnate_bowl_mushroom>);
 
 mods.inspirations.Cauldron.addFluidRecipe(<minecraft:beetroot_soup>,<minecraft:bowl>,  <liquid:beetroot_soup>, 1, true);
 mods.inspirations.Cauldron.addFluidRecipe(<foodexpansion:itemcarrotseedsoup>,<minecraft:bowl>,  <liquid:carrot_soup>, 1, true);
@@ -84,6 +93,10 @@ mods.inspirations.Cauldron.addFluidRecipe(<inspirations:potato_soup>,<minecraft:
 mods.inspirations.Cauldron.addFluidRecipe(<minecraft:mushroom_stew>,<minecraft:bowl>,  <liquid:mushroom_stew>, 1, true);
 mods.inspirations.Cauldron.addFluidRecipe(<minecraft:rabbit_stew>,<minecraft:bowl>,  <liquid:rabbit_stew>, 1, true);
 mods.inspirations.Cauldron.addFluidRecipe(<contenttweaker:i_vegetable_soup>,<minecraft:bowl>,  <liquid:vegetable_soup>, 1, true);
+
+mods.inspirations.Cauldron.addFluidRecipe(<betternether:stalagnate_bowl_wart>,<betternether:stalagnate_bowl>,  <liquid:nether_wart_stew>, 1, true);
+mods.inspirations.Cauldron.addFluidRecipe(<betternether:stalagnate_bowl_mushroom>,<betternether:stalagnate_bowl>,  <liquid:mushroom_stew>, 1, true);
+
 
 mods.inspirations.Cauldron.addFillRecipe(<contenttweaker:me_beetroot_soup>, <liquid:beetroot_soup>, 4, <tfc:ceramics/fired/pot>);
 mods.inspirations.Cauldron.addFillRecipe(<contenttweaker:me_carrot_soup>, <liquid:carrot_soup>, 4, <tfc:ceramics/fired/pot>);
@@ -251,6 +264,24 @@ registerFood(<extrabotany:candy:1>,[0.2,0.3,0,0,0],0.3,0,0);	          #Candy Zw
 registerFood(<extrabotany:candy:2>,[0.2,0.3,0,0,0],0.3,0,0);	          #Candy Drei
 registerFood(<tconstruct:moms_spaghetti>,[0.7,0.1,0,0,0],0.3,0.3,3);	          #Mom's Spaghetti
 
+registerFood(<cfm:item_flesh>,[0,0,1.5,0,0],0.6,0,5.5);	registerItemHeat(<cfm:item_flesh>,1,480,false);          #Flesh
+registerFood(<cfm:item_flesh_cooked>,[0,0,1.7,0,0],0.6,0,5);	registerItemHeat(<cfm:item_flesh_cooked>,1,480,false);          #Cooked Flesh
+registerFood(<cfm:item_bread_slice>,[1.5,0.5,0.1,0,0],0.5,0,2);	          #Bread Slice
+registerFood(<cfm:item_toast>,[1.5,0.5,0.1,0,0],0.5,0,2.5);	          #Toast
+registerFood(<cfm:item_sausage>,[0,0.1,0.2,0,0],0.1,0.2,2);	          #Sausage
+registerFood(<cfm:item_sausage_cooked>,[0,0.2,0.2,0,0],0.2,0.1,1.5);	          #Cooked Sausage
+registerFood(<cfm:item_kebab>,[0,0.2,0.1,0,0],0.1,0.5,3);	          #raw Kebab
+registerFood(<cfm:item_kebab_cooked>,[0,0.2,0.2,0,0],0.3,1,2.25);	          #Cooked Kebab
+
+registerFood(<betternether:black_apple>,[0.5,0,0,1,0],0.6,2,3.25);	          #Black Apple
+registerFood(<betternether:stalagnate_bowl_wart>,[1,0.3,0,2,0.2],1.8,2,3.5);	          #Nether Wart Soup
+registerFood(<betternether:stalagnate_bowl_mushroom>,[1,0.8,1,0,0.2],1.2,2,4);	          #Mushroom Stew
+registerFood(<betternether:stalagnate_bowl_apple>,[0.5,0,0,1,0],0.8,2,2);	          #Black Apple Bowl
+	
+registerFood(<netherex:enoki_mushroom>,[0,0,0.3,0.1,0.2],0.4,0.1,2.3);  registerItemHeat(<netherex:enoki_mushroom>,1,480,false);          #Enori Mushroom
+registerFood(<netherex:congealed_magma_cream>,[0,0.3,0.2,0,0],0.2,2,0);	          #Congeled Magma Cream
+registerFood(<netherex:ghast_meat_raw>,[0,2,2.5,0.5,0.3],0.2,1,-1);	registerItemHeat(<netherex:ghast_meat_raw>,1,480,false);          #Raw Ghast Meat
+registerFood(<netherex:ghast_meat_cooked>,[0,2,2.5,0.5,0],0.8,2,-1);	registerItemHeat(<netherex:ghast_meat_cooked>,1,480,false);          #Cooked Ghast Meat
 #=============================================================================================================================================		
 
 #Heating.addRecipe(String registryName, IItemStack input, IItemStack output, float transformTemp, float maxTemp);
@@ -319,3 +350,12 @@ Heating.addRecipe("cooked_mushroom2", <minecraft:brown_mushroom>, <foodexpansion
 Heating.addRecipe("cooked_mushroom3", <quark:glowshroom>, <foodexpansion:itemcookedmushroom>, 400, 480);
 Heating.addRecipe("cooked_mushroom4", <rustic:mooncap_mushroom>, <foodexpansion:itemcookedmushroom>, 400, 480);
 Heating.addRecipe("cooked_mushroom5", <tfc:plants/porcini>, <foodexpansion:itemcookedmushroom>, 400, 480);
+Heating.addRecipe("cooked_mushroom6", <netherex:enoki_mushroom>, <foodexpansion:itemcookedmushroom>, 400, 480);
+
+furnace.remove(<cfm:item_flesh_cooked>);
+Heating.addRecipe("cooked_flesh", <cfm:item_flesh>, <cfm:item_flesh_cooked>, 400, 480);
+
+furnace.remove(<netherex:ghast_meat_cooked>);
+Heating.addRecipe("cooked_ghast", <netherex:ghast_meat_raw>, <netherex:ghast_meat_cooked>, 400, 480);
+
+
