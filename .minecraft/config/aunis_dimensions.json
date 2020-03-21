@@ -1,5 +1,5 @@
 {
-  "CompactMachines": {
+  "space": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
@@ -7,19 +7,7 @@
     "energyToOpen": 5529600,
     "keepAlive": 2400
   },
-  "TENT": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
   "Nether": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "nc_wasteland": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "overworld": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
@@ -31,11 +19,23 @@
     "energyToOpen": 3686400,
     "keepAlive": 1600
   },
-  "planet": {
+  "nc_wasteland": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
-  "space": {
+  "overworld": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "CompactMachines": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "TENT": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "planet": {
     "energyToOpen": 0,
     "keepAlive": 0
   }

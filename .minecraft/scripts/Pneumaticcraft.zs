@@ -18,4 +18,10 @@ recipes.addShaped(<pneumaticcraft:uv_light_box>,[
 	[<emergingtechnology:purplebulb>,<emergingtechnology:purplebulb>,<emergingtechnology:purplebulb>],
 	[<pneumaticcraft:pressure_tube>,<pneumaticcraft:pcb_blueprint>,null],
 	[<tfc:metal/sheet/black_bronze>,<tfc:metal/sheet/black_bronze>,<tfc:metal/sheet/black_bronze>]]); 
+//Lantern
+recipes.remove(<pneumaticcraft:kerosene_lamp>);
+recipes.addShaped(<pneumaticcraft:kerosene_lamp>,[
+	[null,<tfc:metal/sheet/brass>,null],
+	[<tfctech:metal/brass_rod>,<ore:blockGlass>,<tfctech:metal/brass_rod>],
+	[null,<tfc:metal/sheet/brass>,null]]);	
     

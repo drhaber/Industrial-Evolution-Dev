@@ -103,6 +103,25 @@ mods.terrafirmacraft.Heating.addRecipe("Primitive_Silicon", <projectred-core:res
 mods.terrafirmacraft.ItemRegistry.registerItemHeat(<tconstruct:soil>, 1, 1599, false);
 mods.terrafirmacraft.ItemRegistry.registerItemHeat(<tconstruct:seared:1>, 1, 1599, false);
 mods.terrafirmacraft.Heating.addRecipe("Seared_Brick", <tconstruct:soil>, <tconstruct:seared:1>, 1500, 3200);
+//DTFC Conversion Recipes
+val DTFCsapling = [<dynamictreestfc:seed/acacia>,<dynamictreestfc:seed/ash>,<dynamictreestfc:seed/aspen>,
+<dynamictreestfc:seed/birch>,<dynamictreestfc:seed/blackwood>,<dynamictreestfc:seed/chestnut>,
+<dynamictreestfc:seed/douglas_fir>,<dynamictreestfc:seed/hickory>,<dynamictreestfc:seed/kapok>,
+<dynamictreestfc:seed/maple>,<dynamictreestfc:seed/oak>,<dynamictreestfc:seed/palm>,<dynamictreestfc:seed/pine>,
+<dynamictreestfc:seed/rosewood>,<dynamictreestfc:seed/sequoia>,<dynamictreestfc:seed/spruce>,
+<dynamictreestfc:seed/sycamore>,<dynamictreestfc:seed/white_cedar>,<dynamictreestfc:seed/willow>,<dynamictreestfc:seed/hevea>] as IItemStack[];
+val TFCsapling =[<tfc:wood/sapling/acacia>,<tfc:wood/sapling/ash>,<tfc:wood/sapling/aspen>,
+<tfc:wood/sapling/birch>,<tfc:wood/sapling/blackwood>,<tfc:wood/sapling/chestnut>,
+<tfc:wood/sapling/douglas_fir>,<tfc:wood/sapling/hickory>,<tfc:wood/sapling/kapok>,
+<tfc:wood/sapling/maple>,<tfc:wood/sapling/oak>,<tfc:wood/sapling/palm>,<tfc:wood/sapling/pine>,
+<tfc:wood/sapling/rosewood>,<tfc:wood/sapling/sequoia>,<tfc:wood/sapling/spruce>,
+<tfc:wood/sapling/sycamore>,<tfc:wood/sapling/white_cedar>,<tfc:wood/sapling/willow>,<tfc:wood/sapling/hevea>] as IItemStack[];
+
+for i, DTFCS in DTFCsapling{
+recipes.addShapeless(DTFCS,[TFCsapling[i],<dynamictrees:dirtbucket>.giveBack()]);							
+recipes.addShapeless(TFCsapling[i],[DTFCS,<dynamictrees:dirtbucket>.giveBack()]);							
+
+}
 //Fire Clay
 recipes.addShaped(<tfc:ceramics/fire_clay>,[
 	[<contenttweaker:bauxitedust>,<ore:dustGraphite>,<contenttweaker:bauxitedust>],
