@@ -5,7 +5,14 @@ import crafttweaker.mods.IMod;
 import crafttweaker.liquid.ILiquidStack;
 import mods.tfctech.WireDrawing;
 
-mods.immersiveengineering.Crusher.removeRecipe(<tfc:metal/dust/wrought_iron>);
+//Gun Grip
+recipes.remove(<immersiveengineering:material:13>);
+recipes.addShaped(<immersiveengineering:material:13>,[
+	[null,<contenttweaker:treatedlumber>,<contenttweaker:treatedlumber>],
+	[<contenttweaker:treatedlumber>,<contenttweaker:treatedlumber>,null],
+	[<contenttweaker:treatedlumber>,<tfctech:metal/brass_bolt>,null]]);
+//Gun Barrel
+<immersiveengineering:material:14>.displayName = "Gun Barrel";
 //Thorium
 mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust_oxide>, <tfc:ore/thorianite>, 2048, <nuclearcraft:dust_oxide:1>, 0.25);
 //Magnesium

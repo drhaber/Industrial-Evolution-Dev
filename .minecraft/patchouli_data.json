@@ -57,6 +57,24 @@
         "steamagerevolution:mining/drill_entry"
       ],
       "completedManualQuests": []
+    },
+    "prodigytech:guide": {
+      "viewedEntries": [
+        "prodigytech:misc/materials",
+        "prodigytech:hot_air/incinerator",
+        "prodigytech:hot_air/rotary_grinder",
+        "prodigytech:circuits/wormhole_funnel",
+        "prodigytech:circuits/heat_capacitor"
+      ],
+      "bookmarks": [],
+      "history": [
+        "prodigytech:circuits/heat_capacitor",
+        "prodigytech:circuits/wormhole_funnel",
+        "prodigytech:hot_air/rotary_grinder",
+        "prodigytech:hot_air/incinerator",
+        "prodigytech:misc/materials"
+      ],
+      "completedManualQuests": []
     }
   }
 }

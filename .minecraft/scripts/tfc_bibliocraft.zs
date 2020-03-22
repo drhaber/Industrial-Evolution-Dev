@@ -1183,3 +1183,9 @@ recipes.remove(<bibliocraft:framingsheet>);
 recipes.addShapeless(<bibliocraft:framingsheet>*2,[<ore:saw>.transformDamage(2),TLumber]);
 recipes.remove(<bibliocraft:framingboard>);
 recipes.addShapeless(<bibliocraft:framingboard>*2,[<ore:saw>.transformDamage(2),<bibliocraft:framingsheet>]);
+
+//Clipboard
+recipes.addShaped(<bibliocraft:clipboard>,[
+	[null,<tfctech:metal/bismuth_strip>,null],
+	[<ore:dyeBlack>,<ore:paper>,<ore:feather>],
+	[null,<bibliocraft:framingsheet>,null]]);

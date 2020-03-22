@@ -15,7 +15,19 @@ recipes.addShaped(<railcraft:tool_magnifying_glass>,[
 	[null,<advancedrocketry:lens>],
 	[<minecraft:stick>,null]]);	
 //Hook Rename
-<jaff:iron_hook>.displayName = "Iron Hook";
+<jaff:iron_hook>.displayName = "Metal Hook";
+recipes.remove(<jaff:iron_hook>);
+mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx1_tin", <tfctech:metal/tin_strip>, <jaff:iron_hook>, 1, "general","BEND_NOT_LAST","HIT_NOT_LAST","HIT_LAST");
+mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx1_lead", <tfctech:metal/lead_strip>, <jaff:iron_hook>, 1, "general","BEND_NOT_LAST","HIT_NOT_LAST","HIT_LAST");
+mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx1_zinc", <tfctech:metal/zinc_strip>, <jaff:iron_hook>, 1, "general","BEND_NOT_LAST","HIT_NOT_LAST","HIT_LAST");
+
+mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx3", <tfctech:metal/wrought_iron_strip>, <jaff:iron_hook>*3, 3, "general","BEND_NOT_LAST","HIT_NOT_LAST","HIT_LAST");
+
+mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx4_steel", <tfctech:metal/steel_strip>, <jaff:iron_hook>*4, 4, "general","BEND_NOT_LAST","HIT_NOT_LAST","HIT_LAST");
+mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx4_aluminium", <tfctech:metal/aluminium_strip>, <jaff:iron_hook>*4, 4, "general","BEND_NOT_LAST","HIT_NOT_LAST","HIT_LAST");
+
+mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx6", <tfctech:metal/titanium_strip>, <jaff:iron_hook>*6, 6, "general","BEND_NOT_LAST","HIT_NOT_LAST","HIT_LAST");
+
 //Crushed Ice
 mods.rustic.CrushingTub.addRecipe(<liquid:ice>*250, null, <minecraft:snowball>);
 //Alchemy Bag

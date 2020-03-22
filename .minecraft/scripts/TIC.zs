@@ -76,6 +76,7 @@ mods.tconstruct.Casting.addBasinRecipe(slimeBlocks.makeStack(i),null,LS, 640, fa
 mods.tconstruct.Casting.addTableRecipe(slimeBoots.makeStack(i), <minecraft:chainmail_boots>, LS, 160, true, 180);
 mods.tconstruct.Casting.addTableRecipe(slimeBall[i], null, LS, 160, true, 20);
 recipes.remove(slimeSling.makeStack(i));
+recipes.remove(slimeBoots.makeStack(i));
 mods.forestry.Carpenter.addRecipe(slimeSling.makeStack(i),[
     [null,<botania:manaresource:16>,<tfctech:metal/steel_strip>],
     [null,<tfctech:metal/steel_strip>,<tfctech:metal/steel_rod>],

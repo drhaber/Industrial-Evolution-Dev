@@ -29,6 +29,13 @@
 		]
 	},
 	{
+		"entryName" : "scaleDragonEnder",
+		"modIdPriorityList" :
+		[
+		"quark"
+		]
+	},
+	{
 		"entryName" : "componetTransistor",
 		"modIdPriorityList" :
 		[

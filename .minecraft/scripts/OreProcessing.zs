@@ -4,7 +4,9 @@ import crafttweaker.oredict.IOreDictEntry;
 import moretweaker.railcraft.BlastFurnace;
 import mods.appliedenergistics2.Grinder;
 
+mods.immersiveengineering.Crusher.removeRecipe(<tfc:metal/dust/wrought_iron>);
 mods.unidict.removalByKind.get("Furnace").remove("ingot");
+
 val AlloyedIngots = [<immersiveengineering:metal:6>,<immersiveengineering:metal:7>,<railcraft:ingot:7>,<forestry:ingot_bronze>,<railcraft:ingot:9>,<projectred-core:resource_item:103>
 ] as IItemStack[];
 for AI in AlloyedIngots{
