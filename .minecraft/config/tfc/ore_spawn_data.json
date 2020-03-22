@@ -68,6 +68,20 @@
       "tfc:gneiss"
     ]
   },
+    "native_galena": {
+    "ore": "tfc:native_galena",
+    "width": 28,
+    "height": 36,
+    "shape": "cluster",
+    "rarity": 100,
+    "minimum_height": 5,
+    "maximum_height": 128,
+    "density": 70,
+    "base_rocks": [
+      "tfc:granite",
+      "tfc:gneiss"
+    ]
+  },
   "hematite": {
     "ore": "tfc:hematite",
     "width": 28,

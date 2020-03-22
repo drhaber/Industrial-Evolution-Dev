@@ -33,7 +33,7 @@ mods.jei.JEI.removeAndHide(<minecraft:wooden_axe>);
 <ore:axeSteel>.addItems([<immersiveengineering:axe_steel>,<railcraft:tool_axe_steel>,<tfc:metal/axe/steel>]);
 
 //Swords
-<ore:swordIron>.addItems([<minecraft:iron_sword>,<tfc:metal/sword/wrought_iron>]);
+#<ore:swordIron>.addItems([<minecraft:iron_sword>,<tfc:metal/sword/wrought_iron>]);
 <ore:swordSteel>.addItems([<immersiveengineering:sword_steel>,<railcraft:tool_sword_steel>,<tfc:metal/sword/steel>]);
 
 //Hoes
