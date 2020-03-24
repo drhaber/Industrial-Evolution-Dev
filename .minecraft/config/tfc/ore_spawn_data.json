@@ -82,8 +82,8 @@
       "tfc:gneiss"
     ]
   },
-    "native_galena": {
-    "ore": "tfc:native_galena",
+    "galena": {
+    "ore": "tfc:galena",
     "width": 28,
     "height": 36,
     "shape": "cluster",
@@ -289,7 +289,7 @@
     "width": 16,
     "height": 16,
     "shape": "sphere",
-    "rarity": 150,
+    "rarity": 95,
     "minimum_height": 5,
     "maximum_height": 128,
     "density": 60,
