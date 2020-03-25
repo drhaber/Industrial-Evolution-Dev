@@ -180,7 +180,7 @@ mods.jei.JEI.removeAndHide(<railcraft:gear:3>);
 <tfc:crop/seeds/oat>,<tfc:crop/seeds/rice>,<tfc:crop/seeds/rye>,<tfc:crop/seeds/wheat>,
 <tfc:crop/seeds/beet>,<tfc:crop/seeds/cabbage>,<tfc:crop/seeds/carrot>,<rustic:chili_pepper_seeds>,
 <rustic:ironwoodseed>,<botania:worldseed>,<botania:overgrowthseed>,<tfc:crop/seeds/yellow_bell_pepper>,
-<tfc:crop/seeds/jute>,<tfc:crop/seeds/pumpkin>,<tfc:crop/seeds/melon>,<immersiveengineering:seed>,
+<tfc:crop/seeds/jute>,<minecraft:pumpkin_seeds>,<minecraft:melon_seeds>,<immersiveengineering:seed>,
 <inspirations:cactus_seeds>,<rustic:grape_stem>,<rustic:apple_seeds>,<tfc:crop/seeds/garlic>,
 <tfc:crop/seeds/green_bean>,<tfc:crop/seeds/onion>,<tfc:crop/seeds/potato>,<tfc:crop/seeds/soybean>,
 <tfc:crop/seeds/squash>,<tfc:crop/seeds/sugarcane>,<tfc:crop/seeds/tomato>,<tfc:crop/seeds/red_bell_pepper>,
@@ -191,11 +191,9 @@ mods.jei.JEI.removeAndHide(<railcraft:gear:3>);
 <dynamictreestfc:seed/sequoia>,<dynamictreestfc:seed/rosewood>,<dynamictreestfc:seed/pine>,<dynamictreestfc:seed/palm>,
 <dynamictreestfc:seed/oak>,<dynamictreestfc:seed/maple>,<dynamictreestfc:seed/kapok>,<dynamictreestfc:seed/hickory>,
 <dynamictreestfc:seed/douglas_fir>,<dynamictreestfc:seed/chestnut>,<dynamictreestfc:seed/blackwood>,
-<dynamictreestfc:seed/birch>,<dynamictreestfc:seed/aspen>,<dynamictreestfc:seed/ash>]);
+<dynamictreestfc:seed/birch>,<dynamictreestfc:seed/aspen>,<dynamictreestfc:seed/ash>,<rustichromia:cotton_seed>]);
 
-<ore:seedPumpkin>.add(<tfc:crop/seeds/pumpkin>);
 <ore:seedWheat>.add(<tfc:crop/seeds/wheat>);
-<ore:seedMelon>.add(<tfc:crop/seeds/melon>);
 <ore:seedBeetroot>.add(<tfc:crop/seeds/beet>);
 <ore:seedSugar>.add(<inspirations:sugar_cane_seeds>);
 <ore:seedSugar>.add(<tfc:crop/seeds/sugarcane>);

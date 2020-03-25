@@ -136,152 +136,154 @@ for i, RM in rawmeats{
 mods.terrafirmacraft.Quern.addRecipe("ground_meat"~i, RM, <contenttweaker:ground_meat>*groundqty[i]);
 }
 #=============================================================================================================================================		
+registerItemHeat(<tfc:food/potato>,1,480,false); 
 
-//ItemRegistry.registerFood(IIngredient input, float[] nutrients, float calories, float water, float decay);
+registerFood(<minecraft:mushroom_stew>,2,2,1.2,6,1,0.2,0,1,0.8);	<ore:categoryMeal>.add(<minecraft:mushroom_stew>);      	          #mushroom stew
+registerFood(<minecraft:fish:1>,1,1,0.2,3,0,0,0,2,0.2);	<ore:categoryMeat>.add(<minecraft:fish:1>);      	registerItemHeat(<minecraft:fish:1>,1,480,false);          #raw salmon
+registerFood(<minecraft:fish:2>,1,1,0.2,3,0,0,0,2,0.2);	<ore:categoryMeat>.add(<minecraft:fish:2>);      	registerItemHeat(<minecraft:fish:2>,1,480,false);          #clownfish
+registerFood(<minecraft:fish:3>,1,1,0.2,3,0,2,0,1,0.1);	<ore:category>.add(<minecraft:fish:3>);      	          #pufferfish
+registerFood(<minecraft:cooked_fish:1>,1,2,0.6,2.25,0,0,0,2,0);	<ore:categoryCookedMeat>.add(<minecraft:cooked_fish:1>);      	registerItemHeat(<minecraft:cooked_fish:1>,1,480,false);          #cooked salmon
+registerFood(<minecraft:cookie>,1,0,0.2,0.8,1.5,0,0,0,1);	<ore:categoryMeal>.add(<minecraft:cookie>);      	          #cookie
+registerFood(<minecraft:melon>,1,1,0.4,4,0,0,1,0,0);	<ore:categoryFruit>.add(<minecraft:melon>);      	          #melon
+registerFood(<minecraft:spider_eye>,1,1,0.1,3,0,0.2,0,0,0);	<ore:category>.add(<minecraft:spider_eye>);      	          #spider eye
+registerFood(<minecraft:baked_potato>,1,1.5,0.9,5,1,0,1,0.5,0);	<ore:categoryMeal>.add(<minecraft:baked_potato>);      	registerItemHeat(<minecraft:baked_potato>,1,480,false);          #baked potato
+registerFood(<minecraft:poisonous_potato>,1,3,0,2,1,2,0,0,0);	<ore:category>.add(<minecraft:poisonous_potato>);      	          #poisonous potato
+registerFood(<minecraft:pumpkin_pie>,3,1,1.8,4,3.6,0,0,1.7,3);	<ore:categoryMeal>.add(<minecraft:pumpkin_pie>);      	          #pumpkin pie
+registerFood(<minecraft:rabbit_stew>,3,5,1.8,5,0.2,2,2,1.5,0.5);	<ore:categoryMeal>.add(<minecraft:rabbit_stew>);      	          #rabbit stew
+registerFood(<minecraft:chorus_fruit>,1,0.1,0.1,1.3,0,0.2,0.1,0,0);	<ore:categoryFruit>.add(<minecraft:chorus_fruit>);      	          #chorus fruit
+registerFood(<minecraft:beetroot_soup>,4,3,2,5,2,0,4,1.5,0);	<ore:categoryMeal>.add(<minecraft:beetroot_soup>);      	          #beetroot soup
+		
+registerFood(<foodexpansion:itemjelly>,1,1,0.2,1,0,0.1,0.1,0.1,0.2);	<ore:category>.add(<foodexpansion:itemjelly>);      	          #green jelly
+registerFood(<foodexpansion:itembacon>,1,0.5,0.1,3,0,0,0,1.2,1);	<ore:categoryMeat>.add(<foodexpansion:itembacon>);      	registerItemHeat(<foodexpansion:itembacon>,1,480,false);          #bacon
+registerFood(<foodexpansion:itemcookedbacon>,1,0.1,0.4,1.5,0,0,0,1,1);	<ore:categoryCookedMeat>.add(<foodexpansion:itemcookedbacon>);      	registerItemHeat(<foodexpansion:itemcookedbacon>,1,480,false);          #crispy bacon
+registerFood(<foodexpansion:itembaconandegg>,2,0.1,1,1.5,2,1,0,2.5,3);	<ore:categoryMeal>.add(<foodexpansion:itembaconandegg>);      	          #bacon and egg
+registerFood(<foodexpansion:itemcarrotseedsoup>,3,3,1.8,6,1,1,3,1,0);	<ore:categoryMeal>.add(<foodexpansion:itemcarrotseedsoup>);      	          #carrot soup
+registerFood(<foodexpansion:itemcompressedflesh>,1,0,0.4,0.4,0,0.1,0,2.1,0.3);	<ore:categoryMeat>.add(<foodexpansion:itemcompressedflesh>);      	          #salted flesh
+registerFood(<foodexpansion:itemchocolatebar>,1,0,0.7,0.1,0.3,0,0,0.1,0.4);	<ore:categoryMeal>.add(<foodexpansion:itemchocolatebar>);      	          #chocolate bar
+registerFood(<foodexpansion:itemspidersoup>,3,3,1.7,3,1,0.3,2,0,0.2);	<ore:categoryMeal>.add(<foodexpansion:itemspidersoup>);      	          #spider eye stew
+registerFood(<foodexpansion:itemnetherwartsoup>,3,2,1.8,3,1,0.2,2,0,0.3);	<ore:categoryMeal>.add(<foodexpansion:itemnetherwartsoup>);      	          #nether wart stew
+registerFood(<foodexpansion:itemcactusfruit>,1,3,0.2,1.3,0,0.1,0.1,0,0);	<ore:categoryFruit>.add(<foodexpansion:itemcactusfruit>);      	          #cactus fruit
+registerFood(<foodexpansion:itemcookedmushroom>,1,0.1,0.4,2.3,0,0.2,0.1,0.3,0);	<ore:categoryMeal>.add(<foodexpansion:itemcookedmushroom>);      	registerItemHeat(<foodexpansion:itemcookedmushroom>,1,480,false);          #cooked mushroom
+registerFood(<foodexpansion:itemcarrotpie>,2,0.2,1.4,4,0.3,0,0.2,0.1,0.5);	<ore:categoryMeal>.add(<foodexpansion:itemcarrotpie>);      	          #carrot cake
+registerFood(<foodexpansion:itembatwing>,1,0.5,0.2,3,0,0,0,1,0.2);	<ore:categoryMeat>.add(<foodexpansion:itembatwing>);      	registerItemHeat(<foodexpansion:itembatwing>,1,480,false);          #bat wing
+registerFood(<foodexpansion:itemcookedbatwing>,1,1,0.6,2,0,0,0,1.5,0.2);	<ore:categoryCookedMeat>.add(<foodexpansion:itemcookedbatwing>);      	registerItemHeat(<foodexpansion:itemcookedbatwing>,1,180,false);          #cooked bat wing
+registerFood(<foodexpansion:itemblazecream>,3,0.2,1.6,2,0.2,1,0,0.4,0.3);	<ore:categoryMeal>.add(<foodexpansion:itemblazecream>);      	          #blaze cream soup
+registerFood(<foodexpansion:itemmelonsalad>,2,1.4,1.2,5,0,0,2,0,0);	<ore:categoryMeal>.add(<foodexpansion:itemmelonsalad>);      	          #melon salad
+registerFood(<foodexpansion:itemroastedseed>,1,0,0.3,1,0.1,0,0.1,0.1,0.1);	<ore:categoryVegetable>.add(<foodexpansion:itemroastedseed>);      	registerItemHeat(<foodexpansion:itemroastedseed>,1,480,false);          #roasted seed
+registerFood(<foodexpansion:itemocelotmeat>,1,1,0.2,3,0,0,0,1.2,0.2);	<ore:categoryMeat>.add(<foodexpansion:itemocelotmeat>);      	registerItemHeat(<foodexpansion:itemocelotmeat>,1,480,false);          #ocelot meat
+registerFood(<foodexpansion:itemcookedocelotmeat>,1,1,0.6,2.25,0,0,0,1.7,0.2);	<ore:categoryCookedMeat>.add(<foodexpansion:itemcookedocelotmeat>);      	registerItemHeat(<foodexpansion:itemcookedocelotmeat>,1,480,false);          #cooked ocelot meat
+registerFood(<foodexpansion:itemlollipop>,1,0,0.4,0.1,0.1,0,0,0,0.1);	<ore:categoryMeal>.add(<foodexpansion:itemlollipop>);      	          #lollipop
+registerFood(<foodexpansion:itembeetrootnoodles>,3,1,1.6,4,2,0.1,3,1,0);	<ore:categoryMeal>.add(<foodexpansion:itembeetrootnoodles>);      	registerItemHeat(<foodexpansion:itembeetrootnoodles>,1,480,false);          #beetroot noodles
+registerFood(<foodexpansion:itemparrotmeat>,1,1,0.2,3,0,0,0,2.5,2);	<ore:categoryMeat>.add(<foodexpansion:itemparrotmeat>);      	registerItemHeat(<foodexpansion:itemparrotmeat>,1,480,false);          #raw parrot
+registerFood(<foodexpansion:itemcookedparrotmeat>,1,2,0.8,2.25,0,0,0,2.5,2);	<ore:categoryCookedMeat>.add(<foodexpansion:itemcookedparrotmeat>);      	registerItemHeat(<foodexpansion:itemcookedparrotmeat>,1,480,false);          #cooked parrot
+registerFood(<foodexpansion:itemllamameat>,1,1,0.2,2,0,0,0,2.5,0.5);	<ore:categoryMeat>.add(<foodexpansion:itemllamameat>);      	registerItemHeat(<foodexpansion:itemllamameat>,1,480,false);          #raw llama
+registerFood(<foodexpansion:itemcookedllamameat>,1,2,0.8,1.5,0,0,0,2.5,0.5);	<ore:categoryCookedMeat>.add(<foodexpansion:itemcookedllamameat>);      	registerItemHeat(<foodexpansion:itemcookedllamameat>,1,480,false);          #llama steak
+registerFood(<foodexpansion:itempolarbearmeat>,1,1,0.2,2,0,0,0.5,2.5,2.5);	<ore:categoryMeat>.add(<foodexpansion:itempolarbearmeat>);      	registerItemHeat(<foodexpansion:itempolarbearmeat>,1,480,false);          #raw polar bear
+registerFood(<foodexpansion:itemcookedpolarbearmeat>,1,2,0.8,1.5,0,0,0.5,2.5,2.3);	<ore:categoryCookedMeat>.add(<foodexpansion:itemcookedpolarbearmeat>);      	registerItemHeat(<foodexpansion:itemcookedpolarbearmeat>,1,480,false);          #polar bear steak
+		
+registerFood(<inspirations:edibles>,1,3,0.6,2,0,0.3,1,0,0);	<ore:categoryVegetable>.add(<inspirations:edibles>);      	          #heartbeet
+registerFood(<inspirations:potato_soup>,4,2,2.3,6,1.5,2,3,2.7,3.5);	<ore:categoryMeal>.add(<inspirations:potato_soup>);      	          #potato soup
+		
+registerFood(<quark:root>,1,0.6,0.2,0.7,0.1,0.8,0,0,0);	<ore:categoryVegetable>.add(<quark:root>);      	          #cave root
+registerFood(<quark:root_flower>,1,0.7,0.3,1.2,0.1,0.9,0,0,0);	<ore:categoryFruit>.add(<quark:root_flower>);      	          #blue sprout
+registerFood(<quark:root_flower:1>,1,0.7,0.3,1.2,0.1,0.9,0,0,0);	<ore:categoryFruit>.add(<quark:root_flower:1>);      	          #black sprout
+registerFood(<quark:root_flower:2>,1,0.7,0.3,1.2,0.1,0.9,0,0,0);	<ore:categoryFruit>.add(<quark:root_flower:2>);      	          #white sprout
+registerFood(<quark:frog_leg>,1,1,0.2,3,0,0,0,1,0);	<ore:categoryMeat>.add(<quark:frog_leg>);      	registerItemHeat(<quark:frog_leg>,1,480,false);          #frog leg
+registerFood(<quark:cooked_frog_leg>,1,1,0.4,2.25,0,0,0,1,0);	<ore:categoryCookedMeat>.add(<quark:cooked_frog_leg>);      	registerItemHeat(<quark:cooked_frog_leg>,1,480,false);          #cooked frog leg
+registerFood(<quark:golden_frog_leg>,1,0,0.2,2.25,0,1,0,1,0);	<ore:categoryMeal>.add(<quark:golden_frog_leg>);      	          #golden frog leg
+registerFood(<quark:crab_leg>,1,1,0.2,3,0,0,0,1.2,0);	<ore:categoryMeat>.add(<quark:crab_leg>);      	registerItemHeat(<quark:crab_leg>,1,480,false);          #crab leg
+registerFood(<quark:cooked_crab_leg>,1,1,0.4,2.25,0,0,0,1.4,0);	<ore:categoryCookedMeat>.add(<quark:cooked_crab_leg>);      	registerItemHeat(<quark:cooked_crab_leg>,1,480,false);          #cooked crab leg
+		
+registerFood(<emergingtechnology:algaebarcooked>,1,1,0.6,0.4,0,0.2,0.4,0.1,0);	<ore:categoryMeal>.add(<emergingtechnology:algaebarcooked>);      	registerItemHeat(<emergingtechnology:algaebarcooked>,1,480,false);          #Cooked Algae Bar
+		
+registerFood(<forestry:fruits:1>,1,0,0.1,0.1,0,0,0.2,0.1,0.4);	<ore:categoryFruit>.add(<forestry:fruits:1>);      	          #walnut
+registerFood(<forestry:fruits:2>,1,0,0.1,0.1,0,0,0.2,0.1,0.3);	<ore:categoryFruit>.add(<forestry:fruits:2>);      	          #chestnut
+registerFood(<forestry:fruits:5>,1,3.2,0.4,4,0,0,0.4,0,0);	<ore:categoryFruit>.add(<forestry:fruits:5>);      	          #date
+registerFood(<forestry:fruits:6>,1,3,0.4,4,0,0,0.3,0,0);	<ore:categoryFruit>.add(<forestry:fruits:6>);      	          #papaya
+registerFood(<forestry:honeyed_slice>,2,0,1,0.6,2,0,0.2,0.5,0.5);	<ore:categoryMeal>.add(<forestry:honeyed_slice>);      	          #honeyed slice
+registerFood(<forestry:ambrosia>,2,0.2,1,0,0,0.1,0,0.1,0);	<ore:categoryMeal>.add(<forestry:ambrosia>);      	          #Ambrosia
+registerFood(<forestry:honey_pot>,2,0.2,1,0,0,0.1,0,0.1,0);	<ore:categoryFruit>.add(<forestry:honey_pot>);      	          #Honey pot
+		
+registerFood(<nuclearcraft:graham_cracker>,1,0,0.3,0.8,0.2,0,0,0,0.1);	<ore:categoryGrain>.add(<nuclearcraft:graham_cracker>);      	          #Graham Cracker
+registerFood(<nuclearcraft:dominos>,6,0.3,3,2,2,2,1,2.5,0.5);	<ore:categoryMeal>.add(<nuclearcraft:dominos>);      	registerItemHeat(<nuclearcraft:dominos>,1,480,false);          #Domino's Special
+registerFood(<nuclearcraft:ground_cocoa_nibs>,1,0,0.1,0.1,0.1,0,0,0.1,0.2);	<ore:category>.add(<nuclearcraft:ground_cocoa_nibs>);      	          #Ground Cocoa Nibs
+registerFood(<nuclearcraft:cocoa_butter>,1,0,0.3,0.1,0.3,0,0,0.1,0.5);	<ore:category>.add(<nuclearcraft:cocoa_butter>);      	          #Solidified Cocoa Butter
+registerFood(<nuclearcraft:unsweetened_chocolate>,1,0,0.4,0.1,0.2,0,0,0.1,0.3);	<ore:categoryDairy>.add(<nuclearcraft:unsweetened_chocolate>);      	          #Unsweetened Chocolate
+registerFood(<nuclearcraft:dark_chocolate>,1,0,0.3,0.1,0.2,0,0,0.1,0.3);	<ore:categoryDairy>.add(<nuclearcraft:dark_chocolate>);      	          #Dark Chocolate
+registerFood(<nuclearcraft:milk_chocolate>,1,0,0.4,0.1,0.3,0,0,0.1,0.5);	<ore:categoryDairy>.add(<nuclearcraft:milk_chocolate>);      	          #Milk Chocolate
+registerFood(<nuclearcraft:marshmallow>,1,0.2,0.7,0.3,0,0,0,0.2,0.4);	<ore:categoryDairy>.add(<nuclearcraft:marshmallow>);      	          #Marshmallow
+registerFood(<nuclearcraft:smore>,2,0.2,1.3,2,0.5,0.1,0,0.2,0.8);	<ore:categoryMeal>.add(<nuclearcraft:smore>);      	          #S'more S'mingot
+registerFood(<nuclearcraft:moresmore>,4,0.4,2.3,2,1,0.2,0,0.4,1.6);	<ore:categoryMeal>.add(<nuclearcraft:moresmore>);      	          #MoreS'more Double
+		
+registerFood(<rustic:cloudsbluff>,1,0.1,0.1,1.3,0,0.2,0.1,0,0);	<ore:categoryFruit>.add(<rustic:cloudsbluff>);      	          #Clouds Bluff
+registerFood(<rustic:core_root>,1,0.6,0.2,0.7,0.1,0.8,0,0,0);	<ore:categoryVegetable>.add(<rustic:core_root>);      	          #Core Root
+registerFood(<rustic:ginseng>,1,0.6,0.2,0.7,0.1,0.8,0,0,0);	<ore:categoryVegetable>.add(<rustic:ginseng>);      	          #Ginseng Root
+registerFood(<rustic:marsh_mallow>,1,0.6,0.2,0.7,0.1,0.8,0,0,0);	<ore:categoryFruit>.add(<rustic:marsh_mallow>);      	          #Marsh Mallow Root
+registerFood(<rustic:ironberries>,1,2,0.3,0.7,0,0.3,0,0,0);	<ore:categoryFruit>.add(<rustic:ironberries>);      	          #Iron Berries
+registerFood(<rustic:chili_pepper>,1,3,0.4,2.5,0,0,1,0,0);	<ore:categoryVegetable>.add(<rustic:chili_pepper>);      	          #Chili Pepper
+registerFood(<rustic:grapes>,1,5,0.4,4.25,0,0,0.5,0,0);	<ore:categoryFruit>.add(<rustic:grapes>);      	          #Grapes
+registerFood(<rustic:wildberries>,1,5,0.4,4.25,0,0,0.5,0,0);	<ore:categoryFruit>.add(<rustic:wildberries>);      	          #WildBerry
+		
+registerFood(<tconstruct:edible:1>,1,2,0.2,0,0,0,0,0.2,0.3);	<ore:category>.add(<tconstruct:edible:1>);      	          #Slimeball cyan
+registerFood(<tconstruct:edible:2>,1,2,0.2,0,0,0,0,0.2,0.3);	<ore:category>.add(<tconstruct:edible:2>);      	          #Slimeball purple
+registerFood(<tconstruct:edible:3>,1,2,0.2,0,0,1,0,0.2,0.3);	<ore:category>.add(<tconstruct:edible:3>);      	          #Coagulated Blood
+registerFood(<tconstruct:edible:4>,1,2,0.2,0,0,0,0,0.2,0.3);	<ore:category>.add(<tconstruct:edible:4>);      	          #Slimeball orange
+registerFood(<tconstruct:edible:10>,1,0,0.6,0.1,0,0,0,1,0);	<ore:categoryCookedMeat>.add(<tconstruct:edible:10>);      	          #Monster Jerky
+registerFood(<tconstruct:edible:11>,1,0,0.8,0.1,0,0,0,2,0.5);	<ore:categoryCookedMeat>.add(<tconstruct:edible:11>);      	          #Beef Jerky
+registerFood(<tconstruct:edible:12>,1,0,0.6,0.1,0,0,0,2,0);	<ore:categoryCookedMeat>.add(<tconstruct:edible:12>);      	          #Chicken Jerky
+registerFood(<tconstruct:edible:13>,1,0,0.4,0.1,0,0,0,2,0.5);	<ore:categoryCookedMeat>.add(<tconstruct:edible:13>);      	          #Bacon Jerky
+registerFood(<tconstruct:edible:14>,1,0,0.8,0.1,0,0,0,2,0.5);	<ore:categoryCookedMeat>.add(<tconstruct:edible:14>);      	          #Mutton Jerky
+registerFood(<tconstruct:edible:15>,1,0,0.6,0.1,0,0,0,1,0);	<ore:categoryCookedMeat>.add(<tconstruct:edible:15>);      	          #Rabbit jerky
+registerFood(<tconstruct:edible:20>,1,0,0.6,0.1,0,0,0,1.5,0);	<ore:categoryCookedMeat>.add(<tconstruct:edible:20>);      	          #Fish Jerky
+registerFood(<tconstruct:edible:21>,1,0,0.6,0.1,0,0,0,1.5,0);	<ore:categoryCookedMeat>.add(<tconstruct:edible:21>);      	          #Salmon Jerky
+registerFood(<tconstruct:edible:22>,1,0,0.6,0.1,0,0,0,1.5,0);	<ore:categoryCookedMeat>.add(<tconstruct:edible:22>);      	          #Clownfish Jerky
+registerFood(<tconstruct:edible:23>,1,0,0.6,0.1,0,0,0,1,0);	<ore:categoryCookedMeat>.add(<tconstruct:edible:23>);      	          #Fugu Jerky
+registerFood(<tconstruct:edible:30>,1,0.2,0.2,0,0,0,0,0.2,0.3);	<ore:categoryMeal>.add(<tconstruct:edible:30>);      	          #Green Slime Drop
+registerFood(<tconstruct:edible:31>,1,0.2,0.2,0,0,0,0,0.2,0.3);	<ore:categoryMeal>.add(<tconstruct:edible:31>);      	          #Cyan Slime drop
+registerFood(<tconstruct:edible:32>,1,0.2,0.2,0,0,0,0,0.2,0.3);	<ore:categoryMeal>.add(<tconstruct:edible:32>);      	          #Purple Slime drop
+registerFood(<tconstruct:edible:33>,1,0.2,0.2,0,0,1,0,0.2,0.3);	<ore:categoryMeal>.add(<tconstruct:edible:33>);      	          #Coagulated Blood Drop
+registerFood(<tconstruct:edible:34>,1,0.2,0.2,0,0,0,0,0.2,0.3);	<ore:categoryMeal>.add(<tconstruct:edible:34>);      	          #Orange Slime Drop
+		
+registerFood(<contenttweaker:dried_fruit>,1,0,0.4,0.1,0.5,0.5,0.5,0,0);	<ore:categoryFruit>.add(<contenttweaker:dried_fruit>);      	          #Dried Fruit
+registerFood(<contenttweaker:i_vegetable_soup>,3,2,1.8,6,2,0,1,1,0);	<ore:categoryMeal>.add(<contenttweaker:i_vegetable_soup>);      	          #Vegetable Soup
+registerFood(<contenttweaker:smoothie>,1,4,0.4,6,0,0.5,0.5,0,0);	<ore:categoryMeal>.add(<contenttweaker:smoothie>);      	          #Smoothie
+registerFood(<contenttweaker:pemmican>,4,1,2.3,0,0.2,0.5,0.5,1.5,1);	<ore:categoryMeal>.add(<contenttweaker:pemmican>);      	          #Pemmican
+registerFood(<contenttweaker:snow_cream>,3,1,1.7,6,1,0,0,0.2,2.3);	<ore:categoryMeal>.add(<contenttweaker:snow_cream>);      	          #Snow Cream
+registerFood(<contenttweaker:dried_ground_meat>,1,0,0.6,0.1,0,0,0,1,0.3);	<ore:categoryCookedMeat>.add(<contenttweaker:dried_ground_meat>);      	          #Dried Ground Meat
+registerFood(<contenttweaker:ground_meat>,1,0.2,0.6,2,0,0,0,1,0.3);	<ore:categoryMeat>.add(<contenttweaker:ground_meat>);      	          #Ground Meat
+registerFood(<contenttweaker:cookie_dough>,1,0.1,0.1,9,1.5,0,0,0,1);	<ore:categoryGrain>.add(<contenttweaker:cookie_dough>);      	registerItemHeat(<contenttweaker:cookie_dough>,1,480,false);          #Cookie Dough
+registerFood(<contenttweaker:raw_seeds>,1,0.2,0.2,0.1,0.1,0.1,0,0,0);	<ore:categoryVegetable>.add(<contenttweaker:raw_seeds>);      	registerItemHeat(<contenttweaker:raw_seeds>,1,480,false);          #Raw Seeds
+registerFood(<contenttweaker:water_glass>,1,4,0,0,0,0,0,0,0);	<ore:category>.add(<contenttweaker:water_glass>);      	          #Water Glass
+		
+registerFood(<extrabotany:friedchicken>,2,1,1,0.1,0,0.5,0,2,1.5);	<ore:categoryMeal>.add(<extrabotany:friedchicken>);      	          #Fried Chicken Leg
+registerFood(<extrabotany:gildedmashedpotato>,1,2,0.6,0,1,0,1,0.5,0);	<ore:categoryMeal>.add(<extrabotany:gildedmashedpotato>);      	          #Gilded Mashed Potatos
+registerFood(<extrabotany:manadrink>,1,3,0.4,0,0,0.6,0,0,0);	<ore:categoryMeal>.add(<extrabotany:manadrink>);      	          #Mana Cocktail
+registerFood(<extrabotany:candy>,1,0,0.3,0,0.2,0,0,0,0.3);	<ore:categoryMeal>.add(<extrabotany:candy>);      	          #Candy Eins
+registerFood(<extrabotany:candy:1>,1,0,0.3,0,0.2,0,0,0,0.3);	<ore:categoryMeal>.add(<extrabotany:candy:1>);      	          #Candy Zwei
+registerFood(<extrabotany:candy:2>,1,0,0.3,0,0.2,0,0,0,0.3);	<ore:categoryMeal>.add(<extrabotany:candy:2>);      	          #Candy Drei
+		
+registerFood(<tconstruct:moms_spaghetti>,1,0.3,0.3,3,0.7,0,0,0,0.1);	<ore:categoryMeal>.add(<tconstruct:moms_spaghetti>);      	          #Mom's Spaghetti
+		
+registerFood(<cfm:item_flesh>,1,0,0.6,5.5,0,0,0,1.5,0);	<ore:categoryMeat>.add(<cfm:item_flesh>);      	registerItemHeat(<cfm:item_flesh>,1,480,false);          #Flesh
+registerFood(<cfm:item_flesh_cooked>,1,0,0.6,5,0,0,0,1.7,0);	<ore:categoryCookedMeat>.add(<cfm:item_flesh_cooked>);      	registerItemHeat(<cfm:item_flesh_cooked>,1,480,false);          #Cooked Flesh
+registerFood(<cfm:item_bread_slice>,1,0,0.5,2,1.5,0,0,0.1,0.5);	<ore:categoryGrain>.add(<cfm:item_bread_slice>);      	          #Bread Slice
+registerFood(<cfm:item_toast>,1,0,0.5,2.5,1.5,0,0,0.1,0.5);	<ore:categoryGrain>.add(<cfm:item_toast>);      	          #Toast
+registerFood(<cfm:item_sausage>,1,0.2,0.1,2,0,0,0,0.2,0.1);	<ore:categoryMeat>.add(<cfm:item_sausage>);      	          #Sausage
+registerFood(<cfm:item_sausage_cooked>,1,0.1,0.2,1.5,0,0,0,0.2,0.2);	<ore:categoryCookedMeat>.add(<cfm:item_sausage_cooked>);      	          #Cooked Sausage
+registerFood(<cfm:item_kebab>,1,0.5,0.1,3,0,0,0,0.1,0.2);	<ore:categoryMeat>.add(<cfm:item_kebab>);      	          #raw Kebab
+registerFood(<cfm:item_kebab_cooked>,1,1,0.3,2.25,0,0,0,0.2,0.2);	<ore:categoryCookedMeat>.add(<cfm:item_kebab_cooked>);      	          #Cooked Kebab
+		
+registerFood(<betternether:black_apple>,1,2,0.6,3.25,0.5,0,1,0,0);	<ore:categoryFruit>.add(<betternether:black_apple>);      	          #Black Apple
+registerFood(<betternether:stalagnate_bowl_wart>,3,2,1.8,3.5,1,0.2,2,0,0.3);	<ore:categoryMeal>.add(<betternether:stalagnate_bowl_wart>);      	          #Nether Wart Soup
+registerFood(<betternether:stalagnate_bowl_mushroom>,2,2,1.2,4,1,0.2,0,1,0.8);	<ore:categoryMeal>.add(<betternether:stalagnate_bowl_mushroom>);      	          #Mushroom Stew
+registerFood(<betternether:stalagnate_bowl_apple>,1,2,0.8,2,0.5,0,1,0,0);	<ore:categoryMeal>.add(<betternether:stalagnate_bowl_apple>);      	          #Black Apple Bowl
+		
+registerFood(<netherex:enoki_mushroom>,1,0.1,0.4,2.3,0,0.2,0.1,0.3,0);	<ore:categoryFruit>.add(<netherex:enoki_mushroom>);      	registerItemHeat(<netherex:enoki_mushroom>,1,480,false);          #Enori Mushroom
+registerFood(<netherex:congealed_magma_cream>,1,2,0.2,0,0,0,0,0.2,0.3);	<ore:categoryMeal>.add(<netherex:congealed_magma_cream>);      	          #Congeled Magma Cream
+registerFood(<netherex:ghast_meat_raw>,1,1,0.2,-1,0,0.3,0.5,2.5,2);	<ore:categoryMeat>.add(<netherex:ghast_meat_raw>);      	registerItemHeat(<netherex:ghast_meat_raw>,1,480,false);          #Raw Ghast Meat
+registerFood(<netherex:ghast_meat_cooked>,1,2,0.8,-1,0,0,0.5,2.5,2);	<ore:categoryCookedMeat>.add(<netherex:ghast_meat_cooked>);      	registerItemHeat(<netherex:ghast_meat_cooked>,1,480,false);          #Cooked Ghast Meat          #Cooked Ghast Meat   #Cooked Ghast Meat        #Cooked Ghast Meat
 
-registerFood(<minecraft:mushroom_stew>,[1,0.8,1,0,0.2],1.2,2,6);	          #mushroom stew
-registerFood(<minecraft:fish:1>,[0,0.2,2,0,0],0.2,1,3);	registerItemHeat(<minecraft:fish:1>,1,480,false);          #raw salmon
-registerFood(<minecraft:fish:2>,[0,0.2,2,0,0],0.2,1,3);	registerItemHeat(<minecraft:fish:2>,1,480,false);          #clownfish
-registerFood(<minecraft:fish:3>,[0,0.1,1,0,2],0.2,1,3);	          #pufferfish
-registerFood(<minecraft:cooked_fish:1>,[0,0,2,0,0],0.6,2,2.25);	registerItemHeat(<minecraft:cooked_fish:1>,1,480,false);          #cooked salmon
-registerFood(<minecraft:cookie>,[1.5,1,0,0,0],0.2,0,0.8);	          #cookie
-registerFood(<minecraft:melon>,[0,0,0,1,0],0.4,1,4);	          #melon
-registerFood(<minecraft:spider_eye>,[0,0,0,0,0.2],0.1,1,3);	          #spider eye
-registerFood(<minecraft:baked_potato>,[1,0,0.5,1,0],0.9,1.5,5);	registerItemHeat(<minecraft:baked_potato>,1,480,false);  registerItemHeat(<tfc:food/potato>,1,480,false);        #baked potato
-registerFood(<minecraft:poisonous_potato>,[1,0,0,0,2],0,3,2);	          #poisonous potato
-registerFood(<minecraft:pumpkin_pie>,[3.6,3,1.7,0,0],1.8,1,4);	          #pumpkin pie
-registerFood(<minecraft:rabbit_stew>,[0.2,0.5,1.5,2,2],1.8,5,5);	          #rabbit stew
-registerFood(<minecraft:chorus_fruit>,[0,0,0,0.1,0.2],0.1,0.1,1.3);	          #chorus fruit
-registerFood(<minecraft:beetroot_soup>,[2,0,1.5,4,0],2,3,5);	          #beetroot soup
-	
-registerFood(<foodexpansion:itemjelly>,[0,0.2,0.1,0.1,0.1],0.2,1,1);	          #green jelly
-registerFood(<foodexpansion:itembacon>,[0,1,1.2,0,0],0.1,0.5,3);	registerItemHeat(<foodexpansion:itembacon>,1,480,false);          #bacon
-registerFood(<foodexpansion:itemcookedbacon>,[0,1,1,0,0],0.4,0.1,1.5);	registerItemHeat(<foodexpansion:itemcookedbacon>,1,480,false);          #crispy bacon
-registerFood(<foodexpansion:itembaconandegg>,[2,3,2.5,0,1],1,0.1,1.5);	          #bacon and egg
-registerFood(<foodexpansion:itemcarrotseedsoup>,[1,0,1,3,1],1.8,3,6);	          #carrot soup
-registerFood(<foodexpansion:itemcompressedflesh>,[0,0.3,2.1,0,0.1],0.4,0,0.4);	          #salted flesh
-registerFood(<foodexpansion:itemchocolatebar>,[0.3,0.4,0.1,0,0],0.7,0,0.1);	          #chocolate bar
-registerFood(<foodexpansion:itemspidersoup>,[1,0.2,0,2,0.3],1.7,3,3);	          #spider eye stew
-registerFood(<foodexpansion:itemnetherwartsoup>,[1,0.3,0,2,0.2],1.8,2,3);	          #nether wart stew
-registerFood(<foodexpansion:itemcactusfruit>,[0,0,0,0.1,0.1],0.2,3,1.3);	          #cactus fruit
-registerFood(<foodexpansion:itemcookedmushroom>,[0,0,0.3,0.1,0.2],0.4,0.1,2.3);	registerItemHeat(<foodexpansion:itemcookedmushroom>,1,480,false);          #cooked mushroom
-registerFood(<foodexpansion:itemcarrotpie>,[0.3,0.5,0.1,0.2,0],1.4,0.2,4);	          #carrot cake
-registerFood(<foodexpansion:itembatwing>,[0,0.2,1,0,0],0.2,0.5,3);	registerItemHeat(<foodexpansion:itembatwing>,1,480,false);          #bat wing
-registerFood(<foodexpansion:itemcookedbatwing>,[0,0.2,1.5,0,0],0.6,1,2);	registerItemHeat(<foodexpansion:itemcookedbatwing>,1,180,false);          #cooked bat wing
-registerFood(<foodexpansion:itemblazecream>,[0.2,0.3,0.4,0,1],1.6,0.2,2);	          #blaze cream soup
-registerFood(<foodexpansion:itemmelonsalad>,[0,0,0,2,0],1.2,1.4,5);	          #melon salad
-registerFood(<foodexpansion:itemroastedseed>,[0.1,0.1,0.1,0.1,0],0.3,0,1);	registerItemHeat(<foodexpansion:itemroastedseed>,1,480,false);          #roasted seed
-registerFood(<foodexpansion:itemocelotmeat>,[0,0.2,1.2,0,0],0.2,1,3);	registerItemHeat(<foodexpansion:itemocelotmeat>,1,480,false);          #ocelot meat
-registerFood(<foodexpansion:itemcookedocelotmeat>,[0,0.2,1.7,0,0],0.6,1,2.25);	registerItemHeat(<foodexpansion:itemcookedocelotmeat>,1,480,false);          #cooked ocelot meat
-registerFood(<foodexpansion:itemlollipop>,[0.1,0.1,0,0,0],0.4,0,0.1);	          #lollipop
-registerFood(<foodexpansion:itembeetrootnoodles>,[2,0,1,3,0.1],1.6,1,4);	registerItemHeat(<foodexpansion:itembeetrootnoodles>,1,480,false);          #beetroot noodles
-registerFood(<foodexpansion:itemparrotmeat>,[0,2,2.5,0,0],0.2,1,3);	registerItemHeat(<foodexpansion:itemparrotmeat>,1,480,false);          #raw parrot
-registerFood(<foodexpansion:itemcookedparrotmeat>,[0,2,2.5,0,0],0.8,2,2.25);	registerItemHeat(<foodexpansion:itemcookedparrotmeat>,1,480,false);          #cooked parrot
-registerFood(<foodexpansion:itemllamameat>,[0,0.5,2.5,0,0],0.2,1,2);	registerItemHeat(<foodexpansion:itemllamameat>,1,480,false);          #raw llama
-registerFood(<foodexpansion:itemcookedllamameat>,[0,0.5,2.5,0,0],0.8,2,1.5);	registerItemHeat(<foodexpansion:itemcookedllamameat>,1,480,false);          #llama steak
-registerFood(<foodexpansion:itempolarbearmeat>,[0,2.5,2.5,0.5,0],0.2,1,2);	registerItemHeat(<foodexpansion:itempolarbearmeat>,1,480,false);          #raw polar bear
-registerFood(<foodexpansion:itemcookedpolarbearmeat>,[0,2.3,2.5,0.5,0],0.8,2,1.5);	registerItemHeat(<foodexpansion:itemcookedpolarbearmeat>,1,480,false);          #polar bear steak
-	
-registerFood(<inspirations:edibles>,[0,0,0,1,0.3],0.6,3,2);	          #heartbeet
-registerFood(<inspirations:potato_soup>,[1.5,3.5,2.7,3,2],2.3,2,6);	          #potato soup
-	
-registerFood(<quark:root>,[0.1,0,0,0,0.8],0.2,0.6,0.7);	          #cave root
-registerFood(<quark:root_flower>,[0.1,0,0,0,0.9],0.3,0.7,1.2);	          #blue sprout
-registerFood(<quark:root_flower:1>,[0.1,0,0,0,0.9],0.3,0.7,1.2);	          #black sprout
-registerFood(<quark:root_flower:2>,[0.1,0,0,0,0.9],0.3,0.7,1.2);	          #white sprout
-registerFood(<quark:frog_leg>,[0,0,1,0,0],0.2,1,3);	registerItemHeat(<quark:frog_leg>,1,480,false);          #frog leg
-registerFood(<quark:cooked_frog_leg>,[0,0,1,0,0],0.4,1,2.25);	registerItemHeat(<quark:cooked_frog_leg>,1,480,false);          #cooked frog leg
-registerFood(<quark:golden_frog_leg>,[0,0,1,0,1],0.2,0,2.25);	          #golden frog leg
-registerFood(<quark:crab_leg>,[0,0,1.2,0,0],0.2,1,3);	registerItemHeat(<quark:crab_leg>,1,480,false);          #crab leg
-registerFood(<quark:cooked_crab_leg>,[0,0,1.4,0,0],0.4,1,2.25);	registerItemHeat(<quark:cooked_crab_leg>,1,480,false);          #cooked crab leg
-	
-registerFood(<emergingtechnology:algaebarcooked>,[0,0,0.1,0.4,0.2],0.6,1,0.4);	registerItemHeat(<emergingtechnology:algaebarcooked>,1,480,false);          #Cooked Algae Bar
-	
-registerFood(<forestry:fruits:1>,[0,0.4,0.1,0.2,0],0.1,0,0.1);	          #walnut
-registerFood(<forestry:fruits:2>,[0,0.3,0.1,0.2,0],0.1,0,0.1);	          #chestnut
-registerFood(<forestry:fruits:5>,[0,0,0,0.4,0],0.4,3.2,4);	          #date
-registerFood(<forestry:fruits:6>,[0,0,0,0.3,0],0.4,3,4);	          #papaya
-registerFood(<forestry:honeyed_slice>,[2,0.5,0.5,0.2,0],1,0,0.6);	          #honeyed slice
-registerFood(<forestry:ambrosia>,[0,0,0.1,0,0.1],1,0.2,0);	          #Ambrosia
-registerFood(<forestry:honey_pot>,[0,0,0.1,0,0.1],1,0.2,0);	          #Honey pot
-	
-registerFood(<nuclearcraft:graham_cracker>,[0.2,0.1,0,0,0],0.3,0,0.8);	          #Graham Cracker
-registerFood(<nuclearcraft:dominos>,[2,0.5,2.5,1,2],3,0.3,2);	registerItemHeat(<nuclearcraft:dominos>,1,480,false);          #Domino's Special
-registerFood(<nuclearcraft:ground_cocoa_nibs>,[0.1,0.2,0.1,0,0],0.1,0,0.1);	          #Ground Cocoa Nibs
-registerFood(<nuclearcraft:cocoa_butter>,[0.3,0.5,0.1,0,0],0.3,0,0.1);	          #Solidified Cocoa Butter
-registerFood(<nuclearcraft:unsweetened_chocolate>,[0.2,0.3,0.1,0,0],0.4,0,0.1);	          #Unsweetened Chocolate
-registerFood(<nuclearcraft:dark_chocolate>,[0.2,0.3,0.1,0,0],0.3,0,0.1);	          #Dark Chocolate
-registerFood(<nuclearcraft:milk_chocolate>,[0.3,0.5,0.1,0,0],0.4,0,0.1);	          #Milk Chocolate
-registerFood(<nuclearcraft:marshmallow>,[0,0.4,0.2,0,0],0.7,0.2,0.3);	          #Marshmallow
-registerFood(<nuclearcraft:smore>,[0.5,0.8,0.2,0,0.1],1.3,0.2,2);	          #S'more S'mingot
-registerFood(<nuclearcraft:moresmore>,[1,1.6,0.4,0,0.2],2.3,0.4,2);	          #MoreS'more Double
-	
-registerFood(<rustic:cloudsbluff>,[0,0,0,0.1,0.2],0.1,0.1,1.3);	          #Clouds Bluff
-registerFood(<rustic:core_root>,[0.1,0,0,0,0.8],0.2,0.6,0.7);	          #Core Root
-registerFood(<rustic:ginseng>,[0.1,0,0,0,0.8],0.2,0.6,0.7);	          #Ginseng Root
-registerFood(<rustic:marsh_mallow>,[0.1,0,0,0,0.8],0.2,0.6,0.7);	          #Marsh Mallow Root
-registerFood(<rustic:ironberries>,[0,0,0,0,0.3],0.3,2,0.7);	          #Iron Berries
-registerFood(<rustic:chili_pepper>,[0,0,0,1,0],0.4,3,2.5);	          #Chili Pepper
-registerFood(<rustic:grapes>,[0,0,0,0.5,0],0.4,5,4.25);	          #Grapes
-registerFood(<rustic:wildberries>,[0,0,0,0.5,0],0.4,5,4.25);	          #WildBerry
-	
-registerFood(<tconstruct:edible:1>,[0,0.3,0.2,0,0],0.2,2,0);	          #Slimeball cyan
-registerFood(<tconstruct:edible:2>,[0,0.3,0.2,0,0],0.2,2,0);	          #Slimeball purple
-registerFood(<tconstruct:edible:3>,[0,0.3,0.2,0,1],0.2,2,0);	          #Coagulated Blood
-registerFood(<tconstruct:edible:4>,[0,0.3,0.2,0,0],0.2,2,0);	          #Slimeball orange
-registerFood(<tconstruct:edible:10>,[0,0,1,0,0],0.6,0,0.1);	          #Monster Jerky
-registerFood(<tconstruct:edible:11>,[0,0.5,2,0,0],0.8,0,0.1);	          #Beef Jerky
-registerFood(<tconstruct:edible:12>,[0,0,2,0,0],0.6,0,0.1);	          #Chicken Jerky
-registerFood(<tconstruct:edible:13>,[0,0.5,2,0,0],0.4,0,0.1);	          #Bacon Jerky
-registerFood(<tconstruct:edible:14>,[0,0.5,2,0,0],0.8,0,0.1);	          #Mutton Jerky
-registerFood(<tconstruct:edible:15>,[0,0,1,0,0],0.6,0,0.1);	          #Rabbit jerky
-registerFood(<tconstruct:edible:20>,[0,0,1.5,0,0],0.6,0,0.1);	          #Fish Jerky
-registerFood(<tconstruct:edible:21>,[0,0,1.5,0,0],0.6,0,0.1);	          #Salmon Jerky
-registerFood(<tconstruct:edible:22>,[0,0,1.5,0,0],0.6,0,0.1);	          #Clownfish Jerky
-registerFood(<tconstruct:edible:23>,[0,0,1,0,0],0.6,0,0.1);	          #Fugu Jerky
-registerFood(<tconstruct:edible:30>,[0,0.3,0.2,0,0],0.2,0.2,0);	          #Green Slime Drop
-registerFood(<tconstruct:edible:31>,[0,0.3,0.2,0,0],0.2,0.2,0);	          #Cyan Slime drop
-registerFood(<tconstruct:edible:32>,[0,0.3,0.2,0,0],0.2,0.2,0);	          #Purple Slime drop
-registerFood(<tconstruct:edible:33>,[0,0.3,0.2,0,1],0.2,0.2,0);	          #Coagulated Blood Drop
-registerFood(<tconstruct:edible:34>,[0,0.3,0.2,0,0],0.2,0.2,0);	          #Orange Slime Drop
-	
-registerFood(<contenttweaker:dried_fruit>,[0.5,0,0,0.5,0.5],0.4,0,0.1);	          #Dried Fruit
-registerFood(<contenttweaker:i_vegetable_soup>,[2,0,1,1,0],1.8,2,6);	          #Vegetable Soup
-registerFood(<contenttweaker:smoothie>,[0,0,0,0.5,0.5],0.4,4,6);	          #Smoothie
-registerFood(<contenttweaker:pemmican>,[0.2,1,1.5,0.5,0.5],2.3,1,0);	          #Pemmican
-registerFood(<contenttweaker:snow_cream>,[1,2.3,0.2,0,0],1.7,1,6);	          #Snow Cream
-registerFood(<contenttweaker:dried_ground_meat>,[0,0.3,1,0,0],0.6,0,0.1);	          #Dried Ground Meat
-registerFood(<contenttweaker:ground_meat>,[0,0.3,1,0,0],0.6,0.2,2);	          #Ground Meat
-registerFood(<contenttweaker:cookie_dough>,[1.5,1,0,0,0],0.1,0.1,9);	registerItemHeat(<contenttweaker:cookie_dough>,1,480,false);          #Cookie Dough
-registerFood(<contenttweaker:raw_seeds>,[0.1,0,0,0,0.1],0.2,0.2,0.1);	registerItemHeat(<contenttweaker:raw_seeds>,1,480,false);          #Raw Seeds
-registerFood(<contenttweaker:water_glass>,[0,0,0,0,0],0,4,0);	          #Water Glass
-	
-registerFood(<extrabotany:friedchicken>,[0,1.5,2,0,0.5],1,1,0.1);	          #Fried Chicken Leg
-registerFood(<extrabotany:gildedmashedpotato>,[1,0,0.5,1,0],0.6,2,0);	          #Gilded Mashed Potatos
-registerFood(<extrabotany:manadrink>,[0,0,0,0,0.6],0.4,3,0);	          #Mana Cocktail
-registerFood(<extrabotany:candy>,[0.2,0.3,0,0,0],0.3,0,0);	          #Candy Eins
-registerFood(<extrabotany:candy:1>,[0.2,0.3,0,0,0],0.3,0,0);	          #Candy Zwei
-registerFood(<extrabotany:candy:2>,[0.2,0.3,0,0,0],0.3,0,0);	          #Candy Drei
-registerFood(<tconstruct:moms_spaghetti>,[0.7,0.1,0,0,0],0.3,0.3,3);	          #Mom's Spaghetti
-
-registerFood(<cfm:item_flesh>,[0,0,1.5,0,0],0.6,0,5.5);	registerItemHeat(<cfm:item_flesh>,1,480,false);          #Flesh
-registerFood(<cfm:item_flesh_cooked>,[0,0,1.7,0,0],0.6,0,5);	registerItemHeat(<cfm:item_flesh_cooked>,1,480,false);          #Cooked Flesh
-registerFood(<cfm:item_bread_slice>,[1.5,0.5,0.1,0,0],0.5,0,2);	          #Bread Slice
-registerFood(<cfm:item_toast>,[1.5,0.5,0.1,0,0],0.5,0,2.5);	          #Toast
-registerFood(<cfm:item_sausage>,[0,0.1,0.2,0,0],0.1,0.2,2);	          #Sausage
-registerFood(<cfm:item_sausage_cooked>,[0,0.2,0.2,0,0],0.2,0.1,1.5);	          #Cooked Sausage
-registerFood(<cfm:item_kebab>,[0,0.2,0.1,0,0],0.1,0.5,3);	          #raw Kebab
-registerFood(<cfm:item_kebab_cooked>,[0,0.2,0.2,0,0],0.3,1,2.25);	          #Cooked Kebab
-
-registerFood(<betternether:black_apple>,[0.5,0,0,1,0],0.6,2,3.25);	          #Black Apple
-registerFood(<betternether:stalagnate_bowl_wart>,[1,0.3,0,2,0.2],1.8,2,3.5);	          #Nether Wart Soup
-registerFood(<betternether:stalagnate_bowl_mushroom>,[1,0.8,1,0,0.2],1.2,2,4);	          #Mushroom Stew
-registerFood(<betternether:stalagnate_bowl_apple>,[0.5,0,0,1,0],0.8,2,2);	          #Black Apple Bowl
-	
-registerFood(<netherex:enoki_mushroom>,[0,0,0.3,0.1,0.2],0.4,0.1,2.3);  registerItemHeat(<netherex:enoki_mushroom>,1,480,false);          #Enori Mushroom
-registerFood(<netherex:congealed_magma_cream>,[0,0.3,0.2,0,0],0.2,2,0);	          #Congeled Magma Cream
-registerFood(<netherex:ghast_meat_raw>,[0,2,2.5,0.5,0.3],0.2,1,-1);	registerItemHeat(<netherex:ghast_meat_raw>,1,480,false);          #Raw Ghast Meat
-registerFood(<netherex:ghast_meat_cooked>,[0,2,2.5,0.5,0],0.8,2,-1);	registerItemHeat(<netherex:ghast_meat_cooked>,1,480,false);          #Cooked Ghast Meat
+registerFood(<integrateddynamics:menril_berries>,1,5,0.4,4.25,0,0,0.5,0,0);	<ore:categoryFruit>.add(<integrateddynamics:menril_berries>);      	          #Menril Berries
 #=============================================================================================================================================		
 
 #Heating.addRecipe(String registryName, IItemStack input, IItemStack output, float transformTemp, float maxTemp);
