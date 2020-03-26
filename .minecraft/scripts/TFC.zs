@@ -8,7 +8,7 @@ import crafttweaker.item.IItemCondition;
 //Fuels BROKEN AT THE TIME TFC ISSUE NOT ZS 
 mods.terrafirmacraft.ItemRegistry.registerFuel(<minecraft:blaze_powder>, 1800, 1350, true, false);
 mods.terrafirmacraft.ItemRegistry.registerFuel(<minecraft:coal_block>, 19800, 1415, true, false);
-mods.terrafirmacraft.ItemRegistry.registerFuel(<forestry:charcoal>, 16200, 1350, true, true);
+mods.terrafirmacraft.ItemRegistry.registerFuel(<tcomplement:storage>, 16200, 1350, true, true);
 mods.terrafirmacraft.ItemRegistry.registerFuel(<immersiveengineering:material:6>, 4400, 1500, true, true);
 mods.terrafirmacraft.ItemRegistry.registerFuel(<immersiveengineering:stone_decoration:3>, 39600, 1500, true, true);
 mods.terrafirmacraft.ItemRegistry.registerFuel(<minecraft:coal>, 2200, 1415, true, false);

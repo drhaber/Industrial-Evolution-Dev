@@ -1,3 +1,8 @@
+import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
+import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.mods.IMod;
+import crafttweaker.liquid.ILiquidStack;
 import moretweaker.railcraft.RollingMachine;
 
 //Bucket
@@ -11,12 +16,13 @@ recipes.addShaped(<minecraft:stained_glass:15>*8,[
 	[<minecraft:glass>,<ore:dyeBlack>,<minecraft:glass>],
 	[<minecraft:glass>,<minecraft:glass>,<minecraft:glass>]]);
 //Coal Block
-val CO = <ore:coal>;
-recipes.addShapeless(<tfc:ore/bituminous_coal>*9,[<minecraft:coal_block>]);
+val Coals = [<tfc:ore/bituminous_coal>,<minecraft:coal>] as IItemStack[];
+for CO in Coals{
 recipes.addShaped(<minecraft:coal_block>,[
 	[CO,CO,CO],
 	[CO,CO,CO],
 	[CO,CO,CO]]);
+}	
 //Vanilla Chest
 recipes.remove(<minecraft:chest>);
 recipes.addShaped(<minecraft:chest>,[

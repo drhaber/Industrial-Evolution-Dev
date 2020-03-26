@@ -5,6 +5,7 @@ import crafttweaker.mods.IMod;
 import crafttweaker.liquid.ILiquidStack;
 import mods.tfctech.WireDrawing;
 
+
 //Gun Grip
 recipes.remove(<immersiveengineering:material:13>);
 recipes.addShaped(<immersiveengineering:material:13>,[
@@ -21,10 +22,16 @@ mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust:7>, <tfc:ore/magn
 mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust:6>, <tfc:ore/spodumene>, 2048);
 
 mods.immersiveengineering.CokeOven.addRecipe( <immersiveengineering:material:6>, 500,<tfc:ore/bituminous_coal>, 2000);
+//Treated Wood and products
 #mods.terrafirmacraft.Barrel.addRecipe("Hemp_Fibre", <tfc:crop/product/jute_fiber>, <liquid:creosote>*10, <immersiveengineering:material:4>, <liquid:creosote>*8, 4);
-mods.terrafirmacraft.Barrel.addRecipe("Treated_Lumber", <ore:lumber>, <liquid:creosote>*250, <contenttweaker:treatedlumber>, <liquid:creosote>*150, 4);
-mods.terrafirmacraft.Barrel.addRecipe("Treated_Stick", <ore:stickWood>, <liquid:creosote>*50, <immersiveengineering:material>, <liquid:creosote>*25, 4);
-mods.terrafirmacraft.Barrel.addRecipe("Treated_String", <ore:string>, <liquid:creosote>*50, <contenttweaker:creosote_string>, <liquid:creosote>*25, 4);
+mods.terrafirmacraft.Barrel.addRecipe("Treated_Lumber", <ore:lumber>, <liquid:creosote>*100, <contenttweaker:treatedlumber>, 4);
+mods.terrafirmacraft.Barrel.addRecipe("Treated_Stick", <ore:stickWood>, <liquid:creosote>*25, <immersiveengineering:material>, 4);
+mods.terrafirmacraft.Barrel.addRecipe("Treated_String", <ore:string>, <liquid:creosote>*25, <contenttweaker:creosote_string>, 4);
+mods.terrafirmacraft.Barrel.addRecipe("Treated_planks", <ore:plankWood>, <liquid:creosote>*125, <immersiveengineering:treated_wood>, 4);
+
+recipes.removeShaped(<immersiveengineering:treated_wood>*8);
+recipes.removeShaped(<engineersdecor:treated_wood_pole>);
+mods.terrafirmacraft.Barrel.addRecipe("Treated_Pole",<ore:support>, <liquid:creosote>*125, <engineersdecor:treated_wood_pole>, 4);
 
 //Thermoelectric Generator
 recipes.remove(<immersiveengineering:metal_device1:3>);

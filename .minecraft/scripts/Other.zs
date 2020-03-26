@@ -28,6 +28,12 @@ mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx4_aluminium", <tfctech:metal/al
 
 mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx6", <tfctech:metal/titanium_strip>, <jaff:iron_hook>*6, 6, "general","BEND_NOT_LAST","HIT_NOT_LAST","HIT_LAST");
 
+//Charcoal Blocks
+recipes.remove(<chisel:block_charcoal>);
+recipes.remove(<chisel:block_charcoal1>);
+recipes.remove(<chisel:block_charcoal2>);
+recipes.remove(<chisel:block_charcoal2:1>);
+recipes.remove(<forestry:charcoal>);
 //Crushed Ice
 mods.rustic.CrushingTub.addRecipe(<liquid:ice>*250, null, <minecraft:snowball>);
 //Alchemy Bag
@@ -254,7 +260,6 @@ recipes.addShaped(<projectred-transmission:wire>*12,[
 	[null,<tfctech:metal/red_alloy_wire>,null],
 	[<tfctech:metal/red_alloy_wire>,<tfctech:metal/red_alloy_wire>,<tfctech:metal/red_alloy_wire>],
 	[null,<tfctech:metal/red_alloy_wire>,null]]);
-furnace.addRecipe(<projectred-core:resource_item>*2, <ore:stone>);
 mods.jei.JEI.removeAndHide(<projectred-transmission:wire:34>, false);
 mods.jei.JEI.removeAndHide(<projectred-transmission:framed_wire:34>, false);
 mods.jei.JEI.removeAndHide(<projectred-core:resource_item:252>, false);
@@ -273,6 +278,12 @@ mods.jei.JEI.hide(<projectred-core:resource_item:102>);
 mods.jei.JEI.hide(<projectred-core:resource_item:100>);
 mods.jei.JEI.hide(<projectred-core:resource_item:600>);
 
+//Circuit Plates
+furnace.remove(<projectred-core:resource_item>);
+RollingMachine.addShaped(<projectred-core:resource_item>*2,[[<ore:ingotBrick>,<ore:ingotBrick>],[<ore:ingotBrick>,<ore:ingotBrick>]], 300);
+
+//Sandy Coal
+mods.pneumaticcraft.pressurechamber.addRecipe([<ore:gemCoal>,<ore:sand>], 1.75, [<projectred-core:resource_item:250>]);
 //Silicon
 recipes.addShapeless(<projectred-core:resource_item:301> * 4, [<ore:sawII>.transformDamage(3), <projectred-core:resource_item:300>]);
 recipes.addShapeless(<projectred-core:resource_item:301> * 6, [<ore:sawIII>.transformDamage(5), <projectred-core:resource_item:300>]);

@@ -1,0 +1,26 @@
+
+//Set the icon item
+setIcon(<contenttweaker:ceramic_insulator>)
+
+//Set the title String
+setTitle("TerraFirmaProgressive")
+
+//Set the description String
+setDescription("Acquire an Item that Wahazar created")
+
+//Add a parent advancement. The syntax is "modid:folder/path/to/the/advancement/then/filename"
+addParent("triumph:credits/root")
+
+//Set the position
+setPos(149,41)
+
+//Hide the connection lines, so I can have a pretty shape
+hideLines()
+
+//Adds criteria named ("HasCeramicInsulator", with the trigger type "minecraft:inventory_changed". This function returns the criteria as an object
+criteria = addCriteria("HasCeramicInsulator", "minecraft:inventory_changed")
+
+//Sets the item for the criteria. This is the item that needs to be crafted.
+criteria.setItem(<contenttweaker:ceramic_insulator>)
+
+//By not setting anything about requirements here, all criteria are automatically required
