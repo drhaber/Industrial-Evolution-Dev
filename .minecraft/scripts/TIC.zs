@@ -3,6 +3,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.liquid.ILiquidStack;
 
+/*
 //Piggy Back Pack
 recipes.remove(<tconstruct:piggybackpack>);
 recipes.addShaped(<tconstruct:piggybackpack>,[
@@ -97,6 +98,7 @@ val crystalBlocks = <quark:crystal>.definition;
 for i in 0 to 9{
 mods.tconstruct.Casting.addBasinRecipe(crystalBlocks.makeStack(i), ReducedDyes[i], <liquid:quartz>, 125, true, 180);
 }
+
 mods.tconstruct.Melting.addRecipe(<liquid:quartz>*666,<ore:dustQuartz>);
 //Botania
 	mods.tconstruct.Melting.addRecipe(<liquid:elementium> * 1296, <botania:storage:2>);
@@ -437,6 +439,7 @@ mods.tconstruct.Casting.addBasinRecipe(anvil, <contenttweaker:anvilmold>, molten
 }
 #=============================================================================================================================================		
 
+
 //Alloys
 //mods.tconstruct.Alloy.addRecipe(ILiquidStack output, ILiquidStack[] inputs);
 
@@ -485,3 +488,5 @@ mods.tconstruct.Alloy.addRecipe(<liquid:tungsten_steel>*144, [<liquid:tungsten>*
 mods.tconstruct.Alloy.addRecipe(<liquid:mithril>*144, [<liquid:antimony>*144,<liquid:copper>*864]);
 #=============================================================================================================================================		
 
+
+*/

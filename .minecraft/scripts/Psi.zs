@@ -33,7 +33,7 @@ recipes.addShaped(<psi:cad_assembly>,[ #Iron
 	[GunBarrel,GunBarrel,<ore:scaleDragonEnder>],
 	[null,<ore:button>,GunHandle]]);
 
-mods.tconstruct.Casting.addTableRecipe(<psi:cad_assembly:1>, <psi:cad_assembly>, <liquid:gold>, 288, true, 180); #Gold
+#mods.tconstruct.Casting.addTableRecipe(<psi:cad_assembly:1>, <psi:cad_assembly>, <liquid:gold>, 288, true, 180); #Gold
 
 recipes.addShaped(<psi:cad_assembly:2>,[ #Psi Metal
 	[<psi:material:1>,<psi:material:1>,<psi:material:1>],

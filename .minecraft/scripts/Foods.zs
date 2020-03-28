@@ -13,6 +13,7 @@ recipes.addShapeless(<foodexpansion:itembaconandegg>,[<ore:foodCookedegg>,<foode
 
 furnace.remove(<minecraft:bread>);
 
+/*
 //Jerky
 mods.jei.JEI.removeAndHide(<foodexpansion:itemdough>);
 <foodexpansion:itemcompressedflesh>.displayName = "Salted Flesh";
@@ -25,7 +26,7 @@ mods.tconstruct.Drying.removeRecipe(J);
 mods.tconstruct.Drying.addRecipe(J,JerkyInputs[i], 6000);
 }
 mods.tconstruct.Drying.addRecipe(<contenttweaker:dried_ground_meat>,<contenttweaker:ground_meat>, 6000);
-
+*/
 
 #=============================================================================================================================================		
 //Food Recipes
@@ -223,7 +224,7 @@ registerFood(<rustic:ironberries>,1,2,0.3,0.7,0,0.3,0,0,0);	<ore:categoryFruit>.
 registerFood(<rustic:chili_pepper>,1,3,0.4,2.5,0,0,1,0,0);	<ore:categoryVegetable>.add(<rustic:chili_pepper>);      	          #Chili Pepper
 registerFood(<rustic:grapes>,1,5,0.4,4.25,0,0,0.5,0,0);	<ore:categoryFruit>.add(<rustic:grapes>);      	          #Grapes
 registerFood(<rustic:wildberries>,1,5,0.4,4.25,0,0,0.5,0,0);	<ore:categoryFruit>.add(<rustic:wildberries>);      	          #WildBerry
-		
+/*		
 registerFood(<tconstruct:edible:1>,1,2,0.2,0,0,0,0,0.2,0.3);	<ore:category>.add(<tconstruct:edible:1>);      	          #Slimeball cyan
 registerFood(<tconstruct:edible:2>,1,2,0.2,0,0,0,0,0.2,0.3);	<ore:category>.add(<tconstruct:edible:2>);      	          #Slimeball purple
 registerFood(<tconstruct:edible:3>,1,2,0.2,0,0,1,0,0.2,0.3);	<ore:category>.add(<tconstruct:edible:3>);      	          #Coagulated Blood
@@ -243,7 +244,7 @@ registerFood(<tconstruct:edible:31>,1,0.2,0.2,0,0,0,0,0.2,0.3);	<ore:categoryMea
 registerFood(<tconstruct:edible:32>,1,0.2,0.2,0,0,0,0,0.2,0.3);	<ore:categoryMeal>.add(<tconstruct:edible:32>);      	          #Purple Slime drop
 registerFood(<tconstruct:edible:33>,1,0.2,0.2,0,0,1,0,0.2,0.3);	<ore:categoryMeal>.add(<tconstruct:edible:33>);      	          #Coagulated Blood Drop
 registerFood(<tconstruct:edible:34>,1,0.2,0.2,0,0,0,0,0.2,0.3);	<ore:categoryMeal>.add(<tconstruct:edible:34>);      	          #Orange Slime Drop
-		
+*/		
 registerFood(<contenttweaker:dried_fruit>,1,0,0.4,0.1,0.5,0.5,0.5,0,0);	<ore:categoryFruit>.add(<contenttweaker:dried_fruit>);      	          #Dried Fruit
 registerFood(<contenttweaker:i_vegetable_soup>,3,2,1.8,6,2,0,1,1,0);	<ore:categoryMeal>.add(<contenttweaker:i_vegetable_soup>);      	          #Vegetable Soup
 registerFood(<contenttweaker:smoothie>,1,4,0.4,6,0,0.5,0.5,0,0);	<ore:categoryMeal>.add(<contenttweaker:smoothie>);      	          #Smoothie
@@ -262,7 +263,7 @@ registerFood(<extrabotany:candy>,1,0,0.3,0,0.2,0,0,0,0.3);	<ore:categoryMeal>.ad
 registerFood(<extrabotany:candy:1>,1,0,0.3,0,0.2,0,0,0,0.3);	<ore:categoryMeal>.add(<extrabotany:candy:1>);      	          #Candy Zwei
 registerFood(<extrabotany:candy:2>,1,0,0.3,0,0.2,0,0,0,0.3);	<ore:categoryMeal>.add(<extrabotany:candy:2>);      	          #Candy Drei
 		
-registerFood(<tconstruct:moms_spaghetti>,1,0.3,0.3,3,0.7,0,0,0,0.1);	<ore:categoryMeal>.add(<tconstruct:moms_spaghetti>);      	          #Mom's Spaghetti
+#registerFood(<tconstruct:moms_spaghetti>,1,0.3,0.3,3,0.7,0,0,0,0.1);	<ore:categoryMeal>.add(<tconstruct:moms_spaghetti>);      	          #Mom's Spaghetti
 		
 registerFood(<cfm:item_flesh>,1,0,0.6,5.5,0,0,0,1.5,0);	<ore:categoryMeat>.add(<cfm:item_flesh>);      	registerItemHeat(<cfm:item_flesh>,1,480,false);          #Flesh
 registerFood(<cfm:item_flesh_cooked>,1,0,0.6,5,0,0,0,1.7,0);	<ore:categoryCookedMeat>.add(<cfm:item_flesh_cooked>);      	registerItemHeat(<cfm:item_flesh_cooked>,1,480,false);          #Cooked Flesh

@@ -56,7 +56,7 @@ mods.botania.PureDaisy.addRecipe(<ore:tfcDirt>,<minecraft:dirt>);
 mods.botania.PureDaisy.addRecipe(<ore:tfcGrass>,<minecraft:grass>);
 mods.botania.PureDaisy.addRecipe(<ore:tfcCobblestone>,<minecraft:cobblestone>);
 //AE2 Conversions
-mods.botania.ManaInfusion.addInfusion(<appliedenergistics2:sky_stone_block>, <tconstruct:seared>, 10000);
+#mods.botania.ManaInfusion.addInfusion(<appliedenergistics2:sky_stone_block>, <tconstruct:seared>, 10000);
 #mods.botania.ManaInfusion.addInfusion(<contenttweaker:potion_bottle_lingering>, <contenttweaker:splashbottle>, 1000);
 //Catalyst
 recipes.remove(<botania:alchemycatalyst>);

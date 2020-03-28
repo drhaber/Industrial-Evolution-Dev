@@ -125,10 +125,12 @@ mods.forestry.Carpenter.addRecipe(<contenttweaker:leatherglove>*2,[
     [null,l,null]],LeatherTime, t);
 #=============================================================================================================================================		
 //Rolled Knapping Recipes
+/*
 	RollingMachine.addShaped(<tconstruct:stone_stick>*3,[
 		[null,null,<ore:rock>],
 		[null,<ore:rock>,null],
 		[<ore:rock>,null,null]]);
+		*/
 	//Igneous Intrusive
 	RollingMachine.addShaped(<tfc:stone/axe_head/igneous_intrusive>,[
 		[null,<ore:rockIgneousIntrusive>,<ore:rockIgneousIntrusive>],

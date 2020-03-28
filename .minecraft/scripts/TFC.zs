@@ -5,10 +5,10 @@ import moretweaker.railcraft.RollingMachine;
 import mods.tfctech.WireDrawing;
 import crafttweaker.item.IItemCondition;
 
-//Fuels BROKEN AT THE TIME TFC ISSUE NOT ZS 
+//Fuels
 mods.terrafirmacraft.ItemRegistry.registerFuel(<minecraft:blaze_powder>, 1800, 1350, true, false);
 mods.terrafirmacraft.ItemRegistry.registerFuel(<minecraft:coal_block>, 19800, 1415, true, false);
-mods.terrafirmacraft.ItemRegistry.registerFuel(<tcomplement:storage>, 16200, 1350, true, true);
+mods.terrafirmacraft.ItemRegistry.registerFuel(<forestry:charcoal>, 16200, 1350, true, true);
 mods.terrafirmacraft.ItemRegistry.registerFuel(<immersiveengineering:material:6>, 4400, 1500, true, true);
 mods.terrafirmacraft.ItemRegistry.registerFuel(<immersiveengineering:stone_decoration:3>, 39600, 1500, true, true);
 mods.terrafirmacraft.ItemRegistry.registerFuel(<minecraft:coal>, 2200, 1415, true, false);
@@ -99,10 +99,12 @@ recipes.addShapeless(<tfc:powder/flux>*2,[<contenttweaker:soot>,<tfctech:powder/
 mods.terrafirmacraft.ItemRegistry.registerItemHeat(<projectred-core:resource_item:250>, 0.35, 1600 , false);
 mods.terrafirmacraft.ItemRegistry.registerItemHeat(<projectred-core:resource_item:300>, 0.35, 1600 , false);
 mods.terrafirmacraft.Heating.addRecipe("Primitive_Silicon", <projectred-core:resource_item:250>, <projectred-core:resource_item:300>, 1300, 1600 );
+/*
 //Seared Brick
 mods.terrafirmacraft.ItemRegistry.registerItemHeat(<tconstruct:soil>, 1, 1599, false);
 mods.terrafirmacraft.ItemRegistry.registerItemHeat(<tconstruct:seared:1>, 1, 1599, false);
 mods.terrafirmacraft.Heating.addRecipe("Seared_Brick", <tconstruct:soil>, <tconstruct:seared:1>, 1500, 3200);
+*/
 //DTFC Conversion Recipes
 val DTFCsapling = [<dynamictreestfc:seed/acacia>,<dynamictreestfc:seed/ash>,<dynamictreestfc:seed/aspen>,
 <dynamictreestfc:seed/birch>,<dynamictreestfc:seed/blackwood>,<dynamictreestfc:seed/chestnut>,
@@ -212,13 +214,14 @@ mods.terrafirmacraft.ClayKnapping.addRecipe("Silicon_Knap", <contenttweaker:unfi
 																	"XX XX", 
 																	" XXX ", 
 																	"X X X");
-
+/*
 mods.terrafirmacraft.StoneKnapping.addRecipe("Stone_Rod", [<tconstruct:stone_stick>*2], ["all"],
 																	"    X", 
 																	"   X ", 
 																	"  X  ", 
 																	" X   ", 
 																	"X    ");
+*/
 mods.terrafirmacraft.LeatherKnapping.addRecipe("Little_Bag_Knap", <contenttweaker:leatherbag>, 
 																	"  X  ", 
 																	"XXXXX", 
@@ -294,6 +297,7 @@ recipes.remove(<inspirations:materials:2>);
 recipes.remove(<inspirations:materials:3>);
 recipes.remove(<extraalchemy:vial_break>);
 recipes.remove(<minecraft:glass_bottle>);
+/*
 //Leather Rework
 mods.terrafirmacraft.Barrel.removeRecipe(<minecraft:leather>);
 mods.terrafirmacraft.Barrel.addRecipe("tanned_hide_s", <tfc:hide/prepared/small>, <liquid:tannin>*300, <contenttweaker:tanned_small>,8);
@@ -302,3 +306,4 @@ mods.terrafirmacraft.Barrel.addRecipe("tanned_hide_l", <tfc:hide/prepared/large>
 mods.terrafirmacraft.Barrel.addRecipe("tanned_flesh", <contenttweaker:squeezed_flesh>, <liquid:tannin>*500, <contenttweaker:tanned_flesh>,8);
 mods.tconstruct.Drying.addRecipe(<minecraft:leather>,<contenttweaker:tanned_small>, 6000);
 mods.tconstruct.Drying.addRecipe(<minecraft:leather>,<contenttweaker:tanned_flesh>, 6000);
+*/

@@ -50,12 +50,12 @@ mods.jei.JEI.removeAndHide(<minecraft:wooden_axe>);
 //Leggings
 
 //Boots
-
+/*
 //Diamond Tools
 mods.tconstruct.Casting.addTableRecipe(<minecraft:diamond_sword>, <botania:manasteelsword>, <liquid:diamond>, 1332, true, 1800);
 mods.tconstruct.Casting.addTableRecipe(<minecraft:diamond_pickaxe>, <botania:manasteelpick>, <liquid:diamond>, 1998, true, 1800);
 mods.tconstruct.Casting.addTableRecipe(<minecraft:diamond_axe>, <botania:manasteelaxe>, <liquid:diamond>, 1998, true, 1800);
-
+*/
 //Diamond Shovel
 recipes.remove(<minecraft:diamond_shovel>);
 recipes.addShaped(<minecraft:diamond_shovel>,[
@@ -83,8 +83,10 @@ for i, ER in embersRecipes{
 }
 val steelTools = [<railcraft:tool_pickaxe_steel>,<railcraft:tool_axe_steel>,<railcraft:tool_shovel_steel>,<railcraft:tool_hoe_steel>,<railcraft:tool_sword_steel>,<railcraft:tool_shears_steel>,
 <railcraft:armor_helmet_steel>,<railcraft:armor_chestplate_steel>,<railcraft:armor_leggings_steel>,<railcraft:armor_boots_steel>,
-<tcomplement:steel_helmet>,<tcomplement:steel_chestplate>,<tcomplement:steel_leggings>,<tcomplement:steel_boots>] as IItemStack[];
+] as IItemStack[];
 
 for i, ST in steelTools{
 	recipes.remove(ST);
 }
+
+#<tcomplement:steel_helmet>,<tcomplement:steel_chestplate>,<tcomplement:steel_leggings>,<tcomplement:steel_boots>

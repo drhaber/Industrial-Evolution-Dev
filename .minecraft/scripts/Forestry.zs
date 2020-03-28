@@ -21,20 +21,21 @@ recipes.addShaped(<forestry:engine_clockwork>,[
 	[null,<ore:blockGlass>,null],
 	[<ore:longRodBrass>,<minecraft:piston>,<ore:longRodBrass>],
 	[<ore:sheetBrass>,<embers:winding_gears>,<ore:sheetBrass>]]);
+/*
 //Compost
 recipes.remove(<forestry:fertilizer_bio>);
 recipes.addShaped(<forestry:fertilizer_bio>*4,[
 	[<ore:itemFood>,<ore:itemFood>,<ore:itemFood>],
 	[<ore:itemFood>,<ore:dirt>,<ore:itemFood>],
 	[<ore:itemFood>,<ore:itemFood>,<ore:itemFood>]]);
-
+*/
 //Soldering Iron
 
 recipes.remove(<forestry:soldering_iron>);
 recipes.addShaped(<forestry:soldering_iron>,[
 	[<tfctech:metal/wrought_iron_rod>,null,null],
-	[null,<tfctech:metal/wrought_iron_rod>,<tconstruct:materials>],
-	[null,<tconstruct:materials>,<embers:superheater>]]);
+	[null,<tfctech:metal/wrought_iron_rod>,<tfc:ceramics/fired/fire_brick>],
+	[null,<tfc:ceramics/fired/fire_brick>,<embers:superheater>]]);
 
 //Kerosene
 mods.forestry.Still.addRecipe(<liquid:kerosene>, <liquid:oil>, 200);    

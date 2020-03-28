@@ -33,7 +33,6 @@ recipes.remove(<chisel:block_charcoal>);
 recipes.remove(<chisel:block_charcoal1>);
 recipes.remove(<chisel:block_charcoal2>);
 recipes.remove(<chisel:block_charcoal2:1>);
-recipes.remove(<forestry:charcoal>);
 //Crushed Ice
 mods.rustic.CrushingTub.addRecipe(<liquid:ice>*250, null, <minecraft:snowball>);
 //Alchemy Bag
@@ -90,7 +89,7 @@ recipes.remove(<littletiles:grabber>);
 recipes.addShapeless(<littletiles:grabber>,[<contenttweaker:leatherglove>,<ore:dyeBlue>,<littletiles:hammer>.transformDamage(1)]);							
 //Torch Lever
 recipes.remove(<inspirations:torch_lever>);
-recipes.addShapeless(<inspirations:torch_lever>, [<tconstruct:stone_torch>,<minecraft:lever>]);
+#recipes.addShapeless(<inspirations:torch_lever>, [<tconstruct:stone_torch>,<minecraft:lever>]);
 //Coal Coke Block
 mods.jei.JEI.removeAndHide(<railcraft:generic:6>);
 //Missing Localization
@@ -100,6 +99,7 @@ game.setLocalization("item.railcraft.charge.electrode.silver.name", "Carbon Elec
 recipes.remove(<railcraft:tie>);
 recipes.addShaped(<railcraft:tie>,[
 	[<contenttweaker:treatedlumber>,<contenttweaker:treatedlumber>,<contenttweaker:treatedlumber>]]);
+/*
 recipes.remove(<tconstruct:wood_rail>);
 recipes.addShaped(<tconstruct:wood_rail>*4,[
 	[<ore:stickTreatedWood>,null,<ore:stickTreatedWood>],
@@ -107,6 +107,7 @@ recipes.addShaped(<tconstruct:wood_rail>*4,[
 	[<ore:stickTreatedWood>,null,<ore:stickTreatedWood>]]);
 recipes.remove(<tconstruct:wood_rail_trapdoor>);
 recipes.addShapeless(<tconstruct:wood_rail_trapdoor>, [<tconstruct:wood_rail>,<ore:trapdoorWood>]);
+*/	
 //Paper Pulp
 mods.terrafirmacraft.Barrel.addRecipe("Paper", <tfctech:powder/wood>*4, <liquid:hot_water>*150, <emergingtechnology:paperpulp>, 4);
 //Paper
@@ -175,7 +176,7 @@ recipes.removeShapeless(beds.makeStack(i));
 recipes.remove(<flopper:flopper>);
 recipes.addShaped(<flopper:flopper>,[
 	[null,<tfc:wooden_bucket>,null],
-	[<ore:sheetIron>,<tconstruct:wooden_hopper>,<ore:sheetIron>],
+	[<ore:sheetIron>,null,<ore:sheetIron>],
 	[null,<ore:sheetIron>,null]]);
 #=============================================================================================================================================		
 recipes.remove(<astikorcarts:cargocart>);

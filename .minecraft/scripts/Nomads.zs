@@ -87,6 +87,6 @@ recipes.addShaped(WCB,[
 	[<minecraft:stick>,null,<minecraft:stick>],
 	[null,<minecraft:stick>,null],
 	[<minecraft:stick>,null,<minecraft:stick>]]);
-mods.tconstruct.Casting.addTableRecipe(<yurtmod:tent_upgrade_gold>,WCB,<liquid:gold>,144*27,true,time_SH*20);
-mods.tconstruct.Casting.addTableRecipe(<yurtmod:tent_upgrade_obsidian>,WCB,<liquid:obsidian>,144*3,true,time_SH*20);
-mods.tconstruct.Casting.addTableRecipe(<yurtmod:tent_upgrade_diamond>,WCB,<liquid:diamond>,5994*3,true,time_SH*20);
+#mods.tconstruct.Casting.addTableRecipe(<yurtmod:tent_upgrade_gold>,WCB,<liquid:gold>,144*27,true,time_SH*20);
+#mods.tconstruct.Casting.addTableRecipe(<yurtmod:tent_upgrade_obsidian>,WCB,<liquid:obsidian>,144*3,true,time_SH*20);
+#mods.tconstruct.Casting.addTableRecipe(<yurtmod:tent_upgrade_diamond>,WCB,<liquid:diamond>,5994*3,true,time_SH*20);

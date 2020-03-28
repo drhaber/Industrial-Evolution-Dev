@@ -21,6 +21,6 @@ hideLines()
 criteria = addCriteria("HasCeramicInsulator", "minecraft:inventory_changed")
 
 //Sets the item for the criteria. This is the item that needs to be crafted.
-criteria.setItem(<contenttweaker:ceramic_insulator>)
+criteria.addItem(<contenttweaker:ceramic_insulator>)
 
 //By not setting anything about requirements here, all criteria are automatically required

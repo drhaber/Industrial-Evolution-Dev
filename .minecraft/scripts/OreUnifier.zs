@@ -139,7 +139,7 @@ mods.jei.JEI.removeAndHide(<railcraft:gear:3>);
 //Bread
 <ore:breadAny>.addItems([<tfc:food/oat_bread>,<tfc:food/cornbread>,<tfc:food/oat_bread>,<tfc:food/rice_bread>,<tfc:food/rye_bread>,<tfc:food/wheat_bread>]);	
 //Jerky
-<ore:jerkyAny>.addItems([<tconstruct:edible:10>,<tconstruct:edible:11>,<tconstruct:edible:12>,<tconstruct:edible:13>,<tconstruct:edible:14>,<tconstruct:edible:15>,<tconstruct:edible:20>,<tconstruct:edible:21>,<tconstruct:edible:22>,<tconstruct:edible:23>]);		   
+#<ore:jerkyAny>.addItems([<tconstruct:edible:10>,<tconstruct:edible:11>,<tconstruct:edible:12>,<tconstruct:edible:13>,<tconstruct:edible:14>,<tconstruct:edible:15>,<tconstruct:edible:20>,<tconstruct:edible:21>,<tconstruct:edible:22>,<tconstruct:edible:23>]);		   
 //Crooks
 <ore:crookAny>.addItems([<inspirations:wooden_crook>,<inspirations:stone_crook>,<inspirations:bone_crook>,<inspirations:blaze_crook>,<inspirations:wither_crook>]);
 //Wands

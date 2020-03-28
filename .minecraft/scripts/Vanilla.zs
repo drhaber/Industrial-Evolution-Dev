@@ -6,7 +6,7 @@ import crafttweaker.liquid.ILiquidStack;
 import moretweaker.railcraft.RollingMachine;
 
 //Bucket
-mods.tconstruct.Casting.removeTableRecipe(<minecraft:bucket>);
+#mods.tconstruct.Casting.removeTableRecipe(<minecraft:bucket>);
 recipes.remove(<minecraft:bucket>);
 RollingMachine.addShapeless(<minecraft:bucket>, [<ore:sheetDoubleSteel>]);
 
