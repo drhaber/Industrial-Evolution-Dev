@@ -286,6 +286,7 @@ RollingMachine.addShaped(<projectred-core:resource_item>*2,[[<ore:ingotBrick>,<o
 //Sandy Coal
 mods.pneumaticcraft.pressurechamber.addRecipe([<ore:gemCoal>,<ore:sand>], 1.75, [<projectred-core:resource_item:250>]);
 //Silicon
+furnace.remove(<appliedenergistics2:material:5>);
 recipes.addShapeless(<projectred-core:resource_item:301> * 4, [<ore:sawII>.transformDamage(3), <projectred-core:resource_item:300>]);
 recipes.addShapeless(<projectred-core:resource_item:301> * 6, [<ore:sawIII>.transformDamage(5), <projectred-core:resource_item:300>]);
 recipes.addShapeless(<projectred-core:resource_item:301> * 8, [<ore:sawIV>.transformDamage(7), <projectred-core:resource_item:300>]);

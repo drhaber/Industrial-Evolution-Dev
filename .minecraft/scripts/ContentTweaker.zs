@@ -305,8 +305,10 @@ game.setLocalization("fluid.carrot_soup", "Carrot Soup");
 			liquidElementium.density = 3000;
 			liquidElementium.viscosity = 3000;
 			liquidElementium.luminosity = 10;
-			#liquidElementium.material = <blockmaterial:lava>;
+			liquidElementium.material = <blockmaterial:lava>;
 			liquidElementium.temperature = 800;
+			liquidElementium.stillLocation = "tfc:blocks/lava_still";
+			liquidElementium.flowingLocation = "tfc:blocks/lava_flow";
 		liquidElementium.register();
 		game.setLocalization("fluid.elementium", "Molten Elementium");
 
@@ -314,8 +316,11 @@ game.setLocalization("fluid.carrot_soup", "Carrot Soup");
 			liquidManasteel.density = 3000;
 			liquidManasteel.viscosity = 3000;
 			liquidManasteel.luminosity = 10;
-			#liquidManasteel.material = <blockmaterial:lava>;
+			liquidManasteel.material = <blockmaterial:lava>;
 			liquidManasteel.temperature = 681;
+			liquidManasteel.stillLocation = "tfc:blocks/lava_still";
+			liquidManasteel.flowingLocation = "tfc:blocks/lava_flow";
+
 		liquidManasteel.register();
 		game.setLocalization("fluid.manasteel", "Molten Manasteel");
 
@@ -323,25 +328,13 @@ game.setLocalization("fluid.carrot_soup", "Carrot Soup");
 			liquidTerrasteel.density = 3000;
 			liquidTerrasteel.viscosity = 3000;
 			liquidTerrasteel.luminosity = 10;
-			#liquidTerrasteel.material = <blockmaterial:lava>;
+			liquidTerrasteel.material = <blockmaterial:lava>;
 			liquidTerrasteel.temperature = 760;
+			liquidTerrasteel.stillLocation = "tfc:blocks/lava_still";
+			liquidTerrasteel.flowingLocation = "tfc:blocks/lava_flow";
 		liquidTerrasteel.register();
 		game.setLocalization("fluid.terrasteel", "Molten Terrasteel");
-/*
-//liquid_orange_slime
-var liquid_orange_slime = VanillaFactory.createFluid("liquid_orange_slime", Color.fromHex("FFA249"));
-liquid_orange_slime.viscosity = 1500;
-liquid_orange_slime.temperature= 310;
-liquid_orange_slime.register();
-game.setLocalization("fluid.liquid_orange_slime", "Liquid Orange Slime");
 
-//liquid_green_slime
-var liquid_green_slime = VanillaFactory.createFluid("liquid_green_slime", Color.fromHex("82C873"));
-liquid_green_slime.viscosity = 1500;
-liquid_green_slime.temperature= 310;
-liquid_green_slime.register();
-game.setLocalization("fluid.liquid_green_slime", "Liquid Green Slime");
-*/
 //liquid_grog
 var grog = VanillaFactory.createFluid("grog", Color.fromHex("42FF5C"));
 grog.viscosity = 9000;

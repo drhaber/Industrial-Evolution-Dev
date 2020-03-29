@@ -17,6 +17,8 @@ mods.terrafirmacraft.ItemRegistry.registerFuel(<tfc:ore/lignite>, 2000, 1350, tr
 mods.terrafirmacraft.ItemRegistry.registerFuel(<minecraft:coal:1>, 1800, 1350, true, true);
 mods.terrafirmacraft.ItemRegistry.registerFuel(<forestry:peat>, 2500, 680, true, false);
 
+//Block Mold
+<tfctech:ceramics/mold/glass_block>.displayName = "Block Mold";
 //Embers & Engineer's Hammer
 mods.terrafirmacraft.ItemRegistry.registerItemHeat(<contenttweaker:bismuth_hammer_head>,0.14,270,true);
 mods.terrafirmacraft.ItemRegistry.registerItemHeat(<contenttweaker:bismuth_engineers_hammer_head>,0.14,270,true);
