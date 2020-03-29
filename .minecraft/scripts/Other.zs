@@ -522,6 +522,8 @@ recipes.addShaped(<railcraft:circuit:3>,[
 	[<opencomputers:material:6>,<pneumaticcraft:unassembled_pcb>,<pneumaticcraft:plastic:4>],
 	[<opencomputers:material:6>,<pneumaticcraft:plastic:4>,<pneumaticcraft:plastic:4>]]);
 
+#=============================================================================================================================================		
+
 //rustichromia
 mods.rustichromia.Assembler.removeAll();		
 mods.rustichromia.Quern.removeAll();	

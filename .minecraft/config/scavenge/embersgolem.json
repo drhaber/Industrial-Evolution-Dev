@@ -1,0 +1,98 @@
+{
+	"block_pools" :
+	[
+		{
+			"name": "embers_golem",
+			"type":
+			{
+				"type": "block",
+				"name": "quark:fire_stone_brick_slab"
+			},
+			"clicktype": "right",
+			"properties":
+			[
+				{
+					"type": "has_block_structure",
+					"blocks":[
+						{
+						"name": "minecraft:nether_brick",
+						"positions":[
+							{"x": 0, "y": -2,"z": -1},
+							{"x": 0, "y": -2,"z": 1},
+							{"x": 1, "y": -2,"z": -1},
+							{"x": 1, "y": -2,"z": 0},
+							{"x": 1, "y": -2,"z": 1},
+							{"x": -1,"y": -2,"z": -1},
+							{"x": -1,"y": -2,"z": 0},
+                            {"x": -1,"y": -2,"z": 1},
+                            {"x": -1,"y": -1,"z": 1},
+							{"x": -1,"y": -1,"z": -1},
+							{"x": 1, "y": -1,"z": -1},
+							{"x": 1, "y": -1,"z": -1}
+						]
+						},
+						{
+                        "name": "tfc:bellows",
+                        "meta": 0,
+						"positions":[
+							{"x": 0, "y": -1,"z": -1}
+							]
+                        },
+                        {
+                        "name": "tfc:bellows",
+                        "meta": 2,
+                        "positions":[
+                            {"x": 0, "y": -1,"z": 1}
+                            ]
+                        },
+                        {
+                        "name": "tfc:bellows",
+                        "meta": 1,
+                        "positions":[
+                            {"x": 1, "y": -1,"z": 0}
+                            ]
+                        },
+                        {
+                        "name": "tfc:bellows",
+                        "meta": 3,
+                        "positions":[
+                            {"x": -1, "y": -1,"z": 0}
+                            ]
+                        },        
+						{
+						"name": "engineersdecor:halfslab_sheetmetal_copper",
+						"positions":[
+							{"x": 0, "y": 0,"z": -1},
+							{"x": 0, "y": 0,"z": 1},
+							{"x": 1, "y": 0,"z": -1},
+							{"x": 1, "y": 0,"z": 0},
+							{"x": 1, "y": 0,"z": 1},
+							{"x": -1,"y": 0,"z": -1},
+							{"x": -1,"y": 0,"z": 0},
+							{"x": -1,"y": 0,"z": 1}
+							]
+                        },
+                        {
+                            "name": "minecraft:netherrack",
+                            "positions":[
+                                {"x": 0, "y": -2,"z": 0}
+                                ]
+                        },
+                        {
+                            "name": "minecraft:fire",
+                            "positions":[
+                                {"x": 0, "y": -1,"z": 0}
+                                ]
+                        }		
+
+					]
+				},
+				{
+          			"type": "use_command",
+					"name": "summon",
+					"arguments": "embers:ancient_golem"
+				}
+			]
+		}
+	]
+}

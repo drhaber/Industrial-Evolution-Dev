@@ -77,7 +77,6 @@ recipes.addShaped(<yurtmod:depth_upgrade_diamond>,[
 	[<botania:manaresource:18>,<yurtmod:tent_canvas>,null]]);
 
 //Crossbeams
-val time_SH = 300; #Number of Seconds   
 val WCB = <contenttweaker:wooden_cross_beam>;
 recipes.remove(<yurtmod:tent_upgrade_gold>);
 recipes.remove(<yurtmod:tent_upgrade_obsidian>);
@@ -87,6 +86,7 @@ recipes.addShaped(WCB,[
 	[<minecraft:stick>,null,<minecraft:stick>],
 	[null,<minecraft:stick>,null],
 	[<minecraft:stick>,null,<minecraft:stick>]]);
-#mods.tconstruct.Casting.addTableRecipe(<yurtmod:tent_upgrade_gold>,WCB,<liquid:gold>,144*27,true,time_SH*20);
-#mods.tconstruct.Casting.addTableRecipe(<yurtmod:tent_upgrade_obsidian>,WCB,<liquid:obsidian>,144*3,true,time_SH*20);
-#mods.tconstruct.Casting.addTableRecipe(<yurtmod:tent_upgrade_diamond>,WCB,<liquid:diamond>,5994*3,true,time_SH*20);
+
+mods.nuclearcraft.infuser.addRecipe(WCB, <liquid:gold>*10368,<yurtmod:tent_upgrade_gold>);
+mods.nuclearcraft.infuser.addRecipe(<yurtmod:tent_upgrade_gold>, <liquid:lava>*10368,<yurtmod:tent_upgrade_obsidian>);
+mods.nuclearcraft.infuser.addRecipe(<yurtmod:tent_upgrade_obsidian>, <liquid:diamond>*10368,<yurtmod:tent_upgrade_diamond>);

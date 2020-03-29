@@ -22,7 +22,7 @@ mods.embers.Stamper.add(Illumar.makeStack(i+500),<liquid:glowstone>*250,<embers:
 }
 
 //Shard
-#mods.tconstruct.Melting.addRecipe(<liquid:glass> * 250,<ore:shardGlass>);
+mods.embers.Melter.add(<liquid:glass>*250,<ore:shardGlass>);
 //Crystals
 val ReducedDyes = [<ore:dyeWhite>,<ore:dyeRed>,<ore:dyeOrange>,<ore:dyeYellow>,<ore:dyeGreen>,<ore:dyeLightBlue>,<ore:dyeBlue>,<ore:dyePurple>,<ore:dyeBlack>] as IOreDictEntry[];
 val crystalBlocks = <quark:crystal>.definition;
@@ -37,21 +37,21 @@ mods.embers.Melter.add(<liquid:quartz>*666,<ore:dustQuartz>);
 	mods.embers.Melter.add(<liquid:elementium> * 16, <botania:manaresource:19>);
 	mods.embers.Stamper.add(<botania:storage:2>,<liquid:elementium>*1296,<tfctech:ceramics/mold/glass_block>,null);
 	mods.embers.Stamper.add(<botania:manaresource:7>,<liquid:elementium>*144, <embers:stamp_bar>,null);
-	mods.embers.Stamper.add(<botania:manaresource:7>,<liquid:elementium>*16, <soot:stamp_nugget>,null);
+	mods.embers.Stamper.add(<botania:manaresource:19>,<liquid:elementium>*16, <soot:stamp_nugget>,null);
 	//Manasteel
 	mods.embers.Melter.add(<liquid:manasteel> * 1296, <botania:storage:0>);
 	mods.embers.Melter.add(<liquid:manasteel> * 144, <botania:manaresource:0>);
 	mods.embers.Melter.add(<liquid:manasteel> * 16, <botania:manaresource:17>);
 	mods.embers.Stamper.add(<botania:storage:0>,<liquid:manasteel>*1296,<tfctech:ceramics/mold/glass_block>,null);
 	mods.embers.Stamper.add(<botania:manaresource:0>,<liquid:manasteel>*144, <embers:stamp_bar>,null);
-	mods.embers.Stamper.add(<botania:manaresource:0>,<liquid:manasteel>*16, <soot:stamp_nugget>,null);
+	mods.embers.Stamper.add(<botania:manaresource:17>,<liquid:manasteel>*16, <soot:stamp_nugget>,null);
 	//Terrasteel
 	mods.embers.Melter.add(<liquid:terrasteel> * 1296, <botania:storage:1>);
 	mods.embers.Melter.add(<liquid:terrasteel> * 144, <botania:manaresource:4>);
 	mods.embers.Melter.add(<liquid:terrasteel> * 16, <botania:manaresource:18>);
 	mods.embers.Stamper.add(<botania:storage:1>,<liquid:terrasteel>*1296,<tfctech:ceramics/mold/glass_block>,null);
 	mods.embers.Stamper.add(<botania:manaresource:4>,<liquid:terrasteel>*144, <embers:stamp_bar>,null);
-	mods.embers.Stamper.add(<botania:manaresource:4>,<liquid:terrasteel>*16, <soot:stamp_nugget>,null);
+	mods.embers.Stamper.add(<botania:manaresource:18>,<liquid:terrasteel>*16, <soot:stamp_nugget>,null);
 
 
 //Casting Table TFC Tool Parts
