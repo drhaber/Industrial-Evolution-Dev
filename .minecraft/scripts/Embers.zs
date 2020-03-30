@@ -34,3 +34,23 @@ for EP in EmbersPlates{
 mods.embers.Stamper.remove(EP);
 }
 
+//Bore
+recipes.remove(<embers:ember_bore>);
+recipes.addShaped(<embers:ember_bore>,[
+	[<embers:stairs_caminite_brick>,<embers:mech_core>,<embers:stairs_caminite_brick>],
+	[<embers:stairs_caminite_brick>,<mysticalmechanics:axle_iron>,<embers:stairs_caminite_brick>],
+	[<tfc:metal/scythe_blade/wrought_iron>,<tfc:metal/scythe_blade/wrought_iron>,<tfc:metal/scythe_blade/wrought_iron>]]);
+
+//Mechanical Core
+recipes.remove(<embers:mech_core>);
+recipes.addShaped(<embers:mech_core>,[
+	[<tfctech:metal/black_bronze_rod>,<tfctech:metal/lead_gear>,<tfctech:metal/black_bronze_rod>],
+	[<tfctech:metal/lead_gear>,null,<tfctech:metal/lead_gear>],
+	[<tfctech:metal/black_bronze_rod>,<tfctech:metal/lead_gear>,<tfctech:metal/black_bronze_rod>]]);	
+
+//Iron Axel
+recipes.remove(<mysticalmechanics:axle_iron>);
+recipes.addShaped(<mysticalmechanics:axle_iron>*8,[
+	[null,null,<tfctech:metal/wrought_iron_rod>],
+	[null,<tfctech:metal/wrought_iron_rod>,null],
+	[<tfctech:metal/wrought_iron_rod>,null,null]]);

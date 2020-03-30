@@ -521,6 +521,12 @@ recipes.addShaped(<railcraft:circuit:3>,[
 	[<forestry:soldering_iron>.reuse(),<opencomputers:material:7>,<pneumaticcraft:plastic:4>],
 	[<opencomputers:material:6>,<pneumaticcraft:unassembled_pcb>,<pneumaticcraft:plastic:4>],
 	[<opencomputers:material:6>,<pneumaticcraft:plastic:4>,<pneumaticcraft:plastic:4>]]);
+#=============================================================================================================================================		
+
+//Ghost Explosives
+recipes.removeByMod("ghostsexplosives");
+recipes.remove(<ghostsexplosives:tnt_x1_2>);
+
 
 #=============================================================================================================================================		
 

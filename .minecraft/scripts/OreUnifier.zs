@@ -4,6 +4,13 @@ import crafttweaker.item.IItemDefinition;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.mods.IMod;
 
+//Uranium
+<ore:dustUranium>.add(<ghostsexplosives:dust_uranium>);
+//Sulfur
+<ore:gemSulfur>.addItems([<soot:sulfur_clump>,<ghostsexplosives:sulfur>]);
+<ore:dustSulfur>.add(<ghostsexplosives:dust_sulfur>);
+//Charcoal
+<ore:dustCharcoal>.add(<ghostsexplosives:dust_charcoal>);
 //glass
 <ore:blockGlass>.add(<contenttweaker:dirtyglass>);
 //woodPulp

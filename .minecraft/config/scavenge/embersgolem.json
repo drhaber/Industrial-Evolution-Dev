@@ -6,11 +6,20 @@
 			"type":
 			{
 				"type": "block",
-				"name": "quark:fire_stone_brick_slab"
+                "name": "ceramics:clay_slab",
+                "meta": 5
 			},
 			"clicktype": "right",
 			"properties":
 			[
+                {
+					"type": "require_item",
+					"name": "embers:shard_ember"
+				},
+				{
+					"type": "consume_item",
+					"amount": 1
+				},
 				{
 					"type": "has_block_structure",
 					"blocks":[
