@@ -60,7 +60,7 @@ recipes.addShapeless(<contenttweaker:uncooked_beet_noodles>,[<botania:waterbowl>
 recipes.addShapeless(<contenttweaker:snow_cream>,[<tfc:wooden_bucket>.withTag({Fluid: {FluidName: "milk", Amount: 1000}}).transformReplace(<tfc:wooden_bucket>),<minecraft:snowball>,<minecraft:snowball>,<minecraft:snowball>,<minecraft:sugar>,<minecraft:bowl>]);
 recipes.addShapeless(<contenttweaker:snow_cream>,[<minecraft:milk_bucket>.transformReplace(<minecraft:bucket>),<minecraft:snowball>,<minecraft:snowball>,<minecraft:snowball>,<minecraft:sugar>,<minecraft:bowl>]);
 
-recipes.addShapeless(<contenttweaker:pemmican>,[<ore:jerkyAny>,<contenttweaker:dried_fruit>,<botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}).transformReplace(<minecraft:bowl>),<ore:knife>.transformDamage(5),<ore:grain>]);
+recipes.addShapeless(<contenttweaker:pemmican>,[<contenttweaker:dried_ground_meat>,<contenttweaker:dried_fruit>,<botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}).transformReplace(<minecraft:bowl>),<ore:knife>.transformDamage(5),<ore:grain>]);
 #=============================================================================================================================================		
 
 //Soups and stews
@@ -361,4 +361,6 @@ Heating.addRecipe("cooked_flesh", <cfm:item_flesh>, <cfm:item_flesh_cooked>, 400
 furnace.remove(<netherex:ghast_meat_cooked>);
 Heating.addRecipe("cooked_ghast", <netherex:ghast_meat_raw>, <netherex:ghast_meat_cooked>, 400, 480);
 
+mods.integrateddynamics.DryingBasin.addRecipe(<contenttweaker:ground_meat>, null, <contenttweaker:dried_ground_meat>, null, 10);
+mods.integrateddynamics.MechanicalDryingBasin.addRecipe(<contenttweaker:ground_meat>, null, <contenttweaker:dried_ground_meat>, null, 10);
 

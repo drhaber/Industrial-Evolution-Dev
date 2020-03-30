@@ -9,7 +9,12 @@ import mods.contenttweaker.ItemFood;
 import crafttweaker.potions.IPotion;
 import mods.contenttweaker.Random;
 import mods.contenttweaker.World;
+import mods.contenttweaker.ResourceLocation;
 
+//blank_blueprint
+var blank_blueprint = VanillaFactory.createItem("blank_blueprint");
+blank_blueprint.register();
+game.setLocalization("item.contenttweaker.blank_blueprint.name", "Blank Blueprint");
 //wax_anvil
 var wax_anvil = VanillaFactory.createItem("wax_anvil");
 wax_anvil.register();
@@ -392,8 +397,8 @@ cookie_dough.register();
 game.setLocalization("item.contenttweaker.cookie_dough.name", "Cookie Dough");
 
 //dried_fruit
-var dried_fruit = VanillaFactory.createItemFood("dried_fruit",4);
-dried_fruit.saturation = 0.6;
+var dried_fruit = VanillaFactory.createItemFood("dried_fruit",1);
+dried_fruit.saturation = 0.2;
 dried_fruit.register();
 game.setLocalization("item.contenttweaker.dried_fruit.name", "Dried Fruit");
 

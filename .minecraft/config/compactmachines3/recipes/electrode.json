@@ -1,0 +1,35 @@
+{
+"name": "electrode",
+"target-item": "immersiveengineering:graphite_electrode",
+"target-count": 8,
+
+"duration": 440,
+
+"catalyst": "nuclearcraft:ingot",
+"catalyst-meta": 8,
+  
+  
+  "input-types": {
+    "a": {
+      "id": "nuclearcraft:ingot_block",
+      "meta": 8
+    }
+  },
+  "shape": [
+    [
+      [
+        "a"
+      ]
+    ],
+    [
+      [
+        "a"
+      ]
+    ],
+    [
+      [
+        "a"
+      ]
+    ]
+  ]
+}

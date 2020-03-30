@@ -102,8 +102,18 @@ mods.immersiveengineering.Squeezer.removeItemRecipe(<minecraft:leather>);
 mods.immersiveengineering.Squeezer.addRecipe(<contenttweaker:squeezed_flesh>, <liquid:blood>*50, <minecraft:rotten_flesh>*5, 2048);
 //Liquid Catalyst
 mods.immersiveengineering.ArcFurnace.addRecipe(<forge:bucketfilled>.withTag({FluidName: "liquidcatalyst", Amount: 1000}), <minecraft:bucket>,<immersiveengineering:material:7>, 2000, 2048, [<ore:dustObsidian>,<tfc:powder/salt>, <ore:dustGlowstone>,<ore:dustTin>]);
-//Graphite
+//Graphite & HOP Graphite
 mods.immersiveengineering.CokeOven.addRecipe(<tfc:ore/graphite>, 0, <ore:fuelCoke>, 2400);
+mods.immersiveengineering.Squeezer.removeItemRecipe(<immersiveengineering:material:18>);
+mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:material:19>);
+mods.embers.Stamper.add(<immersiveengineering:material:18>,<liquid:coal>*1152, <embers:stamp_flat>,null);
+
+mods.nuclearcraft.pressurizer.addRecipe(<immersiveengineering:material:18>, <immersiveengineering:material:19>);
+mods.pneumaticcraft.pressurechamber.addRecipe([<immersiveengineering:material:18>], 15, [<immersiveengineering:material:19>]);
+
+	//Electrodes
+	mods.advancedrocketry.Lathe.addRecipe(<immersiveengineering:graphite_electrode>.withTag({graphDmg: 0})*1, 80, 100, <immersiveengineering:material:19>*4);
+	mods.pneumaticcraft.assembly.addDrillLaserRecipe(<immersiveengineering:material:19>*4, <immersiveengineering:graphite_electrode>.withTag({graphDmg: 0}));
 //Potassium Carbonate
 mods.immersiveengineering.CokeOven.addRecipe(<contenttweaker:potassiumcarbonate>, 0, <ore:dustPotash>, 2400);
 //Powered Lantern
@@ -129,6 +139,10 @@ mods.terrafirmacraft.Barrel.addRecipe("slag_to_flux", <railcraft:dust:4>*4, <liq
 #=============================================================================================================================================		
 //Blueprint Rework
 mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:material:26>);
+mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:graphite_electrode>);
+mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:material:8>);
+mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:material:9>);
+
 mods.immersiveengineering.Blueprint.addRecipe("molds", <contenttweaker:mold_circuit>, [<ore:sheetDoubleSteel>,<immersiveengineering:tool:1>]);
 
 var IE_molds = <immersiveengineering:mold>.definition;
@@ -138,6 +152,22 @@ mods.immersiveengineering.Blueprint.addRecipe("molds", IE_molds.makeStack(i), [<
 }
 mods.immersiveengineering.Blueprint.addRecipe("molds", <contenttweaker:striking_die>, [<ore:sheetDoubleSteel>,<tfc:metal/hammer_head/steel>]);
 
+mods.terrafirmacraft.Barrel.addRecipe("blueprint", <minecraft:paper>, <liquid:water_blue>*10, <contenttweaker:blank_blueprint>, null, 1);
+		
+recipes.remove(<immersiveengineering:blueprint>.withTag({blueprint: "molds"}));
+recipes.addShapeless(<immersiveengineering:blueprint>.withTag({blueprint: "molds"}),
+	[<tfc:metal/double_sheet/steel>,<contenttweaker:blank_blueprint>]);
+
+recipes.addShapeless(<immersiveengineering:blueprint>.withTag({blueprint: "Electronics"}),
+	[<contenttweaker:blank_blueprint>,<opencomputers:material:4>,<immersiveengineering:material:26>]);	
+
+recipes.remove(<immersiveengineering:blueprint>.withTag({blueprint: "bullet"}));
+recipes.addShapeless(<immersiveengineering:blueprint>.withTag({blueprint: "bullet"}),
+	[<contenttweaker:blank_blueprint>,<immersiveengineering:bullet:0>,<immersiveengineering:bullet:1>]);		
+
+recipes.remove(<immersiveengineering:blueprint>.withTag({blueprint: "specialBullet"}));
+recipes.addShapeless(<immersiveengineering:blueprint>.withTag({blueprint: "specialBullet"}),
+	[<contenttweaker:blank_blueprint>,<minecraft:glass_bottle>,<minecraft:tnt>]);		
 #=============================================================================================================================================		
 //Fibre Cables
 WireDrawing.addRecipe("quartz_wire", <appliedenergistics2:material>, 3, <contenttweaker:quartz_wire>*4, 0xFFA9CDD1);

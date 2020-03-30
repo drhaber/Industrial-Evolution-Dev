@@ -232,7 +232,7 @@ recipes.addShaped(<opencomputers:material:2>*3,[
 RollingMachine.addShaped(<opencomputers:material:3>, [[<opencomputers:material:2>]], 300);
 RollingMachine.addShaped(<pneumaticcraft:empty_pcb:100>, [[<tfctech:metal/copper_strip>],[<opencomputers:material:3>]], 300);
 
-mods.immersiveengineering.Blueprint.addRecipe("components", <pneumaticcraft:pcb_blueprint>, [<immersiveengineering:tool:1>,<pneumaticcraft:plastic:4>]);
+mods.immersiveengineering.Blueprint.addRecipe("Electronics", <pneumaticcraft:pcb_blueprint>, [<immersiveengineering:tool:1>,<pneumaticcraft:plastic:4>]);
 
 mods.appliedenergistics2.Inscriber.addRecipe(<opencomputers:material:4>, <opencomputers:material:3>, true,<contenttweaker:mold_circuit>);
 recipes.addShapeless(<opencomputers:material:4>, [<opencomputers:material:3>,<ore:chisel>.transformDamage(8)]);
