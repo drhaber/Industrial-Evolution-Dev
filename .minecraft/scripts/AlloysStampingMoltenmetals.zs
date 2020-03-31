@@ -28,6 +28,7 @@ val ReducedDyes = [<ore:dyeWhite>,<ore:dyeRed>,<ore:dyeOrange>,<ore:dyeYellow>,<
 val crystalBlocks = <quark:crystal>.definition;
 for i in 0 to 9{
 mods.embers.Stamper.add(crystalBlocks.makeStack(i),<liquid:quartz>*125,<tfctech:ceramics/mold/glass_block>,ReducedDyes[i]);
+<ore:crystalBlock>.add(crystalBlocks.makeStack(i));
 }
 mods.embers.Melter.add(<liquid:quartz>*666,<ore:dustQuartz>);
 

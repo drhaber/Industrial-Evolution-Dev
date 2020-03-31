@@ -4,6 +4,14 @@ import crafttweaker.item.IItemDefinition;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.mods.IMod;
 
+//Peat
+<ore:blockPeat>.add(<tfc:peat>);
+//bituminousCoal
+<ore:gemBituminous>.add(<tfc:ore/bituminous_coal>);
+//crystalCertusQuartz
+<ore:chargedCertusQuartz>.add(<appliedenergistics2:material:1>);
+//naquadah
+<ore:gemNaquadah>.add(<aunis:naquadah_shard>);
 //Uranium
 <ore:dustUranium>.add(<ghostsexplosives:dust_uranium>);
 //Sulfur
@@ -55,8 +63,8 @@ for i in 0 to 16{
 <ore:glassMagnifying>.addItems([<agricraft:magnifying_glass>,<railcraft:tool_magnifying_glass>]);
 //Tallow
 <ore:lumpTallow>.addItems([<quark:tallow>,<rustic:tallow>]);
-//Soot Black Dye
-<ore:dyeBlack>.add(<contenttweaker:soot>);
+//Black Dye
+<ore:dyeBlack>.addItems([<contenttweaker:soot>,<tfc:ore/jet>]);
 //Marble
 <ore:stoneMarble>.add(<tfc:raw/marble>);
 //Aquamarine
@@ -145,8 +153,6 @@ mods.jei.JEI.removeAndHide(<railcraft:gear:3>);
 <ore:mushroomAny>.addItems([<rustic:mooncap_mushroom>,<tfc:plants/porcini>]);
 //Bread
 <ore:breadAny>.addItems([<tfc:food/oat_bread>,<tfc:food/cornbread>,<tfc:food/oat_bread>,<tfc:food/rice_bread>,<tfc:food/rye_bread>,<tfc:food/wheat_bread>]);	
-//Jerky
-#<ore:jerkyAny>.addItems([<tconstruct:edible:10>,<tconstruct:edible:11>,<tconstruct:edible:12>,<tconstruct:edible:13>,<tconstruct:edible:14>,<tconstruct:edible:15>,<tconstruct:edible:20>,<tconstruct:edible:21>,<tconstruct:edible:22>,<tconstruct:edible:23>]);		   
 //Crooks
 <ore:crookAny>.addItems([<inspirations:wooden_crook>,<inspirations:stone_crook>,<inspirations:bone_crook>,<inspirations:blaze_crook>,<inspirations:wither_crook>]);
 //Wands

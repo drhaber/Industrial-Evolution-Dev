@@ -7,6 +7,19 @@ import mods.appliedenergistics2.Grinder;
 mods.immersiveengineering.Crusher.removeRecipe(<tfc:metal/dust/wrought_iron>);
 mods.unidict.removalByKind.get("Furnace").remove("ingot");
 
+//Thorium
+mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust_oxide>, <tfc:ore/thorianite>, 2048, <nuclearcraft:dust_oxide:1>, 0.25);
+//Magnesium
+mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust:7>, <tfc:ore/magnesite>, 2048);
+//Lithium
+mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust:6>, <tfc:ore/spodumene>, 2048);
+
+mods.immersiveengineering.CokeOven.addRecipe( <immersiveengineering:material:6>, 500,<tfc:ore/bituminous_coal>, 2000);
+
+//Pitch Blend
+mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust_oxide:1>, <tfc:ore/pitchblende>, 2048, <nuclearcraft:dust_oxide:1>, 0.25);
+
+
 val AlloyedIngots = [<immersiveengineering:metal:6>,<immersiveengineering:metal:7>,<railcraft:ingot:7>,<forestry:ingot_bronze>,<railcraft:ingot:9>,<projectred-core:resource_item:103>
 ] as IItemStack[];
 for AI in AlloyedIngots{

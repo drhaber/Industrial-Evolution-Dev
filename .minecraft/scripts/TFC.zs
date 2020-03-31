@@ -17,6 +17,10 @@ mods.terrafirmacraft.ItemRegistry.registerFuel(<tfc:ore/lignite>, 2000, 1350, tr
 mods.terrafirmacraft.ItemRegistry.registerFuel(<minecraft:coal:1>, 1800, 1350, true, true);
 mods.terrafirmacraft.ItemRegistry.registerFuel(<forestry:peat>, 2500, 680, true, false);
 
+furnace.setFuel(<tfc:ore/bituminous_coal>, 1600);
+furnace.setFuel(<tfc:ore/lignite>, 800);
+furnace.setFuel(<tfc:ore/petrified_wood>, 800);
+
 //Block Mold
 <tfctech:ceramics/mold/glass_block>.displayName = "Block Mold";
 //Embers & Engineer's Hammer
@@ -59,9 +63,6 @@ RollingMachine.addShapeless(<tfc:metal/bucket/blue_steel>, [<ore:sheetDoubleMith
 mods.rustic.EvaporatingBasin.addRecipe(<tfc:powder/salt>, <liquid:salt_water>*250);
 //Wrench Head
 mods.terrafirmacraft.Anvil.addRecipe("Iron_Wrench_Head", <ore:ingotWroughtIron>, <contenttweaker:ironwrenchhead>, 3, "general","BEND_NOT_LAST","SHRINK_NOT_LAST","DRAW_LAST");
-//Coals
-furnace.setFuel(<tfc:ore/bituminous_coal>, 1600);
-furnace.setFuel(<tfc:ore/lignite>, 800);
 //Bowl
 <tfc:ceramics/fired/bowl>.displayName = "Clay Bowl";
 //Hot Water - Water
