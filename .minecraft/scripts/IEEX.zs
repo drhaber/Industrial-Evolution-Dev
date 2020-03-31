@@ -56,7 +56,7 @@ mods.immersiveengineering.Excavator.addMineral("Native Iron",30,0.1,["oreIronRic
 
 mods.immersiveengineering.Excavator.addMineral("Crystaline Caverns",5,0.2,["crystalBlock","gemQuartz","crystalCertusQuartz","gemKaolinite","gemChipped","gemFlawed","gemNormal","gemFlawless","gemExquisite","sand"],[0.3,0.1, 0.1, 0.2, 0.035, 0.03, 0.02, 0.01, 0.005, 0.2],[0]);
 
-mods.immersiveengineering.Excavator.addMineral("Radioactive Deposit",5,0.1,["gemPitchblende","gemThorianite","gemNaquadah","gemDilithium","chargedCertusQuartz","gemCinnabar","oreLeadPoor","oreLeadSmall","rock","gravel","sand"],[0.25, 0.1, 0.1, 0.1,0.1, 0.1, 0.1, 0.05, 0.05, 0.05],[0]);
+mods.immersiveengineering.Excavator.addMineral("Radioactive Deposit",5,0.1,["gemPitchblende","gemThorianite","gemNaquadah","gemDilithium","chargedCertusQuartz","gemCinnabar","oreLeadPoor","oreLeadSmall","rock","gravel","sand"],[0.25, 0.1, 0.1, 0.1,0.1, 0.1, 0.1, 0.05, 0.05, 0.05, 0.9],[0]);
 
 mods.immersiveengineering.Excavator.addMineral("Coal",50,0.1,["gemBituminous","gemLignite","gemPetrifiedWood","gemJet","rock","gravel","sand"],[0.2, 0.2, 0.1,  0.05, 0.2, 0.15, 0.1],[0]);
 
@@ -64,6 +64,6 @@ mods.immersiveengineering.Excavator.addMineral("Apatite",10,0.1,["gemApatite","g
 
 mods.immersiveengineering.Excavator.addMineral("Damp Ground",30,0.1,["blockPeat","clay","gravel","tfcSand"],[0.3, 0.3, 0.2, 0.2],[0]);
 
-mods.immersiveengineering.Excavator.addMineral("Poor Rocky Ground",30,0.1,["rock","gravel","sand"],[0.5, 0.3, 0.2]);
+mods.immersiveengineering.Excavator.addMineral("Poor Rocky Ground",30,0.1,["rock","gravel","sand"],[0.5, 0.3, 0.2],[-1], true);
 
 mods.immersiveengineering.Excavator.addMineral("Poor Hell Hole",50,0.1,["netherrack","soulSand","gemSulfur"],[0.6, 0.3,0.1],[-1]);
