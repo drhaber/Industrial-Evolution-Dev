@@ -115,3 +115,55 @@ mods.terrafirmacraft.Heating.addRecipe("plate_Kiln", <ceramics:unfired_clay:8>, 
 mods.terrafirmacraft.Heating.addRecipe("barrel_Kiln", <ceramics:clay_barrel_unfired>,<ceramics:clay_barrel>, 1500, 3200);
 mods.terrafirmacraft.Heating.addRecipe("barrel_ext_Kiln", <ceramics:clay_barrel_unfired:1>, <ceramics:clay_barrel:1>, 1500, 3200);
 
+//Armor
+
+recipes.remove(<ceramics:clay_helmet>);
+recipes.remove(<ceramics:clay_chestplate>);
+recipes.remove(<ceramics:clay_leggings>);
+recipes.remove(<ceramics:clay_boots>);
+
+recipes.remove(<ceramics:clay_helmet_raw>);
+recipes.remove(<ceramics:clay_chestplate_raw>);
+recipes.remove(<ceramics:clay_leggings_raw>);
+recipes.remove(<ceramics:clay_boots_raw>);
+
+mods.terrafirmacraft.ClayKnapping.addRecipe("helmet_Knap",<ceramics:clay_helmet_raw>, 
+																	"XXXXX",
+																	"X   X",
+																	"X   X",
+																	"     ",
+																	"     ");
+mods.terrafirmacraft.ClayKnapping.addRecipe("chestplate_Knap",<ceramics:clay_chestplate_raw>, 
+																	"X   X",
+																	"XXXXX",
+																	"XXXXX",
+																	"XXXXX",
+																	"XXXXX");
+mods.terrafirmacraft.ClayKnapping.addRecipe("leggings_Knap",<ceramics:clay_leggings_raw>, 
+																	"XXXXX",
+																	"XX XX",
+																	"XX XX",
+																	"XX XX",
+																	"XX XX");
+mods.terrafirmacraft.ClayKnapping.addRecipe("boots_Knap",<ceramics:clay_boots_raw>, 
+																	"XX  ",
+																	"XX  ",
+																	"XX  ",
+																	"XXXX ",
+																	"XXXXX");
+
+ItemRegistry.registerItemHeat(<ceramics:clay_helmet_raw>, 1, 1599, false);
+ItemRegistry.registerItemHeat(<ceramics:clay_helmet>, 1, 1599, false);
+Heating.addRecipe("helmet_Kiln", <ceramics:clay_helmet_raw>, <ceramics:clay_helmet>, 1500, 3200);
+
+ItemRegistry.registerItemHeat(<ceramics:clay_chestplate_raw>, 1, 1599, false);
+ItemRegistry.registerItemHeat(<ceramics:clay_chestplate>, 1, 1599, false);
+Heating.addRecipe("chestplate_bar_Kiln", <ceramics:clay_chestplate_raw>, <ceramics:clay_chestplate>, 1500, 3200);
+
+ItemRegistry.registerItemHeat(<ceramics:clay_leggings_raw>, 1, 1599, false);
+ItemRegistry.registerItemHeat(<ceramics:clay_leggings>, 1, 1599, false);
+Heating.addRecipe("leggings_bar_Kiln", <ceramics:clay_leggings_raw>, <ceramics:clay_leggings>, 1500, 3200);
+
+ItemRegistry.registerItemHeat(<ceramics:clay_boots_raw>, 1, 1599, false);
+ItemRegistry.registerItemHeat(<ceramics:clay_boots>, 1, 1599, false);
+Heating.addRecipe("boots_bar_Kiln", <ceramics:clay_boots_raw>, <ceramics:clay_boots>, 1500, 3200);
