@@ -34,6 +34,7 @@ recipes.addShaped(<psi:cad_assembly>,[ #Iron
 	[null,<ore:button>,GunHandle]]);
 
 #mods.tconstruct.Casting.addTableRecipe(<psi:cad_assembly:1>, <psi:cad_assembly>, <liquid:gold>, 288, true, 180); #Gold
+mods.embers.Stamper.add(<psi:cad_assembly:1>,<liquid:gold>*288, <embers:stamp_flat>,<psi:cad_assembly>);
 
 recipes.addShaped(<psi:cad_assembly:2>,[ #Psi Metal
 	[<psi:material:1>,<psi:material:1>,<psi:material:1>],

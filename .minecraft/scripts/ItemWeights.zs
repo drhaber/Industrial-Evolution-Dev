@@ -52,7 +52,8 @@ ItemRegistry.registerItemSize(MMC, "VERY_LARGE", "HEAVY");
 }
 
 val large_machines = [<forestry:engine_clockwork>,<immersivepetroleum:speedboat>,<minecraft:anvil>,
-<minecraft:anvil:1>,<minecraft:anvil:2>,<railcraft:anvil>,<railcraft:anvil:1>,<railcraft:anvil:2>] as IItemStack[];
+<minecraft:anvil:1>,<minecraft:anvil:2>,<railcraft:anvil>,<railcraft:anvil:1>,<railcraft:anvil:2>,
+<yurtmod:tent_upgrade_gold>,<yurtmod:tent_upgrade_obsidian>,<yurtmod:tent_upgrade_diamond>] as IItemStack[];
 for LM in large_machines{
 ItemRegistry.registerItemSize(LM, "LARGE", "HEAVY");
 }
@@ -70,9 +71,18 @@ ItemRegistry.registerItemSize(banners.makeStack(i), "HUGE", "MEDIUM");
 val boats_and_wood_carts = [<minecraft:boat>,<minecraft:spruce_boat>,<minecraft:birch_boat>,<minecraft:jungle_boat>,
 <minecraft:acacia_boat>,<minecraft:dark_oak_boat>,<extrabotany:flyingboat>,<extrabotany:flyingboat:1>,
 <extrabotany:flyingboat:2>,<railcraft:cart_pumpkin>,<railcraft:cart_gift>,<railcraft:cart_tnt_wood>,
-<astikorcarts:cargocart>,<astikorcarts:mobcart>,<astikorcarts:plowcart>] as IItemStack[];
+<astikorcarts:cargocart>,<astikorcarts:mobcart>,<astikorcarts:plowcart>,<yurtmod:yurt_wall_piece>,
+<yurtmod:tepee_wall_piece>,<yurtmod:bed_wall_piece>,<yurtmod:indlu_wall_piece>,<yurtmod:shamiana_wall_piece>] as IItemStack[];
 for BWC in boats_and_wood_carts{
 ItemRegistry.registerItemSize(BWC, "LARGE", "LIGHT");
 }
 
 ItemRegistry.registerItemSize(<openlights:prismaticpaste>, "LARGE", "LIGHT");
+
+ItemRegistry.registerItemSize(<yurtmod:tent>, "HUGE", "MEDIUM");
+
+val Tools = [<yurtmod:mallet>,<yurtmod:super_mallet>,<yurtmod:depth_upgrade_stone>,<yurtmod:depth_upgrade_iron>,
+<yurtmod:depth_upgrade_gold>,<yurtmod:depth_upgrade_obsidian>,<yurtmod:depth_upgrade_diamond>] as IItemStack[];
+for TS in Tools{
+ItemRegistry.registerItemSize(TS, "LARGE", "MEDIUM");
+}

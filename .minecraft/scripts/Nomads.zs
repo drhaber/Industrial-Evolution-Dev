@@ -3,6 +3,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.mods.IMod;
 import crafttweaker.liquid.ILiquidStack;
+import mods.terrafirmacraft.ItemRegistry;
 
 //Hammers
 recipes.remove(<yurtmod:mallet>);
