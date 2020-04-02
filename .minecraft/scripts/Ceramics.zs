@@ -148,7 +148,7 @@ mods.terrafirmacraft.ClayKnapping.addRecipe("leggings_Knap",<ceramics:clay_leggi
 mods.terrafirmacraft.ClayKnapping.addRecipe("boots_Knap",<ceramics:clay_boots_raw>, 
 																	"XX  ",
 																	"XX  ",
-																	"XX  ",
+																	"XX   ",
 																	"XXXX ",
 																	"XXXXX");
 
