@@ -13,10 +13,9 @@ recipes.addShapeless(<foodexpansion:itembaconandegg>,[<ore:foodCookedegg>,<foode
 
 furnace.remove(<minecraft:bread>);
 
-/*
-//Jerky
-mods.jei.JEI.removeAndHide(<foodexpansion:itemdough>);
+mods.jei.JEI.removeAndHide(<foodexpansion:itemdough>); #dough
 <foodexpansion:itemcompressedflesh>.displayName = "Salted Flesh";
+/*
 val Jerky = [<tconstruct:edible:10>,<tconstruct:edible:11>,<tconstruct:edible:12>,
 <tconstruct:edible:13>,<tconstruct:edible:14>,<tconstruct:edible:15>,<tconstruct:edible:20>] as IItemStack[];	
 val JerkyInputs = [<foodexpansion:itemcompressedflesh>,<tfc:food/cooked_beef>,<tfc:food/cooked_chicken>,
@@ -27,6 +26,10 @@ mods.tconstruct.Drying.addRecipe(J,JerkyInputs[i], 6000);
 }
 mods.tconstruct.Drying.addRecipe(<contenttweaker:dried_ground_meat>,<contenttweaker:ground_meat>, 6000);
 */
+
+//Jerky
+mods.integrateddynamics.DryingBasin.addRecipe(<contenttweaker:ground_meat>, null, <contenttweaker:dried_ground_meat>, null, 10);
+mods.integrateddynamics.MechanicalDryingBasin.addRecipe(<contenttweaker:ground_meat>, null, <contenttweaker:dried_ground_meat>, null, 10);
 
 #=============================================================================================================================================		
 //Food Recipes
@@ -224,27 +227,7 @@ registerFood(<rustic:ironberries>,1,2,0.3,0.7,0,0.3,0,0,0);	<ore:categoryFruit>.
 registerFood(<rustic:chili_pepper>,1,3,0.4,2.5,0,0,1,0,0);	<ore:categoryVegetable>.add(<rustic:chili_pepper>);      	          #Chili Pepper
 registerFood(<rustic:grapes>,1,5,0.4,4.25,0,0,0.5,0,0);	<ore:categoryFruit>.add(<rustic:grapes>);      	          #Grapes
 registerFood(<rustic:wildberries>,1,5,0.4,4.25,0,0,0.5,0,0);	<ore:categoryFruit>.add(<rustic:wildberries>);      	          #WildBerry
-/*		
-registerFood(<tconstruct:edible:1>,1,2,0.2,0,0,0,0,0.2,0.3);	<ore:category>.add(<tconstruct:edible:1>);      	          #Slimeball cyan
-registerFood(<tconstruct:edible:2>,1,2,0.2,0,0,0,0,0.2,0.3);	<ore:category>.add(<tconstruct:edible:2>);      	          #Slimeball purple
-registerFood(<tconstruct:edible:3>,1,2,0.2,0,0,1,0,0.2,0.3);	<ore:category>.add(<tconstruct:edible:3>);      	          #Coagulated Blood
-registerFood(<tconstruct:edible:4>,1,2,0.2,0,0,0,0,0.2,0.3);	<ore:category>.add(<tconstruct:edible:4>);      	          #Slimeball orange
-registerFood(<tconstruct:edible:10>,1,0,0.6,0.1,0,0,0,1,0);	<ore:categoryCookedMeat>.add(<tconstruct:edible:10>);      	          #Monster Jerky
-registerFood(<tconstruct:edible:11>,1,0,0.8,0.1,0,0,0,2,0.5);	<ore:categoryCookedMeat>.add(<tconstruct:edible:11>);      	          #Beef Jerky
-registerFood(<tconstruct:edible:12>,1,0,0.6,0.1,0,0,0,2,0);	<ore:categoryCookedMeat>.add(<tconstruct:edible:12>);      	          #Chicken Jerky
-registerFood(<tconstruct:edible:13>,1,0,0.4,0.1,0,0,0,2,0.5);	<ore:categoryCookedMeat>.add(<tconstruct:edible:13>);      	          #Bacon Jerky
-registerFood(<tconstruct:edible:14>,1,0,0.8,0.1,0,0,0,2,0.5);	<ore:categoryCookedMeat>.add(<tconstruct:edible:14>);      	          #Mutton Jerky
-registerFood(<tconstruct:edible:15>,1,0,0.6,0.1,0,0,0,1,0);	<ore:categoryCookedMeat>.add(<tconstruct:edible:15>);      	          #Rabbit jerky
-registerFood(<tconstruct:edible:20>,1,0,0.6,0.1,0,0,0,1.5,0);	<ore:categoryCookedMeat>.add(<tconstruct:edible:20>);      	          #Fish Jerky
-registerFood(<tconstruct:edible:21>,1,0,0.6,0.1,0,0,0,1.5,0);	<ore:categoryCookedMeat>.add(<tconstruct:edible:21>);      	          #Salmon Jerky
-registerFood(<tconstruct:edible:22>,1,0,0.6,0.1,0,0,0,1.5,0);	<ore:categoryCookedMeat>.add(<tconstruct:edible:22>);      	          #Clownfish Jerky
-registerFood(<tconstruct:edible:23>,1,0,0.6,0.1,0,0,0,1,0);	<ore:categoryCookedMeat>.add(<tconstruct:edible:23>);      	          #Fugu Jerky
-registerFood(<tconstruct:edible:30>,1,0.2,0.2,0,0,0,0,0.2,0.3);	<ore:categoryMeal>.add(<tconstruct:edible:30>);      	          #Green Slime Drop
-registerFood(<tconstruct:edible:31>,1,0.2,0.2,0,0,0,0,0.2,0.3);	<ore:categoryMeal>.add(<tconstruct:edible:31>);      	          #Cyan Slime drop
-registerFood(<tconstruct:edible:32>,1,0.2,0.2,0,0,0,0,0.2,0.3);	<ore:categoryMeal>.add(<tconstruct:edible:32>);      	          #Purple Slime drop
-registerFood(<tconstruct:edible:33>,1,0.2,0.2,0,0,1,0,0.2,0.3);	<ore:categoryMeal>.add(<tconstruct:edible:33>);      	          #Coagulated Blood Drop
-registerFood(<tconstruct:edible:34>,1,0.2,0.2,0,0,0,0,0.2,0.3);	<ore:categoryMeal>.add(<tconstruct:edible:34>);      	          #Orange Slime Drop
-*/		
+
 registerFood(<contenttweaker:dried_fruit>,1,0,0.4,0.1,0.5,0.5,0.5,0,0);	<ore:categoryFruit>.add(<contenttweaker:dried_fruit>);      	          #Dried Fruit
 registerFood(<contenttweaker:i_vegetable_soup>,3,2,1.8,6,2,0,1,1,0);	<ore:categoryMeal>.add(<contenttweaker:i_vegetable_soup>);      	          #Vegetable Soup
 registerFood(<contenttweaker:smoothie>,1,4,0.4,6,0,0.5,0.5,0,0);	<ore:categoryMeal>.add(<contenttweaker:smoothie>);      	          #Smoothie
@@ -361,6 +344,4 @@ Heating.addRecipe("cooked_flesh", <cfm:item_flesh>, <cfm:item_flesh_cooked>, 400
 furnace.remove(<netherex:ghast_meat_cooked>);
 Heating.addRecipe("cooked_ghast", <netherex:ghast_meat_raw>, <netherex:ghast_meat_cooked>, 400, 480);
 
-mods.integrateddynamics.DryingBasin.addRecipe(<contenttweaker:ground_meat>, null, <contenttweaker:dried_ground_meat>, null, 10);
-mods.integrateddynamics.MechanicalDryingBasin.addRecipe(<contenttweaker:ground_meat>, null, <contenttweaker:dried_ground_meat>, null, 10);
 

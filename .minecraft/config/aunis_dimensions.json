@@ -1,17 +1,17 @@
 {
-  "CompactMachines": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "Storage Cell": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "space": {
+  "TENT": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
   "nc_wasteland": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "CompactMachines": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "overworld": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
@@ -27,15 +27,15 @@
     "energyToOpen": 3686400,
     "keepAlive": 1600
   },
-  "TENT": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "overworld": {
+  "Storage Cell": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
   "planet": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "space": {
     "energyToOpen": 0,
     "keepAlive": 0
   }

@@ -300,13 +300,13 @@ recipes.remove(<inspirations:materials:2>);
 recipes.remove(<inspirations:materials:3>);
 recipes.remove(<extraalchemy:vial_break>);
 recipes.remove(<minecraft:glass_bottle>);
-/*
+
 //Leather Rework
-mods.terrafirmacraft.Barrel.removeRecipe(<minecraft:leather>);
-mods.terrafirmacraft.Barrel.addRecipe("tanned_hide_s", <tfc:hide/prepared/small>, <liquid:tannin>*300, <contenttweaker:tanned_small>,8);
-mods.terrafirmacraft.Barrel.addRecipe("tanned_hide_m", <tfc:hide/prepared/medium>,<liquid:tannin>*400, <contenttweaker:tanned_small>*2,8);
-mods.terrafirmacraft.Barrel.addRecipe("tanned_hide_l", <tfc:hide/prepared/large>, <liquid:tannin>*500, <contenttweaker:tanned_small>*3,8);
+#mods.terrafirmacraft.Barrel.removeRecipe(<minecraft:leather>);
+#mods.terrafirmacraft.Barrel.addRecipe("tanned_hide_s", <tfc:hide/prepared/small>, <liquid:tannin>*300, <contenttweaker:tanned_small>,8);
+#mods.terrafirmacraft.Barrel.addRecipe("tanned_hide_m", <tfc:hide/prepared/medium>,<liquid:tannin>*400, <contenttweaker:tanned_small>*2,8);
+#mods.terrafirmacraft.Barrel.addRecipe("tanned_hide_l", <tfc:hide/prepared/large>, <liquid:tannin>*500, <contenttweaker:tanned_small>*3,8);
 mods.terrafirmacraft.Barrel.addRecipe("tanned_flesh", <contenttweaker:squeezed_flesh>, <liquid:tannin>*500, <contenttweaker:tanned_flesh>,8);
-mods.tconstruct.Drying.addRecipe(<minecraft:leather>,<contenttweaker:tanned_small>, 6000);
-mods.tconstruct.Drying.addRecipe(<minecraft:leather>,<contenttweaker:tanned_flesh>, 6000);
-*/
+#mods.tconstruct.Drying.addRecipe(<minecraft:leather>,<contenttweaker:tanned_small>, 6000);
+mods.integrateddynamics.DryingBasin.addRecipe(<contenttweaker:tanned_flesh>, null, <minecraft:leather>, null, 10);
+mods.integrateddynamics.MechanicalDryingBasin.addRecipe(<contenttweaker:tanned_flesh>, null, <minecraft:leather>, null, 10);

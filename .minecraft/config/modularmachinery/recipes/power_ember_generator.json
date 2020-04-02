@@ -1,0 +1,18 @@
+{
+    "machine": "ember_generator",
+    "registryName": "ember_generator_energy_transform",
+    "recipeTime": 16,
+    "priority": 0,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 256
+        },
+        {
+            "type": "ember",
+            "io-type": "output",
+            "ember": 16.0
+        }
+    ]
+}

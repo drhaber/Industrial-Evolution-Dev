@@ -75,6 +75,20 @@
         "prodigytech:misc/materials"
       ],
       "completedManualQuests": []
+    },
+    "cuisine:culinary_101": {
+      "viewedEntries": [
+        "cuisine:processing/mill",
+        "cuisine:processing/chopping_board",
+        "cuisine:processing/mortar"
+      ],
+      "bookmarks": [],
+      "history": [
+        "cuisine:processing/mortar",
+        "cuisine:processing/chopping_board",
+        "cuisine:processing/mill"
+      ],
+      "completedManualQuests": []
     }
   }
 }

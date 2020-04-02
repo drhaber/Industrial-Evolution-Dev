@@ -108,6 +108,7 @@ recipes.addShaped(<tconstruct:wood_rail>*4,[
 recipes.remove(<tconstruct:wood_rail_trapdoor>);
 recipes.addShapeless(<tconstruct:wood_rail_trapdoor>, [<tconstruct:wood_rail>,<ore:trapdoorWood>]);
 */	
+
 //Paper Pulp
 mods.terrafirmacraft.Barrel.addRecipe("Paper", <tfctech:powder/wood>*4, <liquid:hot_water>*150, <emergingtechnology:paperpulp>, 4);
 //Paper
@@ -230,6 +231,11 @@ mods.jei.JEI.addDescription(<quark:thatch_slab>,"Magic has made this thatch soli
 	mods.inspirations.Cauldron.addFluidTransform(<liquid:meat_broth>,  <contenttweaker:ground_meat>, <liquid:fresh_water>, 1, true);
 	mods.inspirations.Cauldron.addFluidRecipe(<quark:tallow>*4, <minecraft:ice>, <liquid:meat_broth>, 4, true);
 	mods.inspirations.Cauldron.addFluidRecipe(<quark:tallow>, <minecraft:snowball>, <liquid:meat_broth>, 1, true);
+	//Smoker
+	recipes.addShaped(<quark:smoker>,[
+	[<minecraft:netherrack>,<minecraft:netherrack>,<minecraft:netherrack>],
+	[<minecraft:netherrack>,<forestry:smoker>,<minecraft:netherrack>],
+	[<minecraft:netherrack>,<minecraft:netherrack>,<minecraft:netherrack>]]);
 #=============================================================================================================================================		
 //Marble
 mods.terrafirmacraft.Barrel.addRecipe("Quark_marble", <tfc:raw/marble>, <liquid:bleach>*50, <quark:marble>, 4);
@@ -460,6 +466,14 @@ recipes.addShaped(<appliedenergistics2:part:56>,[
 	[<contenttweaker:fluix_wire>,<contenttweaker:fluix_wire>,<contenttweaker:fluix_wire>],
 	[<tfctech:metal/red_alloy_wire>,<tfctech:metal/red_alloy_wire>,<tfctech:metal/red_alloy_wire>]]);		
 #=============================================================================================================================================		
+//Chisel
+recipes.remove(<chisel:factory>);
+recipes.addShaped(<chisel:factory>,[
+	[<tfctech:metal/wrought_iron_bolt>,<tfc:metal/sheet/wrought_iron>,<tfctech:metal/wrought_iron_bolt>],
+	[<tfc:metal/sheet/wrought_iron>,null,<tfc:metal/sheet/wrought_iron>],
+	[<tfctech:metal/wrought_iron_bolt>,<tfc:metal/sheet/wrought_iron>,<tfctech:metal/wrought_iron_bolt>]]);
+
+#=============================================================================================================================================		
 
 //Compact Machines
 
@@ -523,10 +537,91 @@ recipes.addShaped(<railcraft:circuit:3>,[
 	[<opencomputers:material:6>,<pneumaticcraft:plastic:4>,<pneumaticcraft:plastic:4>]]);
 #=============================================================================================================================================		
 
+//Modular Machines
+recipes.remove(<modularmachinery:itemmodularium>);
+mods.immersiveengineering.AlloySmelter.addRecipe(<modularmachinery:itemmodularium>*2, <ore:ingotCopper>, <ore:ingotRedAlloy>, 2000);
+
+recipes.remove(<modularmachinery:blockcontroller>);
+recipes.addShaped(<modularmachinery:blockcontroller>,[
+	[<modularmachinery:itemmodularium>,<immersiveengineering:material:27>,<modularmachinery:itemmodularium>],
+	[<immersiveengineering:material:27>,<tis3d:controller>,<immersiveengineering:material:27>],
+	[<modularmachinery:itemmodularium>,<immersiveengineering:material:27>,<modularmachinery:itemmodularium>]]);
+
+val MMC = <modularmachinery:blockcasing>;
+
+recipes.remove(MMC);
+recipes.addShaped(MMC,[
+	[null,<modularmachinery:itemmodularium>,null],
+	[<modularmachinery:itemmodularium>,<contenttweaker:wooden_glass_casing>,<modularmachinery:itemmodularium>],
+	[null,<modularmachinery:itemmodularium>,null]]);
+
+val EOH = <modulardiversity:blockemberoutputhatch>.definition;
+
+val DawnstoneItem = [<embers:nugget_dawnstone>,<embers:ingot_dawnstone>,<embers:plate_dawnstone>] as IItemStack[];
+val PlaceHolderItems = [<embers:superheater>,<embers:archaic_circuit>,<embers:eldritch_insignia>,<embers:wildfire_core>,<embers:flame_barrier>] as IItemStack[];
+
+for i, DSI in DawnstoneItem{
+recipes.addShaped(EOH.makeStack(i),[
+	[null,DSI,null],
+	[DSI,MMC,DSI],
+	[null,DSI,null]]);
+}
+
+for i, PHI in PlaceHolderItems{
+recipes.addShaped(EOH.makeStack(i+3),[
+	[null,PHI,null],
+	[PHI,MMC,PHI],
+	[null,PHI,null]]);
+}
+
+recipes.remove(<modularmachinery:blockenergyinputhatch:*>);
+
+val RFIH = <modularmachinery:blockenergyinputhatch>.definition;
+
+recipes.addShaped(RFIH.makeStack(0),[
+	[null,<tfctech:metal/copper_long_rod>,null],
+	[<libvulpes:battery>,MMC,<libvulpes:battery>],
+	[null,<tfctech:metal/copper_long_rod>,null]]);
+
+recipes.addShaped(RFIH.makeStack(1),[
+	[<tfctech:metal/copper_long_rod>,<immersiveengineering:connector>,<tfctech:metal/copper_long_rod>],
+	[<libvulpes:battery:1>,MMC,<libvulpes:battery:1>],
+	[<tfctech:metal/copper_long_rod>,<immersiveengineering:connector>,<tfctech:metal/copper_long_rod>]]);	
+
+recipes.addShaped(RFIH.makeStack(2),[
+	[null,RFIH.makeStack(0),null],
+	[RFIH.makeStack(0),MMC,RFIH.makeStack(0)],
+	[null,RFIH.makeStack(0),null]]);
+
+recipes.addShaped(RFIH.makeStack(3),[
+	[<tfctech:metal/black_bronze_long_rod>,null,<tfctech:metal/black_bronze_long_rod>],
+	[null,RFIH.makeStack(2),null],
+	[<tfctech:metal/black_bronze_long_rod>,null,<tfctech:metal/black_bronze_long_rod>]]);
+
+val IECap = <immersiveengineering:metal_device0>.definition;
+
+for i in 4 to 7{
+
+recipes.addShaped(RFIH.makeStack(i),[
+	[null,RFIH.makeStack(i- 1),null],
+	[RFIH.makeStack(i- 1),IECap.makeStack(i- 4),RFIH.makeStack(i- 1)],
+	[null,RFIH.makeStack(i- 1),null]]);
+}	
+
+recipes.addShaped(RFIH.makeStack(7),[
+	[null,RFIH.makeStack(6),null],
+	[RFIH.makeStack(6),MMC,RFIH.makeStack(6)],
+	[null,RFIH.makeStack(6),null]]);
+#=============================================================================================================================================		
+
 //Ghost Explosives
 recipes.removeByMod("ghostsexplosives");
 recipes.remove(<ghostsexplosives:tnt_x1_2>);
 
+#=============================================================================================================================================		
+
+//MrCrayFish Furniture
+recipes.remove(<cfm:item_log>);
 
 #=============================================================================================================================================		
 
