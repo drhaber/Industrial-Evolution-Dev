@@ -63,32 +63,7 @@ recipes.remove(<pressure:canister>);
 recipes.addShaped(<pressure:canister>,[
 	[<ore:stickPlastic>,<ore:sheetPlastic>,null],
 	[<ore:sheetPlastic>,null,<ore:sheetPlastic>],
-	[<ore:sheetPlastic>,<ore:sheetPlastic>,<ore:sheetPlastic>]]);
-//Little Tiles Tools
-recipes.remove(<littletiles:hammer>);
-recipes.addShaped(<littletiles:hammer>,[
-	[<tfc:metal/hammer_head/wrought_iron>,null],
-	[<ore:rodStone>,<ore:dyeBlue>]]);
-recipes.remove(<littletiles:saw>);
-recipes.addShaped(<littletiles:saw>,[
-	[<tfc:metal/saw_blade/wrought_iron>,null],
-	[<ore:rodStone>,<ore:dyeBlue>]]);		
-recipes.remove(<littletiles:wrench>);
-recipes.addShaped(<littletiles:wrench>,[
-	[<contenttweaker:ironwrenchhead>,null],
-	[<ore:rodStone>,<ore:dyeBlue>]]);	
-recipes.remove(<littletiles:chisel>);
-recipes.addShaped(<littletiles:chisel>,[
-	[<tfc:metal/chisel_head/wrought_iron>,null],
-	[<ore:rodStone>,<ore:dyeBlue>]]);	
-recipes.remove(<littletiles:colortube>);
-recipes.addShaped(<littletiles:colortube>,[
-	[<ore:woolWhite>,null],
-	[<ore:rodStone>,<ore:dyeBlue>]]);	
-recipes.remove(<littletiles:container>);
-recipes.addShapeless(<littletiles:container>,[<contenttweaker:leatherbag>,<ore:dyeBlue>,<littletiles:hammer>.transformDamage(1)]);
-recipes.remove(<littletiles:grabber>);
-recipes.addShapeless(<littletiles:grabber>,[<contenttweaker:leatherglove>,<ore:dyeBlue>,<littletiles:hammer>.transformDamage(1)]);							
+	[<ore:sheetPlastic>,<ore:sheetPlastic>,<ore:sheetPlastic>]]);							
 //Torch Lever
 recipes.remove(<inspirations:torch_lever>);
 #recipes.addShapeless(<inspirations:torch_lever>, [<tconstruct:stone_torch>,<minecraft:lever>]);
@@ -416,11 +391,20 @@ mods.jei.JEI.addDescription(<appliedenergistics2:smooth_sky_stone_chest>,"The se
 //Architecture Craft
 recipes.remove(<architecturecraft:largepulley>);
 recipes.addShapeless(<architecturecraft:largepulley>,[<astikorcarts:wheel>,<quark:rope>]);
+recipes.remove(<architecturecraft:chisel>);
+recipes.addShaped(<architecturecraft:chisel>,[
+	[<tfc:metal/chisel_head/wrought_iron>,null],
+	[<ore:dyeOrange>,<ore:rodStone>]]);	
+recipes.remove(<architecturecraft:hammer>);
+recipes.addShaped(<architecturecraft:hammer>,[
+	[<tfc:metal/hammer_head/wrought_iron>,null],
+	[<ore:rodStone>,<ore:dyeOrange>]]);
+
 //Liquid Catalyst
 mods.jei.JEI.addDescription(<liquid:liquidcatalyst>,"3 Bottles worth in a cauldron can be used to make Nanomachines");
 //Stone Rods
 mods.jei.JEI.removeAndHide(<microblockcbe:stone_rod>);
-mods.jei.JEI.removeAndHide(<inspirations:materials:8>);	
+recipes.remove(<inspirations:materials:8>);	
 #=============================================================================================================================================		
 //Gear Remove
 mods.unidict.removalByKind.get("Crafting").remove("gear");
@@ -468,12 +452,115 @@ recipes.addShaped(<appliedenergistics2:part:56>,[
 	[<contenttweaker:fluix_wire>,<contenttweaker:fluix_wire>,<contenttweaker:fluix_wire>],
 	[<tfctech:metal/red_alloy_wire>,<tfctech:metal/red_alloy_wire>,<tfctech:metal/red_alloy_wire>]]);		
 #=============================================================================================================================================		
+//Forge Mircro Saws
+recipes.remove(<microblockcbe:saw_diamond>);
+recipes.addShaped(<microblockcbe:saw_diamond>,[
+	[<contenttweaker:diamond_saw_head>,<ore:rodStone>,null],
+	[null,<contenttweaker:diamond_saw_head>,<ore:rodStone>],
+	[null,null,<ore:stickTreatedWood>]]);
+recipes.remove(<microblockcbe:saw_iron>);
+recipes.addShaped(<microblockcbe:saw_iron>,[
+	[<tfc:metal/saw_blade/wrought_iron>,<ore:rodStone>,null],
+	[null,<tfc:metal/saw_blade/wrought_iron>,<ore:rodStone>],
+	[null,null,<ore:stickTreatedWood>]]);
+mods.jei.JEI.removeAndHide(<microblockcbe:saw_stone>);	
+//Little Tiles Tools
+recipes.remove(<littletiles:hammer>);
+recipes.addShaped(<littletiles:hammer>,[
+	[<tfc:metal/hammer_head/wrought_iron>,null],
+	[<ore:rodStone>,<ore:dyeBlue>]]);
+recipes.remove(<littletiles:saw>);
+recipes.addShaped(<littletiles:saw>,[
+	[<tfc:metal/saw_blade/wrought_iron>,null],
+	[<ore:rodStone>,<ore:dyeBlue>]]);		
+recipes.remove(<littletiles:wrench>);
+recipes.addShaped(<littletiles:wrench>,[
+	[<contenttweaker:ironwrenchhead>,null],
+	[<ore:rodStone>,<ore:dyeBlue>]]);	
+recipes.remove(<littletiles:chisel>);
+recipes.addShaped(<littletiles:chisel>,[
+	[<tfc:metal/chisel_head/wrought_iron>,null],
+	[<ore:rodStone>,<ore:dyeBlue>]]);	
+recipes.remove(<littletiles:colortube>);
+recipes.addShaped(<littletiles:colortube>,[
+	[<ore:woolWhite>,null],
+	[<ore:rodStone>,<ore:dyeBlue>]]);	
+recipes.remove(<littletiles:container>);
+recipes.addShapeless(<littletiles:container>,[<contenttweaker:leatherbag>,<ore:dyeBlue>,<littletiles:hammer>.transformDamage(1)]);
+recipes.remove(<littletiles:grabber>);
+recipes.addShapeless(<littletiles:grabber>,[<contenttweaker:leatherglove>,<ore:dyeBlue>,<littletiles:hammer>.transformDamage(1)]);
+
 //Chisel
 recipes.remove(<chisel:factory>);
 recipes.addShaped(<chisel:factory>,[
 	[<tfctech:metal/wrought_iron_bolt>,<tfc:metal/sheet/wrought_iron>,<tfctech:metal/wrought_iron_bolt>],
 	[<tfc:metal/sheet/wrought_iron>,null,<tfc:metal/sheet/wrought_iron>],
 	[<tfctech:metal/wrought_iron_bolt>,<tfc:metal/sheet/wrought_iron>,<tfctech:metal/wrought_iron_bolt>]]);
+recipes.remove(<chisel:chisel_iron>);
+recipes.addShaped(<chisel:chisel_iron>,[
+	[null,<tfc:metal/chisel_head/wrought_iron>],
+	[<ore:rodStone>,<ore:dyeOrange>]]);	
+
+recipes.remove(<chisel:chisel_diamond>);
+mods.embers.Stamper.add(<chisel:chisel_diamond>.withTag({chiseldata: {}}),<liquid:diamond>*144, <embers:stamp_flat>,<chisel:chisel_iron>);	
+recipes.remove(<chisel:chisel_hitech>);
+recipes.addShaped(<chisel:chisel_hitech>.withTag({chiseldata: {}}),[
+	[null,null,<chisel:chisel_diamond>],
+	[null,<opencomputers:material:8>,null],
+	[<ore:plasticWhite>,null,null]]);
+recipes.remove(<chisel:offsettool>);
+recipes.addShaped(<chisel:offsettool>,[
+	[null,null,<ore:enderpearl>],
+	[null,<extrabitmanipulation:sculpting_loop_head>,null],
+	[<minecraft:stick>,null,null]]);
+recipes.remove(<chisel:auto_chisel>);
+recipes.addShaped(<chisel:auto_chisel>,[
+	[<ore:blockGlass>,<ore:blockGlass>,<ore:blockGlass>],
+	[<ore:rodBlackBronze>,<ore:chisel>,<ore:rodBlackBronze>],
+	[<immersiveengineering:storage_slab:8>,<libvulpes:battery>,<immersiveengineering:storage_slab:8>]]);
+
+//Chisel & Bits
+mods.jei.JEI.removeAndHide(<chiselsandbits:chisel_stone>);
+recipes.remove(<chiselsandbits:chisel_iron>);
+recipes.addShaped(<chiselsandbits:chisel_iron>.withTag({}),[
+	[null,<tfc:metal/chisel_head/wrought_iron>],
+	[<ore:stickTreatedWood>,null]]);
+
+recipes.remove(<chiselsandbits:chisel_gold>);
+mods.embers.Stamper.add(<chiselsandbits:chisel_gold>.withTag({}),<liquid:gold>*144, <embers:stamp_flat>,<chiselsandbits:chisel_iron>);	
+recipes.remove(<chiselsandbits:chisel_diamond>);
+mods.embers.Stamper.add(<chiselsandbits:chisel_diamond>.withTag({}),<liquid:diamond>*144, <embers:stamp_flat>,<chiselsandbits:chisel_gold>);	
+
+recipes.remove(<chiselsandbits:bitsaw_diamond>);
+recipes.addShaped(<chiselsandbits:bitsaw_diamond>,[
+	[null,<ore:stickTreatedWood>,<contenttweaker:diamond_saw_head>],
+	[<ore:stickTreatedWood>,<contenttweaker:diamond_saw_head>,null],
+	[<ore:stickTreatedWood>,null,null]]);
+
+recipes.remove(<chiselsandbits:wrench_wood>);
+recipes.addShaped(<chiselsandbits:wrench_wood>,[
+	[null,<ore:lumber>,null],
+	[null,<minecraft:stick>,<ore:lumber>],
+	[<minecraft:stick>,null,null]]);	
+
+recipes.remove(<chiselsandbits:bittank>);
+recipes.addShaped(<chiselsandbits:bittank>,[
+	[<contenttweaker:wooden_glass_casing>,<contenttweaker:wooden_glass_casing>],
+	[<contenttweaker:wooden_glass_casing>,<contenttweaker:wooden_glass_casing>]]);	
+
+
+
+recipes.remove(<extrabitmanipulation:chiseled_helmet_iron>);
+recipes.addShapeless(<extrabitmanipulation:chiseled_helmet_iron>,[<tfc:metal/helmet/wrought_iron>,<ore:cbChisels>]);
+
+recipes.remove(<extrabitmanipulation:chiseled_chestplate_iron>);
+recipes.addShapeless(<extrabitmanipulation:chiseled_chestplate_iron>,[<tfc:metal/chestplate/wrought_iron>,<ore:cbChisels>]);
+
+recipes.remove(<extrabitmanipulation:chiseled_leggings_iron>);
+recipes.addShapeless(<extrabitmanipulation:chiseled_leggings_iron>,[<tfc:metal/greaves/wrought_iron>,<ore:cbChisels>]);
+
+recipes.remove(<extrabitmanipulation:chiseled_boots_iron>);
+recipes.addShapeless(<extrabitmanipulation:chiseled_boots_iron>,[<tfc:metal/boots/wrought_iron>,<ore:cbChisels>]);
 
 #=============================================================================================================================================		
 

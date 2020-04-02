@@ -115,11 +115,6 @@ mods.embers.Stamper.add(<contenttweaker:obsidian_shovel_head>,<liquid:lava>*144,
 mods.embers.Stamper.add(<contenttweaker:manasteel_shovel_head>,<liquid:manasteel>*144, <tfc:ceramics/fired/mold/shovel_head>,null);
 mods.embers.Stamper.add(<contenttweaker:diamond_shovel_head>,<liquid:diamond>*666, <tfc:ceramics/fired/mold/shovel_head>,<contenttweaker:manasteel_shovel_head>);
 
-#mods.tconstruct.Casting.addTableRecipe(<contenttweaker:gold_shovel_head>,<tfc:ceramics/fired/mold/shovel_head>,<liquid:gold>,144*ingots_SH,false,time_SH*20);
-#mods.tconstruct.Casting.addTableRecipe(<contenttweaker:obsidian_shovel_head>,<tfc:ceramics/fired/mold/shovel_head>,<liquid:obsidian>,144*ingots_SH,false,time_SH*20);
-#mods.tconstruct.Casting.addTableRecipe(<contenttweaker:manasteel_shovel_head>,<tfc:ceramics/fired/mold/shovel_head>,<liquid:manasteel>,144*ingots_SH,true,time_SH*20);
-#mods.tconstruct.Casting.addTableRecipe(<contenttweaker:diamond_shovel_head>,<contenttweaker:manasteel_shovel_head>,<liquid:diamond>,144*ingots_SH,true,time_SH*20);
-
 #=============================================================================================================================================		
 
 val hoehead = [<tfc:metal/hoe_head/tungsten>,<tfc:metal/hoe_head/black_bronze>,<tfc:metal/hoe_head/red_steel>,<tfc:metal/hoe_head/invar>,
@@ -190,6 +185,8 @@ val sawblade = [<tfc:metal/saw_blade/tungsten>,<tfc:metal/saw_blade/black_bronze
 for i, sb in sawblade{
 mods.embers.Stamper.add(sb,castingMetal[i]*144, <tfc:ceramics/fired/mold/saw_blade>,null);
 }
+mods.embers.Stamper.add(<contenttweaker:diamond_saw_head>,<liquid:diamond>*144, <tfc:ceramics/fired/mold/saw_blade>,<tfc:metal/saw_blade/wrought_iron>);
+
 #mods.tconstruct.Casting.addTableRecipe(<tfc:metal/saw_blade/aluminium>,<tfc:ceramics/fired/mold/saw_blade>,<liquid:aluminum>,144*ingots_SB,false,time_SB*20);
 #mods.tconstruct.Casting.addTableRecipe(<tfc:metal/saw_blade/wrought_iron>,<tfc:ceramics/fired/mold/saw_blade>,<liquid:iron>,144*ingots_SB,false,time_SB*20);
 #=============================================================================================================================================		
@@ -333,9 +330,30 @@ recipes.addShaped(<contenttweaker:anvilmold>,[
 
 for i, anvil in anvils{	
 mods.tconstruct.Casting.addBasinRecipe(anvil, <contenttweaker:anvilmold>, molten_anvil_metals[i], 144*14, true, 3000);
-}
+}*/
+
+//Metal Fixes
+mods.embers.Melter.remove(<liquid:aluminum>*144);
+mods.embers.Melter.remove(<liquid:aluminum>*16);
+mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:aluminum>*360);
+mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:aluminum>*144);
+mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:aluminum>*16);
+mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:aluminum>*1296);
+mods.nuclearcraft.ingot_former.removeRecipeWithInput(<liquid:aluminum>*144);
+mods.nuclearcraft.electrolyser.removeRecipeWithInput(<liquid:alumina>*144);
+mods.nuclearcraft.electrolyser.addRecipe(<liquid:alumina>*144, <liquid:aluminium>*288, <liquid:oxygen>*3000, null, null);
+
+mods.embers.Melter.add(<liquid:aluminium>*144,<ore:dustAluminium>); 
+mods.embers.Melter.add(<liquid:aluminium>*144,<ore:ingotAluminium>);
+mods.embers.Melter.add(<liquid:aluminium>*144,<ore:scrapAluminium>);
+mods.embers.Melter.add(<liquid:aluminium>*144,<ore:sheetAluminium>);
+
+mods.embers.Melter.add(<liquid:aluminium>*16,<ore:nuggetAluminium>);
+
+mods.embers.Melter.add(<liquid:aluminium>*144,<ore:dustAluminum>);
+mods.embers.Melter.add(<liquid:aluminium>*144,<ore:ingotAluminum>);
 #=============================================================================================================================================		
-*/
+
 //Alloys
 //mods.embers.Mixer.add(ILiquidStack <outputfluid>,ILiquidStack [<inputfluid1>,<inputfluid2>,<inputfluid3>,...]);
 

@@ -10,7 +10,10 @@ import crafttweaker.potions.IPotion;
 import mods.contenttweaker.Random;
 import mods.contenttweaker.World;
 import mods.contenttweaker.ResourceLocation;
-
+//diamond_saw_head
+var diamond_saw_head = VanillaFactory.createItem("diamond_saw_head");
+diamond_saw_head.register();
+game.setLocalization("item.contenttweaker.diamond_saw_head.name", "Diamond Saw Head");
 //unfired_archaic_lump
 var unfired_archaic_lump = VanillaFactory.createItem("unfired_archaic_lump");
 unfired_archaic_lump.register();

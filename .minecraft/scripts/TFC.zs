@@ -214,14 +214,14 @@ mods.terrafirmacraft.ClayKnapping.addRecipe("Silicon_Knap", <contenttweaker:unfi
 																	"XX XX", 
 																	" XXX ", 
 																	"X X X");
-/*
-mods.terrafirmacraft.StoneKnapping.addRecipe("Stone_Rod", [<tconstruct:stone_stick>*2], ["all"],
+
+mods.terrafirmacraft.StoneKnapping.addRecipe("Stone_Rod", [<inspirations:materials:8>*2], ["all"],
 																	"    X", 
 																	"   X ", 
 																	"  X  ", 
 																	" X   ", 
 																	"X    ");
-*/
+
 mods.terrafirmacraft.LeatherKnapping.addRecipe("Little_Bag_Knap", <contenttweaker:leatherbag>, 
 																	"  X  ", 
 																	"XXXXX", 

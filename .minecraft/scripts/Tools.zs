@@ -18,6 +18,9 @@ mods.jei.JEI.removeAndHide(<minecraft:wooden_axe>);
 							<minecraft:wooden_hoe>,<minecraft:wooden_sword>,<minecraft:wooden_shovel>,<minecraft:wooden_pickaxe>,<minecraft:wooden_axe>]);
 
 
+//C&B Chisels
+<ore:cbChisels>.addItems([<chiselsandbits:chisel_iron>,<chiselsandbits:chisel_gold>,<chiselsandbits:chisel_diamond>]);
+
 //Shovels
 <ore:shovelIron>.addItems([<minecraft:iron_shovel>,<tfc:metal/shovel/wrought_iron>]);
 <ore:shovelBronze>.addItems([<forestry:bronze_shovel>,<tfc:metal/shovel/bronze>]);
@@ -44,12 +47,14 @@ mods.jei.JEI.removeAndHide(<minecraft:wooden_axe>);
 <ore:shearsSteel>.addItems([<railcraft:tool_shears_steel>]);
 
 //Helmet
-
+<ore:helmetIron>.addItems([<minecraft:iron_helmet>,<tfc:metal/helmet/wrought_iron>]);
 //Chestplate
-
+<ore:chestplateIron>.addItems([<minecraft:iron_chestplate>,<tfc:metal/chestplate/wrought_iron>]);
 //Leggings
-
+<ore:leggingsIron>.addItems([<minecraft:iron_leggings>,<tfc:metal/greaves/wrought_iron>]);
 //Boots
+<ore:bootsIron>.addItems([<minecraft:iron_boots>,<tfc:metal/boots/wrought_iron>]);
+
 /*
 //Diamond Tools
 mods.tconstruct.Casting.addTableRecipe(<minecraft:diamond_sword>, <botania:manasteelsword>, <liquid:diamond>, 1332, true, 1800);
