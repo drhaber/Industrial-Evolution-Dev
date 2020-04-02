@@ -4,6 +4,9 @@ import crafttweaker.item.IItemDefinition;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.mods.IMod;
 
+//Magnesium
+<ore:dustMagnesium>.add(<nuclearcraft:dust:7>);
+<ore:ingotMagnesium>.add(<nuclearcraft:ingot:7>);
 //Peat
 <ore:blockPeat>.add(<tfc:peat>);
 //bituminousCoal

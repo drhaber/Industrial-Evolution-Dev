@@ -4,6 +4,8 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.mods.IMod;
 import crafttweaker.liquid.ILiquidStack;
 import moretweaker.railcraft.RollingMachine;
+import mods.terrafirmacraft.Heating;
+import mods.terrafirmacraft.ItemRegistry;
 
 //Magnifying Glass
 recipes.remove(<agricraft:magnifying_glass>);
@@ -26,7 +28,7 @@ mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx3", <tfctech:metal/wrought_iron
 mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx4_steel", <tfctech:metal/steel_strip>, <jaff:iron_hook>*4, 4, "general","BEND_NOT_LAST","HIT_NOT_LAST","HIT_LAST");
 mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx4_aluminium", <tfctech:metal/aluminium_strip>, <jaff:iron_hook>*4, 4, "general","BEND_NOT_LAST","HIT_NOT_LAST","HIT_LAST");
 
-mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx6", <tfctech:metal/titanium_strip>, <jaff:iron_hook>*6, 6, "general","BEND_NOT_LAST","HIT_NOT_LAST","HIT_LAST");
+mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx6", <tfctech:metal/titanium_strip>, <jaff:iron_hook>*6, 6, "general","BEND_NOT_LAST","HIT_NOT_LAST","HIT_LAST");		
 
 //Charcoal Blocks
 recipes.remove(<chisel:block_charcoal>);
@@ -612,6 +614,22 @@ recipes.addShaped(RFIH.makeStack(7),[
 	[null,RFIH.makeStack(6),null],
 	[RFIH.makeStack(6),MMC,RFIH.makeStack(6)],
 	[null,RFIH.makeStack(6),null]]);
+#=============================================================================================================================================		
+//Macaw's Mods
+
+recipes.remove(<mcwroofs:tile_clay>);
+furnace.remove(<mcwroofs:rec_tile>);
+
+mods.terrafirmacraft.ClayKnapping.addRecipe("roof_tile_Knap",<mcwroofs:tile_clay>, 
+																	" X X ",
+																	" XXX ",
+																	" XXX ",
+																	" XXX ",
+																	" X X "); 
+
+ItemRegistry.registerItemHeat(<mcwroofs:tile_clay>, 1, 1599, false);
+ItemRegistry.registerItemHeat(<mcwroofs:rec_tile>, 1, 1599, false);
+Heating.addRecipe("roof_tile_Kiln", <mcwroofs:tile_clay>, <mcwroofs:rec_tile>, 1500, 3200);
 #=============================================================================================================================================		
 
 //Ghost Explosives

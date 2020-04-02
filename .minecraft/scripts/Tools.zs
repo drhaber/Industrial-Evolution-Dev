@@ -90,3 +90,27 @@ for i, ST in steelTools{
 }
 
 #<tcomplement:steel_helmet>,<tcomplement:steel_chestplate>,<tcomplement:steel_leggings>,<tcomplement:steel_boots>
+
+//Fishing RODS
+recipes.addShaped(<minecraft:fishing_rod>,[
+	[null,null,<ore:stickWood>],
+	[null,<ore:stickWood>,<ore:string>],
+	[<ore:stickWood>,null,<jaff:iron_hook>]]);
+<jaff:wooden_fishing_rod>.displayName = "Treated Fishing Rod";	
+recipes.remove(<jaff:wooden_fishing_rod>);
+recipes.addShaped(<jaff:wooden_fishing_rod>,[
+	[null,null,<ore:stickTreatedWood>],
+	[null,<ore:stickTreatedWood>,<ore:string>],
+	[<ore:stickWood>,null,<jaff:iron_hook>]]);
+recipes.remove(<jaff:iron_fishing_rod>);
+recipes.addShaped(<jaff:iron_fishing_rod>,[
+	[null,null,<ore:stickIron>],
+	[null,<ore:stickIron>,<ore:string>],
+	[<ore:stickWood>,null,<jaff:iron_hook>]]);
+recipes.remove(<jaff:golden_fishing_rod>);
+recipes.addShaped(<jaff:golden_fishing_rod>,[
+	[null,null,<ore:rodGold>],
+	[null,<ore:rodGold>,<ore:string>],
+	[<ore:stickWood>,null,<jaff:iron_hook>]]);
+recipes.remove(<jaff:diamond_fishing_rod>);
+mods.embers.Stamper.add(<jaff:diamond_fishing_rod>,<liquid:diamond>*1332, <embers:stamp_flat>,<jaff:golden_fishing_rod>);

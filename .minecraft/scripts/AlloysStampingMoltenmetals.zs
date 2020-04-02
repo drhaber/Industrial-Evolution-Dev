@@ -113,7 +113,7 @@ mods.embers.Stamper.add(sh,castingMetal[i]*144, <tfc:ceramics/fired/mold/shovel_
 mods.embers.Stamper.add(<contenttweaker:gold_shovel_head>,<liquid:gold>*144, <tfc:ceramics/fired/mold/shovel_head>,null);
 mods.embers.Stamper.add(<contenttweaker:obsidian_shovel_head>,<liquid:lava>*144, <tfc:ceramics/fired/mold/shovel_head>,<nuclearcraft:gem_dust:3>);
 mods.embers.Stamper.add(<contenttweaker:manasteel_shovel_head>,<liquid:manasteel>*144, <tfc:ceramics/fired/mold/shovel_head>,null);
-mods.embers.Stamper.add(<contenttweaker:diamond_shovel_head>,<liquid:diamond>*144, <tfc:ceramics/fired/mold/shovel_head>,<contenttweaker:manasteel_shovel_head>);
+mods.embers.Stamper.add(<contenttweaker:diamond_shovel_head>,<liquid:diamond>*666, <tfc:ceramics/fired/mold/shovel_head>,<contenttweaker:manasteel_shovel_head>);
 
 #mods.tconstruct.Casting.addTableRecipe(<contenttweaker:gold_shovel_head>,<tfc:ceramics/fired/mold/shovel_head>,<liquid:gold>,144*ingots_SH,false,time_SH*20);
 #mods.tconstruct.Casting.addTableRecipe(<contenttweaker:obsidian_shovel_head>,<tfc:ceramics/fired/mold/shovel_head>,<liquid:obsidian>,144*ingots_SH,false,time_SH*20);

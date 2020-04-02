@@ -3,6 +3,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import moretweaker.railcraft.BlastFurnace;
 import mods.appliedenergistics2.Grinder;
+import mods.terrafirmacraft.Quern;
 
 mods.immersiveengineering.Crusher.removeRecipe(<tfc:metal/dust/wrought_iron>);
 mods.unidict.removalByKind.get("Furnace").remove("ingot");
@@ -11,6 +12,7 @@ mods.unidict.removalByKind.get("Furnace").remove("ingot");
 mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust_oxide>, <tfc:ore/thorianite>, 2048, <nuclearcraft:dust_oxide:1>, 0.25);
 //Magnesium
 mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust:7>, <tfc:ore/magnesite>, 2048);
+Grinder.addRecipe(<nuclearcraft:dust:7>, <tfc:ore/magnesite>, 4);
 //Lithium
 mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust:6>, <tfc:ore/spodumene>, 2048);
 

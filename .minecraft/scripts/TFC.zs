@@ -48,15 +48,16 @@ recipes.addShaped(<tfctech:smeltery_cauldron>,[
 	[<tfctech:metal/black_bronze_long_rod>,null,<tfctech:metal/black_bronze_long_rod>]]);	
 //Cheaper Buckets
 mods.terrafirmacraft.Anvil.removeRecipe(<tfc:metal/bucket/red_steel>);
-#mods.terrafirmacraft.ItemRegistry.registerItemMetal(<tfc:metal/bucket/red_steel>, "COPPER", 200, true);
-mods.terrafirmacraft.ItemRegistry.registerItemHeat(<tfc:metal/bucket/red_steel>, 0.35, 1350, false);
-mods.terrafirmacraft.Heating.addRecipe("destroy_red", <tfc:metal/bucket/red_steel>, <tfc:metal/scrap/copper>, 700, 1300);
+mods.terrafirmacraft.ItemRegistry.registerItemMetal(<tfc:metal/bucket/red_steel>, "COPPER", 200, true);
+#mods.terrafirmacraft.ItemRegistry.registerItemHeat(<tfc:metal/bucket/red_steel>, 0.35, 1350, false);
+#mods.terrafirmacraft.Heating.addRecipe("destroy_red", <tfc:metal/bucket/red_steel>, <tfc:metal/scrap/copper>, 700, 1300);
 <tfc:metal/bucket/red_steel>.displayName = "Copper Bucket";
 RollingMachine.addShapeless(<tfc:metal/bucket/red_steel>, [<ore:sheetDoubleCopper>]);
+
 mods.terrafirmacraft.Anvil.removeRecipe(<tfc:metal/bucket/blue_steel>);
-#mods.terrafirmacraft.ItemRegistry.registerItemMetal(<tfc:metal/bucket/red_steel>, "MITHRIL", 200, true);
-mods.terrafirmacraft.ItemRegistry.registerItemHeat(<tfc:metal/bucket/blue_steel>, 0.35, 1350, false);
-mods.terrafirmacraft.Heating.addRecipe("destroy_blue", <tfc:metal/bucket/blue_steel>, <tfc:metal/scrap/mithril>, 700, 1300);
+mods.terrafirmacraft.ItemRegistry.registerItemMetal(<tfc:metal/bucket/red_steel>, "MITHRIL", 200, true);
+#mods.terrafirmacraft.ItemRegistry.registerItemHeat(<tfc:metal/bucket/blue_steel>, 0.35, 1350, false);
+#mods.terrafirmacraft.Heating.addRecipe("destroy_blue", <tfc:metal/bucket/blue_steel>, <tfc:metal/scrap/mithril>, 700, 1300);
 <tfc:metal/bucket/blue_steel>.displayName = "Mithril Bucket";
 RollingMachine.addShapeless(<tfc:metal/bucket/blue_steel>, [<ore:sheetDoubleMithril>]);
 //Salt

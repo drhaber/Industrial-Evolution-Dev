@@ -4,6 +4,8 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.mods.IMod;
 import crafttweaker.liquid.ILiquidStack;
 import moretweaker.railcraft.RollingMachine;
+import mods.terrafirmacraft.Heating;
+import mods.terrafirmacraft.ItemRegistry;
 import mods.tfctech.WireDrawing;
 
 //Super Heater
@@ -33,6 +35,68 @@ val EmbersPlates =[<embers:plate_copper>,<embers:plate_lead>,<embers:plate_silve
 for EP in EmbersPlates{
 mods.embers.Stamper.remove(EP);
 }
+
+//Archaic Brick
+
+recipes.addShaped(<contenttweaker:unfired_archaic_lump>,[
+	[<ore:dustAsh>,<ore:clayPorcelain>,<ore:dustAsh>],
+	[<quark:soul_powder>,<ore:fireClay>,<quark:soul_powder>],
+	[<ore:dustAsh>,<ore:clay>,<ore:dustAsh>]]);
+
+mods.terrafirmacraft.ItemRegistry.registerItemHeat(<contenttweaker:unfired_archaic_lump>, 1, 1599, false);
+mods.terrafirmacraft.ItemRegistry.registerItemHeat(<embers:archaic_brick>, 1, 1599, false);
+
+mods.terrafirmacraft.Heating.addRecipe("archaic_brick_Kiln", <contenttweaker:unfired_archaic_lump>, <embers:archaic_brick>, 1500, 3200);
+
+//Caminite Blend
+recipes.remove(<embers:blend_caminite>);
+recipes.addShaped(<embers:blend_caminite>,[
+	[<ore:dustMagnesium>,<ore:dustSulfur>,<ore:dustMagnesium>],
+	[<ore:dustSulfur>,<ore:fireClay>,<ore:dustSulfur>],
+	[<ore:dustMagnesium>,<ore:dustSulfur>,<ore:dustMagnesium>]]);
+
+ItemRegistry.registerItemHeat(<embers:blend_caminite>, 1, 1599, false);
+ItemRegistry.registerItemHeat(<embers:brick_caminite>, 1, 1599, false);
+Heating.addRecipe("caminite_brick_Kiln", <embers:blend_caminite>, <embers:brick_caminite>, 1500, 3200);
+
+ItemRegistry.registerItemHeat(<embers:plate_caminite_raw>, 1, 1599, false);
+ItemRegistry.registerItemHeat(<embers:plate_caminite>, 1, 1599, false);
+Heating.addRecipe("caminite_plate_Kiln", <embers:plate_caminite_raw>, <embers:plate_caminite>, 1500, 3200);
+
+furnace.remove(<embers:brick_caminite>);
+furnace.remove(<embers:plate_caminite>);
+
+//Stamps
+ItemRegistry.registerItemHeat(<embers:stamp_bar_raw>, 1, 1599, false);
+ItemRegistry.registerItemHeat(<embers:stamp_bar>, 1, 1599, false);
+Heating.addRecipe("stamp_bar_Kiln", <embers:stamp_bar_raw>, <embers:stamp_bar>, 1500, 3200);
+
+ItemRegistry.registerItemHeat(<embers:stamp_flat_raw>, 1, 1599, false);
+ItemRegistry.registerItemHeat(<embers:stamp_flat>, 1, 1599, false);
+Heating.addRecipe("stamp_flat_Kiln", <embers:stamp_flat_raw>, <embers:stamp_flat>, 1500, 3200);
+
+ItemRegistry.registerItemHeat(<embers:stamp_plate_raw>, 1, 1599, false);
+ItemRegistry.registerItemHeat(<embers:stamp_plate>, 1, 1599, false);
+Heating.addRecipe("stamp_plate_Kiln", <embers:stamp_plate_raw>, <embers:stamp_plate>, 1500, 3200);
+
+ItemRegistry.registerItemHeat(<embers:stamp_gear_raw>, 1, 1599, false);
+ItemRegistry.registerItemHeat(<embers:stamp_gear>, 1, 1599, false);
+Heating.addRecipe("stamp_gear_Kiln", <embers:stamp_gear_raw>, <embers:stamp_gear>, 1500, 3200);
+
+ItemRegistry.registerItemHeat(<soot:stamp_nugget_raw>, 1, 1599, false);
+ItemRegistry.registerItemHeat(<soot:stamp_nugget>, 1, 1599, false);
+Heating.addRecipe("stamp_nugget_Kiln", <soot:stamp_nugget_raw>, <soot:stamp_nugget>, 1500, 3200);
+
+ItemRegistry.registerItemHeat(<soot:stamp_text_raw>, 1, 1599, false);
+ItemRegistry.registerItemHeat(<soot:stamp_text>, 1, 1599, false);
+Heating.addRecipe("stamp_text_Kiln", <soot:stamp_text_raw>, <soot:stamp_text>, 1500, 3200);
+
+furnace.remove(<embers:stamp_bar>);
+furnace.remove(<embers:stamp_flat>);
+furnace.remove(<embers:stamp_plate>);
+furnace.remove(<embers:stamp_gear>);
+furnace.remove(<soot:stamp_nugget>);
+furnace.remove(<soot:stamp_text>);
 
 //Bore
 recipes.remove(<embers:ember_bore>);

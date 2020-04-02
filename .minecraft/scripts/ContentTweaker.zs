@@ -11,6 +11,10 @@ import mods.contenttweaker.Random;
 import mods.contenttweaker.World;
 import mods.contenttweaker.ResourceLocation;
 
+//unfired_archaic_lump
+var unfired_archaic_lump = VanillaFactory.createItem("unfired_archaic_lump");
+unfired_archaic_lump.register();
+game.setLocalization("item.contenttweaker.unfired_archaic_lump.name", "Unfired Archaic Lump");
 //blank_blueprint
 var blank_blueprint = VanillaFactory.createItem("blank_blueprint");
 blank_blueprint.register();
