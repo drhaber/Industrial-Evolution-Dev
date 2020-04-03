@@ -352,6 +352,17 @@ mods.embers.Melter.add(<liquid:aluminium>*16,<ore:nuggetAluminium>);
 
 mods.embers.Melter.add(<liquid:aluminium>*144,<ore:dustAluminum>);
 mods.embers.Melter.add(<liquid:aluminium>*144,<ore:ingotAluminum>);
+
+//Redstone Alchemical Slurry
+mods.embers.Melter.remove(<liquid:alchemical_redstone>*1008);
+mods.embers.Melter.remove(<liquid:alchemical_redstone>*144);
+mods.embers.Melter.remove(<liquid:alchemical_redstone>*1296);
+
+mods.embers.Melter.add(<liquid:redstone>*144,<ore:dustRedstone>); 
+mods.embers.Melter.add(<liquid:redstone>*1296,<ore:blockRedstone>); 
+
+mods.embers.Mixer.add(<liquid:alchemical_redstone>*288, [<liquid:liquidchorus>*125,<liquid:redstone>*144,<liquid:menrilresin>*250]);
+
 #=============================================================================================================================================		
 
 //Alloys
