@@ -99,6 +99,7 @@ recipes.addShaped(<contenttweaker:wooden_glass_casing>,[
 RollingMachine.addShaped(<contenttweaker:tkt>,[[<tfc:metal/sheet/aluminium>,null,null],[<tfc:ore/chromite>,null,null],[<tfc:metal/sheet/nickel>,null,null]]);
 
 #=============================================================================================================================================		
+/*
 //Colored Water 
 recipes.removeByMod("colored_water");
 val dyes = [<ore:dyeWhite>,<ore:dyeOrange>,<ore:dyeMagenta>,<ore:dyeLightBlue>,<ore:dyeYellow>,<ore:dyeLime>,<ore:dyePink>,<ore:dyeGray>,<ore:dyeLightGray>,
@@ -148,7 +149,7 @@ recipes.removeShapeless(wools.makeStack(i));
 recipes.removeShapeless(beds.makeStack(i));
 
 }
-
+*/
 #=============================================================================================================================================		
 //Flopper
 recipes.remove(<flopper:flopper>);
@@ -194,6 +195,7 @@ mods.jei.JEI.addDescription(<quark:thatch_slab>,"Magic has made this thatch soli
 	[<ore:stickIron>,<ore:blockGlassColorless>,<ore:stickIron>],
 	[<ore:blockGlassColorless>,<ore:stickIron>,<ore:blockGlassColorless>]]);
 	//Quilted wool
+	val wools = <minecraft:wool>.definition;
 	val quilted_wools = <quark:quilted_wool>.definition;
 	for i in 0 to 16{
 	recipes.remove(quilted_wools.makeStack(i));

@@ -13,6 +13,21 @@
       "tfc:igneous_extrusive"
     ]
   },
+    "certus_quartz": {
+    "ore": "appliedenergistics2:quartz_ore",
+    "width": 10,
+    "height": 10,
+    "shape": "cluster",
+    "rarity": 100,
+    "minimum_height": 5,
+    "maximum_height": 200,
+    "density": 70,
+    "base_rocks": [
+      "tfc:igneous_extrusive",
+	  "tfc:sedimentary",
+	  "tfc:igneous_intrusive"
+    ]
+  },
   "native_gold": {
     "ore": "tfc:native_gold",
     "loose": "tfc:native_gold",
@@ -403,6 +418,20 @@
       "tfc:metamorphic"
     ]
   },
+    "galena": {
+    "ore": "tfc:galena",
+    "width": 28,
+    "height": 36,
+    "shape": "cluster",
+    "rarity": 100,
+    "minimum_height": 5,
+    "maximum_height": 128,
+    "density": 70,
+    "base_rocks": [
+      "tfc:granite",
+      "tfc:gneiss"
+    ]
+  },  
   "surface_tetrahedrite": {
     "ore": "tfc:tetrahedrite",
     "loose": "tfc:tetrahedrite",

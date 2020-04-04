@@ -147,7 +147,9 @@ mods.immersiveengineering.Blueprint.addRecipe("molds", IE_molds.makeStack(i), [<
 }
 mods.immersiveengineering.Blueprint.addRecipe("molds", <contenttweaker:striking_die>, [<ore:sheetDoubleSteel>,<tfc:metal/hammer_head/steel>]);
 
-mods.terrafirmacraft.Barrel.addRecipe("blueprint", <minecraft:paper>, <liquid:water_blue>*10, <contenttweaker:blank_blueprint>, null, 1);
+recipes.addShapeless(<contenttweaker:blank_blueprint>,
+	[<minecraft:paper>,<ore:dyeBlue>]);
+#mods.terrafirmacraft.Barrel.addRecipe("blueprint", <minecraft:paper>, <liquid:dyeblue>*10, <contenttweaker:blank_blueprint>, null, 1);
 		
 recipes.remove(<immersiveengineering:blueprint>.withTag({blueprint: "molds"}));
 recipes.addShapeless(<immersiveengineering:blueprint>.withTag({blueprint: "molds"}),
