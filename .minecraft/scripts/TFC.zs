@@ -171,9 +171,8 @@ mods.terrafirmacraft.ItemRegistry.registerItemHeat(<contenttweaker:clay_insulato
 mods.terrafirmacraft.ItemRegistry.registerItemHeat(<contenttweaker:ceramic_insulator>, 1, 1599, false);
 mods.terrafirmacraft.Heating.addRecipe("insulator_Kiln", <contenttweaker:clay_insulator>, <contenttweaker:ceramic_insulator>, 1500, 3200);
 
-#mods.terrafirmacraft.ItemRegistry.registerItemHeat(<minecraft:clay_ball>, 1, 1599, false);
-#mods.terrafirmacraft.ItemRegistry.registerItemHeat(<minecraft:brick>, 1, 1599, false);
-#mods.terrafirmacraft.Heating.addRecipe("vanilla_brick", <minecraft:clay_ball>, <minecraft:brick>, 1500, 3200);
+
+furnace.remove(<minecraft:brick>);
 
 mods.terrafirmacraft.ClayKnapping.addRecipe("clay_insulator_knap", <contenttweaker:clay_insulator>, 
 																	"  X  ", 

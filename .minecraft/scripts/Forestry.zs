@@ -67,3 +67,18 @@ recipes.addShaped(<forestry:chipsets:3>,[
 	[null,<tfc:metal/sheet/electrum>,null],
 	[<pneumaticcraft:advanced_pcb>,<pneumaticcraft:advanced_pcb>,<pneumaticcraft:advanced_pcb>],
 	[<projectred-transmission:wire:17>,<projectred-transmission:wire:17>,<projectred-transmission:wire:17>]]);
+
+
+//Charcoal Pile
+val Pwalls = [<minecraft:clay>,<minecraft:end_stone>,<minecraft:end_bricks>,<minecraft:dirt>,<minecraft:gravel>,<minecraft:netherrack>,<forestry:loam>,<forestry:ash_brick>] as IItemStack[];
+for pw in Pwalls{
+mods.forestry.CharcoalWall.removeWallStack(pw);
+}
+
+//Candle
+mods.forestry.Carpenter.removeRecipe(<forestry:candle>);
+recipes.remove(<forestry:candle>);
+recipes.addShaped(<forestry:candle>,[
+	[<minecraft:glowstone_dust>],
+	[<ore:tallow>],
+	[<ore:tallow>]]);

@@ -7,12 +7,12 @@ import mods.terrafirmacraft.ItemRegistry;
 
 //Hammers
 recipes.remove(<yurtmod:mallet>);
-recipes.addShaped(<yurtmod:mallet>,[
+recipes.addShaped(<yurtmod:mallet>.withTag({ench: [{lvl: 2 as short, id: 34}], RepairCost: 1}),[
 	[null,null,<tfc:metal/hammer_head/black_bronze>],
 	[null,<minecraft:stick>,null],
 	[<minecraft:stick>,<yurtmod:tent_canvas>,null]]);
 recipes.remove(<yurtmod:super_mallet>);
-recipes.addShaped(<yurtmod:super_mallet>,[
+recipes.addShaped(<yurtmod:super_mallet>.withTag({ench: [{lvl: 3 as short, id: 34}], RepairCost: 1}),[
 	[null,<tfc:metal/double_ingot/gold>,<embers:adhesive>],
 	[null,<minecraft:stick>,<tfc:metal/double_ingot/ardite>],
 	[<minecraft:stick>,<yurtmod:tent_canvas>,null]]);

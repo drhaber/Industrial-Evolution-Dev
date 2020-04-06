@@ -98,6 +98,8 @@ recipes.addShaped(<contenttweaker:wooden_glass_casing>,[
 //Type K Thermocouple
 RollingMachine.addShaped(<contenttweaker:tkt>,[[<tfc:metal/sheet/aluminium>,null,null],[<tfc:ore/chromite>,null,null],[<tfc:metal/sheet/nickel>,null,null]]);
 
+//Bees Wax
+furnace.addRecipe(<rustic:beeswax>, <forestry:beeswax>);
 #=============================================================================================================================================		
 /*
 //Colored Water 
@@ -215,6 +217,20 @@ mods.jei.JEI.addDescription(<quark:thatch_slab>,"Magic has made this thatch soli
 	[<minecraft:netherrack>,<minecraft:netherrack>,<minecraft:netherrack>],
 	[<minecraft:netherrack>,<forestry:smoker>,<minecraft:netherrack>],
 	[<minecraft:netherrack>,<minecraft:netherrack>,<minecraft:netherrack>]]);
+#=============================================================================================================================================		
+//Rustic	
+
+recipes.remove(<rustic:candle_gold>);
+recipes.addShaped(<rustic:candle_gold>,[
+	[<ore:blockCandle>],
+	[<tfctech:metal/gold_rod>],
+	[<tfc:metal/sheet/gold>]]);
+
+recipes.remove(<rustic:candle>); #Iron Candle
+recipes.addShaped(<rustic:candle>,[
+	[<ore:blockCandle>],
+	[<tfctech:metal/wrought_iron_rod>],
+	[<tfc:metal/sheet/wrought_iron>]]);	
 #=============================================================================================================================================		
 //Marble
 mods.terrafirmacraft.Barrel.addRecipe("Quark_marble", <tfc:raw/marble>, <liquid:bleach>*50, <quark:marble>, 4);
@@ -392,7 +408,7 @@ mods.jei.JEI.addDescription(<appliedenergistics2:sky_stone_chest>,"The seemingly
 mods.jei.JEI.addDescription(<appliedenergistics2:smooth_sky_stone_chest>,"The seemingly Magic like nature of this alien stone enables storage properties many would consider to be... Unnatural.");
 //Architecture Craft
 recipes.remove(<architecturecraft:largepulley>);
-recipes.addShapeless(<architecturecraft:largepulley>,[<astikorcarts:wheel>,<quark:rope>]);
+recipes.addShapeless(<architecturecraft:largepulley>,[<astikorcarts:wheel>,<hooked:microcrafting:1>]);
 recipes.remove(<architecturecraft:chisel>);
 recipes.addShaped(<architecturecraft:chisel>,[
 	[<tfc:metal/chisel_head/wrought_iron>,null],
@@ -730,9 +746,21 @@ recipes.remove(<ghostsexplosives:tnt_x1_2>);
 //MrCrayFish Furniture
 recipes.remove(<cfm:item_log>);
 
+recipes.remove(<cfm:candle>);
+recipes.addShaped(<cfm:candle>,[
+	[null,<rustic:candle>,null],
+	[<rustic:candle>,<tfctech:metal/wrought_iron_rod>,<rustic:candle>],
+	[null,<tfc:metal/double_ingot/wrought_iron>,null]]);
 #=============================================================================================================================================		
 
 //rustichromia
 mods.rustichromia.Assembler.removeAll();		
 mods.rustichromia.Quern.removeAll();	
 mods.rustichromia.Gin.add("Wool_Yarn", [<tfc:animal/product/wool>], [<tfc:animal/product/wool_yarn>*8], [null], 7, 25, 5);
+
+recipes.remove(<rustichromia:thatch_block>);
+recipes.remove(<rustichromia:thatch_bed>);
+recipes.addShaped(<rustichromia:thatch_bed>,[
+	[<quark:thatch_slab>,<quark:thatch_slab>,<quark:thatch_slab>],
+	[<tfctech:wiredraw/leather_belt>,<tfctech:wiredraw/leather_belt>,<tfctech:wiredraw/leather_belt>],
+	[<quark:thatch_slab>,<quark:thatch_slab>,<quark:thatch_slab>]]);

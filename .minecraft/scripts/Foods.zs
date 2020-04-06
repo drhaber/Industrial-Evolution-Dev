@@ -226,7 +226,7 @@ registerFood(<rustic:marsh_mallow>,1,0.6,0.2,0.7,0.1,0.8,0,0,0);	<ore:categoryFr
 registerFood(<rustic:ironberries>,1,2,0.3,0.7,0,0.3,0,0,0);	<ore:categoryFruit>.add(<rustic:ironberries>);      	          #Iron Berries
 registerFood(<rustic:chili_pepper>,1,3,0.4,2.5,0,0,1,0,0);	<ore:categoryVegetable>.add(<rustic:chili_pepper>);      	          #Chili Pepper
 registerFood(<rustic:grapes>,1,5,0.4,4.25,0,0,0.5,0,0);	<ore:categoryFruit>.add(<rustic:grapes>);      	          #Grapes
-registerFood(<rustic:wildberries>,1,5,0.4,4.25,0,0,0.5,0,0);	<ore:categoryFruit>.add(<rustic:wildberries>);      	          #WildBerry
+registerFood(<rustic:wildberries>,1,5,0.4,11,0,0,0.5,0,0);	<ore:categoryFruit>.add(<rustic:wildberries>);      	          #WildBerry
 
 registerFood(<contenttweaker:dried_fruit>,1,0,0.4,0.1,0.5,0.5,0.5,0,0);	<ore:categoryFruit>.add(<contenttweaker:dried_fruit>);      	          #Dried Fruit
 registerFood(<contenttweaker:i_vegetable_soup>,3,2,1.8,6,2,0,1,1,0);	<ore:categoryMeal>.add(<contenttweaker:i_vegetable_soup>);      	          #Vegetable Soup

@@ -118,3 +118,10 @@ recipes.addShaped(<mysticalmechanics:axle_iron>*8,[
 	[null,null,<tfctech:metal/wrought_iron_rod>],
 	[null,<tfctech:metal/wrought_iron_rod>,null],
 	[<tfctech:metal/wrought_iron_rod>,null,null]]);
+
+//Winding Gears
+mods.embers.Alchemy.remove(<embers:winding_gears>);
+recipes.addShaped(<embers:winding_gears>,[
+	[<ore:gearBronze>,<ore:wireBronze>,<ore:gearBronze>],
+	[<rustichromia:axle_wood>,<ore:blockSlime>,<ore:gearBronze>],
+	[<ore:gearBronze>,<ore:wireBronze>,<rustichromia:axle_wood>]]);	

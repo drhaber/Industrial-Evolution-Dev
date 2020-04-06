@@ -4,6 +4,9 @@ import crafttweaker.item.IItemDefinition;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.mods.IMod;
 
+//compost
+<ore:fertilizer>.add(<forestry:fertilizer_bio>);
+<ore:lumpCompost>.addItems([<composter:compost>,<forestry:fertilizer_bio>]);
 //Magnesium
 <ore:dustMagnesium>.add(<nuclearcraft:dust:7>);
 <ore:ingotMagnesium>.add(<nuclearcraft:ingot:7>);

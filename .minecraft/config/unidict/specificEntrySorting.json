@@ -36,6 +36,13 @@
 		]
 	},
 	{
+		"entryName" : "lumpCompost",
+		"modIdPriorityList" :
+		[
+		"forestry"
+		]
+	},
+	{
 		"entryName" : "componetTransistor",
 		"modIdPriorityList" :
 		[
