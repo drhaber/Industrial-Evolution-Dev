@@ -129,6 +129,25 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<projectred-core:resource_item:30
 mods.immersiveengineering.Crusher.removeRecipesForInput(<immersiveengineering:material:7>);
 mods.immersiveengineering.Crusher.addRecipe(<railcraft:dust:4>, <immersiveengineering:material:7>, 2048);
 mods.terrafirmacraft.Barrel.addRecipe("slag_to_flux", <railcraft:dust:4>*4, <liquid:bleach>*1000, <tfc:powder/flux>, <liquid:waste>*1000,16);
+
+//Capaciators
+recipes.remove(<immersiveengineering:metal_device0>); #LV
+recipes.addShaped(<immersiveengineering:metal_device0>,[
+	[<tfctech:metal/wrought_iron_bolt>,<railcraft:charge:1>,<tfctech:metal/wrought_iron_bolt>],
+	[<railcraft:charge:6>,<nuclearcraft:compound:6>,<railcraft:charge:8>],
+	[<contenttweaker:treatedlumber>,<tfctech:metal/copper_long_rod>,<contenttweaker:treatedlumber>]]);
+
+recipes.remove(<immersiveengineering:metal_device0:1>); #MV
+recipes.addShaped(<immersiveengineering:metal_device0:1>,[
+	[<tfctech:metal/constantan_bolt>,<railcraft:charge:1>,<tfctech:metal/constantan_bolt>],
+	[<railcraft:charge:6>,<appliedenergistics2:material:10>,<railcraft:charge:7>],
+	[<contenttweaker:treatedlumber>,<tfctech:metal/electrum_long_rod>,<contenttweaker:treatedlumber>]]);
+
+recipes.remove(<immersiveengineering:metal_device0:2>); #HV
+recipes.addShaped(<immersiveengineering:metal_device0:2>,[
+	[<tfctech:metal/electrum_bolt>,<railcraft:charge:1>,<tfctech:metal/electrum_bolt>],
+	[<nuclearcraft:part:13>,<libvulpes:productgem>,<nuclearcraft:part:13>],
+	[<nuclearcraft:part:4>,<tfctech:metal/steel_long_rod>,<nuclearcraft:part:4>]]);
 #=============================================================================================================================================		
 //Blueprint Rework
 mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:material:26>);

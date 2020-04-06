@@ -10,3 +10,9 @@ mods.nuclearcraft.infuser.addRecipe(<ore:dustCobalt>, <liquid:neutron>*100, <mor
 mods.nuclearcraft.manufactory.removeRecipeWithOutput(<minecraft:leather>);
 //Peat
 mods.nuclearcraft.pressurizer.addRecipe(<tfc:peat>, <forestry:peat>*6);
+
+//Silicon Carbide Fibre
+recipes.addShaped(<nuclearcraft:part:13>,[
+	[<contenttweaker:glass_fibre>,<ore:dustCoal>,<contenttweaker:glass_fibre>],
+	[<contenttweaker:glass_fibre>,<ore:dustSilicon>,<contenttweaker:glass_fibre>],
+	[<contenttweaker:glass_fibre>,<ore:dustCoal>,<contenttweaker:glass_fibre>]]);

@@ -70,8 +70,8 @@ recipes.remove(<inspirations:torch_lever>);
 //Coal Coke Block
 mods.jei.JEI.removeAndHide(<railcraft:generic:6>);
 //Missing Localization
-game.setLocalization("item.railcraft.charge.electrode.carbon.name", "Silver Electrode");
-game.setLocalization("item.railcraft.charge.electrode.silver.name", "Carbon Electrode");
+game.setLocalization("item.railcraft.charge.electrode.silver.name", "Silver Electrode");
+game.setLocalization("item.railcraft.charge.electrode.carbon.name", "Carbon Electrode");
 //Rails
 recipes.remove(<railcraft:tie>);
 recipes.addShaped(<railcraft:tie>,[
@@ -366,6 +366,7 @@ recipes.addShaped(<hooked:hook:4>,[
 	//Rope
 	recipes.remove(<hooked:microcrafting>);
 	recipes.addShapeless(<hooked:microcrafting>*8, [<tfc:crop/product/jute_fiber>,<tfc:spindle>.transformDamage(8)]);
+	/*
 	recipes.addShaped(<hooked:microcrafting:1>,[
 		[null,null,<hooked:microcrafting>],
 		[null,<hooked:microcrafting>,null],
@@ -378,6 +379,7 @@ recipes.addShaped(<hooked:hook:4>,[
 		[null,null,<immersiveengineering:material:4>],
 		[null,<immersiveengineering:material:4>,null],
 		[<immersiveengineering:material:4>,null,null]]);
+	*/	
 		//Rustic
 		recipes.remove(<rustic:rope>);
 		recipes.addShaped(<rustic:rope>*8,[
@@ -396,6 +398,9 @@ recipes.addShaped(<hooked:hook:4>,[
 			[<hooked:microcrafting:1>,<hooked:microcrafting:1>,<hooked:microcrafting:1>],
 			[<hooked:microcrafting:1>,null,<hooked:microcrafting:1>],
 			[<hooked:microcrafting:1>,<hooked:microcrafting:1>,<hooked:microcrafting:1>]]);
+		//moarboats
+		recipes.remove(<moarboats:rope>);
+		recipes.addShapeless(<moarboats:rope>.withTag({})*2,[<hooked:microcrafting:1>,<ore:shears>.transformDamage(1)]);			
 	//Comforts
 	recipes.remove(<comforts:rope>);
 	recipes.addShaped(<comforts:rope>*2,[
@@ -510,7 +515,7 @@ recipes.addShapeless(<littletiles:grabber>,[<contenttweaker:leatherglove>,<ore:d
 
 //Chisel
 recipes.remove(<chisel:factory>);
-recipes.addShaped(<chisel:factory>,[
+recipes.addShaped(<chisel:factory>*16,[
 	[<tfctech:metal/wrought_iron_bolt>,<tfc:metal/sheet/wrought_iron>,<tfctech:metal/wrought_iron_bolt>],
 	[<tfc:metal/sheet/wrought_iron>,null,<tfc:metal/sheet/wrought_iron>],
 	[<tfctech:metal/wrought_iron_bolt>,<tfc:metal/sheet/wrought_iron>,<tfctech:metal/wrought_iron_bolt>]]);

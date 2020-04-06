@@ -24,8 +24,8 @@ furnace.setFuel(<tfc:ore/petrified_wood>, 800);
 //Block Mold
 <tfctech:ceramics/mold/glass_block>.displayName = "Block Mold";
 //Embers & Engineer's Hammer
-mods.terrafirmacraft.ItemRegistry.registerItemHeat(<contenttweaker:bismuth_hammer_head>,0.14,270,true);
-mods.terrafirmacraft.ItemRegistry.registerItemHeat(<contenttweaker:bismuth_engineers_hammer_head>,0.14,270,true);
+mods.terrafirmacraft.ItemRegistry.registerItemMetal(<contenttweaker:bismuth_hammer_head>, "BISMUTH", 100, true);
+mods.terrafirmacraft.ItemRegistry.registerItemMetal(<contenttweaker:bismuth_engineers_hammer_head>, "BISMUTH", 200, true);
 
 mods.terrafirmacraft.Anvil.addRecipe("bismuth_head", <tfc:metal/ingot/bismuth>, <contenttweaker:bismuth_hammer_head>, 1, "tools", "PUNCH_LAST","SHRINK_NOT_LAST");
 mods.terrafirmacraft.Anvil.addRecipe("bismuth_engineer_head", <tfc:metal/double_ingot/bismuth>, <contenttweaker:bismuth_engineers_hammer_head>, 1, "tools", "PUNCH_LAST","SHRINK_NOT_LAST");
@@ -59,7 +59,12 @@ RollingMachine.addShapeless(<tfc:metal/bucket/blue_steel>, [<ore:sheetDoubleMith
 //Salt
 mods.rustic.EvaporatingBasin.addRecipe(<tfc:powder/salt>, <liquid:salt_water>*250);
 //Wrench Head
+mods.terrafirmacraft.ItemRegistry.registerItemMetal(<contenttweaker:ironwrenchhead>, "WROUGHT_IRON", 100, true);
 mods.terrafirmacraft.Anvil.addRecipe("Iron_Wrench_Head", <ore:ingotWroughtIron>, <contenttweaker:ironwrenchhead>, 3, "general","BEND_NOT_LAST","SHRINK_NOT_LAST","DRAW_LAST");
+//Ring
+recipes.remove(<bountifulbaubles:ringiron>);
+mods.terrafirmacraft.ItemRegistry.registerItemMetal(<bountifulbaubles:ringiron>, "WROUGHT_IRON", 50, true);
+mods.terrafirmacraft.Anvil.addRecipe("Iron_Ring", <tfctech:metal/wrought_iron_strip>, <bountifulbaubles:ringiron>, 3, "general","BEND_NOT_LAST","PUNCH_SECOND_LAST","HIT_LAST");
 //Bowl
 <tfc:ceramics/fired/bowl>.displayName = "Clay Bowl";
 //Hot Water - Water
@@ -306,3 +311,23 @@ mods.terrafirmacraft.Barrel.addRecipe("tanned_flesh", <contenttweaker:squeezed_f
 #mods.tconstruct.Drying.addRecipe(<minecraft:leather>,<contenttweaker:tanned_small>, 6000);
 mods.integrateddynamics.DryingBasin.addRecipe(<contenttweaker:tanned_flesh>, null, <minecraft:leather>, null, 10);
 mods.integrateddynamics.MechanicalDryingBasin.addRecipe(<contenttweaker:tanned_flesh>, null, <minecraft:leather>, null, 10);
+
+//Loom
+mods.terrafirmacraft.Loom.addRecipe("glass_fibre", <contenttweaker:glass_wire>*24,<contenttweaker:glass_fibre>*6, 16, "minecraft:textures/blocks/wool_colored_brown.png"); 
+
+recipes.remove(<botania:manaresource:22>);
+mods.terrafirmacraft.Loom.addRecipe("manaweave_cloth", <botania:manaresource:16>*16,<botania:manaresource:22>*4, 16, "botania:textures/blocks/blockmanaquartz1.png"); 
+
+mods.embers.Alchemy.remove(<embers:ashen_cloth>);
+recipes.addShaped(<contenttweaker:ashen_string>,[
+	[<ore:string>,<ore:dustAsh>],
+	[<ore:dustAsh>,<ore:string>]]);
+mods.terrafirmacraft.Loom.addRecipe("ashen_cloth", <contenttweaker:ashen_string>*16,<embers:ashen_cloth>*4, 16, "embers:textures/blocks/ashen_stone.png"); 
+
+recipes.remove(<yurtmod:tent_canvas>);
+mods.terrafirmacraft.Loom.addRecipe("tent_canvas", <tfc:crop/product/burlap_cloth>*4,<yurtmod:tent_canvas>*2, 16, "yurtmod:textures/blocks/yurt_roof_upper.png"); 
+
+	//ropes
+mods.terrafirmacraft.Loom.addRecipe("rope_loom_plant_firbre", <hooked:microcrafting>*9,<hooked:microcrafting:1>*3, 16, "minecraft:textures/blocks/wool_colored_brown.png"); 
+mods.terrafirmacraft.Loom.addRecipe("rope_loom_hemp_fribre", <immersiveengineering:material:4>*9,<hooked:microcrafting:1>*3, 16, "minecraft:textures/blocks/wool_colored_brown.png"); 
+mods.terrafirmacraft.Loom.addRecipe("rope_loom_treated_string", <contenttweaker:creosote_string>*9,<hooked:microcrafting:1>*3, 16, "minecraft:textures/blocks/wool_colored_brown.png"); 

@@ -10,6 +10,12 @@ import crafttweaker.potions.IPotion;
 import mods.contenttweaker.Random;
 import mods.contenttweaker.World;
 import mods.contenttweaker.ResourceLocation;
+import mods.contenttweaker.IItemColorSupplier;
+
+//ashen_string
+var ashen_string = VanillaFactory.createItem("ashen_string");
+ashen_string.register();
+game.setLocalization("item.contenttweaker.ashen_string.name", "Ashen String");
 //diamond_saw_head
 var diamond_saw_head = VanillaFactory.createItem("diamond_saw_head");
 diamond_saw_head.register();
@@ -194,6 +200,7 @@ game.setLocalization("item.contenttweaker.soot.name", "Soot");
 var bauxitedust = VanillaFactory.createItem("bauxitedust");
 bauxitedust.register();
 game.setLocalization("item.contenttweaker.bauxitedust.name", "Bauxite Dust");
+
 //AE2 Inscriber Casts
 	//Material Calculation Processor Cast
 	var unfired_material_calculation_processor_press = VanillaFactory.createItem("unfired_material_calculation_processor_press");
