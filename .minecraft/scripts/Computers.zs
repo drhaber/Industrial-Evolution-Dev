@@ -226,7 +226,7 @@ mods.pneumaticcraft.pressurechamber.removeRecipe([<pneumaticcraft:empty_pcb:100>
 
 recipes.addShaped(<opencomputers:material:2>*3,[
 	[<contenttweaker:glass_fibre>,<contenttweaker:glass_fibre>,<contenttweaker:glass_fibre>],
-	[<ore:slimeballGreen>,<ore:slimeballGreen>,<ore:slimeballGreen>],
+	[<ore:slimeball>,<ore:slimeball>,<ore:slimeball>],
 	[<contenttweaker:glass_fibre>,<contenttweaker:glass_fibre>,<contenttweaker:glass_fibre>]]);
 RollingMachine.addShaped(<opencomputers:material:3>, [[<opencomputers:material:2>]], 300);
 RollingMachine.addShaped(<pneumaticcraft:empty_pcb:100>, [[<tfctech:metal/copper_strip>],[<opencomputers:material:3>]], 300);
@@ -777,3 +777,212 @@ recipes.addShaped(<tis3d:controller>,[
 	[BBR,BundCab,BBR],
 	[BundCab,PrimCB,BundCab],
 	[BBR,BundCab,BBR]]);
+#=============================================================================================================================================		
+
+//Upgrades
+	//Angel Block
+recipes.remove(<opencomputers:upgrade>);
+recipes.addShaped(<opencomputers:upgrade>,[
+	[<ore:obsidian>,<opencomputers:component:4>,<ore:obsidian>],
+	[<ore:enderpearl>,<minecraft:dispenser>,<minecraft:web>],
+	[<ore:obsidian>,<opencomputers:cable>,<ore:obsidian>]]);
+
+	//Battery 1
+recipes.remove(<opencomputers:upgrade:1>);
+recipes.addShaped(<opencomputers:upgrade:1>,[
+	[<opencomputers:component:3>],
+	[<opencomputers:capacitor>]]);
+	
+	//Battery 2
+recipes.remove(<opencomputers:upgrade:2>);
+recipes.addShaped(<opencomputers:upgrade:2>,[
+	[null,<opencomputers:component:4>,null],
+	[<opencomputers:capacitor>,<tfc:metal/sheet/gold>,<opencomputers:capacitor>]]);	
+
+	//Battery 3
+recipes.remove(<opencomputers:upgrade:3>);
+recipes.addShaped(<opencomputers:upgrade:3>,[
+	[null,<opencomputers:component:5>,null],
+	[null,<tfc:metal/sheet/mithril>,null],
+	[<opencomputers:capacitor>,<opencomputers:capacitor>,<opencomputers:capacitor>]]);	
+
+	//Chunk Loader
+recipes.remove(<opencomputers:upgrade:4>);
+recipes.addShaped(<opencomputers:upgrade:4>,[
+	[<tfctech:metal/gold_rackwheel_piece>,<opencomputers:component:5>,<tfctech:metal/gold_rackwheel_piece>],
+	[<opencomputers:material:9>,<railcraft:worldspike:2>,<opencomputers:material:9>],
+	[<tfctech:metal/gold_rackwheel_piece>,<opencomputers:cable>,<tfctech:metal/gold_rackwheel_piece>]]);
+
+	//Card Container 1
+recipes.remove(<opencomputers:upgrade:5>);
+recipes.addShaped(<opencomputers:upgrade:5>,[
+	[<pneumaticcraft:plastic:10>,<opencomputers:component:3>,<pneumaticcraft:plastic:10>],
+	[<opencomputers:material:7>,<bibliocraft:shelf:6>,<opencomputers:material:7>],
+	[<pneumaticcraft:plastic:10>,<opencomputers:material:5>,<pneumaticcraft:plastic:10>]]);
+
+	//Card Container 2
+recipes.remove(<opencomputers:upgrade:6>);
+recipes.addShaped(<opencomputers:upgrade:6>,[
+	[<pneumaticcraft:plastic:10>,<opencomputers:component:4>,<pneumaticcraft:plastic:10>],
+	[<opencomputers:material:8>,<ore:tfcChest>,<opencomputers:material:8>],
+	[<pneumaticcraft:plastic:10>,<opencomputers:material:5>,<pneumaticcraft:plastic:10>]]);
+
+	//Card Container 3
+recipes.remove(<opencomputers:upgrade:7>);
+recipes.addShaped(<opencomputers:upgrade:7>,[
+	[<pneumaticcraft:plastic:10>,<opencomputers:component:5>,<pneumaticcraft:plastic:10>],
+	[<opencomputers:material:9>,<appliedenergistics2:sky_stone_chest>,<opencomputers:material:9>],
+	[<pneumaticcraft:plastic:10>,<opencomputers:material:5>,<pneumaticcraft:plastic:10>]]);	
+
+	//Container 1
+recipes.remove(<opencomputers:upgrade:8>);
+recipes.addShaped(<opencomputers:upgrade:8>,[
+	[<pneumaticcraft:plastic:10>,<opencomputers:component:3>,<pneumaticcraft:plastic:10>],
+	[<opencomputers:material:7>,<bibliocraft:shelf:6>,<opencomputers:material:7>],
+	[<pneumaticcraft:plastic:10>,<opencomputers:cable>,<pneumaticcraft:plastic:10>]]);
+
+	//Container 2
+recipes.remove(<opencomputers:upgrade:9>);
+recipes.addShaped(<opencomputers:upgrade:9>,[
+	[<pneumaticcraft:plastic:10>,<opencomputers:component:4>,<pneumaticcraft:plastic:10>],
+	[<opencomputers:material:8>,<ore:tfcChest>,<opencomputers:material:8>],
+	[<pneumaticcraft:plastic:10>,<opencomputers:cable>,<pneumaticcraft:plastic:10>]]);
+
+	//Container 3
+recipes.remove(<opencomputers:upgrade:10>);
+recipes.addShaped(<opencomputers:upgrade:10>,[
+	[<pneumaticcraft:plastic:10>,<opencomputers:component:5>,<pneumaticcraft:plastic:10>],
+	[<opencomputers:material:9>,<appliedenergistics2:sky_stone_chest>,<opencomputers:material:9>],
+	[<pneumaticcraft:plastic:10>,<opencomputers:cable>,<pneumaticcraft:plastic:10>]]);
+
+	//Crafting
+recipes.remove(<opencomputers:upgrade:11>);
+recipes.addShaped(<opencomputers:upgrade:11>,[
+	[<ore:plankWood>,<opencomputers:component:4>,<ore:plankWood>],
+	[<opencomputers:material:8>,<ore:workbench>,<opencomputers:material:8>],
+	[<ore:plankWood>,<ore:chestWood>,<ore:plankWood>]]);
+
+	//Data Base 1
+recipes.remove(<opencomputers:upgrade:12>);
+recipes.addShaped(<opencomputers:upgrade:12>,[
+	[<tfc:metal/sheet/black_bronze>,<opencomputers:component:3>,<tfc:metal/sheet/black_bronze>],
+	[<opencomputers:material:7>,<opencomputers:storage:2>,<opencomputers:material:7>],
+	[<tfc:metal/sheet/black_bronze>,<opencomputers:cable>,<tfc:metal/sheet/black_bronze>]]);
+
+	//Data Base 2
+recipes.remove(<opencomputers:upgrade:13>);
+recipes.addShaped(<opencomputers:upgrade:13>,[
+	[<tfc:metal/sheet/gold>,<opencomputers:component:4>,<tfc:metal/sheet/gold>],
+	[<opencomputers:material:8>,<opencomputers:storage:3>,<opencomputers:material:8>],
+	[<tfc:metal/sheet/gold>,<opencomputers:cable>,<tfc:metal/sheet/gold>]]);
+
+	//Data Base 3
+recipes.remove(<opencomputers:upgrade:14>);
+recipes.addShaped(<opencomputers:upgrade:14>,[
+	[<tfc:metal/sheet/mithril>,<opencomputers:component:5>,<tfc:metal/sheet/mithril>],
+	[<opencomputers:material:9>,<opencomputers:storage:4>,<opencomputers:material:9>],
+	[<tfc:metal/sheet/mithril>,<opencomputers:cable>,<tfc:metal/sheet/mithril>]]);	
+
+	//Experience
+recipes.remove(<opencomputers:upgrade:15>);
+recipes.addShaped(<opencomputers:upgrade:15>,[
+	[<tfc:gem/emerald>,<opencomputers:component:5>,<tfc:gem/emerald>],
+	[<opencomputers:material:9>,<minecraft:glass_bottle>,<opencomputers:material:9>],
+	[<tfc:gem/emerald>,<opencomputers:cable>,<tfc:gem/emerald>]]);
+
+	//Generator
+recipes.remove(<opencomputers:upgrade:16>);
+recipes.addShaped(<opencomputers:upgrade:16>,[
+	[<immersiveengineering:connector>,<opencomputers:component:4>,<immersiveengineering:connector>],
+	[<opencomputers:material:8>,<immersiveengineering:wirecoil>,<opencomputers:material:8>],
+	[<immersiveengineering:connector>,<integrateddynamics:coal_generator>,<immersiveengineering:connector>]]);	
+	
+	//Hover 1
+recipes.remove(<opencomputers:upgrade:27>);
+recipes.addShaped(<opencomputers:upgrade:27>,[
+	[<mysticalmechanics:gear_fan>,<opencomputers:component:3>,<mysticalmechanics:gear_fan>],
+	[<opencomputers:material:7>,<opencomputers:material:10>,<opencomputers:material:7>],
+	[<mysticalmechanics:gear_fan>,<opencomputers:material:11>,<mysticalmechanics:gear_fan>]]);
+
+	//Hover 2
+recipes.remove(<opencomputers:upgrade:28>);
+recipes.addShaped(<opencomputers:upgrade:28>,[
+	[<libvulpes:productfan:6>,<opencomputers:component:4>,<libvulpes:productfan:6>],
+	[<opencomputers:material:8>,<opencomputers:material:10>,<opencomputers:material:8>],
+	[<libvulpes:productfan:6>,<opencomputers:material:11>,<libvulpes:productfan:6>]]);	
+
+	//Inventory 1
+recipes.remove(<opencomputers:upgrade:17>);
+recipes.addShaped(<opencomputers:upgrade:17>,[
+	[<ore:plankWood>,<opencomputers:component:3>,<ore:plankWood>],
+	[<opencomputers:material:7>,<ore:tfcChest>,<opencomputers:material:7>],
+	[<ore:plankWood>,<opencomputers:cable>,<ore:plankWood>]]);
+
+	//Inventory Controller
+recipes.remove(<opencomputers:upgrade:18>);
+recipes.addShaped(<opencomputers:upgrade:18>,[
+	[<pneumaticcraft:printed_circuit_board>,<opencomputers:component:4>,<pneumaticcraft:printed_circuit_board>],
+	[<opencomputers:material:8>,<ore:tfcChest>,<opencomputers:material:8>],
+	[<pneumaticcraft:printed_circuit_board>,<opencomputers:adapter>,<pneumaticcraft:printed_circuit_board>]]);
+
+	//Leash
+recipes.remove(<opencomputers:upgrade:26>);
+recipes.addShaped(<opencomputers:upgrade:26>,[
+	[null,<opencomputers:component:3>,null],
+	[<minecraft:lead>,<ore:fenceWood>,<minecraft:lead>],
+	[<minecraft:lead>,<minecraft:lead>,<minecraft:lead>]]);	
+
+	//MFU | Distant Adapter
+recipes.remove(<opencomputers:upgrade:30>);
+recipes.addShaped(<opencomputers:upgrade:30>,[
+	[<tfc:metal/sheet/lead>,<opencomputers:component:5>,<tfc:metal/sheet/lead>],
+	[<advancedrocketry:satelliteprimaryfunction:3>,<opencomputers:card:9>,<advancedrocketry:satelliteprimaryfunction:3>],
+	[<tfc:metal/sheet/lead>,<opencomputers:adapter>,<tfc:metal/sheet/lead>]]);
+
+	//Piston
+recipes.remove(<opencomputers:upgrade:20>);
+recipes.addShaped(<opencomputers:upgrade:20>,[
+	[<opencomputers:component:3>],
+	[<minecraft:piston>]]);	
+
+	//Sign I/O
+recipes.remove(<opencomputers:upgrade:21>);
+recipes.addShaped(<opencomputers:upgrade:21>,[
+	[null,<opencomputers:component:3>,null],
+	[<opencomputers:cable>,<minecraft:writable_book>,<opencomputers:cable>],
+	[<minecraft:sign>,<embers:adhesive>,<minecraft:sign>]]);	
+
+	//Solar 
+recipes.remove(<opencomputers:upgrade:22>);
+recipes.addShaped(<opencomputers:upgrade:22>,[
+	[<immersiveengineering:connector>,<opencomputers:component:4>,<immersiveengineering:connector>],
+	[<opencomputers:material:8>,<immersiveengineering:wirecoil>,<opencomputers:material:8>],
+	[<immersiveengineering:connector>,<advancedrocketry:solarpanel>,<immersiveengineering:connector>]]);
+
+	//Tank 1
+recipes.remove(<opencomputers:upgrade:23>);
+recipes.addShaped(<opencomputers:upgrade:23>,[
+	[<ore:plankWood>,<opencomputers:component:3>,<ore:plankWood>],
+	[<opencomputers:material:7>,<railcraft:tank_iron_gauge:*>,<opencomputers:material:7>],
+	[<ore:plankWood>,<opencomputers:cable>,<ore:plankWood>]]);
+
+	//Tank Controller
+recipes.remove(<opencomputers:upgrade:24>);
+recipes.addShaped(<opencomputers:upgrade:24>,[
+	[<pneumaticcraft:printed_circuit_board>,<opencomputers:component:4>,<pneumaticcraft:printed_circuit_board>],
+	[<opencomputers:material:8>,<railcraft:tank_iron_gauge:*>,<opencomputers:material:8>],
+	[<pneumaticcraft:printed_circuit_board>,<opencomputers:adapter>,<pneumaticcraft:printed_circuit_board>]]);	
+
+	//Magnet
+recipes.remove(<opencomputers:upgrade:25>);
+recipes.addShaped(<opencomputers:upgrade:25>,[
+	[<opencomputers:component:5>],
+	[<railcraft:charge>],
+	[<minecraft:hopper>]]);
+
+	//Trading
+recipes.remove(<opencomputers:upgrade:29>);
+recipes.addShaped(<opencomputers:upgrade:29>,[
+	[null,<opencomputers:component:4>,null],
+	[<minecraft:dispenser>,<ore:blockEmerald>,<minecraft:hopper>],
+	[null,<contenttweaker:leatherbag>,null]]);		

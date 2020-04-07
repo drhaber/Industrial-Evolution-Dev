@@ -1,12 +1,4 @@
 {
-  "Nether": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "CompactMachines": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
   "the_nether": {
     "energyToOpen": 3686400,
     "keepAlive": 1600
@@ -15,11 +7,7 @@
     "energyToOpen": 0,
     "keepAlive": 0
   },
-  "TENT": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "Storage Cell": {
+  "CompactMachines": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
@@ -27,7 +15,11 @@
     "energyToOpen": 0,
     "keepAlive": 0
   },
-  "overworld": {
+  "Nether": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "Storage Cell": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
@@ -38,5 +30,13 @@
   "the_end": {
     "energyToOpen": 5529600,
     "keepAlive": 2400
+  },
+  "overworld": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "TENT": {
+    "energyToOpen": 0,
+    "keepAlive": 0
   }
 }

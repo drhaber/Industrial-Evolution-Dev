@@ -1,0 +1,6 @@
+
+navigationupgrade {
+  input: [[compass, "oc:componentBus2", compass]
+          ["oc:circuitChip3", {item=filled_map, subID=any}, "oc:circuitChip3"]
+          [compass, "oc:cable", compass]]
+}

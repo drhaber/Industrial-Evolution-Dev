@@ -12,6 +12,10 @@ import mods.contenttweaker.World;
 import mods.contenttweaker.ResourceLocation;
 import mods.contenttweaker.IItemColorSupplier;
 
+//solar_substrate 
+var solar_substrate = VanillaFactory.createItem("solar_substrate");
+solar_substrate.register();
+game.setLocalization("item.contenttweaker.solar_substrate.name", "Solar Substrate");
 //ashen_string
 var ashen_string = VanillaFactory.createItem("ashen_string");
 ashen_string.register();

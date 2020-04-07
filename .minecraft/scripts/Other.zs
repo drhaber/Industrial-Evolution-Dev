@@ -264,21 +264,20 @@ recipes.addShaped(<projectred-transmission:wire>*12,[
 	[null,<tfctech:metal/red_alloy_wire>,null]]);
 mods.jei.JEI.removeAndHide(<projectred-transmission:wire:34>, false);
 mods.jei.JEI.removeAndHide(<projectred-transmission:framed_wire:34>, false);
-mods.jei.JEI.removeAndHide(<projectred-core:resource_item:252>, false);
 mods.jei.JEI.removeAndHide(<projectred-core:resource_item:251>, false);
 furnace.remove(<projectred-core:resource_item:104>);
-furnace.remove(<projectred-core:resource_item:342>);
 furnace.remove(<projectred-core:resource_item:103>);
-mods.jei.JEI.removeAndHide(<projectred-core:resource_item:312>, false);
 mods.jei.JEI.removeAndHide(<projectred-core:multimeter>, false);
 mods.jei.JEI.removeAndHide(<projectred-core:screwdriver>, false);
-mods.jei.JEI.hide(<projectred-core:resource_item:105>);
-mods.jei.JEI.hide(<projectred-core:resource_item:104>);
-mods.jei.JEI.hide(<projectred-core:resource_item:342>);
 mods.jei.JEI.hide(<projectred-core:resource_item:101>);
 mods.jei.JEI.hide(<projectred-core:resource_item:102>);
 mods.jei.JEI.hide(<projectred-core:resource_item:100>);
 mods.jei.JEI.hide(<projectred-core:resource_item:600>);
+
+//Electroine Powder
+recipes.addShaped(<projectred-core:resource_item:105>,[
+	[<ore:dustGraphite>,<astralsorcery:itemcraftingcomponent:2>],
+	[<ore:dustEnder>,<ore:dustCertusQuartz>]]);
 
 //Circuit Plates
 furnace.remove(<projectred-core:resource_item>);
