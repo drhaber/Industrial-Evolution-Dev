@@ -30,3 +30,28 @@ mods.astralsorcery.Altar.addDiscoveryAltarRecipe("IE:shaped/internal/altar/tool_
            null, <ore:stickWood>, <ore:gemAquamarine>,
             null, <ore:lumber>, <ore:stickWood>,
            <ore:lumber>, null, null]);
+//Mantle of the Stars
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/capebase");
+mods.astralsorcery.Altar.addTraitAltarRecipe("IE:shaped/internal/altar/capebase",<astralsorcery:itemcape>.withTag({astralsorcery: {}}),  4500, 100,
+ [
+	 //Inner 3x3
+	 <botania:manaresource:22>,null,<botania:manaresource:22>,
+	 <embers:ember_bulb>.withTag({emberCapacity: 1000.0, ember: 1000.0}),<tfctech:metal/gold_rackwheel>,<embers:ember_bulb>.withTag({emberCapacity: 1000.0, ember: 1000.0}),
+	 <botania:manaresource:22>,<botania:manaresource:22>,<botania:manaresource:22>,
+	 //4 Corners
+	 null,null,
+	 <astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcraftingcomponent:4>,
+	 //Corner Borders | scanning horizaontal downward
+	 <astralsorcery:itemcraftingcomponent:2>,<astralsorcery:itemcraftingcomponent:2>,
+	 <astralsorcery:itemcraftingcomponent:2>,<astralsorcery:itemcraftingcomponent:2>,
+	 <astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcraftingcomponent:4>,
+	 null,null,
+	 //Center extremes | scanning horizaontal downward
+	 null,
+	 <tfctech:metal/gold_strip>,<tfctech:metal/gold_strip>,
+	 null,
+	 //Outside Alter
+	 <astralsorcery:blockcelestialcollectorcrystal>,
+	 <psi:material:4>,<minecraft:nether_star>,
+	 <psi:material:4>
+ ]);

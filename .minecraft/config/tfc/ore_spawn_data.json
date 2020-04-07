@@ -15,6 +15,7 @@
   },
     "certus_quartz": {
     "ore": "appliedenergistics2:quartz_ore",
+	"loose": "appliedenergistics2:material",
     "width": 10,
     "height": 10,
     "shape": "cluster",

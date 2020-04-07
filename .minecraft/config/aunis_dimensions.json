@@ -1,8 +1,4 @@
 {
-  "nc_wasteland": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
   "Nether": {
     "energyToOpen": 0,
     "keepAlive": 0
@@ -15,11 +11,15 @@
     "energyToOpen": 3686400,
     "keepAlive": 1600
   },
-  "Storage Cell": {
+  "nc_wasteland": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
   "TENT": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "Storage Cell": {
     "energyToOpen": 0,
     "keepAlive": 0
   },

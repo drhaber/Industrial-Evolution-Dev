@@ -5,6 +5,10 @@ import crafttweaker.mods.IMod;
 import crafttweaker.liquid.ILiquidStack;
 import moretweaker.railcraft.RollingMachine;
 
+
+//Eye of Ender
+mods.forestry.Carpenter.addRecipe(<minecraft:ender_eye>,[
+    [<minecraft:spider_eye>,<ore:dustVoid>,<ore:enderpearl>]],180,<liquid:glowstone>*250);
 //Bucket
 #mods.tconstruct.Casting.removeTableRecipe(<minecraft:bucket>);
 recipes.remove(<minecraft:bucket>);

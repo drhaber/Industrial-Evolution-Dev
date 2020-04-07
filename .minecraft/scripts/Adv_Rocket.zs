@@ -39,6 +39,13 @@ mods.advancedrocketry.CuttingMachine.removeRecipe(<advancedrocketry:ic:2>);
 #mods.advancedrocketry.PrecisionAssembler.addRecipe(<advancedrocketry:itemcircuitplate:1>, 900, 100, <tfc:metal/ingot/gold>,<minecraft:redstone_block>,<projectred-core:resource_item:301>);
 mods.advancedrocketry.PrecisionAssembler.addRecipe(<advancedrocketry:satelliteprimaryfunction:5>, 1000, 100, <tfctech:metal/copper_rod>*2,<tfctech:metal/titanium_rod>,<advancedrocketry:ic:2>,<projectred-core:resource_item:301>*2);
 
+//Laser Gun
+recipes.remove(<advancedrocketry:basiclasergun>);
+recipes.addShaped(<advancedrocketry:basiclasergun>,[
+	[<tfc:metal/double_sheet/tungsten_steel>,<immersiveengineering:toolupgrade:9>,<immersiveengineering:toolupgrade:9>],
+	[<minecraft:nether_star>,<aunis:circuit_control_crystal>,<appliedenergistics2:material:47>],
+	[<tfc:metal/double_sheet/tungsten_steel>,<aunis:naquadah_shard>,<immersiveengineering:material:13>]]);
+
 //Circuits
 
 recipes.remove(<advancedrocketry:ic:3>); #Control Circuit
