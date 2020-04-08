@@ -26,6 +26,11 @@ recipes.removeShaped(<immersiveengineering:treated_wood>*8);
 recipes.removeShaped(<engineersdecor:treated_wood_pole>);
 mods.terrafirmacraft.Barrel.addRecipe("Treated_Pole",<ore:support>, <liquid:creosote>*125, <engineersdecor:treated_wood_pole>, 4);
 
+recipes.addShapeless(<immersiveengineering:material>*2,[<contenttweaker:treatedlumber>,<ore:saw>.transformDamage(1)]);
+recipes.addShaped(<immersiveengineering:treated_wood>,[
+	[<contenttweaker:treatedlumber>,<contenttweaker:treatedlumber>],
+	[<contenttweaker:treatedlumber>,<contenttweaker:treatedlumber>]]);
+
 //Thermoelectric Generator
 recipes.remove(<immersiveengineering:metal_device1:3>);
 recipes.addShaped(<immersiveengineering:metal_device1:3>,[

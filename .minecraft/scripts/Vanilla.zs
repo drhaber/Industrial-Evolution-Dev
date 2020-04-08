@@ -115,4 +115,6 @@ for i in 0 to 16{
 	var stringname = "concrete" ~ i as string;
 mods.terrafirmacraft.Barrel.addRecipe(stringname, ConcretePowder.makeStack(i), <liquid:water>*125, Concrete.makeStack(i), 8);
 }
+//Sticks
+recipes.addShapeless(<ore:stickWood>*2,[<ore:lumber>,<ore:saw>.transformDamage(1)]);
 
