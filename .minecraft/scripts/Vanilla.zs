@@ -116,5 +116,14 @@ for i in 0 to 16{
 mods.terrafirmacraft.Barrel.addRecipe(stringname, ConcretePowder.makeStack(i), <liquid:water>*125, Concrete.makeStack(i), 8);
 }
 //Sticks
-recipes.addShapeless(<ore:stickWood>*2,[<ore:lumber>,<ore:saw>.transformDamage(1)]);
+recipes.addShapeless(<minecraft:stick>*2,[<ore:lumber>,<ore:saw>.transformDamage(1)]);
 
+val FurnaceFoods = [<pyrotech:mushroom_red_roasted>,<netherex:congealed_magma_cream>,<quark:cooked_frog_leg>,
+<foodexpansion:itemcookedbatwing>,<quark:cooked_crab_leg>,<pyrotech:apple_baked>,<pyrotech:egg_roasted>,
+<emergingtechnology:algaebarcooked>,<pyrotech:carrot_roasted>,<pyrotech:beetroot_roasted>,<pyrotech:mushroom_brown_roasted>,
+<minecraft:cooked_beef>,<minecraft:cooked_chicken>,<minecraft:cooked_mutton>,<minecraft:cooked_porkchop>,<minecraft:cooked_fish>,
+<minecraft:cooked_rabbit>,<foodexpansion:itemcookedhorsemeat>,<foodexpansion:itemcookedsquid>,<foodexpansion:itemcookedwolfmeat>,
+<emergingtechnology:syntheticcowcooked>,<emergingtechnology:syntheticchickencooked>,<emergingtechnology:syntheticpigcooked>] as IItemStack[];
+for i, FF in FurnaceFoods{
+furnace.remove(FF);
+}

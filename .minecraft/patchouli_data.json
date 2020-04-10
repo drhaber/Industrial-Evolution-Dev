@@ -89,6 +89,18 @@
         "cuisine:processing/mill"
       ],
       "completedManualQuests": []
+    },
+    "pyrotech:book": {
+      "viewedEntries": [
+        "pyrotech:survive/worktable",
+        "pyrotech:survive/chopping_block"
+      ],
+      "bookmarks": [],
+      "history": [
+        "pyrotech:survive/chopping_block",
+        "pyrotech:survive/worktable"
+      ],
+      "completedManualQuests": []
     }
   }
 }
