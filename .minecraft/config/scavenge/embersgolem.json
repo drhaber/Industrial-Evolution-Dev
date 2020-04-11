@@ -14,7 +14,7 @@
 			[
                 {
 					"type": "require_item",
-					"name": "embers:shard_ember"
+					"name": "minecraft:fire_charge"
 				},
 				{
 					"type": "consume_item",
