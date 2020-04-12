@@ -71,5 +71,5 @@ mods.botania.ManaInfusion.addInfusion(<minecraft:sapling:3>,<tfc:wood/sapling/pa
 mods.botania.ManaInfusion.addInfusion(<minecraft:sapling:4>,<tfc:wood/sapling/acacia>,1000);
 mods.botania.ManaInfusion.addInfusion(<minecraft:sapling:5>,<tfc:wood/sapling/blackwood>,1000);
 //wooden Water Bowl
-mods.terrafirmacraft.Barrel.addRecipe("fresh_water_bowl", <minecraft:bowl>, <liquid:fresh_water>*1000, <botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}), null, 0);
-mods.terrafirmacraft.Barrel.addRecipe("MC_water_bowl", <minecraft:bowl>, <liquid:water>*1000, <botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}), null, 0);
+#mods.terrafirmacraft.Barrel.addRecipe("fresh_water_bowl", <minecraft:bowl>, <liquid:fresh_water>*1000, <botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}), null, 0);
+#mods.terrafirmacraft.Barrel.addRecipe("MC_water_bowl", <minecraft:bowl>, <liquid:water>*1000, <botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}), null, 0);

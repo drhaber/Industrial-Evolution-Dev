@@ -4,6 +4,12 @@ import crafttweaker.item.IItemDefinition;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.mods.IMod;
 
+//Rocks
+<ore:rock>.removeItems([<pyrotech:rock>,<pyrotech:rock:1>,<pyrotech:rock:2>,<pyrotech:rock:3>,<pyrotech:rock:6>,<pyrotech:rock:8>]);
+<ore:pepple>.addItems([<pyrotech:rock>,<pyrotech:rock:1>,<pyrotech:rock:2>,<pyrotech:rock:3>,<pyrotech:rock:6>,<pyrotech:rock:8>]);
+//Lapis Gem
+<ore:dyeBlue>.remove(<minecraft:dye:4>);
+<ore:dye>.remove(<minecraft:dye:4>);
 //compost
 <ore:fertilizer>.add(<forestry:fertilizer_bio>);
 <ore:lumpCompost>.addItems([<composter:compost>,<forestry:fertilizer_bio>]);
@@ -63,6 +69,8 @@ for i in 0 to 16{
 <ore:chestWood>.mirror(<ore:chest>);
 
 <ore:chestVanilla>.addItems([<minecraft:chest>,<quark:custom_chest:*>]);
+//Ash
+<ore:dustAsh>.add(<pyrotech:material>);
 //Bricks
 <ore:ingotBrick>.addAll(<ore:brick>); //This adds ingot brick to all bricks
 //magnifying_glass

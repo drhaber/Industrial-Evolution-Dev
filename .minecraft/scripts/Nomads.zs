@@ -88,6 +88,6 @@ recipes.addShaped(WCB,[
 	[null,<minecraft:stick>,null],
 	[<minecraft:stick>,null,<minecraft:stick>]]);
 
-mods.nuclearcraft.infuser.addRecipe(WCB, <liquid:gold>*10368,<yurtmod:tent_upgrade_gold>);
-mods.nuclearcraft.infuser.addRecipe(<yurtmod:tent_upgrade_gold>, <liquid:lava>*10368,<yurtmod:tent_upgrade_obsidian>);
-mods.nuclearcraft.infuser.addRecipe(<yurtmod:tent_upgrade_obsidian>, <liquid:diamond>*10368,<yurtmod:tent_upgrade_diamond>);
+mods.embers.Stamper.add(<yurtmod:tent_upgrade_gold>,<liquid:gold>*10368, <embers:stamp_flat>,WCB);
+mods.embers.Stamper.add(<yurtmod:tent_upgrade_obsidian>,<liquid:lava>*10368, <embers:stamp_flat>,<yurtmod:tent_upgrade_gold>);
+mods.embers.Stamper.add(<yurtmod:tent_upgrade_diamond>,<liquid:diamond>*10368, <embers:stamp_flat>,<yurtmod:tent_upgrade_obsidian>);

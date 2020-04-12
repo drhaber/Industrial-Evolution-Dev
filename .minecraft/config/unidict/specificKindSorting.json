@@ -190,7 +190,14 @@
 		[
 		"tfc"
 		]
-	}
+	},
+	{
+		"kindName" : "gem",
+		"modIdPriorityList" :
+		[
+		"tfc"
+		]
+	}	
 ]	
 
 

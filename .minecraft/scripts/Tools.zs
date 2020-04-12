@@ -55,12 +55,12 @@ mods.jei.JEI.removeAndHide(<minecraft:wooden_axe>);
 //Boots
 <ore:bootsIron>.addItems([<minecraft:iron_boots>,<tfc:metal/boots/wrought_iron>]);
 
-/*
+
 //Diamond Tools
-mods.tconstruct.Casting.addTableRecipe(<minecraft:diamond_sword>, <botania:manasteelsword>, <liquid:diamond>, 1332, true, 1800);
-mods.tconstruct.Casting.addTableRecipe(<minecraft:diamond_pickaxe>, <botania:manasteelpick>, <liquid:diamond>, 1998, true, 1800);
-mods.tconstruct.Casting.addTableRecipe(<minecraft:diamond_axe>, <botania:manasteelaxe>, <liquid:diamond>, 1998, true, 1800);
-*/
+mods.embers.Stamper.add(<minecraft:diamond_sword>,<liquid:diamond>*1332, <embers:stamp_flat>,<botania:manasteelsword>);
+mods.embers.Stamper.add(<minecraft:diamond_pickaxe>,<liquid:diamond>*1998, <embers:stamp_flat>,<botania:manasteelpick>);
+mods.embers.Stamper.add(<minecraft:diamond_axe>,<liquid:diamond>*1998, <embers:stamp_flat>,<botania:manasteelaxe>);
+
 //Diamond Shovel
 recipes.remove(<minecraft:diamond_shovel>);
 recipes.addShaped(<minecraft:diamond_shovel>,[
@@ -73,7 +73,7 @@ recipes.addShaped(<minecraft:golden_shovel>,[
 	[<minecraft:stick>]]);
 
 //Embers Recipes
-val embersRecipes = [
+val toolRecipes = [
 <embers:pickaxe_copper>,<embers:axe_copper>,<embers:shovel_copper>,<embers:hoe_copper>,<embers:sword_copper>,
 <embers:pickaxe_silver>,<embers:axe_silver>,<embers:shovel_silver>,<embers:hoe_silver>,<embers:sword_silver>,
 <embers:pickaxe_lead>,<embers:axe_lead>,<embers:shovel_lead>,<embers:hoe_lead>,<embers:sword_lead>,
@@ -82,30 +82,28 @@ val embersRecipes = [
 <embers:pickaxe_bronze>,<embers:axe_bronze>,<embers:shovel_bronze>,<embers:hoe_bronze>,<embers:sword_bronze>,
 <embers:pickaxe_electrum>,<embers:axe_electrum>,<embers:shovel_electrum>,<embers:hoe_electrum>,<embers:sword_electrum>,
 <embers:pickaxe_nickel>,<embers:axe_nickel>,<embers:shovel_nickel>,<embers:hoe_nickel>,<embers:sword_nickel>,
-<embers:pickaxe_tin>,<embers:axe_tin>,<embers:shovel_tin>,<embers:hoe_tin>,<embers:sword_tin>] as IItemStack[];
-for i, ER in embersRecipes{
-	recipes.remove(ER);
+<embers:pickaxe_tin>,<embers:axe_tin>,<embers:shovel_tin>,<embers:hoe_tin>,<embers:sword_tin>,<pyrotech:crude_shovel>,
+<pyrotech:bone_shovel>,<pyrotech:flint_shovel>,<pyrotech:obsidian_shovel>,<cyclicmagic:emerald_spade>,
+<cyclicmagic:netherbrick_spade>,<cyclicmagic:sandstone_spade>,<railcraft:tool_pickaxe_steel>,<railcraft:tool_axe_steel>,
+<railcraft:tool_shovel_steel>,<railcraft:tool_hoe_steel>,<railcraft:tool_sword_steel>,<railcraft:tool_shears_steel>,
+<railcraft:armor_helmet_steel>,<railcraft:armor_chestplate_steel>,<railcraft:armor_leggings_steel>,<railcraft:armor_boots_steel>] as IItemStack[];
+for i, TR in toolRecipes{
+	recipes.remove(TR);
 }
-val steelTools = [<railcraft:tool_pickaxe_steel>,<railcraft:tool_axe_steel>,<railcraft:tool_shovel_steel>,<railcraft:tool_hoe_steel>,<railcraft:tool_sword_steel>,<railcraft:tool_shears_steel>,
-<railcraft:armor_helmet_steel>,<railcraft:armor_chestplate_steel>,<railcraft:armor_leggings_steel>,<railcraft:armor_boots_steel>,
-] as IItemStack[];
 
-for i, ST in steelTools{
-	recipes.remove(ST);
-}
 
 #<tcomplement:steel_helmet>,<tcomplement:steel_chestplate>,<tcomplement:steel_leggings>,<tcomplement:steel_boots>
 
 //Fishing RODS
+<minecraft:fishing_rod>.displayName = "Void Fishing Rod";	
 recipes.addShaped(<minecraft:fishing_rod>,[
-	[null,null,<ore:stickWood>],
-	[null,<ore:stickWood>,<ore:string>],
+	[null,null,<ore:dreamwoodTwig>],
+	[null,<ore:dreamwoodTwig>,<ore:manaString>],
 	[<ore:stickWood>,null,<jaff:iron_hook>]]);
-<jaff:wooden_fishing_rod>.displayName = "Treated Fishing Rod";	
 recipes.remove(<jaff:wooden_fishing_rod>);
 recipes.addShaped(<jaff:wooden_fishing_rod>,[
-	[null,null,<ore:stickTreatedWood>],
-	[null,<ore:stickTreatedWood>,<ore:string>],
+	[null,null,<ore:stickWood>],
+	[null,<ore:stickWood>,<ore:string>],
 	[<ore:stickWood>,null,<jaff:iron_hook>]]);
 recipes.remove(<jaff:iron_fishing_rod>);
 recipes.addShaped(<jaff:iron_fishing_rod>,[
@@ -119,3 +117,10 @@ recipes.addShaped(<jaff:golden_fishing_rod>,[
 	[<ore:stickWood>,null,<jaff:iron_hook>]]);
 recipes.remove(<jaff:diamond_fishing_rod>);
 mods.embers.Stamper.add(<jaff:diamond_fishing_rod>,<liquid:diamond>*1332, <embers:stamp_flat>,<jaff:golden_fishing_rod>);
+
+<pyrotech:crude_fishing_rod>.displayName = "Crude Void Fishing Rod";	
+recipes.remove(<pyrotech:crude_fishing_rod>);
+recipes.addShaped(<pyrotech:crude_fishing_rod>,[
+	[null,null,<ore:livingwoodTwig>],
+	[null,<ore:livingwoodTwig>,<ore:manaString>],
+	[<ore:livingwoodTwig>,null,<ore:dustVoid>]]);

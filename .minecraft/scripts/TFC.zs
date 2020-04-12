@@ -16,6 +16,7 @@ mods.terrafirmacraft.ItemRegistry.registerFuel(<tfc:ore/bituminous_coal>, 2200, 
 mods.terrafirmacraft.ItemRegistry.registerFuel(<tfc:ore/lignite>, 2000, 1350, true, false);
 mods.terrafirmacraft.ItemRegistry.registerFuel(<minecraft:coal:1>, 1800, 1350, true, true);
 mods.terrafirmacraft.ItemRegistry.registerFuel(<forestry:peat>, 2500, 680, true, false);
+mods.terrafirmacraft.ItemRegistry.registerFuel(<tfc:ore/petrified_wood>, 2000, 1350, true, false);
 
 furnace.setFuel(<tfc:ore/bituminous_coal>, 1600);
 furnace.setFuel(<tfc:ore/lignite>, 800);

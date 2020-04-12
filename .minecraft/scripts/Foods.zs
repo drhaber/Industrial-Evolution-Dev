@@ -14,7 +14,7 @@ recipes.addShapeless(<foodexpansion:itembaconandegg>,[<ore:foodCookedegg>,<foode
 furnace.remove(<minecraft:bread>);
 
 mods.jei.JEI.removeAndHide(<foodexpansion:itemdough>); #dough
-<foodexpansion:itemcompressedflesh>.displayName = "Salted Flesh";
+
 /*
 val Jerky = [<tconstruct:edible:10>,<tconstruct:edible:11>,<tconstruct:edible:12>,
 <tconstruct:edible:13>,<tconstruct:edible:14>,<tconstruct:edible:15>,<tconstruct:edible:20>] as IItemStack[];	
@@ -33,6 +33,14 @@ mods.integrateddynamics.MechanicalDryingBasin.addRecipe(<contenttweaker:ground_m
 
 #=============================================================================================================================================		
 //Food Recipes
+
+<foodexpansion:itemcompressedflesh>.displayName = "Salted Flesh";
+recipes.remove(<foodexpansion:itemcompressedflesh>);
+recipes.addShaped(<foodexpansion:itemcompressedflesh>,[
+	[<minecraft:rotten_flesh>,<minecraft:rotten_flesh>,<minecraft:rotten_flesh>],
+	[<minecraft:rotten_flesh>,<ore:dustSalt>,<minecraft:rotten_flesh>],
+	[<minecraft:rotten_flesh>,<minecraft:rotten_flesh>,<minecraft:rotten_flesh>]]);
+
 mods.terrafirmacraft.Barrel.addRecipe("honey_bread1", <ore:breadAny>, <liquid:honey>*10, <forestry:honeyed_slice>,1);
 mods.terrafirmacraft.Barrel.addRecipe("honey_bread2", <ore:breadAny>, <liquid:for.honey>*10, <forestry:honeyed_slice>,1);
 
@@ -54,9 +62,6 @@ recipes.addShapeless(<contenttweaker:uncooked_carrot_cake>,[<minecraft:milk_buck
 recipes.addShapeless(<contenttweaker:uncooked_carrot_cake>,[<tfc:wooden_bucket>.withTag({Fluid: {FluidName: "milk", Amount: 1000}}).transformReplace(<tfc:wooden_bucket>),<ore:knife>.transformDamage(1),<ore:flour>,<tfc:food/carrot>,<minecraft:sugar>]);
 
 recipes.addShapeless(<contenttweaker:uncooked_pizza>,[<ore:knife>.transformDamage(5),<ore:dough>,<ore:dustSalt>,<ore:categoryMeat>,<tfc:food/tomato>,<tfc:food/cheese>,<ore:mushroomAny>,<tfc:food/garlic>]);
-
-recipes.remove(<foodexpansion:itemcompressedflesh>);
-recipes.addShapeless(<foodexpansion:itemcompressedflesh>,[<minecraft:rotten_flesh>,<minecraft:rotten_flesh>,<ore:dustSalt>]);
 
 recipes.addShapeless(<contenttweaker:uncooked_beet_noodles>,[<botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}),<ore:knife>.transformDamage(5),<ore:dough>,<ore:dustSalt>,<tfc:food/beet>,<tfc:food/beet>]);
 

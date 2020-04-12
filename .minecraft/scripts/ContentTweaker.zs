@@ -489,7 +489,7 @@ game.setLocalization("item.contenttweaker.snow_cream.name", "Snow Cream");
 var pemmican = VanillaFactory.createItemFood("pemmican",8);
 pemmican.saturation = 1.2;
 pemmican.register();
-game.setLocalization("item.contenttweaker.pemmican.name", "pemmican");
+game.setLocalization("item.contenttweaker.pemmican.name", "Pemmican");
 #=============================================================================================================================================	
 
 var dirtyglass = VanillaFactory.createBlock("dirtyglass", <blockmaterial:glass>);

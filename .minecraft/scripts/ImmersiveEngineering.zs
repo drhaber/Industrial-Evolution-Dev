@@ -200,9 +200,9 @@ mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:fluix_wire>*6, <a
 //Wire Coils
 val sp = <contenttweaker:emptyspool>;
 recipes.addShaped(sp,[
-	[<appliedenergistics2:material:40>,null,null],
+	[<ore:gearWood>,null,null],
 	[null,<ore:lumber>,null],
-	[null,null,<appliedenergistics2:material:40>]]);
+	[null,null,<ore:gearWood>]]);
 recipes.remove(<alternatingflux:wirecoil>); #AF Wire
 recipes.addShaped(<alternatingflux:wirecoil>*4,[
 	[<ore:wireConstantan>,<ore:wireConstantan>,<ore:wireConstantan>],

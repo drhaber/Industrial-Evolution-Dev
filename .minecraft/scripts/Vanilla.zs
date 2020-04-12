@@ -12,7 +12,7 @@ mods.forestry.Carpenter.addRecipe(<minecraft:ender_eye>,[
 //Bucket
 #mods.tconstruct.Casting.removeTableRecipe(<minecraft:bucket>);
 recipes.remove(<minecraft:bucket>);
-RollingMachine.addShapeless(<minecraft:bucket>, [<ore:sheetDoubleSteel>]);
+#RollingMachine.addShapeless(<minecraft:bucket>, [<ore:sheetDoubleSteel>]);
 
 //Black Stained Glass
 recipes.addShaped(<minecraft:stained_glass:15>*8,[
@@ -27,6 +27,15 @@ recipes.addShaped(<minecraft:coal_block>,[
 	[CO,CO,CO],
 	[CO,CO,CO]]);
 }	
+//Lapis Lazuli Block
+recipes.remove(<minecraft:lapis_block>);
+recipes.addShaped(<minecraft:lapis_block>,[
+	[<ore:gemLapis>,<ore:gemLapis>,<ore:gemLapis>],
+	[<ore:gemLapis>,<ore:gemLapis>,<ore:gemLapis>],
+	[<ore:gemLapis>,<ore:gemLapis>,<ore:gemLapis>]]);
+recipes.addShapeless(<minecraft:dye:4>*9,[<minecraft:lapis_block>]);	
+
+
 //Vanilla Chest
 recipes.remove(<minecraft:chest>);
 recipes.addShaped(<minecraft:chest>,[
@@ -70,7 +79,7 @@ recipes.addShaped(<minecraft:wooden_pressure_plate>*2,[
 	[<ore:lumber>,<ore:lumber>]]);
 //Crafting Table Conversion
 mods.jei.JEI.addDescription(<minecraft:crafting_table>,"If I place a crafting table directly into the collector crystal by shift right clicking maybe I can aquire the specific table notch created...");
-mods.jei.JEI.addDescription(<ore:craftingTableWood>,"Placing a crafting table into the magical feild of a collector crystal yeilds some intersting results. However, it appears not all tables are created equal...");
+mods.jei.JEI.addDescription(<ore:craftingTableWood>,"Placing a crafting table into the magical feild of a collector crystal yeilds some interesting results. However, it appears not all tables are created equal...");
 #recipes.addShapeless(<minecraft:crafting_table>,[<astralsorcery:itemcraftingcomponent:5>,<ore:craftingTableWood>]);
 //Furnace
 val CB = <ore:cobblestone>;

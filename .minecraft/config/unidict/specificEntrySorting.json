@@ -48,5 +48,12 @@
 		[
 		"opencomputers"
 		]
-	}
+	},
+	{
+		"entryName" : "gemLapis",
+		"modIdPriorityList" :
+		[
+		"minecraft"
+		]
+	}	
 ]
