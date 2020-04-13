@@ -93,10 +93,14 @@
     "pyrotech:book": {
       "viewedEntries": [
         "pyrotech:survive/worktable",
-        "pyrotech:survive/chopping_block"
+        "pyrotech:survive/chopping_block",
+        "pyrotech:innovate/stone_worktable",
+        "pyrotech:innovate/stone_crucible"
       ],
       "bookmarks": [],
       "history": [
+        "pyrotech:innovate/stone_crucible",
+        "pyrotech:innovate/stone_worktable",
         "pyrotech:survive/chopping_block",
         "pyrotech:survive/worktable"
       ],

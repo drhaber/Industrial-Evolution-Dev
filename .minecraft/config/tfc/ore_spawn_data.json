@@ -446,5 +446,20 @@
     "base_rocks": [
       "tfc:metamorphic"
     ]
+  },
+    "sulfur": {
+    "ore": "tfc:sulfur",
+    "width": 16,
+    "height": 16,
+    "shape": "sphere",
+    "rarity": 50,
+    "minimum_height": 5,
+    "maximum_height": 35,
+    "density": 60,
+    "base_rocks": [
+      "tfc:igneous_extrusive",
+      "tfc:shale",
+      "tfc:quartzite"
+    ]
   }
 }

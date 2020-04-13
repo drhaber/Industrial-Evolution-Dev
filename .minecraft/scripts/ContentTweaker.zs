@@ -12,6 +12,10 @@ import mods.contenttweaker.World;
 import mods.contenttweaker.ResourceLocation;
 import mods.contenttweaker.IItemColorSupplier;
 
+//iron_sulfate
+var iron_sulfate = VanillaFactory.createItem("iron_sulfate");
+iron_sulfate.register();
+game.setLocalization("item.contenttweaker.iron_sulfate.name", "Iron(II) Sulfate");
 //solar_substrate 
 var solar_substrate = VanillaFactory.createItem("solar_substrate");
 solar_substrate.register();
@@ -286,7 +290,7 @@ var meat_broth = VanillaFactory.createFluid("meat_broth", Color.fromHex("806D2F"
 meat_broth.viscosity = 3000;
 meat_broth.temperature= 100;
 meat_broth.register();
-game.setLocalization("fluid.meat_broth", "meat_broth");
+game.setLocalization("fluid.meat_broth", "Meat Broth");
 
 //vegetable_soup
 var vegetable_soup = VanillaFactory.createFluid("vegetable_soup", Color.fromHex("B89C44"));

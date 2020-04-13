@@ -12,7 +12,8 @@ mods.forestry.Carpenter.addRecipe(<minecraft:ender_eye>,[
 //Bucket
 #mods.tconstruct.Casting.removeTableRecipe(<minecraft:bucket>);
 recipes.remove(<minecraft:bucket>);
-#RollingMachine.addShapeless(<minecraft:bucket>, [<ore:sheetDoubleSteel>]);
+RollingMachine.addShapeless(<minecraft:bucket>, [<ore:sheetDoubleSteel>]);
+mods.terrafirmacraft.ItemRegistry.registerItemMetal(<minecraft:bucket>, "WROUGHT_IRON", 200, true);
 
 //Black Stained Glass
 recipes.addShaped(<minecraft:stained_glass:15>*8,[
@@ -102,7 +103,7 @@ recipes.addShapeless(<railcraft:anvil>,[<tfc:metal/anvil/wrought_iron>]);
 #mods.terrafirmacraft.Barrel.addRecipe("Vanilla_sand", <ore:tfcSand>, <liquid:hot_water>*250, <minecraft:sand>, <liquid:hot_water>*0, 4);
 mods.jei.JEI.addDescription(<minecraft:sand>,"Exposing Liquid Starlight to Lava seems to have a rather peculiar reaction...");
 //Paper
-#mods.terrafirmacraft.Barrel.addRecipe("Paper", <astralsorcery:itemcraftingcomponent:5>, <liquid:hot_water>*250, <minecraft:paper>, <liquid:hot_water>*0, 4);
+mods.rustic.CrushingTub.addRecipe(<liquid:fresh_water>*125, <minecraft:paper>, <emergingtechnology:paperpulp>*3);
 recipes.remove(<minecraft:paper>);
 recipes.addShaped(<minecraft:paper>,[
 	[<ore:pulpWood>,<ore:pulpWood>,<ore:pulpWood>]]);

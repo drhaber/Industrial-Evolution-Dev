@@ -19,6 +19,13 @@ recipes.addShaped(<embers:superheater>,[
 recipes.remove(<embers:archaic_circuit>);
 mods.appliedenergistics2.Inscriber.addRecipe(<embers:archaic_circuit>,<embers:archaic_brick>,true,<appliedenergistics2:material:19>);
 
+//Iron Tile
+recipes.remove(<soot:wrought_tile>);
+recipes.addShaped(<soot:wrought_tile>,[
+	[null,null,null],
+	[null,<tfc:metal/sheet/wrought_iron>,<tfc:metal/sheet/wrought_iron>],
+	[null,<tfc:metal/sheet/wrought_iron>,<tfc:metal/sheet/wrought_iron>]]);
+
 //Hammer
 recipes.remove(<embers:tinker_hammer>);
 recipes.addShaped(<embers:tinker_hammer>,[
@@ -34,6 +41,7 @@ val EmbersPlates =[<embers:plate_copper>,<embers:plate_lead>,<embers:plate_silve
 <embers:plate_nickel>,<embers:plate_tin>] as IItemStack[];
 for EP in EmbersPlates{
 mods.embers.Stamper.remove(EP);
+recipes.remove(EP);
 }
 
 //Archaic Brick

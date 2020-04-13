@@ -28,8 +28,14 @@ furnace.setFuel(<tfc:ore/petrified_wood>, 800);
 mods.terrafirmacraft.ItemRegistry.registerItemMetal(<contenttweaker:bismuth_hammer_head>, "BISMUTH", 100, true);
 mods.terrafirmacraft.ItemRegistry.registerItemMetal(<contenttweaker:bismuth_engineers_hammer_head>, "BISMUTH", 200, true);
 
+mods.terrafirmacraft.ItemRegistry.registerItemMetal(<embers:tinker_hammer>, "BISMUTH", 100, true);
+mods.terrafirmacraft.ItemRegistry.registerItemMetal(<immersiveengineering:tool>, "BISMUTH", 200, true);
+
 mods.terrafirmacraft.Anvil.addRecipe("bismuth_head", <tfc:metal/ingot/bismuth>, <contenttweaker:bismuth_hammer_head>, 1, "tools", "PUNCH_LAST","SHRINK_NOT_LAST");
 mods.terrafirmacraft.Anvil.addRecipe("bismuth_engineer_head", <tfc:metal/double_ingot/bismuth>, <contenttweaker:bismuth_engineers_hammer_head>, 1, "tools", "PUNCH_LAST","SHRINK_NOT_LAST");
+
+//Tongs
+mods.terrafirmacraft.ItemRegistry.registerItemMetal(<tfctech:metal/iron_tongs>, "WROUGHT_IRON", 100, true);
 
 //Cheaper Glass
 mods.terrafirmacraft.ItemRegistry.registerItemHeat(<contenttweaker:dirtyglass>, 0.35, 1350, false);
@@ -71,10 +77,14 @@ mods.terrafirmacraft.Anvil.addRecipe("Iron_Ring", <tfctech:metal/wrought_iron_st
 //Hot Water - Water
 val fluidcontainers = [<tfc:wooden_bucket>,<minecraft:bucket>,<tfc:metal/bucket/red_steel>,<forestry:can>,<forestry:refractory>,<tfctech:ceramics/fluid_bowl>] as IItemStack[];
 for i, FC in fluidcontainers {
-mods.inspirations.Cauldron.addFluidRecipe(FC.withTag({Fluid: {FluidName: "hot_water", Amount: 1000}}), FC, <liquid:water>, 4, true);
-mods.inspirations.Cauldron.addFluidRecipe(FC.withTag({Fluid: {FluidName: "hot_water", Amount: 1000}}), FC, <liquid:fresh_water>, 4, true);
 mods.inspirations.Cauldron.addFillRecipe(FC.withTag({Fluid: {FluidName: "ice", Amount: 1000}}), <liquid:fresh_water>, 4,FC);
 }
+mods.inspirations.Cauldron.addFluidRecipe(<tfctech:ceramics/fluid_bowl>.withTag({Fluid: {FluidName: "hot_water", Amount: 1000}}), <tfc:ceramics/fired/pot>, <liquid:water>, 4, true);
+mods.inspirations.Cauldron.addFluidRecipe(<tfctech:ceramics/fluid_bowl>.withTag({Fluid: {FluidName: "hot_water", Amount: 1000}}), <tfc:ceramics/fired/pot>, <liquid:fresh_water>, 4, true);
+
+//Bowl <-> Pot
+recipes.addShapeless(<tfc:ceramics/fired/pot>,[<tfctech:ceramics/fluid_bowl>.withEmptyTag()]);							
+
 //Fresh Water Jug
 mods.inspirations.Cauldron.addFluidRecipe(<tfc:ceramics/fired/jug>.withTag({Fluid: {FluidName: "fresh_water", Amount: 100}}), <tfc:ceramics/fired/jug>, <liquid:fresh_water>, 2, false);
 mods.inspirations.Cauldron.addFluidRecipe(<tfc:ceramics/fired/jug>.withTag({Fluid: {FluidName: "fresh_water", Amount: 100}}), <tfc:ceramics/fired/jug>, <liquid:water>, 2, true);
