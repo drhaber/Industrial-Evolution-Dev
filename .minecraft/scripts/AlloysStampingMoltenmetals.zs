@@ -1,8 +1,39 @@
+#norun
+
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.liquid.ILiquidStack;
 
+
+//Melting Slag
+/*
+static void addRecipe(
+  string name,         // unique recipe name
+  ILiquidStack output, // recipe output
+  IIngredient input,   // recipe input
+  int burnTimeTicks    // recipe duration in ticks
+);
+
+
+<pyrotech:generated_slag_aluminium_custom>
+<pyrotech:generated_slag_antimony_custom>
+<pyrotech:generated_slag_bismuth_custom>
+<pyrotech:generated_slag_cobalt_custom>
+<pyrotech:generated_slag_copper_custom>
+<pyrotech:generated_slag_gold_custom>
+<pyrotech:generated_slag_iridium_custom>
+<pyrotech:generated_slag_iron_custom>
+<pyrotech:generated_slag_lead_custom>
+<pyrotech:generated_slag_nickel_custom>
+<pyrotech:generated_slag_osmium_custom>
+<pyrotech:generated_slag_pitchblend_custom>
+<pyrotech:generated_slag_platinum_custom>
+<pyrotech:generated_slag_silver_custom>
+<pyrotech:generated_slag_tin_custom>
+<pyrotech:generated_slag_tungsten_custom>
+<pyrotech:generated_slag_zinc_custom>
+*/
 #mods.embers.Stamper.add(IItemStack <output>,ILiquidStack <liquid>,IIngredient <stamp>,IIngredient <input>);
 //AE2 Inscriber Plates
 mods.embers.Stamper.add(<appliedenergistics2:material:14>,<liquid:iron>*576,<contenttweaker:fired_material_engineering_processor_press>,null);
