@@ -192,6 +192,35 @@ mods.jei.JEI.removeAndHide(<railcraft:gear:3>);
 
 <ore:anyWands>.addAll(<ore:botWands>);
 #=============================================================================================================================================		
+//Ore Clusters
+<ore:clusterZinc>.add(<pyrotech:generated_slag_zinc_custom>);
+<ore:clusterAntimony>.add(<pyrotech:generated_slag_antimony_custom>);
+<ore:clusterPlantinum>.add(<pyrotech:generated_slag_platinum_custom>);
+<ore:clusterTungsten>.add(<pyrotech:generated_slag_tungsten_custom>);
+<ore:clusterCobalt>.add(<pyrotech:generated_slag_cobalt_custom>);
+<ore:clusterBismuth>.add(<pyrotech:generated_slag_bismuth_custom>);
+<ore:clusterOsmium>.add(<pyrotech:generated_slag_osmium_custom>);
+
+<ore:clusterAluminium>.add(<pyrotech:generated_slag_aluminium_custom>);
+<ore:clusterCopper>.add(<pyrotech:generated_slag_copper_custom>);
+<ore:clusterGold>.add(<pyrotech:generated_slag_gold_custom>);
+<ore:clusterIridium>.add(<pyrotech:generated_slag_iridium_custom>);
+<ore:clusterIron>.add(<pyrotech:generated_slag_iron_custom>);
+<ore:clusterLead>.add(<pyrotech:generated_slag_lead_custom>);
+<ore:clusterNickel>.add(<pyrotech:generated_slag_nickel_custom>);
+<ore:clusterSilver>.add(<pyrotech:generated_slag_silver_custom>);
+<ore:clusterTin>.add(<pyrotech:generated_slag_tin_custom>);
+<ore:clusterPitchblend>.add(<pyrotech:generated_slag_pitchblend_custom>);
+
+<ore:oreCluster>.addItems([<pyrotech:generated_slag_zinc_custom>,<pyrotech:generated_slag_antimony_custom>,
+<pyrotech:generated_slag_platinum_custom>,<pyrotech:generated_slag_tungsten_custom>,
+<pyrotech:generated_slag_cobalt_custom>,<pyrotech:generated_slag_bismuth_custom>,
+<pyrotech:generated_slag_osmium_custom>,<pyrotech:generated_slag_aluminium_custom>,
+<pyrotech:generated_slag_copper_custom>,<pyrotech:generated_slag_gold_custom>,
+<pyrotech:generated_slag_iridium_custom>,<pyrotech:generated_slag_iron_custom>,
+<pyrotech:generated_slag_lead_custom>,<pyrotech:generated_slag_nickel_custom>,
+<pyrotech:generated_slag_silver_custom>,<pyrotech:generated_slag_tin_custom>,<pyrotech:generated_slag_pitchblend_custom>]);
+#=============================================================================================================================================		
 
 //spalings
 <ore:treeSapling>.addItems([<dynamictrees:appleseed>,<dynamictrees:oakseed>,<dynamictrees:spruceseed>,
