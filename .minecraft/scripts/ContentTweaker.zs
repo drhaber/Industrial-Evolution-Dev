@@ -12,6 +12,18 @@ import mods.contenttweaker.World;
 import mods.contenttweaker.ResourceLocation;
 import mods.contenttweaker.IItemColorSupplier;
 
+//star_fabric
+var star_fabric = VanillaFactory.createItem("star_fabric");
+star_fabric.register();
+game.setLocalization("item.contenttweaker.star_fabric.name", "Star Fabric");
+//star_string
+var star_string = VanillaFactory.createItem("star_string");
+star_string.register();
+game.setLocalization("item.contenttweaker.star_string.name", "Star String");
+//zeolite_powder
+var zeolite_powder = VanillaFactory.createItem("zeolite_powder");
+zeolite_powder.register();
+game.setLocalization("item.contenttweaker.zeolite_powder.name", "Zeolite Powder");
 //iron_sulfate
 var iron_sulfate = VanillaFactory.createItem("iron_sulfate");
 iron_sulfate.register();
@@ -361,6 +373,31 @@ game.setLocalization("fluid.carrot_soup", "Carrot Soup");
 			liquidTerrasteel.flowingLocation = "tfc:blocks/lava_flow";
 		liquidTerrasteel.register();
 		game.setLocalization("fluid.terrasteel", "Molten Terrasteel");
+
+//chlorine
+var chlorine = VanillaFactory.createFluid("chlorine", Color.fromHex("9AA953"));
+chlorine.viscosity = 1000;
+chlorine.temperature = 100;
+chlorine.gaseous = true;
+chlorine.density = 100;
+chlorine.register();
+game.setLocalization("fluid.chlorine", "Chlorine");
+
+//hydrogen_chloride
+var hydrogen_chloride = VanillaFactory.createFluid("hydrogen_chloride", Color.fromHex("CBCDC0"));
+hydrogen_chloride.viscosity = 1000;
+hydrogen_chloride.temperature = 100;
+hydrogen_chloride.gaseous = true;
+hydrogen_chloride.density = 100;
+hydrogen_chloride.register();
+game.setLocalization("fluid.hydrogen_chloride", "Hydrogen Chloride");
+
+//hydrochloric_acid
+var hydrochloric_acid = VanillaFactory.createFluid("hydrochloric_acid", Color.fromHex("CBCDC0"));
+hydrochloric_acid.viscosity = 3000;
+hydrochloric_acid.temperature= 100;
+hydrochloric_acid.register();
+game.setLocalization("fluid.hydrochloric_acid", "Hydrochloric Acid");
 
 //liquid_grog
 var grog = VanillaFactory.createFluid("grog", Color.fromHex("42FF5C"));
