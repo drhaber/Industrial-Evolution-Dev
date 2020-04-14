@@ -140,9 +140,8 @@ zenClass MoltenHandleClass {
             logger.logError("liquid is null, MoltenHandleClass application Skipped");
             return;
         }
-        if(!isNull(castingMetal)){
-            mods.embers.Melter.remove(castingMetal*144);
-        }
+        mods.embers.Melter.remove(castingMetal*144);
+        
         if(!isNull(axeHead)){
             mods.embers.Stamper.add(axeHead,castingMetal*144, <tfc:ceramics/fired/mold/axe_head>,null);
         }
@@ -765,13 +764,13 @@ MoltenHandleClass(<liquid:elementium>)
     .finish();
 MoltenHandleClass(<liquid:manasteel>)
     .withshovelHead(<contenttweaker:manasteel_shovel_head>)
-    .withgears(<mystgears:gear_manasteel>)
+    #.withgears(<mystgears:gear_manasteel>) //Duplicate 
     .withingots(<botania:manaresource>)
     .withblock(<botania:storage>)
     .withnugget(<botania:manaresource:17>)
     .finish();
 MoltenHandleClass(<liquid:terrasteel>)
-    .withgears(<mystgears:gear_terrasteel>)
+    #.withgears(<mystgears:gear_terrasteel>) //Duplicate 
     .withingots(<botania:manaresource:4>)
     .withblock(<botania:storage:1>)
     .withnugget(<botania:manaresource:18>)
@@ -849,8 +848,8 @@ mods.nuclearcraft.ingot_former.removeRecipeWithInput(<liquid:aluminum>*144);
 mods.nuclearcraft.electrolyser.removeRecipeWithInput(<liquid:alumina>*144);
 mods.nuclearcraft.electrolyser.addRecipe(<liquid:alumina>*144, <liquid:aluminium>*288, <liquid:oxygen>*3000, null, null);
 
-mods.embers.Melter.add(<liquid:aluminium>*144,<ore:dustAluminum>);
-mods.embers.Melter.add(<liquid:aluminium>*144,<ore:ingotAluminum>);
+#mods.embers.Melter.add(<liquid:aluminium>*144,<ore:dustAluminum>);
+#mods.embers.Melter.add(<liquid:aluminium>*144,<ore:ingotAluminum>);
 
 //Redstone Alchemical Slurry
 mods.embers.Melter.remove(<liquid:alchemical_redstone>*1008);
