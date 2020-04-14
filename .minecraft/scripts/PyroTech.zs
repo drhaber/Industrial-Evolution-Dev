@@ -59,3 +59,8 @@ val iLumber = [<tfc:wood/lumber/acacia>,<tfc:wood/lumber/ash>,<tfc:wood/lumber/a
 for i, log in iLogs{
 Chopping.addRecipe("Log to Lumber"~i,iLumber[i],log,[4],[4]);
 }
+
+
+
+
+
