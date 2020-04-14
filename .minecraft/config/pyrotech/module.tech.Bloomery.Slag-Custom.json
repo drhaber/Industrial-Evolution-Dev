@@ -17,5 +17,96 @@
     "  color:",
     "    - the hex color for the generated content tint"
   ],
-  "list": []
+  "list": [
+    {
+      "registryName": "zinc",
+      "langKey": "item.tfc.metal.ingot.zinc",
+      "color": "f9f9f9"
+    },
+    {
+      "registryName": "antimony",
+      "langKey": "item.tfc.metal.ingot.antimony",
+      "color": "e7e7f5"
+    },
+    {
+      "registryName": "platinum",
+      "langKey": "item.tfc.metal.ingot.platinum",
+      "color": "f3f6fa"
+    },
+    {
+      "registryName": "tungsten",
+      "langKey": "item.tfc.metal.ingot.tungsten",
+      "color": "4b5056"
+    },
+    {
+      "registryName": "cobalt",
+      "langKey": "item.tfc.metal.ingot.cobalt",
+      "color": "6ca6e5"
+    },
+    {
+      "registryName": "bismuth",
+      "langKey": "item.tfc.metal.ingot.bismuth",
+      "color": "778aaf"
+    },
+    {
+      "registryName": "osmium",
+      "langKey": "item.tfc.metal.ingot.osmium",
+      "color": "bfdde6"
+    },
+    {
+      "registryName": "aluminium",
+      "langKey": "item.tfc.metal.ingot.aluminium",
+      "color": "e2e2e3"
+    },
+    {
+      "registryName": "copper",
+      "langKey": "item.tfc.metal.ingot.copper",
+      "color": "ffaa1c"
+    },
+    {
+      "registryName": "gold",
+      "langKey": "item.tfc.metal.ingot.gold",
+      "color": "fcee4b"
+    },
+    {
+      "registryName": "iridium",
+      "langKey": "material.Iridium",
+      "color": "d5d4e7"
+    },
+    {
+      "registryName": "iron",
+      "langKey": "item.tfc.metal.ingot.wrought_iron",
+      "color": "d8af93"
+    },
+    {
+      "registryName": "lead",
+      "langKey": "item.tfc.metal.ingot.lead",
+      "color": "95afee"
+    },
+    {
+      "registryName": "nickel",
+      "langKey": "item.tfc.metal.ingot.nickel",
+      "color": "e4e5d8"
+    },
+    {
+      "registryName": "silver",
+      "langKey": "item.tfc.metal.ingot.silver",
+      "color": "e8f6fd"
+    },
+    {
+      "registryName": "tin",
+      "langKey": "item.tfc.metal.ingot.tin",
+      "color": "c3e9ff"
+    },
+    {
+      "registryName": "ardite",
+      "langKey": "item.tfc.metal.ingot.ardite",
+      "color": "db6802"
+    },
+    {
+      "registryName": "pitchblend",
+      "langKey": "item.tfc.ore.pitchblende",
+      "color": "5c734b"
+    }
+  ]
 }

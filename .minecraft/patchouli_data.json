@@ -95,11 +95,21 @@
         "pyrotech:survive/worktable",
         "pyrotech:survive/chopping_block",
         "pyrotech:innovate/stone_worktable",
-        "pyrotech:innovate/stone_crucible"
+        "pyrotech:innovate/stone_crucible",
+        "pyrotech:innovate/stone_kiln",
+        "pyrotech:innovate/refractory_brick",
+        "pyrotech:bloom/refractory_kiln",
+        "pyrotech:bloom/refractory_crucible",
+        "pyrotech:innovate/soaking_pot"
       ],
       "bookmarks": [],
       "history": [
+        "pyrotech:innovate/refractory_brick",
+        "pyrotech:innovate/soaking_pot",
+        "pyrotech:bloom/refractory_crucible",
         "pyrotech:innovate/stone_crucible",
+        "pyrotech:bloom/refractory_kiln",
+        "pyrotech:innovate/stone_kiln",
         "pyrotech:innovate/stone_worktable",
         "pyrotech:survive/chopping_block",
         "pyrotech:survive/worktable"
