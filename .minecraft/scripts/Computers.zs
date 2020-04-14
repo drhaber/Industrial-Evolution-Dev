@@ -209,7 +209,7 @@ recipes.addShaped(<openlights:openlight>,[
 	[<ore:paneGlass>,<openlights:prismaticpaste>,<ore:paneGlass>],
 	[<ore:paneGlass>,<opencomputers:cable>,<ore:paneGlass>]]);
 //Etching Acid
-mods.immersiveengineering.Refinery.addRecipe(<liquid:etchacid>*25, <liquid:liquidchorus>*10, <liquid:sulfuric_acid>*15, 1024);
+mods.immersiveengineering.Refinery.addRecipe(<liquid:etchacid>*25, <liquid:chlorine>*10, <liquid:sulfuric_acid>*15, 1024);
 #=============================================================================================================================================		
 
 //Circuit Boards
