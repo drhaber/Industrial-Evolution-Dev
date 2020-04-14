@@ -57,11 +57,13 @@ recipes.addShaped(<tfctech:smeltery_cauldron>,[
 mods.terrafirmacraft.Anvil.removeRecipe(<tfc:metal/bucket/red_steel>);
 mods.terrafirmacraft.ItemRegistry.registerItemMetal(<tfc:metal/bucket/red_steel>, "COPPER", 200, true);
 <tfc:metal/bucket/red_steel>.displayName = "Copper Bucket";
+<ore:bucketRedSteel>.remove(<tfc:metal/bucket/red_steel>);
 RollingMachine.addShapeless(<tfc:metal/bucket/red_steel>, [<ore:sheetDoubleCopper>]);
 
 mods.terrafirmacraft.Anvil.removeRecipe(<tfc:metal/bucket/blue_steel>);
 mods.terrafirmacraft.ItemRegistry.registerItemMetal(<tfc:metal/bucket/blue_steel>, "MITHRIL", 200, true);
 <tfc:metal/bucket/blue_steel>.displayName = "Mithril Bucket";
+<ore:bucketBlueSteel>.remove(<tfc:metal/bucket/blue_steel>);
 RollingMachine.addShapeless(<tfc:metal/bucket/blue_steel>, [<ore:sheetDoubleMithril>]);
 //Salt
 mods.rustic.EvaporatingBasin.addRecipe(<tfc:powder/salt>, <liquid:salt_water>*250);
