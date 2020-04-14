@@ -210,6 +210,7 @@ mods.jei.JEI.removeAndHide(<railcraft:gear:3>);
 <ore:clusterNickel>.add(<pyrotech:generated_slag_nickel_custom>);
 <ore:clusterSilver>.add(<pyrotech:generated_slag_silver_custom>);
 <ore:clusterTin>.add(<pyrotech:generated_slag_tin_custom>);
+<ore:clusterArdite>.add(<pyrotech:generated_slag_ardite_custom>);
 <ore:clusterPitchblend>.add(<pyrotech:generated_slag_pitchblend_custom>);
 
 <ore:oreCluster>.addItems([<pyrotech:generated_slag_zinc_custom>,<pyrotech:generated_slag_antimony_custom>,
@@ -219,7 +220,8 @@ mods.jei.JEI.removeAndHide(<railcraft:gear:3>);
 <pyrotech:generated_slag_copper_custom>,<pyrotech:generated_slag_gold_custom>,
 <pyrotech:generated_slag_iridium_custom>,<pyrotech:generated_slag_iron_custom>,
 <pyrotech:generated_slag_lead_custom>,<pyrotech:generated_slag_nickel_custom>,
-<pyrotech:generated_slag_silver_custom>,<pyrotech:generated_slag_tin_custom>,<pyrotech:generated_slag_pitchblend_custom>]);
+<pyrotech:generated_slag_silver_custom>,<pyrotech:generated_slag_tin_custom>,<pyrotech:generated_slag_pitchblend_custom>,
+<pyrotech:generated_slag_ardite_custom>]);
 #=============================================================================================================================================		
 
 //spalings
