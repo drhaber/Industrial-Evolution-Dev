@@ -1,3 +1,5 @@
+#priority 6
+
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
@@ -5,10 +7,10 @@ import moretweaker.railcraft.BlastFurnace;
 import mods.appliedenergistics2.Grinder;
 import mods.terrafirmacraft.Quern;
 import mods.immersiveengineering.Crusher;
+import mods.immersiveengineering.ArcFurnace;
 import mods.pyrotech.SoakingPot;
 
 mods.immersiveengineering.Crusher.removeRecipe(<tfc:metal/dust/wrought_iron>);
-mods.unidict.removalByKind.get("Furnace").remove("ingot");
 
 //Thorium
 mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust_oxide>, <tfc:ore/thorianite>, 2048, <nuclearcraft:dust_oxide:1>, 0.25);
@@ -45,7 +47,9 @@ zenClass OreGrindingandSoaking {
     var Cluster as IItemStack;
     var Dusts as IItemStack;
     var Scrap as IItemStack;
+
     zenConstructor(Small as IItemStack){
+        this.Small = Small;
         this.Poor = null;
         this.Normal = null;
         this.Rich = null;     
@@ -90,7 +94,6 @@ zenClass OreGrindingandSoaking {
         if(!isNull(Normal)){
             Crusher.addRecipe(Small*3, Normal, 2048, Small, 0.1);
             Grinder.addRecipe(Small*2, Normal,5);
-
         }
         if(!isNull(Rich)){
             Crusher.addRecipe(Small*4, Rich, 2048, Small, 0.5);
@@ -101,21 +104,18 @@ zenClass OreGrindingandSoaking {
         }
         if(!isNull(Dusts)){
             mods.embers.Stamper.add(Dusts,<liquid:hydrochloric_acid>*250, <embers:stamp_flat>,Small*10);
+            ArcFurnace.addRecipe(Dusts, Cluster, <immersiveengineering:material:7>, 2400, 2400, [<tfc:powder/flux>]);
         }
         if(!isNull(Scrap)){
             mods.advancedrocketry.ArcFurnace.addRecipe(Small*10, 20, 10, <tfc:powder/flux>*1, Scrap*1);
         }
     }    
-
 }
 
 OreGrindingandSoaking(<tfc:ore/small/bauxite>)
     .withPoor(<tfc:ore/bauxite:1>)
     .withNormal(<tfc:ore/bauxite>)
     .withRich(<tfc:ore/bauxite:2>)     
-    .withCluster(<pyrotech:generated_slag_aluminium_custom>)
-    .withDusts(<tfc:metal/dust/aluminium>)
-    .withScrap(<tfc:metal/scrap/aluminium>)
     .finish();
 OreGrindingandSoaking(<tfc:ore/small/bismuthinite>)
     .withPoor(<tfc:ore/bismuthinite:1>)
@@ -161,25 +161,16 @@ OreGrindingandSoaking(<tfc:ore/small/hematite>)
     .withPoor(<tfc:ore/hematite:1>)
     .withNormal(<tfc:ore/hematite>)
     .withRich(<tfc:ore/hematite:2>)     
-    .withCluster(<pyrotech:generated_slag_iron_custom>)
-    .withDusts(<tfc:metal/dust/wrought_iron>)
-    .withScrap(<tfc:metal/scrap/wrought_iron>)
     .finish();
 OreGrindingandSoaking(<tfc:ore/small/limonite>)
     .withPoor(<tfc:ore/limonite:1>)
     .withNormal(<tfc:ore/limonite>)
     .withRich(<tfc:ore/limonite:2>)     
-    .withCluster(<pyrotech:generated_slag_iron_custom>)
-    .withDusts(<tfc:metal/dust/wrought_iron>)
-    .withScrap(<tfc:metal/scrap/wrought_iron>)
     .finish();
 OreGrindingandSoaking(<tfc:ore/small/magnetite>)
     .withPoor(<tfc:ore/magnetite:1>)
     .withNormal(<tfc:ore/magnetite>)
     .withRich(<tfc:ore/magnetite:2>)     
-    .withCluster(<pyrotech:generated_slag_iron_custom>)
-    .withDusts(<tfc:metal/dust/wrought_iron>)
-    .withScrap(<tfc:metal/scrap/wrought_iron>)
     .finish();
 OreGrindingandSoaking(<tfc:ore/small/malachite>)
     .withPoor(<tfc:ore/malachite:1>)

@@ -1,7 +1,11 @@
+#priority 7
+
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.liquid.ILiquidStack;
+
+mods.unidict.removalByKind.get("Furnace").remove("ingot");
 
 zenClass MoltenHandleClass {
     var castingMetal as ILiquidStack;
@@ -197,6 +201,7 @@ zenClass MoltenHandleClass {
         }
         if(!isNull(dust)){
             mods.embers.Melter.add(castingMetal*144, dust);
+            furnace.addRecipe(ingots, dust);
         }
         if(!isNull(block)){
             mods.embers.Melter.add(castingMetal*1296, block);
@@ -207,6 +212,7 @@ zenClass MoltenHandleClass {
         }
         if(!isNull(scrap)){
             mods.embers.Melter.add(castingMetal*144, scrap);
+            ArcFurnace.addRecipe(ingots, scrap, <tfc:ceramics/fired/mold/ingot>, 2400, 2400, [<tfc:ceramics/fired/mold/ingot>]);
         }   
     }     
 }
