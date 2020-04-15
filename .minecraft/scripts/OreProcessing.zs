@@ -13,7 +13,10 @@ import crafttweaker.liquid.ILiquidStack;
 
 mods.immersiveengineering.Crusher.removeRecipe(<tfc:metal/dust/wrought_iron>);
 mods.unidict.removalByKind.get("Furnace").remove("ingot");
+
 mods.immersiveengineering.ArcFurnace.removeRecipe(<tfc:metal/ingot/bronze>);
+mods.immersiveengineering.ArcFurnace.removeRecipe(<tfc:metal/ingot/black_bronze>);
+mods.immersiveengineering.ArcFurnace.removeRecipe(<tfc:metal/ingot/bismuth_bronze>);
 
 //Thorium
 mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust_oxide>, <tfc:ore/thorianite>, 2048, <nuclearcraft:dust_oxide:1>, 0.25);
