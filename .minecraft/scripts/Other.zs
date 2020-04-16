@@ -30,6 +30,13 @@ mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx4_aluminium", <tfctech:metal/al
 
 mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx6", <tfctech:metal/titanium_strip>, <jaff:iron_hook>*6, 6, "general","BEND_NOT_LAST","HIT_NOT_LAST","HIT_LAST");		
 
+//Collector
+recipes.remove(<inspirations:collector>);
+recipes.addShaped(<inspirations:collector>,[
+	[<ore:cobblestone>,<projectred-core:resource_item:400>,<ore:cobblestone>],
+	[<ore:cobblestone>,<ore:dustRedstone>,<ore:cobblestone>],
+	[<ore:cobblestone>,<whopper:whopper>,<ore:cobblestone>]]);
+
 //Charcoal Blocks
 recipes.remove(<chisel:block_charcoal>);
 recipes.remove(<chisel:block_charcoal1>);

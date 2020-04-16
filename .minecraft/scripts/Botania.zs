@@ -73,3 +73,7 @@ mods.botania.ManaInfusion.addInfusion(<minecraft:sapling:5>,<tfc:wood/sapling/bl
 //wooden Water Bowl
 #mods.terrafirmacraft.Barrel.addRecipe("fresh_water_bowl", <minecraft:bowl>, <liquid:fresh_water>*1000, <botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}), null, 0);
 #mods.terrafirmacraft.Barrel.addRecipe("MC_water_bowl", <minecraft:bowl>, <liquid:water>*1000, <botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}), null, 0);
+
+//Water Rune
+mods.botania.RuneAltar.removeRecipe(<botania:rune:0>);
+mods.botania.RuneAltar.addRecipe(<botania:rune:0>,[<botania:manaresource:23>, <botania:manaresource>, <ore:fertilizer>, <botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}})], 200);

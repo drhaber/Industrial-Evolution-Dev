@@ -395,7 +395,7 @@ var titanium_tetrachloride = VanillaFactory.createFluid("titanium_tetrachloride"
 titanium_tetrachloride.viscosity = 1000;
 titanium_tetrachloride.temperature= 100;
 titanium_tetrachloride.gaseous = true;
-titanium_tetrachloride.density = 100;
+titanium_tetrachloride.density = -10;
 titanium_tetrachloride.register();
 game.setLocalization("fluid.titanium_tetrachloride", "Titanium Tetrachloride");
 
@@ -411,7 +411,7 @@ var chlorine = VanillaFactory.createFluid("chlorine", Color.fromHex("9AA953"));
 chlorine.viscosity = 1000;
 chlorine.temperature = 100;
 chlorine.gaseous = true;
-chlorine.density = 100;
+chlorine.density = -10;
 chlorine.register();
 game.setLocalization("fluid.chlorine", "Chlorine");
 
@@ -420,7 +420,7 @@ var hydrogen_chloride = VanillaFactory.createFluid("hydrogen_chloride", Color.fr
 hydrogen_chloride.viscosity = 1000;
 hydrogen_chloride.temperature = 100;
 hydrogen_chloride.gaseous = true;
-hydrogen_chloride.density = 100;
+hydrogen_chloride.density = -10;
 hydrogen_chloride.register();
 game.setLocalization("fluid.hydrogen_chloride", "Hydrogen Chloride");
 

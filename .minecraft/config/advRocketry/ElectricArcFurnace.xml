@@ -90,4 +90,30 @@
 		</output>
 	</Recipe>
 	
+	<Recipe timeRequired="900" power ="4096">
+		<input>
+			<itemStack>libvulpes:ore0;1;10</itemStack>
+			<fluidStack>hydrochloric_acid;500</fluidStack>
+			<fluidStack>chlorine;250</fluidStack>
+			<fluidStack>hydrogen;150</fluidStack>
+		</input>
+		<output>
+			<itemStack>pyrotech:generated_slag_iridium_custom</itemStack>
+		</output>
+	</Recipe>
+	
+		<Recipe timeRequired="900" power ="4096">
+		<input>
+			<oreDict>oreIronSmall;10</oreDict>
+			<fluidStack>hydrochloric_acid;500</fluidStack>
+			<fluidStack>carbon_dioxide;250</fluidStack>
+			<itemStack>tfc:powder/flux</itemStack>
+			<itemStack>tfc:ceramics/fired/mold/ingot</itemStack>
+		</input>
+		<output>
+			<itemStack>tfc:metal/ingot/steel</itemStack>
+			<itemStack>tfc:ceramics/fired/mold/ingot</itemStack>
+		</output>
+	</Recipe>
+	
 </Recipes>
