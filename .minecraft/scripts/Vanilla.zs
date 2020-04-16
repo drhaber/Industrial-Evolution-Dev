@@ -4,7 +4,8 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.mods.IMod;
 import crafttweaker.liquid.ILiquidStack;
 import moretweaker.railcraft.RollingMachine;
-
+import mods.pyrotech.GraniteAnvil;
+import mods.pyrotech.CompactingBin;
 
 //Eye of Ender
 mods.forestry.Carpenter.addRecipe(<minecraft:ender_eye>,[
@@ -23,19 +24,16 @@ recipes.addShaped(<minecraft:stained_glass:15>*8,[
 //Coal Block
 val Coals = [<tfc:ore/bituminous_coal>,<minecraft:coal>] as IItemStack[];
 for CO in Coals{
-recipes.addShaped(<minecraft:coal_block>,[
-	[CO,CO,CO],
-	[CO,CO,CO],
-	[CO,CO,CO]]);
+CompactingBin.addRecipe(CO.name~"Block",<minecraft:coal_block>,CO,9,true);
 }	
+GraniteAnvil.addRecipe(<minecraft:coal_block>.name,<tfc:ore/bituminous_coal>*9,<minecraft:coal_block>,4,"hammer",true);
+
+
 //Lapis Lazuli Block
 recipes.remove(<minecraft:lapis_block>);
-recipes.addShaped(<minecraft:lapis_block>,[
-	[<ore:gemLapis>,<ore:gemLapis>,<ore:gemLapis>],
-	[<ore:gemLapis>,<ore:gemLapis>,<ore:gemLapis>],
-	[<ore:gemLapis>,<ore:gemLapis>,<ore:gemLapis>]]);
-recipes.addShapeless(<minecraft:dye:4>*9,[<minecraft:lapis_block>]);	
 
+GraniteAnvil.addRecipe(<minecraft:lapis_block>.name,<minecraft:dye:4>*9,<minecraft:lapis_block>,4,"hammer",true);
+CompactingBin.addRecipe(<minecraft:lapis_block>.name,<minecraft:lapis_block>,<ore:gemLapis>,9,true);
 
 //Vanilla Chest
 recipes.remove(<minecraft:chest>);
