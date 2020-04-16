@@ -374,6 +374,13 @@ game.setLocalization("fluid.carrot_soup", "Carrot Soup");
 		liquidTerrasteel.register();
 		game.setLocalization("fluid.terrasteel", "Molten Terrasteel");
 
+//sodium_aluminate
+var sodium_aluminate = VanillaFactory.createFluid("sodium_aluminate", Color.fromHex("C8C7C3"));
+sodium_aluminate.viscosity = 9000;
+sodium_aluminate.temperature= 100;
+sodium_aluminate.register();
+game.setLocalization("fluid.sodium_aluminate", "Sodium Aluminate Solution");
+
 //chlorine
 var chlorine = VanillaFactory.createFluid("chlorine", Color.fromHex("9AA953"));
 chlorine.viscosity = 1000;

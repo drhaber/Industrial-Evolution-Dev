@@ -10,6 +10,7 @@ import mods.immersiveengineering.Crusher;
 import mods.immersiveengineering.ArcFurnace;
 import mods.pyrotech.SoakingPot;
 import crafttweaker.liquid.ILiquidStack;
+import mods.inworldcrafting.FluidToItem;
 
 mods.immersiveengineering.Crusher.removeRecipe(<tfc:metal/dust/wrought_iron>);
 mods.unidict.removalByKind.get("Furnace").remove("ingot");
@@ -274,7 +275,6 @@ MoltenHandleClass(<liquid:aluminium>)
     .withgears(<tfctech:metal/aluminium_rackwheel>)
     .withsheets(<tfc:metal/sheet/aluminium>)
     .withingots(<tfc:metal/ingot/aluminium>)
-    .withcluster(<pyrotech:generated_slag_aluminium_custom>)
     .withdust(<tfc:metal/dust/aluminium>)
     .withblock(<immersiveengineering:storage:1>)
     .withnugget(<tfc:metal/nugget/aluminium>)
@@ -1176,6 +1176,14 @@ OreGrindingandSoaking(<tfc:ore/small/wolframite>)
 
 
 #=============================================================================================================================================		
+//Bauxite/Aluminium - Bayer Process
+    mods.embers.Melter.add(<liquid:alumina>*144, <pyrotech:generated_slag_aluminium_custom>);
+    mods.pyrotech.BrickCrucible.addRecipe(<liquid:alumina>.name,<liquid:alumina>*144,<pyrotech:generated_slag_aluminium_custom>,2400);
+    mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:sodium_hydroxide_solution>*500, <tfc:ore/small/bauxite>*10, 2, 448.0, <liquid:sodium_aluminate>*144);
+    #Recipe is in XML format in ADV Congif Crystallizer.addRecipe(<pyrotech:generated_slag_aluminium_custom>,<minecraft:sand:1>, 200, 10, <liquid:sodium_aluminate>*144); 
+    mods.terrafirmacraft.ItemRegistry.registerItemMetal(<embers:seed_aluminum>, "ALUMINIUM", 200, true);
+    mods.embers.Melter.add(<liquid:aluminium>*288, <embers:seed_aluminum>);
+    mods.pyrotech.BrickCrucible.addRecipe(<liquid:aluminium>.name,<liquid:aluminium>*288,<embers:seed_aluminum>,2400);
 
 //Iron
 
@@ -1208,3 +1216,20 @@ val fluidcontainers = [<tfc:wooden_bucket>,<minecraft:bucket>,<tfc:metal/bucket/
 for i, FC in fluidcontainers {
 mods.terrafirmacraft.Barrel.addRecipe("Primitive Sulfuric Acid"~i, FC.withTag({Fluid: {FluidName: "fresh_water", Amount: 1000}}), <liquid:sulfur_trioxide>*1000, FC, <liquid:sulfuric_acid>*1000, 4);
 }
+
+//Oxygen
+    mods.embers.Stamper.add(<contenttweaker:zeolite_powder>,<liquid:alumina>*144, <embers:stamp_flat>,<ore:sandSilica>); #zeolite
+    
+    mods.embers.Stamper.add(<contenttweaker:zeolite_powder>,<liquid:glass>*250, <embers:stamp_flat>,<contenttweaker:bauxitedust>); #zeolite
+
+    recipes.addShapeless("Oxygen_can",<forestry:can:1>.withTag({Fluid: {FluidName: "oxygen", Amount: 1000}}), #oxygen
+    [<pneumaticcraft:air_canister:*>.transformDamage(1000),<contenttweaker:zeolite_powder>,<forestry:can>]);
+
+//Hydrochlroic Acid 
+    mods.embers.Mixer.add(<liquid:hydrogen_chloride>*1000, [<liquid:brine>*750,<liquid:sulfuric_acid>*500]);
+
+    mods.embers.Mixer.add(<liquid:hydrochloric_acid>*1000, [<liquid:hydrogen_chloride>*500,<liquid:distwater>*500]);
+
+//Chlroine 
+    mods.embers.Mixer.add(<liquid:chlorine>*1000, [<liquid:hydrogen_chloride>*1000,<liquid:oxygen>*500]);
+    mods.nuclearcraft.electrolyser.addRecipe(<liquid:brine>*1000, <liquid:chlorine>*500, <liquid:hydrogen>*250, <liquid:sodium_hydroxide_solution>*500, null);
