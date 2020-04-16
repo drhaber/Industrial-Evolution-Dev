@@ -1,12 +1,12 @@
 {
-  "path": "mod_tfc/plants/onion_plant.json",
+  "path": "mod_tfc/plants/maize_plant.json",
   "enabled": true,
-  "id": "tfc:crop/onion_plant",
-  "plant_name": "Onion",
-  "seed_name": "Onion Seeds",
+  "id": "tfc:crop/maize_plant",
+  "plant_name": "Maize",
+  "seed_name": "Maize Seeds",
   "seed_items": [
     {
-      "item": "tfc:crop/seeds/onion",
+      "item": "tfc:crop/seeds/maize",
       "meta": 0,
       "tags": "",
       "ignoreMeta": false,
@@ -18,7 +18,7 @@
   ],
   "description": {
     "translations": {},
-    "default": "Onion"
+    "default": "Maize"
   },
   "growth_chance": 0.9,
   "growth_bonus": 0.025,
@@ -38,7 +38,7 @@
         "max": 3,
         "chance": 0.25,
         "required": true,
-        "item": "tfc:food/onion",
+        "item": "tfc:food/maize",
         "meta": 0,
         "tags": "",
         "ignoreMeta": false,
@@ -57,16 +57,15 @@
     "conditions": []
   },
   "texture": {
-    "render_type": "cross",
-    "seed_texture": "tfc:items/crop/seeds/onion",
+    "render_type": "hash",
+    "seed_texture": "tfc:items/crop/seeds/maize",
     "plant_textures": [
-      "tfc:blocks/crop/onion_0",
-      "tfc:blocks/crop/onion_1",
-      "tfc:blocks/crop/onion_2",
-      "tfc:blocks/crop/onion_3",
-      "tfc:blocks/crop/onion_4",
-      "tfc:blocks/crop/onion_5",
-      "tfc:blocks/crop/onion_6"
+      "tfc:blocks/crop/maize_0",
+      "tfc:blocks/crop/maize_1",
+      "tfc:blocks/crop/maize_2",
+      "tfc:blocks/crop/maize_3",
+      "tfc:blocks/crop/maize_4",
+      "tfc:blocks/crop/maize_5"
     ]
   }
 }

@@ -1,12 +1,12 @@
 {
-  "path": "mod_tfc/plants/onion_plant.json",
+  "path": "mod_tfc/plants/squash_plant.json",
   "enabled": true,
-  "id": "tfc:crop/onion_plant",
-  "plant_name": "Onion",
-  "seed_name": "Onion Seeds",
+  "id": "tfc:crop/squash_plant",
+  "plant_name": "Squash",
+  "seed_name": "Squash Seeds",
   "seed_items": [
     {
-      "item": "tfc:crop/seeds/onion",
+      "item": "tfc:crop/seeds/squash",
       "meta": 0,
       "tags": "",
       "ignoreMeta": false,
@@ -18,7 +18,7 @@
   ],
   "description": {
     "translations": {},
-    "default": "Onion"
+    "default": "Squash"
   },
   "growth_chance": 0.9,
   "growth_bonus": 0.025,
@@ -38,7 +38,7 @@
         "max": 3,
         "chance": 0.25,
         "required": true,
-        "item": "tfc:food/onion",
+        "item": "tfc:food/squash",
         "meta": 0,
         "tags": "",
         "ignoreMeta": false,
@@ -58,15 +58,16 @@
   },
   "texture": {
     "render_type": "cross",
-    "seed_texture": "tfc:items/crop/seeds/onion",
+    "seed_texture": "tfc:items/crop/seeds/squash",
     "plant_textures": [
-      "tfc:blocks/crop/onion_0",
-      "tfc:blocks/crop/onion_1",
-      "tfc:blocks/crop/onion_2",
-      "tfc:blocks/crop/onion_3",
-      "tfc:blocks/crop/onion_4",
-      "tfc:blocks/crop/onion_5",
-      "tfc:blocks/crop/onion_6"
+      "tfc:blocks/crop/squash_0",
+      "tfc:blocks/crop/squash_1",
+      "tfc:blocks/crop/squash_2",
+      "tfc:blocks/crop/squash_3",
+      "tfc:blocks/crop/squash_4",
+      "tfc:blocks/crop/squash_5",
+      "tfc:blocks/crop/squash_6",
+      "tfc:blocks/crop/squash_7"
     ]
   }
 }
