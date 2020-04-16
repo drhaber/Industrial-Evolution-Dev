@@ -892,7 +892,7 @@ mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:aluminum>*16);
 mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:aluminum>*1296);
 mods.nuclearcraft.ingot_former.removeRecipeWithInput(<liquid:aluminum>*144);
 mods.nuclearcraft.electrolyser.removeRecipeWithInput(<liquid:alumina>*144);
-mods.nuclearcraft.electrolyser.addRecipe(<liquid:alumina>*144, <liquid:aluminium>*288, <liquid:oxygen>*3000, null, null);
+#mods.nuclearcraft.electrolyser.addRecipe(<liquid:alumina>*144, <liquid:aluminium>*288, <liquid:oxygen>*3000, null, null);
 
 #mods.embers.Melter.add(<liquid:aluminium>*144,<ore:dustAluminum>);
 #mods.embers.Melter.add(<liquid:aluminium>*144,<ore:ingotAluminum>);

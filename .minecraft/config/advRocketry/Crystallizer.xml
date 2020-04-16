@@ -60,14 +60,4 @@
 		</output>
 	</Recipe>
 	
-			<Recipe timeRequired="600" power ="20">
-		<input>
-			<fluidStack>alumina;144</fluidStack>
-			<itemStack>tfc:ore/cryolite</itemStack>
-		</input>
-		<output>
-			<itemStack>embers:seed_aluminum</itemStack>
-		</output>
-	</Recipe>
-	
 </Recipes>
