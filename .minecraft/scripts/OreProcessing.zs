@@ -11,14 +11,19 @@ import mods.immersiveengineering.ArcFurnace;
 import mods.pyrotech.SoakingPot;
 import crafttweaker.liquid.ILiquidStack;
 import mods.inworldcrafting.FluidToItem;
+import mods.pyrotech.GraniteAnvil;
+import mods.pyrotech.CompactingBin;
 
 mods.immersiveengineering.Crusher.removeRecipe(<tfc:metal/dust/wrought_iron>);
 mods.unidict.removalByKind.get("Furnace").remove("ingot");
+mods.unidict.removalByKind.get("Crafting").remove("block");
+mods.unidict.removalByKind.get("Crafting").remove("ingot");
+mods.unidict.removalByKind.get("Crafting").remove("nugget");
 
 mods.immersiveengineering.ArcFurnace.removeRecipe(<tfc:metal/ingot/bronze>);
 mods.immersiveengineering.ArcFurnace.removeRecipe(<tfc:metal/ingot/black_bronze>);
 mods.immersiveengineering.ArcFurnace.removeRecipe(<tfc:metal/ingot/bismuth_bronze>);
-mods.immersiveengineering.ArcFurnace.removeRecipe(<tfc:metal/ingot/titanium>);
+mods.immersiveengineering.ArcFurnace.removeRecipe(<libvulpes:productingot:7>);
 
 //Thorium
 mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust_oxide>, <tfc:ore/thorianite>, 2048, <nuclearcraft:dust_oxide:1>, 0.25);
@@ -236,6 +241,7 @@ zenClass MoltenHandleClass {
         if(!isNull(ingots)){
             mods.embers.Stamper.add(ingots,castingMetal*144,<embers:stamp_bar>,null);
             mods.embers.Melter.add(castingMetal*144, ingots);
+            recipes.remove(ingots);
         }
         if(!isNull(cluster)){
             mods.embers.Melter.add(castingMetal*144, cluster);
@@ -248,9 +254,15 @@ zenClass MoltenHandleClass {
         if(!isNull(block)){
             mods.embers.Melter.add(castingMetal*1296, block);
             mods.embers.Stamper.add(block,castingMetal*1296,<tfctech:ceramics/mold/glass_block>,null);
+            GraniteAnvil.addRecipe(block.name,ingots*9,block,4,"hammer",true);
+            CompactingBin.addRecipe(block.name,block,ingots,9,true);
+            recipes.remove(block);
         } 
          if(!isNull(nugget)){
             mods.embers.Stamper.add(nugget,castingMetal*16,<soot:stamp_nugget>,null);
+            GraniteAnvil.addRecipe(nugget.name,nugget*9,ingots,4,"hammer",true);
+            CompactingBin.addRecipe(nugget.name,ingots,nugget,9,true);
+            recipes.remove(nugget);
         }
         if(!isNull(scrap)){
             mods.embers.Melter.add(castingMetal*144, scrap);
@@ -1014,7 +1026,8 @@ zenClass OreGrindingandSoaking {
             Grinder.addRecipe(Small*3, Rich,7);
         }     
         if(!isNull(Cluster)){
-            SoakingPot.addRecipe(Small.name,Cluster,<liquid:sulfuric_acid>*100,Small*10,2400);
+            #SoakingPot.addRecipe(Small.name,Cluster,<liquid:sulfuric_acid>*100,Small*10,2400);
+            mods.terrafirmacraft.Barrel.addRecipe(Small.name, Small*10, <liquid:sulfuric_acid>*100, Cluster,2);
         }
         if(!isNull(Dusts)){
             mods.embers.Stamper.add(Dusts,<liquid:hydrochloric_acid>*250, <embers:stamp_flat>,Small*10);
@@ -1189,16 +1202,28 @@ OreGrindingandSoaking(<tfc:ore/small/wolframite>)
 //Titanium
     #mods.terrafirmacraft.ItemRegistry.registerItemMetal(<libvulpes:ore0:8>, "TITANIUM", 100, true);
     #Rutile to Titania ADVrocketry XML files
-    mods.immersiveengineering.Crusher.removeRecipesForInput(<tfc:metal/dust/titanium>);
+    mods.immersiveengineering.Crusher.removeRecipesForInput(<libvulpes:ore0:8>);
     mods.nuclearcraft.manufactory.removeRecipeWithInput(<libvulpes:ore0:8>);
     mods.nuclearcraft.melter.removeRecipeWithInput(<libvulpes:ore0:8>);
-    mods.advancedrocketry.ArcFurnace.removeRecipe(<tfc:metal/ingot/titanium>);
-//Iron
+    mods.advancedrocketry.ArcFurnace.removeRecipe(<libvulpes:productingot:7>);
 
-#mods.immersiveengineering.BlastFurnace.addRecipe(<tfc:bloom/unrefined>, <tfc:metal/dust/wrought_iron>, 2000);
-#mods.immersiveengineering.MetalPress.addRecipe(<tfc:bloom/refined>, <tfc:bloom/unrefined>, <contenttweaker:striking_die>, 2000);
+//Iridium
+    mods.immersiveengineering.Crusher.removeRecipesForInput(<morebees:dustiridium>);
+    mods.nuclearcraft.manufactory.removeRecipeWithInput(<libvulpes:productdust:10>);
+    mods.immersiveengineering.ArcFurnace.removeRecipe(<libvulpes:productingot:10>);
+    ArcFurnace.addRecipe(<morebees:dustiridium>, <pyrotech:generated_slag_iridium_custom>, <immersiveengineering:material:7>, 2400, 2400, [<tfc:powder/flux>]);
+    ArcFurnace.addRecipe(<libvulpes:productingot:10>, <morebees:dustiridium>, <tfc:ceramics/fired/mold/ingot>, 2400, 2400, [<tfc:ceramics/fired/mold/ingot>]);
+
+//Iron
+  
+ArcFurnace.addRecipe(<pyrotech:generated_slag_iron_custom>, <ore:oreIronSmall>*10, <immersiveengineering:material:7>, 2400, 2400, [<tfc:powder/flux>]);
+ArcFurnace.addRecipe(<tfc:metal/ingot/wrought_iron>, <pyrotech:generated_slag_iron_custom>, <tfc:ceramics/fired/mold/ingot>, 2400, 2400, [<tfc:ceramics/fired/mold/ingot>]);
 
 //Pig Iron
+
+mods.immersiveengineering.BlastFurnace.addRecipe( <tfc:metal/scrap/pig_iron>, <pyrotech:generated_slag_iron_custom>,2000);
+ArcFurnace.addRecipe(<tfc:metal/ingot/pig_iron>, <tfc:metal/ingot/wrought_iron>, <tfc:ceramics/fired/mold/ingot>, 2400, 2400, [<tfc:powder/coke>,<tfc:ceramics/fired/mold/ingot>]);
+ArcFurnace.addRecipe(<tfc:metal/ingot/pig_iron>, <pyrotech:generated_slag_iron_custom>, <tfc:ceramics/fired/mold/ingot>, 2400, 2400, [<tfc:powder/coke>,<tfc:ceramics/fired/mold/ingot>]);
 
 
 //Steelingot
@@ -1210,9 +1235,13 @@ mods.immersiveengineering.BlastFurnace.removeRecipe(<immersiveengineering:storag
 
 mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:pig_iron>*288, <tfc:powder/flux>, -0.75, 773.0, <liquid:steel>*144);
 
+    //Mechanical Metal Working
 
-#mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/high_carbon_steel>, <tfc:metal/ingot/pig_iron>, <contenttweaker:striking_die>, 2000);
-#mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/steel>, <tfc:metal/ingot/high_carbon_steel>, <contenttweaker:striking_die>, 2000);
+    mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/high_carbon_steel>, <tfc:metal/ingot/pig_iron>*2, <contenttweaker:striking_die>, 2000);
+    mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/steel>, <tfc:metal/ingot/high_carbon_steel>*2, <contenttweaker:striking_die>, 2000);
+
+    mods.embers.DawnstoneAnvil.add([<tfc:metal/ingot/high_carbon_steel>],<tfc:metal/ingot/pig_iron>,<tfc:powder/flux>);
+    mods.embers.DawnstoneAnvil.add([<tfc:metal/ingot/steel>],<tfc:metal/ingot/high_carbon_steel>,<tfc:powder/flux>);
 
 //Sulfuric Acid
 
