@@ -1,12 +1,12 @@
 {
-  "path": "mod_tfc/plants/onion_plant.json",
+  "path": "mod_tfc/plants/green_bean_plant.json",
   "enabled": true,
-  "id": "tfc:crop/onion_plant",
-  "plant_name": "Onion",
-  "seed_name": "Onion Seeds",
+  "id": "tfc:crop/green_bean_plant",
+  "plant_name": "Green Bean",
+  "seed_name": "Green Bean Seeds",
   "seed_items": [
     {
-      "item": "tfc:crop/seeds/onion",
+      "item": "tfc:crop/seeds/green_bean",
       "meta": 0,
       "tags": "",
       "ignoreMeta": false,
@@ -18,7 +18,7 @@
   ],
   "description": {
     "translations": {},
-    "default": "Onion"
+    "default": "Green Bean"
   },
   "growth_chance": 0.9,
   "growth_bonus": 0.025,
@@ -38,7 +38,7 @@
         "max": 3,
         "chance": 0.25,
         "required": true,
-        "item": "tfc:food/onion",
+        "item": "tfc:food/green_bean",
         "meta": 0,
         "tags": "",
         "ignoreMeta": false,
@@ -58,15 +58,15 @@
   },
   "texture": {
     "render_type": "cross",
-    "seed_texture": "tfc:items/crop/seeds/onion",
+    "seed_texture": "tfc:items/crop/seeds/green_bean",
     "plant_textures": [
-      "tfc:blocks/crop/onion_0",
-      "tfc:blocks/crop/onion_1",
-      "tfc:blocks/crop/onion_2",
-      "tfc:blocks/crop/onion_3",
-      "tfc:blocks/crop/onion_4",
-      "tfc:blocks/crop/onion_5",
-      "tfc:blocks/crop/onion_6"
+      "tfc:blocks/crop/green_bean_0",
+      "tfc:blocks/crop/green_bean_1",
+      "tfc:blocks/crop/green_bean_2",
+      "tfc:blocks/crop/green_bean_3",
+      "tfc:blocks/crop/green_bean_4",
+      "tfc:blocks/crop/green_bean_5",
+      "tfc:blocks/crop/green_bean_6"
     ]
   }
 }

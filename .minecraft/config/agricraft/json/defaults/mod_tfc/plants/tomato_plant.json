@@ -1,12 +1,12 @@
 {
-  "path": "mod_tfc/plants/onion_plant.json",
+  "path": "mod_tfc/plants/tomato_plant.json",
   "enabled": true,
-  "id": "tfc:crop/onion_plant",
-  "plant_name": "Onion",
-  "seed_name": "Onion Seeds",
+  "id": "tfc:crop/tomato_plant",
+  "plant_name": "Tomato",
+  "seed_name": "Tomato Seeds",
   "seed_items": [
     {
-      "item": "tfc:crop/seeds/onion",
+      "item": "tfc:crop/seeds/tomato",
       "meta": 0,
       "tags": "",
       "ignoreMeta": false,
@@ -18,7 +18,7 @@
   ],
   "description": {
     "translations": {},
-    "default": "Onion"
+    "default": "Tomato"
   },
   "growth_chance": 0.9,
   "growth_bonus": 0.025,
@@ -38,7 +38,7 @@
         "max": 3,
         "chance": 0.25,
         "required": true,
-        "item": "tfc:food/onion",
+        "item": "tfc:food/tomato",
         "meta": 0,
         "tags": "",
         "ignoreMeta": false,
@@ -58,15 +58,16 @@
   },
   "texture": {
     "render_type": "cross",
-    "seed_texture": "tfc:items/crop/seeds/onion",
+    "seed_texture": "tfc:items/crop/seeds/tomato",
     "plant_textures": [
-      "tfc:blocks/crop/onion_0",
-      "tfc:blocks/crop/onion_1",
-      "tfc:blocks/crop/onion_2",
-      "tfc:blocks/crop/onion_3",
-      "tfc:blocks/crop/onion_4",
-      "tfc:blocks/crop/onion_5",
-      "tfc:blocks/crop/onion_6"
+      "tfc:blocks/crop/tomato_0",
+      "tfc:blocks/crop/tomato_1",
+      "tfc:blocks/crop/tomato_2",
+      "tfc:blocks/crop/tomato_3",
+      "tfc:blocks/crop/tomato_4",
+      "tfc:blocks/crop/tomato_5",
+      "tfc:blocks/crop/tomato_6",
+      "tfc:blocks/crop/tomato_7"
     ]
   }
 }

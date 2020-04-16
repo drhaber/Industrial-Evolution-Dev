@@ -1,12 +1,12 @@
 {
-  "path": "mod_tfc/plants/onion_plant.json",
+  "path": "mod_tfc/plants/yellow_bell_pepper_plant.json",
   "enabled": true,
-  "id": "tfc:crop/onion_plant",
-  "plant_name": "Onion",
-  "seed_name": "Onion Seeds",
+  "id": "tfc:crop/yellow_bell_pepper_plant",
+  "plant_name": "Yellow Bell Pepper",
+  "seed_name": "Yellow Bell Pepper Seeds",
   "seed_items": [
     {
-      "item": "tfc:crop/seeds/onion",
+      "item": "tfc:crop/seeds/yellow_bell_pepper",
       "meta": 0,
       "tags": "",
       "ignoreMeta": false,
@@ -18,7 +18,7 @@
   ],
   "description": {
     "translations": {},
-    "default": "Onion"
+    "default": "Yellow Bell Pepper"
   },
   "growth_chance": 0.9,
   "growth_bonus": 0.025,
@@ -38,7 +38,7 @@
         "max": 3,
         "chance": 0.25,
         "required": true,
-        "item": "tfc:food/onion",
+        "item": "tfc:food/yellow_bell_pepper",
         "meta": 0,
         "tags": "",
         "ignoreMeta": false,
@@ -58,15 +58,15 @@
   },
   "texture": {
     "render_type": "cross",
-    "seed_texture": "tfc:items/crop/seeds/onion",
+    "seed_texture": "tfc:items/crop/seeds/yellow_bell_pepper",
     "plant_textures": [
-      "tfc:blocks/crop/onion_0",
-      "tfc:blocks/crop/onion_1",
-      "tfc:blocks/crop/onion_2",
-      "tfc:blocks/crop/onion_3",
-      "tfc:blocks/crop/onion_4",
-      "tfc:blocks/crop/onion_5",
-      "tfc:blocks/crop/onion_6"
+      "tfc:blocks/crop/yellow_bell_pepper_0",
+      "tfc:blocks/crop/yellow_bell_pepper_1",
+      "tfc:blocks/crop/yellow_bell_pepper_2",
+      "tfc:blocks/crop/yellow_bell_pepper_3",
+      "tfc:blocks/crop/yellow_bell_pepper_4",
+      "tfc:blocks/crop/yellow_bell_pepper_5",
+      "tfc:blocks/crop/yellow_bell_pepper_6"
     ]
   }
 }

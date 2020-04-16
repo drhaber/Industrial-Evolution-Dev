@@ -1,12 +1,12 @@
 {
-  "path": "mod_tfc/plants/onion_plant.json",
+  "path": "mod_tfc/plants/cabbage_plant.json",
   "enabled": true,
-  "id": "tfc:crop/onion_plant",
-  "plant_name": "Onion",
-  "seed_name": "Onion Seeds",
+  "id": "tfc:crop/cabbage_plant",
+  "plant_name": "Cabbage",
+  "seed_name": "Cabbage Seeds",
   "seed_items": [
     {
-      "item": "tfc:crop/seeds/onion",
+      "item": "tfc:crop/seeds/cabbage",
       "meta": 0,
       "tags": "",
       "ignoreMeta": false,
@@ -18,7 +18,7 @@
   ],
   "description": {
     "translations": {},
-    "default": "Onion"
+    "default": "Cabbage"
   },
   "growth_chance": 0.9,
   "growth_bonus": 0.025,
@@ -38,7 +38,7 @@
         "max": 3,
         "chance": 0.25,
         "required": true,
-        "item": "tfc:food/onion",
+        "item": "tfc:food/cabbage",
         "meta": 0,
         "tags": "",
         "ignoreMeta": false,
@@ -58,15 +58,14 @@
   },
   "texture": {
     "render_type": "cross",
-    "seed_texture": "tfc:items/crop/seeds/onion",
+    "seed_texture": "tfc:items/crop/seeds/cabbage",
     "plant_textures": [
-      "tfc:blocks/crop/onion_0",
-      "tfc:blocks/crop/onion_1",
-      "tfc:blocks/crop/onion_2",
-      "tfc:blocks/crop/onion_3",
-      "tfc:blocks/crop/onion_4",
-      "tfc:blocks/crop/onion_5",
-      "tfc:blocks/crop/onion_6"
+      "tfc:blocks/crop/cabbage_0",
+      "tfc:blocks/crop/cabbage_1",
+      "tfc:blocks/crop/cabbage_2",
+      "tfc:blocks/crop/cabbage_3",
+      "tfc:blocks/crop/cabbage_4",
+      "tfc:blocks/crop/cabbage_5"
     ]
   }
 }
