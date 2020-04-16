@@ -413,7 +413,7 @@ chlorine.temperature = 100;
 chlorine.gaseous = true;
 chlorine.density = -10;
 chlorine.register();
-game.setLocalization("fluid.chlorine", "Chlorine");
+game.setLocalization("fluid.chlorine", "Chlorine Gas");
 
 //hydrogen_chloride
 var hydrogen_chloride = VanillaFactory.createFluid("hydrogen_chloride", Color.fromHex("CBCDC0"));
