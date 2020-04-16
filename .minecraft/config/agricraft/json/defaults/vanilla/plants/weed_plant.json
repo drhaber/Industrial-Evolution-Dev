@@ -30,7 +30,8 @@
       "farmland_soil",
       "gravel_soil",
       "grass_soil",
-      "sand_soil"
+      "sand_soil",
+      "tfc_farmland_soil"
     ],
     "conditions": []
   },
