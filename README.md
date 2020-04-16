@@ -1,3 +1,3 @@
 # TFCexperimentaltech
-# This is the Beta in progress version of a Modpack for the EMP Community
+# This is an Alpha in progress Modpack expect frequent changes and commits
 #This a collaborative package for development only and is not for redistribution  
