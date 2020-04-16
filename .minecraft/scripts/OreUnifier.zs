@@ -5,6 +5,9 @@ import crafttweaker.item.IItemDefinition;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.mods.IMod;
 
+//titania 
+<ore:titania>.add(<contenttweaker:titania_powder>);
+<ore:dyeWhite>.add(<contenttweaker:titania_powder>);
 //Rocks
 <ore:rock>.removeItems([<pyrotech:rock>,<pyrotech:rock:1>,<pyrotech:rock:2>,<pyrotech:rock:3>,<pyrotech:rock:6>,<pyrotech:rock:8>]);
 <ore:pepple>.addItems([<pyrotech:rock>,<pyrotech:rock:1>,<pyrotech:rock:2>,<pyrotech:rock:3>,<pyrotech:rock:6>,<pyrotech:rock:8>]);

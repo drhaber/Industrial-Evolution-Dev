@@ -65,3 +65,37 @@ recipes.addShaped(<advancedrocketry:ic:5>,[
 	[<tfctech:metal/gold_strip>,<pneumaticcraft:advanced_pcb>,<opencomputers:material:7>],
 	[<tfctech:metal/gold_strip>,<opencomputers:material:6>,<pneumaticcraft:plastic:6>],
 	[<forestry:soldering_iron>.reuse(),<tfctech:metal/red_alloy_wire>,<pneumaticcraft:plastic:6>]]);
+
+//nano_fibre_mesh
+val NFM = <contenttweaker:nano_fibre_mesh>;
+mods.forestry.Carpenter.addRecipe(NFM, [
+	[<contenttweaker:star_string>,<contenttweaker:titania_powder>,<botania:manaresource:16>],
+	[<contenttweaker:titania_powder>,<nuclearcraft:part:13>,<contenttweaker:titania_powder>],
+	[<contenttweaker:ashen_string>,<contenttweaker:titania_powder>,<contenttweaker:creosote_string>]], 300, <liquid:liquid_nitrogen>*250);	
+//life_support_unit
+val LSU = <contenttweaker:life_support_unit>;
+mods.forestry.Carpenter.addRecipe(LSU, [
+	[<tfc:metal/sheet/aluminium>,<advancedrocketry:ic:3>,<tfc:metal/sheet/aluminium>],
+	[<tfc:metal/sheet/aluminium>,<libvulpes:productfan:6>,<pneumaticcraft:pressure_gauge>],
+	[<tfc:metal/sheet/aluminium>,<projectred-core:resource_item:410>,<immersiveengineering:toolupgrade>]], 300, <liquid:nitrogen>*250);	
+//Space Suits
+recipes.remove(<advancedrocketry:spacehelmet>);
+recipes.addShaped(<advancedrocketry:spacehelmet>,[
+	[<tfctech:metal/aluminium_rod>,NFM,<tfctech:metal/aluminium_rod>],
+	[NFM,<pneumaticcraft:pressure_chamber_glass>,NFM],
+	[<tfctech:latex/rubber>,<tfctech:latex/rubber>,<tfctech:latex/rubber>]]);
+recipes.remove(<advancedrocketry:spacechestplate>);
+recipes.addShaped(<advancedrocketry:spacechestplate>,[
+	[NFM,<tfctech:latex/rubber>,NFM],
+	[NFM,LSU,NFM],
+	[NFM,NFM,NFM]]);	
+recipes.remove(<advancedrocketry:spaceleggings>);
+recipes.addShaped(<advancedrocketry:spaceleggings>,[
+	[NFM,<tfctech:latex/rubber>,NFM],
+	[NFM,null,NFM],
+	[NFM,null,NFM]]);
+recipes.remove(<advancedrocketry:spaceboots>);
+recipes.addShaped(<advancedrocketry:spaceboots>,[
+	[<tfctech:latex/rubber>,null,<tfctech:latex/rubber>],
+	[NFM,null,NFM],
+	[<contenttweaker:glass_fibre>,null,<contenttweaker:glass_fibre>]]);				

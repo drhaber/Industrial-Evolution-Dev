@@ -67,12 +67,27 @@
 			<itemStack>advancedrocketry:productingot;2;1</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="100" power ="10">
+	
+	<Recipe timeRequired="2400" power ="16384">
 		<input>
-			<oreDict>oreRutile</oreDict>
+			<fluidStack>sodium;150</fluidStack>
+			<fluidStack>titanium_tetrachloride;144</fluidStack>
 		</input>
 		<output>
-			<itemStack>libvulpes:productingot;1;7</itemStack>
+			<itemStack>tfc:metal/dust/titanium</itemStack>
+			<itemStack>tfc:powder/salt;4</itemStack>
 		</output>
 	</Recipe>
+	
+		<Recipe timeRequired="300" power ="1024">
+		<input>
+			<fluidStack>oxygen;150</fluidStack>
+			<fluidStack>titanium_tetrachloride;144</fluidStack>
+		</input>
+		<output>
+			<itemStack>contenttweaker:titania_powder</itemStack>
+			<fluidStack>chlorine;250</fluidStack>
+		</output>
+	</Recipe>
+	
 </Recipes>

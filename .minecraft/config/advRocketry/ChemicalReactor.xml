@@ -59,4 +59,18 @@
 			<itemStack>minecraft:dye;8;15</itemStack>
 		</output>
 	</Recipe>
+	
+	<Recipe timeRequired="600" power ="4096">
+		<input>
+			<itemStack>libvulpes:ore0;1;8</itemStack>
+			<itemStack>immersiveengineering:stone_decoration;1;3</itemStack>
+			<fluidStack>chlorine;500</fluidStack>
+		</input>
+		<output>
+			<fluidStack>titanium_tetrachloride;288</fluidStack>
+			<itemStack>contenttweaker:iron_chloride</itemStack>
+			<fluidStack>carbon_monoxide;150</fluidStack>
+		</output>
+	</Recipe>
+	
 </Recipes>

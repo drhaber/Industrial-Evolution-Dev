@@ -18,6 +18,7 @@ mods.unidict.removalByKind.get("Furnace").remove("ingot");
 mods.immersiveengineering.ArcFurnace.removeRecipe(<tfc:metal/ingot/bronze>);
 mods.immersiveengineering.ArcFurnace.removeRecipe(<tfc:metal/ingot/black_bronze>);
 mods.immersiveengineering.ArcFurnace.removeRecipe(<tfc:metal/ingot/bismuth_bronze>);
+mods.immersiveengineering.ArcFurnace.removeRecipe(<tfc:metal/ingot/titanium>);
 
 //Thorium
 mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust_oxide>, <tfc:ore/thorianite>, 2048, <nuclearcraft:dust_oxide:1>, 0.25);
@@ -1185,6 +1186,13 @@ OreGrindingandSoaking(<tfc:ore/small/wolframite>)
     mods.embers.Melter.add(<liquid:aluminium>*288, <embers:seed_aluminum>);
     mods.pyrotech.BrickCrucible.addRecipe(<liquid:aluminium>.name,<liquid:aluminium>*288,<embers:seed_aluminum>,2400);
 
+//Titanium
+    #mods.terrafirmacraft.ItemRegistry.registerItemMetal(<libvulpes:ore0:8>, "TITANIUM", 100, true);
+    #Rutile to Titania ADVrocketry XML files
+    mods.immersiveengineering.Crusher.removeRecipesForInput(<tfc:metal/dust/titanium>);
+    mods.nuclearcraft.manufactory.removeRecipeWithInput(<libvulpes:ore0:8>);
+    mods.nuclearcraft.melter.removeRecipeWithInput(<libvulpes:ore0:8>);
+    mods.advancedrocketry.ArcFurnace.removeRecipe(<tfc:metal/ingot/titanium>);
 //Iron
 
 #mods.immersiveengineering.BlastFurnace.addRecipe(<tfc:bloom/unrefined>, <tfc:metal/dust/wrought_iron>, 2000);
@@ -1220,7 +1228,7 @@ mods.terrafirmacraft.Barrel.addRecipe("Primitive Sulfuric Acid"~i, FC.withTag({F
 //Oxygen
     mods.embers.Stamper.add(<contenttweaker:zeolite_powder>,<liquid:alumina>*144, <embers:stamp_flat>,<ore:sandSilica>); #zeolite
     
-    mods.embers.Stamper.add(<contenttweaker:zeolite_powder>,<liquid:glass>*250, <embers:stamp_flat>,<contenttweaker:bauxitedust>); #zeolite
+    mods.immersiveengineering.AlloySmelter.addRecipe(<contenttweaker:zeolite_powder>, <ore:sandSilica>, <contenttweaker:bauxitedust>, 2400); #zeolite
 
     recipes.addShapeless("Oxygen_can",<forestry:can:1>.withTag({Fluid: {FluidName: "oxygen", Amount: 1000}}), #oxygen
     [<pneumaticcraft:air_canister:*>.transformDamage(1000),<contenttweaker:zeolite_powder>,<forestry:can>]);

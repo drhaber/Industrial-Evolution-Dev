@@ -12,6 +12,22 @@ import mods.contenttweaker.World;
 import mods.contenttweaker.ResourceLocation;
 import mods.contenttweaker.IItemColorSupplier;
 
+//life_support_unit
+var life_support_unit = VanillaFactory.createItem("life_support_unit");
+life_support_unit.register();
+game.setLocalization("item.contenttweaker.life_support_unit.name", "Life Support Unit");
+//nano_fibre_mesh
+var nano_fibre_mesh = VanillaFactory.createItem("nano_fibre_mesh");
+nano_fibre_mesh.register();
+game.setLocalization("item.contenttweaker.nano_fibre_mesh.name", "Nano Fibre Mesh");
+//iron_chloride
+var iron_chloride = VanillaFactory.createItem("iron_chloride");
+iron_chloride.register();
+game.setLocalization("item.contenttweaker.iron_chloride.name", "Iron(III) Chloride");
+//titania_powder
+var titania_powder = VanillaFactory.createItem("titania_powder");
+titania_powder.register();
+game.setLocalization("item.contenttweaker.titania_powder.name", "Titania Powder");
 //star_fabric
 var star_fabric = VanillaFactory.createItem("star_fabric");
 star_fabric.register();
@@ -373,6 +389,15 @@ game.setLocalization("fluid.carrot_soup", "Carrot Soup");
 			liquidTerrasteel.flowingLocation = "tfc:blocks/lava_flow";
 		liquidTerrasteel.register();
 		game.setLocalization("fluid.terrasteel", "Molten Terrasteel");
+
+//titanium_tetrachloride
+var titanium_tetrachloride = VanillaFactory.createFluid("titanium_tetrachloride", Color.fromHex("CBCDC0"));
+titanium_tetrachloride.viscosity = 1000;
+titanium_tetrachloride.temperature= 100;
+titanium_tetrachloride.gaseous = true;
+titanium_tetrachloride.density = 100;
+titanium_tetrachloride.register();
+game.setLocalization("fluid.titanium_tetrachloride", "Titanium Tetrachloride");
 
 //sodium_aluminate
 var sodium_aluminate = VanillaFactory.createFluid("sodium_aluminate", Color.fromHex("C8C7C3"));
