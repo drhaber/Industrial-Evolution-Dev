@@ -13,6 +13,7 @@ import crafttweaker.liquid.ILiquidStack;
 import mods.inworldcrafting.FluidToItem;
 import mods.pyrotech.GraniteAnvil;
 import mods.pyrotech.CompactingBin;
+import mods.cyclicmagic.Packager;
 
 mods.immersiveengineering.Crusher.removeRecipe(<tfc:metal/dust/wrought_iron>);
 mods.unidict.removalByKind.get("Furnace").remove("ingot");
@@ -244,6 +245,7 @@ zenClass MoltenHandleClass {
             mods.embers.Stamper.add(ingots,castingMetal*144,<embers:stamp_bar>,null);
             mods.embers.Melter.add(castingMetal*144, ingots);
             recipes.remove(ingots);
+            Packager.removeRecipe(ingots);
         }
         if(!isNull(cluster)){
             mods.embers.Melter.add(castingMetal*144, cluster);
@@ -259,12 +261,19 @@ zenClass MoltenHandleClass {
             GraniteAnvil.addRecipe(block.name,ingots*9,block,4,"hammer",true);
             CompactingBin.addRecipe(block.name,block,ingots,9,true);
             recipes.remove(block);
+            Packager.removeRecipe(block);
+            Packager.addRecipe(block, ingots*9);
+            Packager.addRecipe(ingots*9, block);
         } 
          if(!isNull(nugget)){
             mods.embers.Stamper.add(nugget,castingMetal*16,<soot:stamp_nugget>,null);
             GraniteAnvil.addRecipe(nugget.name,nugget*9,ingots,4,"hammer",true);
             CompactingBin.addRecipe(nugget.name,ingots,nugget,9,true);
             recipes.remove(nugget);
+            Packager.removeRecipe(nugget);
+            Packager.addRecipe(ingots, nugget*9);
+            Packager.addRecipe(nugget*9, ingots);
+
         }
         if(!isNull(scrap)){
             mods.embers.Melter.add(castingMetal*144, scrap);
