@@ -62,7 +62,14 @@ for i, log in iLogs{
 Chopping.addRecipe("Log to Lumber"~i,iLumber[i],log,[4],[4]);
 }
 
+//Torches
+recipes.remove(<pyrotech:torch_stone>);
+recipes.addShaped(<pyrotech:torch_stone>,[
+	[<immersivepetroleum:material>],
+	[<ore:stickStone>]]);
 
-
-
+recipes.remove(<pyrotech:torch_fiber>);
+recipes.addShaped(<pyrotech:torch_fiber>,[
+	[<tfc:straw>],
+	[<minecraft:stick>]]);
 

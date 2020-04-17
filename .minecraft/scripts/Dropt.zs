@@ -12,3 +12,13 @@ Dropt.list("wildberry_bush")
             .selector(Dropt.weight(95))
         )
     );
+
+Dropt.list("minecraft:clay")
+
+  .add(Dropt.rule()
+      .matchBlocks(["minecraft:clay"])
+      .addDrop(Dropt.drop()
+          .items([<minecraft:clay_ball>],
+          Dropt.range(9))
+      )
+  );    

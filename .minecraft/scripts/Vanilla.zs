@@ -7,6 +7,13 @@ import moretweaker.railcraft.RollingMachine;
 import mods.pyrotech.GraniteAnvil;
 import mods.pyrotech.CompactingBin;
 
+
+//Clay Blocks
+recipes.remove(<minecraft:clay>);
+recipes.removeShapeless(<minecraft:clay_ball>*4, [<minecraft:clay>]);
+CompactingBin.addRecipe(<minecraft:clay>.name,<minecraft:clay>,<minecraft:clay_ball>,9,true);
+mods.immersiveengineering.Crusher.removeRecipe(<minecraft:clay_ball>);
+
 //Eye of Ender
 mods.forestry.Carpenter.addRecipe(<minecraft:ender_eye>,[
     [<minecraft:spider_eye>,<ore:dustVoid>,<ore:enderpearl>]],180,<liquid:glowstone>*250);
@@ -28,6 +35,13 @@ CompactingBin.addRecipe(CO.name~"Block",<minecraft:coal_block>,CO,9,true);
 }	
 GraniteAnvil.addRecipe(<minecraft:coal_block>.name,<tfc:ore/bituminous_coal>*9,<minecraft:coal_block>,4,"hammer",true);
 
+//Logs
+recipes.addShapeless(<minecraft:planks:0>*4,[<ore:saw>.transformDamage(3),<minecraft:log>]);
+recipes.addShapeless(<minecraft:planks:1>*4,[<ore:saw>.transformDamage(3),<minecraft:log:1>]);
+recipes.addShapeless(<minecraft:planks:2>*4,[<ore:saw>.transformDamage(3),<minecraft:log:2>]);
+recipes.addShapeless(<minecraft:planks:3>*4,[<ore:saw>.transformDamage(3),<minecraft:log:3>]);
+recipes.addShapeless(<minecraft:planks:4>*4,[<ore:saw>.transformDamage(3),<minecraft:log2>]);
+recipes.addShapeless(<minecraft:planks:5>*4,[<ore:saw>.transformDamage(3),<minecraft:log2:1>]);
 
 //Lapis Lazuli Block
 recipes.remove(<minecraft:lapis_block>);

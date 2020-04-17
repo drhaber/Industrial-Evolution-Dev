@@ -7,6 +7,18 @@ import moretweaker.railcraft.RollingMachine;
 import mods.terrafirmacraft.Heating;
 import mods.terrafirmacraft.ItemRegistry;
 
+
+//Throwing Torch
+recipes.remove(<cyclicmagic:ender_torch>);
+recipes.addShapeless(<cyclicmagic:ender_torch>, [<ore:torch>,<ore:slimeball>]);
+
+//Torch Launcher
+recipes.remove(<cyclicmagic:tool_torch_launcher>);
+recipes.addShaped(<cyclicmagic:tool_torch_launcher>,[
+	[<tfc:firestarter>,<tfctech:metal/gold_rackwheel_piece>,null],
+	[<tfctech:metal/gold_rackwheel_piece>,<minecraft:bow>,null],
+	[null,null,<ore:rodStone>]]);
+
 //Magnifying Glass
 recipes.remove(<agricraft:magnifying_glass>);
 recipes.addShaped(<agricraft:magnifying_glass>,[
@@ -73,7 +85,7 @@ recipes.addShaped(<pressure:canister>,[
 	[<ore:sheetPlastic>,<ore:sheetPlastic>,<ore:sheetPlastic>]]);							
 //Torch Lever
 recipes.remove(<inspirations:torch_lever>);
-#recipes.addShapeless(<inspirations:torch_lever>, [<tconstruct:stone_torch>,<minecraft:lever>]);
+recipes.addShapeless(<inspirations:torch_lever>, [<ore:dustGlowstone>,<ore:torch>,<minecraft:lever>]);
 //Coal Coke Block
 mods.jei.JEI.removeAndHide(<railcraft:generic:6>);
 //Missing Localization
@@ -238,6 +250,18 @@ recipes.addShaped(<rustic:candle>,[
 	[<ore:blockCandle>],
 	[<tfctech:metal/wrought_iron_rod>],
 	[<tfc:metal/sheet/wrought_iron>]]);	
+
+recipes.remove(<rustic:iron_lantern>);
+recipes.addShaped(<rustic:iron_lantern>,[
+	[null,<tfc:metal/sheet/wrought_iron>,null],
+	[<tfctech:metal/wrought_iron_rod>,<ore:dustGlowstone>,<tfctech:metal/wrought_iron_rod>],
+	[<tfc:metal/sheet/wrought_iron>,<ore:torch>,<tfc:metal/sheet/wrought_iron>]]);
+
+recipes.remove(<rustic:golden_lantern>);
+recipes.addShaped(<rustic:golden_lantern>,[
+	[null,<tfc:metal/sheet/gold>,null],
+	[<tfctech:metal/gold_rod>,<ore:dustGlowstone>,<tfctech:metal/gold_rod>],
+	[<tfc:metal/sheet/gold>,<ore:torch>,<tfc:metal/sheet/gold>]]);	
 #=============================================================================================================================================		
 //Marble
 mods.terrafirmacraft.Barrel.addRecipe("Quark_marble", <tfc:raw/marble>, <liquid:bleach>*50, <quark:marble>, 4);
@@ -602,33 +626,6 @@ recipes.addShaped(<compactmachines3:fieldprojector>,[
 	[<immersiveengineering:sheetmetal_slab:8>,<immersiveengineering:sheetmetal_slab:8>,<immersiveengineering:sheetmetal_slab:8>]]);
 #=============================================================================================================================================		
 
-//Rolling Machines Sheets
-val remove = [<ore:plateBrass>,<ore:plateZinc>,<ore:plateInvar>,<ore:plateNickel>,<ore:plateGold>,<ore:plateBronze>,<ore:plateSilver>,<ore:plateLead>,<ore:plateCopper>,<ore:plateTin>,<ore:plateSteel>,<ore:plateIron>,<railcraft:gear:3>] as IIngredient[];
-for i in remove{
-RollingMachine.remove(i);
-}
-
-val sheets =[<tfc:metal/sheet/bismuth>,<tfc:metal/sheet/bismuth_bronze>,<tfc:metal/sheet/black_bronze>,<tfc:metal/sheet/brass>,
-<tfc:metal/sheet/bronze>,<tfc:metal/sheet/copper>,<tfc:metal/sheet/gold>,<tfc:metal/sheet/lead>,<tfc:metal/sheet/nickel>,
-<tfc:metal/sheet/rose_gold>,<tfc:metal/sheet/silver>,<tfc:metal/sheet/tin>,<tfc:metal/sheet/zinc>,<tfc:metal/sheet/sterling_silver>,
-<tfc:metal/sheet/wrought_iron>,<tfc:metal/sheet/pig_iron>,<tfc:metal/sheet/steel>,<tfc:metal/sheet/platinum>,<tfc:metal/sheet/black_steel>,
-<tfc:metal/sheet/blue_steel>,<tfc:metal/sheet/red_steel>,<tfc:metal/sheet/antimony>,<tfc:metal/sheet/constantan>,
-<tfc:metal/sheet/electrum>,<tfc:metal/sheet/mithril>,<tfc:metal/sheet/invar>,<tfc:metal/sheet/aluminium>,<tfc:metal/sheet/aluminium_brass>,
-<tfc:metal/sheet/ardite>,<tfc:metal/sheet/cobalt>,<tfc:metal/sheet/manyullyn>,<tfc:metal/sheet/osmium>,<tfc:metal/sheet/titanium>,
-<tfc:metal/sheet/tungsten>,<tfc:metal/sheet/tungsten_steel>] as IItemStack[];
-
-val ingots =[<tfc:metal/ingot/bismuth>,<tfc:metal/ingot/bismuth_bronze>,<tfc:metal/ingot/black_bronze>,<tfc:metal/ingot/brass>,
-<tfc:metal/ingot/bronze>,<tfc:metal/ingot/copper>,<tfc:metal/ingot/gold>,<tfc:metal/ingot/lead>,<tfc:metal/ingot/nickel>,
-<tfc:metal/ingot/rose_gold>,<tfc:metal/ingot/silver>,<tfc:metal/ingot/tin>,<tfc:metal/ingot/zinc>,<tfc:metal/ingot/sterling_silver>,
-<tfc:metal/ingot/wrought_iron>,<tfc:metal/ingot/pig_iron>,<tfc:metal/ingot/steel>,<tfc:metal/ingot/platinum>,<tfc:metal/ingot/black_steel>,
-<tfc:metal/ingot/blue_steel>,<tfc:metal/ingot/red_steel>,<tfc:metal/ingot/antimony>,<tfc:metal/ingot/constantan>,
-<tfc:metal/ingot/electrum>,<tfc:metal/ingot/mithril>,<tfc:metal/ingot/invar>,<tfc:metal/ingot/aluminium>,<tfc:metal/ingot/aluminium_brass>,
-<tfc:metal/ingot/ardite>,<tfc:metal/ingot/cobalt>,<tfc:metal/ingot/manyullyn>,<tfc:metal/ingot/osmium>,<tfc:metal/ingot/titanium>,
-<tfc:metal/ingot/tungsten>,<tfc:metal/ingot/tungsten_steel>] as IItemStack[];
-
-for i, iIngot in ingots{
-RollingMachine.addShaped(sheets[i]*2,[[iIngot,iIngot],[iIngot,iIngot]], 300);
-}
 //Railcraft Circuits
 recipes.remove(<railcraft:circuit:2>); #Singal 
 recipes.addShaped(<railcraft:circuit:2>,[
@@ -775,3 +772,32 @@ recipes.addShaped(<rustichromia:thatch_bed>,[
 	[<quark:thatch_slab>,<quark:thatch_slab>,<quark:thatch_slab>],
 	[<tfctech:wiredraw/leather_belt>,<tfctech:wiredraw/leather_belt>,<tfctech:wiredraw/leather_belt>],
 	[<quark:thatch_slab>,<quark:thatch_slab>,<quark:thatch_slab>]]);
+
+//Rolling Machines Sheets
+val remove = [<ore:plateBrass>,<ore:plateZinc>,<ore:plateInvar>,<ore:plateNickel>,<ore:plateGold>,<ore:plateBronze>,<ore:plateSilver>,<ore:plateLead>,<ore:plateCopper>,<ore:plateTin>,<ore:plateSteel>,<ore:plateIron>,<railcraft:gear:3>] as IIngredient[];
+for i in remove{
+RollingMachine.remove(i);
+}
+
+val sheets =[<tfc:metal/sheet/bismuth>,<tfc:metal/sheet/bismuth_bronze>,<tfc:metal/sheet/black_bronze>,<tfc:metal/sheet/brass>,
+<tfc:metal/sheet/bronze>,<tfc:metal/sheet/copper>,<tfc:metal/sheet/gold>,<tfc:metal/sheet/lead>,<tfc:metal/sheet/nickel>,
+<tfc:metal/sheet/rose_gold>,<tfc:metal/sheet/silver>,<tfc:metal/sheet/tin>,<tfc:metal/sheet/zinc>,<tfc:metal/sheet/sterling_silver>,
+<tfc:metal/sheet/wrought_iron>,<tfc:metal/sheet/pig_iron>,<tfc:metal/sheet/steel>,<tfc:metal/sheet/platinum>,<tfc:metal/sheet/black_steel>,
+<tfc:metal/sheet/blue_steel>,<tfc:metal/sheet/red_steel>,<tfc:metal/sheet/antimony>,<tfc:metal/sheet/constantan>,
+<tfc:metal/sheet/electrum>,<tfc:metal/sheet/mithril>,<tfc:metal/sheet/invar>,<tfc:metal/sheet/aluminium>,<tfc:metal/sheet/aluminium_brass>,
+<tfc:metal/sheet/ardite>,<tfc:metal/sheet/cobalt>,<tfc:metal/sheet/manyullyn>,<tfc:metal/sheet/osmium>,<tfc:metal/sheet/titanium>,
+<tfc:metal/sheet/tungsten>,<tfc:metal/sheet/tungsten_steel>] as IItemStack[];
+
+val ingots =[<tfc:metal/ingot/bismuth>,<tfc:metal/ingot/bismuth_bronze>,<tfc:metal/ingot/black_bronze>,<tfc:metal/ingot/brass>,
+<tfc:metal/ingot/bronze>,<tfc:metal/ingot/copper>,<tfc:metal/ingot/gold>,<tfc:metal/ingot/lead>,<tfc:metal/ingot/nickel>,
+<tfc:metal/ingot/rose_gold>,<tfc:metal/ingot/silver>,<tfc:metal/ingot/tin>,<tfc:metal/ingot/zinc>,<tfc:metal/ingot/sterling_silver>,
+<tfc:metal/ingot/wrought_iron>,<tfc:metal/ingot/pig_iron>,<tfc:metal/ingot/steel>,<tfc:metal/ingot/platinum>,<tfc:metal/ingot/black_steel>,
+<tfc:metal/ingot/blue_steel>,<tfc:metal/ingot/red_steel>,<tfc:metal/ingot/antimony>,<tfc:metal/ingot/constantan>,
+<tfc:metal/ingot/electrum>,<tfc:metal/ingot/mithril>,<tfc:metal/ingot/invar>,<tfc:metal/ingot/aluminium>,<tfc:metal/ingot/aluminium_brass>,
+<tfc:metal/ingot/ardite>,<tfc:metal/ingot/cobalt>,<tfc:metal/ingot/manyullyn>,<tfc:metal/ingot/osmium>,<tfc:metal/ingot/titanium>,
+<tfc:metal/ingot/tungsten>,<tfc:metal/ingot/tungsten_steel>] as IItemStack[];
+
+for i, iIngot in ingots{
+mods.rustichromia.Assembler.add(sheets[i].name, 1, [iIngot,iIngot], [sheets[i]], 3, 20, 300);
+#RollingMachine.addShaped(sheets[i]*2,[[iIngot,iIngot],[iIngot,iIngot]], 300);
+}	

@@ -1,0 +1,26 @@
+
+//Set the icon item
+setIcon(<tfc:food/onion>)
+
+//Set the title String
+setTitle("lesio#8401 - Discord")
+
+//Set the description String
+setDescription("Enter a world of crop based genetics with TFC crops added by lesio#8401 - Discord")
+
+//Add a parent advancement. The syntax is "modid:folder/path/to/the/advancement/then/filename"
+addParent("triumph:credits/root")
+
+//Set the position
+setPos(90,17)
+
+//Hide the connection lines, so I can have a pretty shape
+hideLines()
+
+//Adds criteria named "crafted" with the trigger type "triumph:player_crafted_item". This function returns the criteria as an object
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+
+//Sets the item for the criteria. This is the item that needs to be crafted.
+criteria.setItem(<agricraft:crop_sticks>)
+
+//By not setting anything about requirements here, all criteria are automatically required

@@ -25,6 +25,8 @@ mods.immersiveengineering.ArcFurnace.removeRecipe(<tfc:metal/ingot/black_bronze>
 mods.immersiveengineering.ArcFurnace.removeRecipe(<tfc:metal/ingot/bismuth_bronze>);
 mods.immersiveengineering.ArcFurnace.removeRecipe(<libvulpes:productingot:7>);
 
+moretweaker.railcraft.RockCrusher.removeAll();
+
 //Thorium
 mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust_oxide>, <tfc:ore/thorianite>, 2048, <nuclearcraft:dust_oxide:1>, 0.25);
 //Magnesium

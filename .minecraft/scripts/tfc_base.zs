@@ -9,20 +9,9 @@ import mods.terrafirmacraft.Heating;
 ItemRegistry.registerItemSize(<minecraft:clay>, 'HUGE', 'MEDIUM');
 ItemRegistry.registerItemSize(<minecraft:hardened_clay>, 'HUGE', 'MEDIUM');
 
+/*
 // Remove vanilla recipes
-recipes.remove(<minecraft:clay>);
 furnace.remove(<minecraft:hardened_clay>);
-
-// Add new clay block recipes
-recipes.addShaped(
-    'tfc_clay_block',
-    <minecraft:clay>,
-    [
-        [<minecraft:clay_ball>, <minecraft:clay_ball>, <minecraft:clay_ball>],
-        [<minecraft:clay_ball>, <minecraft:clay_ball>, <minecraft:clay_ball>],
-        [<minecraft:clay_ball>, <minecraft:clay_ball>, <minecraft:clay_ball>]
-    ]
-);
 
 // Add heat capacity to clay block
 ItemRegistry.registerItemHeat(
@@ -46,3 +35,4 @@ Heating.addRecipe(
     1500,
     2000
 );
+*/

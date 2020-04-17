@@ -158,6 +158,9 @@ mods.jei.JEI.removeAndHide(<railcraft:gear:3>);
 <ore:stickSteel>.addAll(<ore:rodSteel>);
 <ore:stickTitanium>.addAll(<ore:rodTitanium>);
 <ore:stickAluminum>.addAll(<ore:rodAluminium>);
+
+<ore:stickStone>.addAll(<ore:rodStone>);
+<ore:rodStone>.mirror(<ore:stickStone>);
 //Saw Teirs
 <ore:sawI>.addItems([<tfc:metal/saw/copper:*>]);
 <ore:sawII>.addItems([<tfc:metal/saw/bismuth_bronze:*>,<tfc:metal/saw/black_bronze:*>,<tfc:metal/saw/bronze:*>,<tfc:metal/saw/nickel_silver:*>,<tfc:metal/saw/mithril:*>]);

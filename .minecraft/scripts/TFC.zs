@@ -22,6 +22,8 @@ furnace.setFuel(<tfc:ore/bituminous_coal>, 1600);
 furnace.setFuel(<tfc:ore/lignite>, 800);
 furnace.setFuel(<tfc:ore/petrified_wood>, 800);
 
+//Latex
+mods.integrateddynamics.Squeezer.addRecipe(<tfc:wood/log/hevea>, null, <liquid:latex> * 250);
 //Block Mold
 <tfctech:ceramics/mold/glass_block>.displayName = "Block Mold";
 //Embers & Engineer's Hammer
