@@ -73,3 +73,25 @@ recipes.addShaped(<pyrotech:torch_fiber>,[
 	[<tfc:straw>],
 	[<minecraft:stick>]]);
 
+//Pepples
+GraniteAnvil.addRecipe(<pyrotech:rock>.name,<pyrotech:rock>*8,<ore:stone>,4,"hammer",true);
+GraniteAnvil.addRecipe(<pyrotech:rock:1>.name,<pyrotech:rock:1>*8,<ore:stoneGranite>,4,"hammer",true);
+GraniteAnvil.addRecipe(<pyrotech:rock:2>.name,<pyrotech:rock:2>*8,<ore:stoneDiorite>,4,"hammer",true);
+GraniteAnvil.addRecipe(<pyrotech:rock:3>.name,<pyrotech:rock:3>*8,<ore:stoneAndesite>,4,"hammer",true);
+GraniteAnvil.addRecipe(<pyrotech:rock:6>.name,<pyrotech:rock:6>*8,<ore:sandstone>,4,"hammer",true);
+GraniteAnvil.addRecipe(<pyrotech:rock:8>.name,<pyrotech:rock:8>*8,<ore:stoneLimestone>,4,"hammer",true);
+
+//Stone Anvil
+<pyrotech:anvil_granite>.displayName = "Stone Anvil";
+recipes.remove(<pyrotech:anvil_granite>);
+recipes.addShaped(<pyrotech:anvil_granite>,[
+	[<ore:dustFlux>],
+	[<ore:stonePolished>],
+	[<ore:stone>]]);
+
+//Compacting Bin
+recipes.remove(<pyrotech:compacting_bin>);
+recipes.addShaped(<pyrotech:compacting_bin>,[
+	[<ore:lumber>,null,<ore:lumber>],
+	[<ore:lumber>,null,<ore:lumber>],
+	[<ore:lumber>,<ore:slabWood>,<ore:lumber>]]);    

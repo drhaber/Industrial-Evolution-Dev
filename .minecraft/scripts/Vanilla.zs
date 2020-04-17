@@ -8,6 +8,9 @@ import mods.pyrotech.GraniteAnvil;
 import mods.pyrotech.CompactingBin;
 
 
+//Cobble Stone Slab
+recipes.addShaped(<minecraft:stone_slab:3>,[[<minecraft:cobblestone>,<minecraft:cobblestone>,<minecraft:cobblestone>]]);
+
 //Clay Blocks
 recipes.remove(<minecraft:clay>);
 recipes.removeShapeless(<minecraft:clay_ball>*4, [<minecraft:clay>]);
