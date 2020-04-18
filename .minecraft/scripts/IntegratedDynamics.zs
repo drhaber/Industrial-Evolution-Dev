@@ -32,3 +32,10 @@ recipes.addShaped(<integratedtunnels:part_exporter_energy_item>,[
 	[<integrateddynamics:crystalized_menril_chunk>,<integratedtunnels:part_interface_energy_item>,<integrateddynamics:crystalized_menril_chunk>],
 	[<immersiveengineering:connector:4>,<integrateddynamics:variable_transformer>,<immersiveengineering:connector:4>],
 	[<integrateddynamics:crystalized_menril_chunk>,<immersiveengineering:wirecoil:2>,<integrateddynamics:crystalized_menril_chunk>]]); 
+
+//Battery
+recipes.remove(<integrateddynamics:energy_battery>);
+recipes.addShaped(<integrateddynamics:energy_battery>.withTag({energy: 256}),[
+	[<integrateddynamics:crystalized_menril_chunk>,<railcraft:charge:1>,<integrateddynamics:crystalized_menril_chunk>],
+	[<integrateddynamics:crystalized_menril_chunk>,<libvulpes:battery:1>,<integrateddynamics:crystalized_menril_chunk>],
+	[<integrateddynamics:crystalized_menril_chunk>,<ore:lumber>,<integrateddynamics:crystalized_menril_chunk>]]);	

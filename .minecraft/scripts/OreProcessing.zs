@@ -564,7 +564,7 @@ MoltenHandleClass(<liquid:iron>)
     .withgears(<tfctech:metal/wrought_iron_rackwheel>)
     .withsheets(<tfc:metal/sheet/wrought_iron>)
     .withingots(<tfc:metal/ingot/wrought_iron>)
-    .withcluster(<pyrotech:generated_slag_iron_custom>)
+    #.withcluster(<pyrotech:generated_slag_iron_custom>)
     .withdust(<tfc:metal/dust/wrought_iron>)
     .withblock(<minecraft:iron_block>)
     .withnugget(<tfc:metal/nugget/wrought_iron>)
@@ -1098,17 +1098,20 @@ OreGrindingandSoaking(<tfc:ore/small/garnierite>)
 OreGrindingandSoaking(<tfc:ore/small/hematite>)
     .withPoor(<tfc:ore/hematite:1>)
     .withNormal(<tfc:ore/hematite>)
-    .withRich(<tfc:ore/hematite:2>)     
+    .withRich(<tfc:ore/hematite:2>)
+    .withCluster(<pyrotech:generated_slag_iron_custom>)
     .finish();
 OreGrindingandSoaking(<tfc:ore/small/limonite>)
     .withPoor(<tfc:ore/limonite:1>)
     .withNormal(<tfc:ore/limonite>)
-    .withRich(<tfc:ore/limonite:2>)     
+    .withRich(<tfc:ore/limonite:2>)  
+    .withCluster(<pyrotech:generated_slag_iron_custom>)
     .finish();
 OreGrindingandSoaking(<tfc:ore/small/magnetite>)
     .withPoor(<tfc:ore/magnetite:1>)
     .withNormal(<tfc:ore/magnetite>)
-    .withRich(<tfc:ore/magnetite:2>)     
+    .withRich(<tfc:ore/magnetite:2>)
+    .withCluster(<pyrotech:generated_slag_iron_custom>)
     .finish();
 OreGrindingandSoaking(<tfc:ore/small/malachite>)
     .withPoor(<tfc:ore/malachite:1>)
@@ -1226,9 +1229,19 @@ OreGrindingandSoaking(<tfc:ore/small/wolframite>)
     ArcFurnace.addRecipe(<libvulpes:productingot:10>, <morebees:dustiridium>, <tfc:ceramics/fired/mold/ingot>, 2400, 2400, [<tfc:ceramics/fired/mold/ingot>]);
 
 //Iron
-  
-ArcFurnace.addRecipe(<pyrotech:generated_slag_iron_custom>, <ore:oreIronSmall>*10, <immersiveengineering:material:7>, 2400, 2400, [<tfc:powder/flux>]);
+
+ArcFurnace.addRecipe(<tfc:metal/scrap/wrought_iron>, <ore:oreIronSmall>*10, <immersiveengineering:material:7>, 2400, 2400, [<tfc:powder/flux>]);
 ArcFurnace.addRecipe(<tfc:metal/ingot/wrought_iron>, <pyrotech:generated_slag_iron_custom>, <tfc:ceramics/fired/mold/ingot>, 2400, 2400, [<tfc:ceramics/fired/mold/ingot>]);
+
+mods.pyrotech.Bloomery.createBloomeryBuilder("Iron_from_acid",<tfc:bloom/refined>,<pyrotech:generated_slag_iron_custom>,false)
+    .setAnvilTiers(["granite", "ironclad"])
+    .setBurnTimeTicks(14400)
+    .setFailureChance(0.01)
+    .setBloomYield(1, 1)
+    .setSlagItem(<immersiveengineering:material:7>, 2)
+    .addFailureItem(<immersiveengineering:material:7>, 1)
+    .setLangKey("tile.oreIron;item.pyrotech.slag.unique")
+    .register();
 
 //Pig Iron
 

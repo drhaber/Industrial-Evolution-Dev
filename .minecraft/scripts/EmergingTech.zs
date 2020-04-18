@@ -79,3 +79,10 @@ recipes.addShaped(<emergingtechnology:bluebulb>,[
 	[<tfctech:metal/copper_strip>,<embers:glimmer_lamp>,<tfctech:metal/copper_strip>],
 	[<tfctech:metal/copper_strip>,null,<tfctech:metal/copper_strip>],
 	[<tfc:metal/sheet/tin>,<minecraft:stained_glass_pane:3>,<tfc:metal/sheet/tin>]]); #Dwarf   
+
+//Battery
+recipes.remove(<emergingtechnology:battery>);
+recipes.addShaped(<emergingtechnology:battery>,[
+	[<tfctech:metal/steel_rod>,<ore:sheetPlastic>,<tfctech:metal/steel_rod>],
+	[<ore:sheetPlastic>,<immersiveengineering:metal_device0>,<ore:sheetPlastic>],
+	[<tfctech:metal/steel_rod>,<emergingtechnology:machinecase>,<tfctech:metal/steel_rod>]]);

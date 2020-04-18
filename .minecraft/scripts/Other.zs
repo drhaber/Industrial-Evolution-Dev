@@ -8,16 +8,10 @@ import mods.terrafirmacraft.Heating;
 import mods.terrafirmacraft.ItemRegistry;
 
 
-//Throwing Torch
-recipes.remove(<cyclicmagic:ender_torch>);
-recipes.addShapeless(<cyclicmagic:ender_torch>, [<ore:torch>,<ore:slimeball>]);
-
-//Torch Launcher
-recipes.remove(<cyclicmagic:tool_torch_launcher>);
-recipes.addShaped(<cyclicmagic:tool_torch_launcher>,[
-	[<tfc:firestarter>,<tfctech:metal/gold_rackwheel_piece>,null],
-	[<tfctech:metal/gold_rackwheel_piece>,<minecraft:bow>,null],
-	[null,null,<ore:rodStone>]]);
+//Inspirations Item Pipe
+recipes.remove(<inspirations:pipe>);
+recipes.addShaped(<inspirations:pipe>*4,[
+	[<tfc:metal/sheet/lead>,<whopper:whopper>,<tfc:metal/sheet/lead>]]);
 
 //Magnifying Glass
 recipes.remove(<agricraft:magnifying_glass>);
