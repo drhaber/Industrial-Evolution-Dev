@@ -168,6 +168,15 @@ mods.jei.JEI.removeAndHide(<railcraft:gear:3>);
 <ore:sawIV>.addItems([<tfc:metal/saw/steel:*>,<tfc:metal/saw/aluminium:*>]);
 <ore:sawV>.addItems([<tfc:metal/saw/black_steel:*>]);
 <ore:sawVI>.addItems([<tfc:metal/saw/blue_steel:*>,<tfc:metal/saw/red_steel:*>,<tfc:metal/saw/cobalt:*>,<tfc:metal/saw/manyullyn:*>,<tfc:metal/saw/osmium:*>,<tfc:metal/saw/titanium:*>,<tfc:metal/saw/tungsten:*>,<tfc:metal/saw/tungsten_steel:*>]);
+
+    //Baldes
+    <ore:circlesawBrass>.add(<pyrotech:sawmill_blade_gold>);
+    <ore:circlesawBronze>.add(<pyrotech:sawmill_blade_bone>);
+    <ore:circlesawIron>.addItems([<pyrotech:sawmill_blade_iron>,<architecturecraft:sawblade>,<advancedrocketry:sawbladeiron>]);
+    <ore:circlesawSteel>.add(<pyrotech:sawmill_blade_stone>);
+    <ore:circlesawBlackSteel>.add(<pyrotech:sawmill_blade_flint>);
+    <ore:circlesawManyullyn>.add(<pyrotech:sawmill_blade_obsidian>);
+    <ore:circlesawDiamond>.add(<pyrotech:sawmill_blade_diamond>);
 //Dough
 <ore:dough>.addItems([<tfc:food/barley_dough>,<tfc:food/cornmeal_dough>,<tfc:food/oat_dough>,<tfc:food/rice_dough>,<tfc:food/rye_dough>,<tfc:food/wheat_dough>]);
 //Mushrooms

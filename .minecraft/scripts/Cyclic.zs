@@ -6,6 +6,9 @@ import crafttweaker.liquid.ILiquidStack;
 import moretweaker.railcraft.RollingMachine;
 import mods.terrafirmacraft.Heating;
 import mods.terrafirmacraft.ItemRegistry;
+import mods.cyclicmagic.Melter;
+
+Melter.removeShapedRecipe("crystal", 1000);
 
 //Throwing Torch
 recipes.remove(<cyclicmagic:ender_torch>);
@@ -175,3 +178,10 @@ recipes.addShaped(<cyclicmagic:item_pipe_sort>,[
 	[<cyclicmagic:item_pipe>,<tis3d:module_queue>,<cyclicmagic:item_pipe>],
 	[<ore:dye>,<ore:chestVanilla>,<ore:dye>],
 	[<cyclicmagic:item_pipe>,<advancedrocketry:ic:4>,<cyclicmagic:item_pipe>]]);
+
+//INV Crafting Upgrade
+recipes.remove(<cyclicmagic:crafting_food>);
+recipes.addShaped(<cyclicmagic:crafting_food>,[
+	[<ore:workbench>,<botania:livingwood>,<ore:workbench>],
+	[<botania:livingwood>,<foodexpansion:itemcarrotpie>,<botania:livingwood>],
+	[<ore:workbench>,<botania:livingwood>,<ore:workbench>]]);

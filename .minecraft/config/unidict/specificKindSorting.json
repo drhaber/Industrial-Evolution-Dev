@@ -197,6 +197,13 @@
 		[
 		"tfc"
 		]
+	},
+	{
+		"kindName" : "circlesaw",
+		"modIdPriorityList" :
+		[
+		"pyrotech"
+		]
 	}	
 ]	
 

@@ -50,13 +50,24 @@
 		</output>
 	</Recipe>
 	
-		<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="300" power ="20">
 		<input>
 			<fluidStack>sodium_aluminate;144</fluidStack>
 		</input>
 		<output>
 			<itemStack>pyrotech:generated_slag_aluminium_custom</itemStack>
 			<itemStack>minecraft:sand;1;1</itemStack>
+		</output>
+	</Recipe>
+	
+	<Recipe timeRequired="300" power ="20">
+		<input>
+			<itemStack>minecraft:obsidian;4</itemStack>
+			<fluidStack>lava;1000</fluidStack>
+			<itemStack>aunis:crystal_fragment</itemStack>
+		</input>
+		<output>
+			<fluidStack>crystal;1000</fluidStack>
 		</output>
 	</Recipe>
 	
