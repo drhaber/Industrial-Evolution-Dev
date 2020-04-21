@@ -48,6 +48,7 @@ recipes.addShapeless(<minecraft:planks:5>*4,[<ore:saw>.transformDamage(3),<minec
 
 //Lapis Lazuli Block
 recipes.remove(<minecraft:lapis_block>);
+recipes.remove(<minecraft:dye:4>);
 
 GraniteAnvil.addRecipe(<minecraft:lapis_block>.name,<minecraft:dye:4>*9,<minecraft:lapis_block>,4,"hammer",true);
 CompactingBin.addRecipe(<minecraft:lapis_block>.name,<minecraft:lapis_block>,<ore:gemLapis>,9,true);
