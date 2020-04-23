@@ -28,13 +28,8 @@ import crafttweaker.mods.IMod;
 <ore:chargedCertusQuartz>.add(<appliedenergistics2:material:1>);
 //naquadah
 <ore:gemNaquadah>.add(<aunis:naquadah_shard>);
-//Uranium
-<ore:dustUranium>.add(<ghostsexplosives:dust_uranium>);
 //Sulfur
-<ore:gemSulfur>.addItems([<soot:sulfur_clump>,<ghostsexplosives:sulfur>]);
-<ore:dustSulfur>.add(<ghostsexplosives:dust_sulfur>);
-//Charcoal
-<ore:dustCharcoal>.add(<ghostsexplosives:dust_charcoal>);
+<ore:gemSulfur>.addItems([<soot:sulfur_clump>]);
 //glass
 <ore:blockGlass>.add(<contenttweaker:dirtyglass>);
 //woodPulp

@@ -38,6 +38,9 @@ minecraft:luck
 railcraft:creosote
 railcraft:long_creosote
 railcraft:strong_creosote
+quark:resilience
+quark:long_resilience
+quark:strong_resilience
 quark:haste
 quark:long_haste
 quark:strong_haste
@@ -49,9 +52,6 @@ quark:long_resistance
 quark:strong_resistance
 quark:danger_sight
 quark:long_danger_sight
-quark:resilience
-quark:long_resilience
-quark:strong_resilience
 extraalchemy:fuse_normal
 extraalchemy:fuse_strong
 extraalchemy:fuse_quick
