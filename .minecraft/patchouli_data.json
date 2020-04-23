@@ -115,6 +115,16 @@
         "pyrotech:survive/worktable"
       ],
       "completedManualQuests": []
+    },
+    "mysticalworld:world_guide": {
+      "viewedEntries": [
+        "mysticalworld:cuisine/suqid"
+      ],
+      "bookmarks": [],
+      "history": [
+        "mysticalworld:cuisine/suqid"
+      ],
+      "completedManualQuests": []
     }
   }
 }

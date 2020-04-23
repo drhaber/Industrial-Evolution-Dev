@@ -122,12 +122,14 @@
       "slagColor": "e8f6fd",
       "langKey": [
         "embers:tile.ore_silver",
+        "iceandfire:tile.iceandfire.silverOre",
         "immersiveengineering:tile.immersiveengineering.ore.silver",
         "railcraft:tile.railcraft.ore.metal.silver"
       ],
       "output": [
         "agricraft:agri_nugget:7",
         "embers:nugget_silver:0",
+        "iceandfire:silver_nugget:0",
         "immersiveengineering:metal:23",
         "railcraft:nugget:4",
         "tfc:metal/nugget/silver:0"

@@ -90,6 +90,11 @@ recipes.addShaped(<pyrotech:compacting_bin>,[
 	[<ore:lumber>,null,<ore:lumber>],
 	[<ore:lumber>,<ore:slabWood>,<ore:lumber>]]);    
 
+//Crude Drying Rack
+recipes.remove(<pyrotech:drying_rack>);
+recipes.addShaped(<pyrotech:drying_rack>,[
+	[<ore:straw>,<ore:logWood>,<ore:straw>]]);
+
 //Saws
 <pyrotech:sawmill_blade_gold>.displayName = "Brass Saw Blade";
 <pyrotech:sawmill_blade_bone>.displayName = "Bronze Saw Blade";
@@ -119,6 +124,8 @@ recipes.remove(iSaw);
 mods.immersiveengineering.MetalPress.addRecipe(iSaw, DS[i], <immersiveengineering:mold:1>, 2000, 2);
 }
 mods.embers.Stamper.add(<pyrotech:sawmill_blade_diamond>,<liquid:diamond>*5328, <embers:stamp_flat>,<pyrotech:sawmill_blade_stone>);
+
+recipes.remove(<pyrotech:sawmill_blade_diamond>);   
 
 val iLogs = [<tfc:wood/log/acacia>,<tfc:wood/log/ash>,<tfc:wood/log/aspen>,<tfc:wood/log/birch>,<tfc:wood/log/blackwood>,<tfc:wood/log/chestnut>,<tfc:wood/log/douglas_fir>,<tfc:wood/log/hickory>,<tfc:wood/log/kapok>,<tfc:wood/log/maple>,<tfc:wood/log/oak>,<tfc:wood/log/palm>,<tfc:wood/log/pine>,<tfc:wood/log/rosewood>,<tfc:wood/log/sequoia>,<tfc:wood/log/spruce>,<tfc:wood/log/sycamore>,<tfc:wood/log/white_cedar>,<tfc:wood/log/willow>,<tfc:wood/log/hevea>] as IIngredient[];
 val iLumber = [<tfc:wood/lumber/acacia>,<tfc:wood/lumber/ash>,<tfc:wood/lumber/aspen>,<tfc:wood/lumber/birch>,<tfc:wood/lumber/blackwood>,<tfc:wood/lumber/chestnut>,<tfc:wood/lumber/douglas_fir>,<tfc:wood/lumber/hickory>,<tfc:wood/lumber/kapok>,<tfc:wood/lumber/maple>,<tfc:wood/lumber/oak>,<tfc:wood/lumber/palm>,<tfc:wood/lumber/pine>,<tfc:wood/lumber/rosewood>,<tfc:wood/lumber/sequoia>,<tfc:wood/lumber/spruce>,<tfc:wood/lumber/sycamore>,<tfc:wood/lumber/white_cedar>,<tfc:wood/lumber/willow>,<tfc:wood/lumber/hevea>] as IItemStack[];

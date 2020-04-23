@@ -166,12 +166,12 @@ recipes.removeShapeless(beds.makeStack(i));
 }
 */
 #=============================================================================================================================================		
-//Flopper
-recipes.remove(<flopper:flopper>);
-recipes.addShaped(<flopper:flopper>,[
-	[null,<tfc:wooden_bucket>,null],
-	[<ore:sheetIron>,null,<ore:sheetIron>],
-	[null,<ore:sheetIron>,null]]);
+//Agricraft (TEMP)
+recipes.remove(<agricraft:crop_sticks>);
+recipes.addShaped(<agricraft:crop_sticks>,[
+	[<botania:manaresource:3>,<botania:manaresource:3>],
+	[<botania:manaresource:3>,<botania:manaresource:3>]]);
+
 #=============================================================================================================================================		
 recipes.remove(<astikorcarts:cargocart>);
 recipes.addShaped(<astikorcarts:cargocart>,[
@@ -446,6 +446,12 @@ recipes.remove(<architecturecraft:hammer>);
 recipes.addShaped(<architecturecraft:hammer>,[
 	[<tfc:metal/hammer_head/wrought_iron>,null],
 	[<ore:rodStone>,<ore:dyeOrange>]]);
+recipes.remove(<architecturecraft:sawbench>);
+recipes.addShaped(<architecturecraft:sawbench>,[
+	[<astralsorcery:blockmarbleslab>,<ore:circlesawBronze>,<astralsorcery:blockmarbleslab>],
+	[<ore:support>,<architecturecraft:largepulley>,<ore:support>],
+	[<ore:support>,<ore:buttonWood>,<ore:support>]]);
+
 
 //Liquid Catalyst
 mods.jei.JEI.addDescription(<liquid:liquidcatalyst>,"3 Bottles worth in a cauldron can be used to make Nanomachines");
@@ -739,9 +745,6 @@ ItemRegistry.registerItemHeat(<mcwroofs:rec_tile>, 1, 1599, false);
 Heating.addRecipe("roof_tile_Kiln", <mcwroofs:tile_clay>, <mcwroofs:rec_tile>, 1500, 3200);
 #=============================================================================================================================================		
 
-//Ghost Explosives
-recipes.removeByMod("ghostsexplosives");
-recipes.remove(<ghostsexplosives:tnt_x1_2>);
 
 #=============================================================================================================================================		
 
@@ -753,6 +756,41 @@ recipes.addShaped(<cfm:candle>,[
 	[null,<rustic:candle>,null],
 	[<rustic:candle>,<tfctech:metal/wrought_iron_rod>,<rustic:candle>],
 	[null,<tfc:metal/double_ingot/wrought_iron>,null]]);
+#=============================================================================================================================================		
+//Peat
+
+<cyclicmagic:peat_fuel>.displayName = "Saturated Peat";
+furnace.setFuel(<cyclicmagic:peat_fuel>, 200);
+mods.pyrotech.CompactingBin.addRecipe(<cyclicmagic:peat_fuel>.name~"Block",<cyclicmagic:peat_baked>,<cyclicmagic:peat_fuel>,8,true);
+recipes.addShapeless(<cyclicmagic:peat_fuel>*8,[<cyclicmagic:peat_baked>,<opencomputers:material>.reuse()]);
+
+recipes.remove(<forestry:bog_earth>);
+recipes.addShaped(<forestry:bog_earth>,[
+	[<ore:dirt>,<cyclicmagic:peat_fuel>,<ore:dirt>],
+	[<cyclicmagic:peat_fuel>,<ore:lumpCompost>,<cyclicmagic:peat_fuel>],
+	[<ore:dirt>,<cyclicmagic:peat_fuel>,<ore:dirt>]]);
+
+mods.pyrotech.CompactingBin.addRecipe(<forestry:peat>.name~"Block",<tfc:peat>,<forestry:peat>,8,true);
+recipes.addShapeless(<forestry:peat>*8,[<tfc:peat>,<opencomputers:material>.reuse()]);
+
+recipes.addShapeless(<forestry:peat>*8,[<tfc:peat_grass>.transformReplace(<pyrotech:rock_grass>),<opencomputers:material>.reuse(),<ore:knife>.transformDamage(1)]);
+
+recipes.remove(<forestry:bituminous_peat>);
+recipes.addShaped(<forestry:bituminous_peat>*8,[
+	[<forestry:peat>,<forestry:peat>,<forestry:peat>],
+	[<forestry:peat>,<immersivepetroleum:material>,<forestry:peat>],
+	[<forestry:peat>,<forestry:peat>,<forestry:peat>]]);
+
+recipes.remove(<cyclicmagic:peat_fuel_enriched>);
+<cyclicmagic:peat_fuel_enriched>.displayName = "Dry Peat";
+furnace.setFuel(<cyclicmagic:peat_fuel_enriched>, 400);
+mods.pyrotech.CrudeDryingRack.addRecipe("dry_peat",<cyclicmagic:peat_fuel_enriched>,<cyclicmagic:peat_fuel>,12000,true);
+mods.integrateddynamics.Squeezer.addRecipe(<cyclicmagic:peat_baked>, <cyclicmagic:peat_fuel_enriched>*8,<liquid:water>*1000);
+mods.integrateddynamics.MechanicalSqueezer.addRecipe(<cyclicmagic:peat_baked>, <cyclicmagic:peat_fuel_enriched>*8,<liquid:water>*1000,200);
+
+mods.pyrotech.SoakingPot.addRecipe("Saturated Peat Fresh Water",<cyclicmagic:peat_baked>,<liquid:fresh_water>*1000,<cyclicmagic:peat_unbaked>,12000);
+mods.pyrotech.SoakingPot.addRecipe("Peat Fresh Water",<tfc:peat>,<liquid:fresh_water>*1000,<forestry:bog_earth>,12000);
+
 #=============================================================================================================================================		
 
 //rustichromia

@@ -318,14 +318,37 @@ recipes.remove(<extraalchemy:vial_break>);
 recipes.remove(<minecraft:glass_bottle>);
 
 //Leather Rework
-#mods.terrafirmacraft.Barrel.removeRecipe(<minecraft:leather>);
-#mods.terrafirmacraft.Barrel.addRecipe("tanned_hide_s", <tfc:hide/prepared/small>, <liquid:tannin>*300, <contenttweaker:tanned_small>,8);
-#mods.terrafirmacraft.Barrel.addRecipe("tanned_hide_m", <tfc:hide/prepared/medium>,<liquid:tannin>*400, <contenttweaker:tanned_small>*2,8);
-#mods.terrafirmacraft.Barrel.addRecipe("tanned_hide_l", <tfc:hide/prepared/large>, <liquid:tannin>*500, <contenttweaker:tanned_small>*3,8);
+recipes.remove(<minecraft:leather>);
+mods.terrafirmacraft.Barrel.removeRecipe(<minecraft:leather>);
+mods.terrafirmacraft.Barrel.addRecipe("tanned_hide_s", <tfc:hide/prepared/small>, <liquid:tannin>*300, <contenttweaker:tanned_small>,8);
+mods.terrafirmacraft.Barrel.addRecipe("tanned_hide_m", <tfc:hide/prepared/medium>,<liquid:tannin>*400, <contenttweaker:tanned_small>*2,8);
+mods.terrafirmacraft.Barrel.addRecipe("tanned_hide_l", <tfc:hide/prepared/large>, <liquid:tannin>*500, <contenttweaker:tanned_small>*3,8);
 mods.terrafirmacraft.Barrel.addRecipe("tanned_flesh", <contenttweaker:squeezed_flesh>, <liquid:tannin>*500, <contenttweaker:tanned_flesh>,8);
-#mods.tconstruct.Drying.addRecipe(<minecraft:leather>,<contenttweaker:tanned_small>, 6000);
-mods.integrateddynamics.DryingBasin.addRecipe(<contenttweaker:tanned_flesh>, null, <minecraft:leather>, null, 10);
-mods.integrateddynamics.MechanicalDryingBasin.addRecipe(<contenttweaker:tanned_flesh>, null, <minecraft:leather>, null, 10);
+
+mods.pyrotech.CrudeDryingRack.addRecipe("tanned_hide_s",<minecraft:leather>,<contenttweaker:tanned_small>,6000);
+mods.pyrotech.CrudeDryingRack.addRecipe("tanned_flesh",<minecraft:leather>,<contenttweaker:tanned_flesh>,6000);
+
+recipes.remove(<minecraft:wool:0>,<betteranimalsplus:wolf_pelt_snowy>);
+recipes.remove(<minecraft:wool:8>,<betteranimalsplus:wolf_pelt_timber>);
+recipes.remove(<minecraft:wool:15>,<betteranimalsplus:wolf_pelt_black>);
+recipes.remove(<minecraft:wool:0>,<betteranimalsplus:wolf_pelt_arctic>);
+recipes.remove(<minecraft:wool:12>,<betteranimalsplus:wolf_pelt_brown>);
+recipes.remove(<minecraft:wool:14>,<betteranimalsplus:wolf_pelt_red>);
+
+recipes.remove(<minecraft:wool:12>,<betteranimalsplus:bear_skin_brown>);
+recipes.remove(<minecraft:wool:15>,<betteranimalsplus:bear_skin_black>);
+recipes.remove(<minecraft:wool:0>,<betteranimalsplus:bear_skin_kermode>);
+
+recipes.addShapeless(<tfc:animal/product/wool>,[<ore:knife>.transformDamage(3),<betteranimalsplus:wolf_pelt_snowy>.transformReplace(<tfc:hide/raw/medium>)]);
+recipes.addShapeless(<tfc:animal/product/wool>,[<ore:knife>.transformDamage(3),<betteranimalsplus:wolf_pelt_timber>.transformReplace(<tfc:hide/raw/medium>)]);
+recipes.addShapeless(<tfc:animal/product/wool>,[<ore:knife>.transformDamage(3),<betteranimalsplus:wolf_pelt_black>.transformReplace(<tfc:hide/raw/medium>)]);
+recipes.addShapeless(<tfc:animal/product/wool>,[<ore:knife>.transformDamage(3),<betteranimalsplus:wolf_pelt_arctic>.transformReplace(<tfc:hide/raw/medium>)]);
+recipes.addShapeless(<tfc:animal/product/wool>,[<ore:knife>.transformDamage(3),<betteranimalsplus:wolf_pelt_brown>.transformReplace(<tfc:hide/raw/medium>)]);
+recipes.addShapeless(<tfc:animal/product/wool>,[<ore:knife>.transformDamage(3),<betteranimalsplus:wolf_pelt_red>.transformReplace(<tfc:hide/raw/medium>)]);
+
+mods.terrafirmacraft.Barrel.addRecipe("skin_bear_brown", <betteranimalsplus:bear_skin_brown>, <liquid:limewater>*400, <tfc:hide/soaked/medium>,8);
+mods.terrafirmacraft.Barrel.addRecipe("skin_bear_black", <betteranimalsplus:bear_skin_black>, <liquid:limewater>*400, <tfc:hide/soaked/medium>,8);
+mods.terrafirmacraft.Barrel.addRecipe("skin_bear_kermode", <betteranimalsplus:bear_skin_kermode>, <liquid:limewater>*400, <tfc:hide/soaked/medium>,8);
 
 //Loom
 mods.terrafirmacraft.Loom.addRecipe("glass_fibre", <contenttweaker:glass_wire>*24,<contenttweaker:glass_fibre>*6, 16, "minecraft:textures/blocks/wool_colored_brown.png"); 

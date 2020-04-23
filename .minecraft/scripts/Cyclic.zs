@@ -148,7 +148,7 @@ recipes.addShaped(<cyclicmagic:energy_pump>,[
 recipes.remove(<cyclicmagic:fluid_pump>);
 recipes.addShaped(<cyclicmagic:fluid_pump>,[
 	[null,<cyclicmagic:fluid_pipe>,null],
-	[<tfc:bellows>,<flopper:flopper>,<minecraft:sticky_piston>],
+	[<tfc:bellows>,<pneumaticcraft:liquid_hopper>,<minecraft:sticky_piston>],
 	[<aunis:crystal_red>,<immersiveengineering:sheetmetal_slab:1>,<embers:winding_gears>]]);
 
 //Cables
