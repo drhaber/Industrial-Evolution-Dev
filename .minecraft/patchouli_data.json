@@ -100,10 +100,18 @@
         "pyrotech:innovate/refractory_brick",
         "pyrotech:bloom/refractory_kiln",
         "pyrotech:bloom/refractory_crucible",
-        "pyrotech:innovate/soaking_pot"
+        "pyrotech:innovate/soaking_pot",
+        "pyrotech:innovate/stone_brick",
+        "pyrotech:adapt/anvil_granite",
+        "pyrotech:bloom/anvil_ironclad",
+        "pyrotech:adapt/stone"
       ],
       "bookmarks": [],
       "history": [
+        "pyrotech:adapt/stone",
+        "pyrotech:bloom/anvil_ironclad",
+        "pyrotech:innovate/stone_brick",
+        "pyrotech:adapt/anvil_granite",
         "pyrotech:innovate/refractory_brick",
         "pyrotech:innovate/soaking_pot",
         "pyrotech:bloom/refractory_crucible",
@@ -123,6 +131,16 @@
       "bookmarks": [],
       "history": [
         "mysticalworld:cuisine/suqid"
+      ],
+      "completedManualQuests": []
+    },
+    "floralchemy:guide": {
+      "viewedEntries": [
+        "floralchemy:blocks/leaky_cauldron_entry"
+      ],
+      "bookmarks": [],
+      "history": [
+        "floralchemy:blocks/leaky_cauldron_entry"
       ],
       "completedManualQuests": []
     }

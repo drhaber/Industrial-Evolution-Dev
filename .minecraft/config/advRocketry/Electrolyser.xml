@@ -41,40 +41,7 @@
 			<fluidStack>oxygen;100</fluidStack>
 		</output>
 	</Recipe>
-	
-	<Recipe timeRequired="100" power ="20">
-		<input>
-			<fluidStack>brine;1000</fluidStack>
-		</input>
-		<output>
-			<fluidStack>hydrogen;250</fluidStack>
-			<fluidStack>chlorine;500</fluidStack>
-			<fluidStack>sodium_hydroxide_solution;500</fluidStack>
-		</output>
-	</Recipe>
-	
-	<Recipe timeRequired="600" power ="2048">
-		<input>
-			<fluidStack>alumina;144</fluidStack>
-			<itemStack>tfc:ore/cryolite</itemStack>
-		</input>
-		<output>
-			<itemStack>embers:seed_aluminum</itemStack>
-			<fluidStack>carbon_dioxide;250</fluidStack>
-		</output>
-	</Recipe>
-	
-	<Recipe timeRequired="300" power ="1024">
-		<input>
-			<fluidStack>alumina;144</fluidStack>
-			<itemStack>tfc:ore/cryolite</itemStack>
-			<itemStack>embers:seed_aluminum</itemStack>
-		</input>
-		<output>
-			<itemStack>embers:seed_aluminum;2</itemStack>
-			<fluidStack>carbon_dioxide;250</fluidStack>
-		</output>
-	</Recipe>
+
 	
 </Recipes>
 

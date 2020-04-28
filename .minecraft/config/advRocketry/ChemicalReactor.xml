@@ -72,5 +72,96 @@
 			<fluidStack>carbon_monoxide;150</fluidStack>
 		</output>
 	</Recipe>
+
+	<Recipe timeRequired="300" power ="20">
+		<input>
+			<oreDict>ingotSilicon</oreDict>
+			<oreDict>nuggetSilicon</oreDict>
+		</input>
+		<output>
+			<itemStack>libvulpes:productboule;1;3</itemStack>
+		</output>
+	</Recipe>
+	
+	<Recipe timeRequired="300" power ="20">
+		<input>
+			<itemStack>minecraft:obsidian;4</itemStack>
+			<fluidStack>lava;1000</fluidStack>
+			<itemStack>aunis:crystal_fragment</itemStack>
+		</input>
+		<output>
+			<fluidStack>crystal;1000</fluidStack>
+		</output>
+	</Recipe>
+	
+		
+	<Recipe timeRequired="2400" power ="16384">
+		<input>
+			<fluidStack>sodium;150</fluidStack>
+			<fluidStack>titanium_tetrachloride;144</fluidStack>
+		</input>
+		<output>
+			<itemStack>tfc:metal/dust/titanium</itemStack>
+			<itemStack>tfc:powder/salt;4</itemStack>
+		</output>
+	</Recipe>
+	
+		<Recipe timeRequired="300" power ="1024">
+		<input>
+			<fluidStack>oxygen;150</fluidStack>
+			<fluidStack>titanium_tetrachloride;144</fluidStack>
+		</input>
+		<output>
+			<itemStack>contenttweaker:titania_powder</itemStack>
+			<fluidStack>chlorine;250</fluidStack>
+		</output>
+	</Recipe>
+	
+	<Recipe timeRequired="900" power ="4096">
+		<input>
+			<itemStack>libvulpes:ore0;1;10</itemStack>
+			<fluidStack>hydrochloric_acid;1000</fluidStack>
+		</input>
+		<output>
+			<itemStack>pyrotech:generated_slag_iridium_custom</itemStack>
+		</output>
+	</Recipe>
+	
+		<Recipe timeRequired="900" power ="4096">
+		<input>
+			<oreDict>oreIronSmall;10</oreDict>
+			<fluidStack>hydrochloric_acid;500</fluidStack>
+			<fluidStack>carbon_dioxide;250</fluidStack>
+			<itemStack>tfc:powder/flux</itemStack>
+			<itemStack>tfc:ceramics/fired/mold/ingot</itemStack>
+		</input>
+		<output>
+			<itemStack>tfc:metal/ingot/steel</itemStack>
+			<itemStack>tfc:ceramics/fired/mold/ingot</itemStack>
+		</output>
+	</Recipe>
+	
+	<Recipe timeRequired="600" power ="2048">
+		<input>
+			<fluidStack>alumina;144</fluidStack>
+			<itemStack>tfc:ore/cryolite</itemStack>
+		</input>
+		<output>
+			<itemStack>embers:seed_aluminum</itemStack>
+			<fluidStack>carbon_dioxide;250</fluidStack>
+		</output>
+	</Recipe>
+	
+	<Recipe timeRequired="300" power ="1024">
+		<input>
+			<fluidStack>alumina;144</fluidStack>
+			<itemStack>tfc:ore/cryolite</itemStack>
+			<itemStack>embers:seed_aluminum</itemStack>
+		</input>
+		<output>
+			<itemStack>embers:seed_aluminum;2</itemStack>
+			<fluidStack>carbon_dioxide;250</fluidStack>
+		</output>
+	</Recipe>
 	
 </Recipes>

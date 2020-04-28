@@ -67,53 +67,6 @@
 			<itemStack>advancedrocketry:productingot;2;1</itemStack>
 		</output>
 	</Recipe>
-	
-	<Recipe timeRequired="2400" power ="16384">
-		<input>
-			<fluidStack>sodium;150</fluidStack>
-			<fluidStack>titanium_tetrachloride;144</fluidStack>
-		</input>
-		<output>
-			<itemStack>tfc:metal/dust/titanium</itemStack>
-			<itemStack>tfc:powder/salt;4</itemStack>
-		</output>
-	</Recipe>
-	
-		<Recipe timeRequired="300" power ="1024">
-		<input>
-			<fluidStack>oxygen;150</fluidStack>
-			<fluidStack>titanium_tetrachloride;144</fluidStack>
-		</input>
-		<output>
-			<itemStack>contenttweaker:titania_powder</itemStack>
-			<fluidStack>chlorine;250</fluidStack>
-		</output>
-	</Recipe>
-	
-	<Recipe timeRequired="900" power ="4096">
-		<input>
-			<itemStack>libvulpes:ore0;1;10</itemStack>
-			<fluidStack>hydrochloric_acid;500</fluidStack>
-			<fluidStack>chlorine;250</fluidStack>
-			<fluidStack>hydrogen;150</fluidStack>
-		</input>
-		<output>
-			<itemStack>pyrotech:generated_slag_iridium_custom</itemStack>
-		</output>
-	</Recipe>
-	
-		<Recipe timeRequired="900" power ="4096">
-		<input>
-			<oreDict>oreIronSmall;10</oreDict>
-			<fluidStack>hydrochloric_acid;500</fluidStack>
-			<fluidStack>carbon_dioxide;250</fluidStack>
-			<itemStack>tfc:powder/flux</itemStack>
-			<itemStack>tfc:ceramics/fired/mold/ingot</itemStack>
-		</input>
-		<output>
-			<itemStack>tfc:metal/ingot/steel</itemStack>
-			<itemStack>tfc:ceramics/fired/mold/ingot</itemStack>
-		</output>
-	</Recipe>
+
 	
 </Recipes>

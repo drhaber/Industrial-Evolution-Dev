@@ -56,6 +56,11 @@ Worktable.blacklistAllVanillaRecipes();
 
 mods.jei.JEI.removeAndHide(<pyrotech:slag>);
 
+//Chopping Block
+recipes.remove(<pyrotech:chopping_block>);
+recipes.addShaped(<pyrotech:chopping_block>,[
+	[<ore:logWood>,<ore:toolAxe>]]);
+
 //Torches
 recipes.remove(<pyrotech:torch_stone>);
 recipes.addShaped(<pyrotech:torch_stone>,[

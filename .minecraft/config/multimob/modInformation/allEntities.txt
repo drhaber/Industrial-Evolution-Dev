@@ -137,6 +137,13 @@ astralsorcery:entityliquidspark
 astralsorcery:entityobservatoryhelper
 astralsorcery:entityshootingstar
 astralsorcery:entityitemdamageresistant
+quark:chest_passenger
+quark:seat
+quark:gravisand
+quark:flat_item_frame
+quark:leash_knot
+quark:colored_item_frame
+quark:glass_item_frame
 quark:stoneling
 quark:archaeologist
 quark:foxhound
@@ -146,8 +153,6 @@ quark:frog
 quark:pirate
 quark:crab
 quark:wraith
-quark:chest_passenger
-quark:gravisand
 quark:pickarang
 quark:arrow_ender
 quark:arrow_explosive
@@ -155,11 +160,6 @@ quark:arrow_torch
 quark:dragon_breath_bottle
 quark:soul_powder
 quark:parrot_egg
-quark:flat_item_frame
-quark:leash_knot
-quark:colored_item_frame
-quark:glass_item_frame
-quark:seat
 betternether:firefly
 bibliocraft:biblioseat
 botania:mana_burst
@@ -525,9 +525,9 @@ moarboats:modular_boat
 moarboats:animal_boat
 trumpetskeleton:trumpet_skeleton
 engineersdecor:chair_entity
-forestry:butterflyge
 forestry:cart.beehouse
 forestry:cart.apiary
+forestry:butterflyge
 immersiveengineering:revolvershot
 immersiveengineering:skylinehook
 immersiveengineering:revolvershothoming

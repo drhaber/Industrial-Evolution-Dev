@@ -390,6 +390,13 @@ game.setLocalization("fluid.carrot_soup", "Carrot Soup");
 		liquidTerrasteel.register();
 		game.setLocalization("fluid.terrasteel", "Molten Terrasteel");
 
+//red_mud
+var red_mud = VanillaFactory.createFluid("red_mud", Color.fromHex("AF5C24"));
+red_mud.viscosity = 3000;
+red_mud.temperature= 100;
+red_mud.register();
+game.setLocalization("fluid.red_mud", "Red Mud");
+
 //titanium_tetrachloride
 var titanium_tetrachloride = VanillaFactory.createFluid("titanium_tetrachloride", Color.fromHex("CBCDC0"));
 titanium_tetrachloride.viscosity = 1000;

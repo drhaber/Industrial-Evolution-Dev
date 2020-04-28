@@ -246,6 +246,7 @@ zenClass MoltenHandleClass {
             mods.embers.Melter.add(castingMetal*144, ingots);
             recipes.remove(ingots);
             Packager.removeRecipe(ingots);
+            mods.pyrotech.BrickCrucible.addRecipe(ingots.name,castingMetal*144,ingots,2400);
         }
         if(!isNull(cluster)){
             mods.embers.Melter.add(castingMetal*144, cluster);
@@ -254,6 +255,7 @@ zenClass MoltenHandleClass {
         if(!isNull(dust)){
             mods.embers.Melter.add(castingMetal*144, dust);
             furnace.addRecipe(ingots, dust);
+            mods.pyrotech.BrickCrucible.addRecipe(dust.name,castingMetal*144,dust,2400);
         }
         if(!isNull(block)){
             mods.embers.Melter.add(castingMetal*1296, block);
@@ -278,6 +280,7 @@ zenClass MoltenHandleClass {
         if(!isNull(scrap)){
             mods.embers.Melter.add(castingMetal*144, scrap);
             ArcFurnace.addRecipe(ingots, scrap, <tfc:ceramics/fired/mold/ingot>, 2400, 2400, [<tfc:ceramics/fired/mold/ingot>]);
+            mods.pyrotech.BrickCrucible.addRecipe(scrap.name,castingMetal*144,scrap,2400);
         }   
     }     
 }
@@ -1045,7 +1048,7 @@ zenClass OreGrindingandSoaking {
             ArcFurnace.addRecipe(Dusts, Cluster, <immersiveengineering:material:7>, 2400, 2400, [<tfc:powder/flux>]);
         }
         if(!isNull(Scrap)){
-            mods.advancedrocketry.ArcFurnace.addRecipe(Small*10, 20, 10, <tfc:powder/flux>*1, Scrap*1);
+            mods.advancedrocketry.ArcFurnace.addRecipe(Scrap*1, 20, 10, <tfc:powder/flux>*1, Small*10);
         }
     }    
 }
@@ -1202,16 +1205,14 @@ OreGrindingandSoaking(<tfc:ore/small/wolframite>)
     .withScrap(<tfc:metal/scrap/tungsten>)
     .finish();
 
-
 #=============================================================================================================================================		
 //Bauxite/Aluminium - Bayer Process
     mods.embers.Melter.add(<liquid:alumina>*144, <pyrotech:generated_slag_aluminium_custom>);
     mods.pyrotech.BrickCrucible.addRecipe(<liquid:alumina>.name,<liquid:alumina>*144,<pyrotech:generated_slag_aluminium_custom>,2400);
     mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:sodium_hydroxide_solution>*500, <tfc:ore/small/bauxite>*10, 2, 448.0, <liquid:sodium_aluminate>*144);
-    #Recipe is in XML format in ADV Congif Crystallizer.addRecipe(<pyrotech:generated_slag_aluminium_custom>,<minecraft:sand:1>, 200, 10, <liquid:sodium_aluminate>*144); 
-    mods.terrafirmacraft.ItemRegistry.registerItemMetal(<embers:seed_aluminum>, "ALUMINIUM", 200, true);
-    mods.embers.Melter.add(<liquid:aluminium>*288, <embers:seed_aluminum>);
-    mods.pyrotech.BrickCrucible.addRecipe(<liquid:aluminium>.name,<liquid:aluminium>*288,<embers:seed_aluminum>,2400);
+    mods.nuclearcraft.electrolyser.addRecipe(<liquid:sodium_aluminate>*144, <liquid:alumina>*144, <liquid:red_mud>*144, null, null);
+    mods.embers.Melter.add(<liquid:aluminium>*144, <tfctech:metal/aluminium_long_rod>);
+
 
 //Titanium
     #mods.terrafirmacraft.ItemRegistry.registerItemMetal(<libvulpes:ore0:8>, "TITANIUM", 100, true);

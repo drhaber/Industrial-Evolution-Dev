@@ -70,6 +70,9 @@ for i in 0 to 16{
 <ore:chestVanilla>.addItems([<minecraft:chest>,<quark:custom_chest:*>]);
 //Ash
 <ore:dustAsh>.add(<pyrotech:material>);
+//Paper Pulp
+<ore:lumpPulp>.add(<emergingtechnology:paperpulp>);
+<ore:sheetPulp>.add(<pyrotech:material:25>);
 //Bricks
 <ore:ingotBrick>.addAll(<ore:brick>); //This adds ingot brick to all bricks
 //magnifying_glass
@@ -156,6 +159,9 @@ mods.jei.JEI.removeAndHide(<railcraft:gear:3>);
 
 <ore:stickStone>.addAll(<ore:rodStone>);
 <ore:rodStone>.mirror(<ore:stickStone>);
+//Axe Merge
+<ore:axe>.addAll(<ore:toolAxe>);
+<ore:toolAxe>.mirror(<ore:axe>);
 //Saw Teirs
 <ore:sawI>.addItems([<tfc:metal/saw/copper:*>]);
 <ore:sawII>.addItems([<tfc:metal/saw/bismuth_bronze:*>,<tfc:metal/saw/black_bronze:*>,<tfc:metal/saw/bronze:*>,<tfc:metal/saw/nickel_silver:*>,<tfc:metal/saw/mithril:*>]);

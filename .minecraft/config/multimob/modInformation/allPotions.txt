@@ -102,7 +102,6 @@ extrabotany:temptation
 extrabotany:witchcurse
 extrabotany:vegetable
 extrabotany:healreverse
-ghostsexplosives:radiationpoisoning
 rpsideas:psishock
 rpsideas:psipulse
 rpsideas:unseeing
