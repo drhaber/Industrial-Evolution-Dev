@@ -154,8 +154,32 @@ StoneSawmill.addRecipe("Diamond Tipped Steel Saw Blade"~i,iLumber[i]*16,log,200,
 
 }
 
+#=============================================================================================================================================		
 
+//Bricks
 
+	//Refactory 
+	recipes.remove(<pyrotech:material:9>); #unfired Brick
+	recipes.addShaped(<pyrotech:material:9>*4,[
+	[<ore:fireClay>,<ore:fireClay>],
+	[<ore:fireClay>,<ore:fireClay>]]);
+
+	recipes.remove(<pyrotech:material:4>); #clay Lump
+	recipes.addShaped(<pyrotech:material:4>,[
+		[<contenttweaker:bauxitedust>,<ore:dustGraphite>,<contenttweaker:bauxitedust>],
+		[<ore:dustGraphite>,<ore:clay>,<ore:dustGraphite>],
+		[<contenttweaker:bauxitedust>,<ore:dustGraphite>,<contenttweaker:bauxitedust>]]);
+
+	furnace.remove(<pyrotech:material:5>);
+	mods.terrafirmacraft.ItemRegistry.registerItemHeat(<pyrotech:material:9>, 1, 1599, false);
+	mods.terrafirmacraft.ItemRegistry.registerItemHeat(<pyrotech:material:5>, 1, 1599, false);
+	mods.terrafirmacraft.Heating.addRecipe("Refactory_Brick", <pyrotech:material:9>, <pyrotech:material:5>, 1500, 3200);
+
+	//Masonry 
+	recipes.remove(<pyrotech:material:16>);
+	recipes.addShaped(<pyrotech:material:16>,[
+		[<ore:ingotBrick>,<ore:mortar>],
+		[<ore:mortar>,<ore:ingotBrick>]]);
 
 
 

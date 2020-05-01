@@ -152,7 +152,7 @@ registerFood(<minecraft:fish:1>,1,1,0.2,3,0,0,0,2,0.2);	<ore:categoryMeat>.add(<
 registerFood(<minecraft:fish:2>,1,1,0.2,3,0,0,0,2,0.2);	<ore:categoryMeat>.add(<minecraft:fish:2>);      	registerItemHeat(<minecraft:fish:2>,1,480,false);          #clownfish
 registerFood(<minecraft:fish:3>,1,1,0.2,3,0,2,0,1,0.1);	<ore:category>.add(<minecraft:fish:3>);      	          #pufferfish
 registerFood(<minecraft:cooked_fish:1>,1,2,0.6,2.25,0,0,0,2,0);	<ore:categoryCookedMeat>.add(<minecraft:cooked_fish:1>);      	registerItemHeat(<minecraft:cooked_fish:1>,1,480,false);          #cooked salmon
-registerFood(<minecraft:cookie>,1,0,0.2,0.8,1.5,0,0,0,1);	<ore:categoryMeal>.add(<minecraft:cookie>);      	          #cookie
+registerFood(<minecraft:cookie>,1,0,0.2,0.8,1.5,0,0,0,1);	<ore:categoryMeal>.add(<minecraft:cookie>);      	          registerItemHeat(<minecraft:cookie>,1,480,false); #cookie
 registerFood(<minecraft:melon>,1,1,0.4,4,0,0,1,0,0);	<ore:categoryFruit>.add(<minecraft:melon>);      	          #melon
 registerFood(<minecraft:spider_eye>,1,1,0.1,3,0,0.2,0,0,0);	<ore:category>.add(<minecraft:spider_eye>);      	          #spider eye
 registerFood(<minecraft:baked_potato>,1,1.5,0.9,5,1,0,1,0.5,0);	<ore:categoryMeal>.add(<minecraft:baked_potato>);      	registerItemHeat(<minecraft:baked_potato>,1,480,false);          #baked potato
@@ -167,7 +167,7 @@ registerFood(<foodexpansion:itembacon>,1,0.5,0.1,3,0,0,0,1.2,1);	<ore:categoryMe
 registerFood(<foodexpansion:itemcookedbacon>,1,0.1,0.4,1.5,0,0,0,1,1);	<ore:categoryCookedMeat>.add(<foodexpansion:itemcookedbacon>);      	registerItemHeat(<foodexpansion:itemcookedbacon>,1,480,false);          #crispy bacon
 registerFood(<foodexpansion:itembaconandegg>,2,0.1,1,1.5,2,1,0,2.5,3);	<ore:categoryMeal>.add(<foodexpansion:itembaconandegg>);      	          #bacon and egg
 registerFood(<foodexpansion:itemcarrotseedsoup>,3,3,1.8,6,1,1,3,1,0);	<ore:categoryMeal>.add(<foodexpansion:itemcarrotseedsoup>);      	          #carrot soup
-registerFood(<foodexpansion:itemcompressedflesh>,1,0,0.4,0.4,0,0.1,0,2.1,0.3);	<ore:categoryMeat>.add(<foodexpansion:itemcompressedflesh>);      	          #salted flesh
+registerFood(<foodexpansion:itemcompressedflesh>,1,-0.2,0.4,0.4,0,0.1,0,2.1,0.3);	<ore:categoryMeat>.add(<foodexpansion:itemcompressedflesh>);      	          #salted flesh
 registerFood(<foodexpansion:itemchocolatebar>,1,0,0.7,0.1,0.3,0,0,0.1,0.4);	<ore:categoryMeal>.add(<foodexpansion:itemchocolatebar>);      	          #chocolate bar
 registerFood(<foodexpansion:itemspidersoup>,3,3,1.7,3,1,0.3,2,0,0.2);	<ore:categoryMeal>.add(<foodexpansion:itemspidersoup>);      	          #spider eye stew
 registerFood(<foodexpansion:itemnetherwartsoup>,3,2,1.8,3,1,0.2,2,0,0.3);	<ore:categoryMeal>.add(<foodexpansion:itemnetherwartsoup>);      	          #nether wart stew
@@ -348,4 +348,10 @@ Heating.addRecipe("cooked_flesh", <cfm:item_flesh>, <cfm:item_flesh_cooked>, 400
 furnace.remove(<netherex:ghast_meat_cooked>);
 Heating.addRecipe("cooked_ghast", <netherex:ghast_meat_raw>, <netherex:ghast_meat_cooked>, 400, 480);
 
+Heating.addRecipe("cookie", <contenttweaker:cookie_dough>, <minecraft:cookie>, 400, 480);
+mods.terrafirmacraft.Quern.addRecipe("ground_cocoa_nibs", <nuclearcraft:roasted_cocoa_beans>, <nuclearcraft:ground_cocoa_nibs>*2);
 
+registerItemHeat(<minecraft:dye:3>,1,480,false);
+registerItemHeat(<nuclearcraft:roasted_cocoa_beans>,1,480,false);
+furnace.remove(<nuclearcraft:roasted_cocoa_beans>);
+Heating.addRecipe("roasted_cocoa_beans", <minecraft:dye:3>, <nuclearcraft:roasted_cocoa_beans>, 400, 480);

@@ -28,6 +28,39 @@ mods.immersiveengineering.ArcFurnace.removeRecipe(<libvulpes:productingot:7>);
 
 moretweaker.railcraft.RockCrusher.removeAll();
 
+//Removals
+    //Gears from Embers
+    val StampedGears = [<mysticalmechanics:gear_iron>,<mysticalmechanics:gear_gold>,<mystgears:gear_lead>,<mystgears:gear_copper>,
+    <mystgears:gear_tin>,<mystgears:gear_bronze>,<mystgears:gear_nickel>,<mystgears:gear_silver>,<mystgears:gear_electrum>,
+    <mystgears:gear_aluminium>,<mystgears:gear_antimony>] as IItemStack[];
+    for i, SG in StampedGears{
+    mods.embers.Stamper.remove(SG);
+    }
+    //Plates from Nuclear Craft 
+    val sheets = [<tfc:metal/sheet/bismuth>,<tfc:metal/sheet/bismuth_bronze>,<tfc:metal/sheet/black_bronze>,<tfc:metal/sheet/brass>,
+    <tfc:metal/sheet/bronze>,<tfc:metal/sheet/copper>,<tfc:metal/sheet/gold>,<tfc:metal/sheet/lead>,<tfc:metal/sheet/nickel>,
+    <tfc:metal/sheet/rose_gold>,<tfc:metal/sheet/silver>,<tfc:metal/sheet/tin>,<tfc:metal/sheet/zinc>,<tfc:metal/sheet/sterling_silver>,
+    <tfc:metal/sheet/wrought_iron>,<tfc:metal/sheet/pig_iron>,<tfc:metal/sheet/steel>,<tfc:metal/sheet/platinum>,<tfc:metal/sheet/black_steel>,
+    <tfc:metal/sheet/blue_steel>,<tfc:metal/sheet/red_steel>,<tfc:metal/sheet/antimony>,<tfc:metal/sheet/constantan>,
+    <tfc:metal/sheet/electrum>,<tfc:metal/sheet/mithril>,<tfc:metal/sheet/invar>,<tfc:metal/sheet/aluminium>,<tfc:metal/sheet/aluminium_brass>,
+    <tfc:metal/sheet/ardite>,<tfc:metal/sheet/cobalt>,<tfc:metal/sheet/manyullyn>,<tfc:metal/sheet/osmium>,<tfc:metal/sheet/titanium>,
+    <tfc:metal/sheet/tungsten>,<tfc:metal/sheet/tungsten_steel>,<embers:plate_dawnstone>] as IItemStack[];
+    for sheet in sheets{
+    mods.nuclearcraft.pressurizer.removeRecipeWithOutput(sheet);
+    }
+    mods.nuclearcraft.pressurizer.removeRecipeWithOutput(<tfc:metal/sheet/nickel_silver>);
+    mods.nuclearcraft.pressurizer.removeRecipeWithOutput(<tfc:metal/sheet/red_alloy>);
+
+    val EmbersPlates =[<embers:plate_copper>,<embers:plate_lead>,<embers:plate_silver>,<embers:plate_dawnstone>,
+    <embers:plate_iron>,<embers:plate_gold>,<embers:plate_aluminum>,<embers:plate_bronze>,<embers:plate_electrum>,
+    <embers:plate_nickel>,<embers:plate_tin>] as IItemStack[];
+    for EP in EmbersPlates{
+    mods.embers.Stamper.remove(EP);
+    recipes.remove(EP);
+    }
+mods.embers.Stamper.remove(<embers:nugget_dawnstone>);
+mods.embers.Stamper.remove(<embers:ingot_dawnstone>);
+
 //Thorium
 mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust_oxide>, <tfc:ore/thorianite>, 2048, <nuclearcraft:dust_oxide:1>, 0.25);
 //Magnesium
@@ -80,6 +113,8 @@ zenClass MoltenHandleClass {
     val block as IItemStack;
     val nugget as IItemStack;
     val scrap as IItemStack; 
+    val seed as IItemStack;
+    val longRod as IItemStack;
 
         zenConstructor(castingMetal as ILiquidStack){
             this.castingMetal = castingMetal;
@@ -104,6 +139,8 @@ zenClass MoltenHandleClass {
             this.block = null;
             this.nugget = null;
             this.scrap = null;
+            this.seed = null;
+            this.longRod = null;
         }
 	function withaxeHead(axeHead as IItemStack) as MoltenHandleClass {
         this.axeHead=axeHead;
@@ -187,6 +224,11 @@ zenClass MoltenHandleClass {
     }
     function withscrap(scrap as IItemStack) as MoltenHandleClass {
         this.scrap=scrap;
+        return this;
+    }
+    function withseedtorod(seed as IItemStack, longRod as IItemStack) as MoltenHandleClass {
+        this.seed=seed;
+        this.longRod=longRod;
         return this;
     }
     function finish() as void{
@@ -275,12 +317,14 @@ zenClass MoltenHandleClass {
             Packager.removeRecipe(nugget);
             Packager.addRecipe(ingots, nugget*9);
             Packager.addRecipe(nugget*9, ingots);
-
         }
         if(!isNull(scrap)){
             mods.embers.Melter.add(castingMetal*144, scrap);
             ArcFurnace.addRecipe(ingots, scrap, <tfc:ceramics/fired/mold/ingot>, 2400, 2400, [<tfc:ceramics/fired/mold/ingot>]);
             mods.pyrotech.BrickCrucible.addRecipe(scrap.name,castingMetal*144,scrap,2400);
+        }
+        if(!isNull(seed) && !isNull(longRod)) {
+            mods.advancedrocketry.Crystallizer.addRecipe(longRod*3, 200, 10, seed);
         }   
     }     
 }
@@ -306,6 +350,7 @@ MoltenHandleClass(<liquid:aluminium>)
     .withblock(<immersiveengineering:storage:1>)
     .withnugget(<tfc:metal/nugget/aluminium>)
     .withscrap(<tfc:metal/scrap/aluminium>)
+    .withseedtorod(<embers:seed_aluminum>,<tfctech:metal/aluminium_long_rod>)
     .finish();
 MoltenHandleClass(<liquid:aluminium_brass>)
     .withgears(<tfctech:metal/aluminium_brass_rackwheel>)
@@ -509,6 +554,7 @@ MoltenHandleClass(<liquid:copper>)
     .withblock(<railcraft:metal>)
     .withnugget(<tfc:metal/nugget/copper>)
     .withscrap(<tfc:metal/scrap/copper>)
+    .withseedtorod(<embers:seed_copper>,<tfctech:metal/copper_long_rod>)
     .finish();
 MoltenHandleClass(<liquid:electrum>)
     .withgears(<tfctech:metal/electrum_rackwheel>)
@@ -528,6 +574,7 @@ MoltenHandleClass(<liquid:gold>)
     .withblock(<minecraft:gold_block>)
     .withnugget(<tfc:metal/nugget/gold>)
     .withscrap(<tfc:metal/scrap/gold>)
+    .withseedtorod(<embers:seed_gold>,<tfctech:metal/gold_long_rod>)
     .finish(); 
 MoltenHandleClass(<liquid:invar>)
 	.withaxeHead(<tfc:metal/axe_head/invar>)
@@ -572,6 +619,7 @@ MoltenHandleClass(<liquid:iron>)
     .withblock(<minecraft:iron_block>)
     .withnugget(<tfc:metal/nugget/wrought_iron>)
     .withscrap(<tfc:metal/scrap/wrought_iron>)
+    .withseedtorod(<embers:seed_iron>,<tfctech:metal/wrought_iron_long_rod>)
     .finish();
 MoltenHandleClass(<liquid:lead>)
     .withgears(<tfctech:metal/lead_rackwheel>)
@@ -582,6 +630,7 @@ MoltenHandleClass(<liquid:lead>)
     .withblock(<immersiveengineering:storage:2>)
     .withnugget(<tfc:metal/nugget/lead>)
     .withscrap(<tfc:metal/scrap/lead>)
+    .withseedtorod(<embers:seed_lead>,<tfctech:metal/lead_long_rod>)
     .finish(); 
 MoltenHandleClass(<liquid:manyullyn>)
 	.withaxeHead(<tfc:metal/axe_head/manyullyn>)
@@ -634,6 +683,7 @@ MoltenHandleClass(<liquid:nickel>)
     .withblock(<immersiveengineering:storage:4>)
     .withnugget(<tfc:metal/nugget/nickel>)
     .withscrap(<tfc:metal/scrap/nickel>)
+    .withseedtorod(<embers:seed_nickel>,<tfctech:metal/nickel_long_rod>)
     .finish();  
 MoltenHandleClass(<liquid:osmium>)
 	.withaxeHead(<tfc:metal/axe_head/osmium>)
@@ -713,6 +763,7 @@ MoltenHandleClass(<liquid:silver>)
     .withblock(<immersiveengineering:storage:3>)
     .withnugget(<tfc:metal/nugget/silver>)
     .withscrap(<tfc:metal/scrap/silver>)
+    .withseedtorod(<embers:seed_silver>,<tfctech:metal/silver_long_rod>)
     .finish(); 
 MoltenHandleClass(<liquid:steel>)
 	.withaxeHead(<tfc:metal/axe_head/steel>)
@@ -752,6 +803,7 @@ MoltenHandleClass(<liquid:tin>)
     .withblock(<railcraft:metal:1>)
     .withnugget(<tfc:metal/nugget/tin>)
     .withscrap(<tfc:metal/scrap/tin>)
+    .withseedtorod(<embers:seed_tin>,<tfctech:metal/tin_long_rod>)
     .finish();  
 MoltenHandleClass(<liquid:titanium>)
 	.withaxeHead(<tfc:metal/axe_head/titanium>)
@@ -856,6 +908,13 @@ MoltenHandleClass(<liquid:red_alloy>)
     .withnugget(<tfc:metal/nugget/red_alloy>)
     .withscrap(<tfc:metal/scrap/red_alloy>)
     .finish(); 
+MoltenHandleClass(<liquid:dawnstone>)
+    #.withgears(<embers:gear_dawnstone>) //Duplicate 
+    .withsheets(<embers:plate_dawnstone>)
+    .withingots(<embers:ingot_dawnstone>)
+    .withblock(<embers:block_dawnstone>)
+    .withnugget(<embers:nugget_dawnstone>)
+    .finish();    
 
 #=============================================================================================================================================		
 //Extras
@@ -888,28 +947,6 @@ mods.embers.Stamper.add(crystalBlocks.makeStack(i),<liquid:quartz>*125,<tfctech:
 }
 mods.embers.Melter.add(<liquid:quartz>*666,<ore:dustQuartz>);
 
-//Removals
-    //Gears from Embers
-    val StampedGears = [<mysticalmechanics:gear_iron>,<mysticalmechanics:gear_gold>,<mystgears:gear_lead>,<mystgears:gear_copper>,
-    <mystgears:gear_tin>,<mystgears:gear_bronze>,<mystgears:gear_nickel>,<mystgears:gear_silver>,<mystgears:gear_electrum>,
-    <mystgears:gear_aluminium>,<mystgears:gear_antimony>] as IItemStack[];
-    for i, SG in StampedGears{
-    mods.embers.Stamper.remove(SG);
-    }
-    //Plates from Nuclear Craft 
-    val sheets = [<tfc:metal/sheet/bismuth>,<tfc:metal/sheet/bismuth_bronze>,<tfc:metal/sheet/black_bronze>,<tfc:metal/sheet/brass>,
-    <tfc:metal/sheet/bronze>,<tfc:metal/sheet/copper>,<tfc:metal/sheet/gold>,<tfc:metal/sheet/lead>,<tfc:metal/sheet/nickel>,
-    <tfc:metal/sheet/rose_gold>,<tfc:metal/sheet/silver>,<tfc:metal/sheet/tin>,<tfc:metal/sheet/zinc>,<tfc:metal/sheet/sterling_silver>,
-    <tfc:metal/sheet/wrought_iron>,<tfc:metal/sheet/pig_iron>,<tfc:metal/sheet/steel>,<tfc:metal/sheet/platinum>,<tfc:metal/sheet/black_steel>,
-    <tfc:metal/sheet/blue_steel>,<tfc:metal/sheet/red_steel>,<tfc:metal/sheet/antimony>,<tfc:metal/sheet/constantan>,
-    <tfc:metal/sheet/electrum>,<tfc:metal/sheet/mithril>,<tfc:metal/sheet/invar>,<tfc:metal/sheet/aluminium>,<tfc:metal/sheet/aluminium_brass>,
-    <tfc:metal/sheet/ardite>,<tfc:metal/sheet/cobalt>,<tfc:metal/sheet/manyullyn>,<tfc:metal/sheet/osmium>,<tfc:metal/sheet/titanium>,
-    <tfc:metal/sheet/tungsten>,<tfc:metal/sheet/tungsten_steel>] as IItemStack[];
-    for sheet in sheets{
-    mods.nuclearcraft.pressurizer.removeRecipeWithOutput(sheet);
-    }
-    mods.nuclearcraft.pressurizer.removeRecipeWithOutput(<tfc:metal/sheet/nickel_silver>);
-    mods.nuclearcraft.pressurizer.removeRecipeWithOutput(<tfc:metal/sheet/red_alloy>);
 //Extra Fixes
 mods.embers.Melter.remove(<liquid:aluminum>*144);
 mods.embers.Melter.remove(<liquid:aluminum>*16);

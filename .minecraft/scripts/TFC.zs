@@ -144,11 +144,10 @@ recipes.addShapeless(DTFCS,[TFCsapling[i],<dynamictrees:dirtbucket>.giveBack()])
 recipes.addShapeless(TFCsapling[i],[DTFCS,<dynamictrees:dirtbucket>.giveBack()]);							
 
 }
-//Fire Clay
-recipes.addShaped(<tfc:ceramics/fire_clay>,[
-	[<contenttweaker:bauxitedust>,<ore:dustGraphite>,<contenttweaker:bauxitedust>],
-	[<ore:dustGraphite>,<ore:clay>,<ore:dustGraphite>],
-	[<contenttweaker:bauxitedust>,<ore:dustGraphite>,<contenttweaker:bauxitedust>]]);
+//Fire clay
+recipes.remove(<tfc:fire_clay_block>);
+mods.pyrotech.CompactingBin.addRecipe(<tfc:fire_clay_block>.name,<tfc:fire_clay_block>,<tfc:ceramics/fire_clay>,4,true);
+
 /*	
 //Iron Ore Tool Tip
 val oreIrons = [<tfc:ore/hematite>,<tfc:ore/hematite:1>,<tfc:ore/hematite:2>,<tfc:ore/small/hematite>,

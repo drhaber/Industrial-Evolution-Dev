@@ -35,15 +35,6 @@ recipes.addShaped(<embers:tinker_hammer>,[
 //Antimony
 mods.soot.AlchemicalMixer.remove(<liquid:antimony>*12);	
 
-//Plates
-val EmbersPlates =[<embers:plate_copper>,<embers:plate_lead>,<embers:plate_silver>,<embers:plate_dawnstone>,
-<embers:plate_iron>,<embers:plate_gold>,<embers:plate_aluminum>,<embers:plate_bronze>,<embers:plate_electrum>,
-<embers:plate_nickel>,<embers:plate_tin>] as IItemStack[];
-for EP in EmbersPlates{
-mods.embers.Stamper.remove(EP);
-recipes.remove(EP);
-}
-
 //Archaic Brick
 
 recipes.addShaped(<contenttweaker:unfired_archaic_lump>,[

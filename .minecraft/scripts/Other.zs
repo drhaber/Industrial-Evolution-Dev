@@ -756,6 +756,46 @@ recipes.addShaped(<cfm:candle>,[
 	[null,<rustic:candle>,null],
 	[<rustic:candle>,<tfctech:metal/wrought_iron_rod>,<rustic:candle>],
 	[null,<tfc:metal/double_ingot/wrought_iron>,null]]);
+
+//Crates 	
+recipes.remove(<cfm:crate>);
+recipes.addShaped(<cfm:crate>,[
+	[<ore:support>,<ore:lumber>,<ore:support>],
+	[<ore:lumber>,null,<ore:lumber>],
+	[<ore:support>,<ore:lumber>,<ore:support>]]);
+recipes.remove(<cfm:crate_spruce>);
+recipes.addShaped(<cfm:crate_spruce>,[
+	[<ore:support>,<ore:lumber>,<ore:support>],
+	[<ore:lumber>,<minecraft:planks:1>,<ore:lumber>],
+	[<ore:support>,<ore:lumber>,<ore:support>]]);
+recipes.remove(<cfm:crate_birch>);
+recipes.addShaped(<cfm:crate_birch>,[
+	[<ore:support>,<ore:lumber>,<ore:support>],
+	[<ore:lumber>,<minecraft:planks:2>,<ore:lumber>],
+	[<ore:support>,<ore:lumber>,<ore:support>]]);
+recipes.remove(<cfm:crate_jungle>);
+recipes.addShaped(<cfm:crate_jungle>,[
+	[<ore:support>,<ore:lumber>,<ore:support>],
+	[<ore:lumber>,<minecraft:planks:3>,<ore:lumber>],
+	[<ore:support>,<ore:lumber>,<ore:support>]]);
+recipes.remove(<cfm:crate_acacia>);
+recipes.addShaped(<cfm:crate_acacia>,[
+	[<ore:support>,<ore:lumber>,<ore:support>],
+	[<ore:lumber>,<minecraft:planks:4>,<ore:lumber>],
+	[<ore:support>,<ore:lumber>,<ore:support>]]);
+recipes.remove(<cfm:crate_dark_oak>);
+recipes.addShaped(<cfm:crate_dark_oak>,[
+	[<ore:support>,<ore:lumber>,<ore:support>],
+	[<ore:lumber>,<minecraft:planks:5>,<ore:lumber>],
+	[<ore:support>,<ore:lumber>,<ore:support>]]);
+	
+//Crow Bar
+recipes.remove(<cfm:item_crow_bar>);
+recipes.addShaped(<cfm:item_crow_bar>,[
+	[null,<ore:dyeRed>,<tfc:metal/chisel_head/wrought_iron>],
+	[<ore:dyeRed>,<tfctech:metal/wrought_iron_long_rod>,<ore:dyeRed>],
+	[<tfc:metal/chisel_head/wrought_iron>,<ore:dyeRed>,null]]);
+
 #=============================================================================================================================================		
 //Peat
 

@@ -35,6 +35,13 @@ recipes.addShaped(<cyclicmagic:battery>,[
 	[<cyclicmagic:energy_pipe>,<immersiveengineering:metal_device0:1>,<cyclicmagic:energy_pipe>],
 	[<ore:ingotBrick>,<cyclicmagic:energy_pipe>,<ore:ingotBrick>]]);
 
+//Auto Fisher
+recipes.remove(<cyclicmagic:block_fishing>);
+recipes.addShaped(<cyclicmagic:block_fishing>,[
+	[<ore:lumber>,<tfc:crop/product/jute_net>,<ore:lumber>],
+	[<tfc:crop/product/jute_net>,<minecraft:fishing_rod>,<tfc:crop/product/jute_net>],
+	[<ore:lumber>,<tfc:crop/product/jute_net>,<ore:lumber>]]);
+
 
 //Conveyer Belts
 

@@ -5,6 +5,9 @@ import crafttweaker.item.IItemDefinition;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.mods.IMod;
 
+//Clays
+<ore:fireClay>.add(<pyrotech:material:4>);
+
 //titania 
 <ore:titania>.add(<contenttweaker:titania_powder>);
 <ore:dyeWhite>.add(<contenttweaker:titania_powder>);
