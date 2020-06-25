@@ -31,7 +31,8 @@
         "agricraft:agri_nugget:8",
         "embers:nugget_aluminum:0",
         "immersiveengineering:metal:21",
-        "libvulpes:productnugget:9"
+        "libvulpes:productnugget:9",
+        "tfc:metal/nugget/aluminium:0"
       ]
     },
     "oreCopper": {
@@ -84,7 +85,8 @@
       "output": [
         "agricraft:agri_nugget:3",
         "immersiveengineering:metal:29",
-        "minecraft:iron_nugget:0"
+        "minecraft:iron_nugget:0",
+        "tfc:metal/nugget/wrought_iron:0"
       ]
     },
     "oreLead": {
@@ -158,7 +160,8 @@
         "nuclearcraft:tile.nuclearcraft.ore.uranium"
       ],
       "output": [
-        "immersiveengineering:metal:25"
+        "immersiveengineering:metal:25",
+        "tfc:metal/nugget/uranium:0"
       ]
     }
   }
