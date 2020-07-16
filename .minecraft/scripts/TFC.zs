@@ -24,6 +24,11 @@ furnace.setFuel(<tfc:ore/petrified_wood>, 800);
 
 //Latex
 mods.integrateddynamics.Squeezer.addRecipe(<tfc:wood/log/hevea>, null, <liquid:latex> * 250);
+//Winch
+recipes.addShaped(<tfctech:wiredraw/winch>,[
+    [<tfctech:metal/wrought_iron_rod>,null,<tfctech:metal/wrought_iron_rod>],
+    [null,<tfctech:metal/wrought_iron_rod>,null],
+    [<tfctech:metal/wrought_iron_rod>,null,<tfctech:metal/wrought_iron_rod>]]);
 //Block Mold
 <tfctech:ceramics/mold/glass_block>.displayName = "Block Mold";
 //Embers & Engineer's Hammer
@@ -93,6 +98,7 @@ recipes.addShapeless(<tfc:ceramics/fired/pot>,[<tfctech:ceramics/fluid_bowl>.wit
 mods.inspirations.Cauldron.addFluidRecipe(<tfc:ceramics/fired/jug>.withTag({Fluid: {FluidName: "fresh_water", Amount: 100}}), <tfc:ceramics/fired/jug>, <liquid:fresh_water>, 2, false);
 mods.inspirations.Cauldron.addFluidRecipe(<tfc:ceramics/fired/jug>.withTag({Fluid: {FluidName: "fresh_water", Amount: 100}}), <tfc:ceramics/fired/jug>, <liquid:water>, 2, true);
 mods.inspirations.Cauldron.addFluidRecipe(<tfc:ceramics/fired/jug>.withTag({Fluid: {FluidName: "fresh_water", Amount: 100}}), <tfc:ceramics/fired/jug>, <liquid:ice>, 2, true);
+/*
 //Sleeves
 recipes.addShaped(<tfctech:metal/tin_sleeve>*4,[
 	[null,<ore:sheetTin>,null],
@@ -106,6 +112,7 @@ recipes.addShaped(<tfctech:metal/steel_sleeve>*4,[
 	[null,<ore:sheetSteel>,null],
 	[<ore:sheetSteel>,<ore:chisel>.transformDamage(4),<ore:sheetSteel>],
 	[null,<ore:sheetSteel>,null]]);
+*/	
 //Soot
 mods.terrafirmacraft.Quern.addRecipe("Soot", <ore:charcoal>, <contenttweaker:soot>*4);
 //Saw Dust

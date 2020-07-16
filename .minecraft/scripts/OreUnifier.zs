@@ -189,6 +189,10 @@ mods.jei.JEI.removeAndHide(<railcraft:gear:3>);
 <ore:breadAny>.addItems([<tfc:food/oat_bread>,<tfc:food/cornbread>,<tfc:food/oat_bread>,<tfc:food/rice_bread>,<tfc:food/rye_bread>,<tfc:food/wheat_bread>]);	
 //Crooks
 <ore:crookAny>.addItems([<inspirations:wooden_crook>,<inspirations:stone_crook>,<inspirations:bone_crook>,<inspirations:blaze_crook>,<inspirations:wither_crook>]);
+//Buttons
+<ore:buttonWood>.addItems([<tfc:wood/button/acacia>,<tfc:wood/button/ash>,<tfc:wood/button/aspen>,<tfc:wood/button/birch>,<tfc:wood/button/blackwood>,<tfc:wood/button/chestnut>,<tfc:wood/button/douglas_fir>,<tfc:wood/button/hickory>,<tfc:wood/button/kapok>,<tfc:wood/button/maple>,<tfc:wood/button/oak>,<tfc:wood/button/palm>,<tfc:wood/button/pine>,<tfc:wood/button/rosewood>,<tfc:wood/button/sequoia>,<tfc:wood/button/spruce>,<tfc:wood/button/sycamore>,<tfc:wood/button/white_cedar>,<tfc:wood/button/willow>]);
+<ore:button>.add(<minecraft:stone_button>);
+<ore:button>.addAll(<ore:buttonWood>);
 //Wands
 
 <ore:botWands>.add(<botania:twigwand>.withTag({color1: 0, color2: 0, boundTileZ: 0, boundTileX: 0, boundTileY: -1}));

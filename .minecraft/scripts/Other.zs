@@ -387,6 +387,14 @@ recipes.addShaped(<hooked:hook:4>,[
 			[<tfctech:metal/gold_wire>],
 			[<tfctech:metal/gold_wire>]]);
 
+		//I&F Chains
+		recipes.remove(<iceandfire:chain_link>);
+		mods.terrafirmacraft.Anvil.addRecipe("Steel_Chain_Link", <ore:ingotSteel>, <iceandfire:chain_link>, 4, "general","BEND_NOT_LAST","SHRINK_NOT_LAST","DRAW_LAST");
+
+		<iceandfire:chain_link>.displayName = "Steel Chain Link";
+		<iceandfire:chain_sticky>.displayName = "Sticky Steel Chain";
+		<iceandfire:chain>.displayName = "Steel Chain";
+
 	//Rope
 	recipes.remove(<hooked:microcrafting>);
 	recipes.addShapeless(<hooked:microcrafting>*8, [<tfc:crop/product/jute_fiber>,<tfc:spindle>.transformDamage(8)]);
