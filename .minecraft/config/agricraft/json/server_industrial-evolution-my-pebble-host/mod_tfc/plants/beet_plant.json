@@ -1,0 +1,72 @@
+{
+  "path": "mod_tfc/plants/beet_plant.json",
+  "enabled": true,
+  "id": "tfc:crop/beet_plant",
+  "plant_name": "Beet",
+  "seed_name": "Beet Seeds",
+  "seed_items": [
+    {
+      "item": "tfc:crop/seeds/beet",
+      "meta": 0,
+      "tags": "",
+      "ignoreMeta": false,
+      "ignoreTags": [
+        "*"
+      ],
+      "useOreDict": false
+    }
+  ],
+  "description": {
+    "translations": {},
+    "default": "Beet"
+  },
+  "growth_chance": 0.9,
+  "growth_bonus": 0.025,
+  "bonemeal": false,
+  "tier": 1,
+  "weedable": false,
+  "aggressive": false,
+  "spread_chance": 0.0,
+  "spawn_chance": 0.0,
+  "grass_drop_chance": 0.0,
+  "seed_drop_chance": 1.0,
+  "seed_drop_bonus": 0.0,
+  "products": {
+    "products": [
+      {
+        "min": 1,
+        "max": 3,
+        "chance": 0.25,
+        "required": true,
+        "item": "tfc:food/beet",
+        "meta": 0,
+        "tags": "",
+        "ignoreMeta": false,
+        "ignoreTags": [],
+        "useOreDict": false
+      }
+    ]
+  },
+  "requirement": {
+    "min_light": 0,
+    "max_light": 16,
+    "soils": [
+      "tfc_farmland_soil",
+      "hydroponic_soil"
+    ],
+    "conditions": []
+  },
+  "texture": {
+    "render_type": "cross",
+    "seed_texture": "tfc:items/crop/seeds/beet",
+    "plant_textures": [
+      "tfc:blocks/crop/beet_0",
+      "tfc:blocks/crop/beet_1",
+      "tfc:blocks/crop/beet_2",
+      "tfc:blocks/crop/beet_3",
+      "tfc:blocks/crop/beet_4",
+      "tfc:blocks/crop/beet_5",
+      "tfc:blocks/crop/beet_6"
+    ]
+  }
+}
