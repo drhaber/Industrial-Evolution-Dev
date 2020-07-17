@@ -839,6 +839,9 @@ mods.integrateddynamics.MechanicalSqueezer.addRecipe(<cyclicmagic:peat_baked>, <
 mods.pyrotech.SoakingPot.addRecipe("Saturated Peat Fresh Water",<cyclicmagic:peat_baked>,<liquid:fresh_water>*1000,<cyclicmagic:peat_unbaked>,12000);
 mods.pyrotech.SoakingPot.addRecipe("Peat Fresh Water",<tfc:peat>,<liquid:fresh_water>*1000,<forestry:bog_earth>,12000);
 
+mods.terrafirmacraft.Barrel.addRecipe("Saturated Peat Fresh Water", <cyclicmagic:peat_unbaked>, <liquid:fresh_water>*1000, <cyclicmagic:peat_baked>,12);
+mods.terrafirmacraft.Barrel.addRecipe("Peat Fresh Water", <forestry:bog_earth>, <liquid:fresh_water>*1000, <tfc:peat>,12);
+
 #=============================================================================================================================================		
 
 //rustichromia
