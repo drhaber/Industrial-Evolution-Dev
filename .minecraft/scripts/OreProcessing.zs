@@ -1317,7 +1317,7 @@ mods.terrafirmacraft.Barrel.addRecipe("Primitive Sulfuric Acid"~i, FC.withTag({F
 }
 
 //Oxygen
-    mods.embers.Stamper.add(<contenttweaker:zeolite_powder>,<liquid:alumina>*144, <embers:stamp_flat>,<ore:sandSilica>); #zeolite
+    mods.embers.Stamper.add(<contenttweaker:zeolite_powder>*4,<liquid:alumina>*144, <embers:stamp_flat>,<ore:sandSilica>); #zeolite
     
     mods.immersiveengineering.AlloySmelter.addRecipe(<contenttweaker:zeolite_powder>, <ore:sandSilica>, <contenttweaker:bauxitedust>, 2400); #zeolite
 

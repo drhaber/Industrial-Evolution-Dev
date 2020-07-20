@@ -305,37 +305,37 @@ mods.jei.JEI.removeAndHide(<immersivecables:coil_block:3>);
 val CI = <contenttweaker:ceramic_insulator>;
 recipes.remove(<immersiveengineering:connector>); #LV
 recipes.addShaped(<immersiveengineering:connector>*2,[
-	[<ore:longRodCopper>],
+	[<ore:stickLongCopper>],
 	[CI]]);
 recipes.remove(<immersiveengineering:connector:2>); #MV
 recipes.addShaped(<immersiveengineering:connector:2>*2,[
-	[<ore:longRodElectrum>],
+	[<ore:stickLongElectrum>],
 	[CI],
 	[CI]]);
 recipes.remove(<immersiveengineering:connector:4>); #HV
 recipes.addShaped(<immersiveengineering:connector:4>*2,[
-	[<ore:longRodAluminium>],
+	[<ore:stickLongAluminium>],
 	[CI,CI],
 	[CI,CI]]);		
 
 recipes.remove(<immersiveengineering:connector:1>); #LV
 recipes.addShaped(<immersiveengineering:connector:1>*4,[
-	[<ore:longRodCopper>],
+	[<ore:stickLongCopper>],
 	[<ore:hardenedClay>]]);
 recipes.remove(<immersiveengineering:connector:3>); #MV
 recipes.addShaped(<immersiveengineering:connector:3>*4,[
-	[<ore:longRodElectrum>],
+	[<ore:stickLongElectrum>],
 	[<ore:hardenedClay>],
 	[<ore:hardenedClay>]]);
 recipes.remove(<immersiveengineering:connector:5>); #HV
 recipes.addShaped(<immersiveengineering:connector:5>*4,[
-	[<ore:longRodAluminium>],
+	[<ore:stickLongAluminium>],
 	[<immersiveengineering:stone_decoration:8>,<immersiveengineering:stone_decoration:8>],
 	[<immersiveengineering:stone_decoration:8>,<immersiveengineering:stone_decoration:8>]]);
 
 recipes.remove(<alternatingflux:connector>); #AF
 recipes.addShaped(<alternatingflux:connector>*4,[
-	[<ore:longRodConstantan>],
+	[<ore:stickLongConstantan>],
 	[<immersiveengineering:stone_decoration:8>,<immersiveengineering:stone_decoration:8>],
 	[<immersiveengineering:stone_decoration:8>,<immersiveengineering:stone_decoration:8>]]);		
 #=============================================================================================================================================		
