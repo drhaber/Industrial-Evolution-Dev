@@ -93,4 +93,4 @@ mods.embers.Stamper.add(<yurtmod:tent_upgrade_obsidian>,<liquid:crystal>*10368, 
 mods.embers.Stamper.add(<yurtmod:tent_upgrade_diamond>,<liquid:diamond>*10368, <embers:stamp_flat>,<yurtmod:tent_upgrade_obsidian>);
 
 mods.embers.Stamper.add(<contenttweaker:diamond_shovel_head>,<liquid:diamond>*666, <embers:stamp_flat>,<contenttweaker:manasteel_shovel_head>);
-mods.embers.Stamper.add(<contenttweaker:obsidian_shovel_head>,<liquid:diamond>*250, <embers:stamp_flat>,<contenttweaker:diamond_shovel_head>);
+mods.embers.Stamper.add(<contenttweaker:obsidian_shovel_head>,<liquid:crystal>*250, <embers:stamp_flat>,<contenttweaker:diamond_shovel_head>);
