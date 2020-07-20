@@ -17,6 +17,10 @@ mods.jei.JEI.removeAndHide(<minecraft:wooden_axe>);
 <ore:stickWood>.addItems([<minecraft:stone_hoe>,<minecraft:stone_pickaxe>,<minecraft:stone_axe>,
 							<minecraft:wooden_hoe>,<minecraft:wooden_sword>,<minecraft:wooden_shovel>,<minecraft:wooden_pickaxe>,<minecraft:wooden_axe>]);
 
+//Fire Starters
+
+recipes.removeShapeless(<minecraft:fire_charge>,[<minecraft:gunpowder>,<minecraft:blaze_powder>,<minecraft:coal>]); #Fire Charge (consumable fire starter)
+
 
 //C&B Chisels
 <ore:cbChisels>.addItems([<chiselsandbits:chisel_iron>,<chiselsandbits:chisel_gold>,<chiselsandbits:chisel_diamond>]);

@@ -1,8 +1,4 @@
 {
-  "the_nether": {
-    "energyToOpen": 3686400,
-    "keepAlive": 1600
-  },
   "space": {
     "energyToOpen": 0,
     "keepAlive": 0
@@ -13,25 +9,14 @@
   },
   "overworld": {
     "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "planet": {
-    "energyToOpen": 0,
-    "keepAlive": 0
+    "keepAlive": 0,
+    "group": "netherOv"
   },
   "the_end": {
     "energyToOpen": 5529600,
     "keepAlive": 2400
   },
   "Nether": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "CompactMachines": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "Treasure Room": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
@@ -43,7 +28,15 @@
     "energyToOpen": 0,
     "keepAlive": 0
   },
-  "Anu Lair": {
+  "the_nether": {
+    "energyToOpen": 3686400,
+    "keepAlive": 1600
+  },
+  "CompactMachines": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "planet": {
     "energyToOpen": 0,
     "keepAlive": 0
   }
