@@ -49,6 +49,8 @@ recipes.removeShapeless(<minecraft:fire_charge>,[<minecraft:gunpowder>,<minecraf
 
 //Shears
 <ore:shearsSteel>.addItems([<railcraft:tool_shears_steel>]);
+mods.embers.Stamper.add(<minecraft:shears>,<liquid:tin>*144, <embers:stamp_flat>,<tfc:metal/shears/bronze>);
+<minecraft:shears>.displayName = "Tin Plated Bronze Shears";
 
 //Helmet
 <ore:helmetIron>.addItems([<minecraft:iron_helmet>,<tfc:metal/helmet/wrought_iron>]);
@@ -116,8 +118,8 @@ recipes.addShaped(<jaff:iron_fishing_rod>,[
 	[<ore:stickWood>,null,<jaff:iron_hook>]]);
 recipes.remove(<jaff:golden_fishing_rod>);
 recipes.addShaped(<jaff:golden_fishing_rod>,[
-	[null,null,<ore:rodGold>],
-	[null,<ore:rodGold>,<ore:string>],
+	[null,null,<ore:stickGold>],
+	[null,<ore:stickGold>,<ore:string>],
 	[<ore:stickWood>,null,<jaff:iron_hook>]]);
 recipes.remove(<jaff:diamond_fishing_rod>);
 mods.embers.Stamper.add(<jaff:diamond_fishing_rod>,<liquid:diamond>*1332, <embers:stamp_flat>,<jaff:golden_fishing_rod>);

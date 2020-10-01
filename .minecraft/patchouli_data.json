@@ -143,6 +143,16 @@
         "floralchemy:blocks/leaky_cauldron_entry"
       ],
       "completedManualQuests": []
+    },
+    "tfc:book": {
+      "viewedEntries": [
+        "tfc:getting_started/intro"
+      ],
+      "bookmarks": [],
+      "history": [
+        "tfc:getting_started/intro"
+      ],
+      "completedManualQuests": []
     }
   }
 }

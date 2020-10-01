@@ -1,30 +1,13 @@
 {
-  "space": {
+  "emptiness": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
-  "Storage Cell": {
+  "CompactMachines": {
     "energyToOpen": 0,
     "keepAlive": 0
-  },
-  "overworld": {
-    "energyToOpen": 0,
-    "keepAlive": 0,
-    "group": "netherOv"
-  },
-  "the_end": {
-    "energyToOpen": 5529600,
-    "keepAlive": 2400
   },
   "Nether": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "nc_wasteland": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "TENT": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
@@ -32,11 +15,36 @@
     "energyToOpen": 3686400,
     "keepAlive": 1600
   },
-  "CompactMachines": {
+  "overworld": {
+    "energyToOpen": 0,
+    "keepAlive": 0,
+    "group": "netherOv"
+  },
+  "space": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "TENT": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "the_end": {
+    "energyToOpen": 5529600,
+    "keepAlive": 2400
+  },
+  "nc_wasteland": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "Storage Cell": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
   "planet": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "The Beneath": {
     "energyToOpen": 0,
     "keepAlive": 0
   }

@@ -110,6 +110,20 @@
       "tfc:igneous_extrusive"
     ]
   },
+  "pitchblende": {
+    "ore": "tfc:pitchblende",
+    "loose": "tfc:pitchblende",
+    "width": 32,
+    "height": 40,
+    "shape": "cluster",
+    "rarity": 120,
+    "minimum_height": 5,
+    "maximum_height": 128,
+    "density": 70,
+    "base_rocks": [
+      "tfc:sedimentary"
+    ]
+  },
   "chromite": {
     "ore": "tfc:chromite",
     "width": 6,
@@ -149,18 +163,17 @@
       "tfc:sedimentary"
     ]
   },
-  "spodumene": {
-    "ore": "tfc:magnesite",
-    "width": 10,
-    "height": 20,
+  "pitchblende": {
+    "ore": "tfc:pitchblende",
+    "width": 32,
+    "height": 40,
     "shape": "cluster",
-    "rarity": 100,
+    "rarity": 120,
     "minimum_height": 5,
     "maximum_height": 128,
     "density": 70,
     "base_rocks": [
-      "tfc:sedimentary",
-      "tfc:metamorphic"
+      "tfc:sedimentary"
     ]
   },
   "boron": {

@@ -805,6 +805,10 @@ recipes.addShaped(<cfm:item_crow_bar>,[
 	[<tfc:metal/chisel_head/wrought_iron>,<ore:dyeRed>,null]]);
 
 #=============================================================================================================================================		
+//Compost
+recipes.remove(<forestry:fertilizer_bio>);
+<composter:compost>.displayName = "Wet Compost";
+<composter:compost>.addTooltip("Sometimes things magically dry out when held");
 //Peat
 
 <cyclicmagic:peat_fuel>.displayName = "Saturated Peat";

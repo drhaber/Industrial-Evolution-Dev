@@ -13,6 +13,34 @@
       "tfc:igneous_extrusive"
     ]
   },
+  "spodumene": {
+    "ore": "tfc:spodumene",
+    "loose": "tfc:spodumene",
+    "width": 28,
+    "height": 36,
+    "shape": "cluster",
+    "rarity": 100,
+    "minimum_height": 5,
+    "maximum_height": 128,
+    "density": 70,
+    "base_rocks": [
+      "tfc:igneous_intrusive"
+    ]
+  },
+  "amber": {
+    "ore": "thaumcraft:ore_amber",
+    "loose": "thaumcraft:amber",
+    "width": 5,
+    "height": 10,
+    "shape": "cluster",
+    "rarity": 120,
+    "minimum_height": 5,
+    "maximum_height": 128,
+    "density": 70,
+    "base_rocks": [
+      "tfc:sedimentary"
+    ]
+  },
     "certus_quartz": {
     "ore": "appliedenergistics2:quartz_ore",
 	"loose": "appliedenergistics2:material",

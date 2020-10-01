@@ -1,0 +1,40 @@
+{ "block_pools" : 
+    [ 
+    { 
+    "name": "SootyMarble", 
+    "type": { "type": "block_list", "blocks": [{"name": "betternether:smoker"},{"name": "railcraft:equipment", "meta": 3},{"name": "quark:smoker"}]}, 
+    "clicktype": "rightclick ", 
+    "properties": [ 
+        { "type": "require_sneak" }, 
+        { "type": "require_item_list", 
+            "items":[
+                {"name":"chisel:marble"},
+                {"name":"chisel:marble1"},
+                {"name":"chisel:marble2"},
+                {"name":"chisel:marblepillar"},
+                {"name":"astralsorcery:blockmarble"},
+                {"name":"quark:marble"},
+                {"name":"tfc:raw/marble"}
+            ]
+        },
+        {
+          "type": "consume_item",  
+          "amount": "1"
+        },
+        {
+            "type": "swing_hand",
+            "disableJEI": true
+        },
+        {
+            "type": "play_sound",
+            "name": "minecraft:block.fire.ambient",
+            "category": "master",
+            "volume": 0.3,
+            "disableJEI": true
+        }
+    ], 
+    "drops": [ { "name": "astralsorcery:blockblackmarble" } ], 
+    "messages": []
+    } 
+    ] 
+    }

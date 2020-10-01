@@ -22,6 +22,8 @@ furnace.setFuel(<tfc:ore/bituminous_coal>, 1600);
 furnace.setFuel(<tfc:ore/lignite>, 800);
 furnace.setFuel(<tfc:ore/petrified_wood>, 800);
 
+//Boost Track
+recipes.removeByRecipeName("tfc:vanilla/railpowered_rail");
 //Latex
 mods.integrateddynamics.Squeezer.addRecipe(<tfc:wood/log/hevea>, null, <liquid:latex> * 250);
 //Winch
@@ -92,7 +94,7 @@ mods.inspirations.Cauldron.addFluidRecipe(<tfctech:ceramics/fluid_bowl>.withTag(
 mods.inspirations.Cauldron.addFluidRecipe(<tfctech:ceramics/fluid_bowl>.withTag({Fluid: {FluidName: "hot_water", Amount: 1000}}), <tfc:ceramics/fired/pot>, <liquid:fresh_water>, 4, true);
 
 //Bowl <-> Pot
-recipes.addShapeless(<tfc:ceramics/fired/pot>,[<tfctech:ceramics/fluid_bowl>.withEmptyTag()]);							
+recipes.addShapeless(<tfc:ceramics/fired/pot>,[<tfctech:ceramics/fluid_bowl>,<botania:manaresource:22>.reuse()]);							
 
 //Fresh Water Jug
 mods.inspirations.Cauldron.addFluidRecipe(<tfc:ceramics/fired/jug>.withTag({Fluid: {FluidName: "fresh_water", Amount: 100}}), <tfc:ceramics/fired/jug>, <liquid:fresh_water>, 2, false);
@@ -114,12 +116,14 @@ recipes.addShaped(<tfctech:metal/steel_sleeve>*4,[
 	[null,<ore:sheetSteel>,null]]);
 */	
 //Soot
-mods.terrafirmacraft.Quern.addRecipe("Soot", <ore:charcoal>, <contenttweaker:soot>*4);
+#mods.terrafirmacraft.Quern.addRecipe("Soot", <ore:charcoal>, <contenttweaker:soot>*4);
 //Saw Dust
 mods.terrafirmacraft.Quern.addRecipe("Sawdust", <ore:logWood>, <tfctech:powder/wood>*4);
 //Flux from Soot and Potash
 recipes.addShapeless(<tfc:powder/flux>*2,[<contenttweaker:soot>,<tfctech:powder/potash>,<botania:pestleandmortar>.giveBack()]);							
 
+//Ash Stack Size
+<tfctech:powder/ash>.maxStackSize = 64;
 //TFC Coal Stack Size
 <tfc:ore/bituminous_coal>.maxStackSize = 32;
 //Silicon

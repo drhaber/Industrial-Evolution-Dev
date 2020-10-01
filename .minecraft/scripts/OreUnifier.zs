@@ -7,6 +7,8 @@ import crafttweaker.mods.IMod;
 
 //Clays
 <ore:fireClay>.add(<pyrotech:material:4>);
+//Smoke Emitters
+<ore:smokeEmitter>.addItems([<betternether:smoker>,<railcraft:equipment:3>,<quark:smoker>]);
 
 //titania 
 <ore:titania>.add(<contenttweaker:titania_powder>);
@@ -61,6 +63,7 @@ for i in 0 to 16{
 <ore:sheetAluminium>.mirror(<ore:sheetAluminum>);
 <ore:wireAluminum>.addAll(<ore:wireAluminium>);
 <ore:wireAluminium>.mirror(<ore:wireAluminum>);
+<ore:stickAluminium>.mirror(<ore:stickAluminum>);
 //Aluminium Brass
 <ore:ingotAlubrass>.addAll(<ore:ingotAluminiumBrass>);
 <ore:ingotAluminiumBrass>.mirror(<ore:ingotAlubrass>);
@@ -154,6 +157,7 @@ mods.jei.JEI.removeAndHide(<railcraft:gear:3>);
 <tfc:stone/shovel_head/igneous_intrusive>,<tfc:stone/shovel_head/igneous_extrusive>]);
 //Rods/Sticks
 <ore:stickIron>.addAll(<ore:rodWroughtIron>);
+<ore:stickIron>.addAll(<ore:stickWroughtIron>);
 <ore:stickSteel>.addAll(<ore:rodSteel>);
 <ore:stickCopper>.addAll(<ore:rodCopper>);
 <ore:stickSteel>.addAll(<ore:rodSteel>);

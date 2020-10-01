@@ -123,6 +123,14 @@ mods.rustic.CrushingTub.addRecipe(<liquid:fresh_water>*125, <pyrotech:material:2
 recipes.remove(<minecraft:paper>);
 recipes.addShaped(<minecraft:paper>,[
 	[<ore:pulpWood>,<ore:pulpWood>,<ore:pulpWood>]]);
+//Firework Rocket
+recipes.addShaped(<minecraft:fireworks>*4,[
+    [<ore:paper>,<ore:dustWood>,<ore:paper>],
+    [<ore:paper>,<pyrotech:material:17>,<ore:paper>],
+    [<ore:stickWood>,<ore:gunpowder>,<ore:string>]]);
+recipes.addShaped(<minecraft:fireworks>*16,[
+    [<ore:paper>,<ore:dustThermite>,<ore:paper>],
+    [<ore:stickWood>,null,<ore:string>]]);
 //Sandstone
 recipes.addShaped(<minecraft:sandstone>,[
 [<minecraft:sand>,<minecraft:sand>],

@@ -24,4 +24,35 @@ recipes.addShaped(<pneumaticcraft:kerosene_lamp>,[
 	[null,<tfc:metal/sheet/brass>,null],
 	[<tfctech:metal/brass_rod>,<ore:blockGlass>,<tfctech:metal/brass_rod>],
 	[null,<tfc:metal/sheet/brass>,null]]);	
-    
+
+//Assembly System
+	#controller
+	recipes.remove(<pneumaticcraft:assembly_controller>);
+	recipes.addShaped(<pneumaticcraft:assembly_controller>,[
+	    [null,<immersiveengineering:material:27>,<tis3d:module_display>],
+	    [null,<ore:stickSteel>,null],
+	    [<pneumaticcraft:pressure_tube>,<ore:sheetDoubleSteel>,<pneumaticcraft:air_canister>]]);
+	#IO Unit
+	recipes.remove(<pneumaticcraft:assembly_io_unit>);
+	recipes.addShaped(<pneumaticcraft:assembly_io_unit>,[
+	    [<immersiveengineering:material:27>,<pneumaticcraft:pneumatic_cylinder>,<ore:tongsWroughtIron>],
+	    [<pneumaticcraft:pneumatic_cylinder>,<ore:stickSteel>,null],
+	    [<pneumaticcraft:air_canister>,<ore:sheetDoubleSteel>,<pneumaticcraft:pressure_tube>]]);
+	#Platform
+	recipes.remove(<pneumaticcraft:assembly_platform>);
+	recipes.addShaped(<pneumaticcraft:assembly_platform>,[
+	    [<pneumaticcraft:pneumatic_cylinder>,null,<pneumaticcraft:pneumatic_cylinder>],
+	    [<ore:stickSteel>,<pneumaticcraft:plastic:14>,<ore:stickSteel>],
+	    [<pneumaticcraft:air_canister>,<ore:sheetDoubleSteel>,<pneumaticcraft:pressure_tube>]]);
+	#Drill Unit
+	recipes.remove(<pneumaticcraft:assembly_drill>);
+	recipes.addShaped(<pneumaticcraft:assembly_drill>,[
+	    [<immersiveengineering:material:27>,<pneumaticcraft:pneumatic_cylinder>,<mystgears:drill>],
+	    [<pneumaticcraft:pneumatic_cylinder>,<ore:stickSteel>,null],
+	    [<pneumaticcraft:air_canister>,<ore:sheetDoubleSteel>,<pneumaticcraft:pressure_tube>]]);
+	#Laser Unit
+	recipes.remove(<pneumaticcraft:assembly_laser>);
+	recipes.addShaped(<pneumaticcraft:assembly_laser>,[
+	    [<immersiveengineering:material:27>,<pneumaticcraft:pneumatic_cylinder>,<embers:ember_emitter>],
+	    [<pneumaticcraft:pneumatic_cylinder>,<ore:stickSteel>,null],
+	    [<pneumaticcraft:air_canister>,<ore:sheetDoubleSteel>,<pneumaticcraft:pressure_tube>]]);		

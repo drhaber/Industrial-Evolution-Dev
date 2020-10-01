@@ -13,6 +13,7 @@
     "advancedrocketry:alienwood:0": "advancedrocketry:planks:0",
     "betternether:reeds_block:0": "betternether:reeds_slab_half:0",
     "betternether:stalagnate_planks:0": "betternether:stalagnate_planks_slab_half:0",
+    "evilcraft:undead_log:0": "evilcraft:undead_plank:0",
     "forestry:logs.0:0": "forestry:planks.0:0",
     "forestry:logs.0:1": "forestry:planks.0:1",
     "forestry:logs.0:2": "forestry:planks.0:2",
@@ -140,6 +141,8 @@
     "forestry:planks.vanilla.fireproof.0:4": "forestry:slabs.vanilla.fireproof.0:4",
     "forestry:planks.vanilla.fireproof.0:5": "forestry:slabs.vanilla.fireproof.0:5",
     "integrateddynamics:menril_log:0": "integrateddynamics:menril_planks:0",
+    "naturesaura:ancient_bark:0": "naturesaura:ancient_planks:0",
+    "naturesaura:ancient_log:0": "naturesaura:ancient_planks:0",
     "rustic:log:0": "rustic:planks:0",
     "rustic:log:1": "rustic:planks:1",
     "rustic:planks:0": "rustic:olive_slab_item:0",
@@ -163,6 +166,10 @@
     "tfc:wood/planks/spruce:0": "tfc:slab/wood/spruce:0",
     "tfc:wood/planks/sycamore:0": "tfc:slab/wood/sycamore:0",
     "tfc:wood/planks/white_cedar:0": "tfc:slab/wood/white_cedar:0",
-    "tfc:wood/planks/willow:0": "tfc:slab/wood/willow:0"
+    "tfc:wood/planks/willow:0": "tfc:slab/wood/willow:0",
+    "thaumcraft:log_greatwood:0": "thaumcraft:plank_greatwood:0",
+    "thaumcraft:log_silverwood:0": "thaumcraft:plank_silverwood:0",
+    "thaumcraft:plank_greatwood:0": "thaumcraft:slab_greatwood:0",
+    "thaumcraft:plank_silverwood:0": "thaumcraft:slab_silverwood:0"
   }
 }

@@ -42,6 +42,7 @@
         "forestry:tile.for.resources.copper",
         "immersiveengineering:tile.immersiveengineering.ore.copper",
         "libvulpes:material.Copper",
+        "nuclearcraft:tile.nuclearcraft.ore.copper",
         "railcraft:tile.railcraft.ore.metal.copper"
       ],
       "output": [
@@ -51,7 +52,8 @@
         "libvulpes:productnugget:4",
         "magicbees:orepart:3",
         "railcraft:nugget:1",
-        "tfc:metal/nugget/copper:0"
+        "tfc:metal/nugget/copper:0",
+        "thaumcraft:nugget:1"
       ]
     },
     "oreGold": {
@@ -86,7 +88,8 @@
         "agricraft:agri_nugget:3",
         "immersiveengineering:metal:29",
         "minecraft:iron_nugget:0",
-        "tfc:metal/nugget/wrought_iron:0"
+        "tfc:metal/nugget/wrought_iron:0",
+        "thaumcraft:nugget:0"
       ]
     },
     "oreLead": {
@@ -94,6 +97,7 @@
       "langKey": [
         "embers:tile.ore_lead",
         "immersiveengineering:tile.immersiveengineering.ore.lead",
+        "nuclearcraft:tile.nuclearcraft.ore.lead",
         "railcraft:tile.railcraft.ore.metal.lead"
       ],
       "output": [
@@ -101,7 +105,8 @@
         "embers:nugget_lead:0",
         "immersiveengineering:metal:22",
         "railcraft:nugget:3",
-        "tfc:metal/nugget/lead:0"
+        "tfc:metal/nugget/lead:0",
+        "thaumcraft:nugget:4"
       ]
     },
     "oreNickel": {
@@ -133,7 +138,8 @@
         "iceandfire:silver_nugget:0",
         "immersiveengineering:metal:23",
         "railcraft:nugget:4",
-        "tfc:metal/nugget/silver:0"
+        "tfc:metal/nugget/silver:0",
+        "thaumcraft:nugget:3"
       ]
     },
     "oreTin": {
@@ -142,6 +148,7 @@
         "embers:tile.ore_tin",
         "forestry:tile.for.resources.tin",
         "libvulpes:material.Tin",
+        "nuclearcraft:tile.nuclearcraft.ore.tin",
         "railcraft:tile.railcraft.ore.metal.tin"
       ],
       "output": [
@@ -150,7 +157,8 @@
         "libvulpes:productnugget:5",
         "magicbees:orepart:4",
         "railcraft:nugget:2",
-        "tfc:metal/nugget/tin:0"
+        "tfc:metal/nugget/tin:0",
+        "thaumcraft:nugget:2"
       ]
     },
     "oreUranium": {
