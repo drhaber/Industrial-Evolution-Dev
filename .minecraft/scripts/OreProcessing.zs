@@ -914,7 +914,11 @@ MoltenHandleClass(<liquid:dawnstone>)
     .withingots(<embers:ingot_dawnstone>)
     .withblock(<embers:block_dawnstone>)
     .withnugget(<embers:nugget_dawnstone>)
-    .finish();    
+    .finish();   
+MoltenHandleClass(<liquid:unknown>)
+    .withingots(<tfc:metal/ingot/unknown>)
+    .withnugget(<agricraft:agri_nugget:12>)
+    .finish();       
 
 #=============================================================================================================================================		
 //Extras
@@ -1280,6 +1284,10 @@ mods.pyrotech.Bloomery.createBloomeryBuilder("Iron_from_acid",<tfc:bloom/refined
     .addFailureItem(<immersiveengineering:material:7>, 1)
     .setLangKey("tile.oreIron;item.pyrotech.slag.unique")
     .register();
+
+//Unknown Metal
+
+
 
 //Pig Iron
 

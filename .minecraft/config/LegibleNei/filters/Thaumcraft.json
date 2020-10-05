@@ -1,4 +1,7 @@
 {thaumicaugmentation:[
     {keep-one:[[biome_selector],[]]};
-    ]
+    ],
+    thaumadditions:[
+        {keep-one:[[dna_sample],[]]};
+        ]
     }

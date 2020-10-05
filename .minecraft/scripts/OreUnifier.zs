@@ -63,6 +63,7 @@ for i in 0 to 16{
 <ore:sheetAluminium>.mirror(<ore:sheetAluminum>);
 <ore:wireAluminum>.addAll(<ore:wireAluminium>);
 <ore:wireAluminium>.mirror(<ore:wireAluminum>);
+<ore:stickAluminum>.addAll(<ore:stickAluminium>);
 <ore:stickAluminium>.mirror(<ore:stickAluminum>);
 //Aluminium Brass
 <ore:ingotAlubrass>.addAll(<ore:ingotAluminiumBrass>);
@@ -319,5 +320,7 @@ mods.jei.JEI.removeAndHide(<railcraft:gear:3>);
 <ore:foodPlum>.addItems([<forestry:fruits:4>,<tfc:food/plum>]);
 <ore:foodOlive>.addItems([<rustic:olives>,<tfc:food/olive>]);
 <ore:foodTomato>.addItems([<rustic:tomato>,<tfc:food/tomato>]);
-<ore:foodCookedegg>.addItems([<tfc:food/cooked_egg>,<foodexpansion:itemfriedegg>]);
+<ore:foodCookedegg>.addItems([<tfc:food/cooked_egg>,<foodexpansion:itemfriedegg>,<betteranimalsplus:fried_egg>]);
 <ore:foodWheatflour>.addItems([<nuclearcraft:flour>,<rustichromia:dust_flour>,<tfc:food/wheat_flour>]);
+<ore:foodVenisonraw>.addItems([<tfc:food/venison>]);
+<ore:foodVenisoncooked>.addItems([<tfc:food/cooked_venison>]);

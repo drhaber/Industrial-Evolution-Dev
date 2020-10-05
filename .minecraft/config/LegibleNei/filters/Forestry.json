@@ -1,5 +1,8 @@
 {careerbees:[
 {hide:[[ingredients],[2]]};
 {keep-one:[[ingredients],[1]]};
-]
+],
+forestry:[
+    {keep-one:[[bee_*],[]]};
+    ]
 }

@@ -66,7 +66,9 @@ mods.embers.Stamper.add(<minecraft:shears>,<liquid:tin>*144, <embers:stamp_flat>
 mods.embers.Stamper.add(<minecraft:diamond_sword>,<liquid:diamond>*1332, <embers:stamp_flat>,<botania:manasteelsword>);
 mods.embers.Stamper.add(<minecraft:diamond_pickaxe>,<liquid:diamond>*1998, <embers:stamp_flat>,<botania:manasteelpick>);
 mods.embers.Stamper.add(<minecraft:diamond_axe>,<liquid:diamond>*1998, <embers:stamp_flat>,<botania:manasteelaxe>);
-
+mods.aetherworks.MetalFormer.addRecipe(<botania:manasteelsword>, <liquid:diamond_nak>*148, <minecraft:diamond_sword>, 2600);
+mods.aetherworks.MetalFormer.addRecipe(<botania:manasteelpick>, <liquid:diamond_nak>*222, <minecraft:diamond_pickaxe>, 2600);
+mods.aetherworks.MetalFormer.addRecipe(<botania:manasteelaxe>, <liquid:diamond_nak>*222, <minecraft:diamond_axe>, 2600);
 //Diamond Shovel
 recipes.remove(<minecraft:diamond_shovel>);
 recipes.addShaped(<minecraft:diamond_shovel>,[
