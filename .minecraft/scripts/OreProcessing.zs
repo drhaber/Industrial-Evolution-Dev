@@ -44,7 +44,9 @@ moretweaker.railcraft.RockCrusher.removeAll();
     <tfc:metal/sheet/blue_steel>,<tfc:metal/sheet/red_steel>,<tfc:metal/sheet/antimony>,<tfc:metal/sheet/constantan>,
     <tfc:metal/sheet/electrum>,<tfc:metal/sheet/mithril>,<tfc:metal/sheet/invar>,<tfc:metal/sheet/aluminium>,<tfc:metal/sheet/aluminium_brass>,
     <tfc:metal/sheet/ardite>,<tfc:metal/sheet/cobalt>,<tfc:metal/sheet/manyullyn>,<tfc:metal/sheet/osmium>,<tfc:metal/sheet/titanium>,
-    <tfc:metal/sheet/tungsten>,<tfc:metal/sheet/tungsten_steel>,<embers:plate_dawnstone>] as IItemStack[];
+    <tfc:metal/sheet/tungsten>,<tfc:metal/sheet/tungsten_steel>,<embers:plate_dawnstone>,<thaumadditions:mithrillium_plate>,
+    <thaumadditions:adaminite_plate>,<thaumadditions:mithminite_plate>,<thaumcraft:plate:2>,<thaumcraft:plate:3>,
+    <advancedrocketry:productplate>,<advancedrocketry:productplate:1>,<libvulpes:productplate:3>,<libvulpes:productplate:10>] as IItemStack[];
     for sheet in sheets{
     mods.nuclearcraft.pressurizer.removeRecipeWithOutput(sheet);
     }

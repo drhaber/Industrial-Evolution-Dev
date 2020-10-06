@@ -69,6 +69,8 @@ mods.embers.Stamper.add(<minecraft:diamond_axe>,<liquid:diamond>*1998, <embers:s
 mods.aetherworks.MetalFormer.addRecipe(<botania:manasteelsword>, <liquid:diamond_nak>*148, <minecraft:diamond_sword>, 2600);
 mods.aetherworks.MetalFormer.addRecipe(<botania:manasteelpick>, <liquid:diamond_nak>*222, <minecraft:diamond_pickaxe>, 2600);
 mods.aetherworks.MetalFormer.addRecipe(<botania:manasteelaxe>, <liquid:diamond_nak>*222, <minecraft:diamond_axe>, 2600);
+mods.aetherworks.MetalFormer.addRecipe(<tfc:metal/saw_blade/manyullyn>, <liquid:diamond_nak>*74, <contenttweaker:diamond_saw_head>, 2600);
+
 //Diamond Shovel
 recipes.remove(<minecraft:diamond_shovel>);
 recipes.addShaped(<minecraft:diamond_shovel>,[

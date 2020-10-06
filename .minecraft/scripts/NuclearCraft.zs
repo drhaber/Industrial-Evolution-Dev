@@ -14,3 +14,8 @@ recipes.addShaped(<nuclearcraft:part:13>,[
 	[<contenttweaker:glass_fibre>,<ore:dustCoal>,<contenttweaker:glass_fibre>],
 	[<contenttweaker:glass_fibre>,<ore:dustSilicon>,<contenttweaker:glass_fibre>],
 	[<contenttweaker:glass_fibre>,<ore:dustCoal>,<contenttweaker:glass_fibre>]]);
+
+recipes.remove(<nuclearcraft:part:0>);
+recipes.remove(<nuclearcraft:part:1>);
+recipes.remove(<nuclearcraft:part:2>);
+recipes.remove(<nuclearcraft:part:3>);

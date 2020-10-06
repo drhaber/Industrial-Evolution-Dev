@@ -113,6 +113,17 @@ RollingMachine.addShaped(<contenttweaker:tkt>,[[<tfc:metal/sheet/aluminium>,null
 
 //Bees Wax
 furnace.addRecipe(<rustic:beeswax>, <forestry:beeswax>);
+
+//Comforts
+recipes.remove(<comforts:sleeping_bag:*>);
+recipes.addShaped(<comforts:sleeping_bag:0>,[
+    [<moarboats:rope>,null,<moarboats:rope>],
+    [<ore:clothHighQuality>,<ore:clothHighQuality>,<ore:clothHighQuality>]]);
+recipes.remove(<comforts:hammock:*>);
+recipes.addShaped(<comforts:hammock:0>,[
+    [<ore:stickWood>,<hooked:microcrafting:1>,<ore:stickWood>],
+    [<ore:stickWood>,<ore:clothHighQuality>,<ore:stickWood>],
+    [<ore:stickWood>,<hooked:microcrafting:1>,<ore:stickWood>]]);
 #=============================================================================================================================================		
 /*
 //Colored Water 
@@ -256,6 +267,9 @@ recipes.addShaped(<rustic:golden_lantern>,[
 	[null,<tfc:metal/sheet/gold>,null],
 	[<tfctech:metal/gold_rod>,<ore:dustGlowstone>,<tfctech:metal/gold_rod>],
 	[<tfc:metal/sheet/gold>,<ore:torch>,<tfc:metal/sheet/gold>]]);	
+
+//Rustichromatica
+recipes.remove(<rustichromia:plate_wood>);
 #=============================================================================================================================================		
 //Marble
 mods.terrafirmacraft.Barrel.addRecipe("Quark_marble", <tfc:raw/marble>, <liquid:bleach>*50, <quark:marble>, 4);

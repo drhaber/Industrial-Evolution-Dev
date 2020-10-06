@@ -10,6 +10,13 @@ import mods.cyclicmagic.Melter;
 
 Melter.removeShapedRecipe("crystal", 1000);
 
+//Sleeping Mat
+recipes.remove(<cyclicmagic:sleeping_mat>);
+recipes.addShaped(<cyclicmagic:sleeping_mat>,[
+    [<ore:leather>,<ore:straw>]]);
+recipes.addShaped(<cyclicmagic:sleeping_mat>,[
+    [<ore:leather>,<ore:rawWool>]]);
+
 //Throwing Torch
 recipes.remove(<cyclicmagic:ender_torch>);
 recipes.addShapeless(<cyclicmagic:ender_torch>, [<ore:torch>,<ore:slimeball>]);

@@ -6,6 +6,9 @@ import crafttweaker.liquid.ILiquidStack;
 import moretweaker.railcraft.RollingMachine;
 
 
+//Plates
+recipes.remove(<emergingtechnology:plasticsheet>);
+
 //Bulbs
 
 recipes.remove(<emergingtechnology:purplebulb>); #UV

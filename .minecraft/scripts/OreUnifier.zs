@@ -5,11 +5,14 @@ import crafttweaker.item.IItemDefinition;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.mods.IMod;
 
+//Glass Shards
+<ore:shardGlass>.addItems([<pyrotech:material:32>,<tfc:glass_shard>]);
 //Clays
 <ore:fireClay>.add(<pyrotech:material:4>);
 //Smoke Emitters
 <ore:smokeEmitter>.addItems([<betternether:smoker>,<railcraft:equipment:3>,<quark:smoker>]);
-
+//Wool
+<ore:rawWool>.addItems([<rustichromia:cotton_wool>,<tfc:animal/product/wool>]);
 //titania 
 <ore:titania>.add(<contenttweaker:titania_powder>);
 <ore:dyeWhite>.add(<contenttweaker:titania_powder>);

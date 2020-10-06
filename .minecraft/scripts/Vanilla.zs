@@ -8,6 +8,27 @@ import mods.pyrotech.GraniteAnvil;
 import mods.pyrotech.CompactingBin;
 
 
+
+
+recipes.remove(<minecraft:golden_carrot>);
+
+//Dyed Items
+recipes.remove(<minecraft:wool:*>);
+recipes.remove(<minecraft:stained_hardened_clay:*>);
+recipes.remove(<minecraft:stained_hardened_clay:*>);
+recipes.remove(<minecraft:stained_glass:*>);
+recipes.remove(<minecraft:stained_glass_pane:*>);
+recipes.removeShaped(<minecraft:glass>, [
+	[<quark:glass_shards>,<quark:glass_shards>],
+	[<quark:glass_shards>,<quark:glass_shards>]]);
+
+//Beds
+recipes.remove(<minecraft:bed:*>);
+recipes.addShaped(<minecraft:bed:0>,[
+    [null,null,<ore:clothHighQuality>],
+    [<ore:clothHighQuality>,<ore:clothHighQuality>,<ore:rawWool>],
+    [<ore:stickWood>,<ore:lumber>,<ore:stickWood>]]);
+
 //Cobble Stone Slab
 recipes.addShaped(<minecraft:stone_slab:3>,[[<minecraft:cobblestone>,<minecraft:cobblestone>,<minecraft:cobblestone>]]);
 
