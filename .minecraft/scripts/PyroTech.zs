@@ -35,6 +35,8 @@ Campfire.blacklistSmeltingRecipes([<quark:cooked_crab_leg>,<quark:cooked_frog_le
 <pyrotech:rock:6>.displayName = "Sandstone Pepple";
 <pyrotech:rock:8>.displayName = "Limestone Pepple";
 
+mods.jei.JEI.hideCategory("pyrotech.worktable");
+
 PitKiln.removeAllRecipes();
 Bloomery.removeAllBloomeryRecipes();
 Bloomery.removeAllWitherForgeRecipes();

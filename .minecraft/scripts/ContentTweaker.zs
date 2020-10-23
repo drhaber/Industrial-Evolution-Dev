@@ -236,6 +236,10 @@ game.setLocalization("item.contenttweaker.soot.name", "Soot");
 var bauxitedust = VanillaFactory.createItem("bauxitedust");
 bauxitedust.register();
 game.setLocalization("item.contenttweaker.bauxitedust.name", "Bauxite Dust");
+//Iron Hook
+var iron_hook = VanillaFactory.createItem("iron_hook");
+iron_hook.register();
+game.setLocalization("item.contenttweaker.iron_hook.name", "Metal Hook");
 
 //AE2 Inscriber Casts
 	//Material Calculation Processor Cast

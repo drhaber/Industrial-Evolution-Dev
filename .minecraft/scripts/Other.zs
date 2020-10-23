@@ -22,19 +22,18 @@ recipes.remove(<railcraft:tool_magnifying_glass>);
 recipes.addShaped(<railcraft:tool_magnifying_glass>,[
 	[null,<advancedrocketry:lens>],
 	[<minecraft:stick>,null]]);	
-//Hook Rename
-<jaff:iron_hook>.displayName = "Metal Hook";
-recipes.remove(<jaff:iron_hook>);
-mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx1_tin", <tfctech:metal/tin_strip>, <jaff:iron_hook>, 1, "general","BEND_NOT_LAST","HIT_NOT_LAST","HIT_LAST");
-mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx1_lead", <tfctech:metal/lead_strip>, <jaff:iron_hook>, 1, "general","BEND_NOT_LAST","HIT_NOT_LAST","HIT_LAST");
-mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx1_zinc", <tfctech:metal/zinc_strip>, <jaff:iron_hook>, 1, "general","BEND_NOT_LAST","HIT_NOT_LAST","HIT_LAST");
+//Hook Recipes
 
-mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx3", <tfctech:metal/wrought_iron_strip>, <jaff:iron_hook>*3, 3, "general","BEND_NOT_LAST","HIT_NOT_LAST","HIT_LAST");
+mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx1_tin", <tfctech:metal/tin_strip>, <contenttweaker:iron_hook>, 1, "general","BEND_NOT_LAST","HIT_NOT_LAST","HIT_LAST");
+mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx1_lead", <tfctech:metal/lead_strip>, <contenttweaker:iron_hook>, 1, "general","BEND_NOT_LAST","HIT_NOT_LAST","HIT_LAST");
+mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx1_zinc", <tfctech:metal/zinc_strip>, <contenttweaker:iron_hook>, 1, "general","BEND_NOT_LAST","HIT_NOT_LAST","HIT_LAST");
 
-mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx4_steel", <tfctech:metal/steel_strip>, <jaff:iron_hook>*4, 4, "general","BEND_NOT_LAST","HIT_NOT_LAST","HIT_LAST");
-mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx4_aluminium", <tfctech:metal/aluminium_strip>, <jaff:iron_hook>*4, 4, "general","BEND_NOT_LAST","HIT_NOT_LAST","HIT_LAST");
+mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx3", <tfctech:metal/wrought_iron_strip>, <contenttweaker:iron_hook>*3, 3, "general","BEND_NOT_LAST","HIT_NOT_LAST","HIT_LAST");
 
-mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx6", <tfctech:metal/titanium_strip>, <jaff:iron_hook>*6, 6, "general","BEND_NOT_LAST","HIT_NOT_LAST","HIT_LAST");		
+mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx4_steel", <tfctech:metal/steel_strip>, <contenttweaker:iron_hook>*4, 4, "general","BEND_NOT_LAST","HIT_NOT_LAST","HIT_LAST");
+mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx4_aluminium", <tfctech:metal/aluminium_strip>, <contenttweaker:iron_hook>*4, 4, "general","BEND_NOT_LAST","HIT_NOT_LAST","HIT_LAST");
+
+mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx6", <tfctech:metal/titanium_strip>, <contenttweaker:iron_hook>*6, 6, "general","BEND_NOT_LAST","HIT_NOT_LAST","HIT_LAST");		
 
 //Collector
 recipes.remove(<inspirations:collector>);
@@ -344,21 +343,21 @@ recipes.addShaped(<hooked:hook>,[
 
 #Iron
 recipes.addShaped(<hooked:hook:1>,[
-	[null,<jaff:iron_hook>,<ore:pickaxeIron>],
-	[null,<hooked:microcrafting:3>,<jaff:iron_hook>],
+	[null,<contenttweaker:iron_hook>,<ore:pickaxeIron>],
+	[null,<hooked:microcrafting:3>,<contenttweaker:iron_hook>],
 	[Handle,null,null]]);
 
 #Diamond
 recipes.addShaped(<hooked:hook:2>,[
-	[<jaff:iron_hook>,<yurtmod:tent_upgrade_diamond>,<minecraft:diamond_pickaxe>],
+	[<contenttweaker:iron_hook>,<yurtmod:tent_upgrade_diamond>,<minecraft:diamond_pickaxe>],
 	[null,<hooked:microcrafting:3>,<yurtmod:tent_upgrade_diamond>],
-	[Handle,null,<jaff:iron_hook>]]);
+	[Handle,null,<contenttweaker:iron_hook>]]);
 
 #Redstone
 recipes.addShaped(<hooked:hook:3>,[
-	[<jaff:iron_hook>,<tfctech:wiredraw/winch>,<tfc:metal/pick/red_steel>],
+	[<contenttweaker:iron_hook>,<tfctech:wiredraw/winch>,<tfc:metal/pick/red_steel>],
 	[<projectred-core:resource_item:410>,<immersiveengineering:wirecoil:5>,<tfctech:wiredraw/winch>],
-	[Handle,<projectred-core:resource_item:410>,<jaff:iron_hook>]]);
+	[Handle,<projectred-core:resource_item:410>,<contenttweaker:iron_hook>]]);
 
 #Ender
 recipes.addShaped(<hooked:hook:4>,[
@@ -513,6 +512,10 @@ recipes.addShaped(VanillaBoats[i],[
 	[VanillaPlanks.makeStack(i),null,VanillaPlanks.makeStack(i)],
 	[VanillaPlanks.makeStack(i),VanillaPlanks.makeStack(i),VanillaPlanks.makeStack(i)]]);	
 }	
+#=============================================================================================================================================		
+//Sign Post
+recipes.removeByMod("signpost");	
+
 #=============================================================================================================================================		
 //Applied Energistics
 recipes.remove(<appliedenergistics2:part:140>); #quartz cable
@@ -780,6 +783,7 @@ recipes.addShaped(<cfm:candle>,[
 	[null,<tfc:metal/double_ingot/wrought_iron>,null]]);
 
 //Crates 	
+<cfm:crate>.displayName = "Wood Crate";
 recipes.remove(<cfm:crate>);
 recipes.addShaped(<cfm:crate>,[
 	[<ore:support>,<ore:lumber>,<ore:support>],

@@ -3,5 +3,8 @@
     ],
     thaumadditions:[
         {keep-one:[[dna_sample],[]]};
-        ]
+        ],
+    planarartifice:[
+        {hide:[[teleporter,teleporter_placeholder],[]]};
+    ] 
     }

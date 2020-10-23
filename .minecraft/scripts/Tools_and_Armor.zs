@@ -105,35 +105,30 @@ for i, TR in toolRecipes{
 #<tcomplement:steel_helmet>,<tcomplement:steel_chestplate>,<tcomplement:steel_leggings>,<tcomplement:steel_boots>
 
 //Fishing RODS
-<minecraft:fishing_rod>.displayName = "Void Fishing Rod";	
+recipes.remove(<minecraft:fishing_rod>);
 recipes.addShaped(<minecraft:fishing_rod>,[
-	[null,null,<ore:dreamwoodTwig>],
-	[null,<ore:dreamwoodTwig>,<ore:manaString>],
-	[<ore:stickWood>,null,<jaff:iron_hook>]]);
-recipes.remove(<jaff:wooden_fishing_rod>);
-recipes.addShaped(<jaff:wooden_fishing_rod>,[
 	[null,null,<ore:stickWood>],
 	[null,<ore:stickWood>,<ore:string>],
-	[<ore:stickWood>,null,<jaff:iron_hook>]]);
-recipes.remove(<jaff:iron_fishing_rod>);
-recipes.addShaped(<jaff:iron_fishing_rod>,[
+	[<ore:stickWood>,null,<contenttweaker:iron_hook>]]);
+recipes.remove(<aquaculture:iron_fishing_rod>);
+recipes.addShaped(<aquaculture:iron_fishing_rod>,[
 	[null,null,<ore:stickIron>],
 	[null,<ore:stickIron>,<ore:string>],
-	[<ore:stickWood>,null,<jaff:iron_hook>]]);
-recipes.remove(<jaff:golden_fishing_rod>);
-recipes.addShaped(<jaff:golden_fishing_rod>,[
+	[<ore:stickWood>,null,<contenttweaker:iron_hook>]]);
+recipes.remove(<aquaculture:gold_fishing_rod>);
+recipes.addShaped(<aquaculture:gold_fishing_rod>,[
 	[null,null,<ore:stickGold>],
 	[null,<ore:stickGold>,<ore:string>],
-	[<ore:stickWood>,null,<jaff:iron_hook>]]);
-recipes.remove(<jaff:diamond_fishing_rod>);
-mods.embers.Stamper.add(<jaff:diamond_fishing_rod>,<liquid:diamond>*1332, <embers:stamp_flat>,<jaff:golden_fishing_rod>);
+	[<ore:stickWood>,null,<contenttweaker:iron_hook>]]);
+recipes.remove(<aquaculture:diamond_fishing_rod>);
+#mods.embers.Stamper.add(<aquaculture:diamond_fishing_rod>,<liquid:diamond>*1332, <embers:stamp_flat>,<aquaculture:gold_fishing_rod>);
+mods.aetherworks.MetalFormer.addRecipe(<aquaculture:gold_fishing_rod>, <liquid:diamond_nak>*148, <aquaculture:diamond_fishing_rod>, 2600);
 
-<pyrotech:crude_fishing_rod>.displayName = "Crude Void Fishing Rod";	
 recipes.remove(<pyrotech:crude_fishing_rod>);
 recipes.addShaped(<pyrotech:crude_fishing_rod>,[
-	[null,null,<ore:livingwoodTwig>],
-	[null,<ore:livingwoodTwig>,<ore:manaString>],
-	[<ore:livingwoodTwig>,null,<ore:dustVoid>]]);
+	[null,null,<ore:stickWood>],
+	[null,<ore:stickWood>,<ore:string>],
+	[<ore:stickWood>,null,<inspirations:wooden_crook>]]);
 
 #=============================================================================================================================================		
 

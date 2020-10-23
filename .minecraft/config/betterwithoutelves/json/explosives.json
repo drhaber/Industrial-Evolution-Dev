@@ -1,0 +1,26 @@
+{
+  "entities": [
+    {
+      "entity": "net.minecraft.entity.monster.EntityCreeper",
+      "condition": "betterwithoutelves.conditions.ConditionCreeper",
+      "min_force": 3.0,
+      "max_force": 6.0
+    },
+    {
+      "entity": "net.minecraft.entity.item.EntityMinecartTNT",
+      "condition": "betterwithoutelves.conditions.ConditionTNTCart",
+      "min_force": -1.0,
+      "max_force": 4.0
+    },
+    {
+      "entity": "net.minecraft.entity.item.EntityTNTPrimed",
+      "force": 4.0
+    },
+    {
+      "entity": "betterwithmods.common.entity.EntityDynamite",
+      "force": 1.5
+    }
+  ],
+  "_comment": "This number converts explosion force to percentile roll. Example: (default)TNT * 0.01 = 4% chance for bonus loot.",
+  "percentile": 0.01
+}

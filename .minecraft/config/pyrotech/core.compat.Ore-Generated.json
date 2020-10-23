@@ -38,10 +38,12 @@
     "oreCopper": {
       "slagColor": "ffaa1c",
       "langKey": [
+        "better_diving:item.copper_ore",
         "embers:tile.ore_copper",
         "forestry:tile.for.resources.copper",
         "immersiveengineering:tile.immersiveengineering.ore.copper",
         "libvulpes:material.Copper",
+        "mysticalworld:tile.copper_ore",
         "nuclearcraft:tile.nuclearcraft.ore.copper",
         "railcraft:tile.railcraft.ore.metal.copper"
       ],
@@ -51,6 +53,7 @@
         "immersiveengineering:metal:20",
         "libvulpes:productnugget:4",
         "magicbees:orepart:3",
+        "mysticalworld:copper_nugget:0",
         "railcraft:nugget:1",
         "tfc:metal/nugget/copper:0",
         "thaumcraft:nugget:1"
@@ -82,6 +85,7 @@
       "langKey": [
         "cyclicmagic:tile.end_iron_ore",
         "cyclicmagic:tile.nether_iron_ore",
+        "industrialrenewal:item.industrialrenewal.chunk_hematite",
         "minecraft:tile.oreIron"
       ],
       "output": [
@@ -95,6 +99,7 @@
     "oreLead": {
       "slagColor": "95afee",
       "langKey": [
+        "better_diving:item.lead",
         "embers:tile.ore_lead",
         "immersiveengineering:tile.immersiveengineering.ore.lead",
         "nuclearcraft:tile.nuclearcraft.ore.lead",
@@ -127,9 +132,11 @@
     "oreSilver": {
       "slagColor": "e8f6fd",
       "langKey": [
+        "better_diving:item.silver_ore",
         "embers:tile.ore_silver",
         "iceandfire:tile.iceandfire.silverOre",
         "immersiveengineering:tile.immersiveengineering.ore.silver",
+        "mysticalworld:tile.silver_ore",
         "railcraft:tile.railcraft.ore.metal.silver"
       ],
       "output": [
@@ -137,6 +144,7 @@
         "embers:nugget_silver:0",
         "iceandfire:silver_nugget:0",
         "immersiveengineering:metal:23",
+        "mysticalworld:silver_nugget:0",
         "railcraft:nugget:4",
         "tfc:metal/nugget/silver:0",
         "thaumcraft:nugget:3"

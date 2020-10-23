@@ -76,6 +76,9 @@ mods.immersiveengineering.CokeOven.addRecipe( <immersiveengineering:material:6>,
 //Pitch Blend
 mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust_oxide:1>, <tfc:ore/pitchblende>, 2048, <nuclearcraft:dust_oxide:1>, 0.25);
 
+//Adding Metals
+#<tfcmetal:Gravitite>
+
 
 val AlloyedIngots = [<immersiveengineering:metal:6>,<immersiveengineering:metal:7>,<railcraft:ingot:7>,<forestry:ingot_bronze>,<railcraft:ingot:9>,<projectred-core:resource_item:103>
 ] as IItemStack[];
@@ -239,6 +242,8 @@ zenClass MoltenHandleClass {
             return;
         }
         mods.embers.Melter.remove(castingMetal*144);
+        mods.embers.Melter.remove(castingMetal*16);
+
         
         if(!isNull(axeHead)){
             mods.embers.Stamper.add(axeHead,castingMetal*144, <tfc:ceramics/fired/mold/axe_head>,null);
@@ -312,6 +317,7 @@ zenClass MoltenHandleClass {
             Packager.addRecipe(ingots*9, block);
         } 
          if(!isNull(nugget)){
+            mods.embers.Melter.add(castingMetal*16, nugget);
             mods.embers.Stamper.add(nugget,castingMetal*16,<soot:stamp_nugget>,null);
             GraniteAnvil.addRecipe(nugget.name,nugget*9,ingots,4,"hammer",true);
             CompactingBin.addRecipe(nugget.name,ingots,nugget,9,true);
@@ -319,6 +325,7 @@ zenClass MoltenHandleClass {
             Packager.removeRecipe(nugget);
             Packager.addRecipe(ingots, nugget*9);
             Packager.addRecipe(nugget*9, ingots);
+            mods.pyrotech.BrickCrucible.addRecipe(nugget.name,castingMetal*16,nugget,2400);
         }
         if(!isNull(scrap)){
             mods.embers.Melter.add(castingMetal*144, scrap);
@@ -919,9 +926,39 @@ MoltenHandleClass(<liquid:dawnstone>)
     .finish();   
 MoltenHandleClass(<liquid:unknown>)
     .withingots(<tfc:metal/ingot/unknown>)
-    .withnugget(<agricraft:agri_nugget:12>)
+    #.withnugget(<agricraft:agri_nugget:12>) #moved lower to fix weird removal error
     .finish();       
-
+MoltenHandleClass(<liquid:thaumium>)
+	.withaxeHead(<tfc:metal/axe_head/thaumium>)
+	.withpropickHead(<tfc:metal/propick_head/thaumium>)
+	.withpickHead(<tfc:metal/pick_head/thaumium>)
+	.withshovelHead(<tfc:metal/shovel_head/thaumium>)
+	.withhoeHead(<tfc:metal/hoe_head/thaumium>)
+	.withchiselHead(<tfc:metal/chisel_head/thaumium>)
+	.withmaceHead(<tfc:metal/mace_head/thaumium>)
+	.withjavelinHead(<tfc:metal/javelin_head/thaumium>)
+	.withswordBlade(<tfc:metal/sword_blade/thaumium>)
+	.withsawBlade(<tfc:metal/saw_blade/thaumium>)
+	.withknifePlate(<tfc:metal/knife_blade/thaumium>)
+	.withscythePlate(<tfc:metal/scythe_blade/thaumium>)
+	.withhammerHead(<tfc:metal/hammer_head/thaumium>)
+    .withgears(<tfctech:metal/thaumium_rackwheel>)
+    .withsheets(<tfc:metal/sheet/thaumium>)
+    .withingots(<tfc:metal/ingot/thaumium>)
+    .withblock(<thaumcraft:metal_thaumium>)
+    .withdust(<tfc:metal/dust/thaumium>)
+    .withnugget(<tfc:metal/nugget/thaumium>)
+    .withscrap(<tfc:metal/scrap/thaumium>)
+    .finish();
+MoltenHandleClass(<liquid:void_metal>)
+    .withgears(<tfctech:metal/void_metal_rackwheel>)
+    .withsheets(<tfc:metal/sheet/void_metal>)
+    .withingots(<tfc:metal/ingot/void_metal>)
+    .withblock(<thaumcraft:metal_void>)
+    .withdust(<tfc:metal/dust/void_metal>)
+    .withnugget(<tfc:metal/nugget/void_metal>)
+    .withscrap(<tfc:metal/scrap/void_metal>)
+    .finish(); 
 #=============================================================================================================================================		
 //Extras
 #mods.embers.Stamper.add(IItemStack <output>,ILiquidStack <liquid>,IIngredient <stamp>,IIngredient <input>);
@@ -1255,8 +1292,16 @@ OreGrindingandSoaking(<tfc:ore/small/wolframite>)
     mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:sodium_hydroxide_solution>*500, <tfc:ore/small/bauxite>*10, 2, 448.0, <liquid:sodium_aluminate>*144);
     mods.nuclearcraft.electrolyser.addRecipe(<liquid:sodium_aluminate>*144, <liquid:alumina>*144, <liquid:red_mud>*144, null, null);
     mods.embers.Melter.add(<liquid:aluminium>*144, <tfctech:metal/aluminium_long_rod>);
-
-
+/*
+//Unknown
+    mods.embers.Melter.add(<liquid:unknown>*16, <agricraft:agri_nugget:12>);
+    mods.embers.Stamper.add(<agricraft:agri_nugget:12>,<liquid:unknown>*16,<soot:stamp_nugget>,null);
+    GraniteAnvil.addRecipe(<agricraft:agri_nugget:12>.name,<agricraft:agri_nugget:12>*9,<tfc:metal/ingot/unknown>,4,"hammer",true);
+    CompactingBin.addRecipe(<agricraft:agri_nugget:12>.name,<tfc:metal/ingot/unknown>,<agricraft:agri_nugget:12>,9,true);
+    Packager.addRecipe(<tfc:metal/ingot/unknown>, <agricraft:agri_nugget:12>*9);
+    Packager.addRecipe(<agricraft:agri_nugget:12>*9, <tfc:metal/ingot/unknown>);
+    mods.pyrotech.BrickCrucible.addRecipe(<agricraft:agri_nugget:12>.name,<liquid:unknown>*16,<agricraft:agri_nugget:12>,2400);
+*/
 //Titanium
     #mods.terrafirmacraft.ItemRegistry.registerItemMetal(<libvulpes:ore0:8>, "TITANIUM", 100, true);
     #Rutile to Titania ADVrocketry XML files
@@ -1286,10 +1331,6 @@ mods.pyrotech.Bloomery.createBloomeryBuilder("Iron_from_acid",<tfc:bloom/refined
     .addFailureItem(<immersiveengineering:material:7>, 1)
     .setLangKey("tile.oreIron;item.pyrotech.slag.unique")
     .register();
-
-//Unknown Metal
-
-
 
 //Pig Iron
 

@@ -6,7 +6,7 @@ val dyes2 = [<ore:dyeBlack>,<ore:dyeRed>,<ore:dyeGreen>,<ore:dyeBrown>,<ore:dyeB
 <ore:dyePink>,<ore:dyeLime>,<ore:dyeYellow>,<ore:dyeLightBlue>,<ore:dyeMagenta>,<ore:dyeOrange>,<ore:dyeWhite>] as IOreDictEntry[];
 val Fl = <fairylights:light>.definition;
 val Illumars = <projectred-core:resource_item>.definition;
-val hook = <jaff:iron_hook>;
+val hook = <contenttweaker:iron_hook>;
 
 for i in 0 to 16{
 val Ill = Illumars.makeStack(515-i);

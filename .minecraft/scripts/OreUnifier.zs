@@ -42,12 +42,14 @@ import crafttweaker.mods.IMod;
 <ore:blockGlass>.add(<contenttweaker:dirtyglass>);
 //woodPulp
 <ore:pulpWood>.remove(<emergingtechnology:paperpulp>);
-//Beds
+//Wood Fishing Rod
+<ore:woodFishingrod>.addItems([<aquaculture:fishing_rod>,<minecraft:fishing_rod>]);
+//Carpet
 val carpets = <minecraft:carpet>.definition;
 for i in 0 to 16{
 <ore:carpet>.add(carpets.makeStack(i));
 }
-//Carpet
+//Beds
 val beds = <minecraft:bed>.definition;
 for i in 0 to 16{
 <ore:bed>.add(beds.makeStack(i));
@@ -102,6 +104,24 @@ for i in 0 to 16{
 <ore:sleeveBrass>.add(<railcraft:gear:3>);
 //Transistors
 <ore:componetTransistor>.addItems([<pneumaticcraft:transistor>,<opencomputers:material:6>]);
+//Void Metal
+<ore:dustVoid>.remove(<railcraft:dust:7>);
+
+<ore:ingotVoidMetal>.addAll(<ore:ingotVoid>);
+<ore:ingotVoid>.mirror(<ore:ingotVoidMetal>);
+
+<ore:plateVoidMetal>.addAll(<ore:plateVoid>);
+<ore:plateVoid>.mirror(<ore:plateVoidMetal>);
+
+<ore:gearVoidMetal>.addAll(<ore:gearVoid>);
+<ore:gearVoid>.mirror(<ore:gearVoidMetal>);
+
+<ore:blockVoidMetal>.addAll(<ore:blockVoid>);
+<ore:blockVoid>.addAll(<ore:blockVoidMetal>);
+
+<ore:nuggetVoidMetal>.addAll(<ore:nuggetVoid>);
+<ore:nuggetVoid>.addAll(<ore:nuggetVoidMetal>);
+
 //Silicon
 <ore:itemSilicon>.remove(<libvulpes:productingot:3>);
 <ore:waferSilicon>.remove(<libvulpes:productingot:3>);

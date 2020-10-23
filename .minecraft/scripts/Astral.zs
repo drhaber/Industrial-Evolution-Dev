@@ -1,3 +1,13 @@
+import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
+import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.mods.IMod;
+import crafttweaker.liquid.ILiquidStack;
+import mods.terrafirmacraft.Heating;
+import mods.terrafirmacraft.ItemRegistry;
+
+
+
 mods.astralsorcery.StarlightInfusion.addInfusion(<tfc:gem/beryl:2>, <astralsorcery:itemcraftingcomponent:4>, false, 0.7, 200);
 mods.astralsorcery.StarlightInfusion.addInfusion(<tfc:metal/ingot/unknown>, <astralsorcery:itemcraftingcomponent:1>, true, 1, 200);
 //StarMetal Crafting

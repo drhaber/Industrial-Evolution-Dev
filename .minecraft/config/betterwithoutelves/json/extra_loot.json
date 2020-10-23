@@ -1,0 +1,13 @@
+{
+  "extras": [
+    {
+      "name": "example",
+      "_comment": "The name of this item makes it not generate, it's only here for reference. Item structure follows recipe format.",
+      "item": {
+        "item": "minecraft:gold_ingot",
+        "data": 0,
+        "count": 1
+      }
+    }
+  ]
+}

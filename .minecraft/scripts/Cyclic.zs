@@ -38,9 +38,9 @@ recipes.addShaped(<cyclicmagic:auto_packager>,[
 //Battery    
 recipes.remove(<cyclicmagic:battery>);
 recipes.addShaped(<cyclicmagic:battery>,[
-	[<ore:ingotBrick>,<cyclicmagic:energy_pipe>,<ore:ingotBrick>],
-	[<cyclicmagic:energy_pipe>,<immersiveengineering:metal_device0:1>,<cyclicmagic:energy_pipe>],
-	[<ore:ingotBrick>,<cyclicmagic:energy_pipe>,<ore:ingotBrick>]]);
+	[<ore:ingotBrick>,<immersiveengineering:metal_device0>,<ore:ingotBrick>],
+	[<immersiveengineering:metal_device0>,<immersiveengineering:metal_device1:5>,<immersiveengineering:metal_device0>],
+	[<ore:ingotBrick>,<immersiveengineering:metal_device0>,<ore:ingotBrick>]]);
 
 //Auto Fisher
 recipes.remove(<cyclicmagic:block_fishing>);

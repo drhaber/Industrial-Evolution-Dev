@@ -55,5 +55,12 @@
 		[
 		"minecraft"
 		]
+	},
+	{
+		"entryName" : "woodFishingrod",
+		"modIdPriorityList" :
+		[
+		"minecraft"
+		]
 	}	
 ]

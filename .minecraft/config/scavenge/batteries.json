@@ -6,7 +6,7 @@
 			"type":
 			{
 				"type": "block",
-				"name": "immersiveengineering:metal_device0"
+				"name": "cyclicmagic:battery"
 			},
 			"clicktype": "right",
 			"properties":

@@ -126,10 +126,12 @@
     },
     "mysticalworld:world_guide": {
       "viewedEntries": [
-        "mysticalworld:cuisine/suqid"
+        "mysticalworld:cuisine/suqid",
+        "mysticalworld:ores/amethyst"
       ],
       "bookmarks": [],
       "history": [
+        "mysticalworld:ores/amethyst",
         "mysticalworld:cuisine/suqid"
       ],
       "completedManualQuests": []
@@ -151,6 +153,22 @@
       "bookmarks": [],
       "history": [
         "tfc:getting_started/intro"
+      ],
+      "completedManualQuests": []
+    },
+    "endreborn:book": {
+      "viewedEntries": [
+        "endreborn:tools/end_forge",
+        "endreborn:world/observatory",
+        "endreborn:being/watcher",
+        "endreborn:being/eguard"
+      ],
+      "bookmarks": [],
+      "history": [
+        "endreborn:being/eguard",
+        "endreborn:being/watcher",
+        "endreborn:world/observatory",
+        "endreborn:tools/end_forge"
       ],
       "completedManualQuests": []
     }

@@ -55,12 +55,14 @@ recipes.remove(<ceramics:unfired_clay:8>);
 recipes.remove(<ceramics:clay_barrel_unfired>);
 recipes.remove(<ceramics:clay_barrel_unfired:1>);
 
+mods.terrafirmacraft.ClayKnapping.removeRecipe(<ceramics:unfired_clay>);
 mods.terrafirmacraft.ClayKnapping.addRecipe("bucket_Knap",<ceramics:unfired_clay>, 
 																	"X   X",
 																	"X   X",
 																	"X   X",
 																	"XX XX",
 																	" XXX "); 
+mods.terrafirmacraft.ClayKnapping.removeRecipe(<ceramics:unfired_clay:1>);
 mods.terrafirmacraft.ClayKnapping.addRecipe("shears_Knap",<ceramics:unfired_clay:1>, 
 																	"XX XX",
 																	"XX XX",
