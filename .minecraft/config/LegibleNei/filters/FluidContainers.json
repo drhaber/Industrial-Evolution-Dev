@@ -13,5 +13,14 @@ waterflasks:[
 			],
 ceramics:[
    {hide:[[clay_bucket],[],['*FluidName*']]};
-		 ]
+		 ],
+erebus:[
+   {hide:[[bambucket],[],['*FluidName*']]};
+		 ],		 
+thebetweenlands:[
+	{hide:[[bl_bucket],[*],['*FluidName*']]};
+	],
+ic2:[
+	{hide:[[fluid_cell],[*],['*FluidName*']]};
+	]	
 }

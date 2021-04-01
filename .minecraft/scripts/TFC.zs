@@ -118,12 +118,12 @@ recipes.addShaped(<tfctech:metal/steel_sleeve>*4,[
 //Soot
 #mods.terrafirmacraft.Quern.addRecipe("Soot", <ore:charcoal>, <contenttweaker:soot>*4);
 //Saw Dust
-mods.terrafirmacraft.Quern.addRecipe("Sawdust", <ore:logWood>, <tfctech:powder/wood>*4);
+mods.terrafirmacraft.Quern.addRecipe("Sawdust", <ore:logWood>, <thermalfoundation:material:800>*4);
 //Flux from Soot and Potash
 recipes.addShapeless(<tfc:powder/flux>*2,[<contenttweaker:soot>,<tfctech:powder/potash>,<botania:pestleandmortar>.giveBack()]);							
 
 //Ash Stack Size
-<tfctech:powder/ash>.maxStackSize = 64;
+#<tfctech:powder/ash>.maxStackSize = 64;
 //TFC Coal Stack Size
 <tfc:ore/bituminous_coal>.maxStackSize = 32;
 //Silicon

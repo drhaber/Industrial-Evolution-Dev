@@ -39,3 +39,6 @@ recipes.addShaped(<integrateddynamics:energy_battery>.withTag({energy: 256}),[
 	[<integrateddynamics:crystalized_menril_chunk>,<railcraft:charge:1>,<integrateddynamics:crystalized_menril_chunk>],
 	[<integrateddynamics:crystalized_menril_chunk>,<libvulpes:battery:1>,<integrateddynamics:crystalized_menril_chunk>],
 	[<integrateddynamics:crystalized_menril_chunk>,<ore:lumber>,<integrateddynamics:crystalized_menril_chunk>]]);	
+
+//Menril Seed
+#recipes.addShapeless(<dynamictreesintegrateddynamics:menrilseed>, [<integrateddynamics:menril_berries>,<ore:knife>.transformDamage(1)]);

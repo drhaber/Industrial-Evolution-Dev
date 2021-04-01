@@ -16,8 +16,8 @@ val GunBarrel = <immersiveengineering:material:14>; # Steel Gun Barrel
 val GunHandle = <immersiveengineering:material:13>; #Gun Grip
 
 //Ivory and Ebony Ingots
-mods.nuclearcraft.infuser.addRecipe(<psi:material:5>, <liquid:unknown>*288, <psi:material:3>); #Ebony
-mods.nuclearcraft.infuser.addRecipe(<psi:material:6>, <liquid:unknown>*288, <psi:material:4>); #Ivory
+mods.nuclearcraft.Infuser.addRecipe(<psi:material:5>, <liquid:unknown>*288, <psi:material:3>); #Ebony
+mods.nuclearcraft.Infuser.addRecipe(<psi:material:6>, <liquid:unknown>*288, <psi:material:4>); #Ivory
 //Spell Programmer 
 recipes.addShaped(<psi:programmer>,[
 	[<tfc:metal/double_ingot/black_steel>,<tfc:metal/double_ingot/black_steel>,<tfc:metal/double_ingot/black_steel>],
@@ -63,13 +63,13 @@ recipes.addShaped(<rpsideas:undervolted_cad_assembly>,[ #Ebony Under Volted
 
 recipes.addShaped(<rpsideas:overclocked_cad_assembly>,[ #Ivory Over Clocked
 	[GunBarrel,GunBarrel,<psi:material:4>],
-	[<psi:material:4>,<nuclearcraft:cooler:3>,<ore:scaleDragonEnder>],
+	[<psi:material:4>,null,<ore:scaleDragonEnder>],
 	[null,<ore:button>,GunHandle]]); 
 
 recipes.addShaped(<rpsideas:underclocked_cad_assembly>,[ #Ivory Under Clocked
 	[GunBarrel,GunBarrel,<psi:material:4>],
 	[<psi:material:4>,<psi:material:4>,<ore:scaleDragonEnder>],
-	[<nuclearcraft:cooler:3>,<ore:button>,GunHandle]]);     
+	[null,<ore:button>,GunHandle]]);     
 
 recipes.addShaped(<rpsideas:cad_assembly_mana_blaster>,[ #Mana 
 	[null,<botania:managun>,null],

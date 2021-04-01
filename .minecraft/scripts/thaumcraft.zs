@@ -12,5 +12,4 @@ recipes.remove(<thaumicrestoration:item_plate:*>);
 recipes.remove(<thaumadditions:mithrillium_plate>);
 recipes.remove(<thaumadditions:adaminite_plate>);
 recipes.remove(<thaumadditions:mithminite_plate>);
-recipes.remove(<planarartifice:alkimium_plate>);
 

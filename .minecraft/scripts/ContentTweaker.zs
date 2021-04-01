@@ -64,10 +64,12 @@ game.setLocalization("item.contenttweaker.unfired_archaic_lump.name", "Unfired A
 var blank_blueprint = VanillaFactory.createItem("blank_blueprint");
 blank_blueprint.register();
 game.setLocalization("item.contenttweaker.blank_blueprint.name", "Blank Blueprint");
+/*
 //wax_anvil
 var wax_anvil = VanillaFactory.createItem("wax_anvil");
 wax_anvil.register();
 game.setLocalization("item.contenttweaker.wax_anvil.name", "Wax Anvil");
+*/
 //wooden_cross_beam
 var wooden_cross_beam = VanillaFactory.createItem("wooden_cross_beam");
 wooden_cross_beam.register();
@@ -172,6 +174,10 @@ game.setLocalization("item.contenttweaker.glass_wire.name", "Glass Wire");
 var Wooden_Glass_Casing = VanillaFactory.createItem("Wooden_Glass_Casing");
 Wooden_Glass_Casing.register();
 game.setLocalization("item.contenttweaker.Wooden_Glass_Casing.name", "Wooden Glass Casing");
+//Magic_Motion_Appartus
+var Magic_Motion_Appartus = VanillaFactory.createItem("Magic_Motion_Appartus");
+Magic_Motion_Appartus.register();
+game.setLocalization("item.contenttweaker.Magic_Motion_Appartus.name", "Magic Motion Appartus");
 //tanned_flesh
 var tanned_flesh = VanillaFactory.createItem("tanned_flesh");
 tanned_flesh.register();
@@ -358,7 +364,7 @@ carrot_soup.viscosity = 3000;
 carrot_soup.temperature= 100;
 carrot_soup.register();
 game.setLocalization("fluid.carrot_soup", "Carrot Soup");
-
+/*
 //Botania Fluids
 		var liquidElementium = VanillaFactory.createFluid("elementium", 0xf66afd);
 			liquidElementium.density = 3000;
@@ -393,7 +399,7 @@ game.setLocalization("fluid.carrot_soup", "Carrot Soup");
 			liquidTerrasteel.flowingLocation = "tfc:blocks/lava_flow";
 		liquidTerrasteel.register();
 		game.setLocalization("fluid.terrasteel", "Molten Terrasteel");
-
+*/
 //red_mud
 var red_mud = VanillaFactory.createFluid("red_mud", Color.fromHex("AF5C24"));
 red_mud.viscosity = 3000;
@@ -416,7 +422,7 @@ sodium_aluminate.viscosity = 9000;
 sodium_aluminate.temperature= 100;
 sodium_aluminate.register();
 game.setLocalization("fluid.sodium_aluminate", "Sodium Aluminate Solution");
-
+/*
 //chlorine
 var chlorine = VanillaFactory.createFluid("chlorine", Color.fromHex("9AA953"));
 chlorine.viscosity = 1000;
@@ -425,7 +431,7 @@ chlorine.gaseous = true;
 chlorine.density = -10;
 chlorine.register();
 game.setLocalization("fluid.chlorine", "Chlorine Gas");
-
+*/
 //hydrogen_chloride
 var hydrogen_chloride = VanillaFactory.createFluid("hydrogen_chloride", Color.fromHex("CBCDC0"));
 hydrogen_chloride.viscosity = 1000;
@@ -434,14 +440,14 @@ hydrogen_chloride.gaseous = true;
 hydrogen_chloride.density = -10;
 hydrogen_chloride.register();
 game.setLocalization("fluid.hydrogen_chloride", "Hydrogen Chloride");
-
+/*
 //hydrochloric_acid
 var hydrochloric_acid = VanillaFactory.createFluid("hydrochloric_acid", Color.fromHex("CBCDC0"));
 hydrochloric_acid.viscosity = 3000;
 hydrochloric_acid.temperature= 100;
 hydrochloric_acid.register();
 game.setLocalization("fluid.hydrochloric_acid", "Hydrochloric Acid");
-
+*/
 //liquid_grog
 var grog = VanillaFactory.createFluid("grog", Color.fromHex("42FF5C"));
 grog.viscosity = 9000;
@@ -599,3 +605,13 @@ anvilmold.setToolLevel(0);
 anvilmold.setBlockSoundType(<soundtype:sand>);
 anvilmold.register();
 game.setLocalization("tile.contenttweaker.anvilmold.name", "Anvil Sand Cast");
+
+var waxanvil = VanillaFactory.createBlock("waxanvil", <blockmaterial:clay>);
+waxanvil.setFullBlock(false);
+waxanvil.setBlockHardness(5.0);
+waxanvil.setBlockResistance(5.0);
+waxanvil.setToolClass("shovel");
+waxanvil.setToolLevel(0);
+waxanvil.setBlockSoundType(<soundtype:sand>);
+waxanvil.register();
+game.setLocalization("tile.contenttweaker.waxanvil.name", "Wax Anvil");

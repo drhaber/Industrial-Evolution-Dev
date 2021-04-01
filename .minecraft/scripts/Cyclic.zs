@@ -199,3 +199,11 @@ recipes.addShaped(<cyclicmagic:crafting_food>,[
 	[<ore:workbench>,<botania:livingwood>,<ore:workbench>],
 	[<botania:livingwood>,<foodexpansion:itemcarrotpie>,<botania:livingwood>],
 	[<ore:workbench>,<botania:livingwood>,<ore:workbench>]]);
+
+//Night Vision Helmet
+
+recipes.remove(<cyclicmagic:glowing_helmet>);
+recipes.addShaped(<cyclicmagic:glowing_helmet>,[
+    [<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "lux"}]}),<tfc:metal/lamp/ardite>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "lux"}]})],
+    [<tfc:metal/sheet/ardite>,<aunis:crystal_yellow>,<tfc:metal/sheet/ardite>],
+    [<tfc:metal/sheet/ardite>,null,<tfc:metal/sheet/ardite>]]);

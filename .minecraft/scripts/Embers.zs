@@ -54,6 +54,10 @@ recipes.addShaped(<embers:blend_caminite>,[
 	[<ore:dustSulfur>,<ore:fireClay>,<ore:dustSulfur>],
 	[<ore:dustMagnesium>,<ore:dustSulfur>,<ore:dustMagnesium>]]);
 
+furnace.remove(<embers:brick_caminite>);
+furnace.remove(<embers:plate_caminite>);
+
+/*
 ItemRegistry.registerItemHeat(<embers:blend_caminite>, 1, 1599, false);
 ItemRegistry.registerItemHeat(<embers:brick_caminite>, 1, 1599, false);
 Heating.addRecipe("caminite_brick_Kiln", <embers:blend_caminite>, <embers:brick_caminite>, 1500, 3200);
@@ -61,9 +65,6 @@ Heating.addRecipe("caminite_brick_Kiln", <embers:blend_caminite>, <embers:brick_
 ItemRegistry.registerItemHeat(<embers:plate_caminite_raw>, 1, 1599, false);
 ItemRegistry.registerItemHeat(<embers:plate_caminite>, 1, 1599, false);
 Heating.addRecipe("caminite_plate_Kiln", <embers:plate_caminite_raw>, <embers:plate_caminite>, 1500, 3200);
-
-furnace.remove(<embers:brick_caminite>);
-furnace.remove(<embers:plate_caminite>);
 
 //Stamps
 ItemRegistry.registerItemHeat(<embers:stamp_bar_raw>, 1, 1599, false);
@@ -85,17 +86,25 @@ Heating.addRecipe("stamp_gear_Kiln", <embers:stamp_gear_raw>, <embers:stamp_gear
 ItemRegistry.registerItemHeat(<soot:stamp_nugget_raw>, 1, 1599, false);
 ItemRegistry.registerItemHeat(<soot:stamp_nugget>, 1, 1599, false);
 Heating.addRecipe("stamp_nugget_Kiln", <soot:stamp_nugget_raw>, <soot:stamp_nugget>, 1500, 3200);
-
+*/
 ItemRegistry.registerItemHeat(<soot:stamp_text_raw>, 1, 1599, false);
 ItemRegistry.registerItemHeat(<soot:stamp_text>, 1, 1599, false);
 Heating.addRecipe("stamp_text_Kiln", <soot:stamp_text_raw>, <soot:stamp_text>, 1500, 3200);
 
+ 
 furnace.remove(<embers:stamp_bar>);
 furnace.remove(<embers:stamp_flat>);
 furnace.remove(<embers:stamp_plate>);
 furnace.remove(<embers:stamp_gear>);
 furnace.remove(<soot:stamp_nugget>);
 furnace.remove(<soot:stamp_text>);
+
+recipes.remove(<embers:stamp_bar>);
+recipes.remove(<embers:stamp_flat>);
+recipes.remove(<embers:stamp_plate>);
+recipes.remove(<embers:stamp_gear>);
+recipes.remove(<soot:stamp_nugget>);
+recipes.remove(<soot:stamp_text>);
 
 //Bore
 recipes.remove(<embers:ember_bore>);

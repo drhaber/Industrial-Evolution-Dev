@@ -42,8 +42,8 @@
     {
       "name": "gold",
       "harvestLevel": 0,
-      "maxUses": 32,
-      "efficiency": 12.0,
+      "maxUses": 512,
+      "efficiency": 17.0,
       "damage": 0.0,
       "enchantability": 22,
       "color": "ffe947",

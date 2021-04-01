@@ -5,10 +5,10 @@ import crafttweaker.item.IItemDefinition;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.mods.IMod;
 
+//dilithium 
+<ore:oreDilithium>.add(<taiga:dilithium_ore>);
 //Glass Shards
 <ore:shardGlass>.addItems([<pyrotech:material:32>,<tfc:glass_shard>]);
-//Clays
-<ore:fireClay>.add(<pyrotech:material:4>);
 //Smoke Emitters
 <ore:smokeEmitter>.addItems([<betternether:smoker>,<railcraft:equipment:3>,<quark:smoker>]);
 //Wool
@@ -22,12 +22,14 @@ import crafttweaker.mods.IMod;
 //Lapis Gem
 <ore:dyeBlue>.remove(<minecraft:dye:4>);
 <ore:dye>.remove(<minecraft:dye:4>);
+//Dragon Scales
+<ore:scaleDragonEnder>.add(<endreborn:dragon_scales>);
 //compost
 <ore:fertilizer>.add(<forestry:fertilizer_bio>);
 <ore:lumpCompost>.addItems([<composter:compost>,<forestry:fertilizer_bio>]);
 //Magnesium
-<ore:dustMagnesium>.add(<nuclearcraft:dust:7>);
-<ore:ingotMagnesium>.add(<nuclearcraft:ingot:7>);
+#<ore:dustMagnesium>.add(<nuclearcraft:dust:7>);
+#<ore:ingotMagnesium>.add(<nuclearcraft:ingot:7>);
 //Peat
 <ore:blockPeat>.add(<tfc:peat>);
 //bituminousCoal
@@ -81,7 +83,7 @@ for i in 0 to 16{
 
 <ore:chestVanilla>.addItems([<minecraft:chest>,<quark:custom_chest:*>]);
 //Ash
-<ore:dustAsh>.add(<pyrotech:material>);
+<ore:dustAsh>.addItems([<pyrotech:material>,<mist:ash>,<ic2:misc_resource>]);
 //Paper Pulp
 <ore:lumpPulp>.add(<emergingtechnology:paperpulp>);
 <ore:sheetPulp>.add(<pyrotech:material:25>);
@@ -135,9 +137,9 @@ mods.jei.JEI.removeAndHide(<appliedenergistics2:material:5>);
 mods.jei.JEI.removeAndHide(<nuclearcraft:gem:6>);
 furnace.remove(<projectred-core:resource_item:300>);
 mods.appliedenergistics2.Inscriber.removeRecipe(<appliedenergistics2:material:20>); 
-mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput(<nuclearcraft:alloy:13>*2);
+#mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput(<nuclearcraft:alloy:13>*2);
 mods.appliedenergistics2.Inscriber.addRecipe(<appliedenergistics2:material:20>,<ore:itemSilicon>, true, <appliedenergistics2:material:19>);
-mods.nuclearcraft.alloy_furnace.addRecipe(<ore:itemSilicon>, <ore:dustGraphite>, <nuclearcraft:alloy:13>*2);
+#mods.nuclearcraft.alloy_furnace.addRecipe(<ore:itemSilicon>, <ore:dustGraphite>, <nuclearcraft:alloy:13>*2);
 //Coal
 <ore:gemCoal>.addAll(<ore:coal>);
 <ore:coal>.mirror(<ore:gemCoal>);

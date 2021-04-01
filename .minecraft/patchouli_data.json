@@ -15,10 +15,16 @@
         "pneumaticcraft:programming/item_filter",
         "pneumaticcraft:tools/micromissiles",
         "pneumaticcraft:base_concepts/pressure",
-        "pneumaticcraft:machines/vacuum_pump"
+        "pneumaticcraft:machines/vacuum_pump",
+        "pneumaticcraft:programming/flow_control",
+        "pneumaticcraft:logistics/overview",
+        "pneumaticcraft:machines/aerial_interface"
       ],
       "bookmarks": [],
       "history": [
+        "pneumaticcraft:machines/aerial_interface",
+        "pneumaticcraft:logistics/overview",
+        "pneumaticcraft:programming/flow_control",
         "pneumaticcraft:machines/vacuum_pump",
         "pneumaticcraft:base_concepts/pressure",
         "pneumaticcraft:tools/micromissiles",
@@ -28,9 +34,7 @@
         "pneumaticcraft:programming/standby",
         "pneumaticcraft:programming/suicide",
         "pneumaticcraft:manufacturing/etching_acid",
-        "pneumaticcraft:components/stop_worm",
-        "pneumaticcraft:manufacturing/assembly_system",
-        "pneumaticcraft:manufacturing/plastic_mixer"
+        "pneumaticcraft:components/stop_worm"
       ],
       "completedManualQuests": []
     },
@@ -169,6 +173,56 @@
         "endreborn:being/watcher",
         "endreborn:world/observatory",
         "endreborn:tools/end_forge"
+      ],
+      "completedManualQuests": []
+    },
+    "bewitchment:codex_infernalis": {
+      "viewedEntries": [],
+      "bookmarks": [],
+      "history": [],
+      "completedManualQuests": []
+    },
+    "bewitchment:book_of_shadows": {
+      "viewedEntries": [
+        "bewitchment:spinning_wheel/magic_string"
+      ],
+      "bookmarks": [],
+      "history": [
+        "bewitchment:spinning_wheel/magic_string"
+      ],
+      "completedManualQuests": []
+    },
+    "nuclearcraft:guide": {
+      "viewedEntries": [
+        "nuclearcraft:machines/collectors",
+        "nuclearcraft:machines/other"
+      ],
+      "bookmarks": [],
+      "history": [
+        "nuclearcraft:machines/other",
+        "nuclearcraft:machines/collectors"
+      ],
+      "completedManualQuests": []
+    },
+    "qmd:guide": {
+      "viewedEntries": [
+        "qmd:items_and_devices/cell"
+      ],
+      "bookmarks": [],
+      "history": [
+        "qmd:items_and_devices/cell"
+      ],
+      "completedManualQuests": []
+    },
+    "theabyss:abyssbookitem": {
+      "viewedEntries": [
+        "theabyss:page_types/2",
+        "theabyss:page_types/3"
+      ],
+      "bookmarks": [],
+      "history": [
+        "theabyss:page_types/3",
+        "theabyss:page_types/2"
       ],
       "completedManualQuests": []
     }

@@ -7,7 +7,7 @@ largemenril.setLog("integrateddynamics:menril_log:1");
 largemenril.setLeaf("integrateddynamics:menril_leaves");
 largemenril.extraTreeHeight = 6;
 largemenril.minTreeHeight = 15;
-largemenril.generationFrequency = 50;
+largemenril.generationFrequency = 100;
 largemenril.extraThick = true; //will make trunk 2x2
 largemenril.setGenBiome("aether_legacy:aether_highlands");
 largemenril.register();

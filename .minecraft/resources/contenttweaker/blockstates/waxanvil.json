@@ -1,0 +1,27 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+      "textures": {
+        "all": "harvestcraft:blocks/pressedwax",
+        "particle": "harvestcraft:blocks/pressedwax"
+      },
+      "model": "tfc:anvil",
+      "transform": "forge:default-block"
+    },
+    "variants": {
+      "normal": [{}],
+      "inventory": [{}],
+      "axis": {
+        "north": {
+          "y": 180
+        },
+        "east": {
+          "y": 270
+        },
+        "south": {},
+        "west": {
+          "y": 90
+        }
+      }  
+    }
+  }

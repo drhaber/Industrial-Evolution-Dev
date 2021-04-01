@@ -181,9 +181,9 @@ recipes.addShaped(<opencomputers:material>*4,[
 //Chamelium
 recipes.remove(<opencomputers:material:28>);
 recipes.addShaped(<opencomputers:material:28>*16,[
-	[<tfctech:powder/wood>,<minecraft:rotten_flesh>,<tfctech:powder/wood>],
+	[<ore:dustWood>,<minecraft:rotten_flesh>,<ore:dustWood>],
 	[<minecraft:rotten_flesh>,<openlights:prismaticpaste>,<minecraft:rotten_flesh>],
-	[<tfctech:powder/wood>,<minecraft:rotten_flesh>,<tfctech:powder/wood>]]);	
+	[<ore:dustWood>,<minecraft:rotten_flesh>,<ore:dustWood>]]);	
 //Data Cable
 recipes.remove(<opencomputers:cable>);
 recipes.addShaped(<opencomputers:cable>,[

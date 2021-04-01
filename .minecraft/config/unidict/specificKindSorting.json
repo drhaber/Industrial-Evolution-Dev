@@ -40,7 +40,8 @@
 		"modIdPriorityList" :
 		[
 		"tfctech",
-		"mystgears"
+		"mystgears",
+		"tconstruct"
 		]
 	},		
 	{
@@ -58,7 +59,9 @@
 		"tfctech",
 		"morebees",
 		"nuclearcraft",
-		"immersiveengineering"
+		"immersiveengineering",
+		"tconstruct",
+		"taiga"
 		]
 	},	
 	{

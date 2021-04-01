@@ -1,0 +1,25 @@
+{tinkersarsenal:[
+    {hide:[[toolshears],[]]};
+    {keep:[[boomstick_barrel,boomstick_handle,bayonet,bullet,bullet_shell,boomstick,boomstick_shot],[*],['*cobalt*']]};
+	],
+tfc_tinker:[
+    {keep:[[propick_head,prospector_pick],[*],['*cobalt*']]};
+    ],
+tinkersaether:[
+    {keep:[[mouthpiece,tube,dart_tip,dart_shooter,dart],[*],['*cobalt*']]};
+    ],
+tcomplement:[
+    {keep:[[chisel_head,chisel],[*],['*cobalt*']]};
+    ],
+tinkers_reforged:[
+    {keep:[[gladius,light_blade,lightsword,runic_knife],[*],['*cobalt*']]};
+    ],    
+tconstruct:[
+    {keep:[[shard,sharpening_kit,pick_head,shovel_head,axe_head,broad_axe_head,sword_blade,large_sword_blade,
+        hammer_head,excavator_head,kama_head,scythe_head,pan_head,sign_head,tool_rod,tough_tool_rod,binding,
+        tough_binding,wide_guard,hand_guard,cross_guard,large_plate,knife_blade,bow_limb,arrow_head,arrow_shaft,
+        toolforge,pickaxe,shovel,hatchet,mattock,kama,hammer,excavator,lumberaxe,scythe,broadsword,longsword,
+        rapier,frypan,battlesign,cleaver,shortbow,longbow,crossbow,arrow,bolt,shuriken],[*],['*cobalt*']]};
+    {keep-one:[[tooltables],[1,2,3,4,5],[]]};
+    ]                  
+}

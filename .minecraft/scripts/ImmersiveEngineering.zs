@@ -15,6 +15,13 @@ recipes.addShaped(<immersiveengineering:material:13>,[
 //Gun Barrel
 <immersiveengineering:material:14>.displayName = "Gun Barrel";
 
+//Bottling
+mods.immersiveengineering.BottlingMachine.removeRecipe(<minecraft:paper>);
+mods.immersiveengineering.BottlingMachine.removeRecipe(<immersiveintelligence:material:23>);
+mods.immersiveengineering.BottlingMachine.removeRecipe(<immersiveintelligence:material:24>);
+mods.immersiveengineering.BottlingMachine.removeRecipe(<immersiveintelligence:material:17>);
+mods.immersiveengineering.BottlingMachine.removeRecipe(<minecraft:sponge:1>);
+
 //Treated Wood and products
 #mods.terrafirmacraft.Barrel.addRecipe("Hemp_Fibre", <tfc:crop/product/jute_fiber>, <liquid:creosote>*10, <immersiveengineering:material:4>, <liquid:creosote>*8, 4);
 mods.terrafirmacraft.Barrel.addRecipe("Treated_Lumber", <ore:lumber>, <liquid:creosote>*100, <contenttweaker:treatedlumber>, 4);
@@ -106,7 +113,7 @@ mods.immersiveengineering.Squeezer.removeItemRecipe(<immersiveengineering:materi
 mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:material:19>);
 mods.embers.Stamper.add(<immersiveengineering:material:18>,<liquid:coal>*1152, <embers:stamp_flat>,null);
 
-mods.nuclearcraft.pressurizer.addRecipe(<immersiveengineering:material:18>, <immersiveengineering:material:19>);
+#mods.nuclearcraft.pressurizer.addRecipe(<immersiveengineering:material:18>, <immersiveengineering:material:19>);
 mods.pneumaticcraft.pressurechamber.addRecipe([<immersiveengineering:material:18>], 15, [<immersiveengineering:material:19>]);
 
 	//Electrodes

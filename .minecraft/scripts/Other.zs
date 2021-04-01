@@ -35,6 +35,17 @@ mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx4_aluminium", <tfctech:metal/al
 
 mods.terrafirmacraft.Anvil.addRecipe("Metal_Hookx6", <tfctech:metal/titanium_strip>, <contenttweaker:iron_hook>*6, 6, "general","BEND_NOT_LAST","HIT_NOT_LAST","HIT_LAST");		
 
+//Spings
+
+recipes.remove(<immersiveintelligence:material_spring>); #Brass
+recipes.addShapeless(<immersiveintelligence:material_spring>,[<tfctech:metal/brass_wire>,<ore:spindle>.transformDamage(4)]);	
+
+recipes.remove(<immersiveintelligence:material_spring:1>); #Iron
+recipes.addShapeless(<immersiveintelligence:material_spring:1>,[<tfctech:metal/wrought_iron_wire>,<ore:spindle>.transformDamage(4)]);		
+
+recipes.remove(<immersiveintelligence:material_spring:2>); #Steel
+recipes.addShapeless(<immersiveintelligence:material_spring:2>,[<tfctech:metal/steel_wire>,<ore:spindle>.transformDamage(4)]);		
+
 //Collector
 recipes.remove(<inspirations:collector>);
 recipes.addShaped(<inspirations:collector>,[
@@ -99,7 +110,7 @@ recipes.addShapeless(<tconstruct:wood_rail_trapdoor>, [<tconstruct:wood_rail>,<o
 */	
 
 //Paper Pulp
-mods.terrafirmacraft.Barrel.addRecipe("Paper", <tfctech:powder/wood>*4, <liquid:hot_water>*150, <emergingtechnology:paperpulp>, 4);
+mods.terrafirmacraft.Barrel.addRecipe("Paper", <ore:dustWood>*4, <liquid:hot_water>*150, <emergingtechnology:paperpulp>, 4);
 //Paper
 mods.forestry.Carpenter.removeRecipe(<minecraft:paper>);
 //Wooden Glass Casing
@@ -866,6 +877,24 @@ mods.terrafirmacraft.Barrel.addRecipe("Peat Fresh Water", <forestry:bog_earth>, 
 
 #=============================================================================================================================================		
 
+//refraction
+recipes.remove(<refraction:spectrometer>);
+
+
+mods.refraction.AssemblyTable.remove(<refraction:mirror>);
+mods.refraction.AssemblyTable.remove(<refraction:prism>);
+mods.refraction.AssemblyTable.remove(<refraction:reflection_chamber>);
+mods.refraction.AssemblyTable.remove(<refraction:splitter>);
+mods.refraction.AssemblyTable.remove(<refraction:sensor>);
+mods.refraction.AssemblyTable.remove(<refraction:electric_laser>);
+mods.refraction.AssemblyTable.remove(<refraction:laser>);
+mods.refraction.AssemblyTable.remove(<refraction:disco_ball>);
+mods.refraction.AssemblyTable.remove(<refraction:electron_exciter>);
+mods.refraction.AssemblyTable.remove(<refraction:axyz>);
+mods.refraction.AssemblyTable.remove(<refraction:optic_fiber>);
+mods.refraction.AssemblyTable.remove(<refraction:translocator>);
+#=============================================================================================================================================		
+
 //rustichromia
 mods.rustichromia.Assembler.removeAll();		
 mods.rustichromia.Quern.removeAll();	
@@ -906,3 +935,24 @@ for i, iIngot in ingots{
 mods.rustichromia.Assembler.add(sheets[i].name, 1, [iIngot,iIngot], [sheets[i]], 3, 20, 300);
 #RollingMachine.addShaped(sheets[i]*2,[[iIngot,iIngot],[iIngot,iIngot]], 300);
 }	
+
+#=============================================================================================================================================		
+
+//Horse Power
+
+#recipes.remove(<horsepower:chopping_block>);
+#mods.horsepower.Recipes.addShaped(<ore:logWood>, <horsepower:chopping_block>*3, [<ore:logWood>,<ore:toolAxe>.transformDamage(2)]);
+
+recipes.remove(<horsepower:chopper>);
+mods.horsepower.Recipes.addShaped(<ore:logWood>, <horsepower:chopper>, [[<ore:gearWood>,<quark:rope>,<ore:gearWood>],
+																		[<ore:stickWood>,<ore:axeHead>,<ore:stickWood>],
+																		[<ore:stickWood>,<ore:logWood>,<ore:stickWood>]]);
+
+mods.jei.JEI.removeAndHide(<horsepower:hand_grindstone>);
+//Honey Drop
+mods.horsepower.Press.add(<ore:beeComb>, <forestry:honey_drop>*3);
+//Parchment
+mods.horsepower.Press.add(<ore:pulpWood>, <minecraft:paper>*3);
+mods.horsepower.Press.add(<emergingtechnology:paperpulp>, <minecraft:paper>*3);
+//Manual Chopping Block
+mods.jei.JEI.addDescription(<horsepower:chopping_block>,"Simply place a log onto the chopping block use right click and then, with an axe in your hand left click the block, about 2 to 4 times, until lumber is acquired. ");

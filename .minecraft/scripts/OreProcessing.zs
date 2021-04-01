@@ -36,6 +36,7 @@ moretweaker.railcraft.RockCrusher.removeAll();
     for i, SG in StampedGears{
     mods.embers.Stamper.remove(SG);
     }
+/*
     //Plates from Nuclear Craft 
     val sheets = [<tfc:metal/sheet/bismuth>,<tfc:metal/sheet/bismuth_bronze>,<tfc:metal/sheet/black_bronze>,<tfc:metal/sheet/brass>,
     <tfc:metal/sheet/bronze>,<tfc:metal/sheet/copper>,<tfc:metal/sheet/gold>,<tfc:metal/sheet/lead>,<tfc:metal/sheet/nickel>,
@@ -52,7 +53,7 @@ moretweaker.railcraft.RockCrusher.removeAll();
     }
     mods.nuclearcraft.pressurizer.removeRecipeWithOutput(<tfc:metal/sheet/nickel_silver>);
     mods.nuclearcraft.pressurizer.removeRecipeWithOutput(<tfc:metal/sheet/red_alloy>);
-
+*/
     val EmbersPlates =[<embers:plate_copper>,<embers:plate_lead>,<embers:plate_silver>,<embers:plate_dawnstone>,
     <embers:plate_iron>,<embers:plate_gold>,<embers:plate_aluminum>,<embers:plate_bronze>,<embers:plate_electrum>,
     <embers:plate_nickel>,<embers:plate_tin>] as IItemStack[];
@@ -64,23 +65,23 @@ mods.embers.Stamper.remove(<embers:nugget_dawnstone>);
 mods.embers.Stamper.remove(<embers:ingot_dawnstone>);
 
 //Thorium
-mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust_oxide>, <tfc:ore/thorianite>, 2048, <nuclearcraft:dust_oxide:1>, 0.25);
+#mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust_oxide>, <tfc:ore/thorianite>, 2048, <nuclearcraft:dust_oxide:1>, 0.25);
 //Magnesium
-mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust:7>, <tfc:ore/magnesite>, 2048);
-Grinder.addRecipe(<nuclearcraft:dust:7>, <tfc:ore/magnesite>, 4);
+#mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust:7>, <tfc:ore/magnesite>, 2048);
+#Grinder.addRecipe(<nuclearcraft:dust:7>, <tfc:ore/magnesite>, 4);
 //Lithium
-mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust:6>, <tfc:ore/spodumene>, 2048);
+#mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust:6>, <tfc:ore/spodumene>, 2048);
 
 mods.immersiveengineering.CokeOven.addRecipe( <immersiveengineering:material:6>, 500,<tfc:ore/bituminous_coal>, 2000);
 
 //Pitch Blend
-mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust_oxide:1>, <tfc:ore/pitchblende>, 2048, <nuclearcraft:dust_oxide:1>, 0.25);
+#mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust_oxide:1>, <tfc:ore/pitchblende>, 2048, <nuclearcraft:dust_oxide:1>, 0.25);
 
 //Adding Metals
 #<tfcmetal:Gravitite>
 
 
-val AlloyedIngots = [<immersiveengineering:metal:6>,<immersiveengineering:metal:7>,<railcraft:ingot:7>,<forestry:ingot_bronze>,<railcraft:ingot:9>,<projectred-core:resource_item:103>
+val AlloyedIngots = [<tfc:metal/ingot/bronze>,<immersiveengineering:metal:6>,<immersiveengineering:metal:7>,<railcraft:ingot:7>,<forestry:ingot_bronze>,<railcraft:ingot:9>,<projectred-core:resource_item:103>
 ] as IItemStack[];
 for AI in AlloyedIngots{
 mods.immersiveengineering.AlloySmelter.removeRecipe(AI);
@@ -247,48 +248,62 @@ zenClass MoltenHandleClass {
         
         if(!isNull(axeHead)){
             mods.embers.Stamper.add(axeHead,castingMetal*144, <tfc:ceramics/fired/mold/axe_head>,null);
+            mods.tconstruct.Casting.addTableRecipe(axeHead,<tfc:ceramics/fired/mold/axe_head>,castingMetal,144,false,15*20);           
         }
 	    if(!isNull(propickHead)){
             mods.embers.Stamper.add(propickHead,castingMetal*144, <tfc:ceramics/fired/mold/propick_head>,null);
+            mods.tconstruct.Casting.addTableRecipe(propickHead,<tfc:ceramics/fired/mold/propick_head>,castingMetal,144,false,15*20);           
         }
 	    if(!isNull(pickHead)){
             mods.embers.Stamper.add(pickHead,castingMetal*144, <tfc:ceramics/fired/mold/pick_head>,null);
+            mods.tconstruct.Casting.addTableRecipe(pickHead,<tfc:ceramics/fired/mold/pick_head>,castingMetal,144,false,15*20);           
         }
 	    if(!isNull(shovelHead)){
             mods.embers.Stamper.add(shovelHead,castingMetal*144, <tfc:ceramics/fired/mold/shovel_head>,null);
+            mods.tconstruct.Casting.addTableRecipe(shovelHead,<tfc:ceramics/fired/mold/shovel_head>,castingMetal,144,false,15*20);
         }
 	    if(!isNull(hoeHead)){
             mods.embers.Stamper.add(hoeHead,castingMetal*144, <tfc:ceramics/fired/mold/hoe_head>,null);
         }
 	    if(!isNull(chiselHead)){
             mods.embers.Stamper.add(chiselHead,castingMetal*144, <tfc:ceramics/fired/mold/chisel_head>,null);
+            mods.tconstruct.Casting.addTableRecipe(chiselHead,<tfc:ceramics/fired/mold/chisel_head>,castingMetal,144,false,15*20);
         }
 	    if(!isNull(maceHead)){
             mods.embers.Stamper.add(maceHead,castingMetal*144, <tfc:ceramics/fired/mold/mace_head>,null);
+            mods.tconstruct.Casting.addTableRecipe(maceHead,<tfc:ceramics/fired/mold/mace_head>,castingMetal,144,false,15*20);
         }
 	    if(!isNull(javelinHead)){
             mods.embers.Stamper.add(javelinHead,castingMetal*144, <tfc:ceramics/fired/mold/javelin_head>,null);
+            mods.tconstruct.Casting.addTableRecipe(javelinHead,<tfc:ceramics/fired/mold/javelin_head>,castingMetal,144,false,15*20);
         }
 	    if(!isNull(swordBlade)){
             mods.embers.Stamper.add(swordBlade,castingMetal*144, <tfc:ceramics/fired/mold/sword_blade>,null);
+            mods.tconstruct.Casting.addTableRecipe(swordBlade,<tfc:ceramics/fired/mold/sword_blade>,castingMetal,144,false,15*20);
         }
 	    if(!isNull(sawBlade)){
             mods.embers.Stamper.add(sawBlade,castingMetal*144, <tfc:ceramics/fired/mold/saw_blade>,null);
+            mods.tconstruct.Casting.addTableRecipe(sawBlade,<tfc:ceramics/fired/mold/saw_blade>,castingMetal,144,false,15*20);
         }
 	    if(!isNull(knifePlate)){
             mods.embers.Stamper.add(knifePlate,castingMetal*144, <tfc:ceramics/fired/mold/knife_blade>,null);
+            mods.tconstruct.Casting.addTableRecipe(knifePlate,<tfc:ceramics/fired/mold/knife_blade>,castingMetal,144,false,15*20);
         }
 	    if(!isNull(scythePlate)){
             mods.embers.Stamper.add(scythePlate,castingMetal*144, <tfc:ceramics/fired/mold/scythe_blade>,null);
+            mods.tconstruct.Casting.addTableRecipe(scythePlate,<tfc:ceramics/fired/mold/scythe_blade>,castingMetal,144,false,15*20);
         }
 	    if(!isNull(hammerHead)){
             mods.embers.Stamper.add(hammerHead,castingMetal*144, <tfc:ceramics/fired/mold/hammer_head>,null);
+            mods.tconstruct.Casting.addTableRecipe(hammerHead,<tfc:ceramics/fired/mold/hammer_head>,castingMetal,144,false,15*20);
         }
         if(!isNull(gears)){
             mods.embers.Stamper.add(gears,castingMetal*576,<embers:stamp_gear>,null);
+            mods.tconstruct.Casting.addTableRecipe(gears,<tconstruct:cast_custom:4>,castingMetal,576,false,15*20);
         }
         if(!isNull(sheets)){
             mods.embers.Stamper.add(sheets,castingMetal*288,<embers:stamp_plate>,null);
+            mods.tconstruct.Casting.addTableRecipe(sheets,<tconstruct:cast_custom:3>,castingMetal,288,false,15*20);
         }
         if(!isNull(ingots)){
             mods.embers.Stamper.add(ingots,castingMetal*144,<embers:stamp_bar>,null);
@@ -300,6 +315,7 @@ zenClass MoltenHandleClass {
         if(!isNull(cluster)){
             mods.embers.Melter.add(castingMetal*144, cluster);
             mods.pyrotech.BrickCrucible.addRecipe(castingMetal.name,castingMetal*144,cluster,2400);
+            mods.tconstruct.Melting.addRecipe(castingMetal*144,cluster);
         }
         if(!isNull(dust)){
             mods.embers.Melter.add(castingMetal*144, dust);
@@ -331,6 +347,7 @@ zenClass MoltenHandleClass {
             mods.embers.Melter.add(castingMetal*144, scrap);
             ArcFurnace.addRecipe(ingots, scrap, <tfc:ceramics/fired/mold/ingot>, 2400, 2400, [<tfc:ceramics/fired/mold/ingot>]);
             mods.pyrotech.BrickCrucible.addRecipe(scrap.name,castingMetal*144,scrap,2400);
+            mods.tconstruct.Melting.addRecipe(castingMetal*144,scrap);
         }
         if(!isNull(seed) && !isNull(longRod)) {
             mods.advancedrocketry.Crystallizer.addRecipe(longRod*3, 200, 10, seed);
@@ -575,6 +592,7 @@ MoltenHandleClass(<liquid:electrum>)
     .withscrap(<tfc:metal/scrap/electrum>)
     .finish();
 MoltenHandleClass(<liquid:gold>)
+	.withshovelHead(<contenttweaker:gold_shovel_head>)
     .withgears(<tfctech:metal/gold_rackwheel>)
     .withsheets(<tfc:metal/sheet/gold>)
     .withingots(<tfc:metal/ingot/gold>)
@@ -927,7 +945,7 @@ MoltenHandleClass(<liquid:dawnstone>)
 MoltenHandleClass(<liquid:unknown>)
     .withingots(<tfc:metal/ingot/unknown>)
     #.withnugget(<agricraft:agri_nugget:12>) #moved lower to fix weird removal error
-    .finish();       
+    .finish();            
 MoltenHandleClass(<liquid:thaumium>)
 	.withaxeHead(<tfc:metal/axe_head/thaumium>)
 	.withpropickHead(<tfc:metal/propick_head/thaumium>)
@@ -976,6 +994,7 @@ val dyes = [<ore:dyeWhite>,<ore:dyeOrange>,<ore:dyeMagenta>,<ore:dyeLightBlue>,<
 val Illumar = <projectred-core:resource_item>.definition;
 for i in 0 to 16{
 recipes.remove(Illumar.makeStack(i+500));
+mods.tconstruct.Casting.addTableRecipe(Illumar.makeStack(i+500), dyes[i], <liquid:glowstone>, 250, true, 180);
 mods.embers.Stamper.add(Illumar.makeStack(i+500),<liquid:glowstone>*250,<embers:stamp_flat>,dyes[i]);
 }
 
@@ -985,6 +1004,7 @@ mods.embers.Melter.add(<liquid:glass>*250,<ore:shardGlass>);
 val ReducedDyes = [<ore:dyeWhite>,<ore:dyeRed>,<ore:dyeOrange>,<ore:dyeYellow>,<ore:dyeGreen>,<ore:dyeLightBlue>,<ore:dyeBlue>,<ore:dyePurple>,<ore:dyeBlack>] as IOreDictEntry[];
 val crystalBlocks = <quark:crystal>.definition;
 for i in 0 to 9{
+mods.tconstruct.Casting.addBasinRecipe(crystalBlocks.makeStack(i), ReducedDyes[i], <liquid:quartz>, 125, true, 180);
 mods.embers.Stamper.add(crystalBlocks.makeStack(i),<liquid:quartz>*125,<tfctech:ceramics/mold/glass_block>,ReducedDyes[i]);
 <ore:crystalBlock>.add(crystalBlocks.makeStack(i));
 }
@@ -993,12 +1013,12 @@ mods.embers.Melter.add(<liquid:quartz>*666,<ore:dustQuartz>);
 //Extra Fixes
 mods.embers.Melter.remove(<liquid:aluminum>*144);
 mods.embers.Melter.remove(<liquid:aluminum>*16);
-mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:aluminum>*360);
-mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:aluminum>*144);
-mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:aluminum>*16);
-mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:aluminum>*1296);
-mods.nuclearcraft.ingot_former.removeRecipeWithInput(<liquid:aluminum>*144);
-mods.nuclearcraft.electrolyser.removeRecipeWithInput(<liquid:alumina>*144);
+#mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:aluminum>*360);
+#mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:aluminum>*144);
+#mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:aluminum>*16);
+#mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:aluminum>*1296);
+#mods.nuclearcraft.ingot_former.removeRecipeWithInput(<liquid:aluminum>*144);
+#mods.nuclearcraft.electrolyser.removeRecipeWithInput(<liquid:alumina>*144);
 #mods.nuclearcraft.electrolyser.addRecipe(<liquid:alumina>*144, <liquid:aluminium>*288, <liquid:oxygen>*3000, null, null);
 
 #mods.embers.Melter.add(<liquid:aluminium>*144,<ore:dustAluminum>);
@@ -1286,33 +1306,54 @@ OreGrindingandSoaking(<tfc:ore/small/wolframite>)
     .finish();
 
 #=============================================================================================================================================		
+
+//Dilithium
+
+<taiga:dilithium_crystal>.displayName = "Raw Dilithium Crystal";
+<libvulpes:productgem:0>.displayName = "Refined Dilithium Crystal";
+mods.tconstruct.Melting.removeRecipe(<liquid:dilithium_fluid>);
+
+mods.immersiveengineering.Crusher.removeRecipe(<libvulpes:productgem>);
+recipes.remove(<libvulpes:productgem>);
+mods.embers.Stamper.remove(<libvulpes:productgem>);
+mods.advancedrocketry.Crystallizer.removeRecipe(<libvulpes:productgem>);
+
+mods.immersiveengineering.Crusher.removeRecipe(<taiga:dilithium_dust>);
+recipes.remove(<taiga:dilithium_dust>);
+mods.embers.Stamper.remove(<taiga:dilithium_dust>);
+#mods.nuclearcraft.manufactory.removeRecipeWithOutput(<taiga:dilithium_dust>);
+
+mods.immersiveengineering.ArcFurnace.removeRecipe(<taiga:dilithium_ingot>);
+
+mods.embers.Melter.remove(<liquid:dilithium_fluid>);
+
+val MelterDoreInputs = [<ore:ingotDilithium>,<ore:nuggetDilithium>,<ore:oreDilithium>,<ore:blockDilithium>,<ore:dustDilithium>,<ore:gemDilithium>] as IOreDictEntry[];
+for i, MDOI in MelterDoreInputs{
+    for DOIS in MDOI.items{ 
+mods.embers.Melter.remove(DOIS);
+    }
+}
+#=============================================================================================================================================		
+
+
 //Bauxite/Aluminium - Bayer Process
     mods.embers.Melter.add(<liquid:alumina>*144, <pyrotech:generated_slag_aluminium_custom>);
     mods.pyrotech.BrickCrucible.addRecipe(<liquid:alumina>.name,<liquid:alumina>*144,<pyrotech:generated_slag_aluminium_custom>,2400);
     mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:sodium_hydroxide_solution>*500, <tfc:ore/small/bauxite>*10, 2, 448.0, <liquid:sodium_aluminate>*144);
-    mods.nuclearcraft.electrolyser.addRecipe(<liquid:sodium_aluminate>*144, <liquid:alumina>*144, <liquid:red_mud>*144, null, null);
+    #mods.nuclearcraft.electrolyser.addRecipe(<liquid:sodium_aluminate>*144, <liquid:alumina>*144, <liquid:red_mud>*144, null, null);
     mods.embers.Melter.add(<liquid:aluminium>*144, <tfctech:metal/aluminium_long_rod>);
-/*
-//Unknown
-    mods.embers.Melter.add(<liquid:unknown>*16, <agricraft:agri_nugget:12>);
-    mods.embers.Stamper.add(<agricraft:agri_nugget:12>,<liquid:unknown>*16,<soot:stamp_nugget>,null);
-    GraniteAnvil.addRecipe(<agricraft:agri_nugget:12>.name,<agricraft:agri_nugget:12>*9,<tfc:metal/ingot/unknown>,4,"hammer",true);
-    CompactingBin.addRecipe(<agricraft:agri_nugget:12>.name,<tfc:metal/ingot/unknown>,<agricraft:agri_nugget:12>,9,true);
-    Packager.addRecipe(<tfc:metal/ingot/unknown>, <agricraft:agri_nugget:12>*9);
-    Packager.addRecipe(<agricraft:agri_nugget:12>*9, <tfc:metal/ingot/unknown>);
-    mods.pyrotech.BrickCrucible.addRecipe(<agricraft:agri_nugget:12>.name,<liquid:unknown>*16,<agricraft:agri_nugget:12>,2400);
-*/
+
 //Titanium
     #mods.terrafirmacraft.ItemRegistry.registerItemMetal(<libvulpes:ore0:8>, "TITANIUM", 100, true);
     #Rutile to Titania ADVrocketry XML files
     mods.immersiveengineering.Crusher.removeRecipesForInput(<libvulpes:ore0:8>);
-    mods.nuclearcraft.manufactory.removeRecipeWithInput(<libvulpes:ore0:8>);
-    mods.nuclearcraft.melter.removeRecipeWithInput(<libvulpes:ore0:8>);
+    mods.nuclearcraft.Manufactory.removeRecipeWithOutput(<libvulpes:ore0:8>);
+    #mods.nuclearcraft.melter.removeRecipeWithInput(<libvulpes:ore0:8>);
     mods.advancedrocketry.ArcFurnace.removeRecipe(<libvulpes:productingot:7>);
 
 //Iridium
     mods.immersiveengineering.Crusher.removeRecipesForInput(<morebees:dustiridium>);
-    mods.nuclearcraft.manufactory.removeRecipeWithInput(<libvulpes:productdust:10>);
+    mods.nuclearcraft.Manufactory.removeRecipeWithOutput(<libvulpes:productdust:10>);
     mods.immersiveengineering.ArcFurnace.removeRecipe(<libvulpes:productingot:10>);
     ArcFurnace.addRecipe(<morebees:dustiridium>, <pyrotech:generated_slag_iridium_custom>, <immersiveengineering:material:7>, 2400, 2400, [<tfc:powder/flux>]);
     ArcFurnace.addRecipe(<libvulpes:productingot:10>, <morebees:dustiridium>, <tfc:ceramics/fired/mold/ingot>, 2400, 2400, [<tfc:ceramics/fired/mold/ingot>]);
@@ -1382,4 +1423,47 @@ mods.terrafirmacraft.Barrel.addRecipe("Primitive Sulfuric Acid"~i, FC.withTag({F
 
 //Chlroine 
     mods.embers.Mixer.add(<liquid:chlorine>*1000, [<liquid:hydrogen_chloride>*1000,<liquid:oxygen>*500]);
-    mods.nuclearcraft.electrolyser.addRecipe(<liquid:brine>*1000, <liquid:chlorine>*500, <liquid:hydrogen>*250, <liquid:sodium_hydroxide_solution>*500, null);
+    #mods.nuclearcraft.electrolyser.addRecipe(<liquid:brine>*1000, <liquid:chlorine>*500, <liquid:hydrogen>*250, <liquid:sodium_hydroxide_solution>*500, null);
+
+#=============================================================================================================================================		
+
+//Rubber 
+
+furnace.remove(<thebetweenlands:items_misc:23>);
+furnace.remove(<thebetweenlands:syrmorite_bucket_solid_rubber>);
+mods.aether_legacy.Freezer.registerFreezable(<thebetweenlands:bl_bucket_rubber:1>,<thebetweenlands:syrmorite_bucket_solid_rubber>,800);
+mods.pneumaticcraft.heatframecooling.addRecipe(<thebetweenlands:bl_bucket_rubber:1>,<thebetweenlands:syrmorite_bucket_solid_rubber>);
+mods.cfm.Freezer.addRecipe(<thebetweenlands:bl_bucket_rubber:1>,<thebetweenlands:syrmorite_bucket_solid_rubber>);
+moretweaker.bewitchment.FrostFire.addRecipe(<thebetweenlands:syrmorite_bucket_solid_rubber>,<thebetweenlands:bl_bucket_rubber:1>);
+mods.cyclicmagic.Solidifier.addRecipe(<thebetweenlands:syrmorite_bucket_solid_rubber>, [<thebetweenlands:bl_bucket:1>.withTag({Fluid: {}})], "rubber", 1000);
+recipes.addShapeless(<thebetweenlands:syrmorite_bucket_solid_rubber>,[<thebetweenlands:bl_bucket_rubber:1>,<thermalfoundation:material:1025>]);
+
+
+#=============================================================================================================================================		
+
+//Wood
+
+val iLogs = [<tfc:wood/log/acacia>,<tfc:wood/log/ash>,<tfc:wood/log/aspen>,<tfc:wood/log/birch>,<tfc:wood/log/blackwood>,<tfc:wood/log/chestnut>,<tfc:wood/log/douglas_fir>,<tfc:wood/log/hickory>,<tfc:wood/log/kapok>,<tfc:wood/log/maple>,<tfc:wood/log/oak>,<tfc:wood/log/palm>,<tfc:wood/log/pine>,<tfc:wood/log/rosewood>,<tfc:wood/log/sequoia>,<tfc:wood/log/spruce>,<tfc:wood/log/sycamore>,<tfc:wood/log/white_cedar>,<tfc:wood/log/willow>,<tfc:wood/log/hevea>] as IIngredient[];
+val iLumber = [<tfc:wood/lumber/acacia>,<tfc:wood/lumber/ash>,<tfc:wood/lumber/aspen>,<tfc:wood/lumber/birch>,<tfc:wood/lumber/blackwood>,<tfc:wood/lumber/chestnut>,<tfc:wood/lumber/douglas_fir>,<tfc:wood/lumber/hickory>,<tfc:wood/lumber/kapok>,<tfc:wood/lumber/maple>,<tfc:wood/lumber/oak>,<tfc:wood/lumber/palm>,<tfc:wood/lumber/pine>,<tfc:wood/lumber/rosewood>,<tfc:wood/lumber/sequoia>,<tfc:wood/lumber/spruce>,<tfc:wood/lumber/sycamore>,<tfc:wood/lumber/white_cedar>,<tfc:wood/lumber/willow>,<tfc:wood/lumber/hevea>] as IItemStack[];
+for i, log in iLogs{
+
+#mods.pyrotech.Chopping.addRecipe("Log to Lumber"~i,iLumber[i],log,[4],[4]);
+
+mods.horsepower.ChoppingBlock.add(log, iLumber[i]*10, 2, false);
+mods.horsepower.ChoppingBlock.add(log, iLumber[i]*3, 6, true);
+
+mods.pyrotech.StoneSawmill.addRecipe("Brass Saw Blade"~i,iLumber[i]*4,log,200,<pyrotech:sawmill_blade_gold>,8,true);
+
+mods.pyrotech.StoneSawmill.addRecipe("Bronze Saw Blade"~i,iLumber[i]*4,log,200,<pyrotech:sawmill_blade_bone>,4,true);
+
+mods.pyrotech.StoneSawmill.addRecipe("Wrought Iron Saw Blade"~i,iLumber[i]*8,log,200,<pyrotech:sawmill_blade_iron>,4,true);
+
+mods.pyrotech.StoneSawmill.addRecipe("Steel Saw Blade"~i,iLumber[i]*10,log,200,<pyrotech:sawmill_blade_stone>,8,true);
+
+mods.pyrotech.StoneSawmill.addRecipe("Black Steel Saw Blade"~i,iLumber[i]*10,log,200,<pyrotech:sawmill_blade_flint>,8,true);
+
+mods.pyrotech.StoneSawmill.addRecipe("Manyullyn Saw Blade"~i,iLumber[i]*12,log,200,<pyrotech:sawmill_blade_obsidian>,8,true);
+
+mods.pyrotech.StoneSawmill.addRecipe("Diamond Tipped Steel Saw Blade"~i,iLumber[i]*16,log,200,<pyrotech:sawmill_blade_diamond>,0,true);
+
+}

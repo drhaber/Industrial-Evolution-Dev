@@ -33,10 +33,10 @@ recipes.addShaped(<minecraft:bed:0>,[
 recipes.addShaped(<minecraft:stone_slab:3>,[[<minecraft:cobblestone>,<minecraft:cobblestone>,<minecraft:cobblestone>]]);
 
 //Clay Blocks
-recipes.remove(<minecraft:clay>);
-recipes.removeShapeless(<minecraft:clay_ball>*4, [<minecraft:clay>]);
-CompactingBin.addRecipe(<minecraft:clay>.name,<minecraft:clay>,<minecraft:clay_ball>,9,true);
-mods.immersiveengineering.Crusher.removeRecipe(<minecraft:clay_ball>);
+#recipes.remove(<minecraft:clay>);
+#recipes.removeShapeless(<minecraft:clay_ball>*4, [<minecraft:clay>]);
+#CompactingBin.addRecipe(<minecraft:clay>.name,<minecraft:clay>,<minecraft:clay_ball>,9,true);
+#mods.immersiveengineering.Crusher.removeRecipe(<minecraft:clay_ball>);
 
 //Eye of Ender
 mods.forestry.Carpenter.addRecipe(<minecraft:ender_eye>,[

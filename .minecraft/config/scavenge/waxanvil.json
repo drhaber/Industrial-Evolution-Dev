@@ -1,0 +1,61 @@
+{ "block_pools" : 
+    [ 
+    { 
+    "name": "waxanvilcarving", 
+    "type": { "type": "block", "name": "harvestcraft:pressedwax" }, 
+    "clicktype": "rightclick ", 
+    "properties": [ 
+        { "type": "require_item_list", 
+            "items":[
+                {"name":"tfc:metal/knife/bismuth_bronze"},
+                {"name":"tfc:metal/knife/steel"},
+                {"name":"tfc:metal/knife/bronze"},
+                {"name":"tfc:metal/knife/invar"},
+                {"name":"tfc:metal/knife/manyullyn"},
+                {"name":"tfc:stone/knife/metamorphic"},
+                {"name":"tfc:metal/knife/cobalt"},
+                {"name":"tfc:metal/knife/nickel_silver"},
+                {"name":"tfc:metal/knife/tungsten_steel"},
+                {"name":"tfc:stone/knife/igneous_extrusive"},
+                {"name":"tfc:metal/knife/boron"},
+                {"name":"tfc:metal/knife/mithril"},
+                {"name":"tfc:metal/knife/tungsten"},
+                {"name":"tfc:stone/knife/igneous_intrusive"},
+                {"name":"tfc:metal/knife/blue_steel"},
+                {"name":"tfc:metal/knife/zircaloy"},
+                {"name":"tfc:metal/knife/beryllium_copper"},
+                {"name":"tfc:metal/knife/red_steel"},
+                {"name":"tfc:metal/knife/copper"},
+                {"name":"tfc:stone/knife/sedimentary"},
+                {"name":"tfc:metal/knife/thaumium"},
+                {"name":"tfc:metal/knife/black_bronze"},
+                {"name":"tfc:metal/knife/aluminium"},
+                {"name":"tfc:metal/knife/titanium"},
+                {"name":"tfc:metal/knife/osmium"},
+                {"name":"tfc:metal/knife/black_steel"},
+                {"name":"tfc:metal/knife/wrought_iron"}]
+        },
+        {
+          "type": "damage_item",  
+          "amount": "7"
+        },
+        {
+            "type": "swing_hand",
+            "disableJEI": true
+        },
+        {
+            "type": "play_sound",
+            "name": "minecraft:item.shovel.flatten",
+            "category": "master",
+            "volume": 0.3,
+            "disableJEI": true
+        },
+        {
+            "type": "use_command",
+            "name": "setblock",
+            "arguments": "~ ~ ~ contenttweaker:waxanvil"  
+        }
+    ]
+    } 
+    ] 
+    }

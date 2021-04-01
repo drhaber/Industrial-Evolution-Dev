@@ -26,17 +26,17 @@ recipes.removeShapeless(<minecraft:fire_charge>,[<minecraft:gunpowder>,<minecraf
 <ore:cbChisels>.addItems([<chiselsandbits:chisel_iron>,<chiselsandbits:chisel_gold>,<chiselsandbits:chisel_diamond>]);
 
 //Shovels
-<ore:shovelIron>.addItems([<minecraft:iron_shovel>,<tfc:metal/shovel/wrought_iron>]);
+#<ore:shovelIron>.addItems([<minecraft:iron_shovel>,<tfc:metal/shovel/wrought_iron>]);
 <ore:shovelBronze>.addItems([<forestry:bronze_shovel>,<tfc:metal/shovel/bronze>]);
 <ore:shovelSteel>.addItems([<immersiveengineering:shovel_steel>,<railcraft:tool_shovel_steel>,<tfc:metal/shovel/steel>]);
 
 //Pickaxes
-<ore:pickaxeIron>.addItems([<minecraft:iron_pickaxe>,<tfc:metal/pick/wrought_iron>]);
+#<ore:pickaxeIron>.addItems([<minecraft:iron_pickaxe>,<tfc:metal/pick/wrought_iron>]);
 <ore:pickaxeBronze>.addItems([<forestry:bronze_pickaxe>,<tfc:metal/pick/bronze>]);
 <ore:pickaxeSteel>.addItems([<immersiveengineering:pickaxe_steel>,<railcraft:tool_pickaxe_steel>,<tfc:metal/pick/steel>]);
 
 //Axes
-<ore:axeIron>.addItems([<minecraft:iron_axe>,<tfc:metal/axe/wrought_iron>]);
+#<ore:axeIron>.addItems([<minecraft:iron_axe>,<tfc:metal/axe/wrought_iron>]);
 <ore:axeSteel>.addItems([<immersiveengineering:axe_steel>,<railcraft:tool_axe_steel>,<tfc:metal/axe/steel>]);
 
 //Swords
@@ -44,7 +44,7 @@ recipes.removeShapeless(<minecraft:fire_charge>,[<minecraft:gunpowder>,<minecraf
 <ore:swordSteel>.addItems([<immersiveengineering:sword_steel>,<railcraft:tool_sword_steel>,<tfc:metal/sword/steel>]);
 
 //Hoes
-<ore:hoeIron>.addItems([<minecraft:iron_hoe>,<tfc:metal/hoe/wrought_iron>]);
+#<ore:hoeIron>.addItems([<minecraft:iron_hoe>,<tfc:metal/hoe/wrought_iron>]);
 <ore:hoeSteel>.addItems([<railcraft:tool_hoe_steel>,<tfc:metal/hoe/steel>]);
 
 //Shears
@@ -53,13 +53,13 @@ mods.embers.Stamper.add(<minecraft:shears>,<liquid:tin>*144, <embers:stamp_flat>
 <minecraft:shears>.displayName = "Tin Plated Bronze Shears";
 
 //Helmet
-<ore:helmetIron>.addItems([<minecraft:iron_helmet>,<tfc:metal/helmet/wrought_iron>]);
+#<ore:helmetIron>.addItems([<minecraft:iron_helmet>,<tfc:metal/helmet/wrought_iron>]);
 //Chestplate
-<ore:chestplateIron>.addItems([<minecraft:iron_chestplate>,<tfc:metal/chestplate/wrought_iron>]);
+#<ore:chestplateIron>.addItems([<minecraft:iron_chestplate>,<tfc:metal/chestplate/wrought_iron>]);
 //Leggings
-<ore:leggingsIron>.addItems([<minecraft:iron_leggings>,<tfc:metal/greaves/wrought_iron>]);
+#<ore:leggingsIron>.addItems([<minecraft:iron_leggings>,<tfc:metal/greaves/wrought_iron>]);
 //Boots
-<ore:bootsIron>.addItems([<minecraft:iron_boots>,<tfc:metal/boots/wrought_iron>]);
+#<ore:bootsIron>.addItems([<minecraft:iron_boots>,<tfc:metal/boots/wrought_iron>]);
 
 
 //Diamond Tools

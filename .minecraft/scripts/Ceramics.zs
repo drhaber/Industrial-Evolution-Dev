@@ -7,6 +7,7 @@ import moretweaker.railcraft.RollingMachine;
 import mods.terrafirmacraft.Heating;
 import mods.terrafirmacraft.ItemRegistry;
 
+
 //Ceramics
 recipes.removeShapeless(<ceramics:unfired_clay:4>, [<minecraft:clay_ball>], true);
 recipes.addShaped(<ceramics:unfired_clay:4>,[
@@ -20,6 +21,7 @@ furnace.remove(<ceramics:faucet>);
 furnace.remove(<ceramics:channel>);
 furnace.remove(<ceramics:porcelain_barrel>);
 furnace.remove(<ceramics:porcelain_barrel_extension>);
+Heating.removeRecipe(<ceramics:porcelain_barrel>);
 
 ItemRegistry.registerItemHeat(<ceramics:unfired_clay:4>, 1, 1599, false);
 ItemRegistry.registerItemHeat(<ceramics:unfired_clay:5>, 1, 1599, false); #porcelain brick
@@ -69,6 +71,7 @@ mods.terrafirmacraft.ClayKnapping.addRecipe("shears_Knap",<ceramics:unfired_clay
 																	"X   X",
 																	" X X ",
 																	"  X  ");  
+mods.terrafirmacraft.ClayKnapping.removeRecipe(<ceramics:unfired_clay:8>);
 mods.terrafirmacraft.ClayKnapping.addRecipe("plate_Knap",<ceramics:unfired_clay:8>, 
 																	"     ",
 																	" XXX ",

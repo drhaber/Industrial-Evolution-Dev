@@ -2,8 +2,11 @@
     {hide:[[spawn_egg],[]]};
     {keep-one:[[deactive_enchanted_book],[]]};
     ],
-    simpleplanes:[
-        {hide:[[*_plane,*_helicopter],[]]};
-        {show:[[oak_plane,oak_large_plane,oak_helicopter,oak_mega_plane],[]]};
-    ]
+simpleplanes:[
+    {hide:[[*_plane,*_helicopter],[]]};
+    {show:[[oak_plane,oak_large_plane,oak_helicopter,oak_mega_plane],[]]};
+    ],
+horsepower:[
+    {keep-one:[[chopping_block,chopper],[]]};
+    ]  
     }

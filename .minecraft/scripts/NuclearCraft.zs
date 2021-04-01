@@ -1,3 +1,4 @@
+/*
 //CO2 Recyling
 mods.nuclearcraft.chemical_reactor.addRecipe(<liquid:carbon_dioxide>*100, <liquid:liquidcatalyst>*10,<liquid:liquidcarbonsolution>*100,null);
 mods.nuclearcraft.crystallizer.addRecipe(<liquid:liquidcarbonsolution>*100, <tfc:powder/graphite>);
@@ -19,3 +20,4 @@ recipes.remove(<nuclearcraft:part:0>);
 recipes.remove(<nuclearcraft:part:1>);
 recipes.remove(<nuclearcraft:part:2>);
 recipes.remove(<nuclearcraft:part:3>);
+*/

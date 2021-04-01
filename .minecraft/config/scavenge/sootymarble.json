@@ -2,7 +2,7 @@
     [ 
     { 
     "name": "SootyMarble", 
-    "type": { "type": "block_list", "blocks": [{"name": "betternether:smoker"},{"name": "railcraft:equipment", "meta": 3},{"name": "quark:smoker"}]}, 
+    "type": { "type": "block_list", "blocks": [{"name": "betternether:smoker"},{"name": "industrialrenewal:block_chimney"},{"name": "railcraft:equipment", "meta": 3},{"name": "quark:smoker"}]}, 
     "clicktype": "rightclick ", 
     "properties": [ 
         { "type": "require_sneak" }, 

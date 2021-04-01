@@ -1,0 +1,5 @@
+{ironagefurniture:[
+    {hide:[chair_wood_ironage_,[bench_back_padded_single_*,classic_*,bench_back_single_*,shield_*,bench_padded_single_*,stool_tall_*,bench_single_*,stool_short_*,bench_log_single_*],[]]};
+    {show:[chair_wood_ironage_,[bench_back_padded_single_oak,classic_oak,bench_back_single_oak,shield_oak,bench_padded_single_oak,stool_tall_oak,bench_single_oak,stool_short_oak,bench_log_single_oak],[]]};
+    ]
+ }

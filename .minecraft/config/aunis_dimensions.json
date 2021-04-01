@@ -1,17 +1,21 @@
 {
-  "Storage Cell": {
+  "planet": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
-  "CompactMachines": {
+  "carboniferous": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
-  "the_end": {
-    "energyToOpen": 5529600,
-    "keepAlive": 2400
+  "emptiness": {
+    "energyToOpen": 0,
+    "keepAlive": 0
   },
-  "Anu Lair": {
+  "twilight_forest": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "tardis": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
@@ -23,19 +27,63 @@
     "energyToOpen": 0,
     "keepAlive": 0
   },
+  "ordovician_silurian": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "the_end": {
+    "energyToOpen": 5529600,
+    "keepAlive": 2400
+  },
+  "moon": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "EREBUS": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "gallifrey": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "The Beneath": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "End": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "Storage Cell": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "TENT": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "telos": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "CompactMachines": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "Nether": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
   "nc_wasteland": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
-  "the_nether": {
-    "energyToOpen": 3686400,
-    "keepAlive": 1600
-  },
-  "emptiness": {
+  "betweenlands": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
-  "Treasure Room": {
+  "devonian": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
@@ -44,19 +92,16 @@
     "keepAlive": 0,
     "group": "netherOv"
   },
-  "The Beneath": {
+  "the_nether": {
+    "energyToOpen": 3686400,
+    "keepAlive": 1600,
+    "group": "netherOv"
+  },
+  "midnight": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
-  "Nether": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "planet": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "TENT": {
+  "misty_world": {
     "energyToOpen": 0,
     "keepAlive": 0
   }

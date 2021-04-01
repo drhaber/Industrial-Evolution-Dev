@@ -89,3 +89,11 @@ recipes.addShaped(<emergingtechnology:battery>,[
 	[<tfctech:metal/steel_rod>,<ore:sheetPlastic>,<tfctech:metal/steel_rod>],
 	[<ore:sheetPlastic>,<immersiveengineering:metal_device0>,<ore:sheetPlastic>],
 	[<tfctech:metal/steel_rod>,<emergingtechnology:machinecase>,<tfctech:metal/steel_rod>]]);
+
+//Guide Light
+	
+recipes.remove(<emergingtechnology:torch>);
+recipes.addShaped(<emergingtechnology:torch>*16,[
+    [<ore:dustGlowstone>],
+    [<ore:stickPlastic>],
+    [<ore:plasticGray>]]);

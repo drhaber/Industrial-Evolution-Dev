@@ -11,7 +11,7 @@ for shulk in shulkers{
 ItemRegistry.registerItemSize(shulk, "LARGE", "HEAVY");
 }
 #=============================================================================================================================================		
-
+/*
 val one_block_machines = [<forestry:bottler>,<forestry:carpenter>,<forestry:centrifuge>,<forestry:fermenter>,
 <forestry:moistener>,<forestry:squeezer>,<forestry:still>,<nuclearcraft:nuclear_furnace_idle>,
 <nuclearcraft:manufactory_idle>,<nuclearcraft:decay_hastener_idle>,<nuclearcraft:fuel_reprocessor_idle>,
@@ -39,6 +39,7 @@ val very_large_machines = [<forestry:rainmaker>,<forestry:fabricator>,<forestry:
 for VLM in very_large_machines{
 ItemRegistry.registerItemSize(VLM, "VERY_LARGE", "HEAVY");
 }
+*/
 #=============================================================================================================================================		
 val metal_minecarts = [<minecraft:minecart>,<minecraft:chest_minecart>,<minecraft:furnace_minecart>,<minecraft:tnt_minecart>,
 <minecraft:hopper_minecart>,<minecraft:command_block_minecart>,<railcraft:cart_spawner>,<railcraft:mow_track_layer>,
