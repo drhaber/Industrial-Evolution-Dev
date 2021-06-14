@@ -307,6 +307,7 @@ recipes.addShaped(<immersiveengineering:wirecoil:7>*4,[
 */
 mods.jei.JEI.removeAndHide(<immersivecables:wire_coil:3>);
 mods.jei.JEI.removeAndHide(<immersivecables:coil_block:3>);
+
 #=============================================================================================================================================		
 //Connectors & Relays
 val CI = <contenttweaker:ceramic_insulator>;
