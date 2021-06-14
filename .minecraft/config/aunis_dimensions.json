@@ -1,17 +1,46 @@
 {
-  "twilight_forest": {
+  "CompactMachines": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
-  "betweenlands": {
+  "midnight": {
     "energyToOpen": 0,
     "keepAlive": 0
+  },
+  "the_nether": {
+    "energyToOpen": 3686400,
+    "keepAlive": 1600,
+    "group": "netherOv"
   },
   "gallifrey": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
-  "telos": {
+  "planet": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "nc_wasteland": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "space": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "Storage Cell": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "moon": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "tardis": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
+  "TENT": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
@@ -19,11 +48,20 @@
     "energyToOpen": 0,
     "keepAlive": 0
   },
+  "twilight_forest": {
+    "energyToOpen": 0,
+    "keepAlive": 0
+  },
   "Nether": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
-  "The Beneath": {
+  "overworld": {
+    "energyToOpen": 0,
+    "keepAlive": 0,
+    "group": "netherOv"
+  },
+  "EREBUS": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
@@ -31,11 +69,7 @@
     "energyToOpen": 0,
     "keepAlive": 0
   },
-  "EREBUS": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "Storage Cell": {
+  "betweenlands": {
     "energyToOpen": 0,
     "keepAlive": 0
   },
@@ -47,49 +81,15 @@
     "energyToOpen": 0,
     "keepAlive": 0
   },
-  "planet": {
+  "The Beneath": {
     "energyToOpen": 0,
     "keepAlive": 0
-  },
-  "CompactMachines": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "tardis": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "space": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "moon": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "the_nether": {
-    "energyToOpen": 3686400,
-    "keepAlive": 1600,
-    "group": "netherOv"
   },
   "the_end": {
     "energyToOpen": 5529600,
     "keepAlive": 2400
   },
-  "overworld": {
-    "energyToOpen": 0,
-    "keepAlive": 0,
-    "group": "netherOv"
-  },
-  "midnight": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "nc_wasteland": {
-    "energyToOpen": 0,
-    "keepAlive": 0
-  },
-  "TENT": {
+  "telos": {
     "energyToOpen": 0,
     "keepAlive": 0
   }
